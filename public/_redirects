@@ -1,2 +1,5 @@
 # Redirect domain aliases to primary domain
 http://scchen.me/* http://scchen.com/:splat 301!
+
+# Redirect Chinese posts to old domain
+/zh/post /text
