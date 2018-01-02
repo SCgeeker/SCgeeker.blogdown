@@ -5,7 +5,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/project/mental-simulation/</loc>
+      <loc>/en/project/mental-simulation/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -14,7 +14,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</loc>
+      <loc>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</loc>
       <lastmod>2017-05-08T00:00:00+00:00</lastmod>
     </url>
     
@@ -23,7 +23,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</loc>
+      <loc>/en/post/2017-05-05-templete-of-a-citable-blog-post/</loc>
       <lastmod>2017-05-05T00:00:00+00:00</lastmod>
     </url>
     
@@ -32,7 +32,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/academic/</loc>
+      <loc>/en/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -41,7 +41,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/publication/</loc>
+      <loc>/en/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -50,7 +50,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/talk/</loc>
+      <loc>/en/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -59,7 +59,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/talk/example-talk/</loc>
+      <loc>/en/talk/example-talk/</loc>
       <lastmod>2017-01-01T00:00:00+08:00</lastmod>
     </url>
     
@@ -68,10 +68,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="http://scchen.com/en/post/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="http://scchen.com/zh/post/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/post/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/post/" hreflang="zh"/>
     
-      <loc>http://scchen.com/en/post/</loc>
+      <loc>/en/post/</loc>
       <lastmod>2017-01-01T00:00:00+08:00</lastmod>
     </url>
     
@@ -80,7 +80,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/</loc>
+      <loc>/en/post/2016-09-14-randomization-in-latin-square/</loc>
       <lastmod>2016-09-14T00:00:00+00:00</lastmod>
     </url>
     
@@ -89,7 +89,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</loc>
+      <loc>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</loc>
       <lastmod>2016-05-31T00:00:00+00:00</lastmod>
     </url>
     
@@ -98,7 +98,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2016-05-05-rethink-significance/</loc>
+      <loc>/en/post/2016-05-05-rethink-significance/</loc>
       <lastmod>2016-05-05T00:00:00+00:00</lastmod>
     </url>
     
@@ -107,7 +107,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</loc>
+      <loc>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</loc>
       <lastmod>2016-04-30T00:00:00+00:00</lastmod>
     </url>
     
@@ -116,7 +116,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</loc>
+      <loc>/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</loc>
       <lastmod>2016-04-22T00:00:00+00:00</lastmod>
     </url>
     
@@ -125,7 +125,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</loc>
+      <loc>/en/post/2016-04-05-display-math-equation-in-post/</loc>
       <lastmod>2016-04-05T00:00:00+00:00</lastmod>
     </url>
     
@@ -134,7 +134,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</loc>
+      <loc>/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</loc>
       <lastmod>2016-04-05T00:00:00+00:00</lastmod>
     </url>
     
@@ -143,7 +143,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</loc>
+      <loc>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</loc>
       <lastmod>2016-03-30T00:00:00+00:00</lastmod>
     </url>
     
@@ -152,7 +152,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/bayesian/</loc>
+      <loc>/en/tags/bayesian/</loc>
       <lastmod>2016-04-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -162,7 +162,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/blog_skills/</loc>
+      <loc>/en/tags/blog_skills/</loc>
       <lastmod>2017-05-08T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -172,10 +172,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="http://scchen.com/en/categories/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="http://scchen.com/zh/categories/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/categories/" hreflang="zh"/>
     
-      <loc>http://scchen.com/en/categories/</loc>
+      <loc>/en/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -184,7 +184,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/experiment_design/</loc>
+      <loc>/en/tags/experiment_design/</loc>
       <lastmod>2016-09-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -194,7 +194,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/knowledge_management/</loc>
+      <loc>/en/tags/knowledge_management/</loc>
       <lastmod>2017-05-08T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -204,7 +204,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/latex/</loc>
+      <loc>/en/tags/latex/</loc>
       <lastmod>2016-04-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -214,7 +214,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/mental-simulation/</loc>
+      <loc>/en/tags/mental-simulation/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -224,7 +224,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/categories/practices/</loc>
+      <loc>/en/categories/practices/</loc>
       <lastmod>2017-05-08T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -234,7 +234,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/preregistration/</loc>
+      <loc>/en/tags/preregistration/</loc>
       <lastmod>2016-05-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -244,7 +244,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/project/</loc>
+      <loc>/en/project/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -254,10 +254,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="http://scchen.com/en/publication_types/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="http://scchen.com/zh/publication_types/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/publication_types/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/publication_types/" hreflang="zh"/>
     
-      <loc>http://scchen.com/en/publication_types/</loc>
+      <loc>/en/publication_types/</loc>
       <priority>0</priority>
     </url>
     
@@ -266,7 +266,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/python/</loc>
+      <loc>/en/tags/python/</loc>
       <lastmod>2016-09-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -276,7 +276,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/r/</loc>
+      <loc>/en/tags/r/</loc>
       <lastmod>2016-05-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -286,7 +286,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/r_programming/</loc>
+      <loc>/en/tags/r_programming/</loc>
       <lastmod>2016-05-05T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -296,7 +296,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/reading-sentence/</loc>
+      <loc>/en/tags/reading-sentence/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -306,7 +306,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/rethinking/</loc>
+      <loc>/en/tags/rethinking/</loc>
       <lastmod>2016-05-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -316,10 +316,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="http://scchen.com/en/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="http://scchen.com/zh/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/" hreflang="zh"/>
     
-      <loc>http://scchen.com/en/</loc>
+      <loc>/en/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -329,7 +329,7 @@
     
     <url>
     
-      <loc>http://scchen.com/en/tags/statistics/</loc>
+      <loc>/en/tags/statistics/</loc>
       <lastmod>2016-05-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -339,10 +339,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="http://scchen.com/en/tags/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="http://scchen.com/zh/tags/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/tags/" hreflang="zh"/>
     
-      <loc>http://scchen.com/en/tags/</loc>
+      <loc>/en/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>

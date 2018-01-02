@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Sau-Chin Chen&#39;s Website</title>
-    <link>http://scchen.com/en/project/</link>
+    <link>/en/project/</link>
     <description>Recent content in Projects on Sau-Chin Chen&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,16 +11,18 @@
     <atom:link href="/en/project/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Mental Simulation in Reading Sentence</title>
-      <link>http://scchen.com/en/project/mental-simulation/</link>
+      <title>Orientation Effects</title>
+      <link>/en/project/mental-simulation/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/project/mental-simulation/</guid>
-      <description>&lt;p&gt;When we are reading the sentences describing the status of objects, such as &amp;lsquo;The painter is cleaning his brush&amp;rsquo;, how our minds catch the details? This issue has been explored longer than a decade since the match advantages of sentence-picture verification task have been robustly replicated across shape, color, size and orientation. The sentence-picture verification task requires the participants read the sentence then verify the target picture. When the target picture match the visual feature implied by the sentence, the reponses are usually faster than the pictures that mismatch the implied visual feature. For example, the responses to the &amp;ldquo;standing eagle&amp;rdquo; are faster after the sentence &amp;ldquo;The ranger saw the eagle in the nest&amp;rdquo; than the sentence &amp;ldquo;The hunber aims the eagle flying on the sky&amp;rdquo;.&lt;/p&gt;
+      <guid>/en/project/mental-simulation/</guid>
+      <description>&lt;p&gt;When we are reading the sentence describing the object in the context, such as &amp;lsquo;The painter is waving his brush on the canvas&amp;rsquo;, our minds would catch the visual details. This theory has acquired the evidence of the findings from the sentence-picture verification task. In this verification task the target objects matched the probe sentence (e.g., the brush with color) are verified faster than the target objects mismatched the probe sentence (e.g., the brush without color). This findings are called &amp;ldquo;match advantage&amp;rdquo;. So far the target objects matched on shape, color, size, and orientation have shown the relatively roubust results.&lt;/p&gt;
 
-&lt;p&gt;The accumulated findings show the decreasing match advantages from shape, color, size, then orientation. Because these findings are from Western societies, it appears to be that the object orientations are difficultly simulated in Western minds.&lt;/p&gt;
+&lt;p&gt;Among the visual features, the match advantage of object orientation has the inconsistent findings between the studies with the comprehention task (Stanfield &amp;amp; Zwaan, 2001; Zwaan &amp;amp; Pecher, 2012) and the studies without the comprehension task (De Koning, Wassenburg, Bos, &amp;amp; van der Schoot, 2017; Hoeben-Mannaert, Dijkstra, &amp;amp; Zwaan, 2017). For the other three visual features, the match advantage usually shows up regardless of the design of a study. This project aims to find the clue to answer why the inconsistent findings happened to the object orientation.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Under construction&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The frist working hypothesis is the adjustment of object size. Until present, all the studies of orientation effect used the objects that are able to be manipulated by single hand. During the collaboration with &lt;a href=&#34;https://rolfzwaan.blogspot.tw/&#34; target=&#34;_blank&#34;&gt;Rolf Zwaan&lt;/a&gt; and &lt;em&gt;Bjorn de Korning&lt;/em&gt;, we have developed the hypothesis how the large objects would show the robust orientation effect than the small objects. This hypothesis have been initially confirmed in the mixed-platform study across langages (English, Dutch, and Chinese). After erased the explicit expression about object orientation in the probe sentences, we have preregistered the web-based study for the final confirmation. This study is going to start once we have the acceptence-in-principle from our submitted journal.&lt;/p&gt;
+
+&lt;p&gt;The second working hypothesis came from the moments I was preparing the materials for the first working hypothesis. Since all the past studies were from Americans and Europeans, will the original materials cause the larger effects in the other languages and cultures? More than ten years ago, there is the study suggesting that Arabic speakers are more sensitive to the direction Italians (Maass and Russo, 2003). If the original orientation effect(Stanfield &amp;amp; Zwaan, 2001) could be found in some languages out of North America and European, this hypothesis has the initial empirical evidence. At the date &lt;a href=&#34;https://christopherchartier.com/&#34; target=&#34;_blank&#34;&gt;Christopher Chartier&lt;/a&gt; claimed the establishment of &lt;a href=&#34;https://christopherchartier.com/2017/08/26/building-a-cern-for-psychological-science/&#34; target=&#34;_blank&#34;&gt;Psychological Science Accelerator&lt;/a&gt;, I got this opportunity. In 2018, we will invite the member laboratories join this study.&lt;/p&gt;
 </description>
     </item>
     
