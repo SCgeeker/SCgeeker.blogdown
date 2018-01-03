@@ -16,9 +16,9 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/en/project/mental-simulation/</guid>
-      <description>&lt;p&gt;When we are reading the sentence describing the object in the context, such as &amp;lsquo;The painter is waving his brush on the canvas&amp;rsquo;, our minds would catch the visual details. This theory has acquired the evidence of the findings from the sentence-picture verification task. In this verification task the target objects matched the probe sentence (e.g., the brush with color) are verified faster than the target objects mismatched the probe sentence (e.g., the brush without color). This findings are called &amp;ldquo;match advantage&amp;rdquo;. So far the target objects matched on shape, color, size, and orientation have shown the relatively roubust results.&lt;/p&gt;
+      <description>&lt;p&gt;When we are reading the sentence describing the object in the context, such as &amp;lsquo;The eagle is in the sky&amp;rsquo;, our minds would catch the visual properties of the eagle. This theory has acquired the evidence of the findings from the sentence-picture verification task. In this verification task the target objects matched the probe sentence (e.g., the flying eagle) are verified faster than the target objects mismatched the probe sentence (e.g., the standing eagle). This findings are called &amp;ldquo;match advantage&amp;rdquo;. So far the target objects matched on shape, color, size, and orientation have shown the relatively roubust results. These respective match advantage are called shape effect, color effect, size effect, and orientation effect.&lt;/p&gt;
 
-&lt;p&gt;Among the visual features, the match advantage of object orientation has the inconsistent findings between the studies with the comprehention task (Stanfield &amp;amp; Zwaan, 2001; Zwaan &amp;amp; Pecher, 2012) and the studies without the comprehension task (De Koning, Wassenburg, Bos, &amp;amp; van der Schoot, 2017; Hoeben-Mannaert, Dijkstra, &amp;amp; Zwaan, 2017). For the other three visual features, the match advantage usually shows up regardless of the design of a study. This project aims to find the clue to answer why the inconsistent findings happened to the object orientation.&lt;/p&gt;
+&lt;p&gt;Among the visual features, the orientation effect has the inconsistent findings between the studies with the comprehention task (Stanfield &amp;amp; Zwaan, 2001; Zwaan &amp;amp; Pecher, 2012) and the studies without the comprehension task (De Koning, Wassenburg, Bos, &amp;amp; van der Schoot, 2017; Hoeben-Mannaert, Dijkstra, &amp;amp; Zwaan, 2017). Compared to the other three visual features, the match advantage usually shows up regardless of the design of a study. This project aims to find the clue to answer why the inconsistent findings happened to the object orientation.&lt;/p&gt;
 
 &lt;p&gt;The frist working hypothesis is the adjustment of object size. Until present, all the studies of orientation effect used the objects that are able to be manipulated by single hand. During the collaboration with &lt;a href=&#34;https://rolfzwaan.blogspot.tw/&#34; target=&#34;_blank&#34;&gt;Rolf Zwaan&lt;/a&gt; and &lt;em&gt;Bjorn de Korning&lt;/em&gt;, we have developed the hypothesis how the large objects would show the robust orientation effect than the small objects. This hypothesis have been initially confirmed in the mixed-platform study across langages (English, Dutch, and Chinese). After erased the explicit expression about object orientation in the probe sentences, we have preregistered the web-based study for the final confirmation. This study is going to start once we have the acceptence-in-principle from our submitted journal.&lt;/p&gt;
 
@@ -325,7 +325,7 @@ SUCCESS = data.frame(n,PASS_P)
 colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
 print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- html table generated in R 3.4.3 by xtable 1.8-2 package --&gt;
-&lt;!-- Tue Jan 02 22:41:21 2018 --&gt;
+&lt;!-- Wed Jan 03 10:21:58 2018 --&gt;
 &lt;table border=&#34;1&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -604,7 +604,7 @@ Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sig
 Then:&lt;br /&gt;
 &lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2018-01-02 22:41:14&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2018-01-03 10:21:51&lt;/p&gt;
 </description>
     </item>
     
