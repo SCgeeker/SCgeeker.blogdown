@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sau-Chin Chen&#39;s Website</title>
-    <link>http://scchen.com/en/post/</link>
+    <link>/en/post/</link>
     <description>Recent content in Posts on Sau-Chin Chen&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Manage a blog for the bibliography management optimization</title>
-      <link>http://scchen.com/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
+      <link>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
+      <guid>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.&lt;/li&gt;
 &lt;/ul&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>Template of a citable blog post</title>
-      <link>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</link>
+      <link>/en/post/2017-05-05-templete-of-a-citable-blog-post/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
+      <guid>/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
       <description>&lt;div id=&#34;this-post-is-for-future-posts.&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;This post is for future posts.&lt;/h2&gt;
 &lt;p&gt;Check the lines 5 to 9 of my post template &lt;a href=&#34;https://github.com/SCgeeker/SCgeeker.github.io/blob/master/_includes/head.html&#34;&gt;&lt;code&gt;head.html&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
@@ -61,10 +61,10 @@
     
     <item>
       <title>Randomization in Latin Square</title>
-      <link>http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/</link>
+      <link>/en/post/2016-09-14-randomization-in-latin-square/</link>
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/</guid>
+      <guid>/en/post/2016-09-14-randomization-in-latin-square/</guid>
       <description>&lt;p&gt;I’m managing an opensesame script for the coming project. In this project, there are four stimuli lists included all the within-participant conditions. I denote the four lists &lt;strong&gt;A&lt;/strong&gt;, &lt;strong&gt;B&lt;/strong&gt;, &lt;strong&gt;C&lt;/strong&gt;, and &lt;strong&gt;D&lt;/strong&gt;. A participant will have one of the stimuli lists in terms of the counter balanced principle. The best assignment method is 4X4 Latin Square. For every 16 participants, there are 24 sequences to be used. Here are three of the sequences.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4]
 ## [1,] &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot; 
@@ -151,10 +151,10 @@ exp.set(&amp;#39;List&amp;#39;, lst)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Why we need a readable data table in behavioral scientific research?</title>
-      <link>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
+      <link>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
+      <guid>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
       <description>&lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;A bad case&lt;/h3&gt;
 &lt;p&gt;A few days ago I was dealing with a raw data set as like the following table.&lt;/p&gt;
@@ -269,13 +269,13 @@ head(New_Table)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Rethink Significance</title>
-      <link>http://scchen.com/en/post/2016-05-05-rethink-significance/</link>
+      <link>/en/post/2016-05-05-rethink-significance/</link>
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-05-05-rethink-significance/</guid>
+      <guid>/en/post/2016-05-05-rethink-significance/</guid>
       <description>&lt;p&gt;To trace the fallacy of use hypothesis testing, I am programming the examples in Dr. Adrianus D. de Groot’s paper &lt;code&gt;The meaning of “signiﬁcance” for different types of research&lt;/code&gt;. This paper is published in 1956 in the Dutch journal &lt;em&gt;Nederlands Tijdschrift voor de Psychologie en Haar Grensgebieden&lt;/em&gt;. &lt;a href=&#34;https://en.wikipedia.org/wiki/Adriaan_de_Groot&#34;&gt;Adrianus De Groot&lt;/a&gt; is Dutch psychologist and chess master. During 1950s and 1960s, he suggested the concept of emperical cycle for the researchers who use the statistical tools in the social and behavioral researches.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://scchen.com/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;Emperical cycle&#34; /&gt;
+&lt;img src=&#34;/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;Emperical cycle&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Emperical cycle&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;de Groot’s emperical cycle distinguish two types of emperical research: &lt;strong&gt;exploratory research&lt;/strong&gt; and &lt;strong&gt;confirmatory research&lt;/strong&gt;. &lt;strong&gt;Exploratory research&lt;/strong&gt; aims to formulate the hypotheses that covers the process from &lt;code&gt;observation&lt;/code&gt; to &lt;code&gt;induction&lt;/code&gt;. &lt;strong&gt;Confirmatory research&lt;/strong&gt; attempts to test the predicited concequences based the hypothesis. Thus a &lt;strong&gt;Confirmatory research&lt;/strong&gt; covers &lt;code&gt;deduction&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, and &lt;code&gt;evaluation&lt;/code&gt;.&lt;/p&gt;
@@ -299,7 +299,7 @@ SUCCESS = data.frame(n,PASS_P)
 colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
 print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- html table generated in R 3.4.3 by xtable 1.8-2 package --&gt;
-&lt;!-- Wed Jan 03 22:17:00 2018 --&gt;
+&lt;!-- Fri Jan 05 20:38:21 2018 --&gt;
 &lt;table border=&#34;1&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -399,7 +399,7 @@ Probability(Positive Results)
 &lt;/tr&gt;
 &lt;/table&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(PASS_P ~ n, xlab = &amp;quot;Smallest Number of Positive Hypotheses&amp;quot;, ylab = &amp;quot;Probability(Positive Results)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://scchen.com/post/2016-05-05-rethink-significance_files/figure-html/MultiHypo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-05-05-rethink-significance_files/figure-html/MultiHypo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;That table is telling us if we wish acquire at least one positive hypothesis, the probability is 0.4012631. That plot shows the probability dramatically decrease with the increasing numbers in our wish. In other words, when we have no precise knowlegde about the use of hyphtesis testing, the more hypotheses we want to induce, the higher risk we get nothing.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;exploratory-research-has-infinite-hypotheses&#34; class=&#34;section level3&#34;&gt;
@@ -416,13 +416,13 @@ Probability(Positive Results)
     
     <item>
       <title>Autopsy of NHST and Bayesian Models (part 1)</title>
-      <link>http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
+      <link>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
       <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
+      <guid>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
       <description>&lt;p&gt;Chapter 2 of &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated &lt;strong&gt;Data Story&lt;/strong&gt;, then &lt;strong&gt;update&lt;/strong&gt; the models by filling data in, and finally &lt;strong&gt;evaluate&lt;/strong&gt; all the &lt;strong&gt;upated&lt;/strong&gt; models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s &lt;a href=&#34;https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf&#34;&gt;Bayesian Basics: A Conceptual Introduction with Application in R and Stan&lt;/a&gt; on &lt;a href=&#34;http://mc-stan.org/documentation/&#34;&gt;Stan official site&lt;/a&gt;, I require the key to understand the difference between the two golems.&lt;/p&gt;
 &lt;p&gt;The critical difference is which type of &lt;strong&gt;conditional probability&lt;/strong&gt; the statistical method is used to evaluate the model. Once we collected the data based on some hypothesis, we have the distribution of hypothesis $ p( ) $ and the distribution of data $ p(y) $. NHST compuates the probability we have the data when the hypothesis is true $ p(y|) $. In practical, &lt;em&gt;p&lt;/em&gt; value refers to the &lt;strong&gt;conditional probability&lt;/strong&gt; of the null hypothesis, and * confidence interval* suggests a range of plausible outcomes based on the &lt;em&gt;confiditional probability&lt;/em&gt; of the real hypothesis. A Bayesian method compuates the probability the hypothesis is approved based on the data we have $ p(|y) $. Because the computation of $ p(|y) $ needs the likelihood $ p(y|) $ and the priori $ p() $, of course a Baysian method cost more steps than NHST.&lt;/p&gt;
-&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;http://scchen.com/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
+&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
 &lt;p&gt;Here is a pseudo experiment I want to know if a test is success based on the expect value smaller than 5 (Obersvations are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10). I completed an experiment of 25 observations and an experiment 36 observations. In use of NHST with a critical value (p &amp;lt; .05), the criterion change with the sample size. The simulation&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
 OBV &amp;lt;- 1:10
@@ -447,10 +447,10 @@ print(CL36)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt
     
     <item>
       <title>Check My Tools to Create and Manipulate Golems</title>
-      <link>http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
+      <link>/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
       <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
+      <guid>/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
       <description>&lt;p&gt;Since two weeks before I published this post, I have started read the book &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; written by &lt;a href=&#34;http://xcelab.net/rm/&#34;&gt;Richard McElreath&lt;/a&gt;. Richard is the evolutionary anthropologist at Max Planck Institute. He wrote this textbook for the PhD students who will use the Bayesian statistics in their research projects. Compared to the textbooks written by statisians and data scientistst, Richard’s book explain and demonstrate the statistical methods with examples instead of equations. His intention is to help who are not staticians but used to use statistics realize one fact: we rely on the statistical models as the representations of our answers rather than answer the questions by the raw data or naked truth. Many non-statisticians are used to find and learn what kind of methods or apps to deal with their data, but few are interested to know the models under the mentods and apps they are using. The trouble and danger is that they thought their jobs are done when the program printed the tables and figures but these outputs are from the statistical model is unable to answer their question. This situation is originated from many non-statisticans consider themselves the end-users of statistical models. Like any user of a packaged software, non-statisticans have no time to understand how the tools in their hands designed and conducted by statisticans.&lt;br /&gt;
 Richard introduced the story of &lt;a href=&#34;https://en.wikipedia.org/wiki/Golem&#34;&gt;golem&lt;/a&gt; to raise the non-statsiticans’ attention to the troubles they had made and will make. A statistical model, like a golem, has the power beyond human to finish the work the human are unable to do, for example, trace the passengers’ track from the trillion of camera. Its power could be misused or out of control if we do not understand what is the root of its action. A user of ststistical method, no matter you are or are not stistician, have to keep the awareness of engineer when you are dealing with your data. Today everyone has many easier ways than a decade ago to keep the awareness of engineer. One advantage is that the learning curve for being an part-time hacker is getting smooth. Increasing R apps are opening many windows for who are want to outlook and modify the statistical models.&lt;br /&gt;
 Since this post, every post listed in the category &lt;code&gt;Rethinking&lt;/code&gt; is one of the summaries and feedbacks to &lt;a href=&#34;https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-Stan/McElreath/9781482253443&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt;. At first I have to check my toolkits for create and manipulate the statistical models. They are R core and the packages. Years ago I have used to use the packages in my data processing. Now I show them for who start to use R after read this post.&lt;/p&gt;
@@ -561,10 +561,10 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Display Math Equation in Post</title>
-      <link>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</link>
+      <link>/en/post/2016-04-05-display-math-equation-in-post/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</guid>
+      <guid>/en/post/2016-04-05-display-math-equation-in-post/</guid>
       <description>&lt;p&gt;There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ E = mc^2 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Use the steps 1 and 2 indtroducted in &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s post&lt;/a&gt;, my website is able to show the equation in any post. Because this theme use &lt;code&gt;kramdown&lt;/code&gt; as the engine of markdown, I pass the step 4.&lt;/p&gt;
@@ -578,16 +578,16 @@ Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sig
 Then:&lt;br /&gt;
 &lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2018-01-03 22:16:53&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2018-01-05 20:38:13&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Vectors in mathematics and in codes</title>
-      <link>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
+      <link>/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
+      <guid>/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
       <description>&lt;p&gt;When a set of data/observations is imported to R, it is usually treated as &lt;code&gt;vector&lt;/code&gt;. Vector has two mathematical forms as following:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;column vector&lt;/strong&gt;:&lt;br /&gt;
 &lt;span class=&#34;math display&#34;&gt;\[ \vec{a} = \begin{bmatrix}
@@ -639,10 +639,10 @@ SS&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Learning Sampling Distribution in R Programming</title>
-      <link>http://scchen.com/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
+      <link>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
+      <guid>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
       <description>&lt;p&gt;Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.&lt;/p&gt;
 &lt;p&gt;In this pseudo experiment, there are only ten observations we will collect in every sample. They are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Accodring to the design of the experiment, a sample will have one observation to countless observations. I assume the distrubtions are accumulated from 100 samples of 1 observation, 9 observations, ,16 observations, 25 observations, and 36 observations. Every sample will be collapsed to a average value and become the components of sampling distribution. I use &lt;code&gt;ggplot2&lt;/code&gt; to draw the five sampling distributions. Look at what they are look like.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suppressPackageStartupMessages({
@@ -669,7 +669,7 @@ count = 100
 while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
 Dist.df &amp;lt;- data.frame(Size = factor(rep(c(1,9,16,25,36), each=100)), Sample_Means = c(Dist1, Dist9, Dist16, Dist25, Dist36) )
 ggplot(Dist.df, aes(Sample_Means, fill = Size)) + geom_histogram() + facet_grid(. ~ Size)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;http://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming_files/figure-html/Sampling-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2016-03-30-learning-sampling-distribution-in-r-programming_files/figure-html/Sampling-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We call the set of observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 &lt;strong&gt;population&lt;/strong&gt; in any circumstance we conduct this experiment. This population has the average 5.5 and the variance/standard deviation 8.25/2.87. With the increase of sample size, you find more and more samples collapsed to the average of population. The variation of each sample distribution decreases with the increasing of sample size as well. The following table illustrate the average and variance/standard deviation of each sampling distribution.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
