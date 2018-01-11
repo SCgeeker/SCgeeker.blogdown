@@ -5,6 +5,18 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/post/use-bookdownplus/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/post/use-bookdownplus/" hreflang="en"/>
+    
+      <loc>/zh/post/use-bookdownplus/</loc>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/preregister-ikea_effect-comment/</loc>
       <lastmod>2018-01-05T00:00:00+00:00</lastmod>
     </url>
@@ -188,11 +200,24 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/tags/knowledge_management/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/knowledge_management/" hreflang="en"/>
+    
+      <loc>/zh/tags/knowledge_management/</loc>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/zh/post/" hreflang="zh"/>
       <xhtml:link rel="alternate" href="/en/post/" hreflang="en"/>
     
       <loc>/zh/post/</loc>
-      <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -213,10 +238,24 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/tags/r_programming/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/r_programming/" hreflang="en"/>
+    
+      <loc>/zh/tags/r_programming/</loc>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/zh/tags/" hreflang="zh"/>
       <xhtml:link rel="alternate" href="/en/tags/" hreflang="en"/>
     
       <loc>/zh/tags/</loc>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -379,7 +418,7 @@
     <url>
     
       <loc>/zh/categories/%E8%BB%9F%E9%AB%94%E4%BB%8B%E7%B4%B9/</loc>
-      <lastmod>2017-01-10T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -389,7 +428,7 @@
     <url>
     
       <loc>/zh/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/</loc>
-      <lastmod>2018-01-05T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

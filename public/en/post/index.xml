@@ -11,6 +11,65 @@
     <atom:link href="/en/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Use bookdownplus write papers and manage lab logs</title>
+      <link>/en/post/use-bookdownplus/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/use-bookdownplus/</guid>
+      <description>&lt;p&gt;Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met &lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Aust and Barth 2017)&lt;/span&gt; three years ago, it is my dream someday I will use &lt;code&gt;R&lt;/code&gt;&lt;span class=&#34;citation&#34;&gt;(R Development Core Team 2010)&lt;/span&gt; process all my works. &lt;code&gt;papaja&lt;/code&gt; is amazing but it is implemented to English only. Later I found &lt;a href=&#34;https://bookdown.org/yihui/bookdown/get-started.html&#34;&gt;&lt;code&gt;bookdown&lt;/code&gt;&lt;/a&gt; developed by Yihui Xie&lt;span class=&#34;citation&#34;&gt;(Xie 2017)&lt;/span&gt;. &lt;code&gt;bookdown&lt;/code&gt; has the potential to manage Chinese writings. However, this package is primarily developed for writing and publishing books.&lt;/p&gt;
+&lt;p&gt;Fortunately, &lt;a href=&#34;http://www.pzhao.org/zh/&#34;&gt;Peng Zhao&lt;/a&gt; has worked on the advanced work: &lt;a href=&#34;https://github.com/pzhaonet/bookdownplus&#34;&gt;&lt;code&gt;bookdownplus&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Zhao 2017)&lt;/span&gt;. This package provides many templates for a couple of academic works and hobbies. According to the help file, there are &lt;code&gt;academic article&lt;/code&gt;, &lt;code&gt;book&lt;/code&gt;, &lt;code&gt;thesis&lt;/code&gt;, &lt;code&gt;poster&lt;/code&gt;, and &lt;code&gt;journals&lt;/code&gt;. Because of Zhao’s interests, the users could write and publish &lt;code&gt;poem book&lt;/code&gt; and &lt;code&gt;guitar chords&lt;/code&gt;. The following pictures are the outcomes of these templates:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_article.jpg&#34; title=&#34;academic article&#34; /&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_yihui_zh.jpg&#34; title=&#34;book&#34; /&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_thesis_classic.jpg&#34; title=&#34;thesis&#34; /&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poem.jpg&#34; title=&#34;poster&#34; /&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_journal.jpg&#34; title=&#34;journal&#34; /&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poster.jpg&#34; title=&#34;poem book&#34; /&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_guitar.jpg&#34; title=&#34;guitar&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;I believe ‘journal’ will be the hottest templaters for many research teams who are running their open practices. All the members of a project will have managed their daily journals collaboratively. The journal could be opened to public after the final paper is formly published.&lt;/p&gt;
+&lt;p&gt;For the users who read and write traditional Chiense like me, you have to install some font files after you completed the install work flow as the mannual. According to my tests in WINDOWS 10, The font files are &lt;code&gt;KaiTi.ttf&lt;/code&gt;, &lt;code&gt;simfang.ttf&lt;/code&gt;, &lt;code&gt;simhei.ttf&lt;/code&gt;, and &lt;code&gt;simkai.ttf&lt;/code&gt;. Then you can use the Chinese templates in &lt;code&gt;bookdownplus&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In future, I wish &lt;code&gt;bookdownplus&lt;/code&gt; could enhance the support for many multi-bytes language systems. The users could provide and share the customed templates through the updates. This will be the handy tool for the open scientists out of WIERD world.&lt;/p&gt;
+&lt;div id=&#34;reference&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-AustpapajaReproducibleAPA2017&#34;&gt;
+&lt;p&gt;Aust, Frederik, and Marius Barth. 2017. &lt;em&gt;Papaja: Reproducible APA Manuscripts with R Markdown&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-RDevelopmentCoreTeamlanguageenvironmentstatistical2010&#34;&gt;
+&lt;p&gt;R Development Core Team. 2010. “R: A Language and Environment for Statistical Computing.” Vienna, Austria: R Foundation for Statistical Computing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-XiebookdownAuthoringBooks2017&#34;&gt;
+&lt;p&gt;Xie, Yihui. 2017. &lt;em&gt;Bookdown: Authoring Books and Technical Documents with R Markdown&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ZhaobookdownplusTextbook2017&#34;&gt;
+&lt;p&gt;Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus Textbook&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Manage a blog for the bibliography management optimization</title>
       <link>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
