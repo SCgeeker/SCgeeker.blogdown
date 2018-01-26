@@ -384,7 +384,7 @@ SUCCESS = data.frame(n,PASS_P)
 colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
 print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- html table generated in R 3.4.3 by xtable 1.8-2 package --&gt;
-&lt;!-- Fri Jan 05 20:38:21 2018 --&gt;
+&lt;!-- Fri Jan 26 10:23:51 2018 --&gt;
 &lt;table border=&#34;1&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -551,6 +551,7 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
 ##    assertthat     0.2.0
 ##     backports     1.1.2
 ##     base64enc     0.1-3
+##        beginr     0.1.0
 ##            BH  1.65.0-1
 ##         bindr       0.1
 ##      bindrcpp       0.2
@@ -558,14 +559,20 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
 ##        bitops     1.0-6
 ##      blogdown       0.4
 ##      bookdown       0.5
+##  bookdownplus     1.3.2
 ##           car     2.1-6
 ##       caTools    1.17.1
 ##     checkmate     1.8.5
-##         chron    2.3-51
+##         chron    2.3-52
+##           cli     1.0.0
 ##          coda    0.19-1
 ##    colorspace     1.3-2
 ##      contrast      0.21
+##      cranlogs     2.1.0
+##        crayon     1.3.4
+##          curl       3.1
 ##    data.table  1.10.4-3
+##      devtools    1.13.4
 ##     dichromat     2.0-0
 ##        digest    0.6.13
 ##         dplyr     0.7.4
@@ -574,18 +581,20 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
 ##       Formula     1.2-2
 ##       geepack     1.2-1
 ##       ggplot2     2.2.1
+##         git2r    0.21.0
 ##          glue     1.2.0
 ##     gridExtra       2.3
 ##        gtable     0.2.0
 ##         highr       0.6
-##         Hmisc     4.0-3
+##         Hmisc     4.1-1
 ##     htmlTable    1.11.1
 ##     htmltools     0.3.6
 ##   htmlwidgets       0.9
 ##        httpuv     1.3.5
+##          httr     1.3.1
 ##     iterators     1.0.9
 ##      jsonlite       1.5
-##         knitr      1.17
+##         knitr      1.18
 ##      labeling       0.3
 ##     languageR     1.4.1
 ##         later       0.6
@@ -595,6 +604,7 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
 ##      magrittr       1.5
 ##      markdown       0.8
 ##  MatrixModels     0.4-1
+##       memoise     1.1.0
 ##          mime       0.5
 ##        miniUI     0.1.1
 ##         minqa     1.2.4
@@ -602,8 +612,10 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
 ##       munsell     0.4.3
 ##       mvtnorm     1.0-6
 ##        nloptr     1.0.4
+##       openssl     0.9.9
 ##      pbkrtest     0.4-7
 ##     pBrackets       1.0
+##        pillar     1.0.1
 ##     pkgconfig     2.0.1
 ##         plogr     0.1-1
 ##       plotrix       3.7
@@ -615,12 +627,13 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
 ##          Rcpp   0.12.14
 ##     RcppEigen 0.3.3.3.1
 ##      reshape2     1.4.3
-##         rlang     0.1.4
+##         rlang     0.1.6
 ##        RLRsim     3.1-3
-##     rmarkdown       1.8
-##           rms     5.1-1
-##     rprojroot     1.3-1
+##     rmarkdown     1.8.6
+##           rms     5.1-2
+##     rprojroot     1.3-2
 ##    rstudioapi       0.7
+##       rticles     0.4.1
 ##      sandwich     2.4-0
 ##        scales     0.5.0
 ##         servr       0.8
@@ -631,15 +644,19 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
 ##       stringi     1.1.6
 ##       stringr     1.2.0
 ##       TH.data     1.0-8
-##        tibble     1.3.4
-##       viridis     0.4.0
+##        tibble     1.4.1
+##       tinytex     0.2.8
+##          utf8     1.1.3
+##       viridis     0.4.1
 ##   viridisLite     0.2.0
+##       whisker     0.3-2
+##         withr     2.1.1
 ##        xtable     1.8-2
 ##          yaml    2.1.16
 ##         zipfR    0.6-10
-##           zoo     1.8-0&lt;/code&gt;&lt;/pre&gt;
+##           zoo     1.8-1&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;print(paste0(&amp;quot;There are &amp;quot;,dim(ip)[1], &amp;quot; packages installed in my laptop.&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;There are 92 packages installed in my laptop.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;There are 109 packages installed in my laptop.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Richard’s book inspired me help people control their golems/ststistical models in the process of coding. In his book, literature and codes are separated. Readers who are not familiar with coding skill might hardly follow his literature. Literatural coding might be the best way to impliment the &lt;code&gt;Rethinking&lt;/code&gt;. I am going to accumulating the codes of Bayesian statistics and thake notes of his and others literatures in the coming posts.&lt;/p&gt;
 </description>
     </item>
@@ -663,7 +680,7 @@ Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sig
 Then:&lt;br /&gt;
 &lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2018-01-05 20:38:13&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2018-01-26 10:23:44&lt;/p&gt;
 </description>
     </item>
     
