@@ -324,6 +324,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/en/categories/reproduce-practice/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/categories/reproduce-practice/" hreflang="zh"/>
+    
       <loc>/en/categories/reproduce-practice/</loc>
       <lastmod>2018-01-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -356,6 +359,9 @@
     
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/en/tags/statistics/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/tags/statistics/" hreflang="zh"/>
     
       <loc>/en/tags/statistics/</loc>
       <lastmod>2016-05-31T00:00:00+00:00</lastmod>
