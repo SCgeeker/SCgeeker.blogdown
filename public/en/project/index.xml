@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Sau-Chin Chen&#39;s Website</title>
-    <link>/en/project/</link>
+    <link>http://scchen.com/en/project/</link>
     <description>Recent content in Projects on Sau-Chin Chen&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
     <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/en/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://scchen.com/en/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Orientation Effects</title>
-      <link>/en/project/mental-simulation/</link>
+      <link>http://scchen.com/en/project/mental-simulation/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/en/project/mental-simulation/</guid>
+      <guid>http://scchen.com/en/project/mental-simulation/</guid>
       <description>When we are reading the sentence describing the object in the context, such as &amp;lsquo;The eagle is in the sky&amp;rsquo;, our minds would catch the visual properties of the eagle. This theory has acquired the evidence of the findings from the sentence-picture verification task. In this verification task the target objects matched the probe sentence (e.g., the flying eagle) are verified faster than the target objects mismatched the probe sentence (e.</description>
     </item>
     

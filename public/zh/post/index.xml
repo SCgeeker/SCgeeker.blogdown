@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 暗微幽光</title>
-    <link>/zh/post/</link>
+    <link>http://scchen.com/zh/post/</link>
     <description>Recent content in Posts on 暗微幽光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
     <lastBuildDate>Fri, 23 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/zh/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://scchen.com/zh/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>第一本華文心理學學術期刊開工了</title>
-      <link>/zh/post/%E7%AC%AC%E4%B8%80%E6%9C%AC%E8%8F%AF%E6%96%87%E5%BF%83%E7%90%86%E5%AD%B8%E5%AD%B8%E8%A1%93%E6%9C%9F%E5%88%8A%E9%96%8B%E5%B7%A5%E4%BA%86/</link>
+      <link>http://scchen.com/zh/post/first-chinese-rr-journal/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/%E7%AC%AC%E4%B8%80%E6%9C%AC%E8%8F%AF%E6%96%87%E5%BF%83%E7%90%86%E5%AD%B8%E5%AD%B8%E8%A1%93%E6%9C%9F%E5%88%8A%E9%96%8B%E5%B7%A5%E4%BA%86/</guid>
+      <guid>http://scchen.com/zh/post/first-chinese-rr-journal/</guid>
       <description>台灣最老、華文第一的心理學學術期刊2018/2/22是台灣春節的開工第二日，回到研究室刷一下臉書看到了這則訊息：
 去年我只有在自己服務的學校與中正大學舉辦兩場小型註冊研究工作坊，就向中華心理學刊現任主編姜定宇教授建議：籌備主題式註冊研究特刊，以及允許投稿作者於完成投稿後自行公開手稿。想不到今年開工看到更大的進展：今年起中華心理學刊歡迎作者投稿註冊研究計畫書，並採二階段評審。我想簡介一下這本期刊，還有給一些執行註冊研究徵稿政策的建議。
 中華心理學刊於1958年創刊，是台灣第一本心理學學術期刊，到今年正好一甲子，由台灣心理學會委派來自各領域的台灣資深心理學者擔任編輯。主要任務是提供各國任何心理學領域專業學者，以學者以中文或英文發表論文。2000年之後台灣出現提供臨床心理學與諮商心理學者發表中文論文的期刊，而這兩個領域是台灣心理學界專業人口最多的領域，加上多數中青代學者以投稿國外英文期刊為目標，刊登的論文數量逐漸下降。近年積極爭取轉型，除了舉辦各種專刊徵稿，也終於願意嘗試增加投稿樣態。過去的中華心理學期刊只接授原創性研究論文(research article)的投稿，今年開始徵求註冊研究(registered report)與檢驗原創性研究的重製研究報告(research report)。
@@ -33,10 +33,10 @@ Collabra: Psychology的方針與Society for the Improvement of Psychological Sci
     
     <item>
       <title>電子書草稿上線：心理科學基礎統計</title>
-      <link>/zh/post/basic-statistics/</link>
+      <link>http://scchen.com/zh/post/basic-statistics/</link>
       <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/basic-statistics/</guid>
+      <guid>http://scchen.com/zh/post/basic-statistics/</guid>
       <description>電子書網址
 開始寫這本書有很多緣由，就從遠中近三個時間點的感想來說吧。遠因從我還是大學生小毛頭時開始，那時真正體悟學習統計的要訣，是去聽了幾位老師的授課，自行整理筆記得到收穫。當時讀過的幾本中英文教科書，最後成為案頭書的只有Roger Kirk的Experimental Design。到今天要我推薦初學者值得參考的中文書，我完全無法舉出理想的教材，除非學生有興趣透過學習資料科學入門，才有值得推薦的中文線上教材。
 中程因素是2016年翻譯了Daniel Lakens的線上課程提昇你的統計推論功力(Improving your statistical inferences)，我體會可以從培養學習者的思考實際問題能力，激發學習統計方法的動機，並且掌握正確的資訊。Daniel 使用的教材是近幾年引發心理學再現危機的指標研究，都有公開資料讓人取用。曉得這些研究背後故事，有助如何正確使用統計方法。
@@ -52,10 +52,10 @@ Carlson, Kieth A., and Jennifer R. Winquist. 2018. An Introduction to Statistics
     
     <item>
       <title>`bookdownplus`使用心得</title>
-      <link>/zh/post/use-bookdownplus/</link>
+      <link>http://scchen.com/zh/post/use-bookdownplus/</link>
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/use-bookdownplus/</guid>
+      <guid>http://scchen.com/zh/post/use-bookdownplus/</guid>
       <description>學會使用RMarkdown寫作之後，我一直在尋找能整合研究與教學寫作的方法與工具。認識papaja(Aust and Barth 2017)之後，讓我開始想像有一天我的電腦只會剩下Rstudio與Zotero兩種軟體。但是papaja只適用英文論文寫作，無法滿足經常需要中文寫作的我。接著看到R忍者大師謝益輝開發的bookdown(Xie 2017)，讓我開始燃起希望。不過最終版完全是編輯與出版書本的套件，從此多了個好用的編書工具，還不是全方位的學術寫作工具箱。
 好在正在奧地利因斯布魯克的大學進行博士後研究的趙鵬有相同的需要，自行改良出進階的bookdownplus(Zhao 2017)。bookdownplus提供簡易的指令與多樣模板(templates)。根據說明檔，目前有academic article, book, thesis, poster, 與 journals等學術出版格式模板。還有趙博士個人興趣的poem book與guitar chords模板。這些模板的成品可參考以下來自官方github的截圖：
 ’journal’模板想必會在開放科學界炙手可熱。研究團隊成員可以透過協作，運用’journal’模板紀錄研究過程。研究成果正式出版之後，就能公開讓大眾檢視。
@@ -69,10 +69,10 @@ Carlson, Kieth A., and Jennifer R. Winquist. 2018. An Introduction to Statistics
     
     <item>
       <title>宜家效應：親手組裝的物品真的比較有價值嗎？</title>
-      <link>/zh/post/preregister-ikea_effect-comment/</link>
+      <link>http://scchen.com/zh/post/preregister-ikea_effect-comment/</link>
       <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/preregister-ikea_effect-comment/</guid>
+      <guid>http://scchen.com/zh/post/preregister-ikea_effect-comment/</guid>
       <description>圖片解說：左圖為IKEA台灣區上架的STUVA系列衣櫃，登錄尺寸60x50x192公分，價格新台幣5,690元；右圖為在PChome等網路平台販售的弗斯特單門衣櫃，登錄尺寸40x48x180公分，價格新台幣1,596元。兩者都是消費者購入後自行組裝的DIY衣櫃。
  哈佛大學商學院Daniel Mochon與杜克大學Dan Ariely在2011年提出一個很受商業界歡迎的概念：宜家效應(IKEA effect)。這個概念描述同樣一種在市面上流通的商品，消費者會認為需要自行組裝完成的商品有較高的價值。因為歐美市場裡販賣這類商品的指標品牌是IKEA，所以用命名為IKEA effect。Mochon與Ariely在消費者心理學期刊發表的論文(Norton, Mochon, &amp;amp; Ariely, 2012)，提出實驗證據說明，這是因為消費者自己付出勞動，賦予商品更高價值的心理偏誤，俗稱自我感覺良好。勞動賦值(effort justification)是行為經濟學現在最受歡迎，解釋各種發生類似宜家效應的狀況，背後原因的理論。
 來自英德兩國三所不同機構的學者Lauren Marsh, Patricia Kanngiesser, Bruce Hood想知道宜家效應的根源，是不是從開始有金錢的觀念時就開始在個人心智裡運作，所以找了五至六歲的小孩子，參與一系列他們設計的評價實驗。2018年1月正式於認知(cognition)發表的論文(Marsh, Kanngiesser, &amp;amp; Hood, 2018)，他們報告的DIY玩具評價實驗，顯示六歲小孩確實有符合宜家效應的評價反應，但是與付出勞力的程度沒有必然關係。研究結果似乎從根本挑戰了勞動賦值理論。
@@ -87,10 +87,10 @@ Norton, M. I., Mochon, D., &amp;amp; Ariely, D.</description>
     
     <item>
       <title>閱讀筆記：Paul Meehl談心理學理論失效的十大主因</title>
-      <link>/zh/post/why_psychology_failed/</link>
+      <link>http://scchen.com/zh/post/why_psychology_failed/</link>
       <pubDate>Sat, 30 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/why_psychology_failed/</guid>
+      <guid>http://scchen.com/zh/post/why_psychology_failed/</guid>
       <description>為何值得一讀Daniël Lakens的提昇你的統計推論功力(Lakens 2016)有一講科學哲學，在講授內容與建議閱讀都提到已故美國臨床心理學者Paul Meehl於1990年發表於Psychological Reports的論文Why Summaries of Research on Psychological Theories are Often Uninterpretable(Meehl 1990)。完成課程中文化與舉辦註冊研究工作坊之後，我對中文心理學社群對心理學再現危機的體認不足有更深的認識。這段時間也抽空觀看Paul Meehl於1989年講授哲學心理學的課程錄影(Yonce 2017)，我發現他很早就了解今日許多歐美心理學者擔心的問題，還有提出解決的對策，有些對策呼應今天的開放科學主張。1990年的論文是Paul Meehl觀察心理學研究劣質化原因的總結，要學習他洞察問題的眼光，這篇論文與哲學心理學課程內容是最好的開始。
 Paul Meehl其人Paul Meehl最為人所知的貢獻是與同事Lee Cronbach（正是提出Cronbach’s α的心理學者），一起提出建構效度的觀念，以及操作方法：法則關聯(Nomological network)(Cronbach and Meehl 1955)。在哲學心理學的第5講，Paul Meehl親自說明建構效度來自科學哲學家Karl Popper的否證論形式邏輯推演。他的學術生涯持續進行的工作是把Popper的否證論，與其高徒Lakatos主張科學家研究應該保持的其他條件不變(ceteris paribus)，轉化為心理科學研究能實際運用的準則與操作方案。哲學心理學的第六講至第八講，Paul Meehl詳細解說Why Summaries of Research on Psychological Theories are Often Uninterpretable這篇論文的重要主張，留下他對當時多數心理學理論與研究結果經不起考驗的觀察與想法，以及他向未來的學者們提出的對策。
 不牢靠理論的三大特徵跨越1950至1980年代，Paul Meehl見識許多曾發表於期刊的新穎理論，因為研究結果無法被其他學者重現，幾年之後乏人問津的案例。他歸納經不牢靠的心理科學理論有三種特徵，第一是理論的命題通常不可計量，第二是理論的初期證據主要是相關性資料，第三是理論的成立標準不是可預測的參數。命題不可計量的理論只有提示研究的方向，沒有列舉能確證與否證理論命題的基本條件。以否證論的形式來說，這種理論不具備科學意義。理論命題能不能計量，是判斷理論好壞的基本條件。 第二種與第三種特徵反映在科學社群實際的研究作為與態度，依賴相關性資料是因為關心的變項無法隨機，或者研究者認為必須接受未知誤差的存在；第三種是逕取某項非零的顯著測量結果，當做理論成立的證據。有三種特徵的研究報告所呈現的效果經常是數值龐大(sizeable)，正負不一致(opposed)，變異範圍廣(variable)，與真實效果無法估計(unknown)等特色。我為了方便理解，姑且借用棒球術語，稱呼這類研究報告叫四壞球(base on balls)。在棒球比賽裡，投手投出四壞球，打者就立刻保送上一壘。好比未被嚴謹檢驗的研究結果，因為從規劃實驗到論文評審的一系列粗糙操作，而成功發表。Paul Meehl指出因四壞球成功發表的研究結果，不是好理論的劣質證據，就是粉飾差勁理論的神奇結果。
@@ -100,10 +100,10 @@ Norton, M. I., Mochon, D., &amp;amp; Ariely, D.</description>
     
     <item>
       <title>開放科學與資料科學如何兼容？</title>
-      <link>/zh/post/text_2017011/</link>
+      <link>http://scchen.com/zh/post/text_2017011/</link>
       <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017011/</guid>
+      <guid>http://scchen.com/zh/post/text_2017011/</guid>
       <description>按：這是為2017/11/11將在台灣資料科學年會發表的演講，所寫的文字稿。演講投影片以圖像為主，講述幾個相關的故事。文字版濃縮我想傳達的想法與觀察，為一年之後有機會再做演講時，比較此時與彼時的變化。
 三年前(2014)，我得知Many Labs Project的出現，開始注意這種大規模合作的心理學研究，將對心理科學的研究文化產生什麼影響。這類專案運用的資料科學方法，帶領我在隔一年透過Coursera自學資料科學課程，並嘗試翻新自已的研究與教學內容。這一段時間，我曾以為我從事的科學研究要向資料科學學習，才能有所突破。又一年，經歷與國外推動開放科學的學者第一手合作註冊研究的經驗，認清如果要更新我所從事的經典科學，要先覺悟長久習慣的研究手段容易造成低品質的科學成果，吸納資料科學的可重製方法，改善個人乃至團隊的科學活動品質，經典科學才能蛻變為開放科學。
 為何稱呼我從事的科學是經典科學？這要從經典科學與資料科學的根本分際談起。從目的來說，任何領域的經典科學是要根據可重現的事實建立能被考驗的理論。資料科學追求能有效預測、控制現象發生的模型。中央研究院資訊所陳昇瑋老師的知名簡報：網路購書大數據－給出版者的洞察分析，其中所舉的三種類型暢銷書預測模型，體現資料科學所追求的目標。把這些模型放到經典科學的場域，提問的方向應該會變成：「這些模型能呈現這個社會的閱讀品味嗎？」
@@ -119,10 +119,10 @@ Norton, M. I., Mochon, D., &amp;amp; Ariely, D.</description>
     
     <item>
       <title>更嚴苛的標準能否打造嚴謹的科學？</title>
-      <link>/zh/post/text_2017010/</link>
+      <link>http://scchen.com/zh/post/text_2017010/</link>
       <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017010/</guid>
+      <guid>http://scchen.com/zh/post/text_2017010/</guid>
       <description>為何要重新定義統計顯著水準？就在今年七月下旬，來自重要的社會科學領域：有心理學、社會學、經濟學、政治學等，著作等身的72名資深學者。合作撰寫論文“Redefine statistical significance”，倡議從今天起，所有科學研究的統計顯著水準標準，從.005開始起算。經過一個多月的熱議，這篇論文已於九月一日被Nature Human Research正式接受。
 這篇論文現世之前，使用統計檢定分析資料的研究者，在各自的專業領域內依靠有共識的水準，判斷結果是否符合預期或假設。像是心理學、教育界、以及許多醫療研究，採取多數學過統計者熟知的.05。公認是硬科學的高能物理研究，採用5個標準差之外的.000006做為顯著水準。雖然.005與.000006依然有不小的差距，比一般接受的.05是嚴苛十倍的標準。此倡議一出，立刻有新進學者表達，採此標準，會增加研究所的樣本(估計增加70%才能達到.005)，且不利新想法被人看見的意見。
 提出這項倡議的主要目的是改善社會科學領域，充斥高比例偽陽性結果(false-positive results)的新奇研究現象。這類研究的特徵是研究想法有創意，設計符合最起碼的科學標準，但是分析結果只是剛好小於.05，而且尚未有可信的重現研究結果。這種研究非常有可能無法被重現，例如兩個月前我注意到的這一篇。Benjamin等72位學者倡議改成.005的重要理由，是如此能明顯降低偽陽性結果的，就像以下由這份論文再製的模擬結果。可以看到不論研究者事前對自己的理論能獲得研究結果支持的賠率(Prior Odds)有多高，整體而言.005的偽陽率比.05的偽陽率少了一半。
@@ -139,10 +139,10 @@ Norton, M. I., Mochon, D., &amp;amp; Ariely, D.</description>
     
     <item>
       <title>「提昇你的統計推論功力」中文資源使用說明及學習指南</title>
-      <link>/zh/post/text_2017009/</link>
+      <link>http://scchen.com/zh/post/text_2017009/</link>
       <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017009/</guid>
+      <guid>http://scchen.com/zh/post/text_2017009/</guid>
       <description>中英字幕對照檔已於8/21上傳Coursera，有註冊Coursera的朋友可直接在平台觀看有中文字幕的影片。這份指南與教材的翻譯文本是繁體中文，大陸及港澳地區朋友，如果閱讀中無法習慣字體與詞彙用語，請多多見諒。
 終於完成Coursera的課程「提昇你的統計推論功力」( Improving your statistical inferences )教材(每週課程說明，影片字幕)第一階段中文翻譯。這門課程是由荷蘭埃因霍溫科技大學副教授Daniel Lakens設計講授，於2016年10月上架。因為我從2015年起就訂閱Daniel的部落格「20%的統計學家」(The 20% Statistician )，所以首先是從他發佈的部落格貼文得知。當時我正在荷蘭進行訪問研究，也正在學習使用這門課程推廣的幾種統計分析方法，所以我就聯絡Daniel，願不願意讓更多中文世界的學者與學生們認識這門課程？他欣然接受這個點子，於使我們一起在OSF開了一份公開專案，開始了第一階段影片字幕翻譯計畫：翻譯並公開每週課程介紹與影片字幕，讓有興趣但英文閱聽能力有限的華文人士，可以理解課程內容，直接使用課程資源。並且也歡迎各方高手協助校正，為第二階段作業資源中文化工作做準備。
 Daniel Lakens曾參與2015年轟動全球，不到40%心理學研究可被再現的「心理學再現研究專案」資料分析工作。Daneil因為自己博士班時期的原創研究無法被他人成功再現，決心深入學習多數心理學家幾乎不接觸的數理與生物統計學，他把學習成果轉化為多篇幫助心理學家改善研究設計與統計分析的論文。還以每篇論文為基礎，撰寫至少一篇部落格文章，這門課程可說是他整理個人近幾年研究與教學的精華。
@@ -165,10 +165,10 @@ Daniel Lakens曾參與2015年轟動全球，不到40%心理學研究可被再現
     
     <item>
       <title>再等等，你確定這不是「雷」研究嗎？</title>
-      <link>/zh/post/text_2017008/</link>
+      <link>http://scchen.com/zh/post/text_2017008/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017008/</guid>
+      <guid>http://scchen.com/zh/post/text_2017008/</guid>
       <description>本文印證第一手劣質科學研究，確實會被不了解如何評估品質的科普作家，當成有價值的新知。本文提出的分析與建議，適用於任何內容及情節相似的科普案例，並非針對性批判讓我得知這件案例的科普作家知識能力。
  七月底準備出國開會之前，在RSS訂閱通知看到這一篇科普文章&amp;ldquo;等等，你確定這不是假新聞嗎？&amp;rdquo;，介紹美國哥倫比亞大學商學院Johar Gita率領的團隊，發表在《美國國家科學院院刊》的事實查核的心理學研究。看到介紹文章第二段之中的一句話&amp;rdquo;研究者以一系列八個實驗來告訴大家一件事&amp;rdquo;，勾起了我的好奇心，找來原始論文一讀。讀了沒多久，發現了三件事情，讓我決定寫這篇網誌呈現我的分析，提供中文科普作者與讀者另一個觀點：
 1. 這篇論文的責任編輯是Susan Fisk。
@@ -193,10 +193,10 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
     
     <item>
       <title>讀書心得：現代心理科學的七大罪</title>
-      <link>/zh/post/text_2017007/</link>
+      <link>http://scchen.com/zh/post/text_2017007/</link>
       <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017007/</guid>
+      <guid>http://scchen.com/zh/post/text_2017007/</guid>
       <description>物理學家理查．費曼(Richard Feyman)於1974年加州理工學院的畢業典禮致辭，有以下兩段內容：
  大戰期間在南太平洋有一些土人，看到飛機降落在地面，卸下來一包包的好東西，其中一些是送給他們的。往後他們仍然希望能發生同樣的事，於是他們在同樣的地點鋪飛機跑道，兩旁還點上了火，蓋了間小茅屋，派人坐在那裡，頭上綁了兩塊木頭（假裝是耳機）、插了根竹子（假裝是天線），以為這就等於控制塔裡的領航員了──然後他們等待、等待飛機降落。他們被稱為草包族，他們每件事都做對了、一切都十分神似，看來跟戰時沒什麼兩樣；但這行不通：飛機始終沒有降落下來。這是為什麼我叫這類東西為「草包族科學」，因為它們完全學足了科學研究的外表，一切都十分神似，但是事實上它們缺乏了最重要的部分──因為飛機始終沒有降落下來。
 她很喜歡這個新構想，跑去跟教授說；但教授的回答是：「不，你不能那樣做，因為那個實驗已經有人做過，你在浪費時間。」這大約是一九四七年的事，其後那好像變成心理學的一般通則了：大家都不重複別人的實驗，而單純地改變實驗條件看結果。
@@ -220,10 +220,10 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
     
     <item>
       <title>披薩門(*1)：「瞎吃」教主的完美自爆</title>
-      <link>/zh/post/text_2017006/</link>
+      <link>http://scchen.com/zh/post/text_2017006/</link>
       <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017006/</guid>
+      <guid>http://scchen.com/zh/post/text_2017006/</guid>
       <description>註1: 本文標題借用哥倫比亞大學統計學教授、知名學術部落客安德魯．蓋爾曼(Andrew Gelman)從2017年1月31號起，在個人部落格對此事件的稱呼(Pizzagate)。早在2016年聖誕節之前，安德魯教授就眉頭一皺，發覺案情並不單純。
  如果你是位關心人類飲食習慣研究最新資訊的科普作家，在2016年11月21日看到出版暢銷書「瞎吃」(Mindless Eating: Why We Eat More Than We Think)的康乃爾大學布萊恩．汪辛克教授（Brian Wansink）在個人部落格張貼的文章「永不說“不”的研究生」，應該會想寫篇文章轉述教授與這位研究生的合作成果。轉述內容必定會引用這篇文章提到的論文，以及評論為何一夥人想聚餐吃披薩，總是以吃到飽餐廳做為首選。然而汪辛克教授的首版部落格文章，有幾段文字吸引了近幾年學術圈內惡名昭彰的方法學恐怖份子(methodological terrorists)注意，2017年開始沒有幾天，文章裡提到的四篇論文就被挑出多達150筆錯誤的統計數字。汪辛克看到這篇尚未經同儕審查的論文，完全無法辯解被指出的錯誤，只能在原始部落格文章兩度發佈追加致歉訊息，還有向各方聲明會針對出現錯誤的四篇論文，檢討自己的研究方法與指導學生的方式，並召集人員重新進行核實研究。另一方面，有媒體記者關心近幾年社會科學虛假報告不斷被揭發的爭議，向大學及實驗室公關請求採訪汪辛克本人有關數據為何出錯的細節，汪辛克卻做出出道二十多年以來，首次閃避媒體採訪的舉動。究竟汪辛克在個人部落格說了什麼話而引起這新一波學術爭議？論文中的錯誤怎麼被人挑出來？「方法學恐怖份子」又是何方神聖？
 公開示範人為逼出的顯著結果(p-hacking) 汪辛克在部落格文章提到剛發表的五篇論文，是與一位來自土耳其，與他短期合作的研究生，一起分析一批以前在某家義式餐廳收集完成的資料。文章中提到當時他對這位研究生說「收集這些資料花了很多時間與經費，因為這批資料裡可以挖出很多酷玩意，我們應該能做點什麼補救。」(&amp;rdquo;This cost us a lot of time and our own money to collect. There&amp;rsquo;s got to be something here we can salvage because it&amp;rsquo;s a cool (rich &amp;amp; unique) data set.&amp;rdquo;)。他們的討論過程提到幾個可能的補救方式，也提到如果這位研究生願意出手的話，汪辛克期望看到的分析結果與圖表是什麼模樣(&amp;rdquo;I told her what the analyses should be and what the tables should look like. I then asked her if she wanted to do them.</description>
@@ -231,10 +231,10 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
     
     <item>
       <title>擺姿勢也許能增加你的自信，但是不能真正改變你</title>
-      <link>/zh/post/text_2016005e01/</link>
+      <link>http://scchen.com/zh/post/text_2016005e01/</link>
       <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2016005e01/</guid>
+      <guid>http://scchen.com/zh/post/text_2016005e01/</guid>
       <description>初稿2016/10/6 12:59:58上線
 一校2016/10/6 21:50:00完成
 二校2016/10/11 22:33:00完成 加強版：增加2017年2月22日TED訪問Amy Cuddy的摘要，以及各方評論。
@@ -247,10 +247,10 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
     
     <item>
       <title>時態門～無法再現的社會心理學實驗是因為不乾淨的資料</title>
-      <link>/zh/post/text_2017004/</link>
+      <link>http://scchen.com/zh/post/text_2017004/</link>
       <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017004/</guid>
+      <guid>http://scchen.com/zh/post/text_2017004/</guid>
       <description>去年我寫的網誌「紀錄已經出現與即將出現的再現危機1」，介紹加拿大阿拉巴馬大學社會心理學助理教授William Hart於2013年發表在心理科學期刊的論文Learning About What Others Were Doing: Verb Aspect and Attributions of Mundane and Criminal Intent for Past Actions，無法被12間實驗室再現的事件。這個月初(2&amp;frasl;7)心理科學期刊宣佈撤銷William Hart於2013年發表的另一篇論文Unlocking Past Emotion: Verb Use Affects Mood and Happiness，使得事件有新的發展。這篇網誌整理至今為止，這兩篇論文牽涉的資料造假證據如何浮現。
 描述過去經驗的動詞時態能影響當下情緒？ William Hart的兩篇論文都是檢驗一個假設：描述一項事件的文字所使用的動詞時態(verb tense)，會影響聽者對事件的信念與情感。這兩篇論文讓受試者評估的敘事文，都有設計動詞是非完成時態(I am walking on &amp;hellip;)與完成時態(I walked on &amp;hellip;)兩種版本，2011的論文請受試者假想自已是陪審團團員，判斷一件虛擬的兇殺案情節裡，嫌疑人有沒有意圖殺害被害人。2013的論文有四個實驗，讓受試者以非完成或完成時態，回憶正面或負面記憶–包括個人或在實驗室裡操作的情節。2011年的研究假設完成時態較容易讓人相信嫌疑人有犯意，2013的研究假設非完成時態讓受試者能回憶負面記憶的更多細節，造成比完成時態更大的負面情緒。
 2011論文的掛名作者是William Hart與UIUC的Dolores Albarracín，但是2013論文是William Hart單獨掛名。根據Retraction Watch的消息，是由實際參與2013論文研究的某位不具名的研究生，向阿拉巴馬大學的研究核實辦公室(Office of Research Compliance)舉發，提出這份論文原始資料的加工證據。校方通知心理科學期刊編輯部後，由期刊做出撤稿決定。讀者下載2013年論文會發現，包括摘要的每個段落，幾乎都有第一人稱代名詞開頭的句子，像是I tested&amp;hellip;, I examined, I analyzed&amp;hellip;。雖然現代學術論文寫作指引建議作者可以適當地使用人稱代名詞，但是使用頻率如此之高，足以媲美現任美國總統川普先生的公開演講。
@@ -262,10 +262,10 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
     
     <item>
       <title>從科學危機認識開放科學(科學月刊投稿版)</title>
-      <link>/zh/post/text_2017003/</link>
+      <link>http://scchen.com/zh/post/text_2017003/</link>
       <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017003/</guid>
+      <guid>http://scchen.com/zh/post/text_2017003/</guid>
       <description>「Thinking, Fast and Slow」(中譯：快思慢想)是諾貝爾經濟學獎得主丹尼爾．卡尼曼(Daniel Kahneman)於2011年出版的心理學科普好書，各國譯本至今仍保持不錯的暢銷度。然而出版的同一年，許多社會心理學研究無法再現的批評逐漸浮出檯面。在「快思慢想」的第四章裡，卡尼曼引用大量的社會心理學「促發效應研究」(Priming Effect)，為他所定義的「系統一」提供研究證據。這類研究的模式是比較兩組受試者在不同情境的安排裡，運用設計好的量尺對研究者 設定的目標進行價值判斷，研究者以組間判斷的差異推論情境存在導致「促發效應」的原因。「促發效應研究」假設其中一種情境能引發受試者內隱聯想(implicit association)，無意識地影響價值判斷。然而，卡尼曼在這一章所引用的一系列研究，已經被確認或推測難以在接近的條件下再現。這個例子顯示原來只有心理學家與統計學家關注的心理科學危機(Crisis in Psychological Science)，有可能演變為科普危機(Crisis in Popular Science)。
 本文以「快思慢想」第四章引用，證實臉部表情回饋假說(Facial Feedback Hypothesis)實質性的經典實驗，如何被確認難以再現的故事，介紹科學家為扭轉這一連串危機而啟動的開放科學運動(Open Science)。臉部表情回饋假說在「快思慢想」上市之前就在許多心理學課程中講授，最廣為人知是1988年德國心理學家弗列茲．斯崔克(Fritz Strack)報告的實驗結果。他請兩組受試者用嘴巴含住原子筆，以這樣的姿勢在評分紙上，為五則幽默漫畫的好笑程度評分。其中一組用牙齒咬住，自然呈現微笑表情(見圖一)，另一組用嘴唇含筆，呈現無情緒的表情(見圖二)。斯崔克發現前者的評分顯著高於後者，可證實臉部表情回饋假說的合理性。後續研究稍微更改原始操作，像是請受試者以嘴巴含著筆，用手做反應，但是得到的結果各不相同。然而更重要的是，原始研究從未在相同的條件下重覆驗證，研究內容又經過許多教科書與科普作品的間接轉述，讓很多人以為只要像圖一的女孩一樣含著筆，心情自然就會好起來。
 嘴唇含筆示範圖。取自示範投影片。
@@ -288,10 +288,10 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
     
     <item>
       <title>註冊研究(Registered Research)</title>
-      <link>/zh/post/text_2017002/</link>
+      <link>http://scchen.com/zh/post/text_2017002/</link>
       <pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017002/</guid>
+      <guid>http://scchen.com/zh/post/text_2017002/</guid>
       <description>我曾在纪錄已經出現與即將出現的再現危機與開放科學在荷蘭談過註冊研究。這篇文章整理個人經驗與收集各方資料，完整說明現在的心理科學研究如何規畫與執行註冊研究，做為個人研究與教學，以及向各方推廣註冊研究的參考依據。註冊研究發展至今已進入核心觀念穩定的階段，正由熱心的科學研究者在不同科學領域推廣落實。2015年之後值得注意的研究成果，除了心理科學的100項重要期刊論文之可再現性，50項高引用數癌症研究之可再現性的研究成果正在陸續公開，不論最後的結果是讓人振奮或令人失望，2017年很可能是註冊研究執行樣態向所有科學領域拓展的重要時機。未來如果出現值得宣傳的概念或方法，以及個人認為重要的突破，會適度補充更新文章內容。
 什麼樣的研究可以成為註冊研究？ 以我的理解，只要是有系統地累積資料或事實，分析資料提出能更新人類知識的論述，研究題目都可以成為註冊研究。開放科學中心(Center of Open Sciences)整理各種學科領域的註冊研究樣態，歸納出四項要件：(1)有明確的研究問題(Research Question)；(2)掌握樣本母群與合理樣本數(Population and sample size)；(3)能回應研究問題的研究設計(General design)；(4)依照設定的變項(variables)或已編碼的資料集(dataset)處理資料。
 趁著一年一度奥斯卡金像獎即將到來，我藉勢設定一個範例研究：「入圍年度奧斯卡且正在台灣各地電影院上映的電影，一旦獲獎，台灣民眾會不會更願意進電影院觀賞？樣本來源就是奧斯卡頒獎典禮前一個月與後一個月的票房資訊，能回答問題的設計是列舉這兩個月期間，正在台灣上映的入圍電影的票房資料，要分析的資料是這些電影在典禮前後的票房收入與放映廳數。」。範例中的設定涵蓋以上提到的四個要件。　我相信無論是熟悉或正在學習研究方法的研究者，都能根據四項要件擬定這個題目的假設與方法，寫出更充實的計畫書。然而不論計畫書寫得多麼長，參考文獻有多豐富，實際操作往往是另一回事。研究過程中會遇到許多誘因或阻礙，讓研究者中途更改研究計畫的設定。即使得到會讓人感興趣的結果，資料分析也變得不可信。註冊研究就是要研究者遵循自己設定的假設與方法，自始至終地貫徹執行。接下來我要說明為何今天的研究者需要適應註冊研究，以及現在的研究者能運用什麼樣的資源，完成內容可信的註冊研究。
@@ -310,10 +310,10 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
     
     <item>
       <title>影片介紹：科學家之路</title>
-      <link>/zh/post/text_2017001/</link>
+      <link>http://scchen.com/zh/post/text_2017001/</link>
       <pubDate>Sun, 29 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2017001/</guid>
+      <guid>http://scchen.com/zh/post/text_2017001/</guid>
       <description>沒有想到有一天我會寫影劇介紹文，這部有意思的影片是找尋資料時的意外發現。荷蘭萊登大學(Leiden University)在2016年4月於校內首映並在youtube公開自製的微電影「科學家之路」(On Being a Scientist)。第一次知道這部影片的朋友，可以先花一小時來看看，或者先往下看劇情簡介與角色介紹：
  這部微電影由萊登大學的MOOCs製作與發佈，演員都以英語發音，英聽好的朋友都能了解劇情。不過每一幕之間切換與跳躍手法很像好萊塢的懸疑片，雖然重要角色只有四位，要在前十五分鐘內認識他們，加上理解彼此的關係會有些吃力，可能無法抓住這部影片的主題。以下簡介四位角色的設定與關係：
  Nicholas: 本劇主角，一位曾獲得學術榮耀的科學家，如同所有處於學術生涯巔峰的科學家，整天忙著做研究發論文，還有訓練新一代科學家。故事從他接受某所知名大學聘任開始。
@@ -327,10 +327,10 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
     
     <item>
       <title>JASP~操作像SPSS的程序可重製統計開源軟體</title>
-      <link>/zh/post/text_2016007/</link>
+      <link>http://scchen.com/zh/post/text_2016007/</link>
       <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2016007/</guid>
+      <guid>http://scchen.com/zh/post/text_2016007/</guid>
       <description>趁著這陣子台灣最高學府的學術醜聞細節不斷浮出，許多經常使用統計軟體分析資料的人士多少會回憶使用套裝統計軟體的痛苦經驗。像是都用SPSS，分析同一份資料，為什麼學長姐能跑出顯著結果，我怎麼調都做不出相同的結果。如果你有類似的際遇，就值得認識這套開源統計軟體JASP，並且試著今天就開始更新手上的統計工具。
 JASP的開發團隊 JASP是由荷蘭阿姆斯特丹大學心理學系教授Eric-Jan Wagenmakers(以下簡稱EJ)主持的實驗室，以及長期合作的程式設計師一起開發與更新。EJ研究貝式統計學的應用多年，2014年出版為認知科學研究而寫的教學書藉Bayesian Cognitive Modeling，也開始JASP的開發以及每年定期舉辦工作坊。JASP的核心是R套件BayesFactor，由Richard Morey等三位計量心理學者為讓R使用者能簡易計算貝式因子(Bayes Factor)而開發，所以JASP從一開始就走開源之道。Richard Morey也是JASP開發團隊核心成員，也和EJ一起擔任工作坊講師。 因為核心成員是貝式統計的專家，JASP不僅能做傳統的統計，簡單實驗的貝式統計，如比較兩組平均數的貝式因子，都可以用JASP計算，並且操作方式與SPSS一樣，所以就算你還不明白貝氏因子，甚至也不甚了解貝式定理，也可以用手上資料計算貝式因子。EJ已公佈工作坊教材，有心的讀者可運用。本文採用EJ今年的代表作，臉部回饋表情假設經典實驗的再現研究，做個初步示範與說明。
 入門影片示範 JASP的下載與安裝與一般開源軟體完全相同，有windows，Mac與Linux三種平台版本。有意使用的讀者可以從官網下載適合個人作業系統的版本。如何開始第一次使用，官網有工程師的youtube示範影片，雖然現在的版本0.8.0.0比示範影片的新，但是操作都是相同的，最新版可做初階因素分析，所以有問卷資料要分析的讀者可以試試看。 注得一提的是輸出結果檔能上傳OSF，可以直接在專案網頁瀏覽，而且其它使用者下載結果檔，用自已的JASP打開後，可以檢視及調整原作者的軟體設定。細節可參考官網影片示範。如此一來，實驗室的學長姐畢業後，能無痛交接給學弟妹了。
@@ -349,10 +349,10 @@ JASP的開發團隊 JASP是由荷蘭阿姆斯特丹大學心理學系教授Eric-
     
     <item>
       <title>開放科學在荷蘭</title>
-      <link>/zh/post/text_2016006/</link>
+      <link>http://scchen.com/zh/post/text_2016006/</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2016006/</guid>
+      <guid>http://scchen.com/zh/post/text_2016006/</guid>
       <description>相信大家聽過一個名詞：科學普及(Popular Science，簡稱科普)，這是由專業科學家，書寫通俗易懂的書藉文章或進行公開演講，也可能參與媒體節目，向大眾傳播科學家們殫心竭慮收集分析資料後產生的知識精華。英語世界的科普活動已有數十年的歷史，至今已出現不少投入科普活動的知名科學家。中文世界最近較知名的例子，當然是謝伯讓老師的大腦簡史。而你正在閱讀的本文，要介紹比科普更進一步，將科學知識透明化與公開化的開放科學運動(Open Science)。
 開放科學運動之興起 開放科學運動的成因在歐美學術圈之內蘊釀已久，比較為大眾所知的近因可從諾貝爾經濟學獎得主Daniel Kahneman的科普佳作《快思慢想》（Thinking, Fast and Slow）見到端倪。Kahneman在書中引用一系列社會心理學「促發效應」(Priming effect)研究，佐證要推銷給讀者的核心概念：「人類心智能運用環境中的提示，在自動與主控的認知系統之間切換。」然而，就在這本書出版當年，統計學家運用剛開發出來偵測出版偏誤（publication bias）的方法，確認這一系列「促發效應」的研究論文報告的真實效果極低，只是剛好達到統計顯著的指標而已。以常用的統計顯著水準0.05做比喻，只是在二十次失敗實驗之後，剛好出現唯一一次成功實驗的結果。這篇文章要正式定稿前，長期研究心理科學研究再現性的社會心理學家Ulrish Schimmack在個人部落格貼出專業分析文：「Reconstruction of a Train Wreck: How Priming Research Went off the Rails」，分析這一系列促發研究如何引導社會心理學往無法獲得可靠知識的方向發展，讓這類文獻如同脫軌的火車衝撞好不容易建立起來的知識體系。雖然《快思慢想》的開頭九章，是Kahneman建立畢生學問精華的基石，卻因為充滿瑕疵證據的第四章，讓整本《快思慢想》的科學知識價值打了折扣（註1）。
 促發效應的案例呈現科學社群之內長久不為人知的一面，但是「快思慢想」的瑕疵更顯現這類研究案例經歷長久發展之後，對科普造成難以逆轉的傷害，甚至是大眾對專業科學家的信任。
@@ -370,10 +370,10 @@ QRTEngine 我的研究有一部分需要透過網路問卷平台Qualtrics進行�
     
     <item>
       <title>纪錄已經出現與即將出現的再現危機~2016版</title>
-      <link>/zh/post/text_2016004/</link>
+      <link>http://scchen.com/zh/post/text_2016004/</link>
       <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2016004/</guid>
+      <guid>http://scchen.com/zh/post/text_2016004/</guid>
       <description>紀錄的理由 註冊再現研究(Registered Replication Report，以下簡稱RRR)廣為世人注意，是2015年發表於科學期刊的Estimating the reproducibility of psychological science。實際上有多項RRR從2012年開始運作，2014年就有論文發表，例如In vestigating Variation inReplicability: A &amp;ldquo;Many Labs&amp;rdquo; Replication Project。心理科學協會(Association for Psychological Science)在2014年開始徵求跨實驗室合作的RRR項目，完成的研究刊登於協會發行的專業期刊Perspectives on Psychological Science。從第一項RRR成案開始，協會公開RRR近況網頁，讓各界可以追蹤每件RRR項目的近況與結果。這項紀錄撰寫於2016年七月下旬至九月上旬，這段期間網頁已登錄8件項目，其中三件已經結案並發表論文，四件已結案尚在撰寫報告(其中兩件在2016年8月被正式接受)，最新一件正在徵求合作團隊。已正式發表的三件只有一件能成功再現原始研究的部分結果，令人好奇還未正發表的其他五件結果會是如何？
  奠基研究(Capstone Research) 在特定領域中有高引用數的原創性研究，引用該研究的研究直接或概念性重現原創性研究的方法與發現，逐漸形成正面支持這項原創性研究論點的發表鏈。這項原創性研究在主觀或客觀來看，吸引許多研究者嘗試確認研究結果，或探索研究結果啟發的新問題。
  比起一次性再現多項研究的Estimating the reproducibility of psychological science，心理科學協會支持的RRR項目是針對一項或數項奠基研究(capstone research)，招募實驗室或個人依照同一份計劃協議(protocol)同時進行獨立研究。協議內容是收集與分析資料的標準化程序：含刺激材料、施測軟硬體設置、招募參與者的人數與條件、資料處理及分析的流程、研究過程的紀錄格式、以及最後獨立報告的撰寫格式。發起RRR項目的總主持人會延請原始研究的主要發表者檢視計劃協議，待原始研究者同意協議細節之後，才會正式招募有意參與的團隊。所有RRR項目可以看成各方有志一同的研究者，針對學界有共識但存在爭議的奠基研究，進行炮口一致的集火射擊，檢驗這份研究能否經得起再現性考驗。
@@ -388,10 +388,10 @@ Hart &amp;amp; Albarracín (2011):Linguistic Cues and Firing Guns已完成。己
     
     <item>
       <title>荷蘭科研補助機構推動提昇科研品質的五年計劃（一）：訊息整理</title>
-      <link>/zh/post/text_2016003/</link>
+      <link>http://scchen.com/zh/post/text_2016003/</link>
       <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2016003/</guid>
+      <guid>http://scchen.com/zh/post/text_2016003/</guid>
       <description>此文有三個系列構成：(一)2016年報導與查證的整理；（二）近十年重要事件回顧；（三）科學社群與社會大眾如何理解這項計劃
 第一系列將以三個版本發展。第一版：初期報導及相關文章整理，構成大綱；第二版：彙整求證資訊與回饋；第三版：修正前版錯誤，補充重要資訊。
  在今年來荷蘭進行訪問研究之前，已知道荷蘭有一群不同領域的學者，開始投入或促進科學研究領域轉向開放科學導向(open science)。2016年6月得知荷蘭政府準備在五年內逐步投資八百萬歐元，進行全國性科研品質調查與相關研究，以及補助針對有影響力的研究成進行再現研究。為了說明兩項政策將如何影響荷蘭科學研究的品質，我將以三篇文章說明與評論。首先介紹兩項政策的訊息，再來談促成兩項政策出現的歷史因素，最後從科研人員與社會大眾的角度，談談如何理解科研政策的變化對一國教育文化的影響。
@@ -408,10 +408,10 @@ Replication Studies pilot 這項政策是以重現各科研領域的奠基研究
     
     <item>
       <title>Donders 與 de Groot：兩位荷蘭心理學者代表的時代精神</title>
-      <link>/zh/post/text_2016002/</link>
+      <link>http://scchen.com/zh/post/text_2016002/</link>
       <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2016002/</guid>
+      <guid>http://scchen.com/zh/post/text_2016002/</guid>
       <description>這篇文章的寫作動機在兩年前讀過Acta Psychologica重新出版的荷蘭心理學者Adriaan de Groot論文–The meaning of “signiﬁcance” for different types of research，就有動筆的想法。在鹿特丹待滿三個月，研究也稍有成果的時候，我想一起介紹心理計時學之父Franciscus Donders的代表著作。讀兩位學者的代表作，可以了解心理學者在不同時代的歷史任務，看到當時的成就如何對今日的心理科學產生影響。
  讀論文看數個世代的荷蘭心理科學發展 Acta Psychologica是由在歐陸活躍的心理學者主導編輯，從1936年開始出版論文至今的實驗心理學學術期刊。1969年與2014年，首篇心理計時學論文出版一百週年以及Adriaan de Groot的百歲冥誕，Acta Psycholigca翻譯並重新出版兩位在1869與1956年以荷文在荷蘭國內研討會與心理學期刊發表的論文。我從交錯書寫兩位學者的生平與代表論文的意義，整理兩位的貢獻與今日心理科學面對的時代課題。Donders的論文是On the speed of mental processes，de Groot的論文是The meaning of “signiﬁcance” for different types of research。兩篇論文皆非開放取用論文，有興趣找來閱讀的讀者請自行透過合法管道取閱。
 Franciscus Cornelis Donders Donders是1818年在Tiburg出生，大半輩子在Utrecht生活與工作的職業眼科醫師。他的醫師生涯收集許多眼球標本，解剖研究發現玻璃體(Vitreous humor)與光線折射的關係，進而提出今日眼科醫師和驗光師測量近視度數的方法，這套方法在眼科醫學被稱為Donder&amp;rsquo;s Law。
@@ -424,10 +424,10 @@ Adriaan de Groot 認識de Groot教授的論文是2014年時曾寫過一系列談
     
     <item>
       <title>啟動你對促發實驗的認識</title>
-      <link>/zh/post/text_2016001/</link>
+      <link>http://scchen.com/zh/post/text_2016001/</link>
       <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>/zh/post/text_2016001/</guid>
+      <guid>http://scchen.com/zh/post/text_2016001/</guid>
       <description>什麼是促發實驗(Priming Experiemnt)？ 今年4月4號在家鄉台灣還在過清明長假的時候，我在臉書發現有人轉貼民報的報導： 【獨家】電競遊戲登上Nature‐台灣囝仔Jeffrey Lin 林侑霆。看了內文發現這位林侑霆先生與我算是同行，雖然標題強調林侑霆的台灣人身份應該要吸引同鄉網友點閱，兩位記者在報導內容努力地摘要自然期刊的重要內容並翻譯成中文，並將林侑霆2013到2015年在GDC的演講錄影連結附於文末，讓讀者能了解林侑霆的科學成就。不過自然期刊的原文格局是以林侑霆的研究成果為軸，探討如何運用科學方法認識並改變網路遊戲玩家的惡意行為(toxic behavior)。
 然而這兩位記者大概沒有玩過任何網路遊戲(像是把toxic behavior照字面翻成毒性行為)，更未曾查證心理學，讓一篇可以引發讀者探究林侑霆如何運用心理科學提昇英雄聯盟遊戲體驗的好文章，變得難以咀嚼。最重要的是自然期刊原文的其中一段：“Lin borrowed a concept from classic psychology. In late 2012, he initiated a massive test of priming, the idea that imagery or messages presented just before an activity can nudge behaviours in one direction or another.”，心理學系的學生都了解這是指林侑霆採用的是心理學研究常用的促發實驗(priming，大陸的心理學界稱為啟動實驗)。民報的中文報導變成在2012年底林侑霆採用經典的心理學概念啟動大規模的測試&amp;hellip;。這一句使用粗體字是因為原來的中文報導也是粗體字標示，這個標示方式也成功達到心理學家在實驗室中的發現，兩天之後促發其它媒體對這則新聞的標題設定。像是中央社的台裔LOL首席設計師林侑霆 登上自然期刊，以及關鍵評論網的《英雄聯盟》首席設計師是位台灣男孩—他用「經典心理學」讓電玩不再充滿仇恨。內容也都是民報的報導再精簡化，模式與這幾年常出現的「台灣沾光」新聞如出一轍，很難讓讀者看過後想去了解背後的科學，從轉載民報報導的批踢踢認知科學討論區，引用者與推文者只有想到批踢踢的惡意行為可知一二。
 我比較偏好台灣的心理學界將priming翻成_促發_的慣例，因為促發實驗在許多心理學實驗主題之內廣泛運用，不僅有得到增加行為表現的促進效應(facilitation effect)，也有降低行為表現的抑制效應(inhibition effect)。如果把priming翻成_啟動_，初次認識的讀者不自覺地會認為使用這種實驗方法，都會得到增加行為表現的結果。中文報導的二手及至三手傳播，很大程度地抑制讀者認識這種實驗方法的興趣，也讓看到這些標題就跳過的台灣心理學研究者與工作者，失去一次思辨心理學在台灣如何發展的機會。好在我有收集閱讀原始報導的習慣，所以撰寫這篇文章來談談什麼是促發實驗，以及今天的心理學家如何使用以及評價這種實驗方法對心理學知識的貢獻。
