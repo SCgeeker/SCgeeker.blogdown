@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on 暗微幽光</title>
-    <link>http://scchen.com/zh/home/</link>
+    <link>/zh/home/</link>
     <description>Recent content in Homes on 暗微幽光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://scchen.com/zh/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/zh/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://scchen.com/zh/home/about/</link>
+      <link>/zh/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/zh/home/about/</guid>
+      <guid>/zh/home/about/</guid>
       <description>個人簡介 這個網站使用R套件blogdown與開源網站套件HUGO建置與維護，有中文與英文兩種版本。中文版本呈現個人隨筆與教學資料，有部份曾經其他網路平台傳播。使用開源軟體建置網站是呈現開放科學理念的行動，以新知報導與開源教材，向中文網友宣傳符合開放科學原則的最新心理科學新知，呈現有趣、透明、又嚴謹的研究結果。為希望貢獻個人能力的朋友，提供可以發揮的方向。
 2017年起，我正式加入開放科學中心大使計畫。為向華語地區學術工作者推廣提昇心理科學品質的註冊研究，收集各地教材與個人研究經驗，開發註冊研究工作坊教材。教材內容不定期更新，歡迎有興趣的單位及團體與本人聯絡，安排工作坊(約1.5小時)與黑客松(約3小時)開課事宜。</description>
     </item>
     
     <item>
       <title>演講</title>
-      <link>http://scchen.com/zh/home/talks/</link>
+      <link>/zh/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/zh/home/talks/</guid>
+      <guid>/zh/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>隨筆</title>
-      <link>http://scchen.com/zh/home/posts/</link>
+      <link>/zh/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/zh/home/posts/</guid>
+      <guid>/zh/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>教學</title>
-      <link>http://scchen.com/zh/home/teaching/</link>
+      <link>/zh/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/zh/home/teaching/</guid>
+      <guid>/zh/home/teaching/</guid>
       <description> 可重製研究：時代意義與實踐 註冊研究工作坊資訊 心理學實驗研究法：開放科學取向  </description>
     </item>
     
     <item>
       <title>聯絡方式</title>
-      <link>http://scchen.com/zh/home/contact/</link>
+      <link>/zh/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/zh/home/contact/</guid>
+      <guid>/zh/home/contact/</guid>
       <description></description>
     </item>
     

@@ -2,96 +2,96 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sau-Chin Chen&#39;s Website</title>
-    <link>http://scchen.com/en/post/</link>
+    <link>/en/post/</link>
     <description>Recent content in Posts on Sau-Chin Chen&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0800</lastBuildDate>
     
-	<atom:link href="http://scchen.com/en/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/en/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Use bookdownplus write papers and manage lab logs</title>
-      <link>http://scchen.com/en/post/use-bookdownplus/</link>
+      <link>/en/post/use-bookdownplus/</link>
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/use-bookdownplus/</guid>
+      <guid>/en/post/use-bookdownplus/</guid>
       <description>Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met papaja(Aust and Barth 2017) three years ago, it is my dream someday I will use R(R Development Core Team 2010) process all my works. papaja is amazing but it is implemented to English only. Later I found bookdown developed by Yihui Xie(Xie 2017). bookdown has the potential to manage Chinese writings.</description>
     </item>
     
     <item>
       <title>Manage a blog for the bibliography management optimization</title>
-      <link>http://scchen.com/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
+      <link>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
+      <guid>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
       <description>Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.Many promoters of open-accessible literature spread their preprinted articles through the personal and collaborative blogs. Bloggers and followers like me usually manage the last updated posts in the reference managers.</description>
     </item>
     
     <item>
       <title>Template of a citable blog post</title>
-      <link>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</link>
+      <link>/en/post/2017-05-05-templete-of-a-citable-blog-post/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
+      <guid>/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
       <description>This post is for future posts.Check the lines 5 to 9 of my post template head.html.
  &amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;blogger&amp;quot;/&amp;gt;&amp;lt;meta name=&amp;quot;author&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;quot;/&amp;gt;# A if-then loop imports page.title.&amp;lt;meta property=&amp;quot;og:title&amp;quot; content=&amp;quot;{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}&amp;quot;/&amp;gt;# A if-then loop imports page.date.&amp;lt;meta property=&amp;quot;article:published_time&amp;quot; content=&amp;quot;{% if page.date %}{{ page.date | date: &amp;quot;%B %-d, %Y&amp;quot;}}{% else %}{{ site.date }}{% endif %}&amp;quot;/&amp;gt;&amp;lt;meta property=&amp;quot;og:site_name&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;#39;s website&amp;quot;/&amp;gt;</description>
     </item>
     
     <item>
       <title>Randomization in Latin Square</title>
-      <link>http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/</link>
+      <link>/en/post/2016-09-14-randomization-in-latin-square/</link>
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/</guid>
+      <guid>/en/post/2016-09-14-randomization-in-latin-square/</guid>
       <description>I’m managing an opensesame script for the coming project. In this project, there are four stimuli lists included all the within-participant conditions. I denote the four lists A, B, C, and D. A participant will have one of the stimuli lists in terms of the counter balanced principle. The best assignment method is 4X4 Latin Square. For every 16 participants, there are 24 sequences to be used. Here are three of the sequences.</description>
     </item>
     
     <item>
       <title>Why we need a readable data table in behavioral scientific research?</title>
-      <link>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
+      <link>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
+      <guid>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
       <description>A bad caseA few days ago I was dealing with a raw data set as like the following table.
 IDGroupI01I02I03I04I05I06s01A345123s02A253211s03A454311s04B215433s05B212521s06B233421This table is a tiny version I copied from a master graduate’s spss raw data table.</description>
     </item>
     
     <item>
       <title>Rethink Significance</title>
-      <link>http://scchen.com/en/post/2016-05-05-rethink-significance/</link>
+      <link>/en/post/2016-05-05-rethink-significance/</link>
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-05-05-rethink-significance/</guid>
+      <guid>/en/post/2016-05-05-rethink-significance/</guid>
       <description>To trace the fallacy of use hypothesis testing, I am programming the examples in Dr. Adrianus D. de Groot’s paper The meaning of “signiﬁcance” for different types of research. This paper is published in 1956 in the Dutch journal Nederlands Tijdschrift voor de Psychologie en Haar Grensgebieden. Adrianus De Groot is Dutch psychologist and chess master. During 1950s and 1960s, he suggested the concept of emperical cycle for the researchers who use the statistical tools in the social and behavioral researches.</description>
     </item>
     
     <item>
       <title>Autopsy of NHST and Bayesian Models (part 1)</title>
-      <link>http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
+      <link>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
       <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
+      <guid>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
       <description>Chapter 2 of Statistical Rethinking: A Bayesian Course with Examples in R and Stan introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated Data Story, then update the models by filling data in, and finally evaluate all the upated models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book.</description>
     </item>
     
     <item>
       <title>Check My Tools to Create and Manipulate Golems</title>
-      <link>http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
+      <link>/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
       <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
+      <guid>/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
       <description>Since two weeks before I published this post, I have started read the book Statistical Rethinking: A Bayesian Course with Examples in R and Stan written by Richard McElreath. Richard is the evolutionary anthropologist at Max Planck Institute. He wrote this textbook for the PhD students who will use the Bayesian statistics in their research projects. Compared to the textbooks written by statisians and data scientistst, Richard’s book explain and demonstrate the statistical methods with examples instead of equations.</description>
     </item>
     
     <item>
       <title>Display Math Equation in Post</title>
-      <link>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</link>
+      <link>/en/post/2016-04-05-display-math-equation-in-post/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</guid>
+      <guid>/en/post/2016-04-05-display-math-equation-in-post/</guid>
       <description>There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:
 \[ E = mc^2 \]
 Use the steps 1 and 2 indtroducted in Fong Chun Chan’s post, my website is able to show the equation in any post. Because this theme use kramdown as the engine of markdown, I pass the step 4.
@@ -100,10 +100,10 @@ Here are the proof the central limitation theorem.</description>
     
     <item>
       <title>Vectors in mathematics and in codes</title>
-      <link>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
+      <link>/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
+      <guid>/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
       <description>When a set of data/observations is imported to R, it is usually treated as vector. Vector has two mathematical forms as following:
 column vector:
 \[ \vec{a} = \begin{bmatrix}1\\2\\3\\\end{bmatrix} \]
@@ -115,10 +115,10 @@ a &amp;lt;- 1:3a## [1] 1 2 3class(a)## [1] &amp;quot;integer&amp;quot;str(a
     
     <item>
       <title>Learning Sampling Distribution in R Programming</title>
-      <link>http://scchen.com/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
+      <link>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://scchen.com/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
+      <guid>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
       <description>Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.
 In this pseudo experiment, there are only ten observations we will collect in every sample.</description>
     </item>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Preregistration on 暗微幽光</title>
+    <link>/zh/tags/preregistration/</link>
+    <description>Recent content in Preregistration on 暗微幽光</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
+    <lastBuildDate>Sun, 29 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/zh/tags/preregistration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>物件方向效應跨語言研究經驗分享(一)：心理科學加速器合作專案</title>
+      <link>/zh/post/orientation-language-part01/</link>
+      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/orientation-language-part01/</guid>
+      <description>心理科學加速器是什麼？心理科學存在高比例的偽陽性結果(false positive results)的事實(Fanelli 2010; Ioannidis 2005)，促成全球心理學者認清要評估研究發現的普遍性與真實性，需要累積大量的再現資料。最好的作法是組織不同地區的實驗室同時進行相同程序的實驗，以整合分析方法解析結果。2000年之後已經出現以多個機構長期合作收集資料的專案(Reifman and Grahe 2016)，以及課題導向的短期合作專案(Klein et al. 2014; Open Science Collaboration 2015; Ebersole et al. 2016; Frank 2016; Reifman and Grahe 2016)。兩種合作模式關注的課題圍繞核心學者關心的方向，或多數學者公認的重要題目。尚有許多獨立研究者規劃長期經營，有理論潛力但是出版成果還不足以判斷研究發現的普遍性。2016年第一屆SIPS研討會，與會學者提出提供獨立研究徵求合作者，合作重現最新研究成果的媒合平台Study Swap，方便心理學原創研究，能透過語言文化條件相同的合作實驗室，迅速累積再現成果。
+Study Swap平台主持人Christopher Chartier於2017年8月26日，在個人部落格發佈建立心理科學加速器的第一份公開文章，招集有共同理念的各國研究者組織十個運作與諮詢委員會，將Study Swap的運作模式推廣至全球心理科學研究。心理科學加速器的初期報導已在2017年11月翻譯為中文，發起建立的第一天就邀請90多位各國學者一起發想及撰寫的說明(Moshontz et al. 2018)剛於4月上旬正式投稿期刊Advances in Methods and Practices in Psychological Science (AMPPS)，五月至六月期間進行的第二次計畫徵件，每項計畫將由十位參與研究者以公開評審的方式，評估適合加盟實驗室同步進行的研究計畫。這篇文章整理提出計畫與參與運作的經驗，以及至目前為止的準備過程，給有興趣提出計畫的先進及後輩一些參考。
+研究構想提出過程Christopher Chartier在召集創始成員時，同時開啟第一次計畫徵件。當時我剛將與Rolf Zwaan及Bjorn De Koning合作的物件方向研究計畫書送第一階段評審，這個計畫源自2001年Stanfield與Zwaan運用句圖判別作業發現的物件方向反應優勢(Stanfield and Zwaan 2001)。這項研究發現被許多研究者認為與Glenberg與Kaschak(Glenberg and Kaschak 2002)提出的動作相容效應(Action-compatibility effect)，可用來檢驗體現知理論對語言理解的預測。然而合作過程中我理解物件方向反應優勢的原始構想是根據閱讀者讀過句子後，心智會模擬物件呈現形象的體現認知理論(Barsalou 1999)，動作的心智模擬並未在可預測的因素之列。而且物件方向反應優勢是同類型實驗結果最微弱的系列，不過目前只有英語及荷語的研究結果(R. A. Zwaan and Pecher 2012)。
+有沒有語言能發現比英語更明顯的物件方向反應優勢，成為我提出研究構想的重要動機。第一次徵件包括我的計畫有8件，經由最初的領導小組(Leadership Team)與研究計畫遴選委員會(Study Selection Committee)成員合作評審。我本來只是抱持嘗試的心態姑且試之，沒想到最後被選為三件研究案之一，讀者可參考我根據評審反應修改的構想書，我的網頁與心理科學加速器部落格都有這項計畫的介紹。這項研究案與其他兩項的不同處有這是此次唯一的認知心理學研究，唯一需要每個實驗室安裝指定實驗軟體的實驗，以及使用貝氏統計隨時分析實驗結果，讓每個實驗室自行能調節實際的研究參與者人數。
+前置準備經驗接受構想書之後，就是開始準備讓專業期刊進行審查的註冊研究計畫書。提出構想的研究者如果是獨立研究者，Christopher Chartier會媒合一位參與運作小組或委員會的成員，與主要研究者一起合作規畫與撰寫計畫書。像是我的與另一項研究案The Gendered Nature of Prejudice，都有與一位不同機構甚至不同國家的研究者遠端合作。心理科學加速器也希望藉此機會嘗試同時執行兩種不同性質的研究，加盟實驗室的執行狀況，還有資料的可用性。</description>
+    </item>
+    
+  </channel>
+</rss>

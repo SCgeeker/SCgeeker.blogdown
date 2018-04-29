@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Sau-Chin Chen&#39;s Website</title>
+    <link>/en/categories/</link>
+    <description>Recent content in Categories on Sau-Chin Chen&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
+    
+	<atom:link href="/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Practices</title>
+      <link>/en/categories/practices/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/en/categories/practices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reproduce Practice</title>
+      <link>/en/categories/reproduce-practice/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/categories/reproduce-practice/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

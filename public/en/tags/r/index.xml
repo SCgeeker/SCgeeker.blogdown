@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on Sau-Chin Chen&#39;s Website</title>
+    <link>/en/tags/r/</link>
+    <description>Recent content in R on Sau-Chin Chen&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
+    <lastBuildDate>Tue, 31 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/en/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why we need a readable data table in behavioral scientific research?</title>
+      <link>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
+      <description>A bad caseA few days ago I was dealing with a raw data set as like the following table.
+IDGroupI01I02I03I04I05I06s01A345123s02A253211s03A454311s04B215433s05B212521s06B233421This table is a tiny version I copied from a master graduate’s spss raw data table.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reproduce Practice on Sau-Chin Chen&#39;s Website</title>
+    <link>/en/categories/reproduce-practice/</link>
+    <description>Recent content in Reproduce Practice on Sau-Chin Chen&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
+    <lastBuildDate>Thu, 11 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/en/categories/reproduce-practice/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use bookdownplus write papers and manage lab logs</title>
+      <link>/en/post/use-bookdownplus/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/use-bookdownplus/</guid>
+      <description>Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met papaja(Aust and Barth 2017) three years ago, it is my dream someday I will use R(R Development Core Team 2010) process all my works. papaja is amazing but it is implemented to English only. Later I found bookdown developed by Yihui Xie(Xie 2017). bookdown has the potential to manage Chinese writings.</description>
+    </item>
+    
+  </channel>
+</rss>

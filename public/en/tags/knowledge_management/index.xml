@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge_management on Sau-Chin Chen&#39;s Website</title>
+    <link>/en/tags/knowledge_management/</link>
+    <description>Recent content in Knowledge_management on Sau-Chin Chen&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
+    <lastBuildDate>Thu, 11 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/en/tags/knowledge_management/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use bookdownplus write papers and manage lab logs</title>
+      <link>/en/post/use-bookdownplus/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/use-bookdownplus/</guid>
+      <description>Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met papaja(Aust and Barth 2017) three years ago, it is my dream someday I will use R(R Development Core Team 2010) process all my works. papaja is amazing but it is implemented to English only. Later I found bookdown developed by Yihui Xie(Xie 2017). bookdown has the potential to manage Chinese writings.</description>
+    </item>
+    
+    <item>
+      <title>Manage a blog for the bibliography management optimization</title>
+      <link>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
+      <description>Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.Many promoters of open-accessible literature spread their preprinted articles through the personal and collaborative blogs. Bloggers and followers like me usually manage the last updated posts in the reference managers.</description>
+    </item>
+    
+    <item>
+      <title>Template of a citable blog post</title>
+      <link>/en/post/2017-05-05-templete-of-a-citable-blog-post/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
+      <description>This post is for future posts.Check the lines 5 to 9 of my post template head.html.
+ &amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;blogger&amp;quot;/&amp;gt;&amp;lt;meta name=&amp;quot;author&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;quot;/&amp;gt;# A if-then loop imports page.title.&amp;lt;meta property=&amp;quot;og:title&amp;quot; content=&amp;quot;{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}&amp;quot;/&amp;gt;# A if-then loop imports page.date.&amp;lt;meta property=&amp;quot;article:published_time&amp;quot; content=&amp;quot;{% if page.date %}{{ page.date | date: &amp;quot;%B %-d, %Y&amp;quot;}}{% else %}{{ site.date }}{% endif %}&amp;quot;/&amp;gt;&amp;lt;meta property=&amp;quot;og:site_name&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;#39;s website&amp;quot;/&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>
