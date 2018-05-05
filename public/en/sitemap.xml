@@ -262,6 +262,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/en/project/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/project/" hreflang="zh"/>
+    
       <loc>/en/project/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
