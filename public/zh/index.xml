@@ -19,20 +19,34 @@
       <description>&lt;p&gt;&lt;em&gt;PB&lt;/em&gt;: PsychBrief的筆記&lt;br /&gt;
 &lt;em&gt;CSC&lt;/em&gt;: 陳紹慶的筆記&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://psychbrief.com/paul-meehls-philosophical-psychology-01/&#34; target=&#34;_blank&#34;&gt;第一堂&lt;/a&gt;&lt;br /&gt;
-- (CSC)&amp;ldquo;哲學心理學&amp;rdquo;系列講座是談心理科學理論與發現的整合分析(meta-science)，談如何建構科學理論，以及如何評估理論品質。&lt;br /&gt;
-- (PB)硬科學的說服力是來自測量方法與數學，而非專家互相約定的定義。&lt;br /&gt;
-- (PB)科學家討論的概念必須是可操作的，否則無法連結事實。&lt;br /&gt;
-- (PB)方法學標記詞(Methodological remarks)多用於後設言談(科學事件與事件關係的陳述、陳述與陳述之間的性質、信念與證據的關係。例如&lt;em&gt;真&lt;/em&gt;(true), &lt;em&gt;偽&lt;/em&gt;(false), &lt;em&gt;合理性&lt;/em&gt;(rational), &lt;em&gt;不可知的&lt;/em&gt;(unknown), &lt;em&gt;研究結果證實&lt;/em&gt;(confirmed by data), &lt;em&gt;錯誤的&lt;/em&gt;(fallacious), &lt;em&gt;簡化的&lt;/em&gt;(deducible), &lt;em&gt;有效的&lt;/em&gt;(valid), &lt;em&gt;有可能的&lt;/em&gt;(probable) )，少用於客觀言談(學術專有名詞。例如&lt;em&gt;質子&lt;/em&gt;(protons), &lt;em&gt;性衝動&lt;/em&gt;(libido), &lt;em&gt;原子&lt;/em&gt;(atom), &lt;em&gt;引力常數&lt;/em&gt;(g), &lt;em&gt;行為增強物&lt;/em&gt;(reinforce) )。&lt;br /&gt;
-- (PB)德國哲學家、邏輯實證主義代表人物&lt;a href=&#34;https://en.wikipedia.org/wiki/Hans_Reichenbach&#34; target=&#34;_blank&#34;&gt;賴欣巴哈&lt;/a&gt;對於歸納法的看法是不對的。&lt;br /&gt;
-- (PB)被錯誤的心理學理論引導的觀察計畫，會造成被污染的資料。例如為了得到能符合理論的資料，只觀察有利的現象或修改資料。&lt;br /&gt;
-- (PB)&lt;a href=&#34;https://en.wikipedia.org/wiki/John_B._Watson&#34; target=&#34;_blank&#34;&gt;約翰·華生&lt;/a&gt;本來認為學習是發生在肌肉，後來由老鼠走迷宮的實驗結果，發現傳遞肌肉回饋的神經細胞，能讓老鼠經由快速溝通與環境變化，學到正確路線。實驗結果否證華生的原始理論。&lt;br /&gt;
-- (PB)與Paul Meehl同時期的心理學者著迷於使用可操作的概念詞彙論述與交流，模仿硬科學領域的用語，認為有意義的詞彙代表可被測量的概念，且能做邏輯命題。然而許多詞彙只是不嚴謹的模仿，&lt;a href=&#34;https://en.wikipedia.org/wiki/Rudolf_Carnap&#34; target=&#34;_blank&#34;&gt;魯道夫·卡爾納普&lt;/a&gt;認為這些作為只是裝聰明。&lt;br /&gt;
-- (PB)Paul Meehl對邏輯實證主義科學觀的批評：邏輯實證主義認為科學家提出的概念能被心智正常的人類理解，並且不斷修正。然而為了達到&lt;strong&gt;確定&lt;/strong&gt;的企圖，以一系列邏輯與數學呈現概念，_逼迫_理解者相信這才是科學。&lt;br /&gt;
-- (PB)1980年代已經出現的後設物理學(metaphysics)，參與其中的學者想透過理性分析與重建物理學知識，探討為何有理性的人類會相信科學。Paul Meehl認為這個領域走到當時已變成清算，而非求知。&lt;br /&gt;
-- (PB)[維也納學派哲學家認為]什麼是&lt;em&gt;意義(meaning)&lt;/em&gt;:只要沒有人知道如何用事實或邏輯評價的事物，就是認知中無意義的事物。語句的意義來自能核實的方法，確認意義的推論。語句意義的核實通常根據支持語句描述的經驗。Paul Meehl引用羅馬歷史有名的典故：&lt;em&gt;渡過盧比孔河&lt;/em&gt;
-，說明當時在羅馬的人，與軍中的百夫長對於凱撒說出這句話的意義有不同解讀。&lt;br /&gt;
-- (PB)對於人們相信的資訊通常是來自權威的提醒。希望上過這系列講座的學生能時時提醒自已對於權威的說法，不會抱持過於信任的態度。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://psychbrief.com/paul-meehls-philosophical-psychology-01/&#34; target=&#34;_blank&#34;&gt;第一堂&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;(CSC)&amp;ldquo;哲學心理學&amp;rdquo;系列講座是談心理科學理論與發現的整合分析(meta-science)，談如何建構科學理論，以及如何評估理論品質。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)硬科學的說服力是來自測量方法與數學，而非專家互相約定的定義。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)科學家討論的概念必須是可操作的，否則無法連結事實。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)方法學標記詞(Methodological remarks)多用於後設言談(科學事件與事件關係的陳述、陳述與陳述之間的性質、信念與證據的關係。例如&lt;em&gt;真&lt;/em&gt;(true), &lt;em&gt;偽&lt;/em&gt;(false), &lt;em&gt;合理性&lt;/em&gt;(rational), &lt;em&gt;不可知的&lt;/em&gt;(unknown), &lt;em&gt;研究結果證實&lt;/em&gt;(confirmed by data), &lt;em&gt;錯誤的&lt;/em&gt;(fallacious), &lt;em&gt;簡化的&lt;/em&gt;(deducible), &lt;em&gt;有效的&lt;/em&gt;(valid), &lt;em&gt;有可能的&lt;/em&gt;(probable) )，少用於客觀言談(學術專有名詞。例如&lt;em&gt;質子&lt;/em&gt;(protons), &lt;em&gt;性衝動&lt;/em&gt;(libido), &lt;em&gt;原子&lt;/em&gt;(atom), &lt;em&gt;引力常數&lt;/em&gt;(g), &lt;em&gt;行為增強物&lt;/em&gt;(reinforce) )。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)德國哲學家、邏輯實證主義代表人物&lt;a href=&#34;https://en.wikipedia.org/wiki/Hans_Reichenbach&#34; target=&#34;_blank&#34;&gt;賴欣巴哈&lt;/a&gt;對於歸納法的看法是不對的。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)被錯誤的心理學理論引導的觀察計畫，會造成被污染的資料。例如為了得到能符合理論的資料，只觀察有利的現象或修改資料。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)&lt;a href=&#34;https://en.wikipedia.org/wiki/John_B._Watson&#34; target=&#34;_blank&#34;&gt;約翰·華生&lt;/a&gt;本來認為學習是發生在肌肉，後來由老鼠走迷宮的實驗結果，發現傳遞肌肉回饋的神經細胞，能讓老鼠經由快速溝通與環境變化，學到正確路線。實驗結果否證華生的原始理論。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)與Paul Meehl同時期的心理學者著迷於使用可操作的概念詞彙論述與交流，模仿硬科學領域的用語，認為有意義的詞彙代表可被測量的概念，且能做邏輯命題。然而許多詞彙只是不嚴謹的模仿，&lt;a href=&#34;https://en.wikipedia.org/wiki/Rudolf_Carnap&#34; target=&#34;_blank&#34;&gt;魯道夫·卡爾納普&lt;/a&gt;認為這些作為只是裝聰明。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)Paul Meehl對邏輯實證主義科學觀的批評：邏輯實證主義認為科學家提出的概念能被心智正常的人類理解，並且不斷修正。然而為了達到&lt;strong&gt;確定&lt;/strong&gt;的企圖，以一系列邏輯與數學呈現概念，_逼迫_理解者相信這才是科學。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)1980年代已經出現的後設物理學(metaphysics)，參與其中的學者想透過理性分析與重建物理學知識，探討為何有理性的人類會相信科學。Paul Meehl認為這個領域走到當時已變成清算，而非求知。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)[維也納學派哲學家認為]什麼是&lt;em&gt;意義(meaning)&lt;/em&gt;:只要沒有人知道如何用事實或邏輯評價的事物，就是認知中無意義的事物。語句的意義來自能核實的方法，確認意義的推論。語句意義的核實通常根據支持語句描述的經驗。Paul Meehl引用羅馬歷史有名的典故：&lt;em&gt;渡過盧比孔河&lt;/em&gt;
+，說明當時在羅馬的人，與軍中的百夫長對於凱撒說出這句話的意義有不同解讀。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)對於人們相信的資訊通常是來自權威的提醒。希望上過這系列講座的學生能時時提醒自已對於權威的說法，不會抱持過於信任的態度。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://psychbrief.com/paul-meehls-philosophical-psychology-02/&#34; target=&#34;_blank&#34;&gt;第二堂&lt;/a&gt;&lt;/p&gt;
 
@@ -65,13 +79,10 @@
 &lt;li&gt;&lt;p&gt;(PB)肯定前件與否定後件的後果與小前題互換，就變成&lt;strong&gt;無效的邏輯論證&lt;/strong&gt;。Meehl指出許多採用歸納法的言論，都是無效的邏輯論證。好用歸納推論容易讓人不自覺運用無效推論，偏好「符合理論的事實」。&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;(CSC)Meehl引述卡爾·波普爾的說法，指出這是區分科學與偽科學論述的關鍵，有效的科學理論必定提出肯定前件與否定後件的預測。同時以此小評Skinner為主的行為主義心理學。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
-&lt;p&gt;50:00
-- (PB)累積的事實控制理論的長程發展，科學理論不會因為少數反例就被拋棄。穩固的科學理論能包容一部分反例。沒有能辨識科學理論變得不科學的特徵。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;(PB)累積的事實控制理論的長程發展，科學理論不會因為少數反例就被拋棄。穩固的科學理論能包容一部分反例。沒有能辨識科學理論變得不科學的特徵。&lt;/p&gt;&lt;/li&gt;
 
-&lt;ul&gt;
-&lt;li&gt;(CSC)Meehl小評孔恩的科學革命觀點。影片57:40~1:05:55重覆剪接。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(CSC)Meehl小評孔恩的科學革命觀點。影片57:40~1:05:55重覆剪接。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;iframe width=&#34;480&#34; height=&#34;360&#34; src=&#34;https://www.youtube-nocookie.com/embed/tI9YnI63fJI?rel=0&amp;amp;start=3955&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -93,9 +104,9 @@
 
 &lt;li&gt;&lt;p&gt;(PB) 介紹韋斯利·薩爾蒙的奇異巧合原則。沒有理論預測卻掌握大致的測量結果，真的得到的話就是一種奇異巧合。相對於根據理論預測一段測量結果並實際測得，後者才有確證與否可言。&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;(PB)薩爾蒙相信可用機率表示理論可被確認的程度，雖然波普爾不認同這種作法，Meehl認為兩者殊途同歸。薩爾蒙提倡貝氏方法能評估理論被確證的程度。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(PB)薩爾蒙相信可用機率表示理論可被確認的程度，雖然波普爾不認同這種作法，Meehl認為兩者殊途同歸。薩爾蒙提倡貝氏機率能評估理論被確證的程度。&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;(CSC)Meehl版貝氏統計講座。可參閱&lt;a href=&#34;http://meehl.umn.edu/sites/g/files/pua1696/f/035antecedentprobability.pdf&#34; target=&#34;_blank&#34;&gt;Meehl and Rosen(1955)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(CSC)Meehl版貝氏機率講座。可參閱&lt;a href=&#34;http://meehl.umn.edu/sites/g/files/pua1696/f/035antecedentprobability.pdf&#34; target=&#34;_blank&#34;&gt;Meehl and Rosen(1955)&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;iframe width=&#34;480&#34; height=&#34;360&#34; src=&#34;https://www.youtube-nocookie.com/embed/tI9YnI63fJI?rel=0&amp;amp;start=4732&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -103,7 +114,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;(CSC)假設有兩個裝滿紅色與白色珠子的罐子，現在隨機抽出一顆白珠，但是是從那一個罐子抽出來？&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;(PB)假如已知罐子1有1/3是白珠；罐子2有2/3是白珠。如何計算抽出的白珠來自罐子1的機率？首先設定以下機率：$P$ ~ 白珠來自罐子1的&lt;strong&gt;事前機率&lt;/strong&gt;；$Q = 1 - P$ ~  白珠不是來自罐子1的事前機率；$p_1$ ~ 白珠來自罐子1的&lt;strong&gt;條件機率&lt;/strong&gt;；$p_2$ ~ 白珠來自罐子2的條件機率；$P(w|1)$ ~ 抽到的白珠，的確來自罐子1的機率，即&lt;strong&gt;事後機率&lt;/strong&gt;，某種原因導致特定結果的機率。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(PB)假如已知罐子1有1/3是白珠；罐子2有2/3是白珠。如何計算抽出的白珠來自罐子1的機率？首先設定以下機率：$P$ ~ 白珠來自罐子1的&lt;strong&gt;事前機率&lt;/strong&gt;；$Q = 1 - P$ ~ 白珠不是來自罐子1的事前機率；$p_1$ ~ 白珠來自罐子1的&lt;strong&gt;條件機率&lt;/strong&gt;；$p_2$ ~ 白珠來自罐子2的條件機率；$P(w|1)$ ~ 抽到的白珠，的確來自罐子1的機率，即&lt;strong&gt;事後機率&lt;/strong&gt;，某種原因導致特定結果的機率。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;$$P(w|1) = \frac{P \cdot p_1}{P \cdot p_1 + Q \cdot p_2}$$&lt;/p&gt;
@@ -116,13 +127,15 @@
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube-nocookie.com/embed/tI9YnI63fJI?rel=0&amp;amp;start=5394&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;-(PB)薩爾蒙認為反例的事前機率要越大越好，波普爾則認為反例的事前機率要越小越好。不過兩者都同意反例檢驗是否證理論的最佳工具。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;(PB)薩爾蒙認為反例的事前機率要越大越好，波普爾則認為反例的事前機率要越小越好。不過兩者都同意反例檢驗是否證理論的最佳工具。&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;-(PB)最後稍微提到經常與波普爾一起談論的兩位高徒：&lt;a href=&#34;https://en.wikipedia.org/wiki/Paul_Feyerabend&#34; target=&#34;_blank&#34;&gt;保羅·費耶阿本德(Paul Feyerabend)&lt;/a&gt;與&lt;a href=&#34;Imre Lakatos&#34; target=&#34;_blank&#34;&gt;拉卡托什·伊姆雷(Imre Lakatos)&lt;/a&gt;。Meehl講較多拉卡托什的事情，預告之後會談拉卡托什的科學研究綱領(research program)。科學研究綱領影響孔恩的科學革命觀點。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;(PB)最後稍微提到經常與波普爾一起談論的兩位高徒：&lt;a href=&#34;https://en.wikipedia.org/wiki/Paul_Feyerabend&#34; target=&#34;_blank&#34;&gt;保羅·費耶阿本德(Paul Feyerabend)&lt;/a&gt;與&lt;a href=&#34;Imre Lakatos&#34; target=&#34;_blank&#34;&gt;拉卡托什·伊姆雷(Imre Lakatos)&lt;/a&gt;。Meehl講較多拉卡托什的事情，預告之後會談拉卡托什的科學研究綱領(research program)。科學研究綱領影響孔恩的科學革命觀點。&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;-(PB)拉卡托什的科學研究綱領強調的時間進程，改良自波普爾的觀點。波普爾強調科學理論預測新事實的出現，比解釋舊事實的由來更重要。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;(PB)拉卡托什的科學研究綱領強調的時間進程，改良自波普爾的觀點。波普爾強調科學理論預測新事實的出現，比解釋舊事實的由來更重要。&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;-(CSC)Meehl最後強調能預測新事實的理論，比只能解釋既有事實的理論有價值。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;(CSC)Meehl最後強調能預測新事實的理論，比只能解釋既有事實的理論有價值。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://psychbrief.com/paul-meehls-philosophical-psychology-03/&#34; target=&#34;_blank&#34;&gt;第三堂&lt;/a&gt;&lt;/p&gt;
 
