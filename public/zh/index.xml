@@ -11,6 +11,50 @@
     <atom:link href="/zh/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>三個經典記憶實驗重現研究教程</title>
+      <link>/zh/post/classical-memory-studies/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/classical-memory-studies/</guid>
+      <description>&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;以再現研究教學的必要性&lt;/h2&gt;
+&lt;p&gt;多數原創研究難以再現的問題已由許多大型專案報告揭露，例如&lt;a href=&#34;http://www.sciencemag.org/content/349/6251/aac4716&#34;&gt;重製100件心理學研究&lt;/a&gt;、&lt;a href=&#34;http://pps.sagepub.com/content/9/6/666&#34;&gt;複數實驗室的註冊再現研究&lt;/a&gt;等。如何向大學生傳達再現研究的經驗與重要性，也是推動開放科學的重點。第一線的教學者藉此重新省思該如何介紹何謂科學，我所參考的國外公開教材與部落格，有許多推動開放科學的國外老師都重新閱讀科學哲學家卡爾．波普爾(Karl Popper)於1959年出版的&lt;strong&gt;科學發現的邏輯(The Logic of Scientific Discovery)&lt;/strong&gt;，引述波普爾對於研究再現是科學基礎的說法。以下這段關於科學發現再現的說法，出自查汝強與邱仁宗的&lt;a href=&#34;http://www.angelibrary.com/philosophy/dale/sciencelogic/001.htm&#34;&gt;中譯版&lt;/a&gt;：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;只有當某些事件能按照定律或規律性重複發生時，像在可 重複的實驗裡的情況那樣，我們的觀察在原則上才能被任何人所檢驗。在我們重複 和檢驗它們之前，我們甚至對自己的觀察也不大認真對待，也不承認它們是科學的 觀察。只有根據這些重複，我們才確信我們處理的並不僅是一個孤立的「巧合」， 而是原則上可以主體間相互檢驗的事件，因為它們有規律性和可重複性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的實踐方式是使用有完整公開資料的心理學實驗專案做為教材，引導學生運用接近原始專案的方式，設計與執行實驗專案，親自體會經典實驗揭示的&lt;strong&gt;規律性和可重複性&lt;/strong&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案介紹&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://rolfzwaan.blogspot.com/2017/05/sometimes-you-can-step-into-same-river.html&#34;&gt;Rolf Zwaan&lt;/a&gt;與同事從2014年起設計九套認知心理學實驗的線上版本，分別來自知覺、記憶與語言三個領域。經&lt;a href=&#34;https://www.mturk.com/&#34;&gt;Amazon Mechanical Turk&lt;/a&gt;徵求參與者登錄其中一套實驗，並間隔數天參與相同程序的實驗。這九套實驗的第一次參與結果與第二次參與結果的效果量有高度正相關，顯示這九套實驗能成為認知心理學的知識基石，是因為實驗結果的規律性與重複性。這一系列結果給希望提出能做為知識奠基的原始研究，可以邀請同一批參與者重新參與，確認研究結果的可重複性。&lt;/p&gt;
+&lt;p&gt;九套實驗的研究材料與實驗資料都&lt;a href=&#34;https://osf.io/ghv6m/&#34;&gt;完整公開&lt;/a&gt;，任何人都能下載檢驗分析結果與使用程序腳本執行實驗。Zwaan設計的專案使用次數主義統計與貝氏統計進行分析，能讓學生在收集資料的過程，學習&lt;a href=&#34;https://link.springer.com/article/10.3758/s13423-017-1230-y&#34;&gt;根據證據強度評估可結束實驗的時機&lt;/a&gt;。更重要的是九套實驗執行前已有&lt;strong&gt;預先註冊&lt;/strong&gt;，是在實驗心理學導入註冊研究的最佳範本。&lt;/p&gt;
+&lt;p&gt;這學期讓同學自行選擇三套記憶實驗演練，三項專案都已經完成，由於資源有限，收集的資料不多，所有專案只邀請參與者進行一次實驗，卻都得到有最低證據強度的研究結果。藉此網誌分享經驗，提供有意設計中文開放科學教材的師生，進行改造與創作。&lt;/p&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;序列效應&lt;/h3&gt;
+&lt;p&gt;Murdock (1962) 報告的自由回憶實驗顯示，人類連續背誦一系列項目，接著測試表現最好的是位置排序最前面(初始效應)與最後面(新近效應)的項目。這套實驗請參與者記憶一系列項目後，在測驗視窗限時輸入記得的項目。這項實驗對多數心理系學生來說並不陌生，我們把Zwaan版的刺激詞翻成中文，收集7位有效參與者就得到有效結果，實驗材料與分析報告可參考&lt;a href=&#34;https://osf.io/t3pxm/&#34;&gt;專案OSF&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Serial_position.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;間隔效應&lt;/h3&gt;
+&lt;p&gt;同樣是學習一系列項目，應該要密集學習還是間隔學習，才有最好的學習效果？其中顯現的記憶特性是什麼？是1970年代之後記憶心理學者熱衷探討的主題。Greene(1989)提出重覆學習-自由回憶作業，測試導致間隔效應的假設。重覆學習的項目有連續兩個嘗試的密集學習項目，以及間隔至少一個嘗試再重覆學習的項目。Greene發現後者的回憶正率顯著高於前者，Zwaan版的線上作業也顯示穩定的差異效果，我們把學習與測試詞改成詞頻分佈接近的中文詞彙，&lt;a href=&#34;https://osf.io/nma6w/&#34;&gt;有效的14位參與者資料也得到可靠的結果&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;drm&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;假記憶(DRM)&lt;/h3&gt;
+&lt;p&gt;在序列效應研究蓬勃發展1960年代，就有心理學者發現有些參與者會在自由回憶作業報告並非學習項目，卻與學習項目有關的詞彙。直到1995年，Roediger與McDermott終於提出能穩定重現實驗結果的程序。因為改良自Desse(1959)的程序，這套假記憶實驗程序又稱為DRM作業。Zwaan版的DRM作業學習詞根據1995年的設計原則，擴充挑選32套項目之間有強度聯想關係的列表，&lt;a href=&#34;https://osf.io/uh2wd/&#34;&gt;我們的專案&lt;/a&gt;取其中一半的列表做本土化翻譯，收集6位有效參與者資料，就發現有關誘導詞誤答率高於無關誘導詞誤答率。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;使用建議&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;自由實驗軟體學習素材 所有專案都是在實驗室之內的單機操作，程序腳本以&lt;a href=&#34;http://osdoc.cogsci.nl/&#34;&gt;自由實驗軟體OpenSesame&lt;/a&gt;準備及執行，每項專案的刺激項目都存於腳本之內。有興趣的讀者如果不熟悉OpenSesame，可以從微調刺激項目，配合OpenSesame官方的&lt;a href=&#34;http://osdoc.cogsci.nl/3.2/tutorials/beginner/&#34;&gt;教程&lt;/a&gt;，學習如何使用專案素材執行實驗。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;預先註冊演練範本 我們的專案以創用CC(姓名標示─非商業性)公開授權，執行一項專案之前，都有預先註冊&lt;strong&gt;假設&lt;/strong&gt;與&lt;strong&gt;方法&lt;/strong&gt;區塊，兩個區塊是一般研究計畫書必備內容，加上事先準備紀錄及程序腳本。想演練預先註冊的老師同學，可以參考專案內容，提出自行準備的假設與方法進行預先註冊，再照表操作，按步完成最終報告。希望參考操作的各界人士能公開分享你們的專案成果，我們很有興趣了解在不同學校場域執行的研究成果，也可以檢驗這些經典實驗結果在華文地區的普遍性。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;統計分析教材 所有專案延續Zwaan版的分析方法，都有計算關鍵效果的貝氏因子，以及關鍵效果與刺激版本的二因子混合變異數分析。有興趣的老師可以整合Rolf Zwaan與我們的專案資料，作為如何事前決定樣本數，或者了解如何使用貝氏統計評估當前資料的證據強度，為註冊研究計畫設定有合理彈性的資料收集計畫。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Paul Meehl十二堂哲學心理學筆記及心得</title>
       <link>/zh/project/meehl/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
@@ -21,7 +65,11 @@
 &lt;p&gt;&lt;em&gt;PB&lt;/em&gt;: PsychBrief的筆記&lt;br /&gt;
 &lt;em&gt;CSC&lt;/em&gt;: 陳紹慶的筆記&lt;/p&gt;
 
+&lt;p&gt;感謝&lt;a href=&#34;https://www.youtube.com/channel/UCmLP5tlplEP4rKMjGf3xafQ&#34; target=&#34;_blank&#34;&gt;Michael McGovern&lt;/a&gt;上傳錄影到youtube&lt;/p&gt;
+
 &lt;h3 id=&#34;第一堂-http-psychbrief-com-paul-meehls-philosophical-psychology-01&#34;&gt;&lt;a href=&#34;http://psychbrief.com/paul-meehls-philosophical-psychology-01/&#34; target=&#34;_blank&#34;&gt;第一堂&lt;/a&gt;&lt;/h3&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/AEPbzCTneDs?rel=0&amp;amp;start=2&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;(CSC)&amp;ldquo;哲學心理學&amp;rdquo;系列講座是談心理科學理論與發現的整合分析(meta-science)，談如何建構科學理論，以及如何評估理論品質。&lt;/p&gt;&lt;/li&gt;
@@ -142,20 +190,97 @@
 &lt;h3 id=&#34;第三堂-http-psychbrief-com-paul-meehls-philosophical-psychology-03&#34;&gt;&lt;a href=&#34;http://psychbrief.com/paul-meehls-philosophical-psychology-03/&#34; target=&#34;_blank&#34;&gt;第三堂&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;(CSC)開頭11分鐘回顧科學哲學研究在明尼蘇達大學落地生根到1980年代的歷史。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;(CSC)開頭11分鐘回顧科學哲學研究在明尼蘇達大學落地生根到1980年代的歷史。&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;(PB)科學的表達是描述的(descriptive)，倫理學與法律用的表達是規定的(prescriptive)。科學哲學的表達則是混合兩者，否則無法探討任何課題(邏輯實證論者無法洞察這一點)。&lt;/p&gt;&lt;/li&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/7vx-A8P1BIw?rel=0&amp;amp;start=660&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;li&gt;&lt;p&gt;(CSC)科學哲學研究必然觸及科學史，Meehl認為科學史有外部(external)與內部(internal)兩個層面。&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;(PB)科學的表達是描述的(descriptive)，倫理學與法律用的表達是規定的(prescriptive)。科學哲學的表達則是混合兩者，否則無法探討任何課題(邏輯實證論者無法洞察這一點)。&lt;/li&gt;
+&lt;li&gt;(CSC)科學哲學研究必然觸及科學史，Meehl認為科學史有外部(external)與內部(internal)兩個層面。&lt;/li&gt;
+&lt;li&gt;(PB)外部史觀察政治與經濟等非科學家理智能運作的領域，如何影響科學理論的發展，還有表達的方式。(例如法國大革命與近代科學發展進程的關係)&lt;/li&gt;
+&lt;li&gt;(PB)內部史觀察能揭露宇宙如何運作的事實，如何被科學家注意。還有科學家提出的理論如何和發現的事實相互發展。&lt;/li&gt;
+&lt;li&gt;(PB)(第三堂主題#1)科學&lt;strong&gt;發現&lt;/strong&gt;的脈絡(Context of Discovery)通常指導致重大科學發現的心理與社會因素。例如1865年提出&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E8%8B%AF%E7%92%B0&#34; target=&#34;_blank&#34;&gt;苯環&lt;/a&gt;的德國化學家&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E5%BC%97%E9%87%8C%E5%BE%B7%E9%87%8C%E5%B8%8C%C2%B7%E5%A5%A5%E5%8F%A4%E6%96%AF%E7%89%B9%C2%B7%E5%87%AF%E5%BA%93%E5%8B%92%C2%B7%E5%86%AF%C2%B7%E6%96%AF%E7%89%B9%E6%8B%89%E5%A4%9A%E5%B0%BC%E8%8C%A8&#34; target=&#34;_blank&#34;&gt;弗里德里希·凱庫勒&lt;/a&gt;，據說曾夢到&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E8%A1%94%E5%B0%BE%E8%9B%87&#34; target=&#34;_blank&#34;&gt;一條銜尾蛇&lt;/a&gt;，才有此發現。不過突然的頓悟與如何導致事實的發現沒有太大關係。&lt;/li&gt;
+&lt;li&gt;(PB)科學&lt;strong&gt;修正&lt;/strong&gt;的脈絡(Context of Justification)：科學家多數時候靠著累積證據、資料、甚至統計結果，逐漸逼近事實。&lt;/li&gt;
+&lt;li&gt;(PB)有人認為沒有必要區分突然的頓悟與漸進的修正。Meehl認為如果不多了解修正的脈絡，才能完整理解科學家們檯面下的正確與錯誤操作，如何影響科學的發展。&lt;/li&gt;
+&lt;li&gt;(PB)Meehl指出許多時候科學家並不希望研究紀錄公諸於世(抽屜效應？)。&lt;/li&gt;
+&lt;li&gt;(PB)即使是有錯誤的研究紀錄，也能促進後人了解犯錯的原因。例如擁護以太理論的美國物理學家&lt;a href=&#34;https://en.wikipedia.org/wiki/Dayton_Miller&#34; target=&#34;_blank&#34;&gt;戴頓‧米勒&lt;/a&gt;，曾做過的以太觀測實驗紀錄於1955及1986年，透過再分析發現其測量問題導致錯誤結論。&lt;/li&gt;
+&lt;li&gt;(CSC)Meehl談論物理學的以太研究歷史，同時提到以老鼠跑迷津研究潛在學習(latent learning)的不同心理學，曾有無法重現彼此發現的時期。例如&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/%E7%88%B1%E5%BE%B7%E5%8D%8E%C2%B7%E6%89%98%E5%B0%94%E6%9B%BC&#34; target=&#34;_blank&#34;&gt;愛德華·托爾曼&lt;/a&gt;在柏克萊得到的實驗，在愛荷華的另一個實驗室無法獲得相同結果。&lt;/li&gt;
+&lt;li&gt;(CSC)後來托爾曼公佈自已的完整實驗紀錄，對照愛荷華團隊的實驗方法有許多不一致的地方。托爾曼並未批評對手，只有提出之後行為心理學家嚴格遵守的研究準則，避免不明中介變項干擾實驗結果。&lt;/li&gt;
+&lt;li&gt;(PB)未知或未想到的中介變項可能有顯著影響。非故意的操作錯誤不寫到報告中可視為一種刻意的造假(Fraud)。&lt;/li&gt;
+&lt;li&gt;(PB)刻意的造假比非故意的錯誤更嚴重，因為產生的結論會混淆與誤導其他科學家對理論預測能力的信任。錯誤的結論需要足夠多無法再現的研究結果，才能確定理論無法預測新的事實(&lt;strong&gt;請參考2011年之後出現的大規模註冊研究專案&lt;/strong&gt;)。這些問題都要在科學發現與修正的脈絡中一併探討，像是利益衝突等，都不會在論文報告中見得，卻有重要影響。&lt;/li&gt;
+&lt;li&gt;(PB)舉出四種影響科學發現脈絡的因素：&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;科學家對特定研究結果的偏好；報告正面研究結果有利爭取經費？&lt;/li&gt;
+&lt;li&gt;論文評審者的偏好與粗心可能導致錯誤結論的論文成功出版(出版偏誤)。Meehl曾在1954年出版整合分析(meta analysis)的&lt;a href=&#34;https://www.echopointbooks.com/physical-science-math/clinical-versus-statistical-prediction?rq=Clinical%20versus%20statistical%20prediction&#34; target=&#34;_blank&#34;&gt;經典教科書&lt;/a&gt;，討論使用整合分析評估出版偏誤的功效與限制。&lt;/li&gt;
+&lt;li&gt;獎助偏誤(?)/科學發現的政治學。Meehl當場評論當時大學與聯邦政府喜歡補助有話題/大眾關心的研究案。大學管理來自政府的研究經費，以此引導校內研究人員做符合校方喜好的研究，不符合校方立場的研究難以持續。這些政經勢力的影響不會表現論文報告之中，並減少不被補助的研究發表機會(抽屜效應)。有些理論的預測力如果只侷限於某些研究方法，獎助又偏好這類研究方法，長期累積的偏誤將難以預測對科學發展的影響好壞。&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;(PB)外部史觀察政治與經濟等非科學家理智能運作的領域，如何影響科學理論的發展，還有表達的方式。(例如法國大革命與近代科學發展進程的關係)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(給臨床與諮商心理學的科學建議)只依賴實務經驗而不參考有系統的研究資料，就像長期累積正面結果的一系列研究論文，沒有反面證據，會過度高估個人理論的預測力。&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;(PB)內部史觀察能揭露宇宙如何運作的事實，如何被科學家注意。還有科學家提出的理論如何和發現的事實相互發展。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(PB)(主題#1結尾)科學發現過程必受漸近修正影響。有良好的邏輯知識有助避免研究過程中犯下邏輯失誤，儘管影響科學發現脈絡的外部因素眾多，並非只有負面影響。&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;(PB)Context of discovery: psychological and social q’s about discoverer. E.g. Discovery of benzene ring. The fact he “dreamed of the snakes” is irrelevant to the truth of the story (the justification).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(CSC)(主題#2)從廣義的科學來說，什麼是真相(truth)? 1:05:59起&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(CSC)開場用心理系學生有&lt;strong&gt;真相恐懼症(truth-phobia)&lt;/strong&gt;的玩笑話，呼應心理學少有可經得起考驗的真相之狀況，帶出Meehl認同的&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E7%A7%91%E5%AD%B8%E7%8F%BE%E5%AF%A6%E4%B8%BB%E7%BE%A9&#34; target=&#34;_blank&#34;&gt;科學現實論(Scientific reality)&lt;/a&gt;。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)科學現實論認為必然存在客觀現實，科學的任務就是指出各種現實的存在。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/%E5%B7%A5%E5%85%B7%E4%B8%BB%E7%BE%A9&#34; target=&#34;_blank&#34;&gt;工具主義(Instrumentalism)&lt;/a&gt;與科學現實論不同，主張事物的真相與客觀現實是否存在無關。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(CSC)精神分析的思路是工具主義，例如佛洛依德理論中的重要成份：原慾(libido)，能不能找到原慾存在的現實並非佛洛依德等精神分析學者的研究重點。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)認同工具主義，幻想也有學術意義。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(CSC)Meehl本人對科幻沒興趣，認為紮實的科學研究要以科學現實論為原則。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)行為主義大師&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/%E4%BC%AF%E5%B0%94%E8%B5%AB%E6%96%AF%C2%B7%E5%BC%97%E9%9B%B7%E5%BE%B7%E9%87%8C%E5%85%8B%C2%B7%E6%96%AF%E9%87%91%E7%BA%B3&#34; target=&#34;_blank&#34;&gt;史基納&lt;/a&gt;是實踐科學現實論的一種典型，他相信一旦確立心理歷程與人類行為的對應圖譜，心理學家才能真正測試心理歷程。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(CSC)Meehl以遺傳學致力建立的遺傳連鎖圖譜(genetic linkage maps)，說明史基納所認定的客觀現實。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/7vx-A8P1BIw?rel=0&amp;amp;start=4896&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(PB) 三種真相的理論(theroy of truth):&lt;a href=&#34;https://en.wikipedia.org/wiki/Correspondence_theory_of_truth&#34; target=&#34;_blank&#34;&gt;真理符應論(Correspondence theory of truth)&lt;/a&gt;:科學現實論的真相觀，任何命題都有相符的事實；&lt;a href=&#34;https://en.wikipedia.org/wiki/Coherence_theory_of_truth&#34; target=&#34;_blank&#34;&gt;真理融貫論(Coherence theory of truth)&lt;/a&gt;：一個真相由一連串命題連貫構成，例如「我昨晚睡了八個小時」與「我昨天晚上十點就寢」及「我今天早上六點起床」有關；&lt;a href=&#34;https://en.wikipedia.org/wiki/Instrumentalism&#34; target=&#34;_blank&#34;&gt;真理工具論(instrumental theory)&lt;/a&gt;:可預測或操作次序的事件都可以視為真相，包括幻想。&lt;/li&gt;
+&lt;li&gt;(PB)各種真相觀並非互相排斥。例如科學現實論支持者承認工具主義真相觀與事實有緊密關係，也需要根據資料。不連貫的命題絕對不可能是真相，而連貫的命題能做邏輯真偽判斷。&lt;/li&gt;
+&lt;li&gt;(PB)以第一堂曾提過的「凱撒渡過盧比孔河」說明邏輯學者如何判斷這句陳述是真相。&lt;/li&gt;
+&lt;li&gt;(CSC) 根據維根斯坦，以上陳述的表達方式~
+Semantic concept of truth:
+|後設言談 |客觀言談|
+|&amp;mdash;|&amp;mdash;|
+|$[Caesar crossed the Rubicon]$ is true | iff Caesar crossed the Rubicon|&lt;/li&gt;
+&lt;li&gt;(CSC) 如何以後設言談與客觀言談表達真相，建議參考&lt;a href=&#34;https://en.wikipedia.org/wiki/Rudolf_Carnap&#34; target=&#34;_blank&#34;&gt;卡爾納普&lt;/a&gt;與&lt;a href=&#34;https://en.wikipedia.org/wiki/Felix_Kaufmann&#34; target=&#34;_blank&#34;&gt;考夫曼&lt;/a&gt;之間的討論。&lt;/li&gt;
+&lt;li&gt;(PB)以形式邏輯來說，真相是以句子的謂詞(predicate)指稱，也就是主詞(subject)。&lt;/li&gt;
+&lt;li&gt;(PB)最後三分鐘簡略提及逼真性(Verisimilitude)：陳述接近真相的程度。逼真是發生論而非本體論的問題。&lt;/li&gt;
+&lt;li&gt;(PB)科學理論是有起碼逼真性陳述的集合。&lt;/li&gt;
+&lt;li&gt;(CSC)Meehl認為包括心理學等現代科學，是追求事實支持的陳述逼近真相的程度。並非像邏輯學探討如何判斷陳述為真。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;第四堂-http-psychbrief-com-paul-meehls-philosophical-psychology-04&#34;&gt;&lt;a href=&#34;http://psychbrief.com/paul-meehls-philosophical-psychology-04/&#34; target=&#34;_blank&#34;&gt;第四堂&lt;/a&gt;&lt;/h3&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WCaZbsLcWGE?rel=0&amp;amp;start=180&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;(CSC) 繼續第三講未講完的逼真性(Verisimilitude)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB) 以&lt;strong&gt;凱撒渡過盧比孔河&lt;/strong&gt;的兩個描述開場：「凱撒很有可能已渡過盧比孔河」(客觀語言)與「凱撒渡過盧比孔河是事實」(後設語言)是同義的。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB) 證據的機率(probability about evidence)是指&lt;strong&gt;該證據&lt;/strong&gt;與&lt;strong&gt;其支持的理論&lt;/strong&gt;，兩者之間的關係。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB) 逼真性呈現言論主張與確實存於世界的真相之間關係，不論主張有沒有依靠證據或證據的效力，任何主張都有逼真性。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)「凱撒渡過盧比孔河是事實」(後設語言)的真偽是考察「若且唯若凱撒渡過盧比孔河」&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB) 「凱撒很有可能已渡過盧比孔河」(客觀語言)的真偽是從有記載的檔案中，找到人人相信的紀錄。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB) 後設語言與客觀語言主張的真偽分別依靠言談內容與證據。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB) 上述區別與邏輯實證論主張「意義是檢證主張真偽的方法」背道而馳。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB) 逼真性如同事實的確認(confirmation)，以程度大小度量。
+5:52&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;(PB)&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&#34;第五堂-http-psychbrief-com-paul-meehls-philosophical-psychology-05&#34;&gt;&lt;a href=&#34;http://psychbrief.com/paul-meehls-philosophical-psychology-05/&#34; target=&#34;_blank&#34;&gt;第五堂&lt;/a&gt;&lt;/h3&gt;
 
@@ -925,43 +1050,6 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
 &lt;blockquote&gt;
 &lt;p&gt;2017愚人節補記：任職於德國波鴻魯爾大學的博士後研究員Malte Elson，這天在與友人一起經營的部落格&lt;a href=&#34;http://www.the100.ci/&#34; target=&#34;_blank&#34;&gt;The 100% CI&lt;/a&gt;，發表一篇指控Andrew Gelman刻意長期隱匿支持權力姿勢效應正面證據，卻三不五時批評Amy Cuddy的&lt;a href=&#34;http://www.the100.ci/2017/04/01/posergate-how-andrew-gelman-betrayed-science-in-his-war-on-power-posing/&#34; target=&#34;_blank&#34;&gt;貼文&lt;/a&gt;。文中指出Andrew Gelman收集的資料足於證實權力姿勢能有效提昇個人自信心與冒險信念，並公開側錄Andrew Gelman研究過程的影片。不過Andrew Gelman看過之後，只說Malte Elson這夥人做研究還行，&lt;a href=&#34;http://andrewgelman.com/2017/04/01/move-nothing-see/&#34; target=&#34;_blank&#34;&gt;寫部落格還不到家&lt;/a&gt;。看到貼文發佈日期後，網友皆留言按讚並延伸即興創作。&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>時態門～無法再現的社會心理學實驗是因為不乾淨的資料</title>
-      <link>/zh/post/text_2017004/</link>
-      <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/post/text_2017004/</guid>
-      <description>
-
-&lt;p&gt;去年我寫的網誌「紀錄已經出現與即將出現的再現危機&lt;a href=&#34;http://scchen.com/post/zh/text_2016004/&#34; target=&#34;_blank&#34;&gt;1&lt;/a&gt;」，介紹加拿大阿拉巴馬大學社會心理學助理教授William Hart於2013年發表在心理科學期刊的論文&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/21193778&#34; target=&#34;_blank&#34;&gt;Learning About What Others Were Doing:
-Verb Aspect and Attributions of Mundane
-and Criminal Intent for Past Actions&lt;/a&gt;，無法被12間實驗室再現的事件。這個月初(&lt;sup&gt;2&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt;)心理科學期刊宣佈撤銷William Hart於2013年發表的另一篇論文&lt;a href=&#34;http://journals.sagepub.com/doi/pdf/10.1177/0956797612446351&#34; target=&#34;_blank&#34;&gt;Unlocking Past Emotion: Verb Use Affects
-Mood and Happiness&lt;/a&gt;，使得事件有新的發展。這篇網誌整理至今為止，這兩篇論文牽涉的資料造假證據如何浮現。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/images/william_Hart.jpg&#34; alt=&#34;&#34; title=&#34;William Hart。圖像取自阿拉巴馬大學網站。&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;描述過去經驗的動詞時態能影響當下情緒&#34;&gt;描述過去經驗的動詞時態能影響當下情緒？&lt;/h3&gt;
-
-&lt;p&gt;William Hart的兩篇論文都是檢驗一個假設：描述一項事件的文字所使用的動詞時態(verb tense)，會影響聽者對事件的信念與情感。這兩篇論文讓受試者評估的敘事文，都有設計動詞是非完成時態(I am walking on &amp;hellip;)與完成時態(I walked on &amp;hellip;)兩種版本，2011的論文請受試者假想自已是陪審團團員，判斷一件虛擬的兇殺案情節裡，嫌疑人有沒有意圖殺害被害人。2013的論文有四個實驗，讓受試者以非完成或完成時態，回憶正面或負面記憶–包括個人或在實驗室裡操作的情節。2011年的研究假設完成時態較容易讓人相信嫌疑人有犯意，2013的研究假設非完成時態讓受試者能回憶負面記憶的更多細節，造成比完成時態更大的負面情緒。&lt;br /&gt;
-2011論文的掛名作者是William Hart與UIUC的Dolores Albarracín，但是2013論文是William Hart單獨掛名。根據Retraction Watch的&lt;a href=&#34;http://retractionwatch.com/2017/02/07/study-words-effect-mood-retracted-investigation-finds-evidence-data-manipulation/&#34; target=&#34;_blank&#34;&gt;消息&lt;/a&gt;，是由實際參與2013論文研究的某位不具名的研究生，向阿拉巴馬大學的研究核實辦公室(Office of Research Compliance)舉發，提出這份論文原始資料的加工證據。校方通知心理科學期刊編輯部後，由期刊做出撤稿決定。讀者下載&lt;a href=&#34;http://journals.sagepub.com/doi/pdf/10.1177/0956797612446351&#34; target=&#34;_blank&#34;&gt;2013年論文&lt;/a&gt;會發現，包括摘要的每個段落，幾乎都有第一人稱代名詞開頭的句子，像是I tested&amp;hellip;, I examined, I analyzed&amp;hellip;。雖然現代學術論文寫作指引建議作者可以適當地使用人稱代名詞，但是使用頻率如此之高，足以媲美現任美國總統川普先生的公開演講。&lt;br /&gt;
-英國卡迪夫大學(Cardiff University)的Richard Morey，在事發數天後提出一個可公佈在PubPeer的&lt;a href=&#34;https://medium.com/@richarddmorey/about-that-hart-2013-retraction-79cfdaea5cb0#.j0v3rda4x&#34; target=&#34;_blank&#34;&gt;論文內容檢查&lt;/a&gt;。論文之中的一個實驗，讓受試者一開始進行改錯字(anagrams)任務，William Hart的想法是調整改錯字的難度，造成受試者的正面(簡單的錯字)與負面(困難的錯字)記憶。之後以一項紀錄反應時間的記憶作業，評估受試者回憶負面記憶的效率。以論文報告的數據來看，非完成時態的反應時間比完成時態的反應時間快了一百毫秒。這對有研究經驗的心理學家來說是非常驚人的結果，因為只有少數經典的認知心理學實驗能在多次再現實驗中得到，社會心理學的計時實驗能有20毫秒的差距就是了不起的效果。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/images/Hart2013.png&#34; alt=&#34;&#34; title=&#34;Hart[2013]的部分內文，醒目標示為Richard Morey批判的數據。圖像取自原始論文。&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;描述犯案情節的動詞時態能推測犯意&#34;&gt;描述犯案情節的動詞時態能推測犯意？&lt;/h3&gt;
-
-&lt;p&gt;2013論文被撤稿的討論還方興未艾，曾參與2011論文再現研究的荷蘭鹿特丹伊拉謨斯大學(Erasmus University Rotterdam)的Rolf Zwaan，在2月21日於個人部落格公佈一項&lt;a href=&#34;https://rolfzwaan.blogspot.tw/2017/02/replicating-effects-by-duplicating-data.html&#34; target=&#34;_blank&#34;&gt;內幕消息&lt;/a&gt;，為後續發展投下震撼彈。2013論文撤稿消息公開之後，Zwaan收到一項可靠消息來源(&lt;strong&gt;註1&lt;/strong&gt;)：William Hart在去年的再現研究結果正式發表後，自己進行了2011論文的再現研究，這次收集194位受試者的資料，並且成功再現2011論文的結果。但是Zwaan檢視來源提供的原始資料，發現其中73筆是複製貼上而成。能發現的原因很簡單，這項William Hart親自主持的再現實驗，最後會請受試者自由回答這項研究的可能目的，逐字紀錄在獨立欄位，用試算表軟體排序一下，就發現不尋常之處，就像下圖Zwaan公佈的部分資料內容：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/images/Screen_Shot_Zwaan_blog.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;給心理學以及整個科學界的教訓&#34;&gt;給心理學以及整個科學界的教訓&lt;/h3&gt;
-
-&lt;p&gt;這起事件的發展再次顯出開放資料的重要性，這是各國各領域科學研究人員都必須面對的課題，差別僅在於要著重的層次。對心理學來說，採取&lt;a href=&#34;http://scchen.com/post/zh/text_2017002/&#34; target=&#34;_blank&#34;&gt;註冊研究&lt;/a&gt;及開放資料的正當性再次提高。對於現在的台灣科學界，最急迫的任務是如何在造假事件發生初期，建立可徵信的研究資料保存機制。這起國外造假案件的後續發展，值得有心人士一起關注。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;註1:&lt;/strong&gt; 根據私人通信，Rolf Zwaan表示，因為完整資料已經交給阿拉巴馬大學，目前他必須隱匿消息來源。不過根據部落格內容，我推測十之八九與那位不具名的研究生有關。&lt;/p&gt;
 </description>
     </item>
     

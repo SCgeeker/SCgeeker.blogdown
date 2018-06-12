@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sat, 03 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Experiment_Design</title>
+      <link>/zh/tags/experiment_design/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/experiment_design/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Knowledge_management</title>
@@ -24,7 +33,7 @@
     <item>
       <title>Open science</title>
       <link>/zh/tags/open-science/</link>
-      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/tags/open-science/</guid>
       <description></description>
@@ -33,7 +42,7 @@
     <item>
       <title>Preregistration</title>
       <link>/zh/tags/preregistration/</link>
-      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/tags/preregistration/</guid>
       <description></description>

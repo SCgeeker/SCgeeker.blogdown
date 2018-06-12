@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Open science on Sau-Chin Chen&#39;s Website</title>
-    <link>/en/tags/open-science/</link>
-    <description>Recent content in Open science on Sau-Chin Chen&#39;s Website</description>
+    <title>Teaching on Sau-Chin Chen&#39;s Website</title>
+    <link>/en/categories/teaching/</link>
+    <description>Recent content in Teaching on Sau-Chin Chen&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
     <lastBuildDate>Tue, 12 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/en/tags/open-science/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/en/categories/teaching/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

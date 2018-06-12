@@ -5,6 +5,18 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/post/classical-memory-studies/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/post/classical-memory-studies/" hreflang="en"/>
+    
+      <loc>/zh/post/classical-memory-studies/</loc>
+      <lastmod>2018-06-12T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/project/meehl/</loc>
       <lastmod>2018-05-05T00:00:00+00:00</lastmod>
     </url>
@@ -247,6 +259,19 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/tags/experiment_design/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/experiment_design/" hreflang="en"/>
+    
+      <loc>/zh/tags/experiment_design/</loc>
+      <lastmod>2018-06-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/zh/tags/knowledge_management/" hreflang="zh"/>
       <xhtml:link rel="alternate" href="/en/tags/knowledge_management/" hreflang="en"/>
     
@@ -260,8 +285,11 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
+    
       <loc>/zh/tags/open-science/</loc>
-      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -274,7 +302,7 @@
       <xhtml:link rel="alternate" href="/en/post/" hreflang="en"/>
     
       <loc>/zh/post/</loc>
-      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -287,7 +315,7 @@
       <xhtml:link rel="alternate" href="/en/tags/preregistration/" hreflang="en"/>
     
       <loc>/zh/tags/preregistration/</loc>
-      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -364,7 +392,7 @@
       <xhtml:link rel="alternate" href="/en/tags/" hreflang="en"/>
     
       <loc>/zh/tags/</loc>
-      <lastmod>2018-02-03T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -373,8 +401,11 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/categories/teaching/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/teaching/" hreflang="en"/>
+    
       <loc>/zh/categories/teaching/</loc>
-      <lastmod>2018-02-03T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
