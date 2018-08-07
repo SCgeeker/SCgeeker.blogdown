@@ -25,14 +25,14 @@
 }
 
 html {
-  font-family: 'sourcehansans-tc', sans-serif;
-  font-size: 18px;
+  font-family: 'Fauna One', sans-serif;
+  font-size: 16px;
   color: rgba(0,0,0,0.8);
   line-height: 1.65;
 }
 @media screen and (min-width: 58em) {
   html {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -66,7 +66,7 @@ ul, ol, dl {
 
 /* Navigation bar text */
 .navbar-default {
-  font-family: 'sourcehansans-tc', sans-serif;
+  font-family: 'Fauna One', sans-serif;
   font-weight: 400;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
@@ -74,7 +74,7 @@ ul, ol, dl {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'sourcehansans-tc', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
@@ -135,7 +135,7 @@ figcaption {
   line-height: 1.25;
   font-size: 1rem;
   margin-bottom: 1.65rem;
-  font-family: 'sourcehansans-tc', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   counter-increment: captions;
 }
 
@@ -148,7 +148,7 @@ figcaption h4 {
 
 pre,
 code {
-  font-family: 'sourcehansans-tc', monospace;
+  font-family: 'Roboto Mono', monospace;
   color: #c7254e;
   background-color: #f9f2f4;
 }
@@ -999,7 +999,7 @@ footer a#back_to_top i {
 }
 
 nav#navbar-main li {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar-default .navbar-nav>li>a,

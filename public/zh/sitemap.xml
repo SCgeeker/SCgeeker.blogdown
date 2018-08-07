@@ -5,8 +5,14 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/zh/post/classical-memory-studies/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/post/classical-memory-studies/" hreflang="en"/>
+      <loc>/zh/post/ps-podcasts.zh/</loc>
+      <lastmod>2018-08-07T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
     
       <loc>/zh/post/classical-memory-studies/</loc>
       <lastmod>2018-06-19T00:00:00+00:00</lastmod>
@@ -237,7 +243,7 @@
     <url>
     
       <loc>/zh/categories/academic/</loc>
-      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+      <lastmod>2018-08-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -250,7 +256,7 @@
       <xhtml:link rel="alternate" href="/en/categories/" hreflang="en"/>
     
       <loc>/zh/categories/</loc>
-      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+      <lastmod>2018-08-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -285,11 +291,8 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
-    
       <loc>/zh/tags/open-science/</loc>
-      <lastmod>2018-06-19T00:00:00+00:00</lastmod>
+      <lastmod>2018-08-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -302,7 +305,7 @@
       <xhtml:link rel="alternate" href="/en/post/" hreflang="en"/>
     
       <loc>/zh/post/</loc>
-      <lastmod>2018-06-19T00:00:00+00:00</lastmod>
+      <lastmod>2018-08-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -400,9 +403,6 @@
     
     
     <url>
-    
-      <xhtml:link rel="alternate" href="/zh/categories/teaching/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/categories/teaching/" hreflang="en"/>
     
       <loc>/zh/categories/teaching/</loc>
       <lastmod>2018-06-19T00:00:00+00:00</lastmod>
@@ -558,7 +558,7 @@
     <url>
     
       <loc>/zh/tags/%E7%A7%91%E5%AD%B8%E7%B2%BE%E7%A5%9E/</loc>
-      <lastmod>2017-12-30T00:00:00+00:00</lastmod>
+      <lastmod>2018-08-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
