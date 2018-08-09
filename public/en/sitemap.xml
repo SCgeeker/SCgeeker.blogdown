@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/en/post/ps-podcasts/</loc>
+      <lastmod>2018-08-09T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/en/post/use-bookdownplus/" hreflang="en"/>
       <xhtml:link rel="alternate" href="/zh/post/use-bookdownplus/" hreflang="zh"/>
     
@@ -164,6 +173,19 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/en/categories/academic/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/categories/academic/" hreflang="zh"/>
+    
+      <loc>/en/categories/academic/</loc>
+      <lastmod>2018-08-09T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/en/tags/bayesian/</loc>
       <lastmod>2016-04-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -188,6 +210,7 @@
       <xhtml:link rel="alternate" href="/zh/categories/" hreflang="zh"/>
     
       <loc>/en/categories/</loc>
+      <lastmod>2018-08-09T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -234,6 +257,19 @@
     
       <loc>/en/tags/mental-simulation/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
+    
+      <loc>/en/tags/open-science/</loc>
+      <lastmod>2018-08-09T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

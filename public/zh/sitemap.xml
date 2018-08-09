@@ -242,6 +242,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/categories/academic/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/academic/" hreflang="en"/>
+    
       <loc>/zh/categories/academic/</loc>
       <lastmod>2018-08-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -290,6 +293,9 @@
     
     
     <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
     
       <loc>/zh/tags/open-science/</loc>
       <lastmod>2018-08-07T00:00:00+00:00</lastmod>
