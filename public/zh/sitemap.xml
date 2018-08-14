@@ -419,6 +419,9 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/categories/teaching/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/teaching/" hreflang="en"/>
+    
       <loc>/zh/categories/teaching/</loc>
       <lastmod>2018-08-12T00:00:00+00:00</lastmod>
       <priority>0</priority>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Tue, 31 May 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/en/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>If Emily Rosa met Thomas Bayes ...</title>
+      <link>/en/post/if-emily-rosa-met-thomas-bayes/</link>
+      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/if-emily-rosa-met-thomas-bayes/</guid>
+      <description>Twenty years ago 11-years-old Emily Rosa and her parents publsihed their study in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, Therapeutic Touch (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate the energy field surrounded human body without touching.</description>
+    </item>
     
     <item>
       <title>Why we need a readable data table in behavioral scientific research?</title>
