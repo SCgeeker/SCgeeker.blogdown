@@ -7,10 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sun, 12 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/categories/reproduce-practice/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>心理科學研究必用神器2 ~ Open Science Framework</title>
+      <link>/zh/post/open-science-framework.zh/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/open-science-framework.zh/</guid>
+      <description>前言註冊、登入與帳戶設定帳戶設定專案儀表板(Dashboard)創建與管理研究專案創建新專案管理專案專案隱私設定專案協作者權限設定由專案主頁面設定由專案物件頁面設定協作者權限移除協作者專案管理權限專案協作項目Wiki檔案(Files)專案註冊程序註冊實作1：由專案主頁面進行註冊實作2：OSF RR專頁前言開放科學平台(Open Science Framework)是2013年開放科學中心(Center for Open Science)開始經營的科學研究協作平台，到了2018年7月已經有十萬名註冊使用者。雖然界面語言只有英文，世界各地能使用網路的研究者都知曉這個平台提供研究資料保存與協同合作服務。本人接觸的華文地區有不少科學研究者知道OSF服務，但是一直缺乏學習與使用機會，雖然我還沒有看到官方的正式統計，約略估計華文使用者運用OSF共享及版本控制等服務的普及率，應該低歐美各國使用者不只一倍。
+寫作這篇網誌為本人教學與推廣使用。使用的OSF介面截圖取自COS官方功能介紹網頁，如果使用過程有任何問題，可至官方網頁查詢。
+註冊、登入與帳戶設定初次使用請註冊帳號，只要按下如下圖的註冊(Sign up)，就會進入註冊頁面。
+註冊頁面只要輸入個人完整姓名(建議使用英文)，個人常用電子郵件信箱，以及自訂密碼能完成。請留意註冊網頁有防BOT機制(下圖1)，按下創建帳戶(下圖2)，再到個人電子郵件信箱查看確認信，按下確認連結就完成創建程序。
+創建帳戶之後，你隨時可從任何可上網的網頁瀏覽器登入個人OSF帳戶。只要從首頁按下登入(Sign in)即可。
+登入畫面輸入註冊的個人電子郵件信箱與密碼，正確即可登入。目前也支援使用者以ORCID登入，如果使用者是專業學術工作者，建議登錄一個專屬ORCID，好處稍後會提到。
+帳戶設定首次登入使用者建議先花點時間在帳戶設定頁面(Profile)，填入個人重要資訊，帳戶設定頁面開啟途徑如下圖：
+帳戶設定頁面如下圖，不過初次使用或未設定者應該是沒有任何資訊。要填入資訊請點一下如下圖的地方：
+個人資訊有四大項，首先是真實姓名(Name)。這個部分建議比照學術寫作格式建立姓名資訊，頁面下方還有預覽APA與MLA格式的姓名呈現，確認無誤就按Save。如此一來，你所建立的專案就能使用合乎規範的格式於任何報告中引用，或者充實個人履歷的項目。
+第二大項集合個人有實際使用的社群平台帳號(Social)，包括個人網頁、推特等。稍早提到的ORCID也是在此輸入，儲存後就能使用ORCID登入OSF。
+第三大項是工作經歷(Employment)，你希望在OSF公開的經歷都可以依下圖欄位填入，正在從事的職位只要勾選Ongoing。
+第三大項是學歷(Education)，你希望在OSF公開的學歷都可以依下圖欄位填入，在學中的學校只要勾選Ongoging。
+個人展望
+由於OSF支授ORCID登入，我個人希望OSF下一次改版能讓使用者直接由ORCID匯入。因為ORCID是專屬個人的學術經歷工作帳號，你希望公開讓人檢索的資訊都已經在建立於ORCID，並串連個人的學術作品。此外，ORCID有提供多國語言界面，未來OSF朝向多語界面改版，也能經由讀取使用者ORCID預設語言，自動切換為對應的語言介面。
+專案儀表板(Dashboard)所有使用者登入OSF第一個看到的是如下圖的這個頁面。當使用者創建或協作的專案越多，頁面顯示的專案欄位就越多，欄位預設排序是以專案更新時間，由上至下排列。下圖中每欄的粗體字是專案頁面標題，有些以斜槓(/)區隔的標題，代表該項主專案之下的物件(Component)。在這個頁面你想找比較舊的專案，可以頁面上方的搜尋欄(Search your projects)，找出你要維護的專案。
+如果要用比較有系統的方式整理與尋找專案，只要按如下圖的My Projects，切換到專案管理介面。</description>
+    </item>
     
     <item>
       <title>心理科學研究必用神器1~Zotero</title>

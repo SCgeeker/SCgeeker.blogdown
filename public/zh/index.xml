@@ -11,6 +11,703 @@
     <atom:link href="/zh/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>心理科學研究必用神器2 ~ Open Science Framework</title>
+      <link>/zh/post/open-science-framework.zh/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/open-science-framework.zh/</guid>
+      <description>&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a&gt;前言&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;註冊、登入與帳戶設定&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a&gt;帳戶設定&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#dashboard&#34;&gt;專案儀表板(Dashboard)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;創建與管理研究專案&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a&gt;創建新專案&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;管理專案&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;專案隱私設定&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;專案協作者權限設定&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a&gt;由專案主頁面設定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;由專案物件頁面設定協作者權限&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;移除協作者專案管理權限&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;專案協作項目&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#wiki&#34;&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#files&#34;&gt;檔案(Files)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a&gt;專案註冊程序&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1&#34;&gt;註冊實作1：由專案主頁面進行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2osf-rr&#34;&gt;註冊實作2：OSF RR專頁&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://osf.io/&#34;&gt;開放科學平台(Open Science Framework)&lt;/a&gt;是2013年開放科學中心(Center for Open Science)開始經營的科學研究協作平台，到了2018年7月已經有十萬名註冊使用者。雖然界面語言只有英文，世界各地能使用網路的研究者都知曉這個平台提供研究資料保存與協同合作服務。本人接觸的華文地區有不少科學研究者知道OSF服務，但是一直缺乏學習與使用機會，雖然我還沒有看到官方的正式統計，約略估計華文使用者運用OSF共享及版本控制等服務的普及率，應該低歐美各國使用者不只一倍。&lt;/p&gt;
+&lt;p&gt;寫作這篇網誌為本人教學與推廣使用。使用的OSF介面截圖取自COS官方&lt;a href=&#34;http://help.osf.io/&#34;&gt;功能介紹網頁&lt;/a&gt;，如果使用過程有任何問題，可至官方網頁查詢。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;註冊、登入與帳戶設定&lt;/h2&gt;
+&lt;p&gt;初次使用請註冊帳號，只要按下如下圖的&lt;strong&gt;註冊(Sign up)&lt;/strong&gt;，就會進入註冊頁面。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/122/original/048766b8-3803-4404-85cf-4a9ef552035a.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;註冊頁面只要輸入個人完整姓名(建議使用英文)，個人常用電子郵件信箱，以及自訂密碼能完成。請留意註冊網頁有防BOT機制(下圖1)，按下創建帳戶(下圖2)，再到個人電子郵件信箱查看確認信，按下確認連結就完成創建程序。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/126/original/5d42f457-8e4b-4660-a18d-4e4ee4c6b9d9.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;創建帳戶之後，你隨時可從任何可上網的網頁瀏覽器登入個人OSF帳戶。只要從首頁按下&lt;strong&gt;登入(Sign in)&lt;/strong&gt;即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/128/original/a81cbd79-fa9d-4825-9603-94b57e1a44c1.jpg&#34; /&gt; 登入畫面輸入註冊的個人電子郵件信箱與密碼，正確即可登入。目前也支援使用者以&lt;a href=&#34;https://orcid.org/&#34;&gt;ORCID&lt;/a&gt;登入，如果使用者是專業學術工作者，建議登錄一個專屬ORCID，好處稍後會提到。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/808/052/original/b6e1c9ce-d700-47e6-b9f6-30b58c5f58f5.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;帳戶設定&lt;/h3&gt;
+&lt;p&gt;首次登入使用者建議先花點時間在帳戶設定頁面(Profile)，填入個人重要資訊，帳戶設定頁面開啟途徑如下圖：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/168/original/44f06cff-0f24-4ebb-b51e-e24dd4254fb4.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;帳戶設定頁面如下圖，不過初次使用或未設定者應該是沒有任何資訊。要填入資訊請點一下如下圖的地方：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/275/461/original/8acf8b95-5c5e-4a1c-8650-3997b13008b4.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;個人資訊有四大項，首先是真實姓名(Name)。這個部分建議比照學術寫作格式建立姓名資訊，頁面下方還有預覽APA與MLA格式的姓名呈現，確認無誤就按&lt;code&gt;Save&lt;/code&gt;。如此一來，你所建立的專案就能使用合乎規範的格式於任何報告中引用，或者充實個人履歷的項目。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/164/original/5a55844a-2405-4b4b-b3c1-c096e752fc89.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;第二大項集合個人有實際使用的社群平台帳號(Social)，包括個人網頁、推特等。稍早提到的ORCID也是在此輸入，儲存後就能使用ORCID登入OSF。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/275/469/original/b1b3bcce-9f3f-4c47-94e3-f5a679d635d5.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;第三大項是工作經歷(Employment)，你希望在OSF公開的經歷都可以依下圖欄位填入，正在從事的職位只要勾選&lt;strong&gt;Ongoing&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/165/original/a1539e4c-9f37-4b52-ab8b-ecbed8a398fa.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;第三大項是學歷(Education)，你希望在OSF公開的學歷都可以依下圖欄位填入，在學中的學校只要勾選&lt;strong&gt;Ongoging&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/165/original/a1539e4c-9f37-4b52-ab8b-ecbed8a398fa.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;個人展望&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由於OSF支授ORCID登入，我個人希望OSF下一次改版能讓使用者直接由ORCID匯入。因為ORCID是專屬個人的學術經歷工作帳號，你希望公開讓人檢索的資訊都已經在建立於ORCID，並串連個人的學術作品。此外，ORCID有提供多國語言界面，未來OSF朝向多語界面改版，也能經由讀取使用者ORCID預設語言，自動切換為對應的語言介面。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dashboard&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案儀表板(Dashboard)&lt;/h2&gt;
+&lt;p&gt;所有使用者登入OSF第一個看到的是如下圖的這個頁面。當使用者創建或協作的專案越多，頁面顯示的專案欄位就越多，欄位預設排序是以專案更新時間，由上至下排列。下圖中每欄的粗體字是專案頁面標題，有些以斜槓(/)區隔的標題，代表該項主專案之下的物件(Component)。在這個頁面你想找比較舊的專案，可以頁面上方的搜尋欄(Search your projects)，找出你要維護的專案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/936/original/81df1b9e-a0a8-427f-8053-71a851a0d748.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果要用比較有系統的方式整理與尋找專案，只要按如下圖的&lt;strong&gt;My Projects&lt;/strong&gt;，切換到&lt;strong&gt;專案管理介面&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/535/016/original/d7ac4196-594e-40f2-ba14-a6e9ebea7db5.png&#34; /&gt; 專案管理介面如下圖。下圖畫面是先點選左側分割視的&lt;strong&gt;All my projects&lt;/strong&gt;，在右側分割視窗顯示所有參與的專案，使用者可以先點選一個專案使其標題反白(下圖1)，然後按一下右上角的箭頭(下圖2)。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/611/original/16d8964f-8ea4-472c-b82c-d883ea8f037d.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;按下箭頭後會跳出如下圖的視窗，顯示已被選擇的專案摘要資訊，讓使用者檢視是否為要找的專案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/608/original/579951c4-107d-4dea-aa7c-d5df34b93789.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;專案管理介面和作業系統的檔案管理視窗類似，使用者可以自訂依專案名稱排序，或者依更新時間排序。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/600/original/0bb008f7-bbcd-42d3-981e-d7c01b46e40f.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;與專案儀表板主頁一樣，使雨者可以由過濾對話框(Filter displyaed projects)，讓這個頁面只顯示符合目標關鍵詞的專案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/411/original/1445569c-0d68-465e-84cf-367993bc27c1.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果你的專案有其他協作者，可由左側視窗選擇協作者姓名，過濾出與該位協作者合作的專案。如果有在專案主頁設定標籤(Tags)，也可帶此使用標籤選擇要管理的專案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/598/original/e1508448-9f27-4494-a504-3ede4d3dc807.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;以協作者姓名或標籤選擇專案後，可以繼續增減過濾條件，參考下圖2。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/584/original/1f1ab100-0f9a-4ccc-9715-b90ef57188a5.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;OSF的專案管理介面已預設歸類使用者已發佈預印本的專案(All my preprints)，以及已註冊的專案(All my registrations)。只要從左側視窗選擇這些歸類，就會只顯示這類專案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/591/original/c3875bb7-d060-441e-a50d-b4148d15ede8.png?1517944707&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;使用者可以自訂專案分類，從點選下圖標示的+開始：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/604/original/45795c3e-e721-4492-8e4a-05f318253aae.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著會出現如下圖的對話視窗，輸入使用者自訂的分類名稱即可：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/606/original/ddf60cbd-acbe-43ca-9cdf-1eb64c3be310.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;已建好的分類可隨時更改名稱或刪除，只要點選下圖的地方。要增加專案至自訂分類，滑鼠點擊按住要加入的專案欄位，反白後拖入自訂分類。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/613/original/544fb6ef-4996-4356-aaaa-45848bd0f974.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;要從自訂分類移除某個專案，按照下圖三個步驟即可。移出自訂分類的專案還是存在於專案儀表板。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/615/original/d42f961b-a402-4342-bbf6-45c9d4dd365c.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;看到其他使用者的公開專案值得參考，可用專案書籤收藏。只要在該專案主頁，點選如下圖的功能按鈕。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/409/original/328f6177-eaa6-4b37-be0e-4e6f84fc4f1c.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著從專案管理介面，左側視窗&lt;strong&gt;Bookmarks&lt;/strong&gt;分類就會看到曾收藏的專案，使用者也可以由此拖放專案到自訂分類。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/581/original/d4adc11b-ca99-4a07-b9db-1f27c17ad409.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;創建與管理研究專案&lt;/h2&gt;
+&lt;p&gt;OSF平台的每個研究專案(Project)像是個人硬碟裡的一個資料夾，OSF專案提供更多元的資料管理功能，善用這些功能能有效紀錄個人或團隊的研究過程，其他研究者能使用公開專案內容重現研究。&lt;/p&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;創建新專案&lt;/h3&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;建立空白專案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;從頭開始建立一個專案很簡單，由專案儀表板按下創建按鈕即可，如下圖提示：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/573/original/c8ad9cf3-c9ad-43c2-a3a7-096fa36b35e1.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著出現如下圖對話視窗，預設只要輸入專案標題(Title)即可。不過使用者可以打開&lt;code&gt;More&lt;/code&gt;，輸入專案描述，或者選擇已存在的專案做為模板。基本上只要輸入標題，就可按下&lt;code&gt;Create&lt;/code&gt;：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/575/original/f231b36d-8774-43b5-9750-77c1d95e9646.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;創建完成可以選擇直接去專案主頁面(&lt;code&gt;Go to new project&lt;/code&gt;)，或者留在專案儀表板：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/581/original/52b08855-35e6-4ce8-96b1-fb8cbf546160.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;新建好的專案主頁面，下圖是以現存專案做模板建立的新專案，如果是空白專案，不會存在任可檔案(Files)與物件(Component)。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/929/original/e384217e-ca2d-4d3a-aab2-ba4c216090c7.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;使用公開專案創建新專案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;當使用者要計畫一項再現研究，或者讓學生規劃一項研究專案，最適合使用這種方法創建專案。進入做為模板的專案主頁面，從下圖標示的按鈕開始：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/961/original/71b53f70-d233-453b-8dd1-a0f8d2b1c281.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;按下後會出現如下圖的子視窗，選擇中間的&lt;code&gt;Duplicate template&lt;/code&gt;：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/957/original/195a9fb8-2492-4542-acd1-c167aed5d60c.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;確定要就此創建新專案，直接按下&lt;code&gt;Create&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/965/original/6d3fa518-42f2-413a-8dc6-1d5cbba59638.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;管理專案&lt;/h3&gt;
+&lt;p&gt;使用者自建的專案可以隨時變更專案名稱。只要移動滑鼠到標題區域，快速點擊兩下。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/307/original/5d8d43b9-cb42-4b23-bf29-7b3889b0f3f1.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;標題就會變成如下圖的對話框，使用者可以更改到滿意為止，按下綠色勾勾就完成更改。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/311/original/7a6ada14-da42-4607-ad61-b6bc9299db08.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果這個專案現在或未來要公開，使用者可以在主頁面決定授權方式，讓其他使用者了解合理使用專案內容的方法。授權設定從下圖標記處開始：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/333/original/2234c293-83a8-469e-b630-157b18c51e5a.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著出現如下圖的選單視窗，使用者可選擇一個最適合的授權方式，進行適當編輯後儲存，即可完成授權。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/337/original/bcbb9ff4-6014-483b-aa05-c213d0babf41.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;每個專案物件(Component)類似一個子資料夾，創建方法與專案大同小異。以下是創建空白物件的方法，從下圖標記處開始：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/944/original/811f1617-2273-4223-ac08-60f17d8c5fd9.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;下圖與創建空白專案的對話視窗差不多，只有最小面多了物件分類選單，使用者可以根據自訂的物件功能，給予合適的分類：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/946/original/0fdf2b89-e8c0-498e-9882-9bddeda32744.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;設定完成後，可自行選擇要去新建的物件頁面(&lt;code&gt;Go to new component&lt;/code&gt;)，還是留在專案主頁面。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/942/original/757969a8-121e-4846-896b-af937452904f.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;到物件頁面會發現標題有些不一樣，斜槓之前是主專案標題，並且是一個超連結，讓使用者能回到專案主頁面：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/940/original/0e182e71-a032-4525-8cf5-4ccf18a44198.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;專案隱私設定&lt;/h3&gt;
+&lt;p&gt;每一個OSF專案與物件的隱私設定都是個別調整，預設都是不公開。要改為公開，只要在專案與物件主頁面的如下圖標示處，按下按鈕：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/216/original/a080cc6f-51c7-4268-b335-0ca939158dd4.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果是在專案主頁面，會出現如下圖是否要繼續的提示訊息。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/220/original/fbd05910-009f-465e-91ec-9fddaefa7ebd.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著會出現如下圖的對話視窗，列出專案之下的所有物件，可由此設定那些物件要公開，那些不公開。選好再按繼續鈕。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/214/original/1fe11b76-9ed6-4c62-a872-5865ac394799.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;確認要改成公開的專案與物件，無誤按&lt;code&gt;Confirm&lt;/code&gt;就大功告成。如果要重新選擇請按&lt;code&gt;Back&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/218/original/ce728501-75e8-41bc-9102-aa0c19ad04f2.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;已設為公開的專案與物件也可以改回不公開，按下圖標示處的按鈕，再走一次上面的選擇步驟即可。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/228/original/5399f894-f5cd-4235-8a75-f49689f9613b.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案協作者權限設定&lt;/h2&gt;
+&lt;p&gt;每個OSF專案與物件都可以指定協作者，合作管理專案與物件的內容。官方網站有&lt;a href=&#34;http://help.osf.io/m/projects/l/814917-understand-contributor-permissions&#34;&gt;詳細說明&lt;/a&gt;，以下簡單說明OSF的三種權限設定：&lt;/p&gt;
+&lt;p&gt;Read：有此權限的協作者只能檢閱專案與物件內容，由專案管理者新加入的協作者皆有此權限。 Read+Write：有此權限的協作者可以增加與刪除存放於專案的檔案與wiki，調整外掛與建立物件，也可以修改專案頁面的協作者機構資訊。 Administrator：專案創建者有全部管理者權限，包括調整專案與物件的隱私設定，專案的預先註冊等功能。&lt;/p&gt;
+&lt;p&gt;在專案與物件頁面列名的協作者不一定是有參與權限的協作者，可由協作者設定頁面安排。有列名的協作者是&lt;strong&gt;bibliographic&lt;/strong&gt;，未列名的協作者是&lt;strong&gt;non-bibliographic&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;由專案主頁面設定&lt;/h3&gt;
+&lt;p&gt;要增加與刪減協作者，有管理者權限的協作者先按一下下圖標記處，進入協作者設定頁面。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/047/original/807610dd-6009-4b9a-97b0-8acb8939e866.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;要加入有OSF帳號的協作者，從下圖箭頭標示處按&lt;code&gt;Add&lt;/code&gt;開始：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/463/original/14b58412-6324-41ff-a111-c0bf37b5e2cb.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著出現如下圖的搜尋視窗，只要在搜尋對話框裡，輸入協作者註冊的全名。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/467/original/762b6de2-eb58-4e7e-96e8-91b39176cc48.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;有找到就會出現如下圖的搜尋結果，確認是這個使用者就按標記的&lt;code&gt;+&lt;/code&gt;號。協作者註冊時提供的個人資訊越完整，越容易找到。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/465/original/b2b62e3d-1ba3-4886-9745-c6853e2d2284.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果協作者沒有OSF帳號，會出現如下圖的提示訊息，可以點擊連結進入設定頁面。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/461/original/34ac7e5a-e786-404a-b6fd-364f6ee90314.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;未註冊協作者的設定頁面只要輸入全名與電子郵件信箱，之後這位協作者只要在註冊頁面輸入這些資訊，就能快速完成帳戶創建，並在專案儀表板看到這項專案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/473/original/52a02de3-76fb-443e-8fdb-312fffee4508.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;確定要加入協作者會變成如下圖的畫面。管理者可在此設定協作者權限，包括是否列名。設定完成按&lt;code&gt;Add&lt;/code&gt;繼續。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/469/original/bba48c35-121a-4ba7-9858-fbe6ad323d5c.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/471/original/5709a65d-d640-4732-837e-0abbc8cf7b86.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果是從專案主頁面增加協作者，而且專案之下還有物件，上圖畫面會變成如下圖的提示按鈕：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/460/original/c02c52ec-eabd-4164-929b-a2214998d37d.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著從以下畫面，設定是否要讓協作者在每個物件裡有與專案主頁面相同的權限：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/458/original/0a87be96-939d-461d-aa38-4587d637f6fb.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;增加完成回到協作者設定頁面，管理者隨時可在此更改設定，以及移除協作者。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/456/original/9ca05050-ba31-431e-b323-d8a8d3285228.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;由專案物件頁面設定協作者權限&lt;/h3&gt;
+&lt;p&gt;與專案主頁面一樣，按一下下圖標記處進入協作者設定頁面：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/103/original/068122d1-8be3-4413-9871-1786470e21e0.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;在協作者設定頁面按下如下圖的&lt;code&gt;Add&lt;/code&gt;按鈕，就可以增加已註冊或未註冊的協作者，步驟與專案的操作相同。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/377/original/bdbcd9af-c364-41b6-b4a6-6b80b2671e46.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;確認加入協作者之前，也可以調整管理與列名權限。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/379/original/b7ec7204-1c44-4299-92f6-75f7cd0320d5.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;物件的協作者設定頁面也可以隨時調整每位協作者權限。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/375/original/4b42acf7-584e-4405-aadd-48a394615427.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;移除協作者專案管理權限&lt;/h3&gt;
+&lt;p&gt;如果要將某依協作者從專案或物件中移除，從協作者設定頁面，按下要移除的協作者右邊的&lt;code&gt;X&lt;/code&gt;即可。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/647/original/4c8f6f92-0163-47d3-b44f-a483bd5596ba.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;確認要移除該位協作者，在下圖的提示視窗按下&lt;code&gt;Remove&lt;/code&gt;。如果是在專案主頁面進行這項操作，還可以選擇是否一併移除物件的管理權限。管理者權限也可以使用這種功能在協作者之間交接。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/645/original/45897782-13a5-4d8f-96ca-d7c827767d1b.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案協作項目&lt;/h2&gt;
+&lt;p&gt;一起進行研究計畫的團隊人員要經常分析的資訊有資料檔案，執行紀錄與報告等。資料媒介因研究性質而異。OSF提供可協作維護的Wiki與檔案系統，讓協作者根據實際需要設定與增修內容。&lt;/p&gt;
+&lt;div id=&#34;wiki&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Wiki&lt;/h3&gt;
+&lt;p&gt;OSF wiki是一套線上動態文件編輯與展示功能，使用者只要運用&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;與&lt;a href=&#34;https://www.mathjax.org/&#34;&gt;MathJax&lt;/a&gt;兩套語法編輯文件內容，就可以在網頁展示頁看到編輯結果。希望運用動態文件紀錄研究過程與編輯報告元素的使用者，我建議花些時間去學習&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;與&lt;a href=&#34;https://www.mathjax.org/&#34;&gt;MathJax&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;要檢視一份Wiki的完整畫面，從如下圖畫面標記的兩個地方任何一處，點擊即可開啟全視窗畫面。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/126/original/08097b47-4b8c-4ae3-a8e9-4108396b7566.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Wiki全視窗畫面如下圖，有編輯權限的使用者能在此看到各種與Wiki有關的功能。每個OSF專案與物件預設必有一個名為&lt;strong&gt;Home&lt;/strong&gt;的Wiki文件，如果用者需要增加其他Wiki文件，按一下下圖箭頭指示的New：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/671/original/20f2afdb-743e-431c-8397-5525adda58a0.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著會出現如下圖的對話視窗，請使用者輸入新Wiki文件的名稱，輸入完成按&lt;code&gt;Add&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/668/original/2ebe6b7d-bcb0-4f3e-875a-d37d395b7559.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;今天增加的Wiki文件叫做“Daily Lab Notes”，新增成功會變成以下畫面。中間是預覽視窗，最右邊是編輯視窗。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/666/original/b0ab6660-f79a-4269-aad8-822492d2af67.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Wiki編輯視窗輸入的內容馬上可在預覽視窗看到結果，以下畫面有Markdown與MathJax的編輯與預覽結果。更多編輯技巧請參考&lt;a href=&#34;http://help.osf.io/m/collaborating/l/524109-edit-the-wiki&#34;&gt;官網說明&lt;/a&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/430/376/original/63cb1387-65af-4349-a60c-e28144b0ea93.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;OSF Wiki編輯支援多人協作編輯，以及隨編隨存，使用者不必打幾個字就存一次檔。建議使用者設定編輯目標，達成才存檔。每存一次就會在預覽視窗最上方看到最近存檔時間，並且能與前次存檔比較版本差異，比較功能按下如下圖的&lt;code&gt;Compare&lt;/code&gt;即可開啟：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/760/original/e0783977-af8d-4991-a31a-4452762a599b.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;開啟後中間與右邊視窗可切換版本，比較不同版本內容差異。如果研究團隊約定每日更新研究紀錄，只要每日在Wiki記載指定事項，累積數日後可運用版本比較功能，檢視初期紀錄至今的內容變化。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/762/original/5803983f-7bd2-4484-84db-d9d3f80b43dd.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果日後專案要公開，團隊想把流水帳式的Wiki文字紀錄另外存檔。想要刪除原始Wiki文件，只要從全螢幕畫面選擇要刪除的Wiki，然後點擊如下圖的&lt;code&gt;Delete&lt;/code&gt;按鈕：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/673/original/051dff8c-30d1-4511-b41c-cbc65ed5b4eb.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;確認要刪除請按下如下圖視窗中的&lt;code&gt;Delete&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/663/original/1e61c427-eede-4a02-aa16-4475bd89c60a.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;files&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;檔案(Files)&lt;/h3&gt;
+&lt;p&gt;如果使用者能接受專案是資料夾，就不難理解OSF專案與物件的檔案管理，與個人電腦作業系統無太大差異。除此之外還要知道的是檔案的&lt;strong&gt;版本控制&lt;/strong&gt;(Version Control)，這是運用OSF做專案備份的基本須知。&lt;/p&gt;
+&lt;p&gt;只要按一下下圖的區域，就可切換到全視窗的檔案檢視畫面。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/285/original/bf92e417-5a5a-4997-9a54-673bd9459260.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果是在專案主頁面切換至此，會見到專案之下物件的檔案儲存節點。下圖畫面中每個&lt;code&gt;OSF Storage&lt;/code&gt;是上傳檔案到專案與物件的連結，需要備份的檔案，請在備份前規劃好要保存在專案與物件之中的檔案清單。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/069/original/e604eee7-01ab-402d-9eec-238dc81f188c.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;上傳檔案之前，先選好要存放的&lt;code&gt;OSF Storage&lt;/code&gt;，點選後會出現如下圖的功能清單。按下Upload會出現檔案選擇清單，請選擇要從你的硬碟上傳的檔案，一次不限一個。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/433/original/0bbe4ae8-4e92-48d5-a403-0ed9cf4f32aa.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;上傳成功就會如下圖，在檔案清單看到剛剛選擇的檔案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/431/original/544d41c8-db7f-4f05-aaab-a5022f1ff47e.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果上傳的檔案是Word、試算表、簡報等文件檔，以及常見格式的圖片檔案，可以從OSF網頁檢視內容。只要選擇要檢視的檔案，然後點擊兩下。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/437/401/original/4ea3be60-ef48-416f-80fc-b7c49744d4fc.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;就可以開啟檢視畫面，如pdf檔可切換成全螢幕檢視或列印。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/437/403/original/c3287fc7-4862-436d-b404-b2f035d35852.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果使用者要增加檔案資料夾，在檔案檢視畫面功能選單有&lt;code&gt;Create Folder&lt;/code&gt;按鈕。選好要增加的資料夾的&lt;code&gt;OSF Storage&lt;/code&gt;，再按按鈕。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/655/original/70ccc83b-0fa2-4b3a-9d38-4bf4ac046d6d.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;按下後會出現如下圖的對話框，輸入使用者設定的資料夾名稱。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/660/original/81d1fe64-497c-48bc-98e3-0d87163ab55a.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;現在有許多支援遠端協同作業的個人雲端服務，運用OSF的附加功能(Add-on)，使用者能把在雲端服務編輯的檔案，轉移到OSF專案備份。使用者可自行查詢&lt;a href=&#34;http://help.osf.io/m/addons&#34;&gt;OSF支援的雲端服務&lt;/a&gt;，以下用Google雲端為例示範。&lt;/p&gt;
+&lt;p&gt;首先從專案主頁面的下圖標記處，開啟附加功能設定頁面。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/361/original/63d9741c-a8be-4b98-90a6-477df7dfba0e.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;從設定頁面選擇要附加的雲端服務，點一下&lt;strong&gt;Enable&lt;/strong&gt;開啟功能。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/565/original/31610c83-8e23-4619-a7d2-2ce271bba6f4.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;以下畫面是雲端服務附加事項說明，確認要使用就按箭頭標示處。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/556/original/8d335fc8-0909-4aa7-8e1c-7bf25523f37b.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;回到設定畫面會出現如下圖的欄位，再按箭頭指示的連結，正式連結OSF與個人Google雲端。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/563/original/89be8914-8744-4bc3-952c-792f0cc85a77.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Google雲端通常也有很多資料夾，可在以下畫面選擇要附加到這個OSF專案的資料夾。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/444/785/original/5ced9429-b95f-42f4-9f93-63a42e0dd21a.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;成功的話回到OSF專案檔案檢視畫面，會看到除了&lt;code&gt;OSF Storage&lt;/code&gt;，還多了&lt;code&gt;Google Drive&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/444/783/original/f2b14704-31b7-4c4f-8cce-492d4dc2e168.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果使用者要將個人雲端的檔案或資料夾移動到OSF專案，請參考下面GIF動畫。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/663/original/7df74ba5-50eb-403f-9e5a-1601fa525ac7.gif&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;OSF檔案檢視頁面的功能選單有壓縮下載功能&lt;code&gt;Download as zip&lt;/code&gt;，選擇要下載檔案的資料夾，再按這個按鈕，就會下載zip壓縮檔。這個功能適用大量資料檔備份於OSF，分析前要一次下載的狀況。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/658/original/90c2fe05-a34e-49f2-bdf2-79603ad8d688.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;OSF最重要的&lt;strong&gt;檔案版本控制&lt;/strong&gt;是使用者必知的功能，善用此功能可減少產生重覆檔案。下圖的檔案檢視畫面有個R程式碼檔案，版本(Version)這一欄顯示3，表示使用者已做了三次編輯，每次編輯後都上傳到這個OSF專案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/835/original/b05e26a9-2baf-47b6-adc8-00e48adfd9c5.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果再更新一次並上傳，OSF就會判定為第4版。從檔案內容檢視畫面，使用者可以使用畫面上方功能選單裡的&lt;code&gt;Revisions&lt;/code&gt;，檢視檔案版本更新歷程。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/858/original/d4e2bad3-e97e-410a-b64a-1f761695aa71.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;按下&lt;code&gt;Revisions&lt;/code&gt;就出現如下圖的畫面，如果使用者有需要找出之前曾修改的內容，可以下載想看的版本。由此可知OSF對每一份檔案的每一次更新，都有保留備份。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/839/original/213e600a-ece1-4e25-8902-daf05d838d60.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果使用者想防止檔案進一步更改，可以使用檔案檢視畫面的&lt;code&gt;Check out file&lt;/code&gt;功能。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/194/404/original/d3a09e65-64bd-4c6a-b23f-3de0389a3d4e.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;確定Check out，OSF不會接受這份檔案的更新上傳。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/000/369/563/original/ff2bf6a0-5037-4dda-a69a-469766430700.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;要解除禁止更改，只要使用&lt;code&gt;Check in file&lt;/code&gt;這項功能。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/194/400/original/ec0f6baa-51f8-4e6f-9efb-748e35f75733.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案註冊程序&lt;/h2&gt;
+&lt;p&gt;OSF最為人熟知的功能是提供各式預先註冊的服務，也就是加上時間標章與研究者註解的檔案備份服務。前面的檔案功能已知OSF會備份使用者上傳檔案的每一份更新，如果這份檔案是要做&lt;strong&gt;預先註冊&lt;/strong&gt;或已通過&lt;strong&gt;註冊報告第一階段評審&lt;/strong&gt;的計畫書，OSF提供的&lt;strong&gt;註冊(Registration)&lt;/strong&gt;，實際操作就是使用者要選擇合適的備份註解加上檔案快照服務。手上正有研究計畫的讀者，如果不清楚要使用那一種備份註解，或者說較合適的預先註冊範本，請看我的演講投影片：&lt;a href=&#34;https://scgeeker.github.io/Opensci_integrity/2018aug.html#/4&#34;&gt;預先註冊範本建議&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;同時建議參考這段演講錄影，歡迎讀者於這篇文章留言，討論實際操作的任何疑問與心得：&lt;/p&gt;
+&lt;iframe width=&#34;640&#34; height=&#34;480&#34; src=&#34;https://www.youtube.com/embed/rI4TaWyoN8E?rel=0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;div id=&#34;1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;註冊實作1：由專案主頁面進行&lt;/h3&gt;
+&lt;p&gt;這種方式適用&lt;strong&gt;預先註冊&lt;/strong&gt;，例如實驗團隊以自我要求執行研究計畫，OSF備份資料可做投稿附件；各式研究方法的教學專案；參與跨實驗室合作案的個別單位；自行測試註冊內容。&lt;/p&gt;
+&lt;p&gt;從以下畫面箭頭所指的Registration開始，只要使用者按下，就會切換到&lt;strong&gt;註冊紀錄畫面&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/425/original/2db88938-0c58-4113-a144-9d1a982589d5.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;準備第一次註冊的註冊紀錄畫面，按下&lt;code&gt;New registration&lt;/code&gt;就可以開始填寫註冊程序。如果這個專案有註冊程序尚未完成，可切換到&lt;strong&gt;Draft Registrations&lt;/strong&gt;檢視，看是否要繼續完成。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/415/original/16d59b13-a9db-4dc5-9356-1ca9857165b3.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;註冊程序第一步，選擇合適的範本。確定了就按&lt;code&gt;Create draft&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/412/original/4cb552ff-4417-4729-9b77-6c8269b4456f.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;每個範本都有需要填寫的註解資訊，下圖是最簡單的&lt;strong&gt;Open-Ended Registration&lt;/strong&gt;，只要在欄位中寫下說明即可。如果這次編輯使用者還未寫完或需要修改，需要中途離開的話請按&lt;code&gt;Save draft&lt;/code&gt;，下次再從&lt;strong&gt;Draft Registrations&lt;/strong&gt;頁面繼續編輯。如果已寫完該留資訊，就按&lt;code&gt;Preview for submission&lt;/code&gt;，預覽程序完成後，會看到的檔案備份註解資訊。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/428/original/76adf7b3-fb6d-4016-81e0-5dda5aff4219.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;檔案備份註解資訊預覽畫面。如果覺得不滿意，可按&lt;code&gt;Continue editing&lt;/code&gt;返回上一個頁面編輯。如果滿意，按&lt;code&gt;Register&lt;/code&gt;準備完成註冊程序。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/420/original/86da8b82-99e9-4821-9ecb-ce8dc98c75c7.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;正式完成註冊程序前，OSF問你要將備份的專案立刻公開，還是設定預定公開日期(embargo)。如果是立即，按下&lt;code&gt;Submit&lt;/code&gt;後，這份專案備份完成後，立刻在OSF完整公開。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/431/original/d653edb6-cd99-4705-ab5f-a88b34306a3b.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;如果是設定預定公開日期，OSF會設定備份的專案在公開日期之前，隱私設定為不公開。直到公開日期才會調整為公開。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/433/original/8f239cf9-a5aa-48b9-8791-006268619318.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;以下畫面是註冊程序完成後，備份專案的主頁面。按&lt;code&gt;View Registration Form&lt;/code&gt;會看到註冊程序中寫的備份註解，其中的wiki，檔案任何人都不能更動或刪除。使用者可以繼續更新原來的專案。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/409/original/708a5d98-5ec8-4d11-99ac-3c68005b1912.png&#34; /&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;2osf-rr&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;註冊實作2：OSF RR專頁&lt;/h3&gt;
+&lt;p&gt;這種方式適用&lt;strong&gt;註冊報告&lt;/strong&gt;，就是正在準備或已經投稿註冊報告期刊之計畫書及論文，特別是已獲得期刊接受的第一階段計畫書，使用者可以由&lt;a href=&#34;https://osf.io/rr/&#34;&gt;RR專頁&lt;/a&gt;創建專案與完成註冊程序。&lt;/p&gt;
+&lt;p&gt;RR專頁的立意是提供研究者與期刊編輯評審，在公開平台檢視通過第一階段評審的計畫書，研究者按照計畫執行的實際達成度，因此以下畫面中的箭頭是從第二階段指向創建專案的按鈕。 &lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/085/original/1deb70eb-cce0-40f8-aa84-f52feec0f4b9.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果研究者的計畫在投稿第一階段評審之前，研究材料與分析程序已經準備到位，建議就以此專頁創建專案。按下書面左邊大按鈕，即出現輸入專案標題的對話框，再按下&lt;code&gt;Create&lt;/code&gt;，就完成空白專案創建。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/087/original/5b39f1c3-01bd-40d4-9a77-382bb678ba24.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;接著會進入計畫及專案註解頁面，這套註冊程序的步驟比從專案主頁面啟動來得多。建議先存為草稿，到專案頁面編輯wiki與上傳必要檔案，如計畫書與最後論文等。未完成的註冊程序，隨時可由&lt;a href=&#34;https://osf.io/rr/&#34;&gt;RR專頁&lt;/a&gt;，按下中間的大按鈕，回來繼續註冊程序。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/091/original/2ffd310e-3ea0-433d-a1be-001990b10930.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;到了完成填寫註解之前，研究者同樣可以預覽或儲存草稿，離開一陣子再回來繼續。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/522/original/5adfc278-11f5-4229-b3fd-105cede59b3c.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;確認完成註冊程序的預覽畫面，確定完成就按&lt;code&gt;Register&lt;/code&gt;。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/524/original/02853cc3-8e57-4920-ac1f-693e19b559cd.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;同樣可以設定立刻公開，或者設定預定公開日期。這個情況可以預估收到期刊回覆的時間。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/528/original/5da4d00d-6b6d-4f2c-b2ab-ba4c557c1176.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;註冊報告的備份專案，基本上與預先註冊的備份沒什麼差別，差異在於完成註冊程序的準備與經歷。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/372/original/34a3e5f4-73cf-440c-8295-7d70d185e8ce.jpg&#34; /&gt;
+
+&lt;/div&gt;
+&lt;!---
+
+### 管理已註冊專案
+
+隨著經手的研究越來越多，使用者必須管理正在進行與已結案的註冊專案。可參考的管理
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/536/784/original/96e8877b-626e-45b9-bee4-e1b6bbff540b.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/378/original/ca0bbfa7-8c8c-45d4-b23e-c3986fcfa3dd.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/386/original/7a67933a-ca34-4394-8280-32fbe2e996c2.png)
+
+提早公開已註冊專案
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/397/original/262f404f-e15d-4874-94a1-c845794d33be.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/393/original/f9e210e8-86d2-4cb5-87bc-b77d086d1de2.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/395/original/89b4b09a-6dd6-413a-a47a-99c8ef2b1587.png)
+
+撤除已註冊專案
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/404/original/b94bd973-1078-4963-837c-dd78b73c6304.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/399/original/ae6e6dfe-917c-4d42-a4ed-c37a5caffef2.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/403/original/425ba92e-7ddd-4530-926c-7f79c5f5cffd.png)
+
+從專案主網頁檢視紀錄
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/375/063/original/8828b37d-ddeb-4999-b7df-bebfec657805.png)
+
+---&gt;
+&lt;!---
+## 管理專案參考文獻
+
+[神器1](http://scchen.com/zh/post/zotero/)
+
+啟動
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/394/original/be5d82b5-7a81-49fd-8e53-8254e720ef02.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/392/original/44a564e0-cac0-4640-aa70-d7d2f920531f.jpg)
+
+連結
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/396/original/ebaed6f1-6fe8-4712-a593-757e5652baf8.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/399/original/4bdc9630-452b-4ddd-a451-3a078e81fc95.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/469/original/8661096d-8afc-4ad0-8981-1c6af926a1e6.jpg)
+
+指定文獻庫
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/403/original/37bd940e-f55d-449c-ba5b-f2a01b53651a.jpg)
+
+如果文獻庫裡有子文獻庫
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/401/original/09704a0c-0ffb-418e-847a-77909f940d9f.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/391/original/60745958-9b2f-4988-8868-77f4edc898fc.jpg)
+---&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>心理科學研究必用神器1~Zotero</title>
       <link>/zh/post/zotero/</link>
       <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
@@ -1210,70 +1907,6 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
 &lt;p&gt;&lt;em&gt;註2&lt;/em&gt;:p-curve的解讀請見&lt;a href=&#34;http://scchen.com/Text/text_2016005e01/&#34; target=&#34;_blank&#34;&gt;我之前的文章&lt;/a&gt;。讀者可&lt;a href=&#34;http://shinyapps.org/apps/p-checker/?syntax=%23%27%20%40title%20Analyze%20the%20main%20effect%20%28flagged%20rate%29%20of%20JMJ2017%20%40%20PNAS%0A%23%27%20%40subtitle%20by%20Sau-Chin%20Chen%0A%23%27%20%40details%20Article%20title%3A%20Perceived%20social%20presence%20reduces%20fact-checking.%20Download%20the%20full%20paper%20through%20the%20below%20url%3A%0A%23%27%20%40url%20http%3A%2F%2Fwww.pnas.org%2Fcontent%2F114%2F23%2F5976%0A%0AHeadlines%3A%20F%281%2C173%29%20%3D%205.01%3B%20p%20%3D%200.03%0AAmbiguity%3A%20F%281%2C213%29%20%3D%205.94%3B%20p%20%3D%200.02%0ACongresspeople%3A%20F%282%2C162%29%20%3D%203.18%3B%20p%20%3D%200.04%0ASocial%20media%3A%20F%281%2C367%29%20%3D%206.38%3B%20p%20%3D%200.01%0ACo-attention%3A%20F%282%2C305%29%20%3D%204.83%3B%20p%20%3D%200.01%0ACandidates%3A%20F%282%2C284%29%20%3D%203.82%3B%20p%20%3D%200.02%0AAccountability%3A%20F%282%2C327%29%20%3D%203.92%3B%20p%20%3D%200.02%0AVigilance%3A%20F%281%2C381%29%20%3D%2011.7%3B%20p%20%3D%200.001&#34; target=&#34;_blank&#34;&gt;點此連結&lt;/a&gt;，看到我輸入p-Curve的數據，並能按鈕到p-Curve.com，見到和本文呈現一模一樣的圖表。&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;註3&lt;/em&gt;:個人推薦的自學課程是Coursera的&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences&#34; target=&#34;_blank&#34;&gt;Improving your statistical inferences&lt;/a&gt;。我與課程講師Daniel Lakens約定的&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34;&gt;影片字幕中譯&lt;/a&gt;已完成95%。全部完成時，我會撰寫專文介紹這門課程。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>讀書心得：現代心理科學的七大罪</title>
-      <link>/zh/post/text_2017007/</link>
-      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/post/text_2017007/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;/images/k10970.gif&#34; alt=&#34;&#34; title=&#34;原著封面，取自Amazon.com&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;物理學家理查．費曼(Richard Feyman)於1974年加州理工學院的畢業典禮致辭，有以下兩段內容：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;大戰期間在南太平洋有一些土人，看到飛機降落在地面，卸下來一包包的好東西，其中一些是送給他們的。往後他們仍然希望能發生同樣的事，於是他們在同樣的地點鋪飛機跑道，兩旁還點上了火，蓋了間小茅屋，派人坐在那裡，頭上綁了兩塊木頭（假裝是耳機）、插了根竹子（假裝是天線），以為這就等於控制塔裡的領航員了──然後他們等待、等待飛機降落。他們被稱為草包族，他們每件事都做對了、一切都十分神似，看來跟戰時沒什麼兩樣；但這行不通：飛機始終沒有降落下來。這是為什麼我叫這類東西為「草包族科學」，因為它們完全學足了科學研究的外表，一切都十分神似，但是事實上它們缺乏了最重要的部分──因為飛機始終沒有降落下來。&lt;/p&gt;
-
-&lt;p&gt;她很喜歡這個新構想，跑去跟教授說；但教授的回答是：「不，你不能那樣做，因為那個實驗已經有人做過，你在浪費時間。」這大約是一九四七年的事，其後那好像變成心理學的一般通則了：大家都不重複別人的實驗，而單純地改變實驗條件看結果。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;這段講稿後來被收錄於費曼的回憶錄「別鬧了，費曼先生」(Surely You&amp;rsquo;re Joking Mr. Feynman:Adventures of a Curious Character)，也是諺語「草包族科學」(Cargo Cult Scinece)的起源。英國卡迪夫大學心理學者克里斯．錢伯斯(Chris Chambers)在個人新書「心理學的七宗罪」，引用這兩個段落描述自己對現代心理學現況及未來的擔心：如果今天的心理學家不真誠面對與解決知識生產模式裡存在的問題，今天的心理學知識會變成&lt;strong&gt;草包族科學&lt;/strong&gt;的真實教訓～總是有正面結果的報告，卻無法確認正面結果的正確性。&lt;/p&gt;
-
-&lt;p&gt;費曼遇到的狀況到了21世紀不但沒有改變，2011年還達到了高峰：&lt;a href=&#34;https://en.wikipedia.org/wiki/Diederik_Stapel&#34; title=&#34;Diederik Stapel&#34; target=&#34;_blank&#34;&gt;造假&lt;/a&gt;與&lt;a href=&#34;https://en.wikipedia.org/wiki/Daryl_Bem#.22Feeling_the_Future.22_controversy&#34; title=&#34;Daryl Bem: &#39;Feeling the Future&#39; controversy&#34; target=&#34;_blank&#34;&gt;太美好的心理學研究案例&lt;/a&gt;在這一年先後現世，促成錢伯斯寫這本書做為紀錄。書中歸納的七宗罪體現經年累月累積問題，每一章標題都是理解問題的線索，閱讀整本書之後，我認為各種問題出於兩個成因，前三項罪體現直接導致的問題，後四項體現助長問題嚴重性的相關因素。為了方便之後的解說，我先簡單摘要七宗罪所體現的問題：(1)偏好正面結果導致的偏誤；(2)不受拘束的檯面下研究操作；(3)高影響力但低信度的研究結果；(4)缺乏公開分享研究資料的科學社群文化；(5)造假的誘惑；(6)限制付費取用的第一手文獻；(7)充滿集點狂的世界。&lt;/p&gt;
-
-&lt;h3 id=&#34;成因1-過度追求概念性再現-conceptual-replication&#34;&gt;成因1：過度追求概念性再現(Conceptual Replication)&lt;/h3&gt;
-
-&lt;p&gt;我曾在&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; title=&#34;纪錄已經出現與即將出現的再現危機~2016版&#34; target=&#34;_blank&#34;&gt;之前的文章&lt;/a&gt;說明什麼是&lt;strong&gt;概念性再現&lt;/strong&gt;，在此引述如下：&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;原始研究的關鍵操作，以假設條件可容許，但是與原始研究相異的方式設置，在其它控制變項接近原始研究進行的再現研究。例如自我耗損實驗有其它學者使用其它物品，例如檸檬汁，或可以耗損意志力的其它方法，例如這項RRR使用的挑字母作業，能得到相同效應的結果。概念性再現通常用來測試假說的通用性，也有許多學者認為這是改善實驗研究的外在效度，最佳的方案之一。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;回首1947年費雪與心理學研究生的對話，再看自己一年之前寫的說明，讓我想到至少有七十年，每一代心理學家都被教育要避免重覆已經發表的研究，最單純的原因只是認為完整的重現已經發表的研究是浪費時間的事？克里斯引用&lt;a href=&#34;http://pps.sagepub.com/content/7/6/537&#34; title=&#34;Replications in Psychology Research How Often Do They Really Occur?&#34; target=&#34;_blank&#34;&gt;研究數據&lt;/a&gt;證實心理學家過度追求概念性再現的風氣已有百年之久，這種風氣在以期刊引用因子評估影響力的今天，造成心理學家以為使用不同條件，重現發表在高引用數期刊的論文研究結果為成就捷徑。就像上述說明中的&lt;strong&gt;自我耗損實驗&lt;/strong&gt;，出版的多數結果是經過有確認偏見(confirmation bias)的審查系統，而這樣的系統與需要讀者付費的論文出版集團是利益共同體。&lt;/p&gt;
-
-&lt;p&gt;其他可能助長過度追求概念性再現風氣的因素，是原創研究很難完整重現。原因可能是研究者沒有意願分享原始研究資料，或者研究結果其實是是蓄意造假的。後者在最近幾年有太多例子可說，前者則是研究者深受社群文化與行規潛移默化的結果。即使在講究開放的西方學術社群，&lt;a href=&#34;http://wicherts.socsci.uva.nl/datasharing.pdf&#34; title=&#34;The poor availability of psychological research data for reanalysis&#34; target=&#34;_blank&#34;&gt;幾項調查&lt;/a&gt;顯示不到一半的研究者願意向任何人分享完整的研究資料，即使美國心理學會的倫理守則載明研究者應無私地公開資料，永遠會有1001個不能分享資料的理由。&lt;/p&gt;
-
-&lt;h3 id=&#34;成因2-彈性無限制的研究操作&#34;&gt;成因2：彈性無限制的研究操作&lt;/h3&gt;
-
-&lt;p&gt;錢伯斯以&lt;strong&gt;隱藏的彈性&lt;/strong&gt;稱呼研究者的待澄清研究操作(Questionable Research Practice, QRPs)，更多探討這個課題的論文稱之為&lt;strong&gt;研究者的自由程度&lt;/strong&gt;(Researcher Degree of Freedom)。就像2016年，荷蘭蒂爾堡大學心理學家約特．惠切特斯(Jelte Wicherts)帶領的團隊，把太過自由而導致的研究操作問題，整理成一分&lt;a href=&#34;http://journal.frontiersin.org/article/10.3389/fpsyg.2016.01832/abstract&#34; title=&#34;Degrees of Freedom in Planning, Running, Analyzing, and Reporting Psychological Studies: A Checklist to Avoid p-Hacking&#34; target=&#34;_blank&#34;&gt;QRPs清單&lt;/a&gt;。範圍包括：主題的形成、研究的設計、資料的收集、資料的分析、與報告的撰寫。這份清單呼應克里斯在前三章描述的現象。有問題的研究操作並未違反任何已有共識的研究倫理，但是只要能獲得美好的結果，很少有研究者不會採取其中幾項操作。有些甚至已內化至心理學教育系統：像是分析資料時改變原始計畫裡，處理極端值的標準，是可接受的。導致養成過程就是增加研究者自由程度，或者削弱覺察有疑問操作的能力。&lt;/p&gt;
-
-&lt;p&gt;許多研究者開始注意QRPs引起的問題，是讀過統計學者約翰．伊歐埃迪斯(John Ioannidis)於2005年發表，討論醫學與生命科學充斥太多偽陽性結果的&lt;a href=&#34;http://doi.org/10.1371/journal.pmed.0020124&#34; title=&#34;Why most published research findings are false&#34; target=&#34;_blank&#34;&gt;論文&lt;/a&gt;。他提出估計一系列報告陽性結果的研究，存在偽陽性結果比率的方法。這套方法綜合假設為真的事前機率(prior probability)、顯著水準、統計考驗力、與人為逼出陽性結果的比例(p-hacking)，估計存在真陽性結果比率的陽性預測值(positive preditive value)，也是QRPs嚴重度的估計值。&lt;/p&gt;
-
-&lt;p&gt;使用&lt;a href=&#34;http://shinyapps.org/showapp.php?app=http://lmpp10e-mucesm.srv.mwn.de:3838/felix/PPV&amp;amp;by=Michael%20Zehetleitner%20and%20Felix%20Sch%C3%B6nbrodt&amp;amp;title=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&amp;amp;shorttitle=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&#34; title=&#34;When does a significant p-value indicate a true effect?&#34; target=&#34;_blank&#34;&gt;這個網頁&lt;/a&gt;，你可以自行調整四項參數，了解偽陽性結果增加的條件。伊歐埃迪斯指出，如果一系列研究報告都是陽性結果，而且真陽性結果比率要高達90%以上的話，假設為真的事前機率要達80%以上，統計考驗力也要達90%。另一方面，一套假設為真的機率只有一半的研究系列，統計考驗力僅有33%時，如果研究者都很誠實不做有疑問研究操作，報告研究結果是陽性的比率不到20%，其中真陽性結果的比率將近90%；但是，若大部份的研究結果是QRPs導致，例如70%的研究有QRPs，陽性結果的報告比率會超過70%，然而其中真陽性結果只有一半。&lt;/p&gt;
-
-&lt;p&gt;伊歐埃迪斯論文的預設讀者是醫學與生命科學領域的研究者，但是先被打動的讀者群是社會科學的學者–或者更精確的說，在2011年覺醒的心理學家們。因為多數心理學領域的假設為真之事前機率約50%，也就是以看待隨機事件的立場，期待假設得到研究結果支持。如果多數呈現陽性結果的心理學研究是真陽性，心理學家不靠QRPs，只靠提高統計考驗力得到顯著結果，預計陽性結果與陰性結果的報告在所有文獻中應該各佔一半。實際情況卻如同&lt;strong&gt;自我耗損實驗&lt;/strong&gt;系列一樣，&lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0010068&#34; title=&#34;“Positive” Results Increase Down the Hierarchy of the Sciences&#34; target=&#34;_blank&#34;&gt;可獲得發表的心理學論文超過90%是陽性結果&lt;/a&gt;。如此景況，只有用QRPs做研究才能達成。&lt;/p&gt;
-
-&lt;p&gt;當一個科學領域視QRPs為理所當然，直接導致&lt;strong&gt;檯面下的研究操作無限擴張&lt;/strong&gt;，以及多數研究結果&lt;strong&gt;有高影響力但低信度&lt;/strong&gt;的現象。如果有人無法抵抗&lt;strong&gt;造假的誘惑&lt;/strong&gt;，隔一陣子就出現一則學術不端新聞是可預料的趨勢。與&lt;strong&gt;付費論文出版集團&lt;/strong&gt;緊密相連的期刊編輯及審查者，只追求表面影響力但輕忽論文內容信度的教研機構管理，是助長QRPs的媒介。近幾年&lt;strong&gt;績效管理主義&lt;/strong&gt;的盛行，只看表面可數字化的表現：如期刊引用因子、獲得的補助經費金額、掛名的論文數目及排序，更助長研究者為求在短期內累積績效，有意無意地在研究流程中採用QRPs。為了幫助有良心的心理學家擺脫QRPs，克里斯．錢伯斯提出及執行&lt;strong&gt;有同儕審查的註冊研究&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/images/Registered-Reports_EditorialPipeline.jpg&#34; alt=&#34;&#34; title=&#34;第一本接受有同儕審查的註冊研究的期刊Cortex，由克里斯．錢伯斯公佈的審稿程序。論文品質以兩階段評審:收集資料之前的計畫書評審，主題的創新與研究信度並重；收集資料之後的論文評審，著重研究過程符合計畫書規畫的程度。取自錢伯思個人格落格&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;終極解方-開放審查機制的註冊研究平台&#34;&gt;終極解方：開放審查機制的註冊研究平台&lt;/h3&gt;
-
-&lt;p&gt;錢伯斯以第一位負責註冊研究同儕審查的期刊編輯，在書中最後一章分享這幾年遇到的同行人士對此機制的迷思與誤解，如何回覆與破除的經驗，值得讀者親自閱讀。我認為這本書給希望透過註冊研究提昇自己與團隊研究能力的研究者，傳達一道明確的訊息：*準備好擺脫過度的概念性再現與QRPs的研究者們，有審查機制的註冊研究是最適合的途徑*。&lt;/p&gt;
-
-&lt;p&gt;註冊研究的概念與操作能不能廣泛流傳，其實科學社群之內的生態，以及研究者所處的社會文化氛圍支持因素的多寡有關。如果週圍的因素，如期刊的編輯方針、經費補助政策、甚至是大眾對科學工作的期許，不能與註冊研究一起演進，很難改變一個科學領域的研究操作習性。因此錢伯思期許，現在正在幾本期刊運作的註冊研究審查機制，能演進為公開透明的科學知識生產與傳播體系。&lt;/p&gt;
-
-&lt;p&gt;我推想錢伯思期望兩階段的評審機制，能演進為研究計畫書的&lt;strong&gt;公開競價平台&lt;/strong&gt;，與論文手稿的&lt;strong&gt;開放審查平台&lt;/strong&gt;。透過平台提交計畫與論文的研究者面對的評審者，不只是由期刊編輯或經費提供者委派的專業人士，也是有興趣並有意願提供意見的同行或關注該科學域現況的相關人士，如科普寫作者。研究者的最新成果也可以即刻交付同行研究者，進行獨立的直接再現，考驗其知識品質。科普寫作者亦能隨時關注最新研究從發想到結案的過程，向有長期接收資訊的讀者報告，顯現科學研究者對社會的真正貢獻。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/images/RR_Future.jpg&#34; alt=&#34;&#34; title=&#34;註冊研究審查機制的未來想像：專業人士與大眾皆可參與的開放科學雙平台。筆者自製。&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;雖然距離理想的模式還有很長的路要走，開放平台的部分功能已有實際運作的例子。例如許多期刊已同意作者在投稿之後，審查結果未定之前，將預印本(preprint)公開於開放的網路平台，例如arXiv、&lt;a href=&#34;https://osf.io/preprints/&#34; title=&#34;OSF Preprints&#34; target=&#34;_blank&#34;&gt;OSF Preprints&lt;/a&gt;，讓有興趣的讀者瀏覽，並可經過網路社群傳播。開放科學中心正在建設的專案&lt;a href=&#34;https://osf.io/view/studyswap/&#34; title=&#34;StudySwap: A platform for interlab replication, collaboration, and research resource exchange&#34; target=&#34;_blank&#34;&gt;StudySwap&lt;/a&gt;，招募有穩定樣本來源的研究者加入，經由平台將最新成果的研究資料分享給其他研究者，在最短時間內重新執行相同的實驗與分析，確認研究成果的可再現性。&lt;/p&gt;
-
-&lt;p&gt;最後從理想拉回現實，在華文世界能否實現開放科學平台還在未定之數，因為有多少研究者能理解並願意實踐有審查機制的註冊研究，尚無法估計。如果讀過這本書，能讓更多研究者理解背後的問題，以及體認自己至今習以為常的QRPs，也許能引發出一股發展東方開放科學的力量。&lt;/p&gt;
 </description>
     </item>
     
