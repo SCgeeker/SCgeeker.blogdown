@@ -7,10 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Tue, 21 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>心理科學研究必用神器3 ~ 開源統計軟體</title>
+      <link>/zh/post/jasp-jamovi/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/jasp-jamovi/</guid>
+      <description>兩年前開始使用JASP分析研究資料時，我曾經寫過一篇網誌介紹這套開源軟體。之後更認識設計理念相同，功能擴充性更自由的jamovi。今年初我自已寫的統計電子書整合兩套軟體，讓學生學習如何運用兩套軟體於實務。到了今年五月至八月期間，這兩套軟體版本都更新到0.9以上，功能與資源有大幅度更新，兩套軟體的操作雖然大同小異，使用者用過一段時間會發覺兩者更擅勝場。
+這篇網誌介紹兩套軟體的介面、一般設定與特別的功能。做為之後開發教材與寫作網誌的補充資料。
+介面特色JASP 0.9.0.1與jamovi 0.9.2.3的啟動畫面如以下快照，畫面中JASP的Common與jamovi的Analyses都是操作功能模組與檢視分析報表的區域。
+JASP開啟資料檔案是在File區域操作，下圖是JASP範例檔案庫的啟始畫面。操作方式類似Mac OS的Finder，JASP除了開啟本機檔案之外，也能直接連線使用者的OSF帳戶，下載與同步OSF專案裡的資料與JASP存檔(.jasp)。JASP存檔(.jasp)包括原始資料檔案與分析報表。
+jamovi開啟與儲存資料檔案的選單，是按下Data標籤左邊的三條橫線，就會出現如下圖的畫面。最新版的jamovi只能存取本機檔案，包括資料檔與jamovi存檔(.omv)。jamovi存檔(.omv)包括原始資料檔案與分析報表。
+jamovi的Data可以直接編輯與使用函式處理一到數個欄位資料，這個區域有些類似試算表軟體，只是要先確定每個欄位的資料型態，才能正確使用jamovi提供的函式。這部分是jamovi與JASP的最大不同，JASP不可直接編輯資料，必須呼叫外部資料編輯器或試算表軟體。
+一般設定JASP與jamovi的一般設定選單開啟按鈕都在主要介面右上角，如下圖的紅色圓圈標示。兩者共同設定有二：報表數值的小數點位數；資料檔案裡遺漏值(missing value)標記。
+JASP與jamovi可設定小數點格式的數值只有兩類：一般的統計數值與p值，如以下畫面截圖：
+JASP和jamovi都是輸入資料檔內的遺漏值字符，匯入資料後會自動辨識資料中的遺漏值，設定畫面如下圖。差異在於jamovi只能辨識一種字符，JASP可辨識多種，使用者還可根據實際情況自行增加。
+JASP有需要編輯資料數值時，可以設定使用系統預設的試算表軟體，例如Excel。要使用此功能，就做如以下畫面的設定。若要外部編輯器存檔，並同步更新JASP資料，只要勾選以下畫面的第一個功能即可。
+功能與資源比較以下整理本人認為值得學習的JASP與jamovi的重要功能與資源，提供讀者可依個人需要取用。
+可匯入資料格式JASP：CSV, SPSS, Libre試算表
+jamovi: CSV, SPSS, SAS, Stata
+擴充功能JASP：非當用模組讓使用者自行開啟，目前有Meta Analysis、Network、SEM。
+jamovi: 官方提供模組開發工具，以及自訂模組庫。使用者可由jamovi程式裡安裝與更新，或由自訂模組庫下載安裝。特別建議統計初學者，使用Statkat協助學習。
+學習資源JASP：官網不定期更新推薦教材，2018年有研究方法與統計教科書出版。0.9版有豐富的Data Library，讓使用者依需要找示範檔案學習。
+jamovi:Datalab的CC授權課程提供youtube教學單元，各單元教材公開於google雲端與OSF。
+</description>
+    </item>
     
     <item>
       <title>心理科學研究必用神器2 ~ Open Science Framework</title>
