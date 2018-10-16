@@ -11,6 +11,48 @@
     <atom:link href="/zh/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>心理科學研究必用神器4 ~ 動態文件寫作入門</title>
+      <link>/zh/post/dynamic-writing/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/dynamic-writing/</guid>
+      <description>&lt;p&gt;這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。&lt;/p&gt;
+&lt;p&gt;多數人習慣使用的文書處理軟體，像是WORD與google doc，集合文字編輯與排版。寫作正式文件時，需要同時顧慮編輯與排版的契合，雖然之前介紹的&lt;a href=&#34;http://scchen.com/zh/post/zotero/&#34;&gt;zotero&lt;/a&gt;已經減輕編輯文內引用與排版參考文獻的工作，一份文件內要安置圖表，乃至數學符號與統計數據的整理，還是需要花時間在不同軟體之間剪貼。&lt;/p&gt;
+&lt;p&gt;這篇網誌說明如何編輯一篇有列舉參考文獻，無任何圖表及數學符號的中文文件。讓讀者了解動態文件的文字編輯與排版是兩件分開的工作，並提出支援中文寫作的動態文件套件，還需要改進的地方。&lt;/p&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;基礎知識&lt;/h2&gt;
+&lt;p&gt;與建置這套個人網站一樣，一切準備從安裝&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudo&lt;/a&gt;與&lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt;開始。Rstudio開發的套件&lt;code&gt;knitr&lt;/code&gt;可由使用者自行安裝，或者是第一次使用Rstudio編輯動態文件時，會自動下載安裝。&lt;code&gt;knitr&lt;/code&gt;的功能是將有指定語法標籤的純文字文件，例如&lt;code&gt;markdown&lt;/code&gt;與&lt;code&gt;R&lt;/code&gt;，轉換為其他排版軟體能辨識的內容。Rstudio已經整合一套開源排版軟體&lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt;，可將轉換後的純文字文件，按排版設定渲染(render)輸出word或pdf檔案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Rstudio-newfile.PNG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖是Rstudio開啟新文件的選單，除了R script與Text File，其他檔案格式都是可用其他軟體渲染輸出各種排版或編譯產物。這也是為何管理動態文件，應區分文字編輯與排版兩種工作。以一份R Markdown文件為例，有開頭的&lt;code&gt;yaml&lt;/code&gt;與內文兩部分，&lt;code&gt;yaml&lt;/code&gt;是列舉排版這份文件的所需資訊，以符號 --- 標記資訊開始及結尾。以本文的&lt;a href=&#34;https://osf.io/rze47&#34;&gt;示範文件&lt;/a&gt;為例，這份文件要輸出為WORD檔案，&lt;code&gt;yaml&lt;/code&gt;包含的資訊如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output: 
+  word_document:
+    reference_docx: word_style_reference.docx
+bibliography: Turri.bib
+csl: apa-old-doi-prefix.csl&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;與這份示範文件放在一起的三個外部檔案：&lt;strong&gt;&lt;a href=&#34;https://osf.io/5x8h6&#34;&gt;word_style_reference.docx&lt;/a&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;a href=&#34;https://osf.io/fw359&#34;&gt;Turri.bib&lt;/a&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;a href=&#34;https://osf.io/z59hs&#34;&gt;apa-old-doi-prefix.csl&lt;/a&gt;&lt;/strong&gt;，分別提供渲染這份文件需要的&lt;strong&gt;排版樣式&lt;/strong&gt;、&lt;strong&gt;書目資訊&lt;/strong&gt;、以及&lt;strong&gt;引用格式&lt;/strong&gt;。&lt;a href=&#34;http://scchen.com/zh/post/zotero/&#34;&gt;zotero&lt;/a&gt;網誌曾介紹如何管理書目資訊與引用格式的檔案，docx檔是提供一份有所需樣式與版面設定範例的word檔，也就是一個排版範本，有關WORD的排版可參考&lt;a href=&#34;https://support.office.com/zh-tw/article/%E8%87%AA%E8%A8%82%E6%88%96%E5%9C%A8-word-%E4%B8%AD%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%9A%84%E6%A8%A3%E5%BC%8F-d38d6e47-f6fc-48eb-a607-1eb120dec563&#34;&gt;官方說明網站&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;寫作示範&lt;/h2&gt;
+&lt;p&gt;建議讀者先下載前述連結的檔案，嘗試重現示範文件的&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;輸出成果&lt;/a&gt;，會更理理以下示範說明。&lt;/p&gt;
+&lt;p&gt;R markdown內文與一般markdown文件一樣，未在置入任何標籤的任何文字等於一般WORD文件的內文，&lt;code&gt;pandoc&lt;/code&gt;會根據排版範本的&lt;strong&gt;內文&lt;/strong&gt;樣式渲染。標記標題的#或##等，會根據排版範本的&lt;strong&gt;標題一&lt;/strong&gt;、&lt;strong&gt;標題二&lt;/strong&gt;等樣式渲染。如果使用者需要呈現頁碼，只要在排版範本預做安排。&lt;/p&gt;
+&lt;p&gt;文內引用的書目是將存在於書目資訊檔案的&lt;strong&gt;bibtex key&lt;/strong&gt;，置入在內文要呈現的地方，例如以下節錄的示範文字。詳細的置入語法與調整設定，可參考&lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34;&gt;Rstudio的介紹&lt;/a&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;美國哲學家Gettier[-@gettierJustifiedTrueBelief1963]發表一篇短論文，提出兩個即使符合JTB三種條件，依然無法確定某人有沒有正確知識的反例。&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;只要有引用的書目資訊，&lt;code&gt;pandoc&lt;/code&gt;會根據引用格式檔案內的資訊，與文末排列參考文獻。示範文件中使用的格式是APA 6並呈現doi的一般格式。因此一份文件由兩位以上共同編輯，只要共享需要的書目資訊，也不必依賴付費軟體編輯與管理引用文獻。有關格式檔案的設定方法，可參考&lt;a href=&#34;http://blog.pulipuli.info/2014/08/zoteroapa-zotero-citation-style-apa.html&#34;&gt;pulipuli的網誌&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;進階套件&lt;/h2&gt;
+&lt;p&gt;未來我還會撰寫在動態文件編輯圖表與統計數據的網誌，待讀者熟練本篇介紹的操作，推薦安裝以下套件，增益編輯動態文件的效率：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/crsh/citr&#34;&gt;&lt;code&gt;citr&lt;/code&gt;&lt;/a&gt;:這套Rstudio的外掛可幫助使用者在編輯過程中，有插入引用文獻的bibtext key的需要，以視窗介面搜尋並編輯。我的使用建議是先準備好書目資訊檔案，編輯過程中不必開啟zotero。如果有需要更新書目資訊檔案，最好先暫停文件編輯工作，更新完成後再繼續編輯。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;: &lt;code&gt;citr&lt;/code&gt;作者的代表作，可創建符合APA格式的手稿檔案，並支援圖表與數據的排版功能。初版&lt;a href=&#34;https://crsh.github.io/papaja_man/index.html&#34;&gt;使用手冊&lt;/a&gt;今年已正式上線。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;期待的改進&lt;/h2&gt;
+&lt;p&gt;這篇介紹的動態文件套件在支援中文寫作有兩個值得改進之處。首先是生成pdf檔的問題，目前簡體中文有R牛人&lt;a href=&#34;https://yihui.name/en/&#34;&gt;Yihui Xie&lt;/a&gt;的努力，已有支援出簡體中文pdf的套件，但是繁體中文仍然不夠全面。也可能是我找不到正確的支援方法所致，還請網友賜教。第二點是pandoc渲染參考文獻的功能只有支援英文書目，讀者可從&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;示範文件&lt;/a&gt;裡的中文書目發現問題。這兩個問題如果能獲得改進，相信更多研究者與學生會更容易接受動態文件，提高研究過程與成果的透明度也有更清楚的標準。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>心理科學研究必用神器3 ~ 開源統計軟體</title>
       <link>/zh/post/jasp-jamovi/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
@@ -1860,68 +1902,6 @@ Proceedings of the National Academy of Sciences)刊登一篇臉書研發部門�
 &lt;p&gt;我在參與經驗中再次反思華人社會科學圈的科學操作問題：運用分析資料提出理論判斷的學者，是抱著多少的事前期待看待自已的理論。像Benjamin等人的倡議與Lakens等人的回應，都是設定相對低的事前賠率(最高1:10)，討論今後研究者該採取的最佳操作。在我成長的學術環境中，卻似乎存在對自己的研究理論有相當高的信心，如1:1。這或許與多數研究是借鑒已出版的西方研究有關，但是不論是普遍的信心還是可能的原因，都沒有實際的研究資料，我的感受只是個人臆測。然而我相信這是亞洲地區的開放科學人士可以做的研究題目，可藉此找到在這樣的學術環境推廣開放科學的切入點。&lt;/p&gt;
 &lt;p&gt;最後藉Benjamin等人的倡議與Lakens等人的回應，介紹預印發表。這種發表模式在資訊科學領域從1991年起，已運作將近30年。學者在初次投稿時，就將手稿與研究材料，上傳至有公信力的資料庫公開，如&lt;a href=&#34;http://arxiv.org/&#34;&gt;arXiv&lt;/a&gt;，期刊尚在評審時，讀者就能閱覽論文資料。社會科學領域也在1994年出現性質類似的&lt;a href=&#34;https://www.ssrn.com/&#34;&gt;SSRN&lt;/a&gt;，近年開放科學中心為推廣開放取用(Open Access)，也建置整合多項領域的&lt;a href=&#34;https://osf.io/preprints/&#34;&gt;OSF Preprints&lt;/a&gt;，包括屬於心理學的&lt;a href=&#34;https://psyarxiv.com/&#34;&gt;PsyArxiv&lt;/a&gt;。只要期刊允許，作者可自行於這些網站公開投稿。在今年的SIPS，我就得知美國心理學學會(APA)，已經接受PsyArxiv做為&lt;a href=&#34;http://blog.psyarxiv.com/2017/08/14/apa-names-psyarxiv-preferred-preprint-service/&#34; title=&#34;APA Names PsyArXiv as Preferred Preprint Service&#34;&gt;APA旗下期刊發表預印本主要平台&lt;/a&gt;的消息。我所知道的亞洲地區本土期刊還沒有開始這樣的政策，如果有那一國出現這樣的期刊，或者有規模的支持措施開始營運，該國會成為亞洲開放科學的領導國。&lt;/p&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>「提昇你的統計推論功力」中文資源使用說明及學習指南</title>
-      <link>/zh/post/text_2017009/</link>
-      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/post/text_2017009/</guid>
-      <description>
-
-&lt;p&gt;&lt;img src=&#34;/images/curves.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;中英字幕對照檔已於8/21上傳Coursera，有註冊Coursera的朋友可直接在平台觀看有中文字幕的影片。這份指南與教材的翻譯文本是繁體中文，大陸及港澳地區朋友，如果閱讀中無法習慣字體與詞彙用語，請多多見諒。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;終於完成Coursera的課程「提昇你的統計推論功力」&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home/welcome&#34; target=&#34;_blank&#34;&gt;( Improving your statistical inferences )&lt;/a&gt;教材(每週課程說明，影片字幕)第一階段中文翻譯。這門課程是由荷蘭埃因霍溫科技大學副教授Daniel Lakens設計講授，於2016年10月上架。因為我從2015年起就訂閱Daniel的部落格「20%的統計學家」(&lt;a href=&#34;http://daniellakens.blogspot.tw/&#34; target=&#34;_blank&#34;&gt; The 20% Statistician &lt;/a&gt;)，所以首先是從&lt;a href=&#34;http://daniellakens.blogspot.tw/2016/10/improving-your-statistical-inferences.html&#34; target=&#34;_blank&#34;&gt;他發佈的部落格貼文&lt;/a&gt;得知。當時我正在荷蘭進行訪問研究，也正在學習使用這門課程推廣的幾種統計分析方法，所以我就聯絡Daniel，願不願意讓更多中文世界的學者與學生們認識這門課程？他欣然接受這個點子，於使我們一起在OSF開了一份&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34;&gt;公開專案&lt;/a&gt;，開始了第一階段影片字幕翻譯計畫：翻譯並公開每週課程介紹與影片字幕，讓有興趣但英文閱聽能力有限的華文人士，可以理解課程內容，直接使用課程資源。並且也歡迎各方高手協助校正，為第二階段作業資源中文化工作做準備。&lt;/p&gt;
-
-&lt;p&gt;Daniel Lakens曾參與2015年轟動全球，不到40%心理學研究可被再現的「&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34;&gt;心理學再現研究專案&lt;/a&gt;」資料分析工作。Daneil因為自己博士班時期的原創研究無法被他人成功再現，決心深入學習多數心理學家幾乎不接觸的數理與生物統計學，他把學習成果轉化為多篇幫助心理學家改善研究設計與統計分析的論文。還以每篇論文為基礎，撰寫至少一篇部落格文章，這門課程可說是他整理個人近幾年研究與教學的精華。&lt;/p&gt;
-
-&lt;p&gt;我決定開這個坑有幾個理由，除了課程品質好，課程設計對習慣台灣系統，甚至是東亞國家的統計與研究方法教學系統的學生，都是全新的體驗。像是在課程裡安排的一段科學哲學的介紹，讓學習者了解Daneil為什麼主張視情況善用次數主義統計(Frequentist  statistics)與貝氏統計(Bayesian statistics)的方法。課程中的不少案例是到2015年止，在學術界引起結果無法再現的研究。不曉得2015年為什麼會有「&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34;&gt;心理學再現研究專案&lt;/a&gt;」出現的朋友，上到第三週大概就會明白，這項專案並不是有一群心理學家故意找另一群心理學家的麻煩，而是為了重新喚起心理科學的求真精神。&lt;/p&gt;
-
-&lt;p&gt;除了幾部影片字幕是由朋友協力翻譯，我自己在參加2017年的SIPS研討會&lt;a href=&#34;http://improvingpsych.org/&#34; target=&#34;_blank&#34;&gt;提昇心理科學協會(Society for the Improvement of Psychological Science (SIPS) Meeting )&lt;/a&gt;之前，完成了大部分的字幕初翻。除了想要當面向Daneil致意，也為準備參加會議活動做準備。結果真的派上用場，在其中一場設計新世代研究方法課程的&lt;a href=&#34;https://osf.io/zbwr4/&#34; target=&#34;_blank&#34;&gt;黑客松&lt;/a&gt;裡，就直接取用了這門課的部分資料與作業。&lt;/p&gt;
-
-&lt;h2 id=&#34;上課前-要做什麼準備&#34;&gt;上課前，要做什麼準備？&lt;/h2&gt;
-
-&lt;p&gt;除了講師的影片語言，簡介說明，參考資料與作業測驗都是英文，對於英文程度不流利的學生有些吃力。課程內容是設定決定上課的學生，有修習初級統計，並有一兩次的研究執行與資料分析經驗。這門課不會告訴你什麼是平均數還有標準差，第一週介紹完統計方法流派之後，就立刻談_p_值的意義與誤解。如果你之前還沒有學過任何推論統計方法，不只可能看不懂影片，也不會了解作業如何下手。建議有意學習者曾修過大學的基礎統計與初階研究方法，或者已修過Coursera的任何一門基礎統計課程。&lt;/p&gt;
-
-&lt;p&gt;本課程的許多作業都是要實際操作R與Excel試算表軟體，多數台灣社會科學領域的學生多少有一些操作Excel的經驗，但是R可能對這群學生還是高門檻的統計語言。好在台灣有許多熱心推廣R的資料科學高手，可以先找一門自學教材上手。我推薦Wush Wu設計維護的&lt;a href=&#34;http://datascienceandr.org/&#34; target=&#34;_blank&#34;&gt;R語言翻轉教室&lt;/a&gt;，先熟悉一下R的使用環境與語法，就能從課程作業了解講師希望你透過操作能學到什麼東西。這門課程作業的R真的不難，只要照著題目說明，改一兩個地方就能看到執行結果。&lt;/p&gt;
-
-&lt;h2 id=&#34;開始課程前-先了解各週學習重點&#34;&gt;開始課程前，先了解各週學習重點&lt;/h2&gt;
-
-&lt;p&gt;課程共有八週，除了最後一週是提出自己的研究計畫與同學線上互評，第一週到第七週每週有三段主要視頻、一到二件數據模擬與分析作業，以及一份當週測驗卷。每週測驗卷有A/B兩種版本，是Daniel與萊登大學博士生Tim van de Zee合作設計，要收集選修這門課程的人士學習表現，分析後做為之後改進課程內容的依據。我建議修課同學，將每週的課程資料下載，並依週次建檔，之後有用時可知如何找到需要的資源。建檔結構可參考&lt;a href=&#34;https://github.com/SCgeeker/IST_course_data&#34; target=&#34;_blank&#34;&gt;我的github儲存庫&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;每門課程都有一則簡短的課程概論，說明每段視頻與作業的重點，並列出與視頻內容有關的參考文獻。七週課程概 論的中譯初稿已在&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34;&gt;公開專案&lt;/a&gt;上線，強烈建議初學者先閱讀課程概論，了解自已能否從影片與作業學習到Daniel要傳達給你的資訊，判斷自已需不需要尋找同儕互助學習。每週課程影片的中英對照字幕可由&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34;&gt;公開專案&lt;/a&gt;下載，這系列的課程影片都可以下載觀賞，英聽不夠好的同學可以下載影片和字幕，用可外掛字幕的播放軟體觀賞。&lt;/p&gt;
-
-&lt;p&gt;以下簡述七週學習重點與經驗：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;第一週/引言與次數主義統計：第一段介紹三種統計推論取向，後兩段的重點是討論_p_值的正確與錯誤運用方式。對於有研究經驗的同學來說，最值得仔細理解的是，有沒有曾經認為_p_值就等於研究結果型一錯誤率？有沒有以為_p_值是虛無假設成立的機率？Daniel在這週課程為你解惑。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;第二週/似然值與貝氏統計：介紹&lt;strong&gt;似然值&lt;/strong&gt;與&lt;strong&gt;貝氏統計&lt;/strong&gt;，這兩種統計推論方法在亞洲的許多大學統計課都從被納入。如果你曾在論文裡看過貝氏因子(&lt;em&gt;BF&lt;/em&gt;)與可信區間(Cridible interval)，這週課程會給你一個初步的認識。&lt;a href=&#34;http://www.lifesci.sussex.ac.uk/home/Zoltan_Dienes/inference/index.htm&#34; target=&#34;_blank&#34;&gt;Daniel推薦的書籍 Understanding Psychology as a Science &lt;/a&gt;，是第一本為心理學家寫的貝氏統計入門教科書，值得找來一讀。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;第三週/有效控制推論錯誤率：延續第一週的課題，介紹有效控制型一與型二錯誤率的方法。第三段還談到如何運用這先方法，規劃可靠又有效的&lt;strong&gt;預先註冊研究(preregistration)&lt;/strong&gt;。做完這週作業與測驗，你手上正好有準備執行或規劃中的方法，可以嘗試使用預先註冊會變得如何？&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;第四週/效果量(effect size)專題：效果量是進行整合性分析(meta analysis)與註冊確證性研究(confirmatory research)，不可或缺的元素。你希望研究的證據力要有多高，就要先評估效果量與考驗力(power)。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;第五週/良好的樣本數估計：基礎統計就會學到的信賴區間(Confidence interval)，以及決定樣本數(Sample Size)的策略。Daniel在這週讓你認清過去從教科書或課堂學習中不足夠的地方，並介紹近幾年竄起的統計品質分析工具：p-Curve。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;第六週/科學哲學：不完全是統計課的一週。Daniel淺談科學哲學入門，以及理論的建構。&lt;a href=&#34;http://daniellakens.blogspot.tw/2017/08/towards-more-collaborative-science-with.html&#34; target=&#34;_blank&#34;&gt;最近Daniel的部落格文章&lt;/a&gt;提到，接下來心理科學將進入&lt;strong&gt;理論危機(Theory Crisis)&lt;/strong&gt;，配合閱讀能了解這一週課程內容如此安排的用意。如果你有不知如何定義虛無假設的理論意義，這週Daniel介紹他的最愛：等效測試(equivalence testing)。&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;第七週/開放科學：集中談論前六週偶爾提到的再現研究與出版偏誤，這是2015年200多位心理學家自願參與&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34;&gt;心理學再現研究專案&lt;/a&gt;的重要因素。最後一段展望能消除這些問題的&lt;strong&gt;開放科學&lt;/strong&gt;。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;完成各週作業之後的學習方向&#34;&gt;完成各週作業之後的學習方向&lt;/h2&gt;
-
-&lt;p&gt;如果你有時間，建議完成第八週的互評作業。計畫要分析的資料不一定要親自收集，可以找有興趣主題的公開資料，測試你想檢驗的假設。我認為台灣學生可以透過這項作業，測試看看現在國內各公家機關的開放資料，能完成多少真正有意義的分析。&lt;/p&gt;
-
-&lt;p&gt;各週推薦閱讀是之後深化學習的途徑，每篇論文都值得找來閱讀，有附件資料的還能試著操作，學到就有使用的機會。我個人的最大收穫是認識&lt;a href=&#34;http://meehl.umn.edu/&#34; target=&#34;_blank&#34;&gt;被譽為二十世紀最聰明的心理學家&lt;em&gt;Paul Meehl&lt;/em&gt;&lt;/a&gt;，正在消化他於1989年講演哲學心理學(Philosophical Psychology)的課程錄影與資料。&lt;/p&gt;
-
-&lt;p&gt;翻譯中文字幕的動機是讓華文地區的心理科學人士，了解另一種學習及運用統計的方式，以及不同於習慣的角度看待心理學研究品質。這門課程資料不需要付認證費用，只要註冊Coursera就能全部取得，符合開放科學的精神。當然要持續深入學習，母語對有些學生可能會是限制，如果你能在生活區域找到一起學習的伙伴，建議一起定期討論作業與推薦論文。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;已上線的中文翻譯初稿為各方人士貢獻，本人無法保證所有材料的翻譯品質都維持在相同水準。藉此招募有意願的高手加入協助，開啟第二階段作業資源中文化。&lt;/strong&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -5,6 +5,18 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/en/post/dynamic-writing/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/post/dynamic-writing/" hreflang="zh"/>
+    
+      <loc>/en/post/dynamic-writing/</loc>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/en/post/if-emily-rosa-met-thomas-bayes/</loc>
       <lastmod>2018-08-14T00:00:00+00:00</lastmod>
     </url>
@@ -186,7 +198,7 @@
       <xhtml:link rel="alternate" href="/zh/categories/academic/" hreflang="zh"/>
     
       <loc>/en/categories/academic/</loc>
-      <lastmod>2018-08-09T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -219,7 +231,7 @@
       <xhtml:link rel="alternate" href="/zh/categories/" hreflang="zh"/>
     
       <loc>/en/categories/</loc>
-      <lastmod>2018-08-09T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -254,8 +266,11 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/en/tags/latex/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/tags/latex/" hreflang="zh"/>
+    
       <loc>/en/tags/latex/</loc>
-      <lastmod>2016-04-05T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -349,7 +364,7 @@
       <xhtml:link rel="alternate" href="/zh/tags/r/" hreflang="zh"/>
     
       <loc>/en/tags/r/</loc>
-      <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -385,7 +400,7 @@
       <xhtml:link rel="alternate" href="/zh/categories/reproduce-practice/" hreflang="zh"/>
     
       <loc>/en/categories/reproduce-practice/</loc>
-      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -448,6 +463,19 @@
     
       <loc>/en/categories/teaching/</loc>
       <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/en/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/" hreflang="zh"/>
+    
+      <loc>/en/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/</loc>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -11,6 +11,24 @@
     <atom:link href="/en/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>心理科學研究必用神器4 ~ 動態文件寫件套件</title>
+      <link>/en/post/dynamic-writing/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/dynamic-writing/</guid>
+      <description>&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;入門套件&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;寫作示範&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;進階套件&lt;/h2&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>If Emily Rosa met Thomas Bayes ...</title>
       <link>/en/post/if-emily-rosa-met-thomas-bayes/</link>
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
@@ -1033,86 +1051,6 @@ SS&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;In R &lt;code&gt;base&lt;/code&gt; package, the function &lt;code&gt;var&lt;/code&gt; outputs a sampling variance, not a population variance as above.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;var(1:10)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 9.166667&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Learning Sampling Distribution in R Programming</title>
-      <link>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
-      <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
-      <description>&lt;p&gt;Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.&lt;/p&gt;
-&lt;p&gt;In this pseudo experiment, there are only ten observations we will collect in every sample. They are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Accodring to the design of the experiment, a sample will have one observation to countless observations. I assume the distrubtions are accumulated from 100 samples of 1 observation, 9 observations, ,16 observations, 25 observations, and 36 observations. Every sample will be collapsed to a average value and become the components of sampling distribution. I use &lt;code&gt;ggplot2&lt;/code&gt; to draw the five sampling distributions. Look at what they are look like.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suppressPackageStartupMessages({
-  library(ggplot2)
-  library(xtable)
-  })
-
-set.seed(1)
-OBV &amp;lt;- 1:10
-Dist1 &amp;lt;- NULL
-Dist9 &amp;lt;- NULL
-Dist16 &amp;lt;- NULL
-Dist25 &amp;lt;- NULL
-Dist36 &amp;lt;- NULL
-count = 100
-while(count &amp;gt; 0){Dist1 &amp;lt;- c(Dist1,sample(OBV, 1, replace = TRUE)); count &amp;lt;- count - 1}
-count = 100
-while(count &amp;gt; 0){Dist9 &amp;lt;- c(Dist9,mean(sample(OBV, 9,replace = TRUE) ) ); count &amp;lt;- count - 1}
-count = 100
-while(count &amp;gt; 0){Dist16 &amp;lt;- c(Dist16,mean(sample(OBV, 16,replace = TRUE) ) ); count &amp;lt;- count - 1}
-count = 100
-while(count &amp;gt; 0){Dist25 &amp;lt;- c(Dist25,mean(sample(OBV, 25,replace = TRUE) ) ); count &amp;lt;- count - 1}
-count = 100
-while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
-Dist.df &amp;lt;- data.frame(Size = factor(rep(c(1,9,16,25,36), each=100)), Sample_Means = c(Dist1, Dist9, Dist16, Dist25, Dist36) )
-ggplot(Dist.df, aes(Sample_Means, fill = Size)) + geom_histogram() + facet_grid(. ~ Size)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2016-03-30-learning-sampling-distribution-in-r-programming_files/figure-html/Sampling-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;We call the set of observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 &lt;strong&gt;population&lt;/strong&gt; in any circumstance we conduct this experiment. This population has the average 5.5 and the variance/standard deviation 8.25/2.87. With the increase of sample size, you find more and more samples collapsed to the average of population. The variation of each sample distribution decreases with the increasing of sample size as well. The following table illustrate the average and variance/standard deviation of each sampling distribution.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;center&#34;&gt;Sample Size&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Average&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Variance&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Standard Deviation&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.64&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;2.65&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.48&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.97&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.98&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;16&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.42&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.54&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.73&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;25&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.47&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.38&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.61&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;36&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.56&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.45&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;There are three findings in this simulation. First, the average of every sample is as equal as the average of population. Second, the variance of every sample is close to the divide of population variance by the sample size. Third, the standard deviation of every sample is close to the divide of population standard deviation by the square of sample size. These facts matches &lt;a href=&#34;https://en.wikipedia.org/wiki/Central_limit_theorem&#34;&gt;Central limit theorem&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

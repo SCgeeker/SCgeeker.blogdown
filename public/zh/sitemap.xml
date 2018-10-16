@@ -5,6 +5,18 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/post/dynamic-writing/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/post/dynamic-writing/" hreflang="en"/>
+    
+      <loc>/zh/post/dynamic-writing/</loc>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/jasp-jamovi/</loc>
       <lastmod>2018-08-31T00:00:00+00:00</lastmod>
     </url>
@@ -273,7 +285,7 @@
       <xhtml:link rel="alternate" href="/en/categories/academic/" hreflang="en"/>
     
       <loc>/zh/categories/academic/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -286,7 +298,7 @@
       <xhtml:link rel="alternate" href="/en/categories/" hreflang="en"/>
     
       <loc>/zh/categories/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -321,6 +333,19 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/tags/latex/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/latex/" hreflang="en"/>
+    
+      <loc>/zh/tags/latex/</loc>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
       <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
     
@@ -338,7 +363,7 @@
       <xhtml:link rel="alternate" href="/en/post/" hreflang="en"/>
     
       <loc>/zh/post/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -389,7 +414,7 @@
       <xhtml:link rel="alternate" href="/en/tags/r/" hreflang="en"/>
     
       <loc>/zh/tags/r/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -415,7 +440,7 @@
       <xhtml:link rel="alternate" href="/en/categories/reproduce-practice/" hreflang="en"/>
     
       <loc>/zh/categories/reproduce-practice/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -646,8 +671,11 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/" hreflang="en"/>
+    
       <loc>/zh/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/</loc>
-      <lastmod>2018-08-21T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
