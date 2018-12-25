@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic on 暗微幽光</title>
+    <title>academic on 暗微幽光</title>
     <link>/zh/categories/academic/</link>
-    <description>Recent content in Academic on 暗微幽光</description>
+    <description>Recent content in academic on 暗微幽光</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/dynamic-writing/</guid>
-      <description>這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。
+      <description>這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。
 多數人習慣使用的文書處理軟體，像是WORD與google doc，集合文字編輯與排版。寫作正式文件時，需要同時顧慮編輯與排版的契合，雖然之前介紹的zotero已經減輕編輯文內引用與排版參考文獻的工作，一份文件內要安置圖表，乃至數學符號與統計數據的整理，還是需要花時間在不同軟體之間剪貼。
 這篇網誌說明如何編輯一篇有列舉參考文獻，無任何圖表及數學符號的中文文件。讓讀者了解動態文件的文字編輯與排版是兩件分開的工作，並提出支援中文寫作的動態文件套件，還需要改進的地方。
 基礎知識與建置這套個人網站一樣，一切準備從安裝Rstudo與R開始。Rstudio開發的套件knitr可由使用者自行安裝，或者是第一次使用Rstudio編輯動態文件時，會自動下載安裝。knitr的功能是將有指定語法標籤的純文字文件，例如markdown與R，轉換為其他排版軟體能辨識的內容。Rstudio已經整合一套開源排版軟體pandoc，可將轉換後的純文字文件，按排版設定渲染(render)輸出word或pdf檔案。
@@ -41,7 +41,7 @@ papaja: citr作者的代表作，可創建符合APA格式的手稿檔案，並�
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/jasp-jamovi/</guid>
-      <description>兩年前開始使用JASP分析研究資料時，我曾經寫過一篇網誌介紹這套開源軟體。之後更認識設計理念相同，功能擴充性更自由的jamovi。今年初我自已寫的統計電子書整合兩套軟體，讓學生學習如何運用兩套軟體於實務。到了今年五月至八月期間，這兩套軟體版本都更新到0.9以上，功能與資源有大幅度更新，兩套軟體的操作雖然大同小異，使用者用過一段時間會發覺兩者更擅勝場。
+      <description>兩年前開始使用JASP分析研究資料時，我曾經寫過一篇網誌介紹這套開源軟體。之後更認識設計理念相同，功能擴充性更自由的jamovi。今年初我自已寫的統計電子書整合兩套軟體，讓學生學習如何運用兩套軟體於實務。到了今年五月至八月期間，這兩套軟體版本都更新到0.9以上，功能與資源有大幅度更新，兩套軟體的操作雖然大同小異，使用者用過一段時間會發覺兩者更擅勝場。
 這篇網誌介紹兩套軟體的介面、一般設定與特別的功能。做為之後開發教材與寫作網誌的補充資料。
 介面特色JASP 0.9.0.1與jamovi 0.9.2.3的啟動畫面如以下快照，畫面中JASP的Common與jamovi的Analyses都是操作功能模組與檢視分析報表的區域。
 JASP開啟資料檔案是在File區域操作，下圖是JASP範例檔案庫的啟始畫面。操作方式類似Mac OS的Finder，JASP除了開啟本機檔案之外，也能直接連線使用者的OSF帳戶，下載與同步OSF專案裡的資料與JASP存檔(.jasp)。JASP存檔(.jasp)包括原始資料檔案與分析報表。

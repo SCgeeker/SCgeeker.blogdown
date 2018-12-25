@@ -36,7 +36,7 @@
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
-      <description>This post is for future posts.Check the lines 5 to 9 of my post template head.html.
+      <description>This post is for future posts.Check the lines 5 to 9 of my post template head.html.
  &amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;blogger&amp;quot;/&amp;gt;&amp;lt;meta name=&amp;quot;author&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;quot;/&amp;gt;# A if-then loop imports page.title.&amp;lt;meta property=&amp;quot;og:title&amp;quot; content=&amp;quot;{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}&amp;quot;/&amp;gt;# A if-then loop imports page.date.&amp;lt;meta property=&amp;quot;article:published_time&amp;quot; content=&amp;quot;{% if page.date %}{{ page.date | date: &amp;quot;%B %-d, %Y&amp;quot;}}{% else %}{{ site.date }}{% endif %}&amp;quot;/&amp;gt;&amp;lt;meta property=&amp;quot;og:site_name&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;#39;s website&amp;quot;/&amp;gt;</description>
     </item>
     
@@ -74,7 +74,7 @@
       <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
-      <description>Chapter 2 of Statistical Rethinking: A Bayesian Course with Examples in R and Stan introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated Data Story, then update the models by filling data in, and finally evaluate all the upated models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book.</description>
+      <description>Chapter 2 of Statistical Rethinking: A Bayesian Course with Examples in R and Stan introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated Data Story, then update the models by filling data in, and finally evaluate all the upated models.</description>
     </item>
     
     <item>

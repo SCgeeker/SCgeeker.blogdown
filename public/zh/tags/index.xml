@@ -22,42 +22,6 @@
     </item>
     
     <item>
-      <title>Knowledge_management</title>
-      <link>/zh/tags/knowledge_management/</link>
-      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/tags/knowledge_management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Latex</title>
-      <link>/zh/tags/latex/</link>
-      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Open science</title>
-      <link>/zh/tags/open-science/</link>
-      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/tags/open-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Preregistration</title>
-      <link>/zh/tags/preregistration/</link>
-      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/tags/preregistration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R</title>
       <link>/zh/tags/r/</link>
       <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
@@ -76,9 +40,63 @@
     </item>
     
     <item>
-      <title>Statistics</title>
-      <link>/zh/tags/statistics/</link>
+      <title>jamovi</title>
+      <link>/zh/tags/jamovi/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/jamovi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>knowledge_management</title>
+      <link>/zh/tags/knowledge_management/</link>
+      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/knowledge_management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>/zh/tags/latex/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open science</title>
+      <link>/zh/tags/open-science/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/open-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>preregistration</title>
+      <link>/zh/tags/preregistration/</link>
+      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/preregistration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>probability</title>
+      <link>/zh/tags/probability/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/probability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>/zh/tags/statistics/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/tags/statistics/</guid>
       <description></description>

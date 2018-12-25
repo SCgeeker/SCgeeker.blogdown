@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statistics on Sau-Chin Chen&#39;s Website</title>
+    <title>statistics on Sau-Chin Chen&#39;s Website</title>
     <link>/en/tags/statistics/</link>
-    <description>Recent content in Statistics on Sau-Chin Chen&#39;s Website</description>
+    <description>Recent content in statistics on Sau-Chin Chen&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
@@ -46,7 +46,7 @@
       <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
-      <description>Chapter 2 of Statistical Rethinking: A Bayesian Course with Examples in R and Stan introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated Data Story, then update the models by filling data in, and finally evaluate all the upated models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book.</description>
+      <description>Chapter 2 of Statistical Rethinking: A Bayesian Course with Examples in R and Stan introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated Data Story, then update the models by filling data in, and finally evaluate all the upated models.</description>
     </item>
     
     <item>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Knowledge_management on Sau-Chin Chen&#39;s Website</title>
+    <title>knowledge_management on Sau-Chin Chen&#39;s Website</title>
     <link>/en/tags/knowledge_management/</link>
-    <description>Recent content in Knowledge_management on Sau-Chin Chen&#39;s Website</description>
+    <description>Recent content in knowledge_management on Sau-Chin Chen&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
@@ -36,7 +36,7 @@
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
-      <description>This post is for future posts.Check the lines 5 to 9 of my post template head.html.
+      <description>This post is for future posts.Check the lines 5 to 9 of my post template head.html.
  &amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;blogger&amp;quot;/&amp;gt;&amp;lt;meta name=&amp;quot;author&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;quot;/&amp;gt;# A if-then loop imports page.title.&amp;lt;meta property=&amp;quot;og:title&amp;quot; content=&amp;quot;{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}&amp;quot;/&amp;gt;# A if-then loop imports page.date.&amp;lt;meta property=&amp;quot;article:published_time&amp;quot; content=&amp;quot;{% if page.date %}{{ page.date | date: &amp;quot;%B %-d, %Y&amp;quot;}}{% else %}{{ site.date }}{% endif %}&amp;quot;/&amp;gt;&amp;lt;meta property=&amp;quot;og:site_name&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;#39;s website&amp;quot;/&amp;gt;</description>
     </item>
     

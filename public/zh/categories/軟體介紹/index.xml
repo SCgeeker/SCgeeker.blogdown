@@ -18,7 +18,7 @@
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/use-bookdownplus/</guid>
-      <description>學會使用RMarkdown寫作之後，我一直在尋找能整合研究與教學寫作的方法與工具。認識papaja(Aust and Barth 2017)之後，讓我開始想像有一天我的電腦只會剩下Rstudio與Zotero兩種軟體。但是papaja只適用英文論文寫作，無法滿足經常需要中文寫作的我。接著看到R忍者大師謝益輝開發的bookdown(Xie 2017)，讓我開始燃起希望。不過最終版完全是編輯與出版書本的套件，從此多了個好用的編書工具，還不是全方位的學術寫作工具箱。
+      <description>學會使用RMarkdown寫作之後，我一直在尋找能整合研究與教學寫作的方法與工具。認識papaja(Aust and Barth 2017)之後，讓我開始想像有一天我的電腦只會剩下Rstudio與Zotero兩種軟體。但是papaja只適用英文論文寫作，無法滿足經常需要中文寫作的我。接著看到R忍者大師謝益輝開發的bookdown(Xie 2017)，讓我開始燃起希望。不過最終版完全是編輯與出版書本的套件，從此多了個好用的編書工具，還不是全方位的學術寫作工具箱。
 好在正在奧地利因斯布魯克的大學進行博士後研究的趙鵬有相同的需要，自行改良出進階的bookdownplus(Zhao 2017)。bookdownplus提供簡易的指令與多樣模板(templates)。根據說明檔，目前有academic article, book, thesis, poster, 與 journals等學術出版格式模板。還有趙博士個人興趣的poem book與guitar chords模板。這些模板的成品可參考以下來自官方github的截圖：
 ’journal’模板想必會在開放科學界炙手可熱。研究團隊成員可以透過協作，運用’journal’模板紀錄研究過程。研究成果正式出版之後，就能公開讓大眾檢視。
 如我一樣的繁體中文使用者，必須在完成手冊中的安裝程序之後，安裝一些字型才能正常使用中文套件。根據我在WINDOWS 10的測試，需要安裝的字型檔至少有KaiTi.ttf, simfang.ttf, simhei.ttf, 與simkai.ttf。

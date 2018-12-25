@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.48" />
+  <meta name="generator" content="Hugo 0.53" />
   <meta name="author" content="Sau-Chin Chen">
   <meta name="description" content="Associate Professor of Cognitive Psychology, The COS Ambassador, Assistant Director of The Psychological Science Accelerator">
 
@@ -253,7 +253,10 @@
 
 
       <div class="article-style" itemprop="articleBody">
-        <p>Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.</p>
+        
+
+
+<p>Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.</p>
 <p>In this pseudo experiment, there are only ten observations we will collect in every sample. They are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Accodring to the design of the experiment, a sample will have one observation to countless observations. I assume the distrubtions are accumulated from 100 samples of 1 observation, 9 observations, ,16 observations, 25 observations, and 36 observations. Every sample will be collapsed to a average value and become the components of sampling distribution. I use <code>ggplot2</code> to draw the five sampling distributions. Look at what they are look like.</p>
 <pre class="r"><code>suppressPackageStartupMessages({
   library(ggplot2)

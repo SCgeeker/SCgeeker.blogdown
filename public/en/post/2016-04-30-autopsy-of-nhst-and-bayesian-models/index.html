@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.48" />
+  <meta name="generator" content="Hugo 0.53" />
   <meta name="author" content="Sau-Chin Chen">
   <meta name="description" content="Associate Professor of Cognitive Psychology, The COS Ambassador, Assistant Director of The Psychological Science Accelerator">
 
@@ -253,7 +253,10 @@
 
 
       <div class="article-style" itemprop="articleBody">
-        <p>Chapter 2 of <a href="http://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking: A Bayesian Course with Examples in R and Stan</a> introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated <strong>Data Story</strong>, then <strong>update</strong> the models by filling data in, and finally <strong>evaluate</strong> all the <strong>upated</strong> models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s <a href="https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf">Bayesian Basics: A Conceptual Introduction with Application in R and Stan</a> on <a href="http://mc-stan.org/documentation/">Stan official site</a>, I require the key to understand the difference between the two golems.</p>
+        
+
+
+<p>Chapter 2 of <a href="http://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking: A Bayesian Course with Examples in R and Stan</a> introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated <strong>Data Story</strong>, then <strong>update</strong> the models by filling data in, and finally <strong>evaluate</strong> all the <strong>upated</strong> models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s <a href="https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf">Bayesian Basics: A Conceptual Introduction with Application in R and Stan</a> on <a href="http://mc-stan.org/documentation/">Stan official site</a>, I require the key to understand the difference between the two golems.</p>
 <p>The critical difference is which type of <strong>conditional probability</strong> the statistical method is used to evaluate the model. Once we collected the data based on some hypothesis, we have the distribution of hypothesis $ p( ) $ and the distribution of data $ p(y) $. NHST compuates the probability we have the data when the hypothesis is true $ p(y|) $. In practical, <em>p</em> value refers to the <strong>conditional probability</strong> of the null hypothesis, and * confidence interval* suggests a range of plausible outcomes based on the <em>confiditional probability</em> of the real hypothesis. A Bayesian method compuates the probability the hypothesis is approved based on the data we have $ p(|y) $. Because the computation of $ p(|y) $ needs the likelihood $ p(y|) $ and the priori $ p() $, of course a Baysian method cost more steps than NHST.</p>
 <p>$ $ has a term <strong>parameter</strong> in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. <strong>Likelihood</strong> is the <strong>sampling distribution</strong> we have to update before we run NHST. As like I show in <a href="/blog/2016/03/learning-sampling-distribution-in-r-programming.html">Learning Sampling Distribution in R Programming</a>, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.</p>
 <p>Here is a pseudo experiment I want to know if a test is success based on the expect value smaller than 5 (Obersvations are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10). I completed an experiment of 25 observations and an experiment 36 observations. In use of NHST with a critical value (p &lt; .05), the criterion change with the sample size. The simulation</p>
@@ -307,9 +310,9 @@ print(CL36)  ## The smallest parameter that could make judgement</code></pre>
     
     <li><a href="/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/">Check My Tools to Create and Manipulate Golems</a></li>
     
-    <li><a href="/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/">Vectors in mathematics and in codes</a></li>
-    
     <li><a href="/en/post/2016-04-05-display-math-equation-in-post/">Display Math Equation in Post</a></li>
+    
+    <li><a href="/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/">Vectors in mathematics and in codes</a></li>
     
     <li><a href="/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/">Learning Sampling Distribution in R Programming</a></li>
     

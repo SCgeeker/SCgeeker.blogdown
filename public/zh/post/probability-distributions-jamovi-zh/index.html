@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.53" />
+  <meta name="author" content="陳紹慶">
+  <meta name="description" content="開放科學大使、心理科學加速器助理監督">
+
+  
+  <link rel="alternate" hreflang="zh-tw" href="/zh/post/probability-distributions-jamovi-zh/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair&#43;Display:400,700%7cFauna&#43;One">
+  
+  <link rel="stylesheet" href="/zh/styles.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="暗微幽光">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="暗微幽光">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/zh/post/probability-distributions-jamovi-zh/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@SauChin_Chen">
+  <meta property="twitter:creator" content="@SauChin_Chen">
+  
+  <meta property="og:site_name" content="暗微幽光">
+  <meta property="og:url" content="/zh/post/probability-distributions-jamovi-zh/">
+  <meta property="og:title" content="運用jamovi認識與運用機率分配 | 暗微幽光">
+  <meta property="og:description" content=""><meta property="og:image" content="/img/Dice_Distribution.png">
+  <meta property="og:locale" content="zh-tw">
+  
+  <meta property="article:published_time" content="2018-12-25T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-12-25T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>運用jamovi認識與運用機率分配 | 暗微幽光</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">切換導覽</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/zh">暗微幽光</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/zh/#about">
+            
+            <span>首頁</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/zh/#posts">
+            
+            <span>隨筆</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/zh/#projects">
+            
+            <span>反思</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/zh/#teaching">
+            
+            <span>教學</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/Dice_Distribution.png" class="article-banner" itemprop="image">
+  <span class="article-header-caption">File:Dice Distribution (bar).svg. (2018, November 28). Wikimedia Commons, the free media repository. Retrieved 06:15, December 25, 2018 from <a href="https://commons.wikimedia.org/w/index.php?title=File:Dice_Distribution_(bar).svg&amp;oldid=329643421" target="_blank">https://commons.wikimedia.org/w/index.php?title=File:Dice_Distribution_(bar).svg&amp;oldid=329643421</a>.</span>
+</div>
+
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">運用jamovi認識與運用機率分配</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-12-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Tue, Dec 25, 2018
+    </time>
+  </span>
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/zh/post/probability-distributions-jamovi-zh/#disqus_thread"></a>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/zh/categories/teaching">Teaching</a
+    >, 
+    
+    <a href="/zh/categories/practices">Practices</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=%e9%81%8b%e7%94%a8jamovi%e8%aa%8d%e8%ad%98%e8%88%87%e9%81%8b%e7%94%a8%e6%a9%9f%e7%8e%87%e5%88%86%e9%85%8d&amp;url=%2fzh%2fpost%2fprobability-distributions-jamovi-zh%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fzh%2fpost%2fprobability-distributions-jamovi-zh%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=%e9%81%8b%e7%94%a8jamovi%e8%aa%8d%e8%ad%98%e8%88%87%e9%81%8b%e7%94%a8%e6%a9%9f%e7%8e%87%e5%88%86%e9%85%8d&amp;body=%2fzh%2fpost%2fprobability-distributions-jamovi-zh%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        
+
+
+<p>機率是學習統計觀念與方法必學的一章。在我使用過或參考過的中文統計書籍，發現機率因為牽涉數學公式的推導，作者不是只有說明計算推導，就是省略不提。說明計算推導的書藉都會附上各種機率分佈的表格，雖然在各種要運用該機率分佈的統計方法，都有解釋如何使用這些表格，但是學習統計軟體分析資料之後，這些表格幾乎無用武之地。</p>
+<p>我很早就放棄教學生學習使用這些表格，有幾個主要理由。首先這些表格是電子計算機的計算資源不夠，以及軟體使用介面不夠友善的時代產物。其次是所有表格都是列出各種機率分佈的累積機率函數(Cumulative Distribution Function)，或者是其反函數的輸出值。只要理解累積機率函數的觀念，這些表格在實用場合幾乎沒有運用價值。最後，因為有的表格是以位數(quantile)查詢累積機率(如二項分佈、常態分佈)，有的是以累積機率查詢位數(如t分佈、F分佈、卡方分佈)，學習新的分析方法就要學習不同的查表模式，反而不利養成正確的分析觀念。</p>
+<p>個人研究使用R之後，我一直尋找與嘗試在教學裡運用R的方法。直到最近幾年<a href="https://jasp-stats.org/">JASP</a>與<a href="https://www.jamovi.org/">jamovi</a>的出現，終於看到運用的機會。特別是jamovi提供使用者開發套件，其中<code>Rj</code>套件讓使用者能在報表中自行撰寫R程式碼，以及檢視輸出結果。R的基本套件本來就有一系列指令，用於計算常用機率分佈的累積機率函數與機率密度函數(Probability Density Function)。使用jamovi的話，能與各種分析方法模組結合運用，達到解釋報表中機率資訊的作用。</p>
+<p>為了明年的教學需要，我編寫五個機率分佈的jamovi檔案，並開放有興趣的網友下載使用。要完整使用這些檔案之前，使用者除了要安裝最新較的jamovi，也要安裝或更新<code>Rj</code>套件。使用者可以從jamovi的模組介面或<a href="https://www.jamovi.org/library.html">官方資源網頁</a>下載安裝，開啟jamovi檔案之後，就能改寫其中的R程式碼，以及觀看執行成果。</p>
+<p>除了公開jamovi檔案，每個機率分佈都錄一段簡短影片，示範如何使用檔案中的程式碼，以及觀看更新結果。其下每個影片上方的標題，都是該檔案的下載連結。歡迎網友下載使用，並給予批評指教。</p>
+<ul>
+<li><a href="https://osf.io/t5rs3/">二項分佈</a>(Binomial Distribution)</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mipvvoudP7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<ul>
+<li><a href="https://osf.io/jzpmy/">常態分佈</a>(Normal Distribution)</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZIxsYWOJTjg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<ul>
+<li><a href="https://osf.io/d9zg8/">t分佈</a>(t distribution)</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zGiKGsjdIwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<ul>
+<li><a href="https://osf.io/68usk/">卡方分佈</a>(chi square distribution)</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YHG9DuRYeNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<ul>
+<li><a href="https://osf.io/5mt8c/">F分佈</a>(F distribution)</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2DVkpuCeccI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/zh/tags/probability">probability</a>
+  
+  <a class="btn btn-primary btn-outline" href="/zh/tags/statistics">statistics</a>
+  
+  <a class="btn btn-primary btn-outline" href="/zh/tags/jamovi">jamovi</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>相關</h3>
+  <ul>
+    
+    <li><a href="/zh/post/jasp-jamovi/">心理科學研究必用神器3 ~ 開源統計軟體</a></li>
+    
+    <li><a href="/zh/post/basic-statistics/">電子書草稿上線：心理科學基礎統計</a></li>
+    
+  </ul>
+</div>
+
+
+
+<div class="container article-widget">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="/zh/post/dynamic-writing/"><span
+      aria-hidden="true">&larr;</span> 心理科學研究必用神器4 ~ 動態文件寫作入門</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "scchen" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Sau-Chin Chen &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">引用</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> 複製
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> 下載
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//scchen.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+
