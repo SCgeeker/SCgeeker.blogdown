@@ -94,6 +94,28 @@ csl: apa-old-doi-prefix.csl&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;期待的改進&lt;/h2&gt;
 &lt;p&gt;這篇介紹的動態文件套件在支援中文寫作有兩個值得改進之處。首先是生成pdf檔的問題，目前簡體中文有R牛人&lt;a href=&#34;https://yihui.name/en/&#34;&gt;Yihui Xie&lt;/a&gt;的努力，已有支援出簡體中文pdf的套件，但是繁體中文仍然不夠全面。也可能是我找不到正確的支援方法所致，還請網友賜教。第二點是pandoc渲染參考文獻的功能只有支援英文書目，讀者可從&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;示範文件&lt;/a&gt;裡的中文書目發現問題。這兩個問題如果能獲得改進，相信更多研究者與學生會更容易接受動態文件，提高研究過程與成果的透明度也有更清楚的標準。&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;20190114突破補充&lt;/h2&gt;
+&lt;p&gt;寫作這篇網誌到這個日期之間，我已使用papaja編寫至少兩篇論文，對於latex的排版語法有更新的認識。這一日終於試出能成功產生中文論文的方法，原理是相容中日韓字符xeCJK，，目前只有xelatex這套文件生成引擎能完整支援。加上中文字的特殊設定，YAML必須有以下設定。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Get the header from http://newsletter.ascc.sinica.edu.tw/news/read_news.php?nid=2198
+## ptt latex board
+## Section begin: this section has to be above &amp;#39;output:&amp;#39;
+header-includes:
+ - \usepackage[no-math]{fontspec}
+ - \usepackage{xeCJK}
+ - \setCJKmainfont{標楷體}  ## 可改成已安裝的其他字型
+ - \XeTeXlinebreaklocale &amp;quot;zh&amp;quot;  
+ - \XeTeXlinebreakskip = 0pt plus 1pt
+## Section end: this section has to be above &amp;#39;output:&amp;#39;
+
+
+## Get this setting from https://stackoverflow.com/questions/36806255/rstudio-on-windows-not-using-xelatex
+## This option forced Rstudio use xelatex compile this document
+output: 
+   pdf_document:
+       latex_engine: xelatex&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;未來論文寫作工作告一段落，我將寫一份papaja完整中文教學，介紹如何運用這些套件製作可重製報告。&lt;/p&gt;
+&lt;/div&gt;
 </description>
     </item>
     
