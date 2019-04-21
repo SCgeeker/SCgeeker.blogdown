@@ -18,7 +18,7 @@
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/en/post/use-bookdownplus/</guid>
-      <description>Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met papaja(Aust and Barth 2017) three years ago, it is my dream someday I will use R(R Development Core Team 2010) process all my works. papaja is amazing but it is implemented to English only. Later I found bookdown developed by Yihui Xie(Xie 2017). bookdown has the potential to manage Chinese writings.</description>
+      <description>My brief notes after realize the usage of &lt;code&gt;bookdownplus&lt;/code&gt;.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
       
       <guid>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
-      <description>Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.Many promoters of open-accessible literature spread their preprinted articles through the personal and collaborative blogs. Bloggers and followers like me usually manage the last updated posts in the reference managers.</description>
+      <description>How to wisely manage someone&amp;rsquo;s blog post?</description>
     </item>
     
     <item>

@@ -18,10 +18,7 @@
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/en/post/2016-04-05-display-math-equation-in-post/</guid>
-      <description>There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:
-\[ E = mc^2 \]
-Use the steps 1 and 2 indtroducted in Fong Chun Chan’s post, my website is able to show the equation in any post. Because this theme use kramdown as the engine of markdown, I pass the step 4.
-Here are the proof the central limitation theorem.</description>
+      <description>test latex in RMarkdown</description>
     </item>
     
     <item>
@@ -30,13 +27,7 @@ Here are the proof the central limitation theorem.</description>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
-      <description>When a set of data/observations is imported to R, it is usually treated as vector. Vector has two mathematical forms as following:
-column vector:
-\[ \vec{a} = \begin{bmatrix}1\\2\\3\\\end{bmatrix} \]
-row vector:
-\[ \vec{a} = [ 1\ 2\ 3 ] \]
-Default form of vector in R is column vector. More precisely, it is treated as a matrix:
-a &amp;lt;- 1:3a## [1] 1 2 3class(a)## [1] &amp;quot;integer&amp;quot;str(a)## int [1:3] 1 2 3t(a)## [,1] [,2] [,3]## [1,] 1 2 3In a statistical work, we used to calcuate the sum of square (SS) for the deviations to mean.</description>
+      <description>Realize and operate vectors</description>
     </item>
     
   </channel>

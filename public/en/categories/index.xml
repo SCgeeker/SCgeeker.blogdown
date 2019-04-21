@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
+    <lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,15 +18,6 @@
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/en/categories/practices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reproduce Practice</title>
-      <link>/en/categories/reproduce-practice/</link>
-      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/categories/reproduce-practice/</guid>
       <description></description>
     </item>
     
@@ -44,6 +36,15 @@
       <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/en/categories/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reproduce Practice</title>
+      <link>/en/categories/reproduce-practice/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/categories/reproduce-practice/</guid>
       <description></description>
     </item>
     

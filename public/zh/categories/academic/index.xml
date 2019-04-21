@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Mon, 18 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/categories/academic/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>我們與「顯著」的距離 ~ p值是判斷科學研究成敗的過時指標嗎？</title>
+      <link>/zh/post/comment-retired-p/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/comment-retired-p/</guid>
+      <description>感謝林澤民教授的鼓勵與提供修改意見，讓我在進行各種事務的時候寫出這篇有關改進統計方法操作的評論。</description>
+    </item>
     
     <item>
       <title>物件方向效應專案研究邁入第二階段</title>
@@ -18,19 +27,7 @@
       <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/obeject-orientation-project-enter-stage2/</guid>
-      <description>去年底與心理科學加速器(Psychological Science Accelerator)合作的註冊研究計畫“Investigating Object Orientation Effects Across 14 Languages”1，投稿Pscynomic Bulletin &amp;amp; Review之後，經過三個月的評審，收到不必修改直接取得原則性接受(in principle acceptance)的回覆信函。相當感謝共同參與計畫書編修的各國研究者，希望這個研究案能為資源有限，但是研究題目具備普世意義的心理科學研究者，奠定長期耕耘基礎的範例。
-本來獲得接受的時候就應該要寫一篇網誌向中文世界介紹，但二月初有出國開會的行程，回來又忙著準備第二階段的工作以及新學期的課程，一直耽擱著。直到前天參加由在德國進行博士後研究的胡傳鵬博士主持的線上讀書會，了解需要寫一份中文簡介向中文世界的朋友介紹。讓有心學習開放科學操作(Open Science Practices)的朋友，能透過個人或團體的方式參與這項專案，吸收對自己有用的經驗。
-首先來介給一下這個專案在做什麼，以下是我去年底申請科技部專題研究計畫的摘要：
-語言理解的心智模擬理論主張，閱讀者能理解的語言訊息自動轉換為實在物件的心智表徵。根據句圖辨識作業研究所累積的證據，物件圖像與句子描述物件形態、顏色、尺寸及方向等特徵相符者，都能造成比不相符者的辨識反應優勢。然而，物件方向造成的反應優勢，存在不同語言之間的不一致發現。物件方向反應優勢的效果量相對於其他特徵微弱(Cohen’s d = 1)，而且某些語言發現無此效應，例如荷語。透過心理科學加速器的合作平台，目前已徵得全球各地40個實驗室的參與意願，收集至少14種語言的實驗資料。本計畫首要目標是確認物件方向優勢效應是跨語言的心理效應；其次同時收集關鍵物件項目的心像旋轉作業資料，探討各種母語人士的心像旋轉能力，與物件方向表徵認知的關聯性。兩套作業的資料將提供未來相關研究，能根據各種語言及參與者認知能力個別差異等條件，事前規劃穩健的效果量及參與者人數評估。
-此計畫進行期間，同時舉行研究結果預測市場，邀請世界各地相關專業研究者，預測各種語言的實驗結果。已公開的數項大型再現研究專案，都呈現專家預測與實際吉果之間的高度一致性。本計畫將是首次針對特定心理效應，開放預測市場的專案。總計群眾預測及調查資料，相關資料可用來探討專業研究者如何根據研究經驗與可得資訊，預期特定語言的物件方向優勢效應。
-摘要的頭一句語言理解的心智模擬，提示這項研究屬於體現認知或具身認知的一個議題。其實我在向心理科學加速器提案時，有一群不同國家的認知心理學者，正在重現這個領域最知名的效應：動作-句子相符效應(Action-sentence Compatibility Effect)2。就在我們的計畫正份投稿後不久，計畫主持人Richard Morey就在Psyconomic SOciety年度會議公佈研究結果，讓人失望也不意外：沒有一個實驗室的再現結果出現顯著效應。這指出以動作-句子相符效應建立的體現認知知識體系，必須全盤檢討相關理論的證據品質。心理科學加速器專案探討的物件方向效應，則是這個體系另一個較知名但相對經得起考驗的研究題目。
-物件方向效應將與另一個同時被接受的社會心理學研究案“Gendered Social Category Representations”3，同時收集資料。有意願協助收集資料的朋友，將透過所屬機構的研究空間，招募當地的參與者進行實驗。因為原始研究是英文，非英語系國家的實驗室需要先將實驗指示與刺激文字翻譯為當地語言，心理科學加速器已經制定翻譯流程，確保各國實驗室能以當地參與者最熟悉的材料進行實驗。物件方向效應目前只有英文與荷文的研究文獻，但是兩種語言的結果完全相反：英文實驗有一致但微弱的效應；荷文實驗一致沒有物件方向效應。如果有更多語言且來自不同實驗室的結果，就能探討可以發現顯著物件方向效應的語言條件。這也是我們非常歡迎各國研究者加入的原因，無論最後結果如何，有興趣的研究者都能以這項專案為基礎，持續探討物件方向效應及相關主題。
-除了進行實驗，這項專案也會做為相關基礎工程的資源，目前主要有兩項專案。其中之一是由心理科學加速器的協同監督、MIT博士後學者Melissa Kline主持的心理學資料標準(Psych Data Standard project)：建立任何行為實驗與測驗都能適用的資料整理標準。日前我已貢獻物件方向效應的腳本與資料編碼，做為專案的範例樣本。另一項是我正在規劃的預測市場計畫，邀請未參與專案，但關心研究結果的各國研究者，一起預測各種語言的實驗結果。近幾年有開放科學中心參與的大型再現研究專案，都有於研究開始前進行預測市場。預測結果顯示專家們對實驗結果會不會顯著有一定準確度，但是效果量的預測有很大的誤差。由於物件方向效應有充份英文及荷文的效果量資訊，不同語言的學者也許能據此預測所知語言的結果，同時彙集更新理論的意見資訊。預測市場計畫正在尋找合適的執行平台，歡迎有經驗且想嘗試的研究者與我們洽詢。
-最後，想參與但還未正式登記為心理科學加速器會員的朋友，只要在線上登記表留下可聯絡的電子郵件，就會收到如何登記以及加入正在進行的專案資訊。己經登記為會員的朋友，只要告訴我你們的實驗室ID與參與者母語，我就會在專案登記表登錄資訊，未來最後報告也能共同列名作者。如果你還不是獨立研究團隊的主持人，是研究生或博士後研究，這個專案需要人手協助整理與分析各國實驗室上傳的翻譯與實驗資料，既能貢獻也能增加開放科學操作經驗。
-計畫書預印本公開頁 - https://psyarxiv.com/t2pjv/↩
-再現計畫預先註冊 - https://osf.io/edv2g/↩
-PSA的Gendered Social Category Representations介紹：https://psysciacc.org/2017/12/05/accepted-for-2018-gendered-social-category-representations/↩
-</description>
+      <description>Pscynomic Bulletin &amp;amp; Review於2019/1/31正式接受註冊研究計畫書，頁首地圖標記已登記加入的各國實驗室所在也與主要語言，歡迎中文世界的心理科學研究者參與這項專案。</description>
     </item>
     
     <item>
@@ -39,22 +36,7 @@
       <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/dynamic-writing/</guid>
-      <description>這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。
-多數人習慣使用的文書處理軟體，像是WORD與google doc，集合文字編輯與排版。寫作正式文件時，需要同時顧慮編輯與排版的契合，雖然之前介紹的zotero已經減輕編輯文內引用與排版參考文獻的工作，一份文件內要安置圖表，乃至數學符號與統計數據的整理，還是需要花時間在不同軟體之間剪貼。
-這篇網誌說明如何編輯一篇有列舉參考文獻，無任何圖表及數學符號的中文文件。讓讀者了解動態文件的文字編輯與排版是兩件分開的工作，並提出支援中文寫作的動態文件套件，還需要改進的地方。
-基礎知識與建置這套個人網站一樣，一切準備從安裝Rstudo與R開始。Rstudio開發的套件knitr可由使用者自行安裝，或者是第一次使用Rstudio編輯動態文件時，會自動下載安裝。knitr的功能是將有指定語法標籤的純文字文件，例如markdown與R，轉換為其他排版軟體能辨識的內容。Rstudio已經整合一套開源排版軟體pandoc，可將轉換後的純文字文件，按排版設定渲染(render)輸出word或pdf檔案。
-上圖是Rstudio開啟新文件的選單，除了R script與Text File，其他檔案格式都是可用其他軟體渲染輸出各種排版或編譯產物。這也是為何管理動態文件，應區分文字編輯與排版兩種工作。以一份R Markdown文件為例，有開頭的yaml與內文兩部分，yaml是列舉排版這份文件的所需資訊，以符號 --- 標記資訊開始及結尾。以本文的示範文件為例，這份文件要輸出為WORD檔案，yaml包含的資訊如下：
-output: word_document:reference_docx: word_style_reference.docxbibliography: Turri.bibcsl: apa-old-doi-prefix.csl與這份示範文件放在一起的三個外部檔案：word_style_reference.docx、Turri.bib、apa-old-doi-prefix.csl，分別提供渲染這份文件需要的排版樣式、書目資訊、以及引用格式。zotero網誌曾介紹如何管理書目資訊與引用格式的檔案，docx檔是提供一份有所需樣式與版面設定範例的word檔，也就是一個排版範本，有關WORD的排版可參考官方說明網站。
-寫作示範建議讀者先下載前述連結的檔案，嘗試重現示範文件的輸出成果，會更理理以下示範說明。
-R markdown內文與一般markdown文件一樣，未在置入任何標籤的任何文字等於一般WORD文件的內文，pandoc會根據排版範本的內文樣式渲染。標記標題的#或##等，會根據排版範本的標題一、標題二等樣式渲染。如果使用者需要呈現頁碼，只要在排版範本預做安排。
-文內引用的書目是將存在於書目資訊檔案的bibtex key，置入在內文要呈現的地方，例如以下節錄的示範文字。詳細的置入語法與調整設定，可參考Rstudio的介紹。
-美國哲學家Gettier[-@gettierJustifiedTrueBelief1963]發表一篇短論文，提出兩個即使符合JTB三種條件，依然無法確定某人有沒有正確知識的反例。只要有引用的書目資訊，pandoc會根據引用格式檔案內的資訊，與文末排列參考文獻。示範文件中使用的格式是APA 6並呈現doi的一般格式。因此一份文件由兩位以上共同編輯，只要共享需要的書目資訊，也不必依賴付費軟體編輯與管理引用文獻。有關格式檔案的設定方法，可參考pulipuli的網誌。
-進階套件未來我還會撰寫在動態文件編輯圖表與統計數據的網誌，待讀者熟練本篇介紹的操作，推薦安裝以下套件，增益編輯動態文件的效率：
-citr:這套Rstudio的外掛可幫助使用者在編輯過程中，有插入引用文獻的bibtext key的需要，以視窗介面搜尋並編輯。我的使用建議是先準備好書目資訊檔案，編輯過程中不必開啟zotero。如果有需要更新書目資訊檔案，最好先暫停文件編輯工作，更新完成後再繼續編輯。
-papaja: citr作者的代表作，可創建符合APA格式的手稿檔案，並支援圖表與數據的排版功能。初版使用手冊今年已正式上線。
-期待的改進這篇介紹的動態文件套件在支援中文寫作有兩個值得改進之處。首先是生成pdf檔的問題，目前簡體中文有R牛人Yihui Xie的努力，已有支援出簡體中文pdf的套件，但是繁體中文仍然不夠全面。也可能是我找不到正確的支援方法所致，還請網友賜教。第二點是pandoc渲染參考文獻的功能只有支援英文書目，讀者可從示範文件裡的中文書目發現問題。這兩個問題如果能獲得改進，相信更多研究者與學生會更容易接受動態文件，提高研究過程與成果的透明度也有更清楚的標準。
-20190114突破補充寫作這篇網誌到這個日期之間，我已使用papaja編寫至少兩篇論文，對於latex的排版語法有更新的認識。這一日終於試出能成功產生中文論文的方法，原理是相容中日韓字符xeCJK，，目前只有xelatex這套文件生成引擎能完整支援。加上中文字的特殊設定，YAML必須有以下設定。
-## Get the header from http://newsletter.ascc.sinica.edu.tw/news/read_news.php?nid=2198## ptt latex board## Section begin: this section has to be above &amp;#39;output:&amp;#39;header-includes:- \usepackage[no-math]{fontspec}- \usepackage{xeCJK}- \setCJKmainfont{標楷體} ## 可改成已安裝的其他字型- \XeTeXlinebreaklocale &amp;quot;zh&amp;quot; - \XeTeXlinebreakskip = 0pt plus 1pt## Section end: this section has to be above &amp;#39;output:&amp;#39;## Get this setting from https://stackoverflow.</description>
+      <description>使用動態文件寫作，寫文章就像寫程式一樣。</description>
     </item>
     
     <item>
@@ -63,24 +45,7 @@ papaja: citr作者的代表作，可創建符合APA格式的手稿檔案，並�
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/jasp-jamovi/</guid>
-      <description>兩年前開始使用JASP分析研究資料時，我曾經寫過一篇網誌介紹這套開源軟體。之後更認識設計理念相同，功能擴充性更自由的jamovi。今年初我自已寫的統計電子書整合兩套軟體，讓學生學習如何運用兩套軟體於實務。到了今年五月至八月期間，這兩套軟體版本都更新到0.9以上，功能與資源有大幅度更新，兩套軟體的操作雖然大同小異，使用者用過一段時間會發覺兩者更擅勝場。
-這篇網誌介紹兩套軟體的介面、一般設定與特別的功能。做為之後開發教材與寫作網誌的補充資料。
-介面特色JASP 0.9.0.1與jamovi 0.9.2.3的啟動畫面如以下快照，畫面中JASP的Common與jamovi的Analyses都是操作功能模組與檢視分析報表的區域。
-JASP開啟資料檔案是在File區域操作，下圖是JASP範例檔案庫的啟始畫面。操作方式類似Mac OS的Finder，JASP除了開啟本機檔案之外，也能直接連線使用者的OSF帳戶，下載與同步OSF專案裡的資料與JASP存檔(.jasp)。JASP存檔(.jasp)包括原始資料檔案與分析報表。
-jamovi開啟與儲存資料檔案的選單，是按下Data標籤左邊的三條橫線，就會出現如下圖的畫面。最新版的jamovi只能存取本機檔案，包括資料檔與jamovi存檔(.omv)。jamovi存檔(.omv)包括原始資料檔案與分析報表。
-jamovi的Data可以直接編輯與使用函式處理一到數個欄位資料，這個區域有些類似試算表軟體，只是要先確定每個欄位的資料型態，才能正確使用jamovi提供的函式。這部分是jamovi與JASP的最大不同，JASP不可直接編輯資料，必須呼叫外部資料編輯器或試算表軟體。
-一般設定JASP與jamovi的一般設定選單開啟按鈕都在主要介面右上角，如下圖的紅色圓圈標示。兩者共同設定有二：報表數值的小數點位數；資料檔案裡遺漏值(missing value)標記。
-JASP與jamovi可設定小數點格式的數值只有兩類：一般的統計數值與p值，如以下畫面截圖：
-JASP和jamovi都是輸入資料檔內的遺漏值字符，匯入資料後會自動辨識資料中的遺漏值，設定畫面如下圖。差異在於jamovi只能辨識一種字符，JASP可辨識多種，使用者還可根據實際情況自行增加。
-JASP有需要編輯資料數值時，可以設定使用系統預設的試算表軟體，例如Excel。要使用此功能，就做如以下畫面的設定。若要外部編輯器存檔，並同步更新JASP資料，只要勾選以下畫面的第一個功能即可。
-功能與資源比較以下整理本人認為值得學習的JASP與jamovi的重要功能與資源，提供讀者可依個人需要取用。
-可匯入資料格式JASP：CSV, SPSS, Libre試算表
-jamovi: CSV, SPSS, SAS, Stata
-擴充功能JASP：非當用模組讓使用者自行開啟，目前有Meta Analysis、Network、SEM。
-jamovi: 官方提供模組開發工具，以及自訂模組庫。使用者可由jamovi程式裡安裝與更新，或由自訂模組庫下載安裝。特別建議統計初學者，使用Statkat協助學習。
-學習資源JASP：官網不定期更新推薦教材，2018年有研究方法與統計教科書出版。0.9版有豐富的Data Library，讓使用者依需要找示範檔案學習。
-jamovi:Datalab的CC授權課程提供youtube教學單元，各單元教材公開於google雲端與OSF。
-</description>
+      <description>不必再煩惱付費，使用開源軟體使用與開發各種強大統計方法。</description>
     </item>
     
     <item>
@@ -89,25 +54,7 @@ jamovi:Datalab的CC授權課程提供youtube教學單元，各單元教材公開
       <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/ps-podcasts.zh/</guid>
-      <description>2017年三月或四月間，首次從臉書社團Psychological Methods Discussion Group得知網路廣播節目The Black Goat開播，從此開始注意國外專業心理學者自行製作主持的帶狀廣播節目。這類節目從2016年Everything Hertz開播後，到現在我知道的網路廣播節目已有八個。主持這些節目的人物是於歐美各大學專任的教師、博士後或博士生。因為都是英語廣播，是今天的心理學學生們練英聽的好教材，更有意思的是其中許多位節目主持人是開放科學推動者。這個網誌簡介這些節目，以及推薦入門集數。
-Everything Hertz主持人James Heathers；Daniel Quintana
-收聽網址與社群媒體SoundCloud
-twitter
-Facebook
-首集上線日期2016二月27日
-簡介與推薦集數兩位主持人都是畢業於澳洲雪梨大學的心理學博士，專長為計量與研究方法，目前分別於美國與挪威擔任博士後研究。從2016年二月起開始製播，大約半個月到一個月推出新一集節目。到33集都是兩人對談，以一個目前心理科學界的爭議或在學術界闖蕩的甘苦經驗為主題。34集開始不定期邀請來賓，討論這位來賓正在從事，未來可能改變學術運作模式的事業。
-James Heathers與Nick Brown一起發展GRIM–讓Brain Wansink的劣質研究現形的資料品質鑑識工具，所以Nick Brown做來賓的第44集是不錯的開始。如果你有在Coursera修過Daniel Lakens的提昇你的統計推論功力，42與43集是入門的開始。
-The Black Goat主持人Sanjay Srivastava;Alexa Tullett;Simine Vazire
-收聽網址與社群媒體iTune
-Podbean
-官網
-twitter
-Facebook
-Instagram
-首集上線日期2017年三月22日
-簡介與推薦集數三位主持人是分別任教於奧勒岡大學、阿拉巴馬大學、以及加州大學戴維斯分校的社會心理學者，都是活躍的開放科學推動者。三人對談的主題不僅包括增進科學研究品質的主題，還會分享個人教學與家庭生活心得，也經常在節目開始回覆最近收到的研究生來信，提供正在為學位努力的他們面對難關的建議。我個人認為如果Everything Hertz是兩位年青學者的立志紀錄，The Black Goat是暖男大叔加親切姐姐的空中諮商室。
-平均每個月更新一集，某幾集與來賓討論不同學術領域的見聞。三人參加同一個學術研討會，還會製作特集。像是參與APS的I Felt Like a Real Scientist，SIPS的SIPSapalooza。想要熟悉主持風格的話，建議收聽We Were Never Cool。
-Circle of Willis主持人James Coan</description>
+      <description>除了寫網誌和製作視訊節目，網路廣播(podcast)是另一種專業人士面向大眾的管道。</description>
     </item>
     
     <item>
@@ -116,11 +63,7 @@ Instagram
       <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/orientation-language-part01/</guid>
-      <description>心理科學加速器是什麼？心理科學存在高比例的偽陽性結果(false positive results)的事實(Fanelli 2010; Ioannidis 2005)，促成全球心理學者認清要評估研究發現的普遍性與真實性，需要累積大量的再現資料。最好的作法是組織不同地區的實驗室同時進行相同程序的實驗，以整合分析方法解析結果。2000年之後已經出現以多個機構長期合作收集資料的專案(Reifman and Grahe 2016)，以及課題導向的短期合作專案(Klein et al. 2014; Open Science Collaboration 2015; Ebersole et al. 2016; Frank 2016; Reifman and Grahe 2016)。兩種合作模式關注的課題圍繞核心學者關心的方向，或多數學者公認的重要題目。尚有許多獨立研究者規劃長期經營，有理論潛力但是出版成果還不足以判斷研究發現的普遍性。2016年第一屆SIPS研討會，與會學者提出提供獨立研究徵求合作者，合作重現最新研究成果的媒合平台Study Swap，方便心理學原創研究，能透過語言文化條件相同的合作實驗室，迅速累積再現成果。
-Study Swap平台主持人Christopher Chartier於2017年8月26日，在個人部落格發佈建立心理科學加速器的第一份公開文章，招集有共同理念的各國研究者組織十個運作與諮詢委員會，將Study Swap的運作模式推廣至全球心理科學研究。心理科學加速器的初期報導已在2017年11月翻譯為中文，發起建立的第一天就邀請90多位各國學者一起發想及撰寫的說明(Moshontz et al. 2018)剛於4月上旬正式投稿期刊Advances in Methods and Practices in Psychological Science (AMPPS)，五月至六月期間進行的第二次計畫徵件，每項計畫將由十位參與研究者以公開評審的方式，評估適合加盟實驗室同步進行的研究計畫。這篇文章整理提出計畫與參與運作的經驗，以及至目前為止的準備過程，給有興趣提出計畫的先進及後輩一些參考。
-研究構想提出過程Christopher Chartier在召集創始成員時，同時開啟第一次計畫徵件。當時我剛將與Rolf Zwaan及Bjorn De Koning合作的物件方向研究計畫書送第一階段評審，這個計畫源自2001年Stanfield與Zwaan運用句圖判別作業發現的物件方向反應優勢(Stanfield and Zwaan 2001)。這項研究發現被許多研究者認為與Glenberg與Kaschak(Glenberg and Kaschak 2002)提出的動作相容效應(Action-compatibility effect)，可用來檢驗體現知理論對語言理解的預測。然而合作過程中我理解物件方向反應優勢的原始構想是根據閱讀者讀過句子後，心智會模擬物件呈現形象的體現認知理論(Barsalou 1999)，動作的心智模擬並未在可預測的因素之列。而且物件方向反應優勢是同類型實驗結果最微弱的系列，不過目前只有英語及荷語的研究結果(R. A. Zwaan and Pecher 2012)。
-有沒有語言能發現比英語更明顯的物件方向反應優勢，成為我提出研究構想的重要動機。第一次徵件包括我的計畫有8件，經由最初的領導小組(Leadership Team)與研究計畫遴選委員會(Study Selection Committee)成員合作評審。我本來只是抱持嘗試的心態姑且試之，沒想到最後被選為三件研究案之一，讀者可參考我根據評審反應修改的構想書，我的網頁與心理科學加速器部落格都有這項計畫的介紹。這項研究案與其他兩項的不同處有這是此次唯一的認知心理學研究，唯一需要每個實驗室安裝指定實驗軟體的實驗，以及使用貝氏統計隨時分析實驗結果，讓每個實驗室自行能調節實際的研究參與者人數。
-前置準備經驗接受構想書之後，就是開始準備讓專業期刊進行審查的註冊研究計畫書。提出構想的研究者如果是獨立研究者，Christopher Chartier會媒合一位參與運作小組或委員會的成員，與主要研究者一起合作規畫與撰寫計畫書。像是我的與另一項研究案The Gendered Nature of Prejudice，都有與一位不同機構甚至不同國家的研究者遠端合作。心理科學加速器也希望藉此機會嘗試同時執行兩種不同性質的研究，加盟實驗室的執行狀況，還有資料的可用性。</description>
+      <description>心理科學加速器(Psychological Sciecen Accelerator)自我介紹論文已於2018年4月初&lt;a href=&#34;https://psyarxiv.com/785qu/&#34; target=&#34;_blank&#34;&gt;正式投稿&lt;/a&gt;，去年底通過的&lt;a href=&#34;https://psysciacc.org/project-tracker/&#34; target=&#34;_blank&#34;&gt;三項研究案&lt;/a&gt;已經或正在準備投稿註冊研究計畫書，2018年的徵件將於5月至6月中旬進行。本文紀錄我主持的其中之一研究案，至今為止的執行經驗。</description>
     </item>
     
     <item>
@@ -129,17 +72,7 @@ Study Swap平台主持人Christopher Chartier於2017年8月26日，在個人部�
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/first-chinese-rr-journal/</guid>
-      <description>台灣最老、華文第一的心理學學術期刊2018/2/22是台灣春節的開工第二日，回到研究室刷一下臉書看到了這則訊息：
-去年我只有在自己服務的學校與中正大學舉辦兩場小型註冊研究工作坊，就向中華心理學刊現任主編姜定宇教授建議：籌備主題式註冊研究特刊，以及允許投稿作者於完成投稿後自行公開手稿。想不到今年開工看到更大的進展：今年起中華心理學刊歡迎作者投稿註冊研究計畫書，並採二階段評審。我想簡介一下這本期刊，還有給一些執行註冊研究徵稿政策的建議。
-中華心理學刊於1958年創刊，是台灣第一本心理學學術期刊，到今年正好一甲子，由台灣心理學會委派來自各領域的台灣資深心理學者擔任編輯。主要任務是提供各國任何心理學領域專業學者，以學者以中文或英文發表論文。2000年之後台灣出現提供臨床心理學與諮商心理學者發表中文論文的期刊，而這兩個領域是台灣心理學界專業人口最多的領域，加上多數中青代學者以投稿國外英文期刊為目標，刊登的論文數量逐漸下降。近年積極爭取轉型，除了舉辦各種專刊徵稿，也終於願意嘗試增加投稿樣態。過去的中華心理學期刊只接授原創性研究論文(research article)的投稿，今年開始徵求註冊研究(registered report)與檢驗原創性研究的重製研究報告(research report)。
-雖然我看到消息時官方網站已經有中文徵稿啟事，期刊編輯部尚未更新英文徵稿啟事，也尚未見到期刊主編發表正式聲明。我推測現任主編群已經了解綜合性學術期刊需要多元投稿模式，才能吸引有品質的稿件，但是要如何吸引願意嘗試不同型態的學者，現任主編群必須拿出明確的策略方案。在主編構思聲明的此時，我用這篇文章回顧四本經營註冊研究已有規模的期刊，並提供我認為第一本華文註冊研究期刊可以著力的方向。
-Cortex：第一本徵求註冊研究的學術期刊Cordex於2013年邀請英國卡迪夫大學心理學系教授Chris Chambers擔任註冊研究執行主編，成為全世界第一本提供註冊研究投稿的學術期刊。Chris Chambers發表的聲明(2013)與設計的投稿指南，成為其後開辦註冊研究期刊的範本。之後開辦的期刊都根據經營方針，修改這份投稿指南讓投稿者準備投稿資訊與研究材料。以下評審流程圖摘自Cortex投稿指南：
-Chris Chambers經常受邀擔任工作坊講師，更公開每次的講演資料，是有心學習者可參考的資訊來源。Center for Open Science於2017年1月邀請他舉辦網路工作坊，以下是工作坊錄影。
-Journal of European Psychology Students：由心理學研究生一手包辦的學術期刊Journal of European Psychology Students是由正於歐洲各大學攻讀心理學博士的各領域研究生主辦的學術期刊，除了一般的投稿評審模式，2016年起也正式徵求註冊研究(King et al. 2016)。投稿指南是Cortex版本的簡化版，並提供重製型註冊研究範本以及原創性註冊研究範本。儘管這本期刊沒有列入SCI或SSCI資料庫，經營方針是新興與尋求轉型的期刊可學習的對象。下圖是Journal of European Psychology Students的註冊研究評審流程：
-Comprehensive Results in Social Psychology：百分之百的註冊研究學術期刊於2016年開始正式發行的Comprehensive Results in Social Psychology是完全以註冊研究模式經營的社會心理學期刊，投稿指南也是改良Cortex的版本。但是因此經營成本較高，部分稿件需付審查費，所有出版論文，包括主編聲明(Jonas and Cesario 2016)，都是付費論文。除非作者自付費用，讀者只能下載公開於預印本平台的手稿。
-Collabra: Psychology 更嚴謹的註冊研究評審程序Collabra: Psychology是創刊剛滿五年的新興綜合型心理學學術期刊，到了2017年下半年才開始正式宣佈徵求註冊研究的啟事。執行主編正是Chris Chambers，所以推出進階的投稿指南。增加的要求是作者必須在計畫中提出研究紀錄登錄方式，並且確實執行。詳情可參考期刊的投稿範本。
-Collabra: Psychology的方針與Society for the Improvement of Psychological Science(SIPS)密切合作有關。從2016年起SIPS舉辦年度研討會，但是不同於一般學術研討會，SIPS以黑客松、工作坊與閃電演講為內容，創造與會者合作構思並規劃提昇心理科學品質方案的場域。未來兩方的合作可望推出讓註冊研究更普及的方案。
-中華心理學刊可採取的經營模式除了以上四本期刊，Center for Open Science的註冊研究網頁不定期更新開辦註冊研究的期刊清單與投稿資訊，值得學刊編輯群與讀者留意。考量期刊的經營狀況，還有台灣以及華文學術環境，我認為Journal of European Psychology Students的經營模式比較適合現在的中華心理學刊。個人的理由來自幾點觀察：</description>
+      <description>我對中華心理學刊開始徵求註冊研究的看法與建議。歡迎各機構單位與我接洽只收車馬費的&lt;a href=&#34;https://osf.io/e69mb/&#34; target=&#34;_blank&#34;&gt;註冊研究工作坊&lt;/a&gt;。</description>
     </item>
     
   </channel>

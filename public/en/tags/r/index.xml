@@ -18,7 +18,7 @@
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/en/post/if-emily-rosa-met-thomas-bayes/</guid>
-      <description>Twenty years ago 11-years-old Emily Rosa and her parents publsihed their study in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, Therapeutic Touch (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate the energy field surrounded human body without touching.</description>
+      <description>Reanalysis of the study conducted by a young girl two decades ago. Everyone will learn how to use Bayesian inference in this simple data anlaysis.</description>
     </item>
     
     <item>
@@ -27,8 +27,7 @@
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
       
       <guid>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
-      <description>A bad caseA few days ago I was dealing with a raw data set as like the following table.
-IDGroupI01I02I03I04I05I06s01A345123s02A253211s03A454311s04B215433s05B212521s06B233421This table is a tiny version I copied from a master graduate’s spss raw data table.</description>
+      <description>How to begin the data analysis properly at first?</description>
     </item>
     
   </channel>

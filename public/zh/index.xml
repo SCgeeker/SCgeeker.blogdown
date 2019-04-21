@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>暗微幽光 on 暗微幽光</title>
@@ -7,8 +6,104 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/zh/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>我們與「顯著」的距離 ~ p值是判斷科學研究成敗的過時指標嗎？</title>
+      <link>/zh/post/comment-retired-p/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/comment-retired-p/</guid>
+      <description>
+
+
+&lt;p&gt;統計檢定是不是顯著，或者p值是不是小到可以接受的水準，是多數自然科學與社會科學的學術工作者們，分析資料判斷能否更新知識的工具。也是開發機器學習模型的數據分析人員，用來判斷收集到的資料能不能支持想驗證的假設之常見指標。自從重要奠基者Roland Fisher，Jerzy Neyman，與Egon Pearson分別發表p值以及推論犯錯率的重要概念與數學推導&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;，二次世界大戰後許多科學研究者，習慣用少於.05的p值推論獲得或發現預期的結果。統計推論的使用策略發展到二十一世紀的前十年，每個運用統計的科學領域已經累積不少批判與反省統計推論與p值的意見。2005年統計學者John Ioannidis發表批判生物醫學領域充斥偽陽性結果的經典論文&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;，到2010年起心理學界密集爆發學術不端事件，以及高影響力期刊接受無法再現的爭議研究事件&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;，讓科學家誤用p值的問題浮現。除了各領域學者集結推出各種改良方案與行動&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;，2016年美國統計學會(ASA)理事會發表聲明&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;，提出六點建議給需要運用統計推論做出結論的科學家們，如何正確使用與解讀p值。&lt;/p&gt;
+&lt;p&gt;ASA的建議公開的時候，台灣也有不少學者關注後續的影響。美國德州大學奧斯汀分校的林澤民教授於個人部落格分享當時的在台演講「p值的陷阱」&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;，獲得華文知識圈廣大迴響。到了2019年三月，2016年代表ASA撰寫聲明的Ronald Wasserstein，將2016年參與ASA主辦的主題研討會學者發表的評論與建議，一共43篇論文集結於ASA專刊&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;。參與其中兩篇專文的三位學者Valentin Amrhein，Sander Greenland，與Blake McShane，於專刊發表同日，在自然期刊發表主張，響應ASA的專刊主題&lt;a href=&#34;#fn10&#34; class=&#34;footnote-ref&#34; id=&#34;fnref10&#34;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;。三位作者提到完成這份主張的初稿時，曾將預印本公佈於網路並收集連署，一星期內就獲到來自800多位統計學及自然與社會科學領域的學者響應。因此自然期刊公上網後，也吸引全球各地關心統計推論誤用問題人士的注目。&lt;/p&gt;
+&lt;p&gt;最初看到Amrhein等人的主張，我就留意過去幾年投入提昇心理學研究品質的學者一面倒地批判他們的建議做法：放棄p值的判斷閾限，提倡運用信賴區間評估實際結果與預期結果的相容性。主要的批判意見是這些學者提出的建議都是指點科學家們要做什麼，或者不要做什麼，而非討論為什麼該這麼做或不該這麼做。我看了幾天各方意見交流，也有自己的看法時，就收到林澤民教授的私訊，詢問有沒有興趣寫篇科普文章，向有興趣的讀者說明這幾年各界批評統計推論濫用的聲浪，帶來什麼訊息。當下我決定做個非正式調查，了解一下林教授「p值的陷阱」發佈三年後，華文圈的統計使用者正確了解p值人們有多少，還有探討誤解存在的原因，非正式的調查結果促成我寫作這篇文章的主要動機。2019年4月1日，我在個人臉書發佈下圖的動態訊息，建議第一次看到這則訊息的朋友，請自己先想想看，以你現在所知選擇你認為正確的答案：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/FB_question.png&#34; title=&#34;寫作前的調查問題&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;p&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;p值是什麼？&lt;/h2&gt;
+&lt;p&gt;回首林教授「p值的陷阱」，林教授的解釋如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;p值是什麼？我想在座有很多專家比我都懂，但是也有一些同學在場，所以還是稍微解釋一下。p值是由Ronald Fisher在1920年代發展出來的，已將近一百年。p值檢定最開始，是檢定在一個model之下，實驗出來的data跟model到底吻合不吻合。這個被檢定的model，我們把它叫做虛無假設（null hypothesis），一般情況下，這個被檢定的model，是假設實驗並無系統性效應的，即效應是零，或是隨機狀態。在這個虛無假設之下，得到一個統計值，然後要算獲得這麼大(或這麼小)的統計值的機率有多少，這個或機率就是p值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ASA的2016年聲明中，有關p值的解釋也是短短的一句話：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Informally, a p-value is the probability under a specified statistical model that a statistical summary of the data (e.g., the sample mean difference between two compared groups) would be equal to or more extreme than its observed value.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看過以上解釋，有仔細思考的讀者應該會把想選擇的答案縮小到3與4兩個選項。但是不太熟悉機率的讀者應該會困惑，p值是個什麼樣的機率？林教授說的「在這個虛無假設之下，得到一個統計值，然後要算獲得這麼大(或這麼小)的統計值的機率有多少」，以及ASA的解釋“the probability under a specified statistical model that a statistical summary of the data…”。兩種解釋都說明p值是一種&lt;strong&gt;條件機率&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;借用Deborah Mayo寫的書“Statistical inference as severe testing: how to get beyond the statistics wars”&lt;a href=&#34;#fn11&#34; class=&#34;footnote-ref&#34; id=&#34;fnref11&#34;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;所記的公式，告訴我們p值是這樣的條件機率：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Pr (X \geq x_0 \mid H_0 ) = p(x_0)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;公式裡的&lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;代表虛無假設的統計模型(statistical model)，&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;代表實際資料的隨機變數，&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;代表虛無假設統計模型的隨機變數，一般來說&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;與&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;分別指實際資料的平均值與統計模型估計的期望值&lt;a href=&#34;#fn12&#34; class=&#34;footnote-ref&#34; id=&#34;fnref12&#34;&gt;&lt;sup&gt;12&lt;/sup&gt;&lt;/a&gt;。&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;與&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;之間的差異越小，表示實際資料越符合虛無假設統計模型，得到的p值會越大，反之實際資料越不符合虛無假設統計模型，p值會越小。實際資料符合虛無假設統計模型的機率越小，表示&lt;strong&gt;實際資料有可能符合其他統計模型&lt;/strong&gt;。虛無假設統計模型通常代表沒有效果的預期結果，所以科學家通常希望得到的p值越小越好。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;p&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;為何許多人會誤解p值&lt;/h2&gt;
+&lt;p&gt;這次非正式調查發現許多網友選擇3，身份從老師到學生都有。但是選項3是指另一種條件機率：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Pr( H_0 \mid X \geq x_0) = p(H_0)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;這種條件機率的白話解釋是「當得到一個統計值，虛無假設統計模型存在的機率」，這種條件機率又被稱為&lt;strong&gt;事後機率&lt;/strong&gt;(posterior probability)，了解&lt;strong&gt;貝氏定理&lt;/strong&gt;可知事後機率通常無法直接估計，但可運用已知的&lt;strong&gt;事前機率&lt;/strong&gt;(prior probability)與&lt;strong&gt;似然性&lt;/strong&gt;(likelihood)逼近之。p值就是&lt;strong&gt;似然性&lt;/strong&gt;的一種估計方法。&lt;/p&gt;
+&lt;p&gt;中英文文法與數學公式文法有許多相反的地方，其中之一就是像林教授及ASA的白話解釋用「之下」與“under”描述虛無假設前提。不熟悉條件機率的讀者很容易以為&lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;是資料抽樣分佈的期望值，更別說對機率一知半解，卻常常要分析資料的科學家們。科學家以錯誤的理解使用統計推論，長年累月延續加上世代傳承，當然會產生許多不良研究結果，以及有損學術倫理的研究操作習慣。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;過嚴的判斷門檻&lt;/h2&gt;
+&lt;p&gt;除了許多人會誤解p值的真面目，更多被批判的誤用是將p值用於二分判斷，也就是以統計顯著與否推測有沒有發現預期的結果。前述的公式解說告訴我們p值是顯示實際資料與預期的統計模型之間的差異程度，是高是低應該視研究問題的性質而定。學過統計的朋友都聽過的.05就是一種最多科學領域依賴的判斷門檻。&lt;/p&gt;
+&lt;p&gt;然而設定判斷門檻這種作為，其實已經有違科學研究的共同宗旨：揭露不確定現象背後的規律。當一項研究主題僅憑幾次結果的p值未達門檻，就當是沒有價值的研究主題，有可能造成低估的錯誤。Amrhein等三位學者在自然期刊評論特別批判這種狀況，他們的舉例說明這個主題的所有結果若是都顯示一致的平均值，只以幾個p值沒有達到門檻，就決定放棄研究這個主題，長遠影響是有潛力的科學題目將無法開花結果。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;過鬆的判斷門檻&lt;/h2&gt;
+&lt;p&gt;相對於被低估的研究結果，另一個被批判的誤用是高估研究結果的真實性。這種誤用通常出現於p值僅剛好通過門檻，而且受人注目的原創研究。例如以「權力姿勢效應」而聲名大噪的社會心理學者Amy Cuddy，研究發表後由她本人與追隨者宣傳的其中一種效應，擺出擴張型姿勢會提高冒險動機的測量指標，在2010年發表的報告裡，實際的p值是0.049&lt;a href=&#34;#fn13&#34; class=&#34;footnote-ref&#34; id=&#34;fnref13&#34;&gt;&lt;sup&gt;13&lt;/sup&gt;&lt;/a&gt;。由於當時期刊並不要求寫出詳細的p值，報告只寫p &amp;lt; .05。若非之後其他學者的批評與無法再現的實驗結果，Amy Cuddy到現在可能還是將這項指標列為理論要素。&lt;/p&gt;
+&lt;p&gt;過去許多心理學研究以剛好通過門檻的研究結果當成支持理論的證據，累積許多難以再現的研究，對於歐美心理學界來說，再現危機是2010年代心理學的時代特徵。為了扭轉因高估p值所帶來的惡果，有學者提出偵測異常p值報告的方法&lt;a href=&#34;#fn14&#34; class=&#34;footnote-ref&#34; id=&#34;fnref14&#34;&gt;&lt;sup&gt;14&lt;/sup&gt;&lt;/a&gt;，也有許多領域的學者串聯倡議提高判斷門檻&lt;a href=&#34;#fn15&#34; class=&#34;footnote-ref&#34; id=&#34;fnref15&#34;&gt;&lt;sup&gt;15&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;如何表達不確定性？&lt;/h2&gt;
+&lt;p&gt;相對於提高判斷門檻的倡議，還有兩種相反的意見與措施，促進科學家改善使用統計的做法。第一種是由專業學術期刊主動出手，要求投稿學者不得在報告裡使用p值或統計顯著與否呈現研究結果，例如社會心理學的Basic and Applied Social Psychology、政治學的Political Analysis。第二種是Amrhein等三位學者在自然期刊評論主張，以改名為「可容性區間」(compatibility interval)&lt;a href=&#34;#fn16&#34; class=&#34;footnote-ref&#34; id=&#34;fnref16&#34;&gt;&lt;sup&gt;16&lt;/sup&gt;&lt;/a&gt;的信賴區間取代p值及顯著性等二分判斷相關詞彙。參與這次ASA專刊的許多學者也是這類主張提倡者，例如心理學界的Calin-Jageman 與 Cumming&lt;a href=&#34;#fn17&#34; class=&#34;footnote-ref&#34; id=&#34;fnref17&#34;&gt;&lt;sup&gt;17&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;至此提到的三種做法都是減少科學家過度肯定研究結果，降低無法再現的劣質研究充斥科學文獻的比例。但是用信賴區間取代p值的判斷門檻是好方法嗎？&lt;/p&gt;
+&lt;p&gt;在此借用密西根大學資訊科學系教授Matthew Kay公開演講簡報資料解說信賴區間是什麼&lt;a href=&#34;#fn18&#34; class=&#34;footnote-ref&#34; id=&#34;fnref18&#34;&gt;&lt;sup&gt;18&lt;/sup&gt;&lt;/a&gt;。這一段之後的示意圖是簡報圖片的重製，呈現事前機率(Prior)、似然性(Likelihood)、以及事後機率(Posterior)三種機率函數在資料空間的存在。其中似然性的機率函數相當於假設檢定之中的對立假設統計模型(H1)，事前機率的期望值等於虛無假設統計模型的預測。兩個統計模型差異越大，得到的p值越小，信賴區間(confidence interval，圖中橘色線條)也越不可能覆蓋虛無假設的期望值。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Visualize_Bayes.png&#34; title=&#34;圖解統計推論必知的三種機率函數&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖也呈現事後機率函數以及&lt;strong&gt;確信區間&lt;/strong&gt;(credibility interval，圖中紫色線條)，可見兩種區間是不同的估計結果。稍早提到事後機率是根據實際資料，統計模型確實存在的條件機率，所以確信區間比信賴區間更適合判斷實際資料相容理論預測的程度。然而許多情況缺乏事前機率的資訊，研究人員只能估計信賴區間。如果讀者想要更了解三種機率函數與兩種區間的差別，可以點擊此段附註提供的連結&lt;a href=&#34;#fn19&#34; class=&#34;footnote-ref&#34; id=&#34;fnref19&#34;&gt;&lt;sup&gt;19&lt;/sup&gt;&lt;/a&gt;，運用我製作的中文版shiny互動網頁探索。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;步步為營正確使用統計方法&lt;/h2&gt;
+&lt;p&gt;如果讀者讀完這篇文章，準備要做統計分析寫報告，開始擔心自己是不是用錯誤的觀念與方法操作統計工具，那麼這篇文章就起了作用。這裡談到兩種有損科學研究品質的誤用狀況，以及三種改進的主張：提高判斷門檻；放棄p值；用信賴區間取代判斷門檻。就像統計推論的誤用者以過度簡化的二分門檻對待有連續性資訊的p值一樣，這些主張是以過度簡化的思維，以及缺乏考慮各領域科學研究複雜度所得到的結論。這些主張的提倡者都過度相信只要更換判斷標準或方法，科學家與統計使用者就不會犯相同的錯誤。&lt;/p&gt;
+&lt;p&gt;我在2017年曾參與荷蘭心理學者Daniel Lakens發起的集體寫作，回應提高判斷門檻的主張，並提出改進科學家設定統計方法的構想&lt;a href=&#34;#fn20&#34; class=&#34;footnote-ref&#34; id=&#34;fnref20&#34;&gt;&lt;sup&gt;20&lt;/sup&gt;&lt;/a&gt;。參與寫作的Stephen Benning在評論出版後，於個人部落格詳述實踐我們主張的具體作法&lt;a href=&#34;#fn21&#34; class=&#34;footnote-ref&#34; id=&#34;fnref21&#34;&gt;&lt;sup&gt;21&lt;/sup&gt;&lt;/a&gt;。作法是在研究開始之前，做好六道準備：(1)想清楚這次研究需不需要判斷門檻；(2)確定研究目標的性質(Benning列出四種範例)；(3)找出研究目標的最小效果量(minimal/smallest effect size of interest)；(4)設定最適判斷門檻；(5)設定最適考驗力；(6)如果有多重比較，慎選判斷策略。&lt;/p&gt;
+&lt;p&gt;六道準備步驟對於許多從事研究的讀者來說，最難的應該是找出最小效果量。關於此點，Lakens與他的博士生正在開發工具與教學材料，提供各領域的科學家運用&lt;a href=&#34;#fn22&#34; class=&#34;footnote-ref&#34; id=&#34;fnref22&#34;&gt;&lt;sup&gt;22&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn23&#34; class=&#34;footnote-ref&#34; id=&#34;fnref23&#34;&gt;&lt;sup&gt;23&lt;/sup&gt;&lt;/a&gt;。我們相信以妥善的統計規劃完成的研究，不論研究報告有沒有出現p值，有沒有表達顯著與否，都能讓讀者掌握研究結論的確定與不確定訊息。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;推薦閱讀&lt;/h2&gt;
+&lt;p&gt;Daniel Laken&lt;a href=&#34;#fn24&#34; class=&#34;footnote-ref&#34; id=&#34;fnref24&#34;&gt;&lt;sup&gt;24&lt;/sup&gt;&lt;/a&gt;提供如何改良統計與研究方法教育的建議，回應ASA專刊的主軸，有興趣知道如何改良統計教育的朋友可找來一讀。Deborah Mayo耕耘統計哲學研究數十年，近期著作&lt;a href=&#34;#fn25&#34; class=&#34;footnote-ref&#34; id=&#34;fnref25&#34;&gt;&lt;sup&gt;25&lt;/sup&gt;&lt;/a&gt;爬梳現代科學家誤用統計推論的歷史脈絡，ASA專刊主編Ronald Wasserstein也在序文首段推薦，想深入探討誤解與誤用問題由來的讀者，可以找來詳讀。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Fisher, R. A. (1934). Statistical Methods for Research Workers. Edinburgh: Oliver and Boyd. (First published in 1925.)&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Neyman, J., &amp;amp; Pearson, E. S. (1933). On the Problem of the Most Efficient Tests of Statistical Hypotheses. Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character, 231, 289–337. Retrieved from JSTOR.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Med, 2(8), e124. &lt;a href=&#34;https://doi.org/10.1371/journal.pmed.0020124&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1371/journal.pmed.0020124&lt;/a&gt;&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Chambers, C. (2017). The Seven Deadly Sins of Psychology: A Manifesto for Reforming the Culture of Scientific Practice. Princeton, NJ: Princeton University Press.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;Simmons, J. P., &amp;amp; Simonsohn, U. (2017). Power Posing: P-Curving the Evidence. Psychological Science, 28(5), 687–693. doi: 10.1177/0956797616658563&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;Benjamin, D. J., Berger, J. O., Johannesson, M., Nosek, B. A., Wagenmakers, E.-J., Berk, R., … Johnson, V. E. (2017). Redefine statistical significance. Nature Human Behaviour, 1. doi: 10.1038/s41562-017-0189-z&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;Wasserstein, R. L., &amp;amp; Lazar, N. A. (2016). The ASA’s Statement on p-Values: Context, Process, and Purpose. The American Statistician, 70(2), 129–133. &lt;a href=&#34;https://doi.org/10.1080/00031305.2016.1154108&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2016.1154108&lt;/a&gt;&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;&lt;a href=&#34;http://blog.udn.com/nilnimest/84404190&#34; class=&#34;uri&#34;&gt;http://blog.udn.com/nilnimest/84404190&lt;/a&gt;&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;Wasserstein, R. L., Schirm, A. L., &amp;amp; Lazar, N. A. (2019). Moving to a World Beyond “p &amp;lt; 0.05.” The American Statistician, 73(sup1), 1–19. &lt;a href=&#34;https://doi.org/10.1080/00031305.2019.1583913&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2019.1583913&lt;/a&gt;&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;Amrhein, V., Greenland, S., &amp;amp; McShane, B. (2019). Scientists rise up against statistical significance. Nature, 567(7748), 305–307. &lt;a href=&#34;https://doi.org/10.1038/d41586-019-00857-9&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1038/d41586-019-00857-9&lt;/a&gt;&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn11&#34;&gt;&lt;p&gt;Mayo, D. G. (2018). Statistical inference as severe testing: how to get beyond the statistics wars. Retrieved from &lt;a href=&#34;https://doi.org/10.1017/9781107286184&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1017/9781107286184&lt;/a&gt;&lt;a href=&#34;#fnref11&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn12&#34;&gt;&lt;p&gt;本文的p值與事後機率之條件機率公式為方便解說的簡化版，Fisher所提出的完整公式請Mayo (2018)之單元3.2。&lt;a href=&#34;#fnref12&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn13&#34;&gt;&lt;p&gt;Carney, D. R., Cuddy, A. J. C., &amp;amp; Yap, A. J. (2010). Power Posing: Brief Nonverbal Displays Affect Neuroendocrine Levels and Risk Tolerance. Psychological Science, 21(10), 1363–1368. doi: 10.1177/0956797610383437&lt;a href=&#34;#fnref13&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn14&#34;&gt;&lt;p&gt;Simmons, J. P., &amp;amp; Simonsohn, U. (2017). Power Posing: P-Curving the Evidence. Psychological Science, 28(5), 687–693. doi: 10.1177/0956797616658563&lt;a href=&#34;#fnref14&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn15&#34;&gt;&lt;p&gt;Benjamin, D. J., Berger, J. O., Johannesson, M., Nosek, B. A., Wagenmakers, E.-J., Berk, R., … Johnson, V. E. (2017). Redefine statistical significance. Nature Human Behaviour, 1. doi: 10.1038/s41562-017-0189-z&lt;a href=&#34;#fnref15&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn16&#34;&gt;&lt;p&gt;「可容性區間」的中文翻譯，感謝國立中正大學哲學系陳瑞麟教授建議。&lt;a href=&#34;#fnref16&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn17&#34;&gt;&lt;p&gt;Calin-Jageman, R. J., &amp;amp; Cumming, G. (2019). The New Statistics for Better Science: Ask How Much, How Uncertain, and What Else Is Known. The American Statistician, 73(sup1), 271–280. &lt;a href=&#34;https://doi.org/10.1080/00031305.2018.1518266&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2018.1518266&lt;/a&gt;&lt;a href=&#34;#fnref17&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn18&#34;&gt;&lt;p&gt;&lt;a href=&#34;http://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf&#34; class=&#34;uri&#34;&gt;http://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf&lt;/a&gt;&lt;a href=&#34;#fnref18&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn19&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://scchen.shinyapps.io/shiny-bayes-chi/&#34; class=&#34;uri&#34;&gt;https://scchen.shinyapps.io/shiny-bayes-chi/&lt;/a&gt;&lt;a href=&#34;#fnref19&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn20&#34;&gt;&lt;p&gt;Lakens, D., Adolfi, F. G., Albers, C. J., Anvari, F., Apps, M. A. J., Argamon, S. E., … Zwaan, R. A. (2018). Justify your alpha. Nature Human Behaviour, 2(3), 168–171. &lt;a href=&#34;https://doi.org/10.1038/s41562-018-0311-x&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1038/s41562-018-0311-x&lt;/a&gt;&lt;a href=&#34;#fnref20&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn21&#34;&gt;&lt;p&gt;Benning, S. D. (2018, March 1). How to justify your alpha: step by step – Stephen D. Benning. Retrieved March 1, 2018, from &lt;a href=&#34;https://sbenning.faculty.unlv.edu/2018/03/01/how-to-justify-your-alpha-step-by-step/&#34; class=&#34;uri&#34;&gt;https://sbenning.faculty.unlv.edu/2018/03/01/how-to-justify-your-alpha-step-by-step/&lt;/a&gt;&lt;a href=&#34;#fnref21&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn22&#34;&gt;&lt;p&gt;Lakens, D., Scheel, A. M., &amp;amp; Isager, P. M. (2018). Equivalence Testing for Psychological Research: A Tutorial. Advances in Methods and Practices in Psychological Science, 1(2), 259–269. &lt;a href=&#34;https://doi.org/10.1177/2515245918770963&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1177/2515245918770963&lt;/a&gt;&lt;a href=&#34;#fnref22&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn23&#34;&gt;&lt;p&gt;Anvari, F., &amp;amp; Lakens, D. (n.d.). Using Anchor-Based Methods to Determine the Smallest Effect Size of Interest. &lt;a href=&#34;https://doi.org/10.31234/osf.io/syp5a&#34; class=&#34;uri&#34;&gt;https://doi.org/10.31234/osf.io/syp5a&lt;/a&gt;&lt;a href=&#34;#fnref23&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn24&#34;&gt;&lt;p&gt;Lakens, D. (2019). The practical alternative to the p-value is the correctly used p-value [Preprint]. doi: 10.31234/osf.io/shm8v&lt;a href=&#34;#fnref24&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn25&#34;&gt;&lt;p&gt;Mayo, D. G. (2018). Statistical inference as severe testing: how to get beyond the statistics wars. Retrieved from &lt;a href=&#34;https://doi.org/10.1017/9781107286184&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1017/9781107286184&lt;/a&gt;&lt;a href=&#34;#fnref25&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>物件方向效應專案研究邁入第二階段</title>
@@ -1847,127 +1942,6 @@ Semantic concept of truth:
 &lt;p&gt;Marsh, L. E., Kanngiesser, P., &amp;amp; Hood, B. (2018). When and how does labour lead to love? The ontogeny and mechanisms of the IKEA effect. &lt;em&gt;Cognition&lt;/em&gt;, 170, 245–253. doi:&lt;a href=&#34;http://www.sciencedirect.com/science/article/pii/S0010027717302743&#34; target=&#34;_blank&#34;&gt;10.1016/j.cognition.2017.10.012&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Norton, M. I., Mochon, D., &amp;amp; Ariely, D. (2012). The IKEA effect: When labor leads to love. &lt;em&gt;Journal of Consumer Psychology&lt;/em&gt;, 22, 453–460. doi:&lt;a href=&#34;http://doi.wiley.com/10.1016/j.jcps.2011.08.002&#34; target=&#34;_blank&#34;&gt;10.1016/j.jcps.2011.08.002&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>閱讀筆記：Paul Meehl談心理學理論失效的十大主因</title>
-      <link>/zh/post/why_psychology_failed/</link>
-      <pubDate>Sat, 30 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/post/why_psychology_failed/</guid>
-      <description>
-
-
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;http://www.psychologicalscience.org/redesign/wp-content/uploads/2013/03/Meehl_Paul.jpg&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;為何值得一讀&lt;/h2&gt;
-&lt;p&gt;Daniël Lakens的&lt;strong&gt;提昇你的統計推論功力&lt;/strong&gt;&lt;span class=&#34;citation&#34;&gt;(Lakens 2016)&lt;/span&gt;有一講&lt;strong&gt;科學哲學&lt;/strong&gt;，在講授內容與建議閱讀都提到已故美國臨床心理學者Paul Meehl於1990年發表於&lt;em&gt;Psychological Reports&lt;/em&gt;的論文Why Summaries of Research on Psychological Theories are Often Uninterpretable&lt;span class=&#34;citation&#34;&gt;(Meehl 1990)&lt;/span&gt;。完成課程中文化與舉辦&lt;strong&gt;註冊研究工作坊&lt;/strong&gt;之後，我對中文心理學社群對心理學再現危機的體認不足有更深的認識。這段時間也抽空觀看Paul Meehl於1989年講授&lt;strong&gt;哲學心理學&lt;/strong&gt;的課程錄影&lt;span class=&#34;citation&#34;&gt;(Yonce 2017)&lt;/span&gt;，我發現他很早就了解今日許多歐美心理學者擔心的問題，還有提出解決的對策，有些對策呼應今天的開放科學主張。1990年的論文是Paul Meehl觀察心理學研究劣質化原因的總結，要學習他洞察問題的眼光，這篇論文與&lt;strong&gt;哲學心理學&lt;/strong&gt;課程內容是最好的開始。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;paul-meehl&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Paul Meehl其人&lt;/h2&gt;
-&lt;p&gt;Paul Meehl最為人所知的貢獻是與同事Lee Cronbach（正是提出Cronbach’s α的心理學者），一起提出建構效度的觀念，以及操作方法：法則關聯(Nomological network)&lt;span class=&#34;citation&#34;&gt;(Cronbach and Meehl 1955)&lt;/span&gt;。在&lt;strong&gt;哲學心理學&lt;/strong&gt;的第5講，Paul Meehl親自說明建構效度來自科學哲學家Karl Popper的否證論形式邏輯推演。他的學術生涯持續進行的工作是把Popper的否證論，與其高徒Lakatos主張科學家研究應該保持的&lt;em&gt;其他條件不變&lt;/em&gt;(ceteris paribus)，轉化為心理科學研究能實際運用的準則與操作方案。&lt;strong&gt;哲學心理學&lt;/strong&gt;的第六講至第八講，Paul Meehl詳細解說Why Summaries of Research on Psychological Theories are Often Uninterpretable這篇論文的重要主張，留下他對當時多數心理學理論與研究結果經不起考驗的觀察與想法，以及他向未來的學者們提出的對策。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;不牢靠理論的三大特徵&lt;/h2&gt;
-&lt;p&gt;跨越1950至1980年代，Paul Meehl見識許多曾發表於期刊的新穎理論，因為研究結果無法被其他學者重現，幾年之後乏人問津的案例。他歸納經不牢靠的心理科學理論有三種特徵，第一是理論的命題通常不可計量，第二是理論的初期證據主要是相關性資料，第三是理論的成立標準不是可預測的參數。命題不可計量的理論只有提示研究的方向，沒有列舉能確證與否證理論命題的基本條件。以否證論的形式來說，這種理論不具備科學意義。理論命題能不能計量，是判斷理論好壞的基本條件。 第二種與第三種特徵反映在科學社群實際的研究作為與態度，依賴相關性資料是因為關心的變項無法隨機，或者研究者認為必須接受未知誤差的存在；第三種是逕取某項非零的顯著測量結果，當做理論成立的證據。有三種特徵的研究報告所呈現的效果經常是數值龐大(sizeable)，正負不一致(opposed)，變異範圍廣(variable)，與真實效果無法估計(unknown)等特色。我為了方便理解，姑且借用棒球術語，稱呼這類研究報告叫&lt;strong&gt;四壞球&lt;/strong&gt;(base on balls)。在棒球比賽裡，投手投出四壞球，打者就立刻保送上一壘。好比未被嚴謹檢驗的研究結果，因為從規劃實驗到論文評審的一系列粗糙操作，而成功發表。Paul Meehl指出因&lt;strong&gt;四壞球&lt;/strong&gt;成功發表的研究結果，不是好理論的劣質證據，就是粉飾差勁理論的神奇結果。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;-&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;理論-事實邏輯鏈&lt;/h2&gt;
-&lt;p&gt;Paul Meehl歸納出十種導致&lt;strong&gt;四壞球&lt;/strong&gt;的因素。為了描述十種因素的面貌與影響研究結果的模式，他使用Karl Popper持續改良的否證論形式邏輯，定義有意義的科學理論與有效研究結果的必要成份：&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ T \cdot A_1\cdot A_2 \cdot C_p \cdot C_n \rightarrow ( O_1 \supset O_2)  \]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;從左至右，每項成份代表&lt;span class=&#34;math inline&#34;&gt;\(T\)&lt;/span&gt;：核心理論命題；&lt;span class=&#34;math inline&#34;&gt;\(A_1\)&lt;/span&gt;,&lt;span class=&#34;math inline&#34;&gt;\(A_2\)&lt;/span&gt;：輔助理論命題，是核心理論命題的衍伸，命題數量不等，分別指涉有關的心理因素、測量條件等；&lt;span class=&#34;math inline&#34;&gt;\(C_p\)&lt;/span&gt;：&lt;em&gt;其他條件不變&lt;/em&gt;(ceteris paribus)，也就是現在多數研究方法教科書稱呼的控制變項；&lt;span class=&#34;math inline&#34;&gt;\(C_n\)&lt;/span&gt;：研究操作條件，也就是獨變項；&lt;span class=&#34;math inline&#34;&gt;\(O_1\)&lt;/span&gt;與&lt;span class=&#34;math inline&#34;&gt;\(O_2\)&lt;/span&gt;：確證與否證核心理論命題的觀察結果，也就是依變項最可能呈現的兩種狀況。在缺乏核心理論命題的情況，Popper認為&lt;span class=&#34;math inline&#34;&gt;\(O_1\)&lt;/span&gt;與&lt;span class=&#34;math inline&#34;&gt;\(O_2\)&lt;/span&gt;的條件機率&lt;span class=&#34;math inline&#34;&gt;\(P(O_1|O_2)\)&lt;/span&gt;的設定應該越小，表示越不可能發生，Karl Popper以此說明好的科學理論是朝&lt;strong&gt;逼近真實&lt;/strong&gt;(verisimilitude, truthlikeness)發展。從Paul Meehl的論文與授課，我發覺他一生追求將此概念化為可實際測量的方法，因此對&lt;strong&gt;機率與統計&lt;/strong&gt;下了很深的功夫，不過我還未讀過其他論文，不清楚完成度有多少。而1990的論文裡，他明確表示&lt;strong&gt;四壞球&lt;/strong&gt;研究通常是&lt;span class=&#34;math inline&#34;&gt;\(P(O_1|O_2)\)&lt;/span&gt;被高估，不管理論好壞，都有可能發生。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;讓理論劣化的五大病因&lt;/h2&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;脆弱的邏輯鏈(Loose derivation chain)：邏輯鏈的每個成份都有一個對應的機率，表示研究結果支持理論的成功率，與實驗條件有效的機率。如果每個成份都有0.8的成功機率，那麼獲得支持結論的正面結果，至少有&lt;span class=&#34;math inline&#34;&gt;\(0.8^5\)&lt;/span&gt;，也就是0.33。&lt;strong&gt;四壞球&lt;/strong&gt;研究通常沒有認真預估每一個成份的成功機率，導致高估發現正面結果的機率。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不良輔助理論命題(Problematic auxiliary theories)：輔助理論因應測量器材等實際研究條件而設定。核心理論命題未完成或太過模糊，會運用輔助理論命題預測結果，容易造成研究者過度依賴工具。Paul Meehl以他親身經歷的&lt;strong&gt;心理測驗狂潮&lt;/strong&gt;描述過度依賴工具造成的亂象，今天使用測量人類神經活動的儀器，研究人類行為與認知，也是如出一轍。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不良控制條件(Problematic ceteris paribus clause)：今天的研究者了解如果研究的效應牽涉參與者的個別差異，都會列舉任何可測得的個別差異因素，以相關分析確定與要測量的效應無關。不過依然有不良的實際案例，就是Dana Carney與Amy Cuddy於2010年合作發表的權力資勢效應研究&lt;span class=&#34;citation&#34;&gt;(Carney, Cuddy, and Yap 2010)&lt;/span&gt;，現在已知這次研究紀錄的性別差異與權力資勢效應有高度相關&lt;span class=&#34;citation&#34;&gt;(Coyne 2017)&lt;/span&gt;。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;實驗者偏誤(Experimenter error and bias)：Paul Meehl所指是研究者在過程中並非蓄意造假的操作失誤，無論是1990或今天，大多是指經驗不足的助理或學生造成的錯誤。隨著開放資料的意識抬頭，現在更值得注意的實驗者偏誤，應該是待澄清的研究操作(Questionable Research Practices)&lt;span class=&#34;citation&#34;&gt;(John, Loewenstein, and Prelec 2012, &lt;span class=&#34;citation&#34;&gt;Wicherts et al. (2016)&lt;/span&gt;)&lt;/span&gt;。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不適當的考驗力分析(Inadequate statistical power)：在Paul Meehl的著述裡，緊扣實際的科學研究過度高估&lt;span class=&#34;math inline&#34;&gt;\(P(O_1|O_2)\)&lt;/span&gt;。在Paul Meehl之後，許多研究指出從低考驗力條件產生的研究結果，偽陽率(false positive rate)越高&lt;span class=&#34;citation&#34;&gt;(Ioannidis 2005, &lt;span class=&#34;citation&#34;&gt;Simmons, Nelson, and Simonsohn (2011)&lt;/span&gt;)&lt;/span&gt;。&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;粉飾壞理論的五種手法&lt;/h2&gt;
-&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;&lt;p&gt;不明高相關因素(Crud factor)：Paul Meehl所指是任何隨機抽樣或隨機分派都無法化解的高相關因素，這些因素會降低獲得顯著結果的門檻，提高偽陽率，在一次收集大量資料的教育調查研究經常看見。如Paul Meehl自己舉了1955年與同事一起進行的大規模高中生家庭環境調查，列舉的105個變項裡有101個彼此之間有顯著相關。如果拿這批資料再做進一步調查，很難排除這項變項的關聯性。對照2016年發生的fMRI再現危機&lt;span class=&#34;citation&#34;&gt;(Neuroskeptic 2016)&lt;/span&gt;，很重要的原因是分析軟體的設計者低估這類因素造成的偏誤。這顯現如果研究者不保持洞察，大數據是包裝低品質研究的最佳手段。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;前置研究(Pilot study)：許多研究者在正式實驗開始前都會做幾次前置研究，除了測試能否用預期的方法測得關注的效應，也調整操作與控制條件。Paul Meehl認為一次前置研究應看成一次獨立的研究紀錄，而非試誤性測試(trial-error)。即使不如正式實驗的結果明顯，也應該公開讓同行研究者了解，否則只是刻意遮掩。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;投稿偏誤(Submission bias)：今天的研究者更熟悉另一個同義詞&lt;strong&gt;抽屜效應&lt;/strong&gt;(file drawer effect)，不顯著的研究結果因此很難現世，讓許多其實無法重現的研究，得到過高的關注。近年最經典的案例是elderly priming&lt;span class=&#34;citation&#34;&gt;(Bargh, Chen, and Burrows 1996)&lt;/span&gt;。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;出版偏誤(Publication bias)：許多有興趣看這篇的讀者應該很熟悉這項手法。歡迎還不清楚的朋友看一下Daniël Lakens的&lt;strong&gt;提昇你的統計推論功力&lt;/strong&gt;&lt;span class=&#34;citation&#34;&gt;(Lakens 2016)&lt;/span&gt;最後一週課程，第二段視頻與相關文獻介紹。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;不充分的效度資訊(Detached validation claim for psychometric instruments)：根據古典測驗理論設計的各式測驗，普遍存在高信度低效度的特性。Paul Meehl注意到有些測驗研究過度強調信度，效度的資訊則相對不充分。如果讀者不仔細探討，就會把高估實際的效度。這在依賴工具的研究裡，特別容易成為粉飾研究結果的手法。&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div id=&#34;paul-meehl&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Paul Meehl主張的對策&lt;/h2&gt;
-&lt;p&gt;論文最後一部分，還有&lt;strong&gt;哲學心理學&lt;/strong&gt;第八堂課，Paul Meehl給在學術知識流動過程扮演重要角色的各種人士一些建議。這些人包括第一線的實證與理論研究者，期刊編輯與評審人，還有學術界的新血：博士生。部落客Jamie Brandon在貼文中整理出幾個要點&lt;span class=&#34;citation&#34;&gt;(Brandon 2016)&lt;/span&gt;，我再做一次整理，並加上我所知道的現況：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;研究操作的現實議題&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;選擇研究題目，首先考慮能粗估效果量的理論。&lt;/li&gt;
-&lt;li&gt;設計實驗條件儘可能提高考驗力，並且在報告中呈現。&lt;/li&gt;
-&lt;li&gt;存在多種高度相關的變項，無法使用隨機化程序平衡時，請不要太相信手上能用的分析方法。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;這些建議都是註冊研究提倡者在推動的實際作為。&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;學術文化&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;鼓勵發表或公開不太成功的前置研究紀錄。&lt;/li&gt;
-&lt;li&gt;避免研究者無所不用其極發表經不起考驗的研究結果，改善&lt;em&gt;沒發表就滾蛋(publish-or-perish)&lt;/em&gt;的風氣是必要的。&lt;/li&gt;
-&lt;li&gt;引導不明高相關因素成為獨立的研究題目；期刊與經費補助者不該鼓勵理論陳義過高，但無有效實證方法的研究題目。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;歐美各國已有政府主導的改善政策出現，有機構設立獎項鼓勵改善學術文化的人士，像如柏克萊大學的Initiative for Transparency in the Social Sciences (BITSS)。亞洲各國學術圈在2000年左右才開始出現Paul Meehl擔心的不良學術文化現象，目前正方興未艾。&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;專業科學家的養成教育&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;博士生應接受紮實的數學教育，了解分析方法的數學基礎，才能正確使用。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;2011年之後，歐美大學出現許多決心念心理學博士班的新人以改善科學方法為職志，值得觀察。亞洲還未感受到這樣的新氣象&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&#34;section level3 unnumbered&#34;&gt;
-&lt;h3&gt;參考文獻&lt;/h3&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-bargh_automaticity_1996&#34;&gt;
-&lt;p&gt;Bargh, John A., Mark Chen, and Lara Burrows. 1996. “Automaticity of Social Behavior: Direct Effects of Trait Construct and Stereotype Activation on Action.” &lt;em&gt;Journal of Personality and Social Psychology&lt;/em&gt; 71 (2): 230–44. doi:&lt;a href=&#34;https://doi.org/10.1037/0022-3514.71.2.230&#34;&gt;10.1037/0022-3514.71.2.230&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-brandon_notes_2016&#34;&gt;
-&lt;p&gt;Brandon, Jamie. 2016. “Notes on ’Everything Is Fucked’.” &lt;em&gt;Scattered-Thoughts&lt;/em&gt;. &lt;a href=&#34;http://scattered-thoughts.net/blog/2016/12/09/notes-on-everything-is-fucked/&#34; class=&#34;uri&#34;&gt;http://scattered-thoughts.net/blog/2016/12/09/notes-on-everything-is-fucked/&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-carney_power_2010&#34;&gt;
-&lt;p&gt;Carney, Dana R., Amy J.C. Cuddy, and Andy J. Yap. 2010. “Power Posing: Brief Nonverbal Displays Affect Neuroendocrine Levels and Risk Tolerance.” &lt;em&gt;Psychological Science&lt;/em&gt; 21 (10): 1363–8. doi:&lt;a href=&#34;https://doi.org/10.1177/0956797610383437&#34;&gt;10.1177/0956797610383437&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-coyne_amy_2017&#34;&gt;
-&lt;p&gt;Coyne, James C. 2017. “Amy Cuddy’s Paper Is Incoherent Regarding Male-Female Differences in ‘Power-Posing’.” &lt;em&gt;Quick Thoughts&lt;/em&gt;. &lt;a href=&#34;https://jcoynester.wordpress.com/2017/06/05/amy-cuddys-paper-is-incoherent-regarding-male-female-differences-in-power-posing/&#34; class=&#34;uri&#34;&gt;https://jcoynester.wordpress.com/2017/06/05/amy-cuddys-paper-is-incoherent-regarding-male-female-differences-in-power-posing/&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-cronbach_construct_1955&#34;&gt;
-&lt;p&gt;Cronbach, Lee J., and Paul E. Meehl. 1955. “Construct Validity in Psychological Tests.” &lt;em&gt;Psychological Bulletin&lt;/em&gt; 52 (4): 281–302. doi:&lt;a href=&#34;https://doi.org/10.1037/h0040957&#34;&gt;10.1037/h0040957&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-ioannidis_why_2005&#34;&gt;
-&lt;p&gt;Ioannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” &lt;em&gt;PLOS Med&lt;/em&gt; 2 (8): e124. doi:&lt;a href=&#34;https://doi.org/10.1371/journal.pmed.0020124&#34;&gt;10.1371/journal.pmed.0020124&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-john_measuring_2012&#34;&gt;
-&lt;p&gt;John, Leslie K., George Loewenstein, and Drazen Prelec. 2012. “Measuring the Prevalence of Questionable Research Practices with Incentives for Truth Telling.” &lt;em&gt;Psychological Science&lt;/em&gt; 23 (5): 524–32. doi:&lt;a href=&#34;https://doi.org/10.1177/0956797611430953&#34;&gt;10.1177/0956797611430953&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-lakens_improving_2016&#34;&gt;
-&lt;p&gt;Lakens, Daniël. 2016. “Improving Your Statistical Inferences.” &lt;em&gt;Coursera&lt;/em&gt;. &lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences&#34; class=&#34;uri&#34;&gt;https://www.coursera.org/learn/statistical-inferences&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-meehl_why_1990&#34;&gt;
-&lt;p&gt;Meehl, Paul E. 1990. “Why Summaries of Research on Psychological Theories Are Often Uninterpretable.” &lt;em&gt;Psychological Reports&lt;/em&gt; 66 (1): 195–244. doi:&lt;a href=&#34;https://doi.org/10.2466/pr0.1990.66.1.195&#34;&gt;10.2466/pr0.1990.66.1.195&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-neuroskeptic_false-positive_2016&#34;&gt;
-&lt;p&gt;Neuroskeptic. 2016. “False-Positive fMRI Hits the Mainstream.” &lt;em&gt;Neuroskeptic&lt;/em&gt;. &lt;a href=&#34;http://blogs.discovermagazine.com/neuroskeptic/2016/07/07/false-positive-fmri-mainstream/&#34; class=&#34;uri&#34;&gt;http://blogs.discovermagazine.com/neuroskeptic/2016/07/07/false-positive-fmri-mainstream/&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-simmons_false-positive_2011&#34;&gt;
-&lt;p&gt;Simmons, Joseph P., Leif D. Nelson, and Uri Simonsohn. 2011. “False-Positive Psychology Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant.” &lt;em&gt;Psychological Science&lt;/em&gt; 22 (11): 1359–66. doi:&lt;a href=&#34;https://doi.org/10.1177/0956797611417632&#34;&gt;10.1177/0956797611417632&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-wicherts_degrees_2016&#34;&gt;
-&lt;p&gt;Wicherts, Jelte M., Coosje L. S. Veldkamp, Hilde E. M. Augusteijn, Marjan Bakker, Robbie C. M. Van Aert, and Marcel Van Assen. 2016. “Degrees of Freedom in Planning, Running, Analyzing, and Reporting Psychological Studies: A Checklist to Avoid P-Hacking.” &lt;em&gt;Frontiers in Psychology&lt;/em&gt; 7. doi:&lt;a href=&#34;https://doi.org/10.3389/fpsyg.2016.01832&#34;&gt;10.3389/fpsyg.2016.01832&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-yonce_philosophical_2017&#34;&gt;
-&lt;p&gt;Yonce, Leslie J. 2017. “Philosophical Psychology 1989 Paul Meehl.” University of Minnesota. &lt;a href=&#34;http://meehl.umn.edu/recordings/philosophical-psychology-1989&#34; class=&#34;uri&#34;&gt;http://meehl.umn.edu/recordings/philosophical-psychology-1989&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     

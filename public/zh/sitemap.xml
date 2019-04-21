@@ -1,5 +1,121 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/categories/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/" hreflang="en"/>
+    
+      <loc>/zh/categories/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/post/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/post/" hreflang="en"/>
+    
+      <loc>/zh/post/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/" hreflang="en"/>
+    
+      <loc>/zh/tags/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/categories/academic/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/academic/" hreflang="en"/>
+    
+      <loc>/zh/categories/academic/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/statistics/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/statistics/" hreflang="en"/>
+    
+      <loc>/zh/tags/statistics/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/post/comment-retired-p/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/" hreflang="en"/>
+    
+      <loc>/zh/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/categories/%E6%9B%B8%E5%A0%B1%E7%AD%86%E8%A8%98/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/%E7%B5%B1%E8%A8%88/</loc>
+      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/collaborative-research/</loc>
+      <lastmod>2019-02-18T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
     
     
@@ -7,6 +123,52 @@
     
       <loc>/zh/post/obeject-orientation-project-enter-stage2/</loc>
       <lastmod>2019-02-18T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/categories/practices/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/practices/" hreflang="en"/>
+    
+      <loc>/zh/categories/practices/</loc>
+      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/categories/teaching/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/teaching/" hreflang="en"/>
+    
+      <loc>/zh/categories/teaching/</loc>
+      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/jamovi/</loc>
+      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/probability/</loc>
+      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -23,8 +185,70 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/tags/r/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/r/" hreflang="en"/>
+    
+      <loc>/zh/tags/r/</loc>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/categories/reproduce-practice/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/categories/reproduce-practice/" hreflang="en"/>
+    
+      <loc>/zh/categories/reproduce-practice/</loc>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/latex/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/latex/" hreflang="en"/>
+    
+      <loc>/zh/tags/latex/</loc>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/dynamic-writing/</loc>
       <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/</loc>
+      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
+    
+      <loc>/zh/tags/open-science/</loc>
+      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -68,6 +292,42 @@
     
     <url>
     
+      <loc>/zh/tags/%E7%A7%91%E5%AD%B8%E7%B2%BE%E7%A5%9E/</loc>
+      <lastmod>2018-08-07T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/experiment_design/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/experiment_design/" hreflang="en"/>
+    
+      <loc>/zh/tags/experiment_design/</loc>
+      <lastmod>2018-06-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/preregistration/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/preregistration/" hreflang="en"/>
+    
+      <loc>/zh/tags/preregistration/</loc>
+      <lastmod>2018-06-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/classical-memory-studies/</loc>
       <lastmod>2018-06-19T00:00:00+00:00</lastmod>
     </url>
@@ -86,8 +346,71 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/project/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/project/" hreflang="en"/>
+    
+      <loc>/zh/project/</loc>
+      <lastmod>2018-05-05T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/</loc>
+      <lastmod>2018-05-05T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/%E7%A7%91%E5%AD%B8%E5%93%B2%E5%AD%B8/</loc>
+      <lastmod>2018-05-05T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/orientation-language-part01/</loc>
       <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</loc>
+      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/%E8%A8%BB%E5%86%8A%E7%A0%94%E7%A9%B6/</loc>
+      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/categories/%E5%AD%B8%E8%A1%93%E6%B6%88%E6%81%AF/</loc>
+      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -104,8 +427,34 @@
     
     <url>
     
+      <xhtml:link rel="alternate" href="/zh/tags/knowledge_management/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/knowledge_management/" hreflang="en"/>
+    
+      <loc>/zh/tags/knowledge_management/</loc>
+      <lastmod>2018-02-03T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/basic-statistics/</loc>
       <lastmod>2018-02-03T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/r_programming/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/r_programming/" hreflang="en"/>
+    
+      <loc>/zh/tags/r_programming/</loc>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -125,6 +474,16 @@
     
     <url>
     
+      <loc>/zh/categories/%E8%BB%9F%E9%AB%94%E4%BB%8B%E7%B4%B9/</loc>
+      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/preregister-ikea_effect-comment/</loc>
       <lastmod>2018-01-05T00:00:00+00:00</lastmod>
     </url>
@@ -136,6 +495,16 @@
     
       <loc>/zh/post/why_psychology_failed/</loc>
       <lastmod>2017-12-30T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/%E5%86%8D%E7%8F%BE%E5%8D%B1%E6%A9%9F/</loc>
+      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -179,6 +548,26 @@
     
     <url>
     
+      <loc>/zh/tags/%E5%8A%A3%E8%B3%AA%E7%A7%91%E5%AD%B8/</loc>
+      <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/%E5%AD%B8%E8%A1%93%E4%B8%8D%E7%AB%AF/</loc>
+      <lastmod>2017-07-05T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/text_2017007/</loc>
       <lastmod>2017-07-05T00:00:00+00:00</lastmod>
     </url>
@@ -206,6 +595,26 @@
     
     <url>
     
+      <loc>/zh/categories/%E6%96%B0%E8%81%9E%E8%A9%95%E8%AB%96/</loc>
+      <lastmod>2017-04-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/%E6%AC%8A%E5%8A%9B%E5%A7%BF%E5%8B%A2%E6%95%88%E6%87%89/</loc>
+      <lastmod>2017-04-10T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/text_2017004/</loc>
       <lastmod>2017-02-20T00:00:00+00:00</lastmod>
     </url>
@@ -224,6 +633,16 @@
     
     <url>
     
+      <loc>/zh/categories/%E6%8A%95%E6%9B%B8/</loc>
+      <lastmod>2017-02-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/text_2017002/</loc>
       <lastmod>2017-02-05T00:00:00+00:00</lastmod>
     </url>
@@ -235,6 +654,16 @@
     
       <loc>/zh/post/text_2017001/</loc>
       <lastmod>2017-01-29T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/categories/%E5%BD%B1%E8%A6%96%E8%A9%95%E8%AB%96/</loc>
+      <lastmod>2017-01-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -287,72 +716,18 @@
     
     <url>
     
+      <loc>/zh/tags/%E4%BF%83%E7%99%BC%E6%95%88%E6%87%89/</loc>
+      <lastmod>2016-05-15T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/zh/post/text_2016001/</loc>
       <lastmod>2016-05-15T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/categories/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/categories/" hreflang="en"/>
-    
-      <loc>/zh/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/experiment_design/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/experiment_design/" hreflang="en"/>
-    
-      <loc>/zh/tags/experiment_design/</loc>
-      <lastmod>2018-06-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/post/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/post/" hreflang="en"/>
-    
-      <loc>/zh/post/</loc>
-      <lastmod>2019-02-18T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/categories/practices/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/categories/practices/" hreflang="en"/>
-    
-      <loc>/zh/categories/practices/</loc>
-      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/project/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/project/" hreflang="en"/>
-    
-      <loc>/zh/project/</loc>
-      <lastmod>2018-05-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -364,372 +739,6 @@
       <xhtml:link rel="alternate" href="/en/publication_types/" hreflang="en"/>
     
       <loc>/zh/publication_types/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/r/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/r/" hreflang="en"/>
-    
-      <loc>/zh/tags/r/</loc>
-      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/r_programming/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/r_programming/" hreflang="en"/>
-    
-      <loc>/zh/tags/r_programming/</loc>
-      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/categories/reproduce-practice/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/categories/reproduce-practice/" hreflang="en"/>
-    
-      <loc>/zh/categories/reproduce-practice/</loc>
-      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/" hreflang="en"/>
-    
-      <loc>/zh/tags/</loc>
-      <lastmod>2018-06-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/categories/teaching/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/categories/teaching/" hreflang="en"/>
-    
-      <loc>/zh/categories/teaching/</loc>
-      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/categories/academic/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/categories/academic/" hreflang="en"/>
-    
-      <loc>/zh/categories/academic/</loc>
-      <lastmod>2019-02-18T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/collaborative-research/</loc>
-      <lastmod>2019-02-18T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/jamovi/</loc>
-      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/knowledge_management/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/knowledge_management/" hreflang="en"/>
-    
-      <loc>/zh/tags/knowledge_management/</loc>
-      <lastmod>2018-02-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/latex/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/latex/" hreflang="en"/>
-    
-      <loc>/zh/tags/latex/</loc>
-      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
-    
-      <loc>/zh/tags/open-science/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/preregistration/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/preregistration/" hreflang="en"/>
-    
-      <loc>/zh/tags/preregistration/</loc>
-      <lastmod>2018-06-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/probability/</loc>
-      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/tags/statistics/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/statistics/" hreflang="en"/>
-    
-      <loc>/zh/tags/statistics/</loc>
-      <lastmod>2018-12-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E4%BF%83%E7%99%BC%E6%95%88%E6%87%89/</loc>
-      <lastmod>2016-05-15T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E5%86%8D%E7%8F%BE%E5%8D%B1%E6%A9%9F/</loc>
-      <lastmod>2017-10-16T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E5%8A%A3%E8%B3%AA%E7%A7%91%E5%AD%B8/</loc>
-      <lastmod>2017-08-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E5%AD%B8%E8%A1%93%E4%B8%8D%E7%AB%AF/</loc>
-      <lastmod>2017-07-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/categories/%E5%AD%B8%E8%A1%93%E6%B6%88%E6%81%AF/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/categories/%E5%BD%B1%E8%A6%96%E8%A9%95%E8%AB%96/</loc>
-      <lastmod>2017-01-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/</loc>
-      <lastmod>2018-05-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/categories/%E6%8A%95%E6%9B%B8/</loc>
-      <lastmod>2017-02-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/categories/%E6%96%B0%E8%81%9E%E8%A9%95%E8%AB%96/</loc>
-      <lastmod>2017-04-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/" hreflang="en"/>
-    
-      <loc>/zh/</loc>
-      <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/categories/%E6%9B%B8%E5%A0%B1%E7%AD%86%E8%A8%98/</loc>
-      <lastmod>2018-01-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E6%AC%8A%E5%8A%9B%E5%A7%BF%E5%8B%A2%E6%95%88%E6%87%89/</loc>
-      <lastmod>2017-04-10T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</loc>
-      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E7%A7%91%E5%AD%B8%E5%93%B2%E5%AD%B8/</loc>
-      <lastmod>2018-05-05T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E7%A7%91%E5%AD%B8%E7%B2%BE%E7%A5%9E/</loc>
-      <lastmod>2018-08-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E7%B5%B1%E8%A8%88/</loc>
-      <lastmod>2017-09-21T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E8%A8%BB%E5%86%8A%E7%A0%94%E7%A9%B6/</loc>
-      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/categories/%E8%BB%9F%E9%AB%94%E4%BB%8B%E7%B4%B9/</loc>
-      <lastmod>2018-01-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/</loc>
-      <lastmod>2018-10-16T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

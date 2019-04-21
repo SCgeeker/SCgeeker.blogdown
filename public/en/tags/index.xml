@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Content tagged as &#39;Academic&#39;</title>
-      <link>/en/tags/academic/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/academic/</guid>
-      <description>Here is a list of all the content that has been tagged as academic.</description>
-    </item>
     
     <item>
       <title>Bayesian</title>
@@ -28,6 +19,87 @@
       
       <guid>/en/tags/bayesian/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/en/tags/r/</link>
+      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>/en/tags/statistics/</link>
+      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>open science</title>
+      <link>/en/tags/open-science/</link>
+      <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/open-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R_programming</title>
+      <link>/en/tags/r_programming/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/r_programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>knowledge_management</title>
+      <link>/en/tags/knowledge_management/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/knowledge_management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mental simulation</title>
+      <link>/en/tags/mental-simulation/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/mental-simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reading sentence</title>
+      <link>/en/tags/reading-sentence/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/reading-sentence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog_skills</title>
+      <link>/en/tags/blog_skills/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/blog_skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Content tagged as &#39;Academic&#39;</title>
+      <link>/en/tags/academic/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/en/tags/academic/</guid>
+      <description>Here is a list of all the content that has been tagged as academic.</description>
     </item>
     
     <item>
@@ -49,74 +121,11 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/en/tags/r/</link>
-      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R_programming</title>
-      <link>/en/tags/r_programming/</link>
-      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/r_programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Rethinking</title>
       <link>/en/tags/rethinking/</link>
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
       
       <guid>/en/tags/rethinking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blog_skills</title>
-      <link>/en/tags/blog_skills/</link>
-      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/blog_skills/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>knowledge_management</title>
-      <link>/en/tags/knowledge_management/</link>
-      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/knowledge_management/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>latex</title>
-      <link>/en/tags/latex/</link>
-      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mental simulation</title>
-      <link>/en/tags/mental-simulation/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/mental-simulation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>open science</title>
-      <link>/en/tags/open-science/</link>
-      <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/open-science/</guid>
       <description></description>
     </item>
     
@@ -130,20 +139,11 @@
     </item>
     
     <item>
-      <title>reading sentence</title>
-      <link>/en/tags/reading-sentence/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <title>latex</title>
+      <link>/en/tags/latex/</link>
+      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/en/tags/reading-sentence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>statistics</title>
-      <link>/en/tags/statistics/</link>
-      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/tags/statistics/</guid>
+      <guid>/en/tags/latex/</guid>
       <description></description>
     </item>
     

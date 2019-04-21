@@ -18,22 +18,7 @@
       <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/dynamic-writing/</guid>
-      <description>這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。
-多數人習慣使用的文書處理軟體，像是WORD與google doc，集合文字編輯與排版。寫作正式文件時，需要同時顧慮編輯與排版的契合，雖然之前介紹的zotero已經減輕編輯文內引用與排版參考文獻的工作，一份文件內要安置圖表，乃至數學符號與統計數據的整理，還是需要花時間在不同軟體之間剪貼。
-這篇網誌說明如何編輯一篇有列舉參考文獻，無任何圖表及數學符號的中文文件。讓讀者了解動態文件的文字編輯與排版是兩件分開的工作，並提出支援中文寫作的動態文件套件，還需要改進的地方。
-基礎知識與建置這套個人網站一樣，一切準備從安裝Rstudo與R開始。Rstudio開發的套件knitr可由使用者自行安裝，或者是第一次使用Rstudio編輯動態文件時，會自動下載安裝。knitr的功能是將有指定語法標籤的純文字文件，例如markdown與R，轉換為其他排版軟體能辨識的內容。Rstudio已經整合一套開源排版軟體pandoc，可將轉換後的純文字文件，按排版設定渲染(render)輸出word或pdf檔案。
-上圖是Rstudio開啟新文件的選單，除了R script與Text File，其他檔案格式都是可用其他軟體渲染輸出各種排版或編譯產物。這也是為何管理動態文件，應區分文字編輯與排版兩種工作。以一份R Markdown文件為例，有開頭的yaml與內文兩部分，yaml是列舉排版這份文件的所需資訊，以符號 --- 標記資訊開始及結尾。以本文的示範文件為例，這份文件要輸出為WORD檔案，yaml包含的資訊如下：
-output: word_document:reference_docx: word_style_reference.docxbibliography: Turri.bibcsl: apa-old-doi-prefix.csl與這份示範文件放在一起的三個外部檔案：word_style_reference.docx、Turri.bib、apa-old-doi-prefix.csl，分別提供渲染這份文件需要的排版樣式、書目資訊、以及引用格式。zotero網誌曾介紹如何管理書目資訊與引用格式的檔案，docx檔是提供一份有所需樣式與版面設定範例的word檔，也就是一個排版範本，有關WORD的排版可參考官方說明網站。
-寫作示範建議讀者先下載前述連結的檔案，嘗試重現示範文件的輸出成果，會更理理以下示範說明。
-R markdown內文與一般markdown文件一樣，未在置入任何標籤的任何文字等於一般WORD文件的內文，pandoc會根據排版範本的內文樣式渲染。標記標題的#或##等，會根據排版範本的標題一、標題二等樣式渲染。如果使用者需要呈現頁碼，只要在排版範本預做安排。
-文內引用的書目是將存在於書目資訊檔案的bibtex key，置入在內文要呈現的地方，例如以下節錄的示範文字。詳細的置入語法與調整設定，可參考Rstudio的介紹。
-美國哲學家Gettier[-@gettierJustifiedTrueBelief1963]發表一篇短論文，提出兩個即使符合JTB三種條件，依然無法確定某人有沒有正確知識的反例。只要有引用的書目資訊，pandoc會根據引用格式檔案內的資訊，與文末排列參考文獻。示範文件中使用的格式是APA 6並呈現doi的一般格式。因此一份文件由兩位以上共同編輯，只要共享需要的書目資訊，也不必依賴付費軟體編輯與管理引用文獻。有關格式檔案的設定方法，可參考pulipuli的網誌。
-進階套件未來我還會撰寫在動態文件編輯圖表與統計數據的網誌，待讀者熟練本篇介紹的操作，推薦安裝以下套件，增益編輯動態文件的效率：
-citr:這套Rstudio的外掛可幫助使用者在編輯過程中，有插入引用文獻的bibtext key的需要，以視窗介面搜尋並編輯。我的使用建議是先準備好書目資訊檔案，編輯過程中不必開啟zotero。如果有需要更新書目資訊檔案，最好先暫停文件編輯工作，更新完成後再繼續編輯。
-papaja: citr作者的代表作，可創建符合APA格式的手稿檔案，並支援圖表與數據的排版功能。初版使用手冊今年已正式上線。
-期待的改進這篇介紹的動態文件套件在支援中文寫作有兩個值得改進之處。首先是生成pdf檔的問題，目前簡體中文有R牛人Yihui Xie的努力，已有支援出簡體中文pdf的套件，但是繁體中文仍然不夠全面。也可能是我找不到正確的支援方法所致，還請網友賜教。第二點是pandoc渲染參考文獻的功能只有支援英文書目，讀者可從示範文件裡的中文書目發現問題。這兩個問題如果能獲得改進，相信更多研究者與學生會更容易接受動態文件，提高研究過程與成果的透明度也有更清楚的標準。
-20190114突破補充寫作這篇網誌到這個日期之間，我已使用papaja編寫至少兩篇論文，對於latex的排版語法有更新的認識。這一日終於試出能成功產生中文論文的方法，原理是相容中日韓字符xeCJK，，目前只有xelatex這套文件生成引擎能完整支援。加上中文字的特殊設定，YAML必須有以下設定。
-## Get the header from http://newsletter.ascc.sinica.edu.tw/news/read_news.php?nid=2198## ptt latex board## Section begin: this section has to be above &amp;#39;output:&amp;#39;header-includes:- \usepackage[no-math]{fontspec}- \usepackage{xeCJK}- \setCJKmainfont{標楷體} ## 可改成已安裝的其他字型- \XeTeXlinebreaklocale &amp;quot;zh&amp;quot; - \XeTeXlinebreakskip = 0pt plus 1pt## Section end: this section has to be above &amp;#39;output:&amp;#39;## Get this setting from https://stackoverflow.</description>
+      <description>使用動態文件寫作，寫文章就像寫程式一樣。</description>
     </item>
     
     <item>
@@ -42,24 +27,7 @@ papaja: citr作者的代表作，可創建符合APA格式的手稿檔案，並�
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/post/jasp-jamovi/</guid>
-      <description>兩年前開始使用JASP分析研究資料時，我曾經寫過一篇網誌介紹這套開源軟體。之後更認識設計理念相同，功能擴充性更自由的jamovi。今年初我自已寫的統計電子書整合兩套軟體，讓學生學習如何運用兩套軟體於實務。到了今年五月至八月期間，這兩套軟體版本都更新到0.9以上，功能與資源有大幅度更新，兩套軟體的操作雖然大同小異，使用者用過一段時間會發覺兩者更擅勝場。
-這篇網誌介紹兩套軟體的介面、一般設定與特別的功能。做為之後開發教材與寫作網誌的補充資料。
-介面特色JASP 0.9.0.1與jamovi 0.9.2.3的啟動畫面如以下快照，畫面中JASP的Common與jamovi的Analyses都是操作功能模組與檢視分析報表的區域。
-JASP開啟資料檔案是在File區域操作，下圖是JASP範例檔案庫的啟始畫面。操作方式類似Mac OS的Finder，JASP除了開啟本機檔案之外，也能直接連線使用者的OSF帳戶，下載與同步OSF專案裡的資料與JASP存檔(.jasp)。JASP存檔(.jasp)包括原始資料檔案與分析報表。
-jamovi開啟與儲存資料檔案的選單，是按下Data標籤左邊的三條橫線，就會出現如下圖的畫面。最新版的jamovi只能存取本機檔案，包括資料檔與jamovi存檔(.omv)。jamovi存檔(.omv)包括原始資料檔案與分析報表。
-jamovi的Data可以直接編輯與使用函式處理一到數個欄位資料，這個區域有些類似試算表軟體，只是要先確定每個欄位的資料型態，才能正確使用jamovi提供的函式。這部分是jamovi與JASP的最大不同，JASP不可直接編輯資料，必須呼叫外部資料編輯器或試算表軟體。
-一般設定JASP與jamovi的一般設定選單開啟按鈕都在主要介面右上角，如下圖的紅色圓圈標示。兩者共同設定有二：報表數值的小數點位數；資料檔案裡遺漏值(missing value)標記。
-JASP與jamovi可設定小數點格式的數值只有兩類：一般的統計數值與p值，如以下畫面截圖：
-JASP和jamovi都是輸入資料檔內的遺漏值字符，匯入資料後會自動辨識資料中的遺漏值，設定畫面如下圖。差異在於jamovi只能辨識一種字符，JASP可辨識多種，使用者還可根據實際情況自行增加。
-JASP有需要編輯資料數值時，可以設定使用系統預設的試算表軟體，例如Excel。要使用此功能，就做如以下畫面的設定。若要外部編輯器存檔，並同步更新JASP資料，只要勾選以下畫面的第一個功能即可。
-功能與資源比較以下整理本人認為值得學習的JASP與jamovi的重要功能與資源，提供讀者可依個人需要取用。
-可匯入資料格式JASP：CSV, SPSS, Libre試算表
-jamovi: CSV, SPSS, SAS, Stata
-擴充功能JASP：非當用模組讓使用者自行開啟，目前有Meta Analysis、Network、SEM。
-jamovi: 官方提供模組開發工具，以及自訂模組庫。使用者可由jamovi程式裡安裝與更新，或由自訂模組庫下載安裝。特別建議統計初學者，使用Statkat協助學習。
-學習資源JASP：官網不定期更新推薦教材，2018年有研究方法與統計教科書出版。0.9版有豐富的Data Library，讓使用者依需要找示範檔案學習。
-jamovi:Datalab的CC授權課程提供youtube教學單元，各單元教材公開於google雲端與OSF。
-</description>
+      <description>不必再煩惱付費，使用開源軟體使用與開發各種強大統計方法。</description>
     </item>
     
   </channel>
