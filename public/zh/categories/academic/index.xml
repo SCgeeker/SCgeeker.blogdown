@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/categories/academic/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>運用公開預印本實現自我典藏</title>
+      <link>/zh/post/preprint-self-archiving/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/preprint-self-archiving/</guid>
+      <description>長期觀察發現，繁體中文網路資訊幾乎沒有討論學者著作自我典藏觀念與作法。此篇分享個人使用預印本經驗，期許帶動有經驗的學者與機構公開提倡。</description>
+    </item>
     
     <item>
       <title>我們與「顯著」的距離 ~ p值是判斷科學研究成敗的過時指標嗎？</title>

@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,18 @@
     <item>
       <title>academic</title>
       <link>/zh/categories/academic/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/zh/categories/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>研究心得</title>
+      <link>/zh/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</guid>
       <description></description>
     </item>
     
@@ -54,15 +63,6 @@
       <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/categories/reproduce-practice/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>研究心得</title>
-      <link>/zh/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</link>
-      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</guid>
       <description></description>
     </item>
     

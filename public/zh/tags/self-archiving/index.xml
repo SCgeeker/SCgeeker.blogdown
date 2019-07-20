@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>研究心得 on Sau-Chin Chen&#39;s Website</title>
-    <link>/en/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</link>
-    <description>Recent content in 研究心得 on Sau-Chin Chen&#39;s Website</description>
+    <title>self-archiving on 暗微幽光</title>
+    <link>/zh/tags/self-archiving/</link>
+    <description>Recent content in self-archiving on 暗微幽光</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
     <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/en/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/zh/tags/self-archiving/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>運用公開預印本實現自我典藏</title>
-      <link>/en/post/preprint-self-archiving/</link>
+      <link>/zh/post/preprint-self-archiving/</link>
       <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/post/preprint-self-archiving/</guid>
+      <guid>/zh/post/preprint-self-archiving/</guid>
       <description>長期觀察發現，繁體中文網路資訊幾乎沒有討論學者著作自我典藏觀念與作法。此篇分享個人使用預印本經驗，期許帶動有經驗的學者與機構公開提倡。</description>
     </item>
     

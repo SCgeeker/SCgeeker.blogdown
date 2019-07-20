@@ -8,7 +8,7 @@
       <xhtml:link rel="alternate" href="/en/categories/" hreflang="en"/>
     
       <loc>/zh/categories/</loc>
-      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -21,7 +21,7 @@
       <xhtml:link rel="alternate" href="/en/post/" hreflang="en"/>
     
       <loc>/zh/post/</loc>
-      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -34,7 +34,7 @@
       <xhtml:link rel="alternate" href="/en/tags/" hreflang="en"/>
     
       <loc>/zh/tags/</loc>
-      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -47,8 +47,73 @@
       <xhtml:link rel="alternate" href="/en/categories/academic/" hreflang="en"/>
     
       <loc>/zh/categories/academic/</loc>
-      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/open-access/</loc>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
+    
+      <loc>/zh/tags/open-science/</loc>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/tags/self-archiving/</loc>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/en/" hreflang="en"/>
+    
+      <loc>/zh/</loc>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</loc>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/zh/post/preprint-self-archiving/</loc>
+      <lastmod>2019-07-20T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -71,19 +136,6 @@
     
       <loc>/zh/post/comment-retired-p/</loc>
       <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="/zh/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/" hreflang="en"/>
-    
-      <loc>/zh/</loc>
-      <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -243,19 +295,6 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="/zh/tags/open-science/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="/en/tags/open-science/" hreflang="en"/>
-    
-      <loc>/zh/tags/open-science/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/zh/post/jasp-jamovi/</loc>
       <lastmod>2018-08-31T00:00:00+00:00</lastmod>
     </url>
@@ -381,16 +420,6 @@
     
       <loc>/zh/post/orientation-language-part01/</loc>
       <lastmod>2018-04-29T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/zh/categories/%E7%A0%94%E7%A9%B6%E5%BF%83%E5%BE%97/</loc>
-      <lastmod>2018-04-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
