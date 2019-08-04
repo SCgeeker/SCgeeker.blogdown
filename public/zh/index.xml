@@ -6,8 +6,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/zh/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2019年第一次線上預先註冊工作坊感想</title>
+      <link>/zh/post/first-preregistration-workshop/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/first-preregistration-workshop/</guid>
+      <description>
+
+
+&lt;p&gt;兩年多前我寫下第一篇討論&lt;strong&gt;預先註冊&lt;/strong&gt;及&lt;strong&gt;註冊報告&lt;/strong&gt;的&lt;a href=&#34;https://scchen.com/zh/post/text_2017002/&#34;&gt;網誌&lt;/a&gt;，當時才剛開始準備第一項註冊報告。今年7/28與&lt;a href=&#34;https://osf.io/9d7y4/&#34;&gt;Chinese Open Science Network&lt;/a&gt;合作，舉辦第一次線上工作坊。透過帶領三位研究者規劃研究計畫的預先註冊，幫助有意願嘗試的研究者開啓第一次經驗，並向旁觀朋友推廣開放研究操作。三位研究者的專案來自發展心理學、社會心理學與認知心理學，計畫目標與規模也互有差異。與三位參與者還有熱心朋友的線上互動經驗，讓我更確信在開場建議的&lt;a href=&#34;https://scgeeker.github.io/Prereg_workshop/#/recommended-steps-&#34;&gt;準備三步驟&lt;/a&gt;，確實能形成值得信賴的預先註冊計畫：首先先確定最關鍵的研究問題，了解想採取的分析模式，最後盡可能列出有可能導致偽陽性結果的彈性研究操作，才能充分評估研究計畫是適合節制彈性操作的驗證性研究，還是最大化研究內容透明度的探索性研究。我就本次工作坊尚待改進的一些措施，做些檢討與建議。&lt;/p&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;值得改進的地方&lt;/h3&gt;
+&lt;p&gt;這次開始前除了要求有意願完成預先註冊的參與者繳交報名費，也要求以AsPredicted的格式提出初步計畫書。這些措施確實提高參與者動機，不過因為AsPredicted能說明的篇幅有限，加上我不是完全熟悉所有參與者的研究，作業開始後需要參與者花一些時間說明自已的研究問題與規劃。加上第一次使用分組線上會議功能，我與所有參與人員午休之前幾乎都在習慣這種線上互動模式，一直到中午之後才了解每位參與者的研究問題與想採用的分析策略是什麼。&lt;/p&gt;
+&lt;p&gt;從三參與者的&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzUxMTA0ODQ0OA==&amp;amp;tempkey=MTAyMF9SM09RT3VrTFB5M1lYd2o1cGUzQ3hFRVVuYzVFTHJyUmdHUThEaUZtQ0VWUTFMajA0a1htY1Foa2dKckxoTUlKdHh1MFFTZWktb09LYTRjVFlkT1puLXRyWTBUVjhrYU9Vb3NST0g1OWZ0Y0pnMmVwZGdJdGgydk1hSTFfNGZKRmlnZUg3eWVoWkJNdU5kTFNJb29Ic1BoanZRVG9GOS01ZmRmYzd3fn4%3D&amp;amp;chksm=7978eabf4e0f63a9b4def1f37cf8d7cf5b3eda94a01994eb8bd2530d374d91acca81f3374a3f&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0804paJ1uabZ9LaiLl20WsG6&amp;amp;sharer_sharetime=1564901084274&amp;amp;sharer_shareid=aa12208c22b6dc4687f11b5dd4841c59&amp;amp;key=106d5d75642f6a67b2fbf45309ea9bb9f75bfd3ae8ca2f2c6547580d662fe7ae050587b5122f1c3cba31c2cb577cae593ccfb6f0b93558f20c5ee1acc38480587a7e5fceb1e74b78dff2b192f1deb869&amp;amp;ascene=1&amp;amp;uin=MTk4NjAyMzg0OQ%3D%3D&amp;amp;devicetype=Windows+10&amp;amp;version=62060833&amp;amp;lang=zh_TW&amp;amp;pass_ticket=3ENQk%2Frq8RrUcirmuWIJ4wSqH2eYcutILy3JYJMelpuNmFFgTHP8NjMa6mMUXYck&#34;&gt;回饋&lt;/a&gt;(此連結為暫時網頁，正式發佈後更新)，也證實參與者有接收到我想傳達的理念，但是因為事前準備不足的關係，尚未完全落實在活動成果，是讓我覺得最可惜的地方。在此必須感謝三位參與者，幫肋我與Chinese Open Science Network核心成員獲得寶貴經驗。除了繼續幫助他們完善本身的預先註冊計畫，也希望所有參與人士能更認識開放研究操作。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;section level3&#34;&gt;
+&lt;h3&gt;改進建議&lt;/h3&gt;
+&lt;p&gt;對於下一次不論是線上或現場活動，我們這次採用的模式對所有參與者都有正面幫助，不過主辦方應該有一些更積極的作為。首先是對於參與者提出的計畫，主要講者應該花些時間了解，最好能與每位參與者先做即時溝通，清楚每項研究真正的目標及想採取的資料分析策略。參與者可先準備完整的說明文件或影片，讓旁觀朋友在事前或現場隨時了解，有助眾人融入現場，更能提高主動參與的行為。&lt;/p&gt;
+&lt;p&gt;這次限於時間安排，彈性研究操作的樣態我只能用簡報約略帶過，也因為大多數作業時間在了解各項研究專案目標，並未帶領每位參與者完整區辨自己的研究計畫可能遇到的狀況。認識彈性研究操作需要親身體悟，才能明白其不良影響。我建議Chinese Open Science Network可以規劃幾次網路廣播，邀請各領域的朋友彼此分享與討論自己或熟人遇到的狀況，讓有意願嘗試預先註冊的朋友，真正了解關心科學知識品質的人士，推廣開放研究操作的宗旨。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>運用公開預印本實現自我典藏</title>
@@ -1916,65 +1939,6 @@ Semantic concept of truth:
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
 &lt;div id=&#34;ref-Carlsonintroductionstatisticsactive2018&#34;&gt;
 &lt;p&gt;Carlson, Kieth A., and Jennifer R. Winquist. 2018. &lt;em&gt;An Introduction to Statistics: An Active Learning Approach&lt;/em&gt;. Second edition. Los Angeles: SAGE.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>`bookdownplus`使用心得</title>
-      <link>/zh/post/use-bookdownplus/</link>
-      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/post/use-bookdownplus/</guid>
-      <description>
-
-
-&lt;p&gt;學會使用RMarkdown寫作之後，我一直在尋找能整合研究與教學寫作的方法與工具。認識&lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Aust and Barth 2017)&lt;/span&gt;之後，讓我開始想像有一天我的電腦只會剩下&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudio&lt;/a&gt;與&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt;兩種軟體。但是&lt;code&gt;papaja&lt;/code&gt;只適用英文論文寫作，無法滿足經常需要中文寫作的我。接著看到&lt;strong&gt;R忍者大師&lt;/strong&gt;謝益輝開發的&lt;a href=&#34;https://bookdown.org/yihui/bookdown/get-started.html&#34;&gt;&lt;code&gt;bookdown&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Xie 2017)&lt;/span&gt;，讓我開始燃起希望。不過最終版完全是編輯與出版書本的套件，從此多了個好用的編書工具，還不是全方位的學術寫作工具箱。&lt;/p&gt;
-&lt;p&gt;好在正在奧地利因斯布魯克的大學進行博士後研究的&lt;a href=&#34;http://www.pzhao.org/zh/&#34;&gt;趙鵬&lt;/a&gt;有相同的需要，自行改良出進階的&lt;a href=&#34;https://github.com/pzhaonet/bookdownplus&#34;&gt;&lt;code&gt;bookdownplus&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Zhao 2017)&lt;/span&gt;。&lt;code&gt;bookdownplus&lt;/code&gt;提供簡易的指令與多樣模板(templates)。根據說明檔，目前有&lt;code&gt;academic article&lt;/code&gt;, &lt;code&gt;book&lt;/code&gt;, &lt;code&gt;thesis&lt;/code&gt;, &lt;code&gt;poster&lt;/code&gt;, 與 &lt;code&gt;journals&lt;/code&gt;等學術出版格式模板。還有趙博士個人興趣的&lt;code&gt;poem book&lt;/code&gt;與&lt;code&gt;guitar chords&lt;/code&gt;模板。這些模板的成品可參考以下來自官方github的截圖：&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_article.jpg&#34; title=&#34;academic article&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_yihui_zh.jpg&#34; title=&#34;book&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_thesis_classic.jpg&#34; title=&#34;thesis&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poem.jpg&#34; title=&#34;poster&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_journal.jpg&#34; title=&#34;journal&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poster.jpg&#34; title=&#34;poem book&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_guitar.jpg&#34; title=&#34;guitar&#34; /&gt;
-
-&lt;/div&gt;
-&lt;p&gt;’journal’模板想必會在開放科學界炙手可熱。研究團隊成員可以透過協作，運用’journal’模板紀錄研究過程。研究成果正式出版之後，就能公開讓大眾檢視。&lt;/p&gt;
-&lt;p&gt;如我一樣的繁體中文使用者，必須在完成手冊中的安裝程序之後，安裝一些字型才能正常使用中文套件。根據我在WINDOWS 10的測試，需要安裝的字型檔至少有&lt;code&gt;KaiTi.ttf&lt;/code&gt;, &lt;code&gt;simfang.ttf&lt;/code&gt;, &lt;code&gt;simhei.ttf&lt;/code&gt;, 與&lt;code&gt;simkai.ttf&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;對於’bookdownplus’的未來，我希望能加強多位元編碼的文字支援。如果使用者也能分享自設模板，必定是西方世界之外開放科學社群的好用工具。&lt;/p&gt;
-&lt;div class=&#34;section level3 unnumbered&#34;&gt;
-&lt;h3&gt;參考文獻&lt;/h3&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-AustpapajaReproducibleAPA2017&#34;&gt;
-&lt;p&gt;Aust, Frederik, and Marius Barth. 2017. &lt;em&gt;Papaja: Reproducible APA Manuscripts with R Markdown&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-XiebookdownAuthoringBooks2017&#34;&gt;
-&lt;p&gt;Xie, Yihui. 2017. &lt;em&gt;Bookdown: Authoring Books and Technical Documents with R Markdown&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-ZhaobookdownplusTextbook2017&#34;&gt;
-&lt;p&gt;Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus Textbook&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>

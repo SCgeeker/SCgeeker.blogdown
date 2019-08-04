@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019年第一次線上預先註冊工作坊感想</title>
+      <link>/zh/post/first-preregistration-workshop/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/first-preregistration-workshop/</guid>
+      <description>正式開始研究前準備預註冊的過程，是一道研究者認真審視為何要開始這次研究精神考驗。</description>
+    </item>
     
     <item>
       <title>運用公開預印本實現自我典藏</title>
