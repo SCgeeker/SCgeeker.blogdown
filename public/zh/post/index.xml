@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>香港大學學生群眾動員學習研究行動演講會後談</title>
+      <link>/zh/post/hku-mass-mobilize/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/hku-mass-mobilize/</guid>
+      <description>從香港大學學生群眾動員學習研究行動的經驗，談談我對規劃台灣心理科學研究協作群進行策略的一些看法。</description>
+    </item>
     
     <item>
       <title>2019年第一次線上預先註冊工作坊感想</title>

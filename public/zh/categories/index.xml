@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Teaching</title>
+      <link>/zh/categories/teaching/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/categories/teaching/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>學術消息</title>
@@ -54,15 +63,6 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/zh/categories/practices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>/zh/categories/teaching/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/categories/teaching/</guid>
       <description></description>
     </item>
     
