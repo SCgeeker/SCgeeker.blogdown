@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/zh/tags/%E8%A8%BB%E5%86%8A%E7%A0%94%E7%A9%B6/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>運用Gorilla與Prolific進行線上實驗的簡單示範</title>
+      <link>/zh/post/gorilla_prolific_online/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/gorilla_prolific_online/</guid>
+      <description>為了鼓勵中文研究者了解並採用透明研究操作，我以生涯第一件註冊報告錄製影片，示範如何透過網路收集資料。</description>
+    </item>
     
     <item>
       <title>香港大學學生群眾動員學習研究行動演講會後談</title>

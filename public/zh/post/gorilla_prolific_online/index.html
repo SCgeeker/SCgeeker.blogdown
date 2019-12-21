@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.55.3" />
+  <meta name="author" content="陳紹慶">
+  <meta name="description" content="開放科學大使、心理科學加速器助理監督">
+
+  
+  <link rel="alternate" hreflang="zh-tw" href="/zh/post/gorilla_prolific_online/">
+
+  
+  
+
+
+  
+
+  
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair&#43;Display:400,700%7cFauna&#43;One">
+  
+  <link rel="stylesheet" href="/zh/styles.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="暗微幽光">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="暗微幽光">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/zh/post/gorilla_prolific_online/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@SauChin_Chen">
+  <meta property="twitter:creator" content="@SauChin_Chen">
+  
+  <meta property="og:site_name" content="暗微幽光">
+  <meta property="og:url" content="/zh/post/gorilla_prolific_online/">
+  <meta property="og:title" content="運用Gorilla與Prolific進行線上實驗的簡單示範 | 暗微幽光">
+  <meta property="og:description" content=""><meta property="og:image" content="/img/gorilla_prolific.png">
+  <meta property="og:locale" content="zh-tw">
+  
+  <meta property="article:published_time" content="2019-12-21T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-12-21T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>運用Gorilla與Prolific進行線上實驗的簡單示範 | 暗微幽光</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">切換導覽</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/zh">暗微幽光</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/zh/#about">
+            
+            <span>首頁</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/zh/#posts">
+            
+            <span>隨筆</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/zh/#projects">
+            
+            <span>反思</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/zh/#teaching">
+            
+            <span>教學</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+<div class="article-header">
+  <img src="/img/gorilla_prolific.png" class="article-banner" itemprop="image">
+  
+</div>
+
+
+
+  <div class="article-container">
+    <div class="article-inner">
+      <h1 itemprop="name">運用Gorilla與Prolific進行線上實驗的簡單示範</h1>
+
+      
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2019-12-21 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sat, Dec 21, 2019
+    </time>
+  </span>
+
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/zh/post/gorilla_prolific_online/#disqus_thread"></a>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/zh/categories/reproduce-practice">Reproduce Practice</a
+    >, 
+    
+    <a href="/zh/categories/%e7%a0%94%e7%a9%b6%e5%bf%83%e5%be%97">研究心得</a
+    >, 
+    
+    <a href="/zh/categories/%e8%bb%9f%e9%ab%94%e4%bb%8b%e7%b4%b9">軟體介紹</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=%e9%81%8b%e7%94%a8Gorilla%e8%88%87Prolific%e9%80%b2%e8%a1%8c%e7%b7%9a%e4%b8%8a%e5%af%a6%e9%a9%97%e7%9a%84%e7%b0%a1%e5%96%ae%e7%a4%ba%e7%af%84&amp;url=%2fzh%2fpost%2fgorilla_prolific_online%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fzh%2fpost%2fgorilla_prolific_online%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=%e9%81%8b%e7%94%a8Gorilla%e8%88%87Prolific%e9%80%b2%e8%a1%8c%e7%b7%9a%e4%b8%8a%e5%af%a6%e9%a9%97%e7%9a%84%e7%b0%a1%e5%96%ae%e7%a4%ba%e7%af%84&amp;body=%2fzh%2fpost%2fgorilla_prolific_online%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+      <div class="article-style" itemprop="articleBody">
+        
+
+
+<p><a href="https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6">可獲得啓動點數的Gorilla註冊網址</a></p>
+<p><a href="https://www.prolific.co/?ref=XPQ3NN2Y">可獲得啓動資金的Prolific註冊網址</a></p>
+<p>這三年與荷蘭學者Bjorn de Korning 與 Rolf Zwaan 合作的<a href="https://psyarxiv.com/a3vwc/">註冊研究專案</a>終於被<a href="https://us.hogrefe.com/products/journals/exppsy">Experimental Psychology</a>正式接受。這項專案達成了幾件個人學術創舉，其中之一是透過網路收集資料的線上實驗。我們的發表報告採用透明的研究操作，即公開研究材料、原始資料、以及統計腳本。這項專案運用線上實驗平台<a href="https://gorilla.sc/">Gorilla</a>設計研究材料及執行程序，以及透過行為研究協作平台<a href="https://www.prolific.ac/">Prolific</a>等途徑招募參與者。運用線上平台進行實驗研究，對於所屬機構較難獲得大量樣本的研究者，是從事基礎研究課題的可行途徑。為了讓有興趣的朋友能快速了解，我錄製七段<a href="https://www.youtube.com/playlist?list=PLSxoRcsvTAqA7oJrQYdVnih1_rnS_Gl4n">公開示範影片</a>，並在這個網誌介紹相關資訊。</p>
+<ol style="list-style-type: decimal">
+<li>註冊Gorrila平台</li>
+</ol>
+<p>Gorrila是2016年由<a href="http://cauldron.sc/welcome">Cauldron</a>公司推出的雲端產品，因為創辦人有實驗心理學研究背景，Gorrila的開發以服務行為科學研究者的需求為主，除了基本的多媒體呈現及按鍵反應時間紀錄，目前也提供語音紀錄與眼動軌跡紀錄等套件，讓研究者能將在傳統實驗室進行的實驗，讓參與者透過網路在熟悉的生活空間貢獻資料。</p>
+<p>註冊Gorrila不需付費，因為這家公司的收費來自使用平台的研究者執行線上實驗的點數費。為了鼓勵研究者多加運用，推出呼朋引伴的點數回饋。有興趣使用的讀者可使用<a href="https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6">可獲得啓動點數的Gorilla註冊網址</a>，在學校就學或服務的朋友請以機構電子郵件註冊，購買點數的費用有折扣。註冊成功後可參考影片自行瀏覽。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/HSSAwcb3J4o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="2" style="list-style-type: decimal">
+<li>專案元素</li>
+</ol>
+<p>使用者只要依計畫流程將<a href="https://gorilla.sc/support/reference/faq/questionnaires">線上測驗(Questionnaires)</a>及<a href="https://gorilla.sc/support/reference/faq/task-builder">線上作業(Tasks)</a>串連為<a href="https://gorilla.sc/support/reference/faq/experiments">實驗(Experiments)</a>，包裹在專案(Project)之人內。三項元素都有專屬編輯器，除了直接運用Gorilla提供的元件設計需要的測驗、作業及實驗，使用者可運用javascript設計需要的實驗元件。一件專案可包含複數元素，只有實驗是可正式上線收集資料的元素。</p>
+<p>註冊使用者能協同合作編輯一件專案，創建專案的使用者只要透過Settings -&gt; Collaborate -&gt; 加入註冊使用者的e-mail。專案也能建立複本，只要運用Settings -&gt; Clone。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/SDCKy_fys90" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="3" style="list-style-type: decimal">
+<li>線上測驗創建與測試示範</li>
+</ol>
+<p>使用者除了運用編輯器自行建立與測試線上測驗，也可以由<a href="https://gorilla.sc/support/samples">示範資源庫(Samples)</a>取得官方範本，或由<a href="https://gorilla.sc/openmaterials/">開放材料庫(Open Materials)</a>取得其他使用者公開的測驗腳本。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/h828x0PFn00" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="4" style="list-style-type: decimal">
+<li>線上作業程序設計與材料準備示範</li>
+</ol>
+<p>使用者除了運用編輯器自行建立與測試線上作業及編輯實驗素材，也可以由<a href="https://gorilla.sc/support/samples">示範資源庫(Samples)</a>取得官方範本及素材，或由<a href="https://gorilla.sc/openmaterials/">開放材料庫(Open Materials)</a>取得其他使用者公開的資源。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/lnK91_rTmCo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="5" style="list-style-type: decimal">
+<li>實驗流程構成示範</li>
+</ol>
+<p>Gorilla實驗流程編輯器是圖像互動介面，使用者可自由調整作業與測驗的執行順序，並可加入流程控制元件實行隨機分派。如果官方元件未提供符合計畫需要的流程控制，使用者可撰寫javascript腳本。使用流程控制元件除了參考<a href="https://gorilla.sc/support/reference/faq/experiments">官方範例</a>，也可從<a href="https://gorilla.sc/openmaterials/">開放材料庫(Open Materials)</a>取得合適的流程。</p>
+<p>一件專案可依計畫設計多套實驗流程，並能測試流程執行以及收集的資料結果。Gorilla的資料以試算表格式輸出，我建議採用CSB匯出，以利分析的可重製性。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/oJM128pBlHI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="6" style="list-style-type: decimal">
+<li>實驗上線管理</li>
+</ol>
+<p>Gorilla提供多種實驗上線方式，任何上線方式收集一次完整資料，就要消耗一個點數(token)。如果使用者希望收集有代表性的樣本，建議在有過濾參與者條件的第三方平台上線。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/BeRB7rECZDA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="7" style="list-style-type: decimal">
+<li>Prolific註冊與建立專案</li>
+</ol>
+<p>接續前一點，有過濾參與者條件的第三方平台最成功的是英語系國家的MTurk與Prolific，這次是透過Prolific收集英語參與者資料。這段影片示範如何在Prolific上線收集資料，也期望拋轉引玉，尋找有膽識的朋友們創建功能類似，以中文人口為主的第三方平台。Prolific註冊免費，按成功樣本收費。與Gorilla一樣要事先儲值，有興趣註冊找參與者的朋友，可透過<a href="https://www.prolific.co/?ref=XPQ3NN2Y">可獲得啓動資金的Prolific註冊網址</a>，註冊帳號獲得第一桶金。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/1J6rk7eM9RY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+      </div>
+
+      
+
+
+<div class="article-tags">
+  
+  <a class="btn btn-primary btn-outline" href="/zh/tags/experiment_design">Experiment_Design</a>
+  
+  <a class="btn btn-primary btn-outline" href="/zh/tags/%e8%a8%bb%e5%86%8a%e7%a0%94%e7%a9%b6">註冊研究</a>
+  
+</div>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container article-widget">
+  <div class="hr-light"></div>
+  <h3>相關</h3>
+  <ul>
+    
+    <li><a href="/zh/post/hku-mass-mobilize/">香港大學學生群眾動員學習研究行動演講會後談</a></li>
+    
+    <li><a href="/zh/post/first-preregistration-workshop/">2019年第一次線上預先註冊工作坊感想</a></li>
+    
+    <li><a href="/zh/post/classical-memory-studies/">三個經典記憶實驗重現研究教程</a></li>
+    
+    <li><a href="/zh/post/orientation-language-part01/">物件方向效應跨語言研究經驗分享(一)：心理科學加速器合作專案</a></li>
+    
+    <li><a href="/zh/post/first-chinese-rr-journal/">第一本華文心理學學術期刊開工了</a></li>
+    
+  </ul>
+</div>
+
+
+
+<div class="container article-widget">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="/zh/post/hku-mass-mobilize/"><span
+      aria-hidden="true">&larr;</span> 香港大學學生群眾動員學習研究行動演講會後談</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "scchen" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Sau-Chin Chen &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">引用</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> 複製
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> 下載
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    <script id="dsq-count-scr" src="//scchen.disqus.com/count.js" async></script>
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

@@ -6,8 +6,89 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
     <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/zh/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>運用Gorilla與Prolific進行線上實驗的簡單示範</title>
+      <link>/zh/post/gorilla_prolific_online/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/post/gorilla_prolific_online/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6&#34;&gt;可獲得啓動點數的Gorilla註冊網址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.prolific.co/?ref=XPQ3NN2Y&#34;&gt;可獲得啓動資金的Prolific註冊網址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這三年與荷蘭學者Bjorn de Korning 與 Rolf Zwaan 合作的&lt;a href=&#34;https://psyarxiv.com/a3vwc/&#34;&gt;註冊研究專案&lt;/a&gt;終於被&lt;a href=&#34;https://us.hogrefe.com/products/journals/exppsy&#34;&gt;Experimental Psychology&lt;/a&gt;正式接受。這項專案達成了幾件個人學術創舉，其中之一是透過網路收集資料的線上實驗。我們的發表報告採用透明的研究操作，即公開研究材料、原始資料、以及統計腳本。這項專案運用線上實驗平台&lt;a href=&#34;https://gorilla.sc/&#34;&gt;Gorilla&lt;/a&gt;設計研究材料及執行程序，以及透過行為研究協作平台&lt;a href=&#34;https://www.prolific.ac/&#34;&gt;Prolific&lt;/a&gt;等途徑招募參與者。運用線上平台進行實驗研究，對於所屬機構較難獲得大量樣本的研究者，是從事基礎研究課題的可行途徑。為了讓有興趣的朋友能快速了解，我錄製七段&lt;a href=&#34;https://www.youtube.com/playlist?list=PLSxoRcsvTAqA7oJrQYdVnih1_rnS_Gl4n&#34;&gt;公開示範影片&lt;/a&gt;，並在這個網誌介紹相關資訊。&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;註冊Gorrila平台&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Gorrila是2016年由&lt;a href=&#34;http://cauldron.sc/welcome&#34;&gt;Cauldron&lt;/a&gt;公司推出的雲端產品，因為創辦人有實驗心理學研究背景，Gorrila的開發以服務行為科學研究者的需求為主，除了基本的多媒體呈現及按鍵反應時間紀錄，目前也提供語音紀錄與眼動軌跡紀錄等套件，讓研究者能將在傳統實驗室進行的實驗，讓參與者透過網路在熟悉的生活空間貢獻資料。&lt;/p&gt;
+&lt;p&gt;註冊Gorrila不需付費，因為這家公司的收費來自使用平台的研究者執行線上實驗的點數費。為了鼓勵研究者多加運用，推出呼朋引伴的點數回饋。有興趣使用的讀者可使用&lt;a href=&#34;https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6&#34;&gt;可獲得啓動點數的Gorilla註冊網址&lt;/a&gt;，在學校就學或服務的朋友請以機構電子郵件註冊，購買點數的費用有折扣。註冊成功後可參考影片自行瀏覽。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/HSSAwcb3J4o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;專案元素&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用者只要依計畫流程將&lt;a href=&#34;https://gorilla.sc/support/reference/faq/questionnaires&#34;&gt;線上測驗(Questionnaires)&lt;/a&gt;及&lt;a href=&#34;https://gorilla.sc/support/reference/faq/task-builder&#34;&gt;線上作業(Tasks)&lt;/a&gt;串連為&lt;a href=&#34;https://gorilla.sc/support/reference/faq/experiments&#34;&gt;實驗(Experiments)&lt;/a&gt;，包裹在專案(Project)之人內。三項元素都有專屬編輯器，除了直接運用Gorilla提供的元件設計需要的測驗、作業及實驗，使用者可運用javascript設計需要的實驗元件。一件專案可包含複數元素，只有實驗是可正式上線收集資料的元素。&lt;/p&gt;
+&lt;p&gt;註冊使用者能協同合作編輯一件專案，創建專案的使用者只要透過Settings -&amp;gt; Collaborate -&amp;gt; 加入註冊使用者的e-mail。專案也能建立複本，只要運用Settings -&amp;gt; Clone。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/SDCKy_fys90&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;線上測驗創建與測試示範&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用者除了運用編輯器自行建立與測試線上測驗，也可以由&lt;a href=&#34;https://gorilla.sc/support/samples&#34;&gt;示範資源庫(Samples)&lt;/a&gt;取得官方範本，或由&lt;a href=&#34;https://gorilla.sc/openmaterials/&#34;&gt;開放材料庫(Open Materials)&lt;/a&gt;取得其他使用者公開的測驗腳本。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/h828x0PFn00&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;線上作業程序設計與材料準備示範&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用者除了運用編輯器自行建立與測試線上作業及編輯實驗素材，也可以由&lt;a href=&#34;https://gorilla.sc/support/samples&#34;&gt;示範資源庫(Samples)&lt;/a&gt;取得官方範本及素材，或由&lt;a href=&#34;https://gorilla.sc/openmaterials/&#34;&gt;開放材料庫(Open Materials)&lt;/a&gt;取得其他使用者公開的資源。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/lnK91_rTmCo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;實驗流程構成示範&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Gorilla實驗流程編輯器是圖像互動介面，使用者可自由調整作業與測驗的執行順序，並可加入流程控制元件實行隨機分派。如果官方元件未提供符合計畫需要的流程控制，使用者可撰寫javascript腳本。使用流程控制元件除了參考&lt;a href=&#34;https://gorilla.sc/support/reference/faq/experiments&#34;&gt;官方範例&lt;/a&gt;，也可從&lt;a href=&#34;https://gorilla.sc/openmaterials/&#34;&gt;開放材料庫(Open Materials)&lt;/a&gt;取得合適的流程。&lt;/p&gt;
+&lt;p&gt;一件專案可依計畫設計多套實驗流程，並能測試流程執行以及收集的資料結果。Gorilla的資料以試算表格式輸出，我建議採用CSB匯出，以利分析的可重製性。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/oJM128pBlHI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;實驗上線管理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Gorilla提供多種實驗上線方式，任何上線方式收集一次完整資料，就要消耗一個點數(token)。如果使用者希望收集有代表性的樣本，建議在有過濾參與者條件的第三方平台上線。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/BeRB7rECZDA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Prolific註冊與建立專案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;接續前一點，有過濾參與者條件的第三方平台最成功的是英語系國家的MTurk與Prolific，這次是透過Prolific收集英語參與者資料。這段影片示範如何在Prolific上線收集資料，也期望拋轉引玉，尋找有膽識的朋友們創建功能類似，以中文人口為主的第三方平台。Prolific註冊免費，按成功樣本收費。與Gorilla一樣要事先儲值，有興趣註冊找參與者的朋友，可透過&lt;a href=&#34;https://www.prolific.co/?ref=XPQ3NN2Y&#34;&gt;可獲得啓動資金的Prolific註冊網址&lt;/a&gt;，註冊帳號獲得第一桶金。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/1J6rk7eM9RY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
     
     <item>
       <title>香港大學學生群眾動員學習研究行動演講會後談</title>
@@ -1881,79 +1962,6 @@ Semantic concept of truth:
 &lt;/div&gt;
 &lt;div id=&#34;ref-ZwaanRevisitingMentalSimulation2012&#34;&gt;
 &lt;p&gt;Zwaan, Rolf A., and Diane Pecher. 2012. “Revisiting Mental Simulation in Language Comprehension: Six Replication Attempts.” &lt;em&gt;PLoS ONE&lt;/em&gt; 7: e51382. doi:&lt;a href=&#34;https://doi.org/10.1371/journal.pone.0051382&#34;&gt;10.1371/journal.pone.0051382&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>第一本華文心理學學術期刊開工了</title>
-      <link>/zh/post/first-chinese-rr-journal/</link>
-      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/zh/post/first-chinese-rr-journal/</guid>
-      <description>
-
-
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;台灣最老、華文第一的心理學學術期刊&lt;/h2&gt;
-&lt;p&gt;2018/2/22是台灣春節的開工第二日，回到研究室刷一下臉書看到了這則訊息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/Screenshot-2018-2-22_CJP_submission.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;去年我只有在自己服務的學校與中正大學舉辦兩場&lt;a href=&#34;https://osf.io/e69mb/&#34;&gt;小型註冊研究工作坊&lt;/a&gt;，就向中華心理學刊現任主編&lt;a href=&#34;http://www.psy.ccu.edu.tw/members/bio.php?PID=21&#34;&gt;姜定宇教授&lt;/a&gt;建議：籌備主題式註冊研究特刊，以及允許投稿作者於完成投稿後自行公開手稿。想不到今年開工看到更大的進展：今年起中華心理學刊歡迎作者投稿註冊研究計畫書，並採二階段評審。我想簡介一下這本期刊，還有給一些執行註冊研究徵稿政策的建議。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite&#34;&gt;中華心理學刊&lt;/a&gt;於1958年創刊，是台灣第一本心理學學術期刊，到今年正好一甲子，由&lt;a href=&#34;http://140.112.62.7/cpa/zh/&#34;&gt;台灣心理學會&lt;/a&gt;委派來自各領域的台灣資深心理學者擔任編輯。主要任務是提供各國任何心理學領域專業學者，以學者以中文或英文發表論文。2000年之後台灣出現提供臨床心理學與諮商心理學者發表中文論文的期刊，而這兩個領域是台灣心理學界專業人口最多的領域，加上多數中青代學者以投稿國外英文期刊為目標，刊登的論文數量逐漸下降。近年積極爭取轉型，除了舉辦各種專刊徵稿，也終於願意嘗試增加投稿樣態。過去的中華心理學期刊只接授原創性研究論文(research article)的投稿，今年開始徵求註冊研究(registered report)與檢驗原創性研究的重製研究報告(research report)。&lt;/p&gt;
-&lt;p&gt;雖然我看到消息時官方網站已經有&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite/blank-5&#34;&gt;中文徵稿啟事&lt;/a&gt;，期刊編輯部尚未更新&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite-english/instructions-to-authors&#34;&gt;英文徵稿啟事&lt;/a&gt;，也尚未見到期刊主編發表正式聲明。我推測現任主編群已經了解綜合性學術期刊需要多元投稿模式，才能吸引有品質的稿件，但是要如何吸引願意嘗試不同型態的學者，現任主編群必須拿出明確的策略方案。在主編構思聲明的此時，我用這篇文章回顧四本經營註冊研究已有規模的期刊，並提供我認為第一本華文註冊研究期刊可以著力的方向。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;cortex&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Cortex：第一本徵求註冊研究的學術期刊&lt;/h2&gt;
-&lt;p&gt;Cordex於2013年邀請英國卡迪夫大學心理學系教授&lt;a href=&#34;http://psych.cf.ac.uk/contactsandpeople/chambersc1.php&#34;&gt;Chris Chambers&lt;/a&gt;擔任註冊研究執行主編，成為全世界第一本提供註冊研究投稿的學術期刊。Chris Chambers發表的聲明&lt;span class=&#34;citation&#34;&gt;(2013)&lt;/span&gt;與設計的&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;投稿指南&lt;/a&gt;，成為其後開辦註冊研究期刊的範本。之後開辦的期刊都根據經營方針，修改這份投稿指南讓投稿者準備投稿資訊與研究材料。以下評審流程圖摘自&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;Cortex投稿指南&lt;/a&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/cortex-RR-workflow.JPG&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Chris Chambers經常受邀擔任工作坊講師，更公開每次的&lt;a href=&#34;https://osf.io/d4fh5/&#34;&gt;講演資料&lt;/a&gt;，是有心學習者可參考的資訊來源。Center for Open Science於2017年1月邀請他舉辦網路工作坊，以下是工作坊錄影。&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube-nocookie.com/embed/7MQ5XB1WUp8?rel=0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;div id=&#34;journal-of-european-psychology-students&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Journal of European Psychology Students：由心理學研究生一手包辦的學術期刊&lt;/h2&gt;
-&lt;p&gt;Journal of European Psychology Students是由正於歐洲各大學攻讀心理學博士的各領域研究生主辦的學術期刊，除了一般的投稿評審模式，2016年起也正式徵求註冊研究&lt;span class=&#34;citation&#34;&gt;(King et al. 2016)&lt;/span&gt;。&lt;a href=&#34;https://osf.io/qewck/&#34;&gt;投稿指南&lt;/a&gt;是Cortex版本的簡化版，並提供&lt;a href=&#34;https://osf.io/h7trs/&#34;&gt;重製型註冊研究範本&lt;/a&gt;以及&lt;a href=&#34;https://osf.io/8qk56/&#34;&gt;原創性註冊研究範本&lt;/a&gt;。儘管這本期刊沒有列入SCI或SSCI資料庫，經營方針是新興與尋求轉型的期刊可學習的對象。下圖是Journal of European Psychology Students的註冊研究評審流程：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/401-2791-1-PB.JPG&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;comprehensive-results-in-social-psychology&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Comprehensive Results in Social Psychology：百分之百的註冊研究學術期刊&lt;/h2&gt;
-&lt;p&gt;於2016年開始正式發行的Comprehensive Results in Social Psychology是完全以註冊研究模式經營的社會心理學期刊，&lt;a href=&#34;http://www.tandf.co.uk/journals/authors/rrsp-submission-guidelines.pdf&#34;&gt;投稿指南&lt;/a&gt;也是改良Cortex的版本。但是因此經營成本較高，部分稿件需付審查費，所有出版論文，包括主編聲明&lt;span class=&#34;citation&#34;&gt;(Jonas and Cesario 2016)&lt;/span&gt;，都是付費論文。除非作者自付費用，讀者只能下載公開於預印本平台的手稿。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;collabra-psychology-&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Collabra: Psychology 更嚴謹的註冊研究評審程序&lt;/h2&gt;
-&lt;p&gt;Collabra: Psychology是創刊剛滿五年的新興綜合型心理學學術期刊，到了2017年下半年才開始正式宣佈&lt;a href=&#34;https://medium.com/@CollabraOA/registered-reports-at-collabra-psychology-6938b2059fc7&#34;&gt;徵求註冊研究的啟事&lt;/a&gt;。執行主編正是Chris Chambers，所以推出&lt;a href=&#34;https://docs.google.com/document/d/1eeXPEC_oc4OYlywC9pRt6seL2xazlT58jAtRsCuEdCI/edit#&#34;&gt;進階的投稿指南&lt;/a&gt;。增加的要求是作者必須在計畫中提出研究紀錄登錄方式，並且確實執行。詳情可參考期刊的&lt;a href=&#34;https://osf.io/my3wa/&#34;&gt;投稿範本&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;Collabra: Psychology的方針與&lt;a href=&#34;http://improvingpsych.org/&#34;&gt;Society for the Improvement of Psychological Science(SIPS)&lt;/a&gt;密切合作有關。從2016年起SIPS舉辦年度研討會，但是不同於一般學術研討會，SIPS以黑客松、工作坊與閃電演講為內容，創造與會者合作構思並規劃提昇心理科學品質方案的場域。未來兩方的合作可望推出讓註冊研究更普及的方案。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;中華心理學刊可採取的經營模式&lt;/h2&gt;
-&lt;p&gt;除了以上四本期刊，Center for Open Science的&lt;a href=&#34;https://cos.io/rr/&#34;&gt;註冊研究網頁&lt;/a&gt;不定期更新開辦註冊研究的期刊清單與投稿資訊，值得學刊編輯群與讀者留意。考量期刊的經營狀況，還有台灣以及華文學術環境，我認為Journal of European Psychology Students的經營模式比較適合現在的中華心理學刊。個人的理由來自幾點觀察：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;多數華人學者還不大了解註冊研究的流程，像是有位語言認知域的老師與我私下交談後，才知道註冊研究只在第一階段評審理論與分析方法的邏輯關聯。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;已經習慣傳統研究啟動及發表模式的研究者與團隊，覺得註冊研究模式會增加工作負荷與寫作時間。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;華文心理學圈缺乏有影響力的&lt;strong&gt;奠基研究(Capstone Research)&lt;/strong&gt;，使得這個社群的心理學者缺乏知識危機的意識，難以形成需要新型態發表模式的學術氛圍。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;基礎養成教育削弱研究者對&lt;strong&gt;待澄清的研究操作(Questionable Research Practices)&lt;/strong&gt;的認識，外在的績效制度與獎補助政策，也有可能助長研究者們採取只求有成果發表的動機。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;由投稿須知的註冊研究說明「資料尚未收集的原創性實徵研究論文。」，我認為現在的方針是鼓勵研究者投稿的計畫書偏向&lt;strong&gt;探索性研究(Exploratory Research)&lt;/strong&gt;，重製已出版研究的&lt;strong&gt;確證性研究(Confirmatory Rsearch)&lt;/strong&gt;則歸為研究報告，而且該段投稿須知中沒有鼓勵研究者採&lt;strong&gt;預先註冊(pre-registreation)&lt;/strong&gt;執行計畫。對照第一本徵求註冊期刊Cortex在&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;投稿指南&lt;/a&gt;中，有說明Cortex平等對待原創性研究與高價值重製研究的文字(“High-value replication studies are welcome and will be treated with equal priority to novel studies.”)。以目前已公開的投稿須知，中華心理學刊將無法照搬Cortex的投稿指南。相對來說，Journal of European Psychology Students區分原創性與再現研究的投稿及評審模式，是比較可能採行的策略。&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;section level2&#34;&gt;
-&lt;h2&gt;促進註冊研究的策略&lt;/h2&gt;
-&lt;p&gt;不論中華心理學刊會採取什麼樣的執行模式，讓更多研究者願意採用註冊研究模式經營研究計畫與發表成果，需要製造搭配條件，啟發內在動機。最後我提供一些可行措施：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;改善研究生畢業論文產製流程 台灣各大學的心理學研究所畢業論文或報告要求，都是要學生先提出計畫書，再執行研究完成論文，各校的主要差別是計畫書的審查方式。如果採用註冊研究模式，學生提出的計畫書只要說明關鍵研究的理論基礎與執行方法，最後的口試以檢視有無按照計畫書執行為重點。中華心理學刊可做為計畫書評審平台，讓師生能明確掌握執行進度，也能確保畢業論文有正式發表的管道。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;輔助註冊研究的研究經費補助政策 近幾年歐美各國已有&lt;a href=&#34;http://scchen.com/zh/post/text_2016003/&#34;&gt;提昇研究品質的經費補助政策&lt;/a&gt;，目前台灣的整體環境受制於預算總量管制，加上主政者的想法，未來幾年各機構研究者必然還是採現在的競爭模式爭取經費。但是我認為可以先從心理學門試行最低度補助計畫，也就是主持人提的研究計畫全部或部分內容已經通過期刊的第一階段評審，經費補助者可根據可執行的部分(參與者費、倫理審查費、設備租用費等)，核給最低限度的研究經費，接著再根據評分及意見決定其他項目經費。&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;向各研究倫理中心介紹註冊研究與開放科學 我舉辦兩次工作坊都遇到研究倫理審查的實務問題，去年底也遇到台灣大學研究倫理中心人員親自訪視。交流中發現如台大的倫理中心，負責人員完全不了解註冊研究。國外有實際操作經驗的研究者都肯定比起傳統研究流程，註冊研究的參與者隱私資料保護，比起倫理中心的建議更為嚴格。如果能讓各倫理中心負責人員了解註冊研究模式，有利增進申請與執行研究倫理保障程序的效率。&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-ChambersRegisteredReportsnew2013&#34;&gt;
-&lt;p&gt;Chambers, Christopher D. 2013. “Registered Reports: A New Publishing Initiative at Cortex.” &lt;em&gt;Cortex&lt;/em&gt; 49 (3): 609–10. doi:&lt;a href=&#34;https://doi.org/10.1016/j.cortex.2012.12.016&#34;&gt;10.1016/j.cortex.2012.12.016&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-JonasHowcanpreregistration2016&#34;&gt;
-&lt;p&gt;Jonas, Kai J., and Joseph Cesario. 2016. “How Can Preregistration Contribute to Research in Our Field?” &lt;em&gt;Comprehensive Results in Social Psychology&lt;/em&gt; 1 (1-3): 1–7. doi:&lt;a href=&#34;https://doi.org/10.1080/23743603.2015.1070611&#34;&gt;10.1080/23743603.2015.1070611&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;ref-KingRegisteredReportsStudent2016&#34;&gt;
-&lt;p&gt;King, Maedbh, Fabian Dablander, Lea Jakob, Maria Agan, Felicitas Huber, Jonas Haslbeck, and Katharina Brecht. 2016. “Registered Reports for Student Research.” &lt;em&gt;Journal of European Psychology Students&lt;/em&gt; 7 (1). doi:&lt;a href=&#34;https://doi.org/10.5334/jeps.401&#34;&gt;10.5334/jeps.401&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
