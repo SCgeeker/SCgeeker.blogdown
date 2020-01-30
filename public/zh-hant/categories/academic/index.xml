@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>academic | 陳紹慶的個人網站</title>
+    <link>/zh-hant/categories/academic/</link>
+      <atom:link href="/zh-hant/categories/academic/index.xml" rel="self" type="application/rss+xml" />
+    <description>academic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Sat, 20 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>academic</title>
+      <link>/zh-hant/categories/academic/</link>
+    </image>
+    
+    <item>
+      <title>運用公開預印本實現自我典藏</title>
+      <link>/zh-hant/post/preprint-self-archiving/</link>
+      <pubDate>Sat, 20 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/preprint-self-archiving/</guid>
+      <description>
+
+
+&lt;p&gt;過去三年裡，透過與他人合作還有自已主導的計畫，已經累積五篇已經發表或正在進行的論文，以預印本(Preprint)模式於出版前公開&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;。除了Justify your alpha與心理科學加速器成立倡議，其他三篇都是送期刊評審的註冊報告計畫。除了在英文twitter或國外研討會與國外學者有做為討論材料，在中文網路社群與國內學者的交流場合，幾乎沒有人在意。這一年因上課以及與國外學者交流的經驗，讓我察覺台灣學術圈普遍缺乏對預印本的正確認識，更關鍵的問題是自我典藏(self-archiving)的觀念與操作方式，尚未被學術機構及主管機關重視，也未有資深學者主動提倡。這篇貼文藉由分享個人經驗，自不量力地鼓勵更多先進認識以公開預印本實現自我典藏的方式。&lt;/p&gt;
+&lt;div id=&#34;自我典藏與開放取用&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;自我典藏與開放取用&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.opensocietyfoundations.org/&#34;&gt;開科社會基金會(Open Society Foundations)&lt;/a&gt;於2001跨2002年間在布達佩斯舉行16人小組會議，總結&lt;strong&gt;布達佩斯公開取用倡議(the Budapest Open Access Initiative)&lt;/strong&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;。其中提出兩項影響之後Open Access推廣行動的策略：第一是鼓勵學者自行運用公開的數位資料庫，典藏個人發表於期刊與書籍的論文。第二是學術機構及政府機關應鼓勵並引導開放取用期刊的發展，讓學者至少以合理費用公開發表於期刊的著作。&lt;/p&gt;
+&lt;p&gt;布達佩斯公開取用倡議發表之前，已有知名的預印本平台&lt;a href=&#34;https://arxiv.org/&#34;&gt;arXiv&lt;/a&gt;，有數學及物理等基礎學科的學者，於此平台發佈尚未進行學術評審的著作草稿。社會科學領域的預印本平台在開放科學中心(Center for Open Science)與心理科學促進學會(Society for the Improvement of Psychological Science)合作，以&lt;a href=&#34;https://osf.io/preprints/&#34;&gt;OSF preprints&lt;/a&gt;為基礎，架構&lt;a href=&#34;https://psyarxiv.com/&#34;&gt;PsyArxiv&lt;/a&gt;。我的五篇預印本皆透過PsyArxiv發佈，也是全球心理學者發表預印本的主要平台。&lt;/p&gt;
+&lt;p&gt;由於多數有高影響力的傳統學術期刊由商業出版社經營，為了維持版權收益，高影響力期刊約束學者不得將須付費取得的後印本(post-print)逕行上傳至預印本平台。所以有發佈預印本的學者會將預印本網址置入個人履歷，加上google scholar從2017年起就自動將PsyArxiv資料納入學者著作紀錄，更方便整理個人履歷。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;什麼是預印本&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;什麼是預印本？&lt;/h2&gt;
+&lt;p&gt;與學術出版有關的中文資訊網站，可查到符合布達佩斯公開取用倡議，有關預印本的解釋。以下引述三種來源說法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/%E9%A2%84%E5%8D%B0%E6%9C%AC&#34;&gt;維基百科&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;預印本（Preprint）也稱未定稿本。在學術出版領域，預印本是指尚未在需要同行評審的科學期刊上出版的科學文獻的草稿。
+作者在寫作完成後，可能在出版之前將草稿預先公開讓大家閱讀並提出更改建議，並在稍後提交學術期刊進行出版。學術期刊一般會讓選定的業內人士對投稿的文章做同行評審後才發表，但是某些雜誌機構也會將未經專家評審的未定稿本發表在該雜誌／機構的網站上。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://concert.stpi.narl.org.tw/news/350&#34;&gt;CONCERT 全國學術電子資訊資源共享聯盟&lt;/a&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;學術著作預印本（preprint）是指將尚未經過同儕審評、正式出版之前的初稿儲存並公開在預印本典藏庫（repository）上…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://tul.blog.ntu.edu.tw/archives/18777&#34;&gt;臺大圖書館參考服務部落格&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;預印本（Preprints）可以是學者學術論文的草稿、或是已投稿刊物但仍在審稿階段或已被接受但仍需修稿的稿件，也可以是刊物確定刊出但非正式刊出版面格式的內容…。學者可以選擇與其學科性質相符的預印本資料庫來上傳公開與典藏內容，…&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;相對於上述中文網站，擁有最多台灣學術機構發行的中文學術期刊平台 ─ 華藝線上圖書館，在首頁張貼的預印本定義，是與上述說法相背的過時解釋。以下是節取自首頁的英文說明：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A journal article that has undergone peer-review and has been accepted for publication but not yet formally published.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;公開預印本的作用&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;公開預印本的作用&lt;/h2&gt;
+&lt;p&gt;論文手稿經由預印本平台公開，就能達成所謂的綠色OA。由於不是所有期刊都支持這種發佈方式，發佈前最好先在&lt;a href=&#34;http://www.sherpa.ac.uk/romeo/index.php&#34;&gt;SHERPA/RoMEO&lt;/a&gt;查詢刊登著作的期刊，是否支持學者將預印本或後印本發佈在公開平台。&lt;/p&gt;
+&lt;p&gt;通過近年心理科學界推動的註冊報告&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;，通過任何期刊第一階段評審的計畫手稿，經過預印本平台發佈能提早讓世人得知正在進行的研究計劃。如果這些計劃是多方合作的大型計畫，也可吸引有興趣的研究者加入合作。而且預印本平台保存研究過程各階段的手稿，可讓眾人檢視研究初期至結束的異同，確保著作品質的真實性。&lt;/p&gt;
+&lt;p&gt;OSF preprints預印本平台系列已整合線上評注系統&lt;a href=&#34;https://web.hypothes.is/&#34;&gt;hypothes.is&lt;/a&gt;，平台讀者可透過評注系統，在閱讀的預印本某處留下個人的公開或私密註解。評注功能不但促成發表後同儕評審(post-published peer review)，也能在各種場域運用論文內容進行討論或學習。雖然目前只支授chrome瀏覽器，未來的發展值得期待。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;如何發佈預印本&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;如何發佈預印本&lt;/h2&gt;
+&lt;p&gt;發佈預印本基本步驟如下圖&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;，關鍵在於找到適合發佈的平台。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/SelfArchive.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;對中國大陸的學者來說，2016年起中國科學院建置的&lt;a href=&#34;http://chinaxiv.org/home.htm&#34;&gt;ChinaXiv&lt;/a&gt;正式上線，讓想發佈預印本的學者有了園地。隨後採用相同框架的專業領域預印本平台也陸續上線，像是心理科學的&lt;a href=&#34;http://psych.chinaxiv.org/server/index.htm&#34;&gt;PsyChinaXiv&lt;/a&gt;。ChinaXiv和OSF Preprints不同的是，前者由國家最高級研究機構建置，後者由非盈利組織 經營。還有OSF Preprints的源始碼完整公開於github，提供有需要的人士，架構服務專業領域或區域性學術社群的預印本平台。至於ChinaXiv有無公開源始碼尚需進一步查證。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;在台灣推動自我典藏的困難與對策&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;在台灣推動自我典藏的困難與對策&lt;/h2&gt;
+&lt;p&gt;對照中國大陸積極建置符合國內學術發展需要的預印本平台，並鼓勵學者使用，就能看出在台灣推動自我典藏的兩層困境。首先是各領域學者缺乏在投稿前發佈預印本的習慣意識，除非是向提供開放審查(Open peer review)的期刊投稿，例如&lt;a href=&#34;https://peerj.com/&#34;&gt;PeerJ&lt;/a&gt;，才會使用期刊提供的預印本平台發佈。另外，學術主管機關及各大學機構沒有認為推動開放取用有其必要性，無法形成有利的環境條件。&lt;/p&gt;
+&lt;p&gt;培養台灣各領域學者養成自主發佈預印本的習慣，我認為可以有兩個對策。其一是運用OSF Preprints架構，建構提供台灣各領域學者發佈中文或英文論文的預印本平台。這方面已有法國的&lt;a href=&#34;https://frenxiv.org/&#34;&gt;FrenXiv&lt;/a&gt;、阿拉伯世界的&lt;a href=&#34;https://arabixiv.org/&#34;&gt;Arabixv&lt;/a&gt;、印尼的&lt;a href=&#34;https://osf.io/preprints/inarxiv&#34;&gt;INA-Rxiv&lt;/a&gt;、與印度的&lt;a href=&#34;https://indiarxiv.org/&#34;&gt;indiaRxiv&lt;/a&gt;。這些平台主要依賴區域內圖書資訊相關機構定期補助經費，即可提供該國或該地區免費發佈預印本的服務。&lt;/p&gt;
+&lt;p&gt;學術主管機關及各機構或因現在的人員續效評鑑制度，缺乏鼓勵機構內學者的誘因。其實稍微調整評鑑方向，配合預印本平台的基礎建設，不只可以提昇意願，還能提昇台灣整體學術產出的誠信度。我建議與其要求學者每年必須生產幾篇論文，不如鼓勵學者持續將有出版價值著作手稿發佈到預印本平台，透過OSF Preprints發展中的同儕評注機制，定期檢視著作收到同儕建議及著作內容更新狀況，做為評估學者研究續效的資料。對於運作評鑑制度的機構單位及接受評鑑的學者，都可以省下冗長又無法評斷指標優劣的文書作業，也可以提供第三方資訊產業人員發揮的機會。能否創造多贏格局，希望這篇網誌能激發一些想法與行動。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;五篇論文的公開網址 &lt;a href=&#34;https://psyarxiv.com/zeux9/&#34; class=&#34;uri&#34;&gt;https://psyarxiv.com/zeux9/&lt;/a&gt; &lt;a href=&#34;https://psyarxiv.com/9s3y6/&#34; class=&#34;uri&#34;&gt;https://psyarxiv.com/9s3y6/&lt;/a&gt; &lt;a href=&#34;https://psyarxiv.com/n26dy/&#34; class=&#34;uri&#34;&gt;https://psyarxiv.com/n26dy/&lt;/a&gt; &lt;a href=&#34;https://psyarxiv.com/t2pjv/&#34; class=&#34;uri&#34;&gt;https://psyarxiv.com/t2pjv/&lt;/a&gt; &lt;a href=&#34;https://psyarxiv.com/a3vwc/&#34; class=&#34;uri&#34;&gt;https://psyarxiv.com/a3vwc/&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;全文下載網址 &lt;a href=&#34;http://dx.doi.org/10.4403/jlis.it-8629&#34; class=&#34;uri&#34;&gt;http://dx.doi.org/10.4403/jlis.it-8629&lt;/a&gt;&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;註冊報告的介紹，詳見&lt;a href=&#34;https://scchen.com/zh/post/text_2017002/&#34;&gt;個人網誌&lt;/a&gt;&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;圖片來源~ enago academy: &lt;a href=&#34;https://www.enago.com/academy/a-guide-to-self-archiving-for-young-research-scientists/&#34;&gt;A Guide to Self-Archiving for Young Research Scientists&lt;/a&gt;&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>我們與「顯著」的距離 ~ p值是判斷科學研究成敗的過時指標嗎？</title>
+      <link>/zh-hant/post/comment-retired-p/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/comment-retired-p/</guid>
+      <description>
+
+
+&lt;p&gt;統計檢定是不是顯著，或者p值是不是小到可以接受的水準，是多數自然科學與社會科學的學術工作者們，分析資料判斷能否更新知識的工具。也是開發機器學習模型的數據分析人員，用來判斷收集到的資料能不能支持想驗證的假設之常見指標。自從重要奠基者Roland Fisher，Jerzy Neyman，與Egon Pearson分別發表p值以及推論犯錯率的重要概念與數學推導&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;，二次世界大戰後許多科學研究者，習慣用少於.05的p值推論獲得或發現預期的結果。統計推論的使用策略發展到二十一世紀的前十年，每個運用統計的科學領域已經累積不少批判與反省統計推論與p值的意見。2005年統計學者John Ioannidis發表批判生物醫學領域充斥偽陽性結果的經典論文&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;，到2010年起心理學界密集爆發學術不端事件，以及高影響力期刊接受無法再現的爭議研究事件&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;，讓科學家誤用p值的問題浮現。除了各領域學者集結推出各種改良方案與行動&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;，2016年美國統計學會(ASA)理事會發表聲明&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;，提出六點建議給需要運用統計推論做出結論的科學家們，如何正確使用與解讀p值。&lt;/p&gt;
+&lt;p&gt;ASA的建議公開的時候，台灣也有不少學者關注後續的影響。美國德州大學奧斯汀分校的林澤民教授於個人部落格分享當時的在台演講「p值的陷阱」&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;，獲得華文知識圈廣大迴響。到了2019年三月，2016年代表ASA撰寫聲明的Ronald Wasserstein，將2016年參與ASA主辦的主題研討會學者發表的評論與建議，一共43篇論文集結於ASA專刊&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;。參與其中兩篇專文的三位學者Valentin Amrhein，Sander Greenland，與Blake McShane，於專刊發表同日，在自然期刊發表主張，響應ASA的專刊主題&lt;a href=&#34;#fn10&#34; class=&#34;footnote-ref&#34; id=&#34;fnref10&#34;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;。三位作者提到完成這份主張的初稿時，曾將預印本公佈於網路並收集連署，一星期內就獲得來自800多位統計學及自然與社會科學領域的學者響應。因此自然期刊公上網後，也吸引全球各地關心統計推論誤用問題人士的注目。&lt;/p&gt;
+&lt;p&gt;最初看到Amrhein等人的主張，我就留意過去幾年投入提昇心理學研究品質的學者一面倒地批判他們的建議做法：放棄p值的判斷閾限，提倡運用信賴區間評估實際結果與預期結果的相容性。主要的批判意見是這些學者提出的建議都是指點科學家們要做什麼，或者不要做什麼，而非討論為什麼該這麼做或不該這麼做。我看了幾天各方意見交流，也有自己的看法時，就收到林澤民教授的私訊，詢問有沒有興趣寫篇科普文章，向有興趣的讀者說明這幾年各界批評統計推論濫用的聲浪，帶來什麼訊息。當下我決定做個非正式調查，了解一下林教授「p值的陷阱」發佈三年後，華文圈的統計使用者正確了解p值人們有多少，還有探討誤解存在的原因，非正式的調查結果促成我寫作這篇文章的主要動機。2019年4月1日，我在個人臉書發佈下圖的動態訊息，建議第一次看到這則訊息的朋友，請自己先想想看，以你現在所知選擇你認為正確的答案：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/FB_question.png&#34; title=&#34;寫作前的調查問題&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;p值是什麼&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;p值是什麼？&lt;/h2&gt;
+&lt;p&gt;回首林教授「p值的陷阱」，林教授的解釋如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;p值是什麼？我想在座有很多專家比我都懂，但是也有一些同學在場，所以還是稍微解釋一下。p值是由Ronald Fisher在1920年代發展出來的，已將近一百年。p值檢定最開始，是檢定在一個model之下，實驗出來的data跟model到底吻合不吻合。這個被檢定的model，我們把它叫做虛無假設（null hypothesis），一般情況下，這個被檢定的model，是假設實驗並無系統性效應的，即效應是零，或是隨機狀態。在這個虛無假設之下，得到一個統計值，然後要算獲得這麼大(或這麼小)的統計值的機率有多少，這個機率就是p值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ASA的2016年聲明中，有關p值的解釋也是短短的一句話：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Informally, a p-value is the probability under a specified statistical model that a statistical summary of the data (e.g., the sample mean difference between two compared groups) would be equal to or more extreme than its observed value.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看過以上解釋，有仔細思考的讀者應該會把想選擇的答案縮小到3與4兩個選項。但是不太熟悉機率的讀者應該會困惑，p值是個什麼樣的機率？林教授說的「在這個虛無假設之下，得到一個統計值，然後要算獲得這麼大(或這麼小)的統計值的機率有多少」，以及ASA的解釋“the probability under a specified statistical model that a statistical summary of the data…”。兩種解釋都說明p值是一種&lt;strong&gt;條件機率&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;借用Deborah Mayo寫的書“Statistical inference as severe testing: how to get beyond the statistics wars”&lt;a href=&#34;#fn11&#34; class=&#34;footnote-ref&#34; id=&#34;fnref11&#34;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;所記的公式，告訴我們p值是這樣的條件機率：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Pr (X \geq x_0 \mid H_0 ) = p(x_0)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;公式裡的&lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;代表虛無假設的統計模型(statistical model)，&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;代表實際資料的隨機變數，&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;代表虛無假設統計模型的隨機變數，一般來說&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;與&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;分別指實際資料的平均值與統計模型估計的期望值&lt;a href=&#34;#fn12&#34; class=&#34;footnote-ref&#34; id=&#34;fnref12&#34;&gt;&lt;sup&gt;12&lt;/sup&gt;&lt;/a&gt;。&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;與&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;之間的差異越小，表示實際資料越符合虛無假設統計模型，得到的p值會越大，反之實際資料越不符合虛無假設統計模型，p值會越小。實際資料符合虛無假設統計模型的機率越小，表示&lt;strong&gt;實際資料有可能符合其他統計模型&lt;/strong&gt;。虛無假設統計模型通常代表沒有效果的預期結果，所以科學家通常希望得到的p值越小越好。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;為何許多人會誤解p值&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;為何許多人會誤解p值&lt;/h2&gt;
+&lt;p&gt;這次非正式調查列出的選項，最正確的是4，選項5要加上前提「具備高考驗力的條件時」才是正確。但是我發現許多只選一項的網友選擇3，部分網友表示3,4都有可能，這些網友身份從老師到學生都有，公佈答案時沒有人只選擇4。選項3所指是另一種條件機率：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Pr( H_0 \mid X \geq x_0) = p(H_0)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;這種條件機率的白話解釋是「當得到一個統計值，虛無假設統計模型存在的機率」，這種條件機率又被稱為&lt;strong&gt;事後機率&lt;/strong&gt;(posterior probability)，了解&lt;strong&gt;貝氏定理&lt;/strong&gt;可知事後機率通常無法直接估計，但可運用已知的&lt;strong&gt;事前機率&lt;/strong&gt;(prior probability)與&lt;strong&gt;似然性&lt;/strong&gt;(likelihood)逼近之。p值就是&lt;strong&gt;似然性&lt;/strong&gt;的一種估計方法。&lt;/p&gt;
+&lt;p&gt;中英文文法與數學公式文法有許多相反的地方，其中之一就是像林教授及ASA的白話解釋用「之下」與“under”描述虛無假設前提。不熟悉條件機率的讀者很容易以為&lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;是資料抽樣分佈的期望值，更別說對機率一知半解，卻常常要分析資料的科學家們。科學家以錯誤的理解使用統計推論，長年累月延續加上世代傳承，當然會產生許多不良研究結果，以及有損學術倫理的研究操作習慣。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;過嚴的判斷門檻&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;過嚴的判斷門檻&lt;/h2&gt;
+&lt;p&gt;除了許多人會誤解p值的真面目，更多被批判的誤用是將p值用於二分判斷，也就是以統計顯著與否推測有沒有發現預期的結果。前述的公式解說告訴我們p值是顯示實際資料與預期的統計模型之間的差異程度，是高是低應該視研究問題的性質而定。學過統計的朋友都聽過的.05就是一種最多科學領域依賴的判斷門檻。&lt;/p&gt;
+&lt;p&gt;然而設定判斷門檻這種作為，其實已經有違科學研究的共同宗旨：揭露不確定現象背後的規律。當一項研究主題僅憑幾次結果的p值未達門檻，就當是沒有價值的研究主題，有可能造成低估的錯誤。Amrhein等三位學者在自然期刊評論特別批判這種狀況，他們的舉例說明這個主題的所有結果若是都顯示一致的平均值，只以幾個p值沒有達到門檻，就決定放棄研究這個主題，長遠影響是有潛力的科學題目將無法開花結果。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;過鬆的判斷門檻&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;過鬆的判斷門檻&lt;/h2&gt;
+&lt;p&gt;相對於被低估的研究結果，另一個被批判的誤用是高估研究結果的真實性。這種誤用通常出現於p值僅剛好通過門檻，而且受人注目的原創研究。例如以「權力姿勢效應」而聲名大噪的社會心理學者Amy Cuddy，研究發表後由她本人與追隨者宣傳的其中一種效應，擺出擴張型姿勢會提高冒險動機的測量指標，在2010年發表的報告裡，實際的p值是0.049&lt;a href=&#34;#fn13&#34; class=&#34;footnote-ref&#34; id=&#34;fnref13&#34;&gt;&lt;sup&gt;13&lt;/sup&gt;&lt;/a&gt;。由於當時期刊並不要求寫出詳細的p值，報告只寫p &amp;lt; .05。若非之後其他學者的批評與無法再現的實驗結果，Amy Cuddy到現在可能還是將這項指標列為理論要素。&lt;/p&gt;
+&lt;p&gt;過去許多心理學研究以剛好通過門檻的研究結果當成支持理論的證據，累積許多難以再現的研究，對於歐美心理學界來說，再現危機是2010年代心理學的時代特徵。為了扭轉因高估p值所帶來的惡果，有學者提出偵測異常p值報告的方法&lt;a href=&#34;#fn14&#34; class=&#34;footnote-ref&#34; id=&#34;fnref14&#34;&gt;&lt;sup&gt;14&lt;/sup&gt;&lt;/a&gt;，也有許多領域的學者串聯倡議提高判斷門檻&lt;a href=&#34;#fn15&#34; class=&#34;footnote-ref&#34; id=&#34;fnref15&#34;&gt;&lt;sup&gt;15&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;如何表達不確定性&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;如何表達不確定性？&lt;/h2&gt;
+&lt;p&gt;相對於提高判斷門檻的倡議，還有兩種相反的意見與措施，提供科學家改善使用統計的做法。第一種是由專業學術期刊主動出手，要求投稿學者不得在報告裡使用p值或統計顯著與否呈現研究結果，例如社會心理學的Basic and Applied Social Psychology、政治學的Political Analysis。第二種是Amrhein等三位學者在自然期刊評論主張，以改名為「可容性區間」(compatibility interval)&lt;a href=&#34;#fn16&#34; class=&#34;footnote-ref&#34; id=&#34;fnref16&#34;&gt;&lt;sup&gt;16&lt;/sup&gt;&lt;/a&gt;的信賴區間取代p值及顯著性等二分判斷相關詞彙。參與這次ASA專刊的許多學者也是這類主張提倡者，例如心理學界的Calin-Jageman 與 Cumming&lt;a href=&#34;#fn17&#34; class=&#34;footnote-ref&#34; id=&#34;fnref17&#34;&gt;&lt;sup&gt;17&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;至此提到的三種做法，提倡者的目的都是減少科學家過度肯定研究結果，降低無法再現的劣質研究充斥科學文獻的比例。但是用信賴區間取代p值的判斷門檻是好方法嗎？&lt;/p&gt;
+&lt;p&gt;在此借用密西根大學資訊科學系教授Matthew Kay公開演講簡報資料解說信賴區間是什麼&lt;a href=&#34;#fn18&#34; class=&#34;footnote-ref&#34; id=&#34;fnref18&#34;&gt;&lt;sup&gt;18&lt;/sup&gt;&lt;/a&gt;。這一段之後的示意圖是簡報圖片的重製，呈現事前機率(Prior)、似然性(Likelihood)、以及事後機率(Posterior)三種機率函數在資料空間的存在。其中似然性的機率函數相當於假設檢定之中的對立假設統計模型(H1)，事前機率的期望值等於虛無假設統計模型的預測。兩個統計模型差異越大，得到的p值越小，信賴區間(confidence interval，圖中橘色線條)也越不可能覆蓋虛無假設的期望值。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Visualize_Bayes.png&#34; title=&#34;圖解統計推論必知的三種機率函數&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖也呈現事後機率函數以及&lt;strong&gt;確信區間&lt;/strong&gt;(credibility interval，圖中紫色線條)，可見兩種區間是不同的估計結果。稍早提到事後機率是根據實際資料，統計模型確實存在的條件機率，所以確信區間比信賴區間更適合判斷實際資料相容理論預測的程度。然而許多情況缺乏事前機率的資訊，研究人員只能估計信賴區間。如果讀者想要更了解三種機率函數與兩種區間的差別，可以點擊此段附註提供的連結&lt;a href=&#34;#fn19&#34; class=&#34;footnote-ref&#34; id=&#34;fnref19&#34;&gt;&lt;sup&gt;19&lt;/sup&gt;&lt;/a&gt;，運用我製作的中文版shiny互動網頁探索。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;步步為營正確使用統計方法&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;步步為營正確使用統計方法&lt;/h2&gt;
+&lt;p&gt;如果讀者讀完這篇文章，準備要做統計分析寫報告，開始擔心自己是不是用錯誤的觀念與方法操作統計工具，那麼這篇文章就起了作用。這裡談到兩種有損科學研究品質的誤用狀況，以及三種改進的主張：提高判斷門檻；放棄p值；用信賴區間取代判斷門檻。就像統計推論的誤用者以過度簡化的二分門檻對待有連續性資訊的p值一樣，這些主張是以過度簡化的思維，以及缺乏考慮各領域科學研究複雜度所得到的結論。這些主張的提倡者都過度相信只要更換判斷標準或方法，科學家與統計使用者就不會犯相同的錯誤。&lt;/p&gt;
+&lt;p&gt;我在2017年曾參與荷蘭心理學者Daniel Lakens發起的集體寫作，回應提高判斷門檻的主張，並提出改進科學家設定統計方法的構想&lt;a href=&#34;#fn20&#34; class=&#34;footnote-ref&#34; id=&#34;fnref20&#34;&gt;&lt;sup&gt;20&lt;/sup&gt;&lt;/a&gt;。參與寫作的Stephen Benning在評論出版後，於個人部落格詳述實踐我們主張的具體作法&lt;a href=&#34;#fn21&#34; class=&#34;footnote-ref&#34; id=&#34;fnref21&#34;&gt;&lt;sup&gt;21&lt;/sup&gt;&lt;/a&gt;。作法是在研究開始之前，做好六道準備：(1)想清楚這次研究需不需要判斷門檻；(2)確定研究目標的性質(Benning列出四種範例)；(3)找出研究目標的最小效果量(minimal/smallest effect size of interest)；(4)設定最適判斷門檻；(5)設定最適考驗力；(6)如果有多重比較，慎選判斷策略。&lt;/p&gt;
+&lt;p&gt;六道準備步驟對於許多從事研究的讀者來說，最難的應該是找出最小效果量。關於此點，Lakens與他的博士生正在開發工具與教學材料，提供各領域的科學家運用&lt;a href=&#34;#fn22&#34; class=&#34;footnote-ref&#34; id=&#34;fnref22&#34;&gt;&lt;sup&gt;22&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn23&#34; class=&#34;footnote-ref&#34; id=&#34;fnref23&#34;&gt;&lt;sup&gt;23&lt;/sup&gt;&lt;/a&gt;。我們相信以妥善的統計規劃完成的研究，不論研究報告有沒有出現p值，有沒有表達顯著與否，都能讓讀者掌握研究結論的確定與不確定訊息。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;推薦閱讀&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;推薦閱讀&lt;/h2&gt;
+&lt;p&gt;Daniel Laken&lt;a href=&#34;#fn24&#34; class=&#34;footnote-ref&#34; id=&#34;fnref24&#34;&gt;&lt;sup&gt;24&lt;/sup&gt;&lt;/a&gt;提供如何改良統計與研究方法教育的建議，回應ASA專刊的主軸，有興趣知道如何改良統計教育的朋友可找來一讀。Deborah Mayo耕耘統計哲學研究數十年，近期著作&lt;a href=&#34;#fn25&#34; class=&#34;footnote-ref&#34; id=&#34;fnref25&#34;&gt;&lt;sup&gt;25&lt;/sup&gt;&lt;/a&gt;爬梳現代科學家誤用統計推論的歷史脈絡，ASA專刊主編Ronald Wasserstein也在序文首段推薦，想深入探討誤解與誤用問題由來的讀者，可以找來詳讀。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Fisher, R. A. (1934). Statistical Methods for Research Workers. Edinburgh: Oliver and Boyd. (First published in 1925.)&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Neyman, J., &amp;amp; Pearson, E. S. (1933). On the Problem of the Most Efficient Tests of Statistical Hypotheses. Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character, 231, 289–337. Retrieved from JSTOR.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Med, 2(8), e124. &lt;a href=&#34;https://doi.org/10.1371/journal.pmed.0020124&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1371/journal.pmed.0020124&lt;/a&gt;&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Chambers, C. (2017). The Seven Deadly Sins of Psychology: A Manifesto for Reforming the Culture of Scientific Practice. Princeton, NJ: Princeton University Press.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;Simmons, J. P., &amp;amp; Simonsohn, U. (2017). Power Posing: P-Curving the Evidence. Psychological Science, 28(5), 687–693. doi: 10.1177/0956797616658563&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;Benjamin, D. J., Berger, J. O., Johannesson, M., Nosek, B. A., Wagenmakers, E.-J., Berk, R., … Johnson, V. E. (2017). Redefine statistical significance. Nature Human Behaviour, 1. doi: 10.1038/s41562-017-0189-z&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;Wasserstein, R. L., &amp;amp; Lazar, N. A. (2016). The ASA’s Statement on p-Values: Context, Process, and Purpose. The American Statistician, 70(2), 129–133. &lt;a href=&#34;https://doi.org/10.1080/00031305.2016.1154108&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2016.1154108&lt;/a&gt;&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;&lt;a href=&#34;http://blog.udn.com/nilnimest/84404190&#34; class=&#34;uri&#34;&gt;http://blog.udn.com/nilnimest/84404190&lt;/a&gt;&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;Wasserstein, R. L., Schirm, A. L., &amp;amp; Lazar, N. A. (2019). Moving to a World Beyond “p &amp;lt; 0.05.” The American Statistician, 73(sup1), 1–19. &lt;a href=&#34;https://doi.org/10.1080/00031305.2019.1583913&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2019.1583913&lt;/a&gt;&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;Amrhein, V., Greenland, S., &amp;amp; McShane, B. (2019). Scientists rise up against statistical significance. Nature, 567(7748), 305–307. &lt;a href=&#34;https://doi.org/10.1038/d41586-019-00857-9&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1038/d41586-019-00857-9&lt;/a&gt;&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn11&#34;&gt;&lt;p&gt;Mayo, D. G. (2018). Statistical inference as severe testing: how to get beyond the statistics wars. Retrieved from &lt;a href=&#34;https://doi.org/10.1017/9781107286184&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1017/9781107286184&lt;/a&gt;&lt;a href=&#34;#fnref11&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn12&#34;&gt;&lt;p&gt;本文的p值與事後機率之條件機率公式為方便解說的簡化版，Fisher所提出的完整公式請Mayo (2018)之單元3.2。&lt;a href=&#34;#fnref12&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn13&#34;&gt;&lt;p&gt;Carney, D. R., Cuddy, A. J. C., &amp;amp; Yap, A. J. (2010). Power Posing: Brief Nonverbal Displays Affect Neuroendocrine Levels and Risk Tolerance. Psychological Science, 21(10), 1363–1368. doi: 10.1177/0956797610383437&lt;a href=&#34;#fnref13&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn14&#34;&gt;&lt;p&gt;Simmons, J. P., &amp;amp; Simonsohn, U. (2017). Power Posing: P-Curving the Evidence. Psychological Science, 28(5), 687–693. doi: 10.1177/0956797616658563&lt;a href=&#34;#fnref14&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn15&#34;&gt;&lt;p&gt;Benjamin, D. J., Berger, J. O., Johannesson, M., Nosek, B. A., Wagenmakers, E.-J., Berk, R., … Johnson, V. E. (2017). Redefine statistical significance. Nature Human Behaviour, 1. doi: 10.1038/s41562-017-0189-z&lt;a href=&#34;#fnref15&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn16&#34;&gt;&lt;p&gt;「可容性區間」的中文翻譯，感謝國立中正大學哲學系陳瑞麟教授建議。&lt;a href=&#34;#fnref16&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn17&#34;&gt;&lt;p&gt;Calin-Jageman, R. J., &amp;amp; Cumming, G. (2019). The New Statistics for Better Science: Ask How Much, How Uncertain, and What Else Is Known. The American Statistician, 73(sup1), 271–280. &lt;a href=&#34;https://doi.org/10.1080/00031305.2018.1518266&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2018.1518266&lt;/a&gt;&lt;a href=&#34;#fnref17&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn18&#34;&gt;&lt;p&gt;&lt;a href=&#34;http://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf&#34; class=&#34;uri&#34;&gt;http://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf&lt;/a&gt;&lt;a href=&#34;#fnref18&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn19&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://scchen.shinyapps.io/shiny-bayes-chi/&#34; class=&#34;uri&#34;&gt;https://scchen.shinyapps.io/shiny-bayes-chi/&lt;/a&gt;&lt;a href=&#34;#fnref19&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn20&#34;&gt;&lt;p&gt;Lakens, D., Adolfi, F. G., Albers, C. J., Anvari, F., Apps, M. A. J., Argamon, S. E., … Zwaan, R. A. (2018). Justify your alpha. Nature Human Behaviour, 2(3), 168–171. &lt;a href=&#34;https://doi.org/10.1038/s41562-018-0311-x&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1038/s41562-018-0311-x&lt;/a&gt;&lt;a href=&#34;#fnref20&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn21&#34;&gt;&lt;p&gt;Benning, S. D. (2018, March 1). How to justify your alpha: step by step – Stephen D. Benning. Retrieved March 1, 2018, from &lt;a href=&#34;https://sbenning.faculty.unlv.edu/2018/03/01/how-to-justify-your-alpha-step-by-step/&#34; class=&#34;uri&#34;&gt;https://sbenning.faculty.unlv.edu/2018/03/01/how-to-justify-your-alpha-step-by-step/&lt;/a&gt;&lt;a href=&#34;#fnref21&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn22&#34;&gt;&lt;p&gt;Lakens, D., Scheel, A. M., &amp;amp; Isager, P. M. (2018). Equivalence Testing for Psychological Research: A Tutorial. Advances in Methods and Practices in Psychological Science, 1(2), 259–269. &lt;a href=&#34;https://doi.org/10.1177/2515245918770963&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1177/2515245918770963&lt;/a&gt;&lt;a href=&#34;#fnref22&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn23&#34;&gt;&lt;p&gt;Anvari, F., &amp;amp; Lakens, D. (n.d.). Using Anchor-Based Methods to Determine the Smallest Effect Size of Interest. &lt;a href=&#34;https://doi.org/10.31234/osf.io/syp5a&#34; class=&#34;uri&#34;&gt;https://doi.org/10.31234/osf.io/syp5a&lt;/a&gt;&lt;a href=&#34;#fnref23&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn24&#34;&gt;&lt;p&gt;Lakens, D. (2019). The practical alternative to the p-value is the correctly used p-value [Preprint]. doi: 10.31234/osf.io/shm8v&lt;a href=&#34;#fnref24&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn25&#34;&gt;&lt;p&gt;Mayo, D. G. (2018). Statistical inference as severe testing: how to get beyond the statistics wars. Retrieved from &lt;a href=&#34;https://doi.org/10.1017/9781107286184&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1017/9781107286184&lt;/a&gt;&lt;a href=&#34;#fnref25&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>物件方向效應專案研究邁入第二階段</title>
+      <link>/zh-hant/post/obeject-orientation-project-enter-stage2/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/obeject-orientation-project-enter-stage2/</guid>
+      <description>
+
+
+&lt;p&gt;去年底與&lt;a href=&#34;https://psysciacc.org/&#34;&gt;心理科學加速器(Psychological Science Accelerator)&lt;/a&gt;合作的註冊研究計畫“Investigating Object Orientation Effects Across 14 Languages”&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;，投稿Pscynomic Bulletin &amp;amp; Review之後，經過三個月的評審，收到不必修改直接取得原則性接受(in principle acceptance)的回覆信函。相當感謝共同參與計畫書編修的各國研究者，希望這個研究案能為資源有限，但是研究題目具備普世意義的心理科學研究者，奠定長期耕耘基礎的範例。&lt;/p&gt;
+&lt;p&gt;本來獲得接受的時候就應該要寫一篇網誌向中文世界介紹，但二月初有出國開會的行程，回來又忙著準備第二階段的工作以及新學期的課程，一直耽擱著。直到前天參加由在德國進行博士後研究的&lt;a href=&#34;http://www.huchuanpeng.com/&#34;&gt;胡傳鵬博士&lt;/a&gt;主持的線上讀書會，了解需要寫一份中文簡介向中文世界的朋友介紹。讓有心學習開放科學操作(Open Science Practices)的朋友，能透過個人或團體的方式參與這項專案，吸收對自己有用的經驗。&lt;/p&gt;
+&lt;p&gt;首先來介給一下這個專案在做什麼，以下是我去年底申請&lt;strong&gt;科技部專題研究計畫&lt;/strong&gt;的摘要：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;語言理解的心智模擬理論主張，閱讀者能理解的語言訊息自動轉換為實在物件的心智表徵。根據句圖辨識作業研究所累積的證據，物件圖像與句子描述物件形態、顏色、尺寸及方向等特徵相符者，都能造成比不相符者的辨識反應優勢。然而，物件方向造成的反應優勢，存在不同語言之間的不一致發現。物件方向反應優勢的效果量相對於其他特徵微弱(Cohen’s d = 1)，而且某些語言發現無此效應，例如荷語。透過心理科學加速器的合作平台，目前已徵得全球各地40個實驗室的參與意願，收集至少14種語言的實驗資料。本計畫首要目標是確認物件方向優勢效應是跨語言的心理效應；其次同時收集關鍵物件項目的心像旋轉作業資料，探討各種母語人士的心像旋轉能力，與物件方向表徵認知的關聯性。兩套作業的資料將提供未來相關研究，能根據各種語言及參與者認知能力個別差異等條件，事前規劃穩健的效果量及參與者人數評估。&lt;br /&gt;
+此計畫進行期間，同時舉行研究結果預測市場，邀請世界各地相關專業研究者，預測各種語言的實驗結果。已公開的數項大型再現研究專案，都呈現專家預測與實際吉果之間的高度一致性。本計畫將是首次針對特定心理效應，開放預測市場的專案。總計群眾預測及調查資料，相關資料可用來探討專業研究者如何根據研究經驗與可得資訊，預期特定語言的物件方向優勢效應。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;摘要的頭一句&lt;strong&gt;語言理解的心智模擬&lt;/strong&gt;，提示這項研究屬於&lt;strong&gt;體現認知&lt;/strong&gt;或&lt;strong&gt;具身認知&lt;/strong&gt;的一個議題。其實我在向心理科學加速器提案時，有一群不同國家的認知心理學者，正在重現這個領域最知名的效應：動作-句子相符效應(Action-sentence Compatibility Effect)&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;。就在我們的計畫正份投稿後不久，計畫主持人&lt;a href=&#34;https://www.cardiff.ac.uk/people/view/1156534-morey-richard&#34;&gt;Richard Morey&lt;/a&gt;就在Psyconomic SOciety年度會議&lt;a href=&#34;https://twitter.com/whlevine/status/1063445446356594688&#34;&gt;公佈研究結果&lt;/a&gt;，讓人失望也不意外：沒有一個實驗室的再現結果出現顯著效應。這指出以動作-句子相符效應建立的&lt;strong&gt;體現認知&lt;/strong&gt;知識體系，必須全盤檢討相關理論的證據品質。心理科學加速器專案探討的物件方向效應，則是這個體系另一個較知名但相對經得起考驗的研究題目。&lt;/p&gt;
+&lt;p&gt;物件方向效應將與另一個同時被接受的社會心理學研究案“Gendered Social Category Representations”&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;，同時收集資料。有意願協助收集資料的朋友，將透過所屬機構的研究空間，招募當地的參與者進行實驗。因為原始研究是英文，非英語系國家的實驗室需要先將實驗指示與刺激文字翻譯為當地語言，心理科學加速器已經制定&lt;a href=&#34;https://psysciacc.org/translation-process/&#34;&gt;翻譯流程&lt;/a&gt;，確保各國實驗室能以當地參與者最熟悉的材料進行實驗。物件方向效應目前只有英文與荷文的研究文獻，但是兩種語言的結果完全相反：英文實驗有一致但微弱的效應；荷文實驗一致沒有物件方向效應。如果有更多語言且來自不同實驗室的結果，就能探討可以發現顯著物件方向效應的語言條件。這也是我們非常歡迎各國研究者加入的原因，無論最後結果如何，有興趣的研究者都能以這項專案為基礎，持續探討物件方向效應及相關主題。&lt;/p&gt;
+&lt;p&gt;除了進行實驗，這項專案也會做為相關基礎工程的資源，目前主要有兩項專案。其中之一是由心理科學加速器的協同監督、MIT博士後學者Melissa Kline主持的心理學資料標準(Psych Data Standard project)：建立任何行為實驗與測驗都能適用的資料整理標準。日前我已貢獻物件方向效應的腳本與資料編碼，做為專案的&lt;a href=&#34;https://github.com/psych-ds/example-datasets&#34;&gt;範例樣本&lt;/a&gt;。另一項是我正在規劃的&lt;a href=&#34;https://docs.google.com/document/d/1ueJM-HQ4cbTSsr2Y8BJcyO_TLxE8Pk1nK36WhFHnD2s/edit&#34;&gt;預測市場計畫&lt;/a&gt;，邀請未參與專案，但關心研究結果的各國研究者，一起預測各種語言的實驗結果。近幾年有開放科學中心參與的大型再現研究專案，都有於研究開始前進行預測市場。預測結果顯示專家們對實驗結果會不會顯著有一定準確度，但是效果量的預測有很大的誤差。由於物件方向效應有充份英文及荷文的效果量資訊，不同語言的學者也許能據此預測所知語言的結果，同時彙集更新理論的意見資訊。預測市場計畫正在尋找合適的執行平台，歡迎有經驗且想嘗試的研究者與我們洽詢。&lt;/p&gt;
+&lt;p&gt;最後，想參與但還未正式登記為心理科學加速器會員的朋友，只要在&lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSc_x9UNOjUkaKFJZjOXdaQ9OsTUtUliwZFZRmoNSr9zh78Ldg/viewform&#34;&gt;線上登記表&lt;/a&gt;留下可聯絡的電子郵件，就會收到如何登記以及加入正在進行的專案資訊。己經登記為會員的朋友，只要告訴我你們的實驗室ID與參與者母語，我就會在專案登記表登錄資訊，未來最後報告也能共同列名作者。如果你還不是獨立研究團隊的主持人，是研究生或博士後研究，這個專案需要人手協助整理與分析各國實驗室上傳的翻譯與實驗資料，既能貢獻也能增加開放科學操作經驗。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;計畫書預印本公開頁 - &lt;a href=&#34;https://psyarxiv.com/t2pjv/&#34; class=&#34;uri&#34;&gt;https://psyarxiv.com/t2pjv/&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;再現計畫預先註冊 - &lt;a href=&#34;https://osf.io/edv2g/&#34; class=&#34;uri&#34;&gt;https://osf.io/edv2g/&lt;/a&gt;&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;PSA的Gendered Social Category Representations介紹：&lt;a href=&#34;https://psysciacc.org/2017/12/05/accepted-for-2018-gendered-social-category-representations/&#34; class=&#34;uri&#34;&gt;https://psysciacc.org/2017/12/05/accepted-for-2018-gendered-social-category-representations/&lt;/a&gt;&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學研究必用神器4 ~ 動態文件寫作入門</title>
+      <link>/zh-hant/post/dynamic-writing/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/dynamic-writing/</guid>
+      <description>
+
+
+&lt;p&gt;這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。&lt;/p&gt;
+&lt;p&gt;多數人習慣使用的文書處理軟體，像是WORD與google doc，集合文字編輯與排版。寫作正式文件時，需要同時顧慮編輯與排版的契合，雖然之前介紹的&lt;a href=&#34;http://scchen.com/zh/post/zotero/&#34;&gt;zotero&lt;/a&gt;已經減輕編輯文內引用與排版參考文獻的工作，一份文件內要安置圖表，乃至數學符號與統計數據的整理，還是需要花時間在不同軟體之間剪貼。&lt;/p&gt;
+&lt;p&gt;這篇網誌說明如何編輯一篇有列舉參考文獻，無任何圖表及數學符號的中文文件。讓讀者了解動態文件的文字編輯與排版是兩件分開的工作，並提出支援中文寫作的動態文件套件，還需要改進的地方。&lt;/p&gt;
+&lt;div id=&#34;基礎知識&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;基礎知識&lt;/h2&gt;
+&lt;p&gt;與建置這套個人網站一樣，一切準備從安裝&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudo&lt;/a&gt;與&lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt;開始。Rstudio開發的套件&lt;code&gt;knitr&lt;/code&gt;可由使用者自行安裝，或者是第一次使用Rstudio編輯動態文件時，會自動下載安裝。&lt;code&gt;knitr&lt;/code&gt;的功能是將有指定語法標籤的純文字文件，例如&lt;code&gt;markdown&lt;/code&gt;與&lt;code&gt;R&lt;/code&gt;，轉換為其他排版軟體能辨識的內容。Rstudio已經整合一套開源排版軟體&lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt;，可將轉換後的純文字文件，按排版設定渲染(render)輸出word或pdf檔案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Rstudio-newfile.PNG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖是Rstudio開啟新文件的選單，除了R script與Text File，其他檔案格式都是可用其他軟體渲染輸出各種排版或編譯產物。這也是為何管理動態文件，應區分文字編輯與排版兩種工作。以一份R Markdown文件為例，有開頭的&lt;code&gt;yaml&lt;/code&gt;與內文兩部分，&lt;code&gt;yaml&lt;/code&gt;是列舉排版這份文件的所需資訊，以符號 --- 標記資訊開始及結尾。以本文的&lt;a href=&#34;https://osf.io/rze47&#34;&gt;示範文件&lt;/a&gt;為例，這份文件要輸出為WORD檔案，&lt;code&gt;yaml&lt;/code&gt;包含的資訊如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output: 
+  word_document:
+    reference_docx: word_style_reference.docx
+bibliography: Turri.bib
+csl: apa-old-doi-prefix.csl&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;與這份示範文件放在一起的三個外部檔案：&lt;strong&gt;&lt;a href=&#34;https://osf.io/5x8h6&#34;&gt;word_style_reference.docx&lt;/a&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;a href=&#34;https://osf.io/fw359&#34;&gt;Turri.bib&lt;/a&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;a href=&#34;https://osf.io/z59hs&#34;&gt;apa-old-doi-prefix.csl&lt;/a&gt;&lt;/strong&gt;，分別提供渲染這份文件需要的&lt;strong&gt;排版樣式&lt;/strong&gt;、&lt;strong&gt;書目資訊&lt;/strong&gt;、以及&lt;strong&gt;引用格式&lt;/strong&gt;。&lt;a href=&#34;http://scchen.com/zh/post/zotero/&#34;&gt;zotero&lt;/a&gt;網誌曾介紹如何管理書目資訊與引用格式的檔案，docx檔是提供一份有所需樣式與版面設定範例的word檔，也就是一個排版範本，有關WORD的排版可參考&lt;a href=&#34;https://support.office.com/zh-tw/article/%E8%87%AA%E8%A8%82%E6%88%96%E5%9C%A8-word-%E4%B8%AD%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%9A%84%E6%A8%A3%E5%BC%8F-d38d6e47-f6fc-48eb-a607-1eb120dec563&#34;&gt;官方說明網站&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;寫作示範&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;寫作示範&lt;/h2&gt;
+&lt;p&gt;建議讀者先下載前述連結的檔案，嘗試重現示範文件的&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;輸出成果&lt;/a&gt;，會更理理以下示範說明。&lt;/p&gt;
+&lt;p&gt;R markdown內文與一般markdown文件一樣，未在置入任何標籤的任何文字等於一般WORD文件的內文，&lt;code&gt;pandoc&lt;/code&gt;會根據排版範本的&lt;strong&gt;內文&lt;/strong&gt;樣式渲染。標記標題的#或##等，會根據排版範本的&lt;strong&gt;標題一&lt;/strong&gt;、&lt;strong&gt;標題二&lt;/strong&gt;等樣式渲染。如果使用者需要呈現頁碼，只要在排版範本預做安排。&lt;/p&gt;
+&lt;p&gt;文內引用的書目是將存在於書目資訊檔案的&lt;strong&gt;bibtex key&lt;/strong&gt;，置入在內文要呈現的地方，例如以下節錄的示範文字。詳細的置入語法與調整設定，可參考&lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34;&gt;Rstudio的介紹&lt;/a&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;美國哲學家Gettier[-@gettierJustifiedTrueBelief1963]發表一篇短論文，提出兩個即使符合JTB三種條件，依然無法確定某人有沒有正確知識的反例。&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;只要有引用的書目資訊，&lt;code&gt;pandoc&lt;/code&gt;會根據引用格式檔案內的資訊，與文末排列參考文獻。示範文件中使用的格式是APA 6並呈現doi的一般格式。因此一份文件由兩位以上共同編輯，只要共享需要的書目資訊，也不必依賴付費軟體編輯與管理引用文獻。有關格式檔案的設定方法，可參考&lt;a href=&#34;http://blog.pulipuli.info/2014/08/zoteroapa-zotero-citation-style-apa.html&#34;&gt;pulipuli的網誌&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;進階套件&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;進階套件&lt;/h2&gt;
+&lt;p&gt;未來我還會撰寫在動態文件編輯圖表與統計數據的網誌，待讀者熟練本篇介紹的操作，推薦安裝以下套件，增益編輯動態文件的效率：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/crsh/citr&#34;&gt;&lt;code&gt;citr&lt;/code&gt;&lt;/a&gt;:這套Rstudio的外掛可幫助使用者在編輯過程中，有插入引用文獻的bibtext key的需要，以視窗介面搜尋並編輯。我的使用建議是先準備好書目資訊檔案，編輯過程中不必開啟zotero。如果有需要更新書目資訊檔案，最好先暫停文件編輯工作，更新完成後再繼續編輯。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;: &lt;code&gt;citr&lt;/code&gt;作者的代表作，可創建符合APA格式的手稿檔案，並支援圖表與數據的排版功能。初版&lt;a href=&#34;https://crsh.github.io/papaja_man/index.html&#34;&gt;使用手冊&lt;/a&gt;今年已正式上線。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;期待的改進&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;期待的改進&lt;/h2&gt;
+&lt;p&gt;這篇介紹的動態文件套件在支援中文寫作有兩個值得改進之處。首先是生成pdf檔的問題，目前簡體中文有R牛人&lt;a href=&#34;https://yihui.name/en/&#34;&gt;Yihui Xie&lt;/a&gt;的努力，已有支援出簡體中文pdf的套件，但是繁體中文仍然不夠全面。也可能是我找不到正確的支援方法所致，還請網友賜教。第二點是pandoc渲染參考文獻的功能只有支援英文書目，讀者可從&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;示範文件&lt;/a&gt;裡的中文書目發現問題。這兩個問題如果能獲得改進，相信更多研究者與學生會更容易接受動態文件，提高研究過程與成果的透明度也有更清楚的標準。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;突破補充&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;20190114突破補充&lt;/h2&gt;
+&lt;p&gt;寫作這篇網誌到這個日期之間，我已使用papaja編寫至少兩篇論文，對於latex的排版語法有更新的認識。這一日終於試出能成功產生中文論文的方法，原理是相容中日韓字符xeCJK，，目前只有xelatex這套文件生成引擎能完整支援。加上中文字的特殊設定，YAML必須有以下設定。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Get the header from http://newsletter.ascc.sinica.edu.tw/news/read_news.php?nid=2198
+## ptt latex board
+## Section begin: this section has to be above &amp;#39;output:&amp;#39;
+header-includes:
+ - \usepackage[no-math]{fontspec}
+ - \usepackage{xeCJK}
+ - \setCJKmainfont{標楷體}  ## 可改成已安裝的其他字型
+ - \XeTeXlinebreaklocale &amp;quot;zh&amp;quot;  
+ - \XeTeXlinebreakskip = 0pt plus 1pt
+## Section end: this section has to be above &amp;#39;output:&amp;#39;
+
+
+## Get this setting from https://stackoverflow.com/questions/36806255/rstudio-on-windows-not-using-xelatex
+## This option forced Rstudio use xelatex compile this document
+output: 
+   pdf_document:
+       latex_engine: xelatex&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;未來論文寫作工作告一段落，我將寫一份papaja完整中文教學，介紹如何運用這些套件製作可重製報告。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學研究必用神器3 ~ 開源統計軟體</title>
+      <link>/zh-hant/post/jasp-jamovi/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/jasp-jamovi/</guid>
+      <description>
+
+
+&lt;p&gt;兩年前開始使用&lt;a href=&#34;https://jasp-stats.org/&#34;&gt;JASP&lt;/a&gt;分析研究資料時，我曾經寫過一篇&lt;a href=&#34;http://scchen.com/zh/post/text_2016007/&#34;&gt;網誌&lt;/a&gt;介紹這套開源軟體。之後更認識設計理念相同，功能擴充性更自由的&lt;a href=&#34;https://www.jamovi.org/&#34;&gt;jamovi&lt;/a&gt;。今年初我自已寫的&lt;a href=&#34;https://scgeeker.github.io/BasicStatistics/&#34;&gt;統計電子書&lt;/a&gt;整合兩套軟體，讓學生學習如何運用兩套軟體於實務。到了今年五月至八月期間，這兩套軟體版本都更新到0.9以上，功能與資源有大幅度更新，兩套軟體的操作雖然大同小異，使用者用過一段時間會發覺兩者更擅勝場。&lt;/p&gt;
+&lt;p&gt;這篇網誌介紹兩套軟體的介面、一般設定與特別的功能。做為之後開發教材與寫作網誌的補充資料。&lt;/p&gt;
+&lt;div id=&#34;介面特色&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;介面特色&lt;/h2&gt;
+&lt;p&gt;JASP 0.9.0.1與jamovi 0.9.2.3的啟動畫面如以下快照，畫面中JASP的&lt;code&gt;Common&lt;/code&gt;與jamovi的&lt;code&gt;Analyses&lt;/code&gt;都是操作功能模組與檢視分析報表的區域。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Initials.JPG&#34; title=&#34;Open&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP開啟資料檔案是在&lt;code&gt;File&lt;/code&gt;區域操作，下圖是JASP範例檔案庫的啟始畫面。操作方式類似Mac OS的Finder，JASP除了開啟本機檔案之外，也能直接連線使用者的OSF帳戶，下載與同步OSF專案裡的資料與JASP存檔(.jasp)。JASP存檔(.jasp)包括原始資料檔案與分析報表。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jasp-File.JPG&#34; title=&#34;JASP File&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;jamovi開啟與儲存資料檔案的選單，是按下&lt;code&gt;Data&lt;/code&gt;標籤左邊的三條橫線，就會出現如下圖的畫面。最新版的jamovi只能存取本機檔案，包括資料檔與jamovi存檔(.omv)。jamovi存檔(.omv)包括原始資料檔案與分析報表。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jamovi-Open.JPG&#34; title=&#34;jamovi Open&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;jamovi的&lt;code&gt;Data&lt;/code&gt;可以直接編輯與使用函式處理一到數個欄位資料，這個區域有些類似試算表軟體，只是要先確定每個欄位的&lt;strong&gt;資料型態&lt;/strong&gt;，才能正確使用jamovi提供的函式。這部分是jamovi與JASP的最大不同，JASP不可直接編輯資料，必須呼叫外部資料編輯器或試算表軟體。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jamovi-Data.JPG&#34; title=&#34;jamovi Data&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;一般設定&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;一般設定&lt;/h2&gt;
+&lt;p&gt;JASP與jamovi的一般設定選單開啟按鈕都在主要介面右上角，如下圖的紅色圓圈標示。兩者共同設定有二：報表數值的小數點位數；資料檔案裡遺漏值(missing value)標記。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Options.JPG&#34; title=&#34;Options&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP與jamovi可設定小數點格式的數值只有兩類：一般的統計數值與p值，如以下畫面截圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/number-format.JPG&#34; title=&#34;Format&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP和jamovi都是輸入資料檔內的遺漏值字符，匯入資料後會自動辨識資料中的遺漏值，設定畫面如下圖。差異在於jamovi只能辨識一種字符，JASP可辨識多種，使用者還可根據實際情況自行增加。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/missing-Format.JPG&#34; title=&#34;Missing&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP有需要編輯資料數值時，可以設定使用系統預設的試算表軟體，例如Excel。要使用此功能，就做如以下畫面的設定。若要外部編輯器存檔，並同步更新JASP資料，只要勾選以下畫面的第一個功能即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/JASP-editing.JPG&#34; title=&#34;JASP data editing&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;功能與資源比較&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;功能與資源比較&lt;/h2&gt;
+&lt;p&gt;以下整理本人認為值得學習的JASP與jamovi的重要功能與資源，提供讀者可依個人需要取用。&lt;/p&gt;
+&lt;div id=&#34;可匯入資料格式&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;可匯入資料格式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：CSV, SPSS, Libre試算表&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;: CSV, SPSS, SAS, Stata&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;擴充功能&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;擴充功能&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：非當用模組讓使用者自行開啟，目前有&lt;code&gt;Meta Analysis&lt;/code&gt;、&lt;code&gt;Network&lt;/code&gt;、&lt;code&gt;SEM&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;: 官方提供模組開發工具，以及&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;自訂模組庫&lt;/a&gt;。使用者可由jamovi程式裡安裝與更新，或由&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;自訂模組庫&lt;/a&gt;下載安裝。特別建議統計初學者，使用&lt;code&gt;Statkat&lt;/code&gt;協助學習。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;學習資源&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;學習資源&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：官網不定期更新&lt;a href=&#34;https://jasp-stats.org/jasp-materials/&#34;&gt;推薦教材&lt;/a&gt;，2018年有&lt;a href=&#34;https://www.amazon.com/Research-your-Therapy-Examples-friendly-ebook/dp/B071LFPP47?_encoding=UTF8&amp;amp;psc=1&#34;&gt;研究方法與統計教科書&lt;/a&gt;出版。0.9版有豐富的Data Library，讓使用者依需要找示範檔案學習。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;:&lt;a href=&#34;https://datalab.cc/tools/jamovi&#34;&gt;Datalab的CC授權課程&lt;/a&gt;提供&lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;&gt;youtube教學單元&lt;/a&gt;，各單元教材公開於&lt;a href=&#34;https://drive.google.com/drive/folders/1gJJ9di69FBZPhAdG9dWqXHZnR_JJry0G?usp=sharing&#34;&gt;google雲端&lt;/a&gt;與&lt;a href=&#34;https://bit.ly/jamovi-osf&#34;&gt;OSF&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學網路廣播簡介</title>
+      <link>/zh-hant/post/ps-podcasts.zh/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/ps-podcasts.zh/</guid>
+      <description>
+
+
+&lt;p&gt;2017年三月或四月間，首次從臉書社團&lt;a href=&#34;https://www.facebook.com/groups/853552931365745/&#34;&gt;Psychological Methods Discussion Group&lt;/a&gt;得知網路廣播節目&lt;a href=&#34;http://www.theblackgoatpodcast.com&#34;&gt;The Black Goat&lt;/a&gt;開播，從此開始注意國外專業心理學者自行製作主持的帶狀廣播節目。這類節目從2016年&lt;a href=&#34;https://www.facebook.com/everythinghertzpodcast&#34;&gt;Everything Hertz&lt;/a&gt;開播後，到現在我知道的網路廣播節目已有八個。主持這些節目的人物是於歐美各大學專任的教師、博士後或博士生。因為都是英語廣播，是今天的心理學學生們練英聽的好教材，更有意思的是其中許多位節目主持人是開放科學推動者。這個網誌簡介這些節目，以及推薦入門集數。&lt;/p&gt;
+&lt;div id=&#34;everything-hertz&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Everything Hertz&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/12801447_510072969180732_8893628584447559111_n.jpg?_nc_cat=0&amp;amp;oh=2e95e9204f865df4682b1cacfed12386&amp;amp;oe=5BD00652&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesheathers.com/&#34;&gt;James Heathers&lt;/a&gt;；&lt;a href=&#34;http://www.dsquintana.com/&#34;&gt;Daniel Quintana&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://soundcloud.com/everything-hertz&#34;&gt;SoundCloud&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/hertzpodcast&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/everythinghertzpodcast&#34;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2016二月27日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;兩位主持人都是畢業於澳洲雪梨大學的心理學博士，專長為計量與研究方法，目前分別於美國與挪威擔任博士後研究。從2016年二月起開始製播，大約半個月到一個月推出新一集節目。到33集都是兩人對談，以一個目前心理科學界的爭議或在學術界闖蕩的甘苦經驗為主題。34集開始不定期邀請來賓，討論這位來賓正在從事，未來可能改變學術運作模式的事業。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesheathers.com/&#34;&gt;James Heathers&lt;/a&gt;與&lt;a href=&#34;https://t.co/QRYqFBmby8&#34;&gt;Nick Brown&lt;/a&gt;一起發展GRIM–讓&lt;a href=&#34;http://scchen.com/zh/post/text_2017006/&#34;&gt;Brain Wansink的劣質研究現形&lt;/a&gt;的資料品質鑑識工具，所以Nick Brown做來賓的&lt;a href=&#34;https://soundcloud.com/everything-hertz/44-whos-afraid-of-the-new-bad-people-with-nick-brown&#34;&gt;第44集&lt;/a&gt;是不錯的開始。如果你有在Coursera修過Daniel Lakens的&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home/welcome&#34;&gt;提昇你的統計推論功力&lt;/a&gt;，&lt;a href=&#34;https://soundcloud.com/everything-hertz/42-some-of-my-best-friends-are-bayesians-with-daniel-lakens&#34;&gt;42&lt;/a&gt;與&lt;a href=&#34;https://soundcloud.com/everything-hertz/43-death-taxes-and-publication-bias-in-meta-analysis-with-daniel-lakens&#34;&gt;43&lt;/a&gt;集是入門的開始。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-black-goat&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Black Goat&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/16684080_255031914943271_624884278399716220_n.png?_nc_cat=0&amp;amp;oh=1c165d165607c2788cc15cdee2678649&amp;amp;oe=5BFA8C62&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://pages.uoregon.edu/sanjay/&#34;&gt;Sanjay Srivastava&lt;/a&gt;;&lt;a href=&#34;http://www.alexatullett.com/index.html&#34;&gt;Alexa Tullett&lt;/a&gt;;&lt;a href=&#34;http://www.simine.com/&#34;&gt;Simine Vazire&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/the-black-goat/id1217953035&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://blackgoat.podbean.com/&#34;&gt;Podbean&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.theblackgoatpodcast.com/&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/blackgoatpod&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/blackgoatpod/&#34;&gt;Facebook&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.instagram.com/blackgoatpod/&#34;&gt;Instagram&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2017年三月22日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;三位主持人是分別任教於奧勒岡大學、阿拉巴馬大學、以及加州大學戴維斯分校的社會心理學者，都是活躍的開放科學推動者。三人對談的主題不僅包括增進科學研究品質的主題，還會分享個人教學與家庭生活心得，也經常在節目開始回覆最近收到的研究生來信，提供正在為學位努力的他們面對難關的建議。我個人認為如果Everything Hertz是兩位年青學者的立志紀錄，The Black Goat是暖男大叔加親切姐姐的空中諮商室。&lt;/p&gt;
+&lt;p&gt;平均每個月更新一集，某幾集與來賓討論不同學術領域的見聞。三人參加同一個學術研討會，還會製作特集。像是參與APS的&lt;a href=&#34;http://www.theblackgoatpodcast.com/posts/i-felt-like-a-real-scientist/&#34;&gt;I Felt Like a Real Scientist&lt;/a&gt;，SIPS的&lt;a href=&#34;http://www.theblackgoatpodcast.com/posts/sipsapalooza/&#34;&gt;SIPSapalooza&lt;/a&gt;。想要熟悉主持風格的話，建議收聽&lt;a href=&#34;http://www.theblackgoatpodcast.com/posts/we-were-never-cool/&#34;&gt;We Were Never Cool&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;circle-of-willis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Circle of Willis&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://secureimg.stitcher.com/feedimageswide/480x270_149553.jpg&#34; style=&#34;width:70.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://jamescoan.com/&#34;&gt;James Coan&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/circle-of-willis/id1277917115?ls=1&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.stitcher.com/podcast/circle-of-willis?refid=stpr&#34;&gt;Stitcher&lt;/a&gt;
+&lt;a href=&#34;http://circleofwillispodcast.com&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/circle_ofwillis&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/circleofwillispodcast/&#34;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2017年九月8日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;這個節目開播日期算是第三個，但是我是最後才知道的。主持人&lt;a href=&#34;https://jamescoan.com/&#34;&gt;James Coan&lt;/a&gt;是維吉尼亞大學的臨床心理學與神經科家，也是該校資深教授，所有現役節目主持人之中學術資歷最年長。除了第一集，每一集都是訪談一位現任心理學者，聊聊他們走到今天的學術生命故事。第一集介紹節目名稱的由來與內容方向，台灣鄉親聽過第一集一定會被吸引，至於為什麼就請&lt;a href=&#34;http://circleofwillispodcast.com/episode-1-introducing-circle-of-willis&#34;&gt;自己聽&lt;/a&gt;。聽過The Black Goat的朋友，可以從&lt;a href=&#34;http://circleofwillispodcast.com/episode-8-simine-vazire&#34;&gt;第八集&lt;/a&gt;開始。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-road-to-open-science&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Road to Open Science&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/profile_images/996301283463192576/D4u7yTnf_400x400.jpg&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://openscience-utrecht.com/&#34;&gt;Open Science Community Utrecht&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://soundcloud.com/utrechtyoungacademy&#34;&gt;SoundCloud&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://openscience-utrecht.com/oscu-podcast/&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/R2OSpodcast&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2018年四月12日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;這是第一個由歐陸學者經營的英語網路廣播節目，也是由團體而非個人主持。已發佈的集數以訪談活動於歐洲，從事各種開放科學事業的學者為主。如果你是想了解開放科學的朋友，可以從&lt;a href=&#34;https://soundcloud.com/utrechtyoungacademy/the-road-to-open-science-ep2b-full-interview-with-daniel-lakens&#34;&gt;Daniel Lakens的訪談&lt;/a&gt;開始。經營R2OS的&lt;a href=&#34;https://openscience-utrecht.com/&#34;&gt;Open Science Community Utrchet&lt;/a&gt;，我正在規劃深度介紹文。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-psychologists-four-beers&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Two Psychologists Four Beers&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://images.fireside.fm/podcasts/images/6/69da8ae3-a19e-41ed-a678-0e145a936a3f/cover_small.jpg&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://yoelinbar.net/&#34;&gt;Yoel Inbar&lt;/a&gt;;&lt;a href=&#34;http://michaelinzlicht.com&#34;&gt;Michael Inzlicht&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/two-psychologists-four-beers/id1387529624&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.stitcher.com/podcast/two-psychologists-four-beers?refid=stpr&#34;&gt;Stitcher&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://fourbeers.fireside.fm/&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/fourbeerspod&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2018年五月19日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;兩位主持人是多倫多大學心理學系的社會心理學同事，一位專攻神經科學，一位專長計量方法。今年(2018)五月開播後到八月初已推出六集，前四集是對談，最新兩集有邀請來賓。風格像是變老的Everthing Hertz，除了兩位已經是專任教師，節目開始會介紹錄這一集時喝的兩瓶啤酒，然後一人兩杯邊喝邊聊，因此節目名稱叫Two Psychologists Four Beers。有來賓上節就追加一瓶。想適應節目風格的朋友可從第四集&lt;a href=&#34;https://fourbeers.fireside.fm/4&#34;&gt;The Replication Crisis Gets Personal&lt;/a&gt;入門。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-bayes-factor&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Bayes Factor&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/23172689_1993255780888928_6201212654157655772_n.png?_nc_cat=0&amp;amp;oh=a363fd368a6989930ccf191bdb59d266&amp;amp;oe=5C0F6877&#34; style=&#34;width:30.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://sites.tufts.edu/hilab/people/&#34;&gt;JP De Ruiter&lt;/a&gt;;&lt;a href=&#34;https://alexanderetz.com/&#34;&gt;Alex Etz&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/the-bayes-factor/id1308207723&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://sites.tufts.edu/hilab/podcast/&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/TheBayesFactor&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/TheBayesFactor/&#34;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2017年十一月5日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;雖然這個節目2017年就上線，但是更新進度不固定，我排到倒數第三位介紹。主持人雖然有兩位，主要主持人是&lt;a href=&#34;https://alexanderetz.com/&#34;&gt;Alex Etz&lt;/a&gt;。正如節目名稱，以介紹與訪問推廣貝氏統計與開放科學的人物為主。這個節目可視為其他常態經營的節目資訊補充，只要你在其他節目聽過來賓也被這個節目訪問，那就是最好的入門集。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;reproducibiliteapod&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;ReproducibiliTeaPod&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/profile_images/1008816656406269952/FCYhhxX7_400x400.jpg&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.psy.ox.ac.uk/team/amy-orben&#34;&gt;Amy Orben&lt;/a&gt;;&lt;a href=&#34;http://samdparsons.blogspot.com/&#34;&gt;Sam Parsons&lt;/a&gt;;&lt;a href=&#34;https://twitter.com/Cruwelli&#34;&gt;Sophia Crüwell&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://soundcloud.com/reproducibilitea&#34;&gt;SoundCloud&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/ReproducibiliT&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2018年六月27日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;這個節目的三位主持人是線上活躍的心理學者中最年輕的，都是牛津大學心理學博士班的同學。已經上線的集數都是三人對談一個開放科學主題，有訪問來賓或參與研討會的內容以番外篇推出。主持風格是目前聽過最中規中矩的節目，我推薦第三集&lt;a href=&#34;https://soundcloud.com/reproducibilitea/episode-3-questionable-research-practices&#34;&gt;Questionable Research Practices&lt;/a&gt;與第四集&lt;a href=&#34;https://soundcloud.com/reproducibilitea/episode-4-reproducibility-now&#34;&gt;Reproducibility Now&lt;/a&gt;，做為認識這個節目的開始。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;physiology-behavior-podcast&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Physiology &amp;amp; Behavior podcast&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/pippa/image/fetch/h_500,w_500/https://assets.pippa.io/shows/5b33637a7b9cf5a0177f18b5/1531915490998-fafca19bfd0d7c6f179e0b0403be84f6.jpeg&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.dsquintana.com/&#34;&gt;Daniel Quintana&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://shows.pippa.io/dsquintana&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/PB_cast&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/dsquintana.research/&#34;&gt;Facebook&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.instagram.com/dsquintana&#34;&gt;Instagram&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2018年七月15日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;Everything Hertz的&lt;a href=&#34;http://www.dsquintana.com/&#34;&gt;Daniel Quintana&lt;/a&gt;單飛之作。因為博士後研究主題涉足生理學研究，有太多話想說所以另開節目，目前上線的集數有個人獨講以及與他人互談。除了生理學研究的心得點滴，還有開放科學的細部操作心得，例如&lt;a href=&#34;https://shows.pippa.io/dsquintana/convincing-your-mentors-to-use-preprints&#34;&gt;Convincing your mentors to use preprints&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>物件方向效應跨語言研究經驗分享(一)：心理科學加速器合作專案</title>
+      <link>/zh-hant/post/orientation-language-part01/</link>
+      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/orientation-language-part01/</guid>
+      <description>
+
+
+&lt;div id=&#34;心理科學加速器是什麼&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;心理科學加速器是什麼？&lt;/h1&gt;
+&lt;p&gt;心理科學存在高比例的偽陽性結果(false positive results)的事實&lt;span class=&#34;citation&#34;&gt;(Fanelli 2010; Ioannidis 2005)&lt;/span&gt;，促成全球心理學者認清要評估研究發現的普遍性與真實性，需要累積大量的再現資料。最好的作法是組織不同地區的實驗室同時進行相同程序的實驗，以整合分析方法解析結果。2000年之後已經出現以多個機構長期合作收集資料的專案&lt;span class=&#34;citation&#34;&gt;(Reifman and Grahe 2016)&lt;/span&gt;，以及課題導向的短期合作專案&lt;span class=&#34;citation&#34;&gt;(Klein et al., n.d.; Open Science Collaboration 2015; Ebersole et al. 2016; Frank 2016; Reifman and Grahe 2016)&lt;/span&gt;。兩種合作模式關注的課題圍繞核心學者關心的方向，或多數學者公認的重要題目。尚有許多獨立研究者規劃長期經營，有理論潛力但是出版成果還不足以判斷研究發現的普遍性。2016年第一屆&lt;a href=&#34;http://improvingpsych.org/&#34;&gt;SIPS研討會&lt;/a&gt;，與會學者提出提供獨立研究徵求合作者，合作重現最新研究成果的媒合平台&lt;a href=&#34;https://osf.io/view/StudySwap/&#34;&gt;Study Swap&lt;/a&gt;，方便心理學原創研究，能透過語言文化條件相同的合作實驗室，迅速累積再現成果。&lt;/p&gt;
+&lt;p&gt;Study Swap平台主持人&lt;a href=&#34;https://christopherchartier.com/&#34;&gt;Christopher Chartier&lt;/a&gt;於2017年8月26日，在個人部落格發佈建立&lt;a href=&#34;https://christopherchartier.com/2017/08/26/building-a-cern-for-psychological-science/&#34;&gt;心理科學加速器的第一份公開文章&lt;/a&gt;，招集有共同理念的各國研究者組織&lt;a href=&#34;https://psysciacc.org/people/&#34;&gt;十個運作與諮詢委員會&lt;/a&gt;，將Study Swap的運作模式推廣至全球心理科學研究。心理科學加速器的初期報導已在2017年11月翻譯為&lt;a href=&#34;http://www.openedscience.org/?p=71&#34;&gt;中文&lt;/a&gt;，發起建立的第一天就邀請90多位各國學者一起發想及撰寫的&lt;a href=&#34;https://psyarxiv.com/785qu/&#34;&gt;說明&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Moshontz et al. 2018)&lt;/span&gt;剛於4月上旬正式投稿期刊Advances in Methods and Practices in Psychological Science (AMPPS)，五月至六月期間進行的第二次計畫徵件，每項計畫將由十位參與研究者以公開評審的方式，評估適合加盟實驗室同步進行的研究計畫。這篇文章整理提出計畫與參與運作的經驗，以及至目前為止的準備過程，給有興趣提出計畫的先進及後輩一些參考。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;研究構想提出過程&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;研究構想提出過程&lt;/h1&gt;
+&lt;p&gt;Christopher Chartier在召集創始成員時，同時開啟第一次計畫徵件。當時我剛將與Rolf Zwaan及Bjorn De Koning合作的物件方向研究計畫書送第一階段評審，這個計畫源自2001年Stanfield與Zwaan運用句圖判別作業發現的&lt;strong&gt;物件方向反應優勢&lt;/strong&gt;&lt;span class=&#34;citation&#34;&gt;(Stanfield and Zwaan 2001)&lt;/span&gt;。這項研究發現被許多研究者認為與Glenberg與Kaschak&lt;span class=&#34;citation&#34;&gt;(Glenberg and Kaschak 2002)&lt;/span&gt;提出的動作相容效應(Action-compatibility effect)，可用來檢驗體現知理論對語言理解的預測。然而合作過程中我理解物件方向反應優勢的原始構想是根據閱讀者讀過句子後，心智會模擬物件呈現形象的體現認知理論&lt;span class=&#34;citation&#34;&gt;(Barsalou 1999)&lt;/span&gt;，動作的心智模擬並未在可預測的因素之列。而且物件方向反應優勢是同類型實驗結果最微弱的系列，不過目前只有英語及荷語的研究結果&lt;span class=&#34;citation&#34;&gt;(Zwaan and Pecher 2012)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;有沒有語言能發現比英語更明顯的物件方向反應優勢，成為我提出研究構想的重要動機。第一次徵件包括我的計畫有8件，經由最初的領導小組(Leadership Team)與研究計畫遴選委員會(Study Selection Committee)成員合作評審。我本來只是抱持嘗試的心態姑且試之，沒想到最後被選為三件研究案之一，讀者可參考我根據評審反應修改的&lt;a href=&#34;https://docs.google.com/document/d/1VntzhDXmIEVG0RtF3kOn_liLTGxk7Ovzy-0ImrDFMOU/edit?usp=sharing&#34;&gt;構想書&lt;/a&gt;，&lt;a href=&#34;http://scchen.com/en/project/mental-simulation/&#34;&gt;我的網頁&lt;/a&gt;與&lt;a href=&#34;https://psysciacc.wordpress.com/2018/01/24/new-study-accepted-the-object-orientation-effect/&#34;&gt;心理科學加速器部落格&lt;/a&gt;都有這項計畫的介紹。這項研究案與其他兩項的不同處有這是此次唯一的認知心理學研究，唯一需要每個實驗室安裝指定實驗軟體的實驗，以及使用&lt;strong&gt;貝氏統計&lt;/strong&gt;隨時分析實驗結果，讓每個實驗室自行能調節實際的研究參與者人數。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;前置準備經驗&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;前置準備經驗&lt;/h1&gt;
+&lt;p&gt;接受構想書之後，就是開始準備讓專業期刊進行審查的註冊研究計畫書。提出構想的研究者如果是獨立研究者，Christopher Chartier會媒合一位參與運作小組或委員會的成員，與主要研究者一起合作規畫與撰寫計畫書。像是我的與另一項研究案&lt;a href=&#34;https://psysciacc.wordpress.com/2017/12/05/accepted-for-2018-gendered-social-category-representations/&#34;&gt;The Gendered Nature of Prejudice&lt;/a&gt;，都有與一位不同機構甚至不同國家的研究者遠端合作。心理科學加速器也希望藉此機會嘗試同時執行兩種不同性質的研究，加盟實驗室的執行狀況，還有資料的可用性。&lt;/p&gt;
+&lt;p&gt;因為有國外合作者的幫忙，很快就選定要投稿的期刊。撰寫計畫書時了解到原始實驗的刺激材料，對於非英語系國家或長期生活於美國社會的參與者來說，不見得全部都熟悉。所以我們規劃一套物件熟悉度評量表，將請聯盟實驗室的成員協助評估，做為正式實驗調整不同語言刺激項目的參考。&lt;/p&gt;
+&lt;p&gt;由於有兩個不同性質的研究可能同時進行，為了評估遷移效應(carry-over effect)對兩件研究結果的影響，現在正在五間美國的實驗室進行預先試驗(pilot study)。我還有一個目的是建立任何實驗室都能操作的實驗結果分析方法，藉著目前已收集到的資料，我已經完成分析方法的程序說明與範例。等預先試驗資料收集且分析完成，計畫書即可正式投稿。至於接受合作實驗室的報名，最早可能會在正式投稿之前，因為現在有部分期刊要求正式投稿時，要附上合作實驗室的倫理審查證明。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;給有意提案者的建議&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;給有意提案者的建議&lt;/h1&gt;
+&lt;p&gt;因為第一次的經驗，新一波計畫徵件的評審預計將更有系統的挑選評審者。登記參與心理科學加速器的實驗室主持人，都有機會參與評審，但是為了讓委員會能找到適當的評審者，建議已登記的研究者在&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1z6nIPLtDs26GnrdKz_WwJnuN5aw8Vi3CGLra0L-HUGk/edit?usp=sharing&#34;&gt;實驗室現況登記表&lt;/a&gt;，登錄主持人專長資料。觀察他人的計畫構想，有助思考自已想探索的問題，需要全世界實驗室一起收集資料的計畫。&lt;/p&gt;
+&lt;p&gt;如果你目前不是有正職工作的獨立研究者，你還是可以提出計畫，也可以向Christopher Chartier自我推薦參與某個委員會的運作，只要你備齊個人履歷與說明能幫助目標委員會運作的理由，領導小組同意就能加入。除了是計畫評審候補，也有機會與被接受的計畫主持人合作，增加研究經歷。&lt;/p&gt;
+&lt;p&gt;今後計畫的可執行性是必要考量條件，不需要加盟實驗室付出增添軟硬體的額外成本，也能執行的計畫較容易獲得青睞。像是第一次接受的另外兩項研究，都是網頁實驗，資料直接由計畫主持人管理。計畫有沒有讓全球實驗室合作參與價值，也會是評審的重點，只是價值的判斷可能將隨著運作經驗的累積，變得越來越細緻複雜。&lt;/p&gt;
+&lt;p&gt;所有的計畫都必須投稿期刊，取得第一階段註冊研究計畫接受才能正式開始研究。因此有信心取得目標期刊接受的計畫，也會是得到PSA選案委員接受的重點。這也代表加盟實驗室想用運用註冊研究或開放科學原則經營團隊，可以透過提交計畫或參與執行學習。例如我的計畫需要合作實驗室預先註冊逐次分析的樣本數。&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-BarsalouPerceptualsymbolsystems1999&#34;&gt;
+&lt;p&gt;Barsalou, Lawrence W. 1999. “Perceptual Symbol Systems.” &lt;em&gt;Behavioral and Brain Sciences&lt;/em&gt; 22: 577–660. &lt;a href=&#34;https://doi.org/10.1017/S0140525X99002149&#34;&gt;https://doi.org/10.1017/S0140525X99002149&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-EbersoleManyLabsEvaluating2016&#34;&gt;
+&lt;p&gt;Ebersole, Charles R., Olivia E. Atherton, Aimee L. Belanger, Hayley M. Skulborstad, Jill M. Allen, Jonathan B. Banks, Erica Baranski, et al. 2016. “Many Labs 3: Evaluating Participant Pool Quality Across the Academic Semester via Replication.” &lt;em&gt;Journal of Experimental Social Psychology&lt;/em&gt;, Special issue: Confirmatory, 67 (November): 68–82. &lt;a href=&#34;https://doi.org/10.1016/j.jesp.2015.10.012&#34;&gt;https://doi.org/10.1016/j.jesp.2015.10.012&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-FanelliPositiveResultsIncrease2010&#34;&gt;
+&lt;p&gt;Fanelli, Daniele. 2010. “‘Positive’ Results Increase down the Hierarchy of the Sciences.” &lt;em&gt;PLOS ONE&lt;/em&gt; 5 (4): e10068. &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0010068&#34;&gt;https://doi.org/10.1371/journal.pone.0010068&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Frankcollaborativeapproachinfant2016&#34;&gt;
+&lt;p&gt;Frank, Michael. 2016. “A Collaborative Approach to Infant Research: Promoting Reproducibility, Best Practices, and Theory-Building.” PsyArXiv. &lt;a href=&#34;https://doi.org/10.17605/OSF.IO/27B43&#34;&gt;https://doi.org/10.17605/OSF.IO/27B43&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-GlenbergGroundinglanguageaction2002&#34;&gt;
+&lt;p&gt;Glenberg, ArthurM, and MichaelP Kaschak. 2002. “Grounding Language in Action.” &lt;em&gt;Psychonomic Bulletin &amp;amp; Review&lt;/em&gt; 9 (September): 558–65. &lt;a href=&#34;https://doi.org/10.3758/bf03196313&#34;&gt;https://doi.org/10.3758/bf03196313&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ioannidis_why_2005&#34;&gt;
+&lt;p&gt;Ioannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” &lt;em&gt;PLOS Med&lt;/em&gt; 2 (8): e124. &lt;a href=&#34;https://doi.org/10.1371/journal.pmed.0020124&#34;&gt;https://doi.org/10.1371/journal.pmed.0020124&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-KleinInvestigatingVariationReplicability2014&#34;&gt;
+&lt;p&gt;Klein, Richard A., Kate A. Ratliff, Michelangelo Vianello, Reginald B. Adams Jr, Štěpán Bahnı́k, Michael J. Bernstein, Konrad Bocian, et al. n.d. “Investigating Variation in Replicability.” &lt;em&gt;Social Psychology&lt;/em&gt; 45: 142–52. &lt;a href=&#34;https://doi.org/10.1027/1864-9335/a000178&#34;&gt;https://doi.org/10.1027/1864-9335/a000178&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-MoshontzPsychologicalScienceAccelerator2018&#34;&gt;
+&lt;p&gt;Moshontz, Hannah, Lorne Campbell, Charles R. Ebersole, Hans IJzerman, Heather L. Urry, Patrick S. Forscher, Jon Grahe, et al. 2018. “The Psychological Science Accelerator: Advancing Psychology Through a Distributed Collaborative Network.” &lt;em&gt;PsyArXiv&lt;/em&gt;, April. &lt;a href=&#34;https://doi.org/10.17605/OSF.IO/785QU&#34;&gt;https://doi.org/10.17605/OSF.IO/785QU&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-OpenScienceCollaborationEstimatingreproducibilitypsychological2015&#34;&gt;
+&lt;p&gt;Open Science Collaboration. 2015. “Estimating the Reproducibility of Psychological Science.” &lt;em&gt;Science&lt;/em&gt; 349 (6251): aac4716. &lt;a href=&#34;https://doi.org/10.1126/science.aac4716&#34;&gt;https://doi.org/10.1126/science.aac4716&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ReifmanIntroductionSpecialIssue2016&#34;&gt;
+&lt;p&gt;Reifman, Alan, and Jon E. Grahe. 2016. “Introduction to the Special Issue of Emerging Adulthood.” &lt;em&gt;Emerging Adulthood&lt;/em&gt; 4 (3): 135–41. &lt;a href=&#34;https://doi.org/10.1177/2167696815588022&#34;&gt;https://doi.org/10.1177/2167696815588022&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-stanfield_effect_2001&#34;&gt;
+&lt;p&gt;Stanfield, R. A., and R. A. Zwaan. 2001. “The Effect of Implied Orientation Derived from Verbal Context on Picture Recognition.” &lt;em&gt;Psychological Science&lt;/em&gt; 12 (2): 153–56. &lt;a href=&#34;https://doi.org/10.1111/1467-9280.00326&#34;&gt;https://doi.org/10.1111/1467-9280.00326&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ZwaanRevisitingMentalSimulation2012&#34;&gt;
+&lt;p&gt;Zwaan, Rolf A., and Diane Pecher. 2012. “Revisiting Mental Simulation in Language Comprehension: Six Replication Attempts.” &lt;em&gt;PLoS ONE&lt;/em&gt; 7: e51382. &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0051382&#34;&gt;https://doi.org/10.1371/journal.pone.0051382&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>第一本華文心理學學術期刊開工了</title>
+      <link>/zh-hant/post/first-chinese-rr-journal/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/first-chinese-rr-journal/</guid>
+      <description>
+
+
+&lt;div id=&#34;台灣最老華文第一的心理學學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;台灣最老、華文第一的心理學學術期刊&lt;/h2&gt;
+&lt;p&gt;2018/2/22是台灣春節的開工第二日，回到研究室刷一下臉書看到了這則訊息：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Screenshot-2018-2-22_CJP_submission.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;去年我只有在自己服務的學校與中正大學舉辦兩場&lt;a href=&#34;https://osf.io/e69mb/&#34;&gt;小型註冊研究工作坊&lt;/a&gt;，就向中華心理學刊現任主編&lt;a href=&#34;http://www.psy.ccu.edu.tw/members/bio.php?PID=21&#34;&gt;姜定宇教授&lt;/a&gt;建議：籌備主題式註冊研究特刊，以及允許投稿作者於完成投稿後自行公開手稿。想不到今年開工看到更大的進展：今年起中華心理學刊歡迎作者投稿註冊研究計畫書，並採二階段評審。我想簡介一下這本期刊，還有給一些執行註冊研究徵稿政策的建議。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite&#34;&gt;中華心理學刊&lt;/a&gt;於1958年創刊，是台灣第一本心理學學術期刊，到今年正好一甲子，由&lt;a href=&#34;http://140.112.62.7/cpa/zh/&#34;&gt;台灣心理學會&lt;/a&gt;委派來自各領域的台灣資深心理學者擔任編輯。主要任務是提供各國任何心理學領域專業學者，以學者以中文或英文發表論文。2000年之後台灣出現提供臨床心理學與諮商心理學者發表中文論文的期刊，而這兩個領域是台灣心理學界專業人口最多的領域，加上多數中青代學者以投稿國外英文期刊為目標，刊登的論文數量逐漸下降。近年積極爭取轉型，除了舉辦各種專刊徵稿，也終於願意嘗試增加投稿樣態。過去的中華心理學期刊只接授原創性研究論文(research article)的投稿，今年開始徵求註冊研究(registered report)與檢驗原創性研究的重製研究報告(research report)。&lt;/p&gt;
+&lt;p&gt;雖然我看到消息時官方網站已經有&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite/blank-5&#34;&gt;中文徵稿啟事&lt;/a&gt;，期刊編輯部尚未更新&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite-english/instructions-to-authors&#34;&gt;英文徵稿啟事&lt;/a&gt;，也尚未見到期刊主編發表正式聲明。我推測現任主編群已經了解綜合性學術期刊需要多元投稿模式，才能吸引有品質的稿件，但是要如何吸引願意嘗試不同型態的學者，現任主編群必須拿出明確的策略方案。在主編構思聲明的此時，我用這篇文章回顧四本經營註冊研究已有規模的期刊，並提供我認為第一本華文註冊研究期刊可以著力的方向。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cortex第一本徵求註冊研究的學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cortex：第一本徵求註冊研究的學術期刊&lt;/h2&gt;
+&lt;p&gt;Cordex於2013年邀請英國卡迪夫大學心理學系教授&lt;a href=&#34;http://psych.cf.ac.uk/contactsandpeople/chambersc1.php&#34;&gt;Chris Chambers&lt;/a&gt;擔任註冊研究執行主編，成為全世界第一本提供註冊研究投稿的學術期刊。Chris Chambers發表的聲明&lt;span class=&#34;citation&#34;&gt;(2013)&lt;/span&gt;與設計的&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;投稿指南&lt;/a&gt;，成為其後開辦註冊研究期刊的範本。之後開辦的期刊都根據經營方針，修改這份投稿指南讓投稿者準備投稿資訊與研究材料。以下評審流程圖摘自&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;Cortex投稿指南&lt;/a&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/cortex-RR-workflow.JPG&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Chris Chambers經常受邀擔任工作坊講師，更公開每次的&lt;a href=&#34;https://osf.io/d4fh5/&#34;&gt;講演資料&lt;/a&gt;，是有心學習者可參考的資訊來源。Center for Open Science於2017年1月邀請他舉辦網路工作坊，以下是工作坊錄影。&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube-nocookie.com/embed/7MQ5XB1WUp8?rel=0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;journal-of-european-psychology-students由心理學研究生一手包辦的學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Journal of European Psychology Students：由心理學研究生一手包辦的學術期刊&lt;/h2&gt;
+&lt;p&gt;Journal of European Psychology Students是由正於歐洲各大學攻讀心理學博士的各領域研究生主辦的學術期刊，除了一般的投稿評審模式，2016年起也正式徵求註冊研究&lt;span class=&#34;citation&#34;&gt;(King et al. 2016)&lt;/span&gt;。&lt;a href=&#34;https://osf.io/qewck/&#34;&gt;投稿指南&lt;/a&gt;是Cortex版本的簡化版，並提供&lt;a href=&#34;https://osf.io/h7trs/&#34;&gt;重製型註冊研究範本&lt;/a&gt;以及&lt;a href=&#34;https://osf.io/8qk56/&#34;&gt;原創性註冊研究範本&lt;/a&gt;。儘管這本期刊沒有列入SCI或SSCI資料庫，經營方針是新興與尋求轉型的期刊可學習的對象。下圖是Journal of European Psychology Students的註冊研究評審流程：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/401-2791-1-PB.JPG&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;comprehensive-results-in-social-psychology百分之百的註冊研究學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Comprehensive Results in Social Psychology：百分之百的註冊研究學術期刊&lt;/h2&gt;
+&lt;p&gt;於2016年開始正式發行的Comprehensive Results in Social Psychology是完全以註冊研究模式經營的社會心理學期刊，&lt;a href=&#34;http://www.tandf.co.uk/journals/authors/rrsp-submission-guidelines.pdf&#34;&gt;投稿指南&lt;/a&gt;也是改良Cortex的版本。但是因此經營成本較高，部分稿件需付審查費，所有出版論文，包括主編聲明&lt;span class=&#34;citation&#34;&gt;(Jonas and Cesario 2016)&lt;/span&gt;，都是付費論文。除非作者自付費用，讀者只能下載公開於預印本平台的手稿。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;collabra-psychology-更嚴謹的註冊研究評審程序&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Collabra: Psychology 更嚴謹的註冊研究評審程序&lt;/h2&gt;
+&lt;p&gt;Collabra: Psychology是創刊剛滿五年的新興綜合型心理學學術期刊，到了2017年下半年才開始正式宣佈&lt;a href=&#34;https://medium.com/@CollabraOA/registered-reports-at-collabra-psychology-6938b2059fc7&#34;&gt;徵求註冊研究的啟事&lt;/a&gt;。執行主編正是Chris Chambers，所以推出&lt;a href=&#34;https://docs.google.com/document/d/1eeXPEC_oc4OYlywC9pRt6seL2xazlT58jAtRsCuEdCI/edit#&#34;&gt;進階的投稿指南&lt;/a&gt;。增加的要求是作者必須在計畫中提出研究紀錄登錄方式，並且確實執行。詳情可參考期刊的&lt;a href=&#34;https://osf.io/my3wa/&#34;&gt;投稿範本&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Collabra: Psychology的方針與&lt;a href=&#34;http://improvingpsych.org/&#34;&gt;Society for the Improvement of Psychological Science(SIPS)&lt;/a&gt;密切合作有關。從2016年起SIPS舉辦年度研討會，但是不同於一般學術研討會，SIPS以黑客松、工作坊與閃電演講為內容，創造與會者合作構思並規劃提昇心理科學品質方案的場域。未來兩方的合作可望推出讓註冊研究更普及的方案。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;中華心理學刊可採取的經營模式&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;中華心理學刊可採取的經營模式&lt;/h2&gt;
+&lt;p&gt;除了以上四本期刊，Center for Open Science的&lt;a href=&#34;https://cos.io/rr/&#34;&gt;註冊研究網頁&lt;/a&gt;不定期更新開辦註冊研究的期刊清單與投稿資訊，值得學刊編輯群與讀者留意。考量期刊的經營狀況，還有台灣以及華文學術環境，我認為Journal of European Psychology Students的經營模式比較適合現在的中華心理學刊。個人的理由來自幾點觀察：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;多數華人學者還不大了解註冊研究的流程，像是有位語言認知域的老師與我私下交談後，才知道註冊研究只在第一階段評審理論與分析方法的邏輯關聯。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;已經習慣傳統研究啟動及發表模式的研究者與團隊，覺得註冊研究模式會增加工作負荷與寫作時間。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;華文心理學圈缺乏有影響力的&lt;strong&gt;奠基研究(Capstone Research)&lt;/strong&gt;，使得這個社群的心理學者缺乏知識危機的意識，難以形成需要新型態發表模式的學術氛圍。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;基礎養成教育削弱研究者對&lt;strong&gt;待澄清的研究操作(Questionable Research Practices)&lt;/strong&gt;的認識，外在的績效制度與獎補助政策，也有可能助長研究者們採取只求有成果發表的動機。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由投稿須知的註冊研究說明「資料尚未收集的原創性實徵研究論文。」，我認為現在的方針是鼓勵研究者投稿的計畫書偏向&lt;strong&gt;探索性研究(Exploratory Research)&lt;/strong&gt;，重製已出版研究的&lt;strong&gt;確證性研究(Confirmatory Rsearch)&lt;/strong&gt;則歸為研究報告，而且該段投稿須知中沒有鼓勵研究者採&lt;strong&gt;預先註冊(pre-registreation)&lt;/strong&gt;執行計畫。對照第一本徵求註冊期刊Cortex在&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;投稿指南&lt;/a&gt;中，有說明Cortex平等對待原創性研究與高價值重製研究的文字(“High-value replication studies are welcome and will be treated with equal priority to novel studies.”)。以目前已公開的投稿須知，中華心理學刊將無法照搬Cortex的投稿指南。相對來說，Journal of European Psychology Students區分原創性與再現研究的投稿及評審模式，是比較可能採行的策略。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;促進註冊研究的策略&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;促進註冊研究的策略&lt;/h2&gt;
+&lt;p&gt;不論中華心理學刊會採取什麼樣的執行模式，讓更多研究者願意採用註冊研究模式經營研究計畫與發表成果，需要製造搭配條件，啟發內在動機。最後我提供一些可行措施：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;改善研究生畢業論文產製流程
+台灣各大學的心理學研究所畢業論文或報告要求，都是要學生先提出計畫書，再執行研究完成論文，各校的主要差別是計畫書的審查方式。如果採用註冊研究模式，學生提出的計畫書只要說明關鍵研究的理論基礎與執行方法，最後的口試以檢視有無按照計畫書執行為重點。中華心理學刊可做為計畫書評審平台，讓師生能明確掌握執行進度，也能確保畢業論文有正式發表的管道。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;輔助註冊研究的研究經費補助政策
+近幾年歐美各國已有&lt;a href=&#34;http://scchen.com/zh/post/text_2016003/&#34;&gt;提昇研究品質的經費補助政策&lt;/a&gt;，目前台灣的整體環境受制於預算總量管制，加上主政者的想法，未來幾年各機構研究者必然還是採現在的競爭模式爭取經費。但是我認為可以先從心理學門試行最低度補助計畫，也就是主持人提的研究計畫全部或部分內容已經通過期刊的第一階段評審，經費補助者可根據可執行的部分(參與者費、倫理審查費、設備租用費等)，核給最低限度的研究經費，接著再根據評分及意見決定其他項目經費。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;向各研究倫理中心介紹註冊研究與開放科學
+我舉辦兩次工作坊都遇到研究倫理審查的實務問題，去年底也遇到台灣大學研究倫理中心人員親自訪視。交流中發現如台大的倫理中心，負責人員完全不了解註冊研究。國外有實際操作經驗的研究者都肯定比起傳統研究流程，註冊研究的參與者隱私資料保護，比起倫理中心的建議更為嚴格。如果能讓各倫理中心負責人員了解註冊研究模式，有利增進申請與執行研究倫理保障程序的效率。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-ChambersRegisteredReportsnew2013&#34;&gt;
+&lt;p&gt;Chambers, Christopher D. 2013. “Registered Reports: A New Publishing Initiative at Cortex.” &lt;em&gt;Cortex&lt;/em&gt; 49 (3): 609–10. &lt;a href=&#34;https://doi.org/10.1016/j.cortex.2012.12.016&#34;&gt;https://doi.org/10.1016/j.cortex.2012.12.016&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-JonasHowcanpreregistration2016&#34;&gt;
+&lt;p&gt;Jonas, Kai J., and Joseph Cesario. 2016. “How Can Preregistration Contribute to Research in Our Field?” &lt;em&gt;Comprehensive Results in Social Psychology&lt;/em&gt; 1 (1-3): 1–7. &lt;a href=&#34;https://doi.org/10.1080/23743603.2015.1070611&#34;&gt;https://doi.org/10.1080/23743603.2015.1070611&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-KingRegisteredReportsStudent2016&#34;&gt;
+&lt;p&gt;King, Maedbh, Fabian Dablander, Lea Jakob, Maria Agan, Felicitas Huber, Jonas Haslbeck, and Katharina Brecht. 2016. “Registered Reports for Student Research.” &lt;em&gt;Journal of European Psychology Students&lt;/em&gt; 7 (1). &lt;a href=&#34;https://doi.org/10.5334/jeps.401&#34;&gt;https://doi.org/10.5334/jeps.401&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

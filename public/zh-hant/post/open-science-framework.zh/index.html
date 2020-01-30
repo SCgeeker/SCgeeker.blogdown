@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="陳紹慶">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="這篇網誌希望讓你在一個小時內，就能掌握這套結構化、協同合作、與流程控制的研究專案管理平台。">
+
+  
+  <link rel="alternate" hreflang="zh-Hant" href="/zh-hant/post/open-science-framework.zh/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#4caf50">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/zh-hant/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/zh-hant/post/open-science-framework.zh/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="陳紹慶的個人網站">
+  <meta property="og:url" content="/zh-hant/post/open-science-framework.zh/">
+  <meta property="og:title" content="心理科學研究必用神器2 ~ Open Science Framework | 陳紹慶的個人網站">
+  <meta property="og:description" content="這篇網誌希望讓你在一個小時內，就能掌握這套結構化、協同合作、與流程控制的研究專案管理平台。"><meta property="og:image" content="/img/osf-logo-black.original.png">
+  <meta property="twitter:image" content="/img/osf-logo-black.original.png"><meta property="og:locale" content="zh-Hant">
+  
+    
+      <meta property="article:published_time" content="2018-08-21T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2018-08-21T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/zh-hant/post/open-science-framework.zh/"
+  },
+  "headline": "心理科學研究必用神器2 ~ Open Science Framework",
+  
+  "datePublished": "2018-08-21T00:00:00Z",
+  "dateModified": "2018-08-21T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "陳紹慶"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "陳紹慶的個人網站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img//"
+    }
+  },
+  "description": "這篇網誌希望讓你在一個小時內，就能掌握這套結構化、協同合作、與流程控制的研究專案管理平台。"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>心理科學研究必用神器2 ~ Open Science Framework | 陳紹慶的個人網站</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜尋</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜尋..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/zh-hant">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切換導航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/zh-hant">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#about"><span>關於我</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#posts"><span>網誌</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#projects"><span>專案</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#featured"><span>著作</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#contact"><span>聯絡方式</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+<div class="article-header">
+  
+  
+  <img src="/img/osf-logo-black.original.png" class="article-banner" alt="">
+  
+
+  
+</div>
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>心理科學研究必用神器2 ~ Open Science Framework</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 21, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 閱讀時間（分鐘）
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/zh-hant/post/open-science-framework.zh/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/zh-hant/categories/teaching/">Teaching</a>, <a href="/zh-hant/categories/reproduce-practice/">Reproduce Practice</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+<div id="TOC">
+<ul>
+<li><a href="#前言">前言</a></li>
+<li><a href="#註冊登入與帳戶設定">註冊、登入與帳戶設定</a><ul>
+<li><a href="#帳戶設定">帳戶設定</a></li>
+</ul></li>
+<li><a href="#專案儀表板dashboard">專案儀表板(Dashboard)</a></li>
+<li><a href="#創建與管理研究專案">創建與管理研究專案</a><ul>
+<li><a href="#創建新專案">創建新專案</a></li>
+<li><a href="#管理專案">管理專案</a></li>
+<li><a href="#專案隱私設定">專案隱私設定</a></li>
+</ul></li>
+<li><a href="#專案協作者權限設定">專案協作者權限設定</a><ul>
+<li><a href="#由專案主頁面設定">由專案主頁面設定</a></li>
+<li><a href="#由專案物件頁面設定協作者權限">由專案物件頁面設定協作者權限</a></li>
+<li><a href="#移除協作者專案管理權限">移除協作者專案管理權限</a></li>
+</ul></li>
+<li><a href="#專案協作項目">專案協作項目</a><ul>
+<li><a href="#wiki">Wiki</a></li>
+<li><a href="#檔案files">檔案(Files)</a></li>
+</ul></li>
+<li><a href="#專案註冊程序">專案註冊程序</a><ul>
+<li><a href="#註冊實作1由專案主頁面進行">註冊實作1：由專案主頁面進行</a></li>
+<li><a href="#註冊實作2osf-rr專頁">註冊實作2：OSF RR專頁</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="前言" class="section level2">
+<h2>前言</h2>
+<p><a href="https://osf.io/">開放科學平台(Open Science Framework)</a>是2013年開放科學中心(Center for Open Science)開始經營的科學研究協作平台，到了2018年7月已經有十萬名註冊使用者。雖然界面語言只有英文，世界各地能使用網路的研究者都知曉這個平台提供研究資料保存與協同合作服務。本人接觸的華文地區有不少科學研究者知道OSF服務，但是一直缺乏學習與使用機會，雖然我還沒有看到官方的正式統計，約略估計華文使用者運用OSF共享及版本控制等服務的普及率，應該低歐美各國使用者不只一倍。</p>
+<p>寫作這篇網誌為本人教學與推廣使用。使用的OSF介面截圖取自COS官方<a href="http://help.osf.io/">功能介紹網頁</a>，如果使用過程有任何問題，可至官方網頁查詢。</p>
+</div>
+<div id="註冊登入與帳戶設定" class="section level2">
+<h2>註冊、登入與帳戶設定</h2>
+<p>初次使用請註冊帳號，只要按下如下圖的<strong>註冊(Sign up)</strong>，就會進入註冊頁面。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/122/original/048766b8-3803-4404-85cf-4a9ef552035a.png" /></p>
+<p>註冊頁面只要輸入個人完整姓名(建議使用英文)，個人常用電子郵件信箱，以及自訂密碼能完成。請留意註冊網頁有防BOT機制(下圖1)，按下創建帳戶(下圖2)，再到個人電子郵件信箱查看確認信，按下確認連結就完成創建程序。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/126/original/5d42f457-8e4b-4660-a18d-4e4ee4c6b9d9.png" /></p>
+<p>創建帳戶之後，你隨時可從任何可上網的網頁瀏覽器登入個人OSF帳戶。只要從首頁按下<strong>登入(Sign in)</strong>即可。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/128/original/a81cbd79-fa9d-4825-9603-94b57e1a44c1.jpg" />
+登入畫面輸入註冊的個人電子郵件信箱與密碼，正確即可登入。目前也支援使用者以<a href="https://orcid.org/">ORCID</a>登入，如果使用者是專業學術工作者，建議登錄一個專屬ORCID，好處稍後會提到。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/808/052/original/b6e1c9ce-d700-47e6-b9f6-30b58c5f58f5.png" /></p>
+<div id="帳戶設定" class="section level3">
+<h3>帳戶設定</h3>
+<p>首次登入使用者建議先花點時間在帳戶設定頁面(Profile)，填入個人重要資訊，帳戶設定頁面開啟途徑如下圖：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/168/original/44f06cff-0f24-4ebb-b51e-e24dd4254fb4.png" /></p>
+<p>帳戶設定頁面如下圖，不過初次使用或未設定者應該是沒有任何資訊。要填入資訊請點一下如下圖的地方：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/275/461/original/8acf8b95-5c5e-4a1c-8650-3997b13008b4.jpg" /></p>
+<p>個人資訊有四大項，首先是真實姓名(Name)。這個部分建議比照學術寫作格式建立姓名資訊，頁面下方還有預覽APA與MLA格式的姓名呈現，確認無誤就按<code>Save</code>。如此一來，你所建立的專案就能使用合乎規範的格式於任何報告中引用，或者充實個人履歷的項目。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/164/original/5a55844a-2405-4b4b-b3c1-c096e752fc89.png" /></p>
+<p>第二大項集合個人有實際使用的社群平台帳號(Social)，包括個人網頁、推特等。稍早提到的ORCID也是在此輸入，儲存後就能使用ORCID登入OSF。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/275/469/original/b1b3bcce-9f3f-4c47-94e3-f5a679d635d5.png" /></p>
+<p>第三大項是工作經歷(Employment)，你希望在OSF公開的經歷都可以依下圖欄位填入，正在從事的職位只要勾選<strong>Ongoing</strong>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/165/original/a1539e4c-9f37-4b52-ab8b-ecbed8a398fa.png" /></p>
+<p>最後一項是學歷(Education)，你希望在OSF公開的學歷都可以依下圖欄位填入，在學中的學校只要勾選<strong>Ongoging</strong>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/166/original/d88740f4-423a-4e2c-a8bc-3763dbcad120.png" /></p>
+<p><strong>個人展望</strong></p>
+<p>由於OSF支授ORCID登入，我個人希望OSF下一次改版能讓使用者直接由ORCID匯入。因為ORCID是專屬個人的學術經歷工作帳號，你希望公開讓人檢索的資訊都已經在建立於ORCID，並串連個人的學術作品。此外，ORCID有提供多國語言界面，未來OSF朝向多語界面改版，也能經由讀取使用者ORCID預設語言，自動切換為對應的語言介面。</p>
+</div>
+</div>
+<div id="專案儀表板dashboard" class="section level2">
+<h2>專案儀表板(Dashboard)</h2>
+<p>所有使用者登入OSF第一個看到的是如下圖的這個頁面。當使用者創建或協作的專案越多，頁面顯示的專案欄位就越多，欄位預設排序是以專案更新時間，由上至下排列。下圖中每欄的粗體字是專案頁面標題，有些以斜槓(/)區隔的標題，代表該項主專案之下的物件(Component)。在這個頁面你想找比較舊的專案，可以頁面上方的搜尋欄(Search your projects)，找出你要維護的專案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/936/original/81df1b9e-a0a8-427f-8053-71a851a0d748.jpg" /></p>
+<p>如果要用比較有系統的方式整理與尋找專案，只要按如下圖的<strong>My Projects</strong>，切換到<strong>專案管理介面</strong>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/535/016/original/d7ac4196-594e-40f2-ba14-a6e9ebea7db5.png" />
+專案管理介面如下圖。下圖畫面是先點選左側分割視的<strong>All my projects</strong>，在右側分割視窗顯示所有參與的專案，使用者可以先點選一個專案使其標題反白(下圖1)，然後按一下右上角的箭頭(下圖2)。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/611/original/16d8964f-8ea4-472c-b82c-d883ea8f037d.png" /></p>
+<p>按下箭頭後會跳出如下圖的視窗，顯示已被選擇的專案摘要資訊，讓使用者檢視是否為要找的專案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/608/original/579951c4-107d-4dea-aa7c-d5df34b93789.png" /></p>
+<p>專案管理介面和作業系統的檔案管理視窗類似，使用者可以自訂依專案名稱排序，或者依更新時間排序。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/600/original/0bb008f7-bbcd-42d3-981e-d7c01b46e40f.png" /></p>
+<p>與專案儀表板主頁一樣，使雨者可以由過濾對話框(Filter displyaed projects)，讓這個頁面只顯示符合目標關鍵詞的專案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/411/original/1445569c-0d68-465e-84cf-367993bc27c1.png" /></p>
+<p>如果你的專案有其他協作者，可由左側視窗選擇協作者姓名，過濾出與該位協作者合作的專案。如果有在專案主頁設定標籤(Tags)，也可帶此使用標籤選擇要管理的專案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/598/original/e1508448-9f27-4494-a504-3ede4d3dc807.png" /></p>
+<p>以協作者姓名或標籤選擇專案後，可以繼續增減過濾條件，參考下圖2。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/584/original/1f1ab100-0f9a-4ccc-9715-b90ef57188a5.png" /></p>
+<p>OSF的專案管理介面已預設歸類使用者已發佈預印本的專案(All my preprints)，以及已註冊的專案(All my registrations)。只要從左側視窗選擇這些歸類，就會只顯示這類專案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/591/original/c3875bb7-d060-441e-a50d-b4148d15ede8.png?1517944707" /></p>
+<p>使用者可以自訂專案分類，從點選下圖標示的+開始：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/604/original/45795c3e-e721-4492-8e4a-05f318253aae.png" /></p>
+<p>接著會出現如下圖的對話視窗，輸入使用者自訂的分類名稱即可：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/606/original/ddf60cbd-acbe-43ca-9cdf-1eb64c3be310.png" /></p>
+<p>已建好的分類可隨時更改名稱或刪除，只要點選下圖的地方。要增加專案至自訂分類，滑鼠點擊按住要加入的專案欄位，反白後拖入自訂分類。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/613/original/544fb6ef-4996-4356-aaaa-45848bd0f974.png" /></p>
+<p>要從自訂分類移除某個專案，按照下圖三個步驟即可。移出自訂分類的專案還是存在於專案儀表板。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/615/original/d42f961b-a402-4342-bbf6-45c9d4dd365c.png" /></p>
+<p>看到其他使用者的公開專案值得參考，可用專案書籤收藏。只要在該專案主頁，點選如下圖的功能按鈕。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/409/original/328f6177-eaa6-4b37-be0e-4e6f84fc4f1c.png" /></p>
+<p>接著從專案管理介面，左側視窗<strong>Bookmarks</strong>分類就會看到曾收藏的專案，使用者也可以由此拖放專案到自訂分類。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/581/original/d4adc11b-ca99-4a07-b9db-1f27c17ad409.png" /></p>
+</div>
+<div id="創建與管理研究專案" class="section level2">
+<h2>創建與管理研究專案</h2>
+<p>OSF平台的每個研究專案(Project)像是個人硬碟裡的一個資料夾，OSF專案提供更多元的資料管理功能，善用這些功能能有效紀錄個人或團隊的研究過程，其他研究者能使用公開專案內容重現研究。</p>
+<div id="創建新專案" class="section level3">
+<h3>創建新專案</h3>
+<ol style="list-style-type: decimal">
+<li>建立空白專案</li>
+</ol>
+<p>從頭開始建立一個專案很簡單，由專案儀表板按下創建按鈕即可，如下圖提示：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/573/original/c8ad9cf3-c9ad-43c2-a3a7-096fa36b35e1.png" /></p>
+<p>接著出現如下圖對話視窗，預設只要輸入專案標題(Title)即可。不過使用者可以打開<code>More</code>，輸入專案描述，或者選擇已存在的專案做為模板。基本上只要輸入標題，就可按下<code>Create</code>：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/575/original/f231b36d-8774-43b5-9750-77c1d95e9646.png" /></p>
+<p>創建完成可以選擇直接去專案主頁面(<code>Go to new project</code>)，或者留在專案儀表板：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/581/original/52b08855-35e6-4ce8-96b1-fb8cbf546160.png" /></p>
+<p>新建好的專案主頁面，下圖是以現存專案做模板建立的新專案，如果是空白專案，不會存在任可檔案(Files)與物件(Component)。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/929/original/e384217e-ca2d-4d3a-aab2-ba4c216090c7.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>使用公開專案創建新專案</li>
+</ol>
+<p>當使用者要計畫一項再現研究，或者讓學生規劃一項研究專案，最適合使用這種方法創建專案。進入做為模板的專案主頁面，從下圖標示的按鈕開始：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/961/original/71b53f70-d233-453b-8dd1-a0f8d2b1c281.jpg" /></p>
+<p>按下後會出現如下圖的子視窗，選擇中間的<code>Duplicate template</code>：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/957/original/195a9fb8-2492-4542-acd1-c167aed5d60c.jpg" /></p>
+<p>確定要就此創建新專案，直接按下<code>Create</code></p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/965/original/6d3fa518-42f2-413a-8dc6-1d5cbba59638.png" /></p>
+</div>
+<div id="管理專案" class="section level3">
+<h3>管理專案</h3>
+<p>使用者自建的專案可以隨時變更專案名稱。只要移動滑鼠到標題區域，快速點擊兩下。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/307/original/5d8d43b9-cb42-4b23-bf29-7b3889b0f3f1.png" /></p>
+<p>標題就會變成如下圖的對話框，使用者可以更改到滿意為止，按下綠色勾勾就完成更改。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/311/original/7a6ada14-da42-4607-ad61-b6bc9299db08.png" /></p>
+<p>如果這個專案現在或未來要公開，使用者可以在主頁面決定授權方式，讓其他使用者了解合理使用專案內容的方法。授權設定從下圖標記處開始：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/333/original/2234c293-83a8-469e-b630-157b18c51e5a.jpg" /></p>
+<p>接著出現如下圖的選單視窗，使用者可選擇一個最適合的授權方式，進行適當編輯後儲存，即可完成授權。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/337/original/bcbb9ff4-6014-483b-aa05-c213d0babf41.png" /></p>
+<p>每個專案物件(Component)類似一個子資料夾，創建方法與專案大同小異。以下是創建空白物件的方法，從下圖標記處開始：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/944/original/811f1617-2273-4223-ac08-60f17d8c5fd9.png" /></p>
+<p>下圖與創建空白專案的對話視窗差不多，只有最小面多了物件分類選單，使用者可以根據自訂的物件功能，給予合適的分類：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/946/original/0fdf2b89-e8c0-498e-9882-9bddeda32744.jpg" /></p>
+<p>設定完成後，可自行選擇要去新建的物件頁面(<code>Go to new component</code>)，還是留在專案主頁面。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/942/original/757969a8-121e-4846-896b-af937452904f.jpg" /></p>
+<p>到物件頁面會發現標題有些不一樣，斜槓之前是主專案標題，並且是一個超連結，讓使用者能回到專案主頁面：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/940/original/0e182e71-a032-4525-8cf5-4ccf18a44198.png" /></p>
+</div>
+<div id="專案隱私設定" class="section level3">
+<h3>專案隱私設定</h3>
+<p>每一個OSF專案與物件的隱私設定都是個別調整，預設都是不公開。要改為公開，只要在專案與物件主頁面的如下圖標示處，按下按鈕：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/216/original/a080cc6f-51c7-4268-b335-0ca939158dd4.png" /></p>
+<p>如果是在專案主頁面，會出現如下圖是否要繼續的提示訊息。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/220/original/fbd05910-009f-465e-91ec-9fddaefa7ebd.png" /></p>
+<p>接著會出現如下圖的對話視窗，列出專案之下的所有物件，可由此設定那些物件要公開，那些不公開。選好再按繼續鈕。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/214/original/1fe11b76-9ed6-4c62-a872-5865ac394799.png" /></p>
+<p>確認要改成公開的專案與物件，無誤按<code>Confirm</code>就大功告成。如果要重新選擇請按<code>Back</code>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/218/original/ce728501-75e8-41bc-9102-aa0c19ad04f2.png" /></p>
+<p>已設為公開的專案與物件也可以改回不公開，按下圖標示處的按鈕，再走一次上面的選擇步驟即可。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/228/original/5399f894-f5cd-4235-8a75-f49689f9613b.jpg" /></p>
+</div>
+</div>
+<div id="專案協作者權限設定" class="section level2">
+<h2>專案協作者權限設定</h2>
+<p>每個OSF專案與物件都可以指定協作者，合作管理專案與物件的內容。官方網站有<a href="http://help.osf.io/m/projects/l/814917-understand-contributor-permissions">詳細說明</a>，以下簡單說明OSF的三種權限設定：</p>
+<p>Read：有此權限的協作者只能檢閱專案與物件內容，由專案管理者新加入的協作者皆有此權限。
+Read+Write：有此權限的協作者可以增加與刪除存放於專案的檔案與wiki，調整外掛與建立物件，也可以修改專案頁面的協作者機構資訊。
+Administrator：專案創建者有全部管理者權限，包括調整專案與物件的隱私設定，專案的預先註冊等功能。</p>
+<p>在專案與物件頁面列名的協作者不一定是有參與權限的協作者，可由協作者設定頁面安排。有列名的協作者是<strong>bibliographic</strong>，未列名的協作者是<strong>non-bibliographic</strong>。</p>
+<div id="由專案主頁面設定" class="section level3">
+<h3>由專案主頁面設定</h3>
+<p>要增加與刪減協作者，有管理者權限的協作者先按一下下圖標記處，進入協作者設定頁面。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/047/original/807610dd-6009-4b9a-97b0-8acb8939e866.jpg" /></p>
+<p>要加入有OSF帳號的協作者，從下圖箭頭標示處按<code>Add</code>開始：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/463/original/14b58412-6324-41ff-a111-c0bf37b5e2cb.jpg" /></p>
+<p>接著出現如下圖的搜尋視窗，只要在搜尋對話框裡，輸入協作者註冊的全名。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/467/original/762b6de2-eb58-4e7e-96e8-91b39176cc48.png" /></p>
+<p>有找到就會出現如下圖的搜尋結果，確認是這個使用者就按標記的<code>+</code>號。協作者註冊時提供的個人資訊越完整，越容易找到。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/465/original/b2b62e3d-1ba3-4886-9745-c6853e2d2284.jpg" /></p>
+<p>如果協作者沒有OSF帳號，會出現如下圖的提示訊息，可以點擊連結進入設定頁面。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/461/original/34ac7e5a-e786-404a-b6fd-364f6ee90314.png" /></p>
+<p>未註冊協作者的設定頁面只要輸入全名與電子郵件信箱，之後這位協作者只要在註冊頁面輸入這些資訊，就能快速完成帳戶創建，並在專案儀表板看到這項專案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/473/original/52a02de3-76fb-443e-8fdb-312fffee4508.png" /></p>
+<p>確定要加入協作者會變成如下圖的畫面。管理者可在此設定協作者權限，包括是否列名。設定完成按<code>Add</code>繼續。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/469/original/bba48c35-121a-4ba7-9858-fbe6ad323d5c.png" /></p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/471/original/5709a65d-d640-4732-837e-0abbc8cf7b86.png" /></p>
+<p>如果是從專案主頁面增加協作者，而且專案之下還有物件，上圖畫面會變成如下圖的提示按鈕：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/460/original/c02c52ec-eabd-4164-929b-a2214998d37d.png" /></p>
+<p>接著從以下畫面，設定是否要讓協作者在每個物件裡有與專案主頁面相同的權限：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/458/original/0a87be96-939d-461d-aa38-4587d637f6fb.png" /></p>
+<p>增加完成回到協作者設定頁面，管理者隨時可在此更改設定，以及移除協作者。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/456/original/9ca05050-ba31-431e-b323-d8a8d3285228.jpg" /></p>
+</div>
+<div id="由專案物件頁面設定協作者權限" class="section level3">
+<h3>由專案物件頁面設定協作者權限</h3>
+<p>與專案主頁面一樣，按一下下圖標記處進入協作者設定頁面：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/103/original/068122d1-8be3-4413-9871-1786470e21e0.jpg" /></p>
+<p>在協作者設定頁面按下如下圖的<code>Add</code>按鈕，就可以增加已註冊或未註冊的協作者，步驟與專案的操作相同。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/377/original/bdbcd9af-c364-41b6-b4a6-6b80b2671e46.jpg" /></p>
+<p>確認加入協作者之前，也可以調整管理與列名權限。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/379/original/b7ec7204-1c44-4299-92f6-75f7cd0320d5.jpg" /></p>
+<p>物件的協作者設定頁面也可以隨時調整每位協作者權限。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/375/original/4b42acf7-584e-4405-aadd-48a394615427.jpg" /></p>
+</div>
+<div id="移除協作者專案管理權限" class="section level3">
+<h3>移除協作者專案管理權限</h3>
+<p>如果要將某依協作者從專案或物件中移除，從協作者設定頁面，按下要移除的協作者右邊的<code>X</code>即可。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/647/original/4c8f6f92-0163-47d3-b44f-a483bd5596ba.png" /></p>
+<p>確認要移除該位協作者，在下圖的提示視窗按下<code>Remove</code>。如果是在專案主頁面進行這項操作，還可以選擇是否一併移除物件的管理權限。管理者權限也可以使用這種功能在協作者之間交接。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/645/original/45897782-13a5-4d8f-96ca-d7c827767d1b.jpg" /></p>
+</div>
+</div>
+<div id="專案協作項目" class="section level2">
+<h2>專案協作項目</h2>
+<p>一起進行研究計畫的團隊人員要經常分析的資訊有資料檔案，執行紀錄與報告等。資料媒介因研究性質而異。OSF提供可協作維護的Wiki與檔案系統，讓協作者根據實際需要設定與增修內容。</p>
+<div id="wiki" class="section level3">
+<h3>Wiki</h3>
+<p>OSF wiki是一套線上動態文件編輯與展示功能，使用者只要運用<a href="https://daringfireball.net/projects/markdown/">Markdown</a>與<a href="https://www.mathjax.org/">MathJax</a>兩套語法編輯文件內容，就可以在網頁展示頁看到編輯結果。希望運用動態文件紀錄研究過程與編輯報告元素的使用者，我建議花些時間去學習<a href="https://daringfireball.net/projects/markdown/">Markdown</a>與<a href="https://www.mathjax.org/">MathJax</a>。</p>
+<p>要檢視一份Wiki的完整畫面，從如下圖畫面標記的兩個地方任何一處，點擊即可開啟全視窗畫面。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/126/original/08097b47-4b8c-4ae3-a8e9-4108396b7566.jpg" /></p>
+<p>Wiki全視窗畫面如下圖，有編輯權限的使用者能在此看到各種與Wiki有關的功能。每個OSF專案與物件預設必有一個名為<strong>Home</strong>的Wiki文件，如果用者需要增加其他Wiki文件，按一下下圖箭頭指示的New：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/671/original/20f2afdb-743e-431c-8397-5525adda58a0.png" /></p>
+<p>接著會出現如下圖的對話視窗，請使用者輸入新Wiki文件的名稱，輸入完成按<code>Add</code>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/668/original/2ebe6b7d-bcb0-4f3e-875a-d37d395b7559.jpg" /></p>
+<p>今天增加的Wiki文件叫做“Daily Lab Notes”，新增成功會變成以下畫面。中間是預覽視窗，最右邊是編輯視窗。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/666/original/b0ab6660-f79a-4269-aad8-822492d2af67.jpg" /></p>
+<p>Wiki編輯視窗輸入的內容馬上可在預覽視窗看到結果，以下畫面有Markdown與MathJax的編輯與預覽結果。更多編輯技巧請參考<a href="http://help.osf.io/m/collaborating/l/524109-edit-the-wiki">官網說明</a>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/430/376/original/63cb1387-65af-4349-a60c-e28144b0ea93.jpg" /></p>
+<p>OSF Wiki編輯支援多人協作編輯，以及隨編隨存，使用者不必打幾個字就存一次檔。建議使用者設定編輯目標，達成才存檔。每存一次就會在預覽視窗最上方看到最近存檔時間，並且能與前次存檔比較版本差異，比較功能按下如下圖的<code>Compare</code>即可開啟：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/760/original/e0783977-af8d-4991-a31a-4452762a599b.png" /></p>
+<p>開啟後中間與右邊視窗可切換版本，比較不同版本內容差異。如果研究團隊約定每日更新研究紀錄，只要每日在Wiki記載指定事項，累積數日後可運用版本比較功能，檢視初期紀錄至今的內容變化。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/762/original/5803983f-7bd2-4484-84db-d9d3f80b43dd.jpg" /></p>
+<p>如果日後專案要公開，團隊想把流水帳式的Wiki文字紀錄另外存檔。想要刪除原始Wiki文件，只要從全螢幕畫面選擇要刪除的Wiki，然後點擊如下圖的<code>Delete</code>按鈕：</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/673/original/051dff8c-30d1-4511-b41c-cbc65ed5b4eb.jpg" /></p>
+<p>確認要刪除請按下如下圖視窗中的<code>Delete</code>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/663/original/1e61c427-eede-4a02-aa16-4475bd89c60a.jpg" /></p>
+</div>
+<div id="檔案files" class="section level3">
+<h3>檔案(Files)</h3>
+<p>如果使用者能接受專案是資料夾，就不難理解OSF專案與物件的檔案管理，與個人電腦作業系統無太大差異。除此之外還要知道的是檔案的<strong>版本控制</strong>(Version Control)，這是運用OSF做專案備份的基本須知。</p>
+<p>只要按一下下圖的區域，就可切換到全視窗的檔案檢視畫面。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/285/original/bf92e417-5a5a-4997-9a54-673bd9459260.png" /></p>
+<p>如果是在專案主頁面切換至此，會見到專案之下物件的檔案儲存節點。下圖畫面中每個<code>OSF Storage</code>是上傳檔案到專案與物件的連結，需要備份的檔案，請在備份前規劃好要保存在專案與物件之中的檔案清單。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/069/original/e604eee7-01ab-402d-9eec-238dc81f188c.png" /></p>
+<p>上傳檔案之前，先選好要存放的<code>OSF Storage</code>，點選後會出現如下圖的功能清單。按下Upload會出現檔案選擇清單，請選擇要從你的硬碟上傳的檔案，一次不限一個。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/433/original/0bbe4ae8-4e92-48d5-a403-0ed9cf4f32aa.png" /></p>
+<p>上傳成功就會如下圖，在檔案清單看到剛剛選擇的檔案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/431/original/544d41c8-db7f-4f05-aaab-a5022f1ff47e.jpg" /></p>
+<p>如果上傳的檔案是Word、試算表、簡報等文件檔，以及常見格式的圖片檔案，可以從OSF網頁檢視內容。只要選擇要檢視的檔案，然後點擊兩下。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/437/401/original/4ea3be60-ef48-416f-80fc-b7c49744d4fc.jpg" /></p>
+<p>就可以開啟檢視畫面，如pdf檔可切換成全螢幕檢視或列印。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/437/403/original/c3287fc7-4862-436d-b404-b2f035d35852.jpg" /></p>
+<p>如果使用者要增加檔案資料夾，在檔案檢視畫面功能選單有<code>Create Folder</code>按鈕。選好要增加的資料夾的<code>OSF Storage</code>，再按按鈕。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/655/original/70ccc83b-0fa2-4b3a-9d38-4bf4ac046d6d.png" /></p>
+<p>按下後會出現如下圖的對話框，輸入使用者設定的資料夾名稱。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/660/original/81d1fe64-497c-48bc-98e3-0d87163ab55a.jpg" /></p>
+<p>現在有許多支援遠端協同作業的個人雲端服務，運用OSF的附加功能(Add-on)，使用者能把在雲端服務編輯的檔案，轉移到OSF專案備份。使用者可自行查詢<a href="http://help.osf.io/m/addons">OSF支援的雲端服務</a>，以下用Google雲端為例示範。</p>
+<p>首先從專案主頁面的下圖標記處，開啟附加功能設定頁面。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/361/original/63d9741c-a8be-4b98-90a6-477df7dfba0e.jpg" /></p>
+<p>從設定頁面選擇要附加的雲端服務，點一下<strong>Enable</strong>開啟功能。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/565/original/31610c83-8e23-4619-a7d2-2ce271bba6f4.jpg" /></p>
+<p>以下畫面是雲端服務附加事項說明，確認要使用就按箭頭標示處。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/556/original/8d335fc8-0909-4aa7-8e1c-7bf25523f37b.jpg" /></p>
+<p>回到設定畫面會出現如下圖的欄位，再按箭頭指示的連結，正式連結OSF與個人Google雲端。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/563/original/89be8914-8744-4bc3-952c-792f0cc85a77.jpg" /></p>
+<p>Google雲端通常也有很多資料夾，可在以下畫面選擇要附加到這個OSF專案的資料夾。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/444/785/original/5ced9429-b95f-42f4-9f93-63a42e0dd21a.jpg" /></p>
+<p>成功的話回到OSF專案檔案檢視畫面，會看到除了<code>OSF Storage</code>，還多了<code>Google Drive</code>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/444/783/original/f2b14704-31b7-4c4f-8cce-492d4dc2e168.jpg" /></p>
+<p>如果使用者要將個人雲端的檔案或資料夾移動到OSF專案，請參考下面GIF動畫。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/663/original/7df74ba5-50eb-403f-9e5a-1601fa525ac7.gif" /></p>
+<p>OSF檔案檢視頁面的功能選單有壓縮下載功能<code>Download as zip</code>，選擇要下載檔案的資料夾，再按這個按鈕，就會下載zip壓縮檔。這個功能適用大量資料檔備份於OSF，分析前要一次下載的狀況。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/658/original/90c2fe05-a34e-49f2-bdf2-79603ad8d688.jpg" /></p>
+<p>OSF最重要的<strong>檔案版本控制</strong>是使用者必知的功能，善用此功能可減少產生重覆檔案。下圖的檔案檢視畫面有個R程式碼檔案，版本(Version)這一欄顯示3，表示使用者已做了三次編輯，每次編輯後都上傳到這個OSF專案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/835/original/b05e26a9-2baf-47b6-adc8-00e48adfd9c5.jpg" /></p>
+<p>如果再更新一次並上傳，OSF就會判定為第4版。從檔案內容檢視畫面，使用者可以使用畫面上方功能選單裡的<code>Revisions</code>，檢視檔案版本更新歷程。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/858/original/d4e2bad3-e97e-410a-b64a-1f761695aa71.png" /></p>
+<p>按下<code>Revisions</code>就出現如下圖的畫面，如果使用者有需要找出之前曾修改的內容，可以下載想看的版本。由此可知OSF對每一份檔案的每一次更新，都有保留備份。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/839/original/213e600a-ece1-4e25-8902-daf05d838d60.png" /></p>
+<p>如果使用者想防止檔案進一步更改，可以使用檔案檢視畫面的<code>Check out file</code>功能。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/194/404/original/d3a09e65-64bd-4c6a-b23f-3de0389a3d4e.png" /></p>
+<p>確定Check out，OSF不會接受這份檔案的更新上傳。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/000/369/563/original/ff2bf6a0-5037-4dda-a69a-469766430700.png" /></p>
+<p>要解除禁止更改，只要使用<code>Check in file</code>這項功能。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/194/400/original/ec0f6baa-51f8-4e6f-9efb-748e35f75733.png" /></p>
+</div>
+</div>
+<div id="專案註冊程序" class="section level2">
+<h2>專案註冊程序</h2>
+<p>OSF最為人熟知的功能是提供各式預先註冊的服務，也就是加上時間標章與研究者註解的檔案備份服務。前面的檔案功能已知OSF會備份使用者上傳檔案的每一份更新，如果這份檔案是要做<strong>預先註冊</strong>或已通過<strong>註冊報告第一階段評審</strong>的計畫書，OSF提供的<strong>註冊(Registration)</strong>，實際操作就是使用者要選擇合適的備份註解加上檔案快照服務。手上正有研究計畫的讀者，如果不清楚要使用那一種備份註解，或者說較合適的預先註冊範本，請看我的演講投影片：<a href="https://scgeeker.github.io/Opensci_integrity/2018aug.html#/4">預先註冊範本建議</a></p>
+<p>同時建議參考這段演講錄影，歡迎讀者於這篇文章留言，討論實際操作的任何疑問與心得：</p>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/rI4TaWyoN8E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+<div id="註冊實作1由專案主頁面進行" class="section level3">
+<h3>註冊實作1：由專案主頁面進行</h3>
+<p>這種方式適用<strong>預先註冊</strong>，例如實驗團隊以自我要求執行研究計畫，OSF備份資料可做投稿附件；各式研究方法的教學專案；參與跨實驗室合作案的個別單位；自行測試註冊內容。</p>
+<p>從以下畫面箭頭所指的Registration開始，只要使用者按下，就會切換到<strong>註冊紀錄畫面</strong>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/425/original/2db88938-0c58-4113-a144-9d1a982589d5.jpg" /></p>
+<p>準備第一次註冊的註冊紀錄畫面，按下<code>New registration</code>就可以開始填寫註冊程序。如果這個專案有註冊程序尚未完成，可切換到<strong>Draft Registrations</strong>檢視，看是否要繼續完成。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/415/original/16d59b13-a9db-4dc5-9356-1ca9857165b3.png" /></p>
+<p>註冊程序第一步，選擇合適的範本。確定了就按<code>Create draft</code>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/412/original/4cb552ff-4417-4729-9b77-6c8269b4456f.png" /></p>
+<p>每個範本都有需要填寫的註解資訊，下圖是最簡單的<strong>Open-Ended Registration</strong>，只要在欄位中寫下說明即可。如果這次編輯使用者還未寫完或需要修改，需要中途離開的話請按<code>Save draft</code>，下次再從<strong>Draft Registrations</strong>頁面繼續編輯。如果已寫完該留資訊，就按<code>Preview for submission</code>，預覽程序完成後，會看到的檔案備份註解資訊。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/428/original/76adf7b3-fb6d-4016-81e0-5dda5aff4219.png" /></p>
+<p>檔案備份註解資訊預覽畫面。如果覺得不滿意，可按<code>Continue editing</code>返回上一個頁面編輯。如果滿意，按<code>Register</code>準備完成註冊程序。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/420/original/86da8b82-99e9-4821-9ecb-ce8dc98c75c7.png" /></p>
+<p>正式完成註冊程序前，OSF問你要將備份的專案立刻公開，還是設定預定公開日期(embargo)。如果是立即，按下<code>Submit</code>後，這份專案備份完成後，立刻在OSF完整公開。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/431/original/d653edb6-cd99-4705-ab5f-a88b34306a3b.jpg" /></p>
+<p>如果是設定預定公開日期，OSF會設定備份的專案在公開日期之前，隱私設定為不公開。直到公開日期才會調整為公開。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/433/original/8f239cf9-a5aa-48b9-8791-006268619318.jpg" /></p>
+<p>以下畫面是註冊程序完成後，備份專案的主頁面。按<code>View Registration Form</code>會看到註冊程序中寫的備份註解，其中的wiki，檔案任何人都不能更動或刪除。使用者可以繼續更新原來的專案。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/409/original/708a5d98-5ec8-4d11-99ac-3c68005b1912.png" /></p>
+</div>
+<div id="註冊實作2osf-rr專頁" class="section level3">
+<h3>註冊實作2：OSF RR專頁</h3>
+<p>這種方式適用<strong>註冊報告</strong>，就是正在準備或已經投稿註冊報告期刊之計畫書及論文，特別是已獲得期刊接受的第一階段計畫書，使用者可以由<a href="https://osf.io/rr/">RR專頁</a>創建專案與完成註冊程序。</p>
+<p>RR專頁的立意是提供研究者與期刊編輯評審，在公開平台檢視通過第一階段評審的計畫書，研究者按照計畫執行的實際達成度，因此以下畫面中的箭頭是從第二階段指向創建專案的按鈕。
+<img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/085/original/1deb70eb-cce0-40f8-aa84-f52feec0f4b9.jpg" /></p>
+<p>如果研究者的計畫在投稿第一階段評審之前，研究材料與分析程序已經準備到位，建議就以此專頁創建專案。按下書面左邊大按鈕，即出現輸入專案標題的對話框，再按下<code>Create</code>，就完成空白專案創建。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/087/original/5b39f1c3-01bd-40d4-9a77-382bb678ba24.jpg" /></p>
+<p>接著會進入計畫及專案註解頁面，這套註冊程序的步驟比從專案主頁面啟動來得多。建議先存為草稿，到專案頁面編輯wiki與上傳必要檔案，如計畫書與最後論文等。未完成的註冊程序，隨時可由<a href="https://osf.io/rr/">RR專頁</a>，按下中間的大按鈕，回來繼續註冊程序。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/091/original/2ffd310e-3ea0-433d-a1be-001990b10930.jpg" /></p>
+<p>到了完成填寫註解之前，研究者同樣可以預覽或儲存草稿，離開一陣子再回來繼續。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/522/original/5adfc278-11f5-4229-b3fd-105cede59b3c.jpg" /></p>
+<p>確認完成註冊程序的預覽畫面，確定完成就按<code>Register</code>。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/524/original/02853cc3-8e57-4920-ac1f-693e19b559cd.jpg" /></p>
+<p>同樣可以設定立刻公開，或者設定預定公開日期。這個情況可以預估收到期刊回覆的時間。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/528/original/5da4d00d-6b6d-4f2c-b2ab-ba4c557c1176.jpg" /></p>
+<p>註冊報告的備份專案，基本上與預先註冊的備份沒什麼差別，差異在於完成註冊程序的準備與經歷。</p>
+<p><img src="https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/372/original/34a3e5f4-73cf-440c-8295-7d70d185e8ce.jpg" /></p>
+<!---
+
+### 管理已註冊專案
+
+隨著經手的研究越來越多，使用者必須管理正在進行與已結案的註冊專案。可參考的管理
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/536/784/original/96e8877b-626e-45b9-bee4-e1b6bbff540b.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/378/original/ca0bbfa7-8c8c-45d4-b23e-c3986fcfa3dd.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/386/original/7a67933a-ca34-4394-8280-32fbe2e996c2.png)
+
+提早公開已註冊專案
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/397/original/262f404f-e15d-4874-94a1-c845794d33be.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/393/original/f9e210e8-86d2-4cb5-87bc-b77d086d1de2.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/395/original/89b4b09a-6dd6-413a-a47a-99c8ef2b1587.png)
+
+撤除已註冊專案
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/404/original/b94bd973-1078-4963-837c-dd78b73c6304.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/399/original/ae6e6dfe-917c-4d42-a4ed-c37a5caffef2.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/403/original/425ba92e-7ddd-4530-926c-7f79c5f5cffd.png)
+
+從專案主網頁檢視紀錄
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/375/063/original/8828b37d-ddeb-4999-b7df-bebfec657805.png)
+
+--->
+<!---
+## 管理專案參考文獻
+
+[神器1](http://scchen.com/zh/post/zotero/)
+
+啟動
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/394/original/be5d82b5-7a81-49fd-8e53-8254e720ef02.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/392/original/44a564e0-cac0-4640-aa70-d7d2f920531f.jpg)
+
+連結
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/396/original/ebaed6f1-6fe8-4712-a593-757e5652baf8.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/399/original/4bdc9630-452b-4ddd-a451-3a078e81fc95.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/469/original/8661096d-8afc-4ad0-8981-1c6af926a1e6.jpg)
+
+指定文獻庫
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/403/original/37bd940e-f55d-449c-ba5b-f2a01b53651a.jpg)
+
+如果文獻庫裡有子文獻庫
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/401/original/09704a0c-0ffb-418e-847a-77909f940d9f.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/391/original/60745958-9b2f-4988-8868-77f4edc898fc.jpg)
+--->
+</div>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="">開放科學</a>
+  
+  <a class="badge badge-light" href="/zh-hant/tags/open-science/">open science</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/zh-hant/post/open-science-framework.zh/&amp;text=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a82%20~%20Open%20Science%20Framework" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/zh-hant/post/open-science-framework.zh/&amp;t=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a82%20~%20Open%20Science%20Framework" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a82%20~%20Open%20Science%20Framework&amp;body=/zh-hant/post/open-science-framework.zh/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/zh-hant/post/open-science-framework.zh/&amp;title=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a82%20~%20Open%20Science%20Framework" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a82%20~%20Open%20Science%20Framework%20/zh-hant/post/open-science-framework.zh/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/zh-hant/post/open-science-framework.zh/&amp;title=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a82%20~%20Open%20Science%20Framework" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/zh-hant/authors/csc/avatar_hu3d590b371aacc9bbd6d33aea2a79116c_5560_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">陳紹慶</a></h5>
+      <h6 class="card-subtitle">副教授</h6>
+      <p class="card-text">My research interests include language processing and embodied cognition.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pmsp96@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-6092-6049" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=kSUyxs0AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/SCgeeker" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "sauchinchen" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>相關</h3>
+    <ul>
+      
+      <li><a href="/zh-hant/post/zotero/">心理科學研究必用神器1~Zotero</a></li>
+      
+      <li><a href="/zh-hant/post/orientation-language-part01/">物件方向效應跨語言研究經驗分享(一)：心理科學加速器合作專案</a></li>
+      
+      <li><a href="/zh-hant/post/ps-podcasts.zh/">心理科學網路廣播簡介</a></li>
+      
+      <li><a href="/zh-hant/post/classical-memory-studies/">三個經典記憶實驗重現研究教程</a></li>
+      
+      <li><a href="/zh-hant/post/first-chinese-rr-journal/">第一本華文心理學學術期刊開工了</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/zh-hant/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"找不到结果","placeholder":"搜尋...","results":"搜尋结果"};
+      const content_type = {
+        'post': "文章",
+        'project': "專案",
+        'publication' : "出版物",
+        'talk' : "演講"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://sauchinchen.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/zh-hant/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/zh-hant/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 複製
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下載
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R | 陳紹慶的個人網站</title>
+    <link>/zh-hant/tags/r/</link>
+      <atom:link href="/zh-hant/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>R</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Tue, 16 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>R</title>
+      <link>/zh-hant/tags/r/</link>
+    </image>
+    
+    <item>
+      <title>心理科學研究必用神器4 ~ 動態文件寫作入門</title>
+      <link>/zh-hant/post/dynamic-writing/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/dynamic-writing/</guid>
+      <description>
+
+
+&lt;p&gt;這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。&lt;/p&gt;
+&lt;p&gt;多數人習慣使用的文書處理軟體，像是WORD與google doc，集合文字編輯與排版。寫作正式文件時，需要同時顧慮編輯與排版的契合，雖然之前介紹的&lt;a href=&#34;http://scchen.com/zh/post/zotero/&#34;&gt;zotero&lt;/a&gt;已經減輕編輯文內引用與排版參考文獻的工作，一份文件內要安置圖表，乃至數學符號與統計數據的整理，還是需要花時間在不同軟體之間剪貼。&lt;/p&gt;
+&lt;p&gt;這篇網誌說明如何編輯一篇有列舉參考文獻，無任何圖表及數學符號的中文文件。讓讀者了解動態文件的文字編輯與排版是兩件分開的工作，並提出支援中文寫作的動態文件套件，還需要改進的地方。&lt;/p&gt;
+&lt;div id=&#34;基礎知識&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;基礎知識&lt;/h2&gt;
+&lt;p&gt;與建置這套個人網站一樣，一切準備從安裝&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudo&lt;/a&gt;與&lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt;開始。Rstudio開發的套件&lt;code&gt;knitr&lt;/code&gt;可由使用者自行安裝，或者是第一次使用Rstudio編輯動態文件時，會自動下載安裝。&lt;code&gt;knitr&lt;/code&gt;的功能是將有指定語法標籤的純文字文件，例如&lt;code&gt;markdown&lt;/code&gt;與&lt;code&gt;R&lt;/code&gt;，轉換為其他排版軟體能辨識的內容。Rstudio已經整合一套開源排版軟體&lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt;，可將轉換後的純文字文件，按排版設定渲染(render)輸出word或pdf檔案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Rstudio-newfile.PNG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖是Rstudio開啟新文件的選單，除了R script與Text File，其他檔案格式都是可用其他軟體渲染輸出各種排版或編譯產物。這也是為何管理動態文件，應區分文字編輯與排版兩種工作。以一份R Markdown文件為例，有開頭的&lt;code&gt;yaml&lt;/code&gt;與內文兩部分，&lt;code&gt;yaml&lt;/code&gt;是列舉排版這份文件的所需資訊，以符號 --- 標記資訊開始及結尾。以本文的&lt;a href=&#34;https://osf.io/rze47&#34;&gt;示範文件&lt;/a&gt;為例，這份文件要輸出為WORD檔案，&lt;code&gt;yaml&lt;/code&gt;包含的資訊如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output: 
+  word_document:
+    reference_docx: word_style_reference.docx
+bibliography: Turri.bib
+csl: apa-old-doi-prefix.csl&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;與這份示範文件放在一起的三個外部檔案：&lt;strong&gt;&lt;a href=&#34;https://osf.io/5x8h6&#34;&gt;word_style_reference.docx&lt;/a&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;a href=&#34;https://osf.io/fw359&#34;&gt;Turri.bib&lt;/a&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;a href=&#34;https://osf.io/z59hs&#34;&gt;apa-old-doi-prefix.csl&lt;/a&gt;&lt;/strong&gt;，分別提供渲染這份文件需要的&lt;strong&gt;排版樣式&lt;/strong&gt;、&lt;strong&gt;書目資訊&lt;/strong&gt;、以及&lt;strong&gt;引用格式&lt;/strong&gt;。&lt;a href=&#34;http://scchen.com/zh/post/zotero/&#34;&gt;zotero&lt;/a&gt;網誌曾介紹如何管理書目資訊與引用格式的檔案，docx檔是提供一份有所需樣式與版面設定範例的word檔，也就是一個排版範本，有關WORD的排版可參考&lt;a href=&#34;https://support.office.com/zh-tw/article/%E8%87%AA%E8%A8%82%E6%88%96%E5%9C%A8-word-%E4%B8%AD%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%9A%84%E6%A8%A3%E5%BC%8F-d38d6e47-f6fc-48eb-a607-1eb120dec563&#34;&gt;官方說明網站&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;寫作示範&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;寫作示範&lt;/h2&gt;
+&lt;p&gt;建議讀者先下載前述連結的檔案，嘗試重現示範文件的&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;輸出成果&lt;/a&gt;，會更理理以下示範說明。&lt;/p&gt;
+&lt;p&gt;R markdown內文與一般markdown文件一樣，未在置入任何標籤的任何文字等於一般WORD文件的內文，&lt;code&gt;pandoc&lt;/code&gt;會根據排版範本的&lt;strong&gt;內文&lt;/strong&gt;樣式渲染。標記標題的#或##等，會根據排版範本的&lt;strong&gt;標題一&lt;/strong&gt;、&lt;strong&gt;標題二&lt;/strong&gt;等樣式渲染。如果使用者需要呈現頁碼，只要在排版範本預做安排。&lt;/p&gt;
+&lt;p&gt;文內引用的書目是將存在於書目資訊檔案的&lt;strong&gt;bibtex key&lt;/strong&gt;，置入在內文要呈現的地方，例如以下節錄的示範文字。詳細的置入語法與調整設定，可參考&lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34;&gt;Rstudio的介紹&lt;/a&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;美國哲學家Gettier[-@gettierJustifiedTrueBelief1963]發表一篇短論文，提出兩個即使符合JTB三種條件，依然無法確定某人有沒有正確知識的反例。&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;只要有引用的書目資訊，&lt;code&gt;pandoc&lt;/code&gt;會根據引用格式檔案內的資訊，與文末排列參考文獻。示範文件中使用的格式是APA 6並呈現doi的一般格式。因此一份文件由兩位以上共同編輯，只要共享需要的書目資訊，也不必依賴付費軟體編輯與管理引用文獻。有關格式檔案的設定方法，可參考&lt;a href=&#34;http://blog.pulipuli.info/2014/08/zoteroapa-zotero-citation-style-apa.html&#34;&gt;pulipuli的網誌&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;進階套件&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;進階套件&lt;/h2&gt;
+&lt;p&gt;未來我還會撰寫在動態文件編輯圖表與統計數據的網誌，待讀者熟練本篇介紹的操作，推薦安裝以下套件，增益編輯動態文件的效率：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/crsh/citr&#34;&gt;&lt;code&gt;citr&lt;/code&gt;&lt;/a&gt;:這套Rstudio的外掛可幫助使用者在編輯過程中，有插入引用文獻的bibtext key的需要，以視窗介面搜尋並編輯。我的使用建議是先準備好書目資訊檔案，編輯過程中不必開啟zotero。如果有需要更新書目資訊檔案，最好先暫停文件編輯工作，更新完成後再繼續編輯。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;: &lt;code&gt;citr&lt;/code&gt;作者的代表作，可創建符合APA格式的手稿檔案，並支援圖表與數據的排版功能。初版&lt;a href=&#34;https://crsh.github.io/papaja_man/index.html&#34;&gt;使用手冊&lt;/a&gt;今年已正式上線。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;期待的改進&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;期待的改進&lt;/h2&gt;
+&lt;p&gt;這篇介紹的動態文件套件在支援中文寫作有兩個值得改進之處。首先是生成pdf檔的問題，目前簡體中文有R牛人&lt;a href=&#34;https://yihui.name/en/&#34;&gt;Yihui Xie&lt;/a&gt;的努力，已有支援出簡體中文pdf的套件，但是繁體中文仍然不夠全面。也可能是我找不到正確的支援方法所致，還請網友賜教。第二點是pandoc渲染參考文獻的功能只有支援英文書目，讀者可從&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;示範文件&lt;/a&gt;裡的中文書目發現問題。這兩個問題如果能獲得改進，相信更多研究者與學生會更容易接受動態文件，提高研究過程與成果的透明度也有更清楚的標準。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;突破補充&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;20190114突破補充&lt;/h2&gt;
+&lt;p&gt;寫作這篇網誌到這個日期之間，我已使用papaja編寫至少兩篇論文，對於latex的排版語法有更新的認識。這一日終於試出能成功產生中文論文的方法，原理是相容中日韓字符xeCJK，，目前只有xelatex這套文件生成引擎能完整支援。加上中文字的特殊設定，YAML必須有以下設定。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Get the header from http://newsletter.ascc.sinica.edu.tw/news/read_news.php?nid=2198
+## ptt latex board
+## Section begin: this section has to be above &amp;#39;output:&amp;#39;
+header-includes:
+ - \usepackage[no-math]{fontspec}
+ - \usepackage{xeCJK}
+ - \setCJKmainfont{標楷體}  ## 可改成已安裝的其他字型
+ - \XeTeXlinebreaklocale &amp;quot;zh&amp;quot;  
+ - \XeTeXlinebreakskip = 0pt plus 1pt
+## Section end: this section has to be above &amp;#39;output:&amp;#39;
+
+
+## Get this setting from https://stackoverflow.com/questions/36806255/rstudio-on-windows-not-using-xelatex
+## This option forced Rstudio use xelatex compile this document
+output: 
+   pdf_document:
+       latex_engine: xelatex&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;未來論文寫作工作告一段落，我將寫一份papaja完整中文教學，介紹如何運用這些套件製作可重製報告。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學研究必用神器3 ~ 開源統計軟體</title>
+      <link>/zh-hant/post/jasp-jamovi/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/jasp-jamovi/</guid>
+      <description>
+
+
+&lt;p&gt;兩年前開始使用&lt;a href=&#34;https://jasp-stats.org/&#34;&gt;JASP&lt;/a&gt;分析研究資料時，我曾經寫過一篇&lt;a href=&#34;http://scchen.com/zh/post/text_2016007/&#34;&gt;網誌&lt;/a&gt;介紹這套開源軟體。之後更認識設計理念相同，功能擴充性更自由的&lt;a href=&#34;https://www.jamovi.org/&#34;&gt;jamovi&lt;/a&gt;。今年初我自已寫的&lt;a href=&#34;https://scgeeker.github.io/BasicStatistics/&#34;&gt;統計電子書&lt;/a&gt;整合兩套軟體，讓學生學習如何運用兩套軟體於實務。到了今年五月至八月期間，這兩套軟體版本都更新到0.9以上，功能與資源有大幅度更新，兩套軟體的操作雖然大同小異，使用者用過一段時間會發覺兩者更擅勝場。&lt;/p&gt;
+&lt;p&gt;這篇網誌介紹兩套軟體的介面、一般設定與特別的功能。做為之後開發教材與寫作網誌的補充資料。&lt;/p&gt;
+&lt;div id=&#34;介面特色&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;介面特色&lt;/h2&gt;
+&lt;p&gt;JASP 0.9.0.1與jamovi 0.9.2.3的啟動畫面如以下快照，畫面中JASP的&lt;code&gt;Common&lt;/code&gt;與jamovi的&lt;code&gt;Analyses&lt;/code&gt;都是操作功能模組與檢視分析報表的區域。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Initials.JPG&#34; title=&#34;Open&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP開啟資料檔案是在&lt;code&gt;File&lt;/code&gt;區域操作，下圖是JASP範例檔案庫的啟始畫面。操作方式類似Mac OS的Finder，JASP除了開啟本機檔案之外，也能直接連線使用者的OSF帳戶，下載與同步OSF專案裡的資料與JASP存檔(.jasp)。JASP存檔(.jasp)包括原始資料檔案與分析報表。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jasp-File.JPG&#34; title=&#34;JASP File&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;jamovi開啟與儲存資料檔案的選單，是按下&lt;code&gt;Data&lt;/code&gt;標籤左邊的三條橫線，就會出現如下圖的畫面。最新版的jamovi只能存取本機檔案，包括資料檔與jamovi存檔(.omv)。jamovi存檔(.omv)包括原始資料檔案與分析報表。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jamovi-Open.JPG&#34; title=&#34;jamovi Open&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;jamovi的&lt;code&gt;Data&lt;/code&gt;可以直接編輯與使用函式處理一到數個欄位資料，這個區域有些類似試算表軟體，只是要先確定每個欄位的&lt;strong&gt;資料型態&lt;/strong&gt;，才能正確使用jamovi提供的函式。這部分是jamovi與JASP的最大不同，JASP不可直接編輯資料，必須呼叫外部資料編輯器或試算表軟體。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jamovi-Data.JPG&#34; title=&#34;jamovi Data&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;一般設定&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;一般設定&lt;/h2&gt;
+&lt;p&gt;JASP與jamovi的一般設定選單開啟按鈕都在主要介面右上角，如下圖的紅色圓圈標示。兩者共同設定有二：報表數值的小數點位數；資料檔案裡遺漏值(missing value)標記。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Options.JPG&#34; title=&#34;Options&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP與jamovi可設定小數點格式的數值只有兩類：一般的統計數值與p值，如以下畫面截圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/number-format.JPG&#34; title=&#34;Format&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP和jamovi都是輸入資料檔內的遺漏值字符，匯入資料後會自動辨識資料中的遺漏值，設定畫面如下圖。差異在於jamovi只能辨識一種字符，JASP可辨識多種，使用者還可根據實際情況自行增加。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/missing-Format.JPG&#34; title=&#34;Missing&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP有需要編輯資料數值時，可以設定使用系統預設的試算表軟體，例如Excel。要使用此功能，就做如以下畫面的設定。若要外部編輯器存檔，並同步更新JASP資料，只要勾選以下畫面的第一個功能即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/JASP-editing.JPG&#34; title=&#34;JASP data editing&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;功能與資源比較&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;功能與資源比較&lt;/h2&gt;
+&lt;p&gt;以下整理本人認為值得學習的JASP與jamovi的重要功能與資源，提供讀者可依個人需要取用。&lt;/p&gt;
+&lt;div id=&#34;可匯入資料格式&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;可匯入資料格式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：CSV, SPSS, Libre試算表&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;: CSV, SPSS, SAS, Stata&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;擴充功能&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;擴充功能&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：非當用模組讓使用者自行開啟，目前有&lt;code&gt;Meta Analysis&lt;/code&gt;、&lt;code&gt;Network&lt;/code&gt;、&lt;code&gt;SEM&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;: 官方提供模組開發工具，以及&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;自訂模組庫&lt;/a&gt;。使用者可由jamovi程式裡安裝與更新，或由&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;自訂模組庫&lt;/a&gt;下載安裝。特別建議統計初學者，使用&lt;code&gt;Statkat&lt;/code&gt;協助學習。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;學習資源&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;學習資源&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：官網不定期更新&lt;a href=&#34;https://jasp-stats.org/jasp-materials/&#34;&gt;推薦教材&lt;/a&gt;，2018年有&lt;a href=&#34;https://www.amazon.com/Research-your-Therapy-Examples-friendly-ebook/dp/B071LFPP47?_encoding=UTF8&amp;amp;psc=1&#34;&gt;研究方法與統計教科書&lt;/a&gt;出版。0.9版有豐富的Data Library，讓使用者依需要找示範檔案學習。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;:&lt;a href=&#34;https://datalab.cc/tools/jamovi&#34;&gt;Datalab的CC授權課程&lt;/a&gt;提供&lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;&gt;youtube教學單元&lt;/a&gt;，各單元教材公開於&lt;a href=&#34;https://drive.google.com/drive/folders/1gJJ9di69FBZPhAdG9dWqXHZnR_JJry0G?usp=sharing&#34;&gt;google雲端&lt;/a&gt;與&lt;a href=&#34;https://bit.ly/jamovi-osf&#34;&gt;OSF&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

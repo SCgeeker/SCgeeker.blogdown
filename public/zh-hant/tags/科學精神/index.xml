@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科學精神 | 陳紹慶的個人網站</title>
+    <link>/zh-hant/tags/%E7%A7%91%E5%AD%B8%E7%B2%BE%E7%A5%9E/</link>
+      <atom:link href="/zh-hant/tags/%E7%A7%91%E5%AD%B8%E7%B2%BE%E7%A5%9E/index.xml" rel="self" type="application/rss+xml" />
+    <description>科學精神</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>科學精神</title>
+      <link>/zh-hant/tags/%E7%A7%91%E5%AD%B8%E7%B2%BE%E7%A5%9E/</link>
+    </image>
+    
+    <item>
+      <title>香港大學學生群眾動員學習研究行動演講會後談</title>
+      <link>/zh-hant/post/hku-mass-mobilize/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/hku-mass-mobilize/</guid>
+      <description>
+
+
+&lt;p&gt;在2019年11月2日舉辦&lt;a href=&#34;https://www.facebook.com/groups/697283700707823/&#34;&gt;台灣心理科學研究協作群&lt;/a&gt;的第一次啓動會議之後，夥伴們訂下兩個目標：第一是建設開放教學及研究資源的協作平台；第二是向台灣行為科學的研究人員及學生推廣透明研究操作。早在會議之前，我已與發起夥伴分享香港大學心理系助理教授&lt;a href=&#34;http://mgto.org/&#34;&gt;Gilad Feldman(Fili)&lt;/a&gt;，這兩年在香港達成的成就。會後就計畫在今年最後一次例行會議中，討論明年邀請他來台灣交流的計畫。&lt;/p&gt;
+&lt;p&gt;沒想到11月沒過完，香港情勢迫使香港各大學提早結束學期，促成Fili提早於11月下旬來台自由行。期間與夥伴們緊急聯絡，邀請他到成功大學與台灣大學進行演講。本人有幸參與到台灣大學的演講，並與Fili直接交換意見。道別後趁記憶猶新，寫下這篇摘要及心得。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Fili_NTU_openning.png&#34; title=&#34;Gilad Feldman 在台大心理系演講&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Fili的簡報&lt;a href=&#34;https://tinyurl.com/feldman2019taiwan&#34;&gt;點此下載&lt;/a&gt;，我就其中第三部分：學生群眾動員學習研究(mass-mobilize students)做摘要，這個部分與協作群兩大目標的工作有密切關聯，請加入協作群的夥伴們，與支持協作群的各路先進給予指教。&lt;/p&gt;
+&lt;p&gt;首先是Fili的規劃動機：因為心理科學再現危機的現實，Fili自覺無法傳授學生有瑕疵的知識，因此帶領學生檢核知識的瑕疵。&lt;/p&gt;
+&lt;p&gt;Fili採取的教學方針：所有課程的修課學生都要以教師提供的標靶論文或資料庫，進行一項研究專案。可以是預先註冊再現及擴充研究(Pre-registered replications + extensions)，也可以是預先註冊整合分析(Pre-registered meta-analyses)。&lt;/p&gt;
+&lt;p&gt;Fili的教學策略有四個重點：&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;標靶論文主要來自Journal of Decision Making，研究材料多數為問卷，可運用問卷平台如Qualtrics、surveymonkey等重新製作。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;變項操作單純，不需要了解複雜的隨機分派或取樣方法。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;所有再現研究能透過網路群眾外包平台進行，如MTurk。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;資料結構單純，能從實作中學習統計分析。稍微複雜的研究由國外的合作學者指導專案學生並寫成可發表的論文。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Fili的課程教學進度如以下取自簡報中的流程圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Fili_syllabus.png&#34; title=&#34;香港大學學生群眾動員學習研究行動流程&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;相對於Fili的策略，以我個人的教學經驗，還有與夥伴學校老師的交流，我歸納台灣各校心理系實驗研究教學狀況，有相對的不同之處：&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;使用需要使用專業實驗軟體如E-Prime或psychoPy等設計的實驗；或需要操作儀器的實驗。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;變項操作需要有技巧的隨機分派或取樣。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;實驗專案均為實驗室研究。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;學生需要花時間學習，也就是老師需要花時間教授對應的統計方法。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;教學策略的差異就是建構協作平台需要克服的關鍵，我認為協作群未來規畫的策略可依學生學習興趣及能力，將研究專案分級，並就以下幾點安排各校教學內容：&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;依變項測量由簡單到困難，是問卷選項到精確的行為反應或生理訊號紀錄。&lt;/li&gt;
+&lt;li&gt;以隨機方法的複雜度，區分獨變項操作難易度。&lt;/li&gt;
+&lt;li&gt;專案以網路實驗為主。現實尚有網路參與者庫與倫理審查的問題需要解決。&lt;/li&gt;
+&lt;li&gt;相關的統計方法以做中學為主，根本之道是連結基礎統計共同進行教學變革。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以上是我個人聽講，以及與Fili討論所得，還需要有參與的老師同學們指正。本人的建議希望能幫助協作群，吸引願意參與建設協作平台的老師及同學。我另外同意Fili的看法是&lt;a href=&#34;https://osf.io/wfc6u/&#34;&gt;CREP&lt;/a&gt;或&lt;a href=&#34;https://psysciacc.org/&#34;&gt;心理科學加速器&lt;/a&gt;等國際合作聯盟，對於改變一個地區的學術文化影響確實有限，需要有共識的當地老師學生一起合作，以實際成果彰顯問題及解決方案。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學網路廣播簡介</title>
+      <link>/zh-hant/post/ps-podcasts.zh/</link>
+      <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/ps-podcasts.zh/</guid>
+      <description>
+
+
+&lt;p&gt;2017年三月或四月間，首次從臉書社團&lt;a href=&#34;https://www.facebook.com/groups/853552931365745/&#34;&gt;Psychological Methods Discussion Group&lt;/a&gt;得知網路廣播節目&lt;a href=&#34;http://www.theblackgoatpodcast.com&#34;&gt;The Black Goat&lt;/a&gt;開播，從此開始注意國外專業心理學者自行製作主持的帶狀廣播節目。這類節目從2016年&lt;a href=&#34;https://www.facebook.com/everythinghertzpodcast&#34;&gt;Everything Hertz&lt;/a&gt;開播後，到現在我知道的網路廣播節目已有八個。主持這些節目的人物是於歐美各大學專任的教師、博士後或博士生。因為都是英語廣播，是今天的心理學學生們練英聽的好教材，更有意思的是其中許多位節目主持人是開放科學推動者。這個網誌簡介這些節目，以及推薦入門集數。&lt;/p&gt;
+&lt;div id=&#34;everything-hertz&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Everything Hertz&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/12801447_510072969180732_8893628584447559111_n.jpg?_nc_cat=0&amp;amp;oh=2e95e9204f865df4682b1cacfed12386&amp;amp;oe=5BD00652&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesheathers.com/&#34;&gt;James Heathers&lt;/a&gt;；&lt;a href=&#34;http://www.dsquintana.com/&#34;&gt;Daniel Quintana&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://soundcloud.com/everything-hertz&#34;&gt;SoundCloud&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/hertzpodcast&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/everythinghertzpodcast&#34;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2016二月27日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;兩位主持人都是畢業於澳洲雪梨大學的心理學博士，專長為計量與研究方法，目前分別於美國與挪威擔任博士後研究。從2016年二月起開始製播，大約半個月到一個月推出新一集節目。到33集都是兩人對談，以一個目前心理科學界的爭議或在學術界闖蕩的甘苦經驗為主題。34集開始不定期邀請來賓，討論這位來賓正在從事，未來可能改變學術運作模式的事業。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesheathers.com/&#34;&gt;James Heathers&lt;/a&gt;與&lt;a href=&#34;https://t.co/QRYqFBmby8&#34;&gt;Nick Brown&lt;/a&gt;一起發展GRIM–讓&lt;a href=&#34;http://scchen.com/zh/post/text_2017006/&#34;&gt;Brain Wansink的劣質研究現形&lt;/a&gt;的資料品質鑑識工具，所以Nick Brown做來賓的&lt;a href=&#34;https://soundcloud.com/everything-hertz/44-whos-afraid-of-the-new-bad-people-with-nick-brown&#34;&gt;第44集&lt;/a&gt;是不錯的開始。如果你有在Coursera修過Daniel Lakens的&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home/welcome&#34;&gt;提昇你的統計推論功力&lt;/a&gt;，&lt;a href=&#34;https://soundcloud.com/everything-hertz/42-some-of-my-best-friends-are-bayesians-with-daniel-lakens&#34;&gt;42&lt;/a&gt;與&lt;a href=&#34;https://soundcloud.com/everything-hertz/43-death-taxes-and-publication-bias-in-meta-analysis-with-daniel-lakens&#34;&gt;43&lt;/a&gt;集是入門的開始。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-black-goat&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Black Goat&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/16684080_255031914943271_624884278399716220_n.png?_nc_cat=0&amp;amp;oh=1c165d165607c2788cc15cdee2678649&amp;amp;oe=5BFA8C62&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://pages.uoregon.edu/sanjay/&#34;&gt;Sanjay Srivastava&lt;/a&gt;;&lt;a href=&#34;http://www.alexatullett.com/index.html&#34;&gt;Alexa Tullett&lt;/a&gt;;&lt;a href=&#34;http://www.simine.com/&#34;&gt;Simine Vazire&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/the-black-goat/id1217953035&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://blackgoat.podbean.com/&#34;&gt;Podbean&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.theblackgoatpodcast.com/&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/blackgoatpod&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/blackgoatpod/&#34;&gt;Facebook&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.instagram.com/blackgoatpod/&#34;&gt;Instagram&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2017年三月22日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;三位主持人是分別任教於奧勒岡大學、阿拉巴馬大學、以及加州大學戴維斯分校的社會心理學者，都是活躍的開放科學推動者。三人對談的主題不僅包括增進科學研究品質的主題，還會分享個人教學與家庭生活心得，也經常在節目開始回覆最近收到的研究生來信，提供正在為學位努力的他們面對難關的建議。我個人認為如果Everything Hertz是兩位年青學者的立志紀錄，The Black Goat是暖男大叔加親切姐姐的空中諮商室。&lt;/p&gt;
+&lt;p&gt;平均每個月更新一集，某幾集與來賓討論不同學術領域的見聞。三人參加同一個學術研討會，還會製作特集。像是參與APS的&lt;a href=&#34;http://www.theblackgoatpodcast.com/posts/i-felt-like-a-real-scientist/&#34;&gt;I Felt Like a Real Scientist&lt;/a&gt;，SIPS的&lt;a href=&#34;http://www.theblackgoatpodcast.com/posts/sipsapalooza/&#34;&gt;SIPSapalooza&lt;/a&gt;。想要熟悉主持風格的話，建議收聽&lt;a href=&#34;http://www.theblackgoatpodcast.com/posts/we-were-never-cool/&#34;&gt;We Were Never Cool&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;circle-of-willis&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Circle of Willis&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://secureimg.stitcher.com/feedimageswide/480x270_149553.jpg&#34; style=&#34;width:70.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://jamescoan.com/&#34;&gt;James Coan&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/circle-of-willis/id1277917115?ls=1&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.stitcher.com/podcast/circle-of-willis?refid=stpr&#34;&gt;Stitcher&lt;/a&gt;
+&lt;a href=&#34;http://circleofwillispodcast.com&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/circle_ofwillis&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/circleofwillispodcast/&#34;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2017年九月8日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;這個節目開播日期算是第三個，但是我是最後才知道的。主持人&lt;a href=&#34;https://jamescoan.com/&#34;&gt;James Coan&lt;/a&gt;是維吉尼亞大學的臨床心理學與神經科家，也是該校資深教授，所有現役節目主持人之中學術資歷最年長。除了第一集，每一集都是訪談一位現任心理學者，聊聊他們走到今天的學術生命故事。第一集介紹節目名稱的由來與內容方向，台灣鄉親聽過第一集一定會被吸引，至於為什麼就請&lt;a href=&#34;http://circleofwillispodcast.com/episode-1-introducing-circle-of-willis&#34;&gt;自己聽&lt;/a&gt;。聽過The Black Goat的朋友，可以從&lt;a href=&#34;http://circleofwillispodcast.com/episode-8-simine-vazire&#34;&gt;第八集&lt;/a&gt;開始。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-road-to-open-science&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Road to Open Science&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/profile_images/996301283463192576/D4u7yTnf_400x400.jpg&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://openscience-utrecht.com/&#34;&gt;Open Science Community Utrecht&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://soundcloud.com/utrechtyoungacademy&#34;&gt;SoundCloud&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://openscience-utrecht.com/oscu-podcast/&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/R2OSpodcast&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2018年四月12日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;這是第一個由歐陸學者經營的英語網路廣播節目，也是由團體而非個人主持。已發佈的集數以訪談活動於歐洲，從事各種開放科學事業的學者為主。如果你是想了解開放科學的朋友，可以從&lt;a href=&#34;https://soundcloud.com/utrechtyoungacademy/the-road-to-open-science-ep2b-full-interview-with-daniel-lakens&#34;&gt;Daniel Lakens的訪談&lt;/a&gt;開始。經營R2OS的&lt;a href=&#34;https://openscience-utrecht.com/&#34;&gt;Open Science Community Utrchet&lt;/a&gt;，我正在規劃深度介紹文。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-psychologists-four-beers&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Two Psychologists Four Beers&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://images.fireside.fm/podcasts/images/6/69da8ae3-a19e-41ed-a678-0e145a936a3f/cover_small.jpg&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://yoelinbar.net/&#34;&gt;Yoel Inbar&lt;/a&gt;;&lt;a href=&#34;http://michaelinzlicht.com&#34;&gt;Michael Inzlicht&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/two-psychologists-four-beers/id1387529624&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.stitcher.com/podcast/two-psychologists-four-beers?refid=stpr&#34;&gt;Stitcher&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://fourbeers.fireside.fm/&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/fourbeerspod&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2018年五月19日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;兩位主持人是多倫多大學心理學系的社會心理學同事，一位專攻神經科學，一位專長計量方法。今年(2018)五月開播後到八月初已推出六集，前四集是對談，最新兩集有邀請來賓。風格像是變老的Everthing Hertz，除了兩位已經是專任教師，節目開始會介紹錄這一集時喝的兩瓶啤酒，然後一人兩杯邊喝邊聊，因此節目名稱叫Two Psychologists Four Beers。有來賓上節就追加一瓶。想適應節目風格的朋友可從第四集&lt;a href=&#34;https://fourbeers.fireside.fm/4&#34;&gt;The Replication Crisis Gets Personal&lt;/a&gt;入門。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-bayes-factor&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The Bayes Factor&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/23172689_1993255780888928_6201212654157655772_n.png?_nc_cat=0&amp;amp;oh=a363fd368a6989930ccf191bdb59d266&amp;amp;oe=5C0F6877&#34; style=&#34;width:30.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://sites.tufts.edu/hilab/people/&#34;&gt;JP De Ruiter&lt;/a&gt;;&lt;a href=&#34;https://alexanderetz.com/&#34;&gt;Alex Etz&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/the-bayes-factor/id1308207723&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://sites.tufts.edu/hilab/podcast/&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/TheBayesFactor&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/TheBayesFactor/&#34;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2017年十一月5日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;雖然這個節目2017年就上線，但是更新進度不固定，我排到倒數第三位介紹。主持人雖然有兩位，主要主持人是&lt;a href=&#34;https://alexanderetz.com/&#34;&gt;Alex Etz&lt;/a&gt;。正如節目名稱，以介紹與訪問推廣貝氏統計與開放科學的人物為主。這個節目可視為其他常態經營的節目資訊補充，只要你在其他節目聽過來賓也被這個節目訪問，那就是最好的入門集。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;reproducibiliteapod&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;ReproducibiliTeaPod&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/profile_images/1008816656406269952/FCYhhxX7_400x400.jpg&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.psy.ox.ac.uk/team/amy-orben&#34;&gt;Amy Orben&lt;/a&gt;;&lt;a href=&#34;http://samdparsons.blogspot.com/&#34;&gt;Sam Parsons&lt;/a&gt;;&lt;a href=&#34;https://twitter.com/Cruwelli&#34;&gt;Sophia Crüwell&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://soundcloud.com/reproducibilitea&#34;&gt;SoundCloud&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/ReproducibiliT&#34;&gt;twitter&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2018年六月27日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;這個節目的三位主持人是線上活躍的心理學者中最年輕的，都是牛津大學心理學博士班的同學。已經上線的集數都是三人對談一個開放科學主題，有訪問來賓或參與研討會的內容以番外篇推出。主持風格是目前聽過最中規中矩的節目，我推薦第三集&lt;a href=&#34;https://soundcloud.com/reproducibilitea/episode-3-questionable-research-practices&#34;&gt;Questionable Research Practices&lt;/a&gt;與第四集&lt;a href=&#34;https://soundcloud.com/reproducibilitea/episode-4-reproducibility-now&#34;&gt;Reproducibility Now&lt;/a&gt;，做為認識這個節目的開始。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;physiology-behavior-podcast&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Physiology &amp;amp; Behavior podcast&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/pippa/image/fetch/h_500,w_500/https://assets.pippa.io/shows/5b33637a7b9cf5a0177f18b5/1531915490998-fafca19bfd0d7c6f179e0b0403be84f6.jpeg&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;主持人-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;主持人&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.dsquintana.com/&#34;&gt;Daniel Quintana&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;收聽網址與社群媒體-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;收聽網址與社群媒體&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://shows.pippa.io/dsquintana&#34;&gt;官網&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://twitter.com/PB_cast&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.facebook.com/dsquintana.research/&#34;&gt;Facebook&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.instagram.com/dsquintana&#34;&gt;Instagram&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;首集上線日期-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;首集上線日期&lt;/h4&gt;
+&lt;p&gt;2018年七月15日&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;簡介與推薦集數-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;簡介與推薦集數&lt;/h4&gt;
+&lt;p&gt;Everything Hertz的&lt;a href=&#34;http://www.dsquintana.com/&#34;&gt;Daniel Quintana&lt;/a&gt;單飛之作。因為博士後研究主題涉足生理學研究，有太多話想說所以另開節目，目前上線的集數有個人獨講以及與他人互談。除了生理學研究的心得點滴，還有開放科學的細部操作心得，例如&lt;a href=&#34;https://shows.pippa.io/dsquintana/convincing-your-mentors-to-use-preprints&#34;&gt;Convincing your mentors to use preprints&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>「提昇你的統計推論功力」中文資源使用說明及學習指南</title>
+      <link>/zh-hant/post/text_2017009/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2017009/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/curves.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;中英字幕對照檔已於8/21上傳Coursera，有註冊Coursera的朋友可直接在平台觀看有中文字幕的影片。這份指南與教材的翻譯文本是繁體中文，大陸及港澳地區朋友，如果閱讀中無法習慣字體與詞彙用語，請多多見諒。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;終於完成Coursera的課程「提昇你的統計推論功力」
+&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home/welcome&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;( Improving your statistical inferences )&lt;/a&gt;
+教材(每週課程說明，影片字幕)第一階段中文翻譯。這門課程是由荷蘭埃因霍溫科技大學副教授Daniel Lakens設計講授，於2016年10月上架。因為我從2015年起就訂閱Daniel的部落格「20%的統計學家」(
+&lt;a href=&#34;http://daniellakens.blogspot.tw/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; The 20% Statistician &lt;/a&gt;
+)，所以首先是從
+&lt;a href=&#34;http://daniellakens.blogspot.tw/2016/10/improving-your-statistical-inferences.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;他發佈的部落格貼文&lt;/a&gt;
+得知。當時我正在荷蘭進行訪問研究，也正在學習使用這門課程推廣的幾種統計分析方法，所以我就聯絡Daniel，願不願意讓更多中文世界的學者與學生們認識這門課程？他欣然接受這個點子，於使我們一起在OSF開了一份
+&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開專案&lt;/a&gt;
+，開始了第一階段影片字幕翻譯計畫：翻譯並公開每週課程介紹與影片字幕，讓有興趣但英文閱聽能力有限的華文人士，可以理解課程內容，直接使用課程資源。並且也歡迎各方高手協助校正，為第二階段作業資源中文化工作做準備。&lt;/p&gt;
+&lt;p&gt;Daniel Lakens曾參與2015年轟動全球，不到40%心理學研究可被再現的「
+&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學再現研究專案&lt;/a&gt;
+」資料分析工作。Daneil因為自己博士班時期的原創研究無法被他人成功再現，決心深入學習多數心理學家幾乎不接觸的數理與生物統計學，他把學習成果轉化為多篇幫助心理學家改善研究設計與統計分析的論文。還以每篇論文為基礎，撰寫至少一篇部落格文章，這門課程可說是他整理個人近幾年研究與教學的精華。&lt;/p&gt;
+&lt;p&gt;我決定開這個坑有幾個理由，除了課程品質好，課程設計對習慣台灣系統，甚至是東亞國家的統計與研究方法教學系統的學生，都是全新的體驗。像是在課程裡安排的一段科學哲學的介紹，讓學習者了解Daneil為什麼主張視情況善用次數主義統計(Frequentist  statistics)與貝氏統計(Bayesian statistics)的方法。課程中的不少案例是到2015年止，在學術界引起結果無法再現的研究。不曉得2015年為什麼會有「
+&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學再現研究專案&lt;/a&gt;
+」出現的朋友，上到第三週大概就會明白，這項專案並不是有一群心理學家故意找另一群心理學家的麻煩，而是為了重新喚起心理科學的求真精神。&lt;/p&gt;
+&lt;p&gt;除了幾部影片字幕是由朋友協力翻譯，我自己在參加2017年的SIPS研討會
+&lt;a href=&#34;http://improvingpsych.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;提昇心理科學協會(Society for the Improvement of Psychological Science (SIPS) Meeting )&lt;/a&gt;
+之前，完成了大部分的字幕初翻。除了想要當面向Daneil致意，也為準備參加會議活動做準備。結果真的派上用場，在其中一場設計新世代研究方法課程的
+&lt;a href=&#34;https://osf.io/zbwr4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;黑客松&lt;/a&gt;
+裡，就直接取用了這門課的部分資料與作業。&lt;/p&gt;
+&lt;h2 id=&#34;上課前要做什麼準備&#34;&gt;上課前，要做什麼準備？&lt;/h2&gt;
+&lt;p&gt;除了講師的影片語言，簡介說明，參考資料與作業測驗都是英文，對於英文程度不流利的學生有些吃力。課程內容是設定決定上課的學生，有修習初級統計，並有一兩次的研究執行與資料分析經驗。這門課不會告訴你什麼是平均數還有標準差，第一週介紹完統計方法流派之後，就立刻談_p_值的意義與誤解。如果你之前還沒有學過任何推論統計方法，不只可能看不懂影片，也不會了解作業如何下手。建議有意學習者曾修過大學的基礎統計與初階研究方法，或者已修過Coursera的任何一門基礎統計課程。&lt;/p&gt;
+&lt;p&gt;本課程的許多作業都是要實際操作R與Excel試算表軟體，多數台灣社會科學領域的學生多少有一些操作Excel的經驗，但是R可能對這群學生還是高門檻的統計語言。好在台灣有許多熱心推廣R的資料科學高手，可以先找一門自學教材上手。我推薦Wush Wu設計維護的
+&lt;a href=&#34;http://datascienceandr.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R語言翻轉教室&lt;/a&gt;
+，先熟悉一下R的使用環境與語法，就能從課程作業了解講師希望你透過操作能學到什麼東西。這門課程作業的R真的不難，只要照著題目說明，改一兩個地方就能看到執行結果。&lt;/p&gt;
+&lt;h2 id=&#34;開始課程前先了解各週學習重點&#34;&gt;開始課程前，先了解各週學習重點&lt;/h2&gt;
+&lt;p&gt;課程共有八週，除了最後一週是提出自己的研究計畫與同學線上互評，第一週到第七週每週有三段主要視頻、一到二件數據模擬與分析作業，以及一份當週測驗卷。每週測驗卷有A/B兩種版本，是Daniel與萊登大學博士生Tim van de Zee合作設計，要收集選修這門課程的人士學習表現，分析後做為之後改進課程內容的依據。我建議修課同學，將每週的課程資料下載，並依週次建檔，之後有用時可知如何找到需要的資源。建檔結構可參考
+&lt;a href=&#34;https://github.com/SCgeeker/IST_course_data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;我的github儲存庫&lt;/a&gt;
+。&lt;/p&gt;
+&lt;p&gt;每門課程都有一則簡短的課程概論，說明每段視頻與作業的重點，並列出與視頻內容有關的參考文獻。七週課程概 論的中譯初稿已在
+&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開專案&lt;/a&gt;
+上線，強烈建議初學者先閱讀課程概論，了解自已能否從影片與作業學習到Daniel要傳達給你的資訊，判斷自已需不需要尋找同儕互助學習。每週課程影片的中英對照字幕可由
+&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開專案&lt;/a&gt;
+下載，這系列的課程影片都可以下載觀賞，英聽不夠好的同學可以下載影片和字幕，用可外掛字幕的播放軟體觀賞。&lt;/p&gt;
+&lt;p&gt;以下簡述七週學習重點與經驗：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一週/引言與次數主義統計：第一段介紹三種統計推論取向，後兩段的重點是討論_p_值的正確與錯誤運用方式。對於有研究經驗的同學來說，最值得仔細理解的是，有沒有曾經認為_p_值就等於研究結果型一錯誤率？有沒有以為_p_值是虛無假設成立的機率？Daniel在這週課程為你解惑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二週/似然值與貝氏統計：介紹&lt;strong&gt;似然值&lt;/strong&gt;與&lt;strong&gt;貝氏統計&lt;/strong&gt;，這兩種統計推論方法在亞洲的許多大學統計課都從被納入。如果你曾在論文裡看過貝氏因子(&lt;em&gt;BF&lt;/em&gt;)與可信區間(Cridible interval)，這週課程會給你一個初步的認識。
+&lt;a href=&#34;http://www.lifesci.sussex.ac.uk/home/Zoltan_Dienes/inference/index.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Daniel推薦的書籍 Understanding Psychology as a Science &lt;/a&gt;
+，是第一本為心理學家寫的貝氏統計入門教科書，值得找來一讀。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第三週/有效控制推論錯誤率：延續第一週的課題，介紹有效控制型一與型二錯誤率的方法。第三段還談到如何運用這先方法，規劃可靠又有效的&lt;strong&gt;預先註冊研究(preregistration)&lt;/strong&gt;。做完這週作業與測驗，你手上正好有準備執行或規劃中的方法，可以嘗試使用預先註冊會變得如何？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第四週/效果量(effect size)專題：效果量是進行整合性分析(meta analysis)與註冊確證性研究(confirmatory research)，不可或缺的元素。你希望研究的證據力要有多高，就要先評估效果量與考驗力(power)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第五週/良好的樣本數估計：基礎統計就會學到的信賴區間(Confidence interval)，以及決定樣本數(Sample Size)的策略。Daniel在這週讓你認清過去從教科書或課堂學習中不足夠的地方，並介紹近幾年竄起的統計品質分析工具：p-Curve。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第六週/科學哲學：不完全是統計課的一週。Daniel淺談科學哲學入門，以及理論的建構。
+&lt;a href=&#34;http://daniellakens.blogspot.tw/2017/08/towards-more-collaborative-science-with.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;最近Daniel的部落格文章&lt;/a&gt;
+提到，接下來心理科學將進入&lt;strong&gt;理論危機(Theory Crisis)&lt;/strong&gt;，配合閱讀能了解這一週課程內容如此安排的用意。如果你有不知如何定義虛無假設的理論意義，這週Daniel介紹他的最愛：等效測試(equivalence testing)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第七週/開放科學：集中談論前六週偶爾提到的再現研究與出版偏誤，這是2015年200多位心理學家自願參與
+&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學再現研究專案&lt;/a&gt;
+的重要因素。最後一段展望能消除這些問題的&lt;strong&gt;開放科學&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完成各週作業之後的學習方向&#34;&gt;完成各週作業之後的學習方向&lt;/h2&gt;
+&lt;p&gt;如果你有時間，建議完成第八週的互評作業。計畫要分析的資料不一定要親自收集，可以找有興趣主題的公開資料，測試你想檢驗的假設。我認為台灣學生可以透過這項作業，測試看看現在國內各公家機關的開放資料，能完成多少真正有意義的分析。&lt;/p&gt;
+&lt;p&gt;各週推薦閱讀是之後深化學習的途徑，每篇論文都值得找來閱讀，有附件資料的還能試著操作，學到就有使用的機會。我個人的最大收穫是認識
+&lt;a href=&#34;http://meehl.umn.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;被譽為二十世紀最聰明的心理學家&lt;em&gt;Paul Meehl&lt;/em&gt;&lt;/a&gt;
+，正在消化他於1989年講演哲學心理學(Philosophical Psychology)的課程錄影與資料。&lt;/p&gt;
+&lt;p&gt;翻譯中文字幕的動機是讓華文地區的心理科學人士，了解另一種學習及運用統計的方式，以及不同於習慣的角度看待心理學研究品質。這門課程資料不需要付認證費用，只要註冊Coursera就能全部取得，符合開放科學的精神。當然要持續深入學習，母語對有些學生可能會是限制，如果你能在生活區域找到一起學習的伙伴，建議一起定期討論作業與推薦論文。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;已上線的中文翻譯初稿為各方人士貢獻，本人無法保證所有材料的翻譯品質都維持在相同水準。藉此招募有意願的高手加入協助，開啟第二階段作業資源中文化。&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>讀書心得：現代心理科學的七大罪</title>
+      <link>/zh-hant/post/text_2017007/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2017007/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/k10970.gif&#34; alt=&#34;&#34; title=&#34;原著封面，取自Amazon.com&#34;&gt;&lt;/p&gt;
+&lt;p&gt;物理學家理查．費曼(Richard Feyman)於1974年加州理工學院的畢業典禮致辭，有以下兩段內容：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;大戰期間在南太平洋有一些土人，看到飛機降落在地面，卸下來一包包的好東西，其中一些是送給他們的。往後他們仍然希望能發生同樣的事，於是他們在同樣的地點鋪飛機跑道，兩旁還點上了火，蓋了間小茅屋，派人坐在那裡，頭上綁了兩塊木頭（假裝是耳機）、插了根竹子（假裝是天線），以為這就等於控制塔裡的領航員了──然後他們等待、等待飛機降落。他們被稱為草包族，他們每件事都做對了、一切都十分神似，看來跟戰時沒什麼兩樣；但這行不通：飛機始終沒有降落下來。這是為什麼我叫這類東西為「草包族科學」，因為它們完全學足了科學研究的外表，一切都十分神似，但是事實上它們缺乏了最重要的部分──因為飛機始終沒有降落下來。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;她很喜歡這個新構想，跑去跟教授說；但教授的回答是：「不，你不能那樣做，因為那個實驗已經有人做過，你在浪費時間。」這大約是一九四七年的事，其後那好像變成心理學的一般通則了：大家都不重複別人的實驗，而單純地改變實驗條件看結果。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;這段講稿後來被收錄於費曼的回憶錄「別鬧了，費曼先生」(Surely You&#39;re Joking Mr. Feynman:Adventures of a Curious Character)，也是諺語「草包族科學」(Cargo Cult Scinece)的起源。英國卡迪夫大學心理學者克里斯．錢伯斯(Chris Chambers)在個人新書「心理學的七宗罪」，引用這兩個段落描述自己對現代心理學現況及未來的擔心：如果今天的心理學家不真誠面對與解決知識生產模式裡存在的問題，今天的心理學知識會變成&lt;strong&gt;草包族科學&lt;/strong&gt;的真實教訓～總是有正面結果的報告，卻無法確認正面結果的正確性。&lt;/p&gt;
+&lt;p&gt;費曼遇到的狀況到了21世紀不但沒有改變，2011年還達到了高峰：
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Diederik_Stapel&#34; title=&#34;Diederik Stapel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;造假&lt;/a&gt;
+與
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Daryl_Bem#.22Feeling_the_Future.22_controversy&#34; title=&#34;Daryl Bem: &amp;#39;Feeling the Future&amp;#39; controversy&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;太美好的心理學研究案例&lt;/a&gt;
+在這一年先後現世，促成錢伯斯寫這本書做為紀錄。書中歸納的七宗罪體現經年累月累積問題，每一章標題都是理解問題的線索，閱讀整本書之後，我認為各種問題出於兩個成因，前三項罪體現直接導致的問題，後四項體現助長問題嚴重性的相關因素。為了方便之後的解說，我先簡單摘要七宗罪所體現的問題：(1)偏好正面結果導致的偏誤；(2)不受拘束的檯面下研究操作；(3)高影響力但低信度的研究結果；(4)缺乏公開分享研究資料的科學社群文化；(5)造假的誘惑；(6)限制付費取用的第一手文獻；(7)充滿集點狂的世界。&lt;/p&gt;
+&lt;h3 id=&#34;成因1過度追求概念性再現conceptual-replication&#34;&gt;成因1：過度追求概念性再現(Conceptual Replication)&lt;/h3&gt;
+&lt;p&gt;我曾在
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; title=&#34;纪錄已經出現與即將出現的再現危機~2016版&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;之前的文章&lt;/a&gt;
+說明什麼是&lt;strong&gt;概念性再現&lt;/strong&gt;，在此引述如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;原始研究的關鍵操作，以假設條件可容許，但是與原始研究相異的方式設置，在其它控制變項接近原始研究進行的再現研究。例如自我耗損實驗有其它學者使用其它物品，例如檸檬汁，或可以耗損意志力的其它方法，例如這項RRR使用的挑字母作業，能得到相同效應的結果。概念性再現通常用來測試假說的通用性，也有許多學者認為這是改善實驗研究的外在效度，最佳的方案之一。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;回首1947年費雪與心理學研究生的對話，再看自己一年之前寫的說明，讓我想到至少有七十年，每一代心理學家都被教育要避免重覆已經發表的研究，最單純的原因只是認為完整的重現已經發表的研究是浪費時間的事？克里斯引用
+&lt;a href=&#34;http://pps.sagepub.com/content/7/6/537&#34; title=&#34;Replications in Psychology Research How Often Do They Really Occur?&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;研究數據&lt;/a&gt;
+證實心理學家過度追求概念性再現的風氣已有百年之久，這種風氣在以期刊引用因子評估影響力的今天，造成心理學家以為使用不同條件，重現發表在高引用數期刊的論文研究結果為成就捷徑。就像上述說明中的&lt;strong&gt;自我耗損實驗&lt;/strong&gt;，出版的多數結果是經過有確認偏見(confirmation bias)的審查系統，而這樣的系統與需要讀者付費的論文出版集團是利益共同體。&lt;/p&gt;
+&lt;p&gt;其他可能助長過度追求概念性再現風氣的因素，是原創研究很難完整重現。原因可能是研究者沒有意願分享原始研究資料，或者研究結果其實是是蓄意造假的。後者在最近幾年有太多例子可說，前者則是研究者深受社群文化與行規潛移默化的結果。即使在講究開放的西方學術社群，
+&lt;a href=&#34;http://wicherts.socsci.uva.nl/datasharing.pdf&#34; title=&#34;The poor availability of psychological research data for reanalysis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;幾項調查&lt;/a&gt;
+顯示不到一半的研究者願意向任何人分享完整的研究資料，即使美國心理學會的倫理守則載明研究者應無私地公開資料，永遠會有1001個不能分享資料的理由。&lt;/p&gt;
+&lt;h3 id=&#34;成因2彈性無限制的研究操作&#34;&gt;成因2：彈性無限制的研究操作&lt;/h3&gt;
+&lt;p&gt;錢伯斯以&lt;strong&gt;隱藏的彈性&lt;/strong&gt;稱呼研究者的待澄清研究操作(Questionable Research Practice, QRPs)，更多探討這個課題的論文稱之為&lt;strong&gt;研究者的自由程度&lt;/strong&gt;(Researcher Degree of Freedom)。就像2016年，荷蘭蒂爾堡大學心理學家約特．惠切特斯(Jelte Wicherts)帶領的團隊，把太過自由而導致的研究操作問題，整理成一分
+&lt;a href=&#34;http://journal.frontiersin.org/article/10.3389/fpsyg.2016.01832/abstract&#34; title=&#34;Degrees of Freedom in Planning, Running, Analyzing, and Reporting Psychological Studies: A Checklist to Avoid p-Hacking&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QRPs清單&lt;/a&gt;
+。範圍包括：主題的形成、研究的設計、資料的收集、資料的分析、與報告的撰寫。這份清單呼應克里斯在前三章描述的現象。有問題的研究操作並未違反任何已有共識的研究倫理，但是只要能獲得美好的結果，很少有研究者不會採取其中幾項操作。有些甚至已內化至心理學教育系統：像是分析資料時改變原始計畫裡，處理極端值的標準，是可接受的。導致養成過程就是增加研究者自由程度，或者削弱覺察有疑問操作的能力。&lt;/p&gt;
+&lt;p&gt;許多研究者開始注意QRPs引起的問題，是讀過統計學者約翰．伊歐埃迪斯(John Ioannidis)於2005年發表，討論醫學與生命科學充斥太多偽陽性結果的
+&lt;a href=&#34;http://doi.org/10.1371/journal.pmed.0020124&#34; title=&#34;Why most published research findings are false&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;論文&lt;/a&gt;
+。他提出估計一系列報告陽性結果的研究，存在偽陽性結果比率的方法。這套方法綜合假設為真的事前機率(prior probability)、顯著水準、統計考驗力、與人為逼出陽性結果的比例(p-hacking)，估計存在真陽性結果比率的陽性預測值(positive preditive value)，也是QRPs嚴重度的估計值。&lt;/p&gt;
+&lt;p&gt;使用
+&lt;a href=&#34;http://shinyapps.org/showapp.php?app=http://lmpp10e-mucesm.srv.mwn.de:3838/felix/PPV&amp;amp;by=Michael%20Zehetleitner%20and%20Felix%20Sch%C3%B6nbrodt&amp;amp;title=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&amp;amp;shorttitle=When%20does%20a%20significant%20p-value%20indicate%20a%20true%20effect?&#34; title=&#34;When does a significant p-value indicate a true effect?&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;這個網頁&lt;/a&gt;
+，你可以自行調整四項參數，了解偽陽性結果增加的條件。伊歐埃迪斯指出，如果一系列研究報告都是陽性結果，而且真陽性結果比率要高達90%以上的話，假設為真的事前機率要達80%以上，統計考驗力也要達90%。另一方面，一套假設為真的機率只有一半的研究系列，統計考驗力僅有33%時，如果研究者都很誠實不做有疑問研究操作，報告研究結果是陽性的比率不到20%，其中真陽性結果的比率將近90%；但是，若大部份的研究結果是QRPs導致，例如70%的研究有QRPs，陽性結果的報告比率會超過70%，然而其中真陽性結果只有一半。&lt;/p&gt;
+&lt;p&gt;伊歐埃迪斯論文的預設讀者是醫學與生命科學領域的研究者，但是先被打動的讀者群是社會科學的學者–或者更精確的說，在2011年覺醒的心理學家們。因為多數心理學領域的假設為真之事前機率約50%，也就是以看待隨機事件的立場，期待假設得到研究結果支持。如果多數呈現陽性結果的心理學研究是真陽性，心理學家不靠QRPs，只靠提高統計考驗力得到顯著結果，預計陽性結果與陰性結果的報告在所有文獻中應該各佔一半。實際情況卻如同&lt;strong&gt;自我耗損實驗&lt;/strong&gt;系列一樣，
+&lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0010068&#34; title=&#34;“Positive” Results Increase Down the Hierarchy of the Sciences&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可獲得發表的心理學論文超過90%是陽性結果&lt;/a&gt;
+。如此景況，只有用QRPs做研究才能達成。&lt;/p&gt;
+&lt;p&gt;當一個科學領域視QRPs為理所當然，直接導致&lt;strong&gt;檯面下的研究操作無限擴張&lt;/strong&gt;，以及多數研究結果&lt;strong&gt;有高影響力但低信度&lt;/strong&gt;的現象。如果有人無法抵抗&lt;strong&gt;造假的誘惑&lt;/strong&gt;，隔一陣子就出現一則學術不端新聞是可預料的趨勢。與&lt;strong&gt;付費論文出版集團&lt;/strong&gt;緊密相連的期刊編輯及審查者，只追求表面影響力但輕忽論文內容信度的教研機構管理，是助長QRPs的媒介。近幾年&lt;strong&gt;績效管理主義&lt;/strong&gt;的盛行，只看表面可數字化的表現：如期刊引用因子、獲得的補助經費金額、掛名的論文數目及排序，更助長研究者為求在短期內累積績效，有意無意地在研究流程中採用QRPs。為了幫助有良心的心理學家擺脫QRPs，克里斯．錢伯斯提出及執行&lt;strong&gt;有同儕審查的註冊研究&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Registered-Reports_EditorialPipeline.jpg&#34; alt=&#34;&#34; title=&#34;第一本接受有同儕審查的註冊研究的期刊Cortex，由克里斯．錢伯斯公佈的審稿程序。論文品質以兩階段評審:收集資料之前的計畫書評審，主題的創新與研究信度並重；收集資料之後的論文評審，著重研究過程符合計畫書規畫的程度。取自錢伯思個人格落格&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;終極解方開放審查機制的註冊研究平台&#34;&gt;終極解方：開放審查機制的註冊研究平台&lt;/h3&gt;
+&lt;p&gt;錢伯斯以第一位負責註冊研究同儕審查的期刊編輯，在書中最後一章分享這幾年遇到的同行人士對此機制的迷思與誤解，如何回覆與破除的經驗，值得讀者親自閱讀。我認為這本書給希望透過註冊研究提昇自己與團隊研究能力的研究者，傳達一道明確的訊息：&lt;em&gt;準備好擺脫過度的概念性再現與QRPs的研究者們，有審查機制的註冊研究是最適合的途徑&lt;/em&gt;。&lt;/p&gt;
+&lt;p&gt;註冊研究的概念與操作能不能廣泛流傳，其實科學社群之內的生態，以及研究者所處的社會文化氛圍支持因素的多寡有關。如果週圍的因素，如期刊的編輯方針、經費補助政策、甚至是大眾對科學工作的期許，不能與註冊研究一起演進，很難改變一個科學領域的研究操作習性。因此錢伯思期許，現在正在幾本期刊運作的註冊研究審查機制，能演進為公開透明的科學知識生產與傳播體系。&lt;/p&gt;
+&lt;p&gt;我推想錢伯思期望兩階段的評審機制，能演進為研究計畫書的&lt;strong&gt;公開競價平台&lt;/strong&gt;，與論文手稿的&lt;strong&gt;開放審查平台&lt;/strong&gt;。透過平台提交計畫與論文的研究者面對的評審者，不只是由期刊編輯或經費提供者委派的專業人士，也是有興趣並有意願提供意見的同行或關注該科學域現況的相關人士，如科普寫作者。研究者的最新成果也可以即刻交付同行研究者，進行獨立的直接再現，考驗其知識品質。科普寫作者亦能隨時關注最新研究從發想到結案的過程，向有長期接收資訊的讀者報告，顯現科學研究者對社會的真正貢獻。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/RR_Future.jpg&#34; alt=&#34;&#34; title=&#34;註冊研究審查機制的未來想像：專業人士與大眾皆可參與的開放科學雙平台。筆者自製。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;雖然距離理想的模式還有很長的路要走，開放平台的部分功能已有實際運作的例子。例如許多期刊已同意作者在投稿之後，審查結果未定之前，將預印本(preprint)公開於開放的網路平台，例如arXiv、
+&lt;a href=&#34;https://osf.io/preprints/&#34; title=&#34;OSF Preprints&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSF Preprints&lt;/a&gt;
+，讓有興趣的讀者瀏覽，並可經過網路社群傳播。開放科學中心正在建設的專案
+&lt;a href=&#34;https://osf.io/view/studyswap/&#34; title=&#34;StudySwap: A platform for interlab replication, collaboration, and research resource exchange&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;StudySwap&lt;/a&gt;
+，招募有穩定樣本來源的研究者加入，經由平台將最新成果的研究資料分享給其他研究者，在最短時間內重新執行相同的實驗與分析，確認研究成果的可再現性。&lt;/p&gt;
+&lt;p&gt;最後從理想拉回現實，在華文世界能否實現開放科學平台還在未定之數，因為有多少研究者能理解並願意實踐有審查機制的註冊研究，尚無法估計。如果讀過這本書，能讓更多研究者理解背後的問題，以及體認自己至今習以為常的QRPs，也許能引發出一股發展東方開放科學的力量。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Donders 與 de Groot：兩位荷蘭心理學者代表的時代精神</title>
+      <link>/zh-hant/post/text_2016002/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016002/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;這篇文章的寫作動機在兩年前讀過Acta Psychologica重新出版的荷蘭心理學者Adriaan de Groot論文–
+&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/24589374&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The meaning of “signiﬁcance” for different types of research&lt;/a&gt;
+，就有動筆的想法。在鹿特丹待滿三個月，研究也稍有成果的時候，我想一起介紹心理計時學之父Franciscus Donders的代表著作。讀兩位學者的代表作，可以了解心理學者在不同時代的歷史任務，看到當時的成就如何對今日的心理科學產生影響。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;讀論文看數個世代的荷蘭心理科學發展&#34;&gt;讀論文看數個世代的荷蘭心理科學發展&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.journals.elsevier.com/acta-psychologica/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Acta Psychologica&lt;/a&gt;
+是由在歐陸活躍的心理學者主導編輯，從1936年開始出版論文至今的實驗心理學學術期刊。1969年與2014年，首篇心理計時學論文出版一百週年以及Adriaan de Groot的百歲冥誕，Acta Psycholigca翻譯並重新出版兩位在1869與1956年以荷文在荷蘭國內研討會與心理學期刊發表的論文。我從交錯書寫兩位學者的生平與代表論文的意義，整理兩位的貢獻與今日心理科學面對的時代課題。Donders的論文是
+&lt;a href=&#34;http://www.sciencedirect.com/science/article/pii/0001691869900651&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;On the speed of mental processes&lt;/a&gt;
+，de Groot的論文是
+&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/24589374&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The meaning of “signiﬁcance” for different types of research&lt;/a&gt;
+。兩篇論文皆非開放取用論文，有興趣找來閱讀的讀者請自行透過合法管道取閱。&lt;/p&gt;
+&lt;h2 id=&#34;franciscus-cornelis-donders4&#34;&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Franciscus_Donders&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Franciscus Cornelis Donders&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Donders是1818年在Tiburg出生，大半輩子在Utrecht生活與工作的職業眼科醫師。他的醫師生涯收集許多眼球標本，解剖研究發現玻璃體(Vitreous humor)與光線折射的關係，進而提出今日眼科醫師和驗光師測量近視度數的方法，這套方法在眼科醫學被稱為
+&lt;a href=&#34;http://cybersight.org/bins/content_page.asp?cid=735-2858-4397-4404-4654-4704-4705&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Donder&#39;s Law&lt;/a&gt;
+。&lt;br&gt;
+心理學的學生初次認識Donders，多數來自他在1869年發表的
+&lt;a href=&#34;http://www.sciencedirect.com/science/article/pii/0001691869900651&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理計時實驗論文&lt;/a&gt;
+。這份論文整理他與當時在Utrechet University攻讀生理學的博士生De Jaager的合作成果，是有史以來人類以科學方法測量思考歷程的方法與紀錄。在這篇論文之前，科學家與哲學家都認為人類對外界刺激的反應，在神經系統中的訊息傳遞是發生在一瞬間，不可能運用科學方法測量。目前任教於以Donders為名的Donders Instituent，Radboud University的Ardi Roelofs教授，曾寫過一篇介紹當時Donders與De Jaager如何做實驗的
+&lt;a href=&#34;http://www.socsci.ru.nl/ardiroel/Rts.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;網頁&lt;/a&gt;
+。其中著墨他們改造當時法國人
+&lt;a href=&#34;https://en.wikipedia.org/wiki/%C3%89douard-L%C3%A9on_Scott_de_Martinville&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Édouard-Léon Scott&lt;/a&gt;
+發明的世界第一台錄音設備，運用他們發展的減法設計，測出一個人聽到另一個人的說話，立刻說出來的時間差。Donders與學生和朋友互相擔任實驗者與受試者，收集測量的時間差是0.8秒。雖然以今日的科技規格來看並不夠精確，卻足以打破當時學術界認為神經系統訊息傳遞無法測量的想法。&lt;/p&gt;
+&lt;p&gt;再翻閱
+&lt;a href=&#34;http://www.sciencedirect.com/science/article/pii/0001691869900651&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1969年的論文&lt;/a&gt;
+，我找到比Ardi Roelofs教授的介紹更值得玩味的訊息。首先是Donders的計時實驗有人聲、光線與字卡、以及腳部皮膚電擊三種版本，所有版本都有三種反應作業：(A)簡單反應；(B)選擇反應；(C)鎖定反應(Go/NoGo)。以人聲為例，簡單反應的刺激提供者只會發一種聲音(例如ku)，受試者只要跟著唸。簡單反應測出的時間最短，今天稱簡單反應是心理計時實驗的基準線(baseline)。選擇反應的刺激提供者會任意發出兩種聲音(例如ku與ka)，受試者跟著唸剛聽到的聲音。選擇反應測出的時間最長，因為包含辨認聲音與選擇反應聲音的心智活動。要測出選擇反應多出的心智活動要花多少時間，就要搭配鎖定反應：刺激提供者會任意發出兩種聲音(例如ku與ka)，受試者只唸出其中一種聲音(例如ku)，另一種聲音不必發聲。鎖定反應測出的時間介於簡單反應與選擇反應之間，Donders管鎖定反應叫c measurement，因為比起簡單反應只多一個辨認聲音的心智活動，只要每個版本的選擇反應時間減去鎖定反應，就能測量選擇聲音、光線、以及皮膚感覺的心智活動需要花費多少時間。今天的心理學學生學習Donders的計時實驗是使用個人電腦、甚至是智慧手機或平板，但是與Donders當年一樣，同學之間互相擔任實驗者與受試者，再自行分析資料，檢驗這套實驗方法的可行性。&lt;/p&gt;
+&lt;p&gt;另一個值得玩味的是Donders與De Jaager發展一系列實驗的背景。除了正好趕上當時第一代錄音與精密計時設備的問世，論文中也提到當代德國神經生理學已掌握的發現，如神經系統的解剖學，開始掌握神經細胞的電位活動紀錄方法。因此Donders的計時實驗設計雖然是測量人類行為，設計構想是奠基在當時的生理學知識之上。1868的論文見證心理計時學與近近神經生理學的歷史連結，也是成今日學習心理科學必須了解一定程度的生理學，才能充分掌握的歷史背景。Donders之後的心理計時學發展軌跡，與生理學有若即若離的關係，構成更多複雜的故事。而Donders的計時實驗，標誌荷蘭的科學家在心理學一詞尚未問世之前，就已經奠定心理科學的發展基礎。&lt;/p&gt;
+&lt;h2 id=&#34;adriaan-de-groot8&#34;&gt;
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Adriaan_de_Groot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adriaan de Groot&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;認識
+&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/24589374&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;de Groot教授的論文&lt;/a&gt;
+是2014年時曾寫過一系列談科學方法的文章(見
+&lt;a href=&#34;http://scchen.com/Text/text_20140806/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;一&lt;/a&gt;
+、
+&lt;a href=&#34;http://scchen.com/Text/text_20140414/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;二&lt;/a&gt;
+、
+&lt;a href=&#34;http://scchen.com/Text/text_20140805/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;三&lt;/a&gt;
+、
+&lt;a href=&#34;http://scchen.com/Text/text_20140805A/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;四&lt;/a&gt;
+)，之後開始認識並著手進行預先登錄研究(preregistered research)，而開始閱讀相關論文。這篇論文是促成我來到鹿特丹進行訪問研究的一項因素，在此生活一陣子後，發現可以從此認識今日荷蘭心理科學研究現況，以及與全球心理科學研究圈生態的關聯。我先談de Groot教授其人與論文的發表背景，再談今天再讀60年前的這篇論文有何意義。&lt;/p&gt;
+&lt;p&gt;根據
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Adriaan_de_Groot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;維基百科的介紹&lt;/a&gt;
+，de Groot於1914年出生於北荷蘭省的小村莊Santpoort，2006年辭世。有西洋棋手與荷蘭皇家學院院士兩種身份，院士身份來自他開發運用於荷蘭初等學校教育的智力測驗。我從荷蘭心理學家Rolf Zwaan的部落格，推測至少五十歲以上的荷蘭人，
+&lt;a href=&#34;https://rolfzwaan.blogspot.nl/2014/02/back-to-future.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;唸小學時曾做過他開發的智力測驗&lt;/a&gt;
+。1956年發表的
+&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/24589374&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The meaning of “signiﬁcance” for different types of research&lt;/a&gt;
+，提出了一個今天所有需要運用實證科學研究問題的學者，都要先認識的實證循環(emperical cycle)。在我個人的專業blog，有關這篇論文的
+&lt;a href=&#34;http://scchen.com/blog/2016/05/rethink-significance.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;深度閱讀心得&lt;/a&gt;
+，有詳細的介紹。&lt;/p&gt;
+&lt;p&gt;1956年是統計學假設檢定方法發展成熟，各種實證科學領域運用&lt;em&gt;p值&lt;/em&gt;評估獲得的資料是否支持研究假說的年代。de Groot這篇論文指出實證科學研究的完整循環包括發掘有潛力假設的&lt;strong&gt;探索型研究(Exploratory Research)&lt;/strong&gt;，以及檢驗有潛力假設能被證據支持的&lt;strong&gt;驗證型研究(Confirmative Research)&lt;/strong&gt;。假設檢定方法最適合的使用情況是只針對一種假設的驗證型研究，如果用在探索型研究，將面對想找到越多，卻越容易失敗的風險。我的
+&lt;a href=&#34;http://scchen.com/blog/2016/05/rethink-significance.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;深度閱讀心得&lt;/a&gt;
+使用附帶R程式碼的圖表，重現de Groot當年的這段分析。&lt;/p&gt;
+&lt;p&gt;2014年是歐美心理科學界興起預先登錄研究的重要年份。2015年被評為年度重要科學新聞的
+&lt;a href=&#34;http://www.wired.com/2016/03/psychology-crisis-whether-crisis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學的重製危機&lt;/a&gt;
+，由世界各地270位心理學者組成的Open Science Collaboration，就是在2014這一年展開撰寫研究計畫與進行實驗的核心工作。與傳統研究計畫不同之處，預先登錄研究的計畫包括分析方法的詳細設定，包括參與人數、極端值的定義、統計方法與p值的限制等。即使最後分析結果沒有達到統計顯著，也不能違反已登錄的設定增加或修改資料。如此設定是逼近de Groot在1956年所定義的驗證型研究，現在看來Acta Psychologica在2014年重新出版de Groot的論文不只有紀念的意義，也有為團隊打氣的味道，雖然最後發現只有38%的研究能被重現，成了新聞標題稱呼的&lt;strong&gt;危機&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;reproducible-psychological-researchdutch-and-world&#34;&gt;Reproducible Psychological Research：Dutch and World&lt;/h2&gt;
+&lt;p&gt;如果未來心理科學研究的可重製度是所有研究者都要認識的課題，可從de Groot的這篇論文開始認識Open Science Collaboration的理念。這個團隊也有不少新生代荷蘭心理學家的加入，例如現在在Tiburg University攻讀心理學博士學位的
+&lt;a href=&#34;http://chjh.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chris Hartgerink&lt;/a&gt;
+，為參與團隊的各實驗室共用的統計分析程序出了不少力。我現在訪問的University Erasmus Rotterdam心理系，合作的Rolf Zwaan教授在今年初也發表一篇與歐美11個實驗室合作，以預先登錄研究模式證實一篇2011年發表於psychological science的一篇
+&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed/21193778&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;社會心理學研究&lt;/a&gt;
+，無法重製的
+&lt;a href=&#34;https://rolfzwaan.blogspot.nl/2016/01/linguistic-cues-and-firing-guns-some.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;研究結果&lt;/a&gt;
+。目前預先登錄研究的推廣目標是劃清探索型研究與驗證型研究的分界，讓de Groot的實證循環能完整落實。從Donders到de Groot，雖然都不是心理科學歷史的耀眼巨星，但是在科學歷史的前進軌跡，他們的概念都有啟發不同世代的心理科學者前進。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

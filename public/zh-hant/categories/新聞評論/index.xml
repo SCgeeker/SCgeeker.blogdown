@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>新聞評論 | 陳紹慶的個人網站</title>
+    <link>/zh-hant/categories/%E6%96%B0%E8%81%9E%E8%A9%95%E8%AB%96/</link>
+      <atom:link href="/zh-hant/categories/%E6%96%B0%E8%81%9E%E8%A9%95%E8%AB%96/index.xml" rel="self" type="application/rss+xml" />
+    <description>新聞評論</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Mon, 10 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>新聞評論</title>
+      <link>/zh-hant/categories/%E6%96%B0%E8%81%9E%E8%A9%95%E8%AB%96/</link>
+    </image>
+    
+    <item>
+      <title>披薩門(*1)：「瞎吃」教主的完美自爆</title>
+      <link>/zh-hant/post/text_2017006/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2017006/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;註1: 本文標題借用哥倫比亞大學統計學教授、知名學術部落客安德魯．蓋爾曼(Andrew Gelman)從2017年1月31號起，在個人部落格對此事件的稱呼(
+&lt;a href=&#34;http://andrewgelman.com/2017/02/03/pizzagate-curious-incident-researcher-response-people-pointing-150-errors-four-papers-2/&#34; title=&#34;Pizzagate, or the curious incident of the researcher in response to people pointing out 150 errors in four of his papers.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pizzagate&lt;/a&gt;
+)。早在2016年聖誕節之前，安德魯教授就
+&lt;a href=&#34;http://andrewgelman.com/2016/12/15/hark-hark-p-value-heavens-gate-sings/&#34; title=&#34;Hark, hark! the p-value at heaven’s gate sings.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;眉頭一皺，發覺案情並不單純&lt;/strong&gt;&lt;/a&gt;
+。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果你是位關心人類飲食習慣研究最新資訊的科普作家，在2016年11月21日看到出版暢銷書「瞎吃」(Mindless Eating: Why We Eat More Than We Think)的康乃爾大學布萊恩．汪辛克教授（Brian Wansink）在個人部落格張貼的文章
+&lt;a href=&#34;http://www.brianwansink.com/phd-advice/the-grad-student-who-never-said-no&#34; title=&#34;The grad student who never say &amp;#39;no&amp;#39;.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;「永不說“不”的研究生」&lt;/a&gt;
+，應該會想寫篇文章轉述教授與這位研究生的合作成果。轉述內容必定會引用這篇文章提到的論文，以及評論為何一夥人想聚餐吃披薩，總是以吃到飽餐廳做為首選。然而汪辛克教授的首版部落格文章，有幾段文字吸引了近幾年學術圈內惡名昭彰的&lt;strong&gt;方法學恐怖份子&lt;/strong&gt;(methodological terrorists)注意，2017年開始沒有幾天，文章裡提到的四篇論文就被挑出多達150筆錯誤的統計數字。汪辛克看到這篇
+&lt;a href=&#34;https://peerj.com/preprints/2748/&#34; title=&#34;Statistical heartburn: An attempt to digest four pizza publications from the Cornell Food and Brand Lab&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;尚未經同儕審查的論文&lt;/a&gt;
+，完全無法辯解被指出的錯誤，只能在原始部落格文章兩度發佈追加致歉訊息，還有向各方聲明會針對出現錯誤的四篇論文，
+&lt;a href=&#34;http://retractionwatch.com/2017/02/16/social-science-isnt-definitive-like-chemistry-embattled-food-researcher-defends-work/&#34; title=&#34;&amp;#39;Social science isn’t definitive like chemistry:&amp;#39; Embattled food researcher defends his work&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;檢討自己的研究方法與指導學生的方式，並召集人員重新進行核實研究&lt;/a&gt;
+。另一方面，有媒體記者關心近幾年社會科學虛假報告不斷被揭發的爭議，向大學及實驗室公關請求採訪汪辛克本人有關數據為何出錯的細節，汪辛克卻做出出道二十多年以來，
+&lt;a href=&#34;http://www.chronicle.com/article/Spoiled-Science/239529&#34; title=&#34;Spoiled Science.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;首次閃避媒體採訪的舉動&lt;/a&gt;
+。究竟汪辛克在個人部落格說了什麼話而引起這新一波學術爭議？論文中的錯誤怎麼被人挑出來？「方法學恐怖份子」又是何方神聖？&lt;/p&gt;
+&lt;h3 id=&#34;公開示範人為逼出的顯著結果p-hacking&#34;&gt;公開示範人為逼出的顯著結果(p-hacking)&lt;/h3&gt;
+&lt;p&gt;汪辛克在部落格文章提到剛發表的五篇論文，是與一位來自土耳其，與他短期合作的研究生，一起分析一批以前在某家義式餐廳收集完成的資料。文章中提到當時他對這位研究生說「收集這些資料花了很多時間與經費，因為這批資料裡可以挖出很多酷玩意，我們應該能做點什麼補救。」(&amp;quot;&lt;em&gt;This cost us a lot of time and our own money to collect. There&#39;s got to be something here we can salvage because it&#39;s a cool (rich &amp;amp; unique) data set.&lt;/em&gt;&amp;quot;)。他們的討論過程提到幾個可能的補救方式，也提到如果這位研究生願意出手的話，汪辛克期望看到的分析結果與圖表是什麼模樣(&amp;quot;&lt;em&gt;I told her what the analyses should be and what the tables should look like. I then asked her if she wanted to do them.&lt;/em&gt;&amp;quot;)。&lt;/p&gt;
+&lt;p&gt;這段說法(現在看起來是不打自招)看在方法學恐怖份子眼裡，馬上察覺這不就是人為逼出顯著結果的標準作業程序？也就是為了得到小於顯著水準的p值，資料分析過程裡不擇手段修改與增減研究資料的一切行為。社會科學–特別是社會心理學–已經有好幾起受到大眾媒體青睞的主題，起初被發現當成鐵證的原始研究結果，最後被證實是人為過度操作資料分析的產物。像是丹尼爾．卡尼曼(Daniel Kahneman)在暢銷著作《快思慢想》（Thinking, Fast and Slow）引用約翰．巴赫(John Bargh)的老年化促發(Elderly Priming)，因為這一系列的相關論文報告列出的多數p值恰好接近顯著水準(比如0.04)，已被專業統計方法認證是
+&lt;a href=&#34;http://ssrn.com/abstract=2381936&#34; title=&#34;Lakens, D. [2014]. Professors are not elderly: Evaluating the evidential value of two social priming effects through p-curve analyses.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;人為逼出的顯著結果&lt;/a&gt;
+。&lt;/p&gt;
+&lt;h3 id=&#34;統計數據錯誤太多而導致的胃食道逆流statistical-heartburn&#34;&gt;統計數據錯誤太多而導致的胃食道逆流(Statistical heartburn)&lt;/h3&gt;
+&lt;p&gt;兩位荷蘭博士生，提姆．凡迪利(Tim van de Zee)與尼克．布朗(Nick Brown)，加上一位美國的統計學家喬丹．安那亞(Jordan Anaya)決定合作破解這些論文是不是人為逼出顯著結果的謎題。尼克．布朗與其指導教授在2016年於社會心理與人格科學(Social Psychological and Personality Science)發表一篇論文，介紹偵測心理學論文中報告的平均值，與其報告的樣本數不一致程度的方法：
+&lt;a href=&#34;https://www.researchgate.net/publication/309275131_The_GRIM_Test_A_Simple_Technique_Detects_Numerous_Anomalies_in_the_Reporting_of_Results_in_Psychology&#34; title=&#34;The GRIM Test: A Simple Technique Detects Numerous Anomalies in the Reporting of Results in Psychology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GRIM測試&lt;/a&gt;
+。喬丹將GRIM測試結合網路爬蟲程式，開發出可探勘大量文獻並挑出錯誤的應用軟體。看了汪辛克的部落格文章之後，他們與提姆決定要好好檢視汪辛克列出的其中四篇論文，因為他們研判這四篇的資料來源應該是同一家餐廳的現地實驗(Field Experiment)。&lt;/p&gt;
+&lt;p&gt;在2017年1月27日公開
+&lt;a href=&#34;https://peerj.com/preprints/2748/&#34; title=&#34;Statistical heartburn: An attempt to digest four pizza publications from the Cornell Food and Brand Lab&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;尚未經同儕審查的手稿&lt;/a&gt;
+，三人簡述曾向汪辛克主持的實驗室索取原始資料，卻被婉拒的過程。這個轉折之後，三人決定使用手邊能運用的壞科學探測器(Bad Science Detectors)(*2)檢查論文之中的數據。除了喬丹開發的程式，還有荷蘭蒂爾堡大學的博士生蜜雪兒．諾特(Michele Nuijten)開發，用來檢查t分數等統計值是否有計算錯誤的應用程式
+&lt;a href=&#34;https://github.com/MicheleNuijten/statcheck&#34; title=&#34;MicheleNuijten/statcheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;statcheck&lt;/a&gt;
+。最後，他們從四篇論文挑出150項錯誤，大多數錯誤是圖表中的樣本數與正文報告的樣本數兜不攏，還有同一筆資料在不同表格列出的平均值與樣本數彼此不一致。如果讀者是在大學裡教統計的老師們，甚至是在中小學教數學的老師們，看到幾十頁的數據和圖表充滿這樣的錯誤，想必都需要趕緊來一錠「吉胃服適」。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;註2: 壞科學探測器(Bad Science Detectors)一詞出自英國醫師與科普作家班．高達可(Ben Goldacre)的著作《壞科學》(Bad Science)。有興趣的讀者可參考
+&lt;a href=&#34;https://www.ted.com/talks/ben_goldacre_battling_bad_science&#34; title=&#34;Ben Goldarcre: Batting bad science.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;班．高達可的TED演講&lt;/a&gt;
+。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/images/errors-overlay.jpg&#34; alt=&#34;&#34; title=&#34;提姆等人掃瞄汪辛克過去19年[1997~2016]的著作，挑出的錯誤圖表拼圖。&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;圖片來源：提姆、凡迪利的個人貼文
+&lt;a href=&#34;http://www.timvanderzee.com/the-wansink-dossier-an-overview/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Wansink Dossier: An Overview&lt;/a&gt;
+，經提姆、凡迪利同意轉載於此。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;方法學恐怖份子從何而來&#34;&gt;方法學恐怖份子從何而來？&lt;/h3&gt;
+&lt;p&gt;提姆、尼克、與喬丹的行動完美揭發虛假科學報告，讓世人減少被虛假科學消息誤導的機會。但是對於像汪辛克等成名已久，習慣傳統社會科學研究模式的學者們來說，這種行徑猶如恐怖行動。普林斯頓大學的資深社會心理學教授蘇珊．費斯克(Susan Fiske)，曾在2016年9月被人發現，本來要發表在心理科學學會(Association of Psychological Science)的學會會員刊物專欄文章裡，草稿曾使用&lt;strong&gt;方法學恐怖主義&lt;/strong&gt;(methodological terrorism)一詞，形容這些公開挑論文數據錯誤、指出某項研究無法再現等
+&lt;a href=&#34;http://www.businessinsider.com/susan-fiske-methodological-terrorism-2016-9&#34; title=&#34;Scientists are furious after a famous psychologist accused her peers of &amp;#39;methodological terrorism&amp;#39;&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;非常規學術發表樣態&lt;/a&gt;
+。這項消息見報的時機，也剛好發生蘇珊．費斯克的高徒艾美．柯蒂(Amy Cuddy)的成名作-權力姿勢效應(power posing effect)，其昔日同儕戴娜．卡奈(Dana Carney)公開坦承
+&lt;a href=&#34;http://scchen.com/Text/text_2016005e01/&#34; title=&#34;擺姿勢也許能增加你的自信，但是不能真正改變你&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;「權力姿勢效應是虛假的效應」的事件&lt;/a&gt;
+。&lt;/p&gt;
+&lt;p&gt;艾美．柯蒂曾於2012年在
+&lt;a href=&#34;https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are&#34; title=&#34;Amy Cuddy: Your body language shapes who you are.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TED演講擺出高權力姿勢的好處&lt;/a&gt;
+，從此成為家喻戶曉的社會心理學教授。事件發生之前一年，其他實驗室發表以比原始研究多出四倍的樣本數，卻
+&lt;a href=&#34;http://journals.sagepub.com/doi/10.1177/0956797614553946&#34; title=&#34;Assessing the Robustness of Power Posing: No Effect on Hormones and Risk Tolerance in a Large Sample of Men and Women&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;無法再現原始研究的結果&lt;/a&gt;
+，接著一系列研究的p值被其他學者使用另一種壞科學探測器
+&lt;a href=&#34;http://www.p-curve.com/&#34; title=&#34;P-curve.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;P-Curve&lt;/a&gt;
+分析之後，確定是無真正顯著結果的效應，因此造成昔日同儕與艾美．柯蒂分道揚鑣。現在的艾美．柯蒂在美國大眾的形象，有些像南韓世越號事件發生之後的朴瑾惠，有興趣的讀者可留意
+&lt;a href=&#34;https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are&#34; title=&#34;Amy Cuddy: Your body language shapes who you are.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;演講影片&lt;/a&gt;
+下方的討論留言，看到近幾個月要求影片下架與支持艾美．柯蒂的意見相互交鋒。也許那一天發生類似閏蜜門的事件，她從演講權力姿勢效應得到的光環會徹底消失。&lt;/p&gt;
+&lt;h3 id=&#34;科普圈如何面對另類事實&#34;&gt;科普圈如何面對另類事實&lt;/h3&gt;
+&lt;p&gt;布萊恩．汪辛克與艾美．柯蒂向大眾傳達的資訊，在中文世界，或者至少是台灣的科普圈，依然被多數閱聽者認為是&lt;strong&gt;科學事實&lt;/strong&gt;。科普文章與專業科學論文一樣，要傳遞的是真實的科學知識。即使是由實驗室裡的科學家，親自面向大眾介紹最新研究成果，讀者也要保持求真的意志，而非以內容夠不夠新奇，傳播者有沒有名氣來判斷內容的價值。&lt;/p&gt;
+&lt;p&gt;然而這對處於專業科學家與讀者之間的科普作家，將帶來更巨大的挑戰。雖然沒有明確規範，科普作家應當具備比一般讀者更好的批判能力，研判科學成果的真實性，特別是許多作家身兼大學教師或研究生，甚至是第一線科學家的身份。不過現在的事實是，多數中文讀者認識布萊恩．汪辛克與艾美．柯蒂，主要是透過這群科普作家的著作及演講，也因此相信這兩人的&lt;em&gt;研究成果&lt;/em&gt;是有助個人生命成長的正面建議。&lt;/p&gt;
+&lt;p&gt;我並非在此否定這群科普作家的貢獻，只想藉由說明這些事件，提醒現在的中文科普是不是已經來到必須升級的時刻。除了傳達最新的科學知識，科普作家也要負起啟發讀者辨識科學資訊真實性的責任。在個人與群體之間交換資訊的各種場域，許多科普作家應該能預見查核資訊真實性的實際方法無法配合傳達真實知識的理想，而衍生各種問題。要如何掌握與解決這些問題，還需要更多的資訊與討論，不過我相信隨著這類事件不斷浮現，問題的輪廓將越來越清晰。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>擺姿勢也許能增加你的自信，但是不能真正改變你</title>
+      <link>/zh-hant/post/text_2016005e01/</link>
+      <pubDate>Mon, 10 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016005e01/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;初稿2016/10/6 12:59:58上線&lt;br&gt;
+一校2016/10/6 21:50:00完成&lt;br&gt;
+二校2016/10/11 22:33:00完成
+加強版：增加2017年2月22日TED訪問Amy Cuddy的摘要，以及各方評論。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;事件起因&#34;&gt;事件起因&lt;/h2&gt;
+&lt;p&gt;2016年的九月底，最受注目的國際新聞是當屆美國總候選人首次電視辯論會，還有當年度搞笑諾貝爾獎陸續公佈，為十月初的諾貝爾獎公佈暖身。就在這段時間，有一份心理科學危機消息在歐美社會科學圈引起關注，在九月的最後一個星期引起許多討論。雖然這則事件的熱度被其它更重大的新聞消息蓋過，
+&lt;a href=&#34;http://retractionwatch.com/2016/09/26/yes-power-pose-study-is-flawed-but-shouldnt-be-retracted-says-one-author/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Retraction Watch&lt;/a&gt;
+轉述
+&lt;a href=&#34;http://nymag.com/scienceofus/2016/09/power-poses-co-author-i-dont-think-power-poses-are-real.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;New York magazine&lt;/a&gt;
+的消息之後，一星期之內與事件有關的核心人士先後公開表態。&lt;/p&gt;
+&lt;p&gt;為何這個事件值得關心心理科學知識進展的讀者注意？要從9月25日晚上，目前任職UC Berkeley的Dana Carney，在個人網頁發表的
+&lt;a href=&#34;http://faculty.haas.berkeley.edu/dana_carney/pdf_My%20position%20on%20power%20poses.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開信&lt;/a&gt;
+說起。Dana Carney是2010年發表於心理科學期刊(Pscyhological Science)的論文“
+&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/20855902&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Power posing brief nonverbal displays affect neuroendocrine levels and risk tolerance&lt;/a&gt;
+”共同作者之一。這篇論文為大眾所知，是另一位共同作者Amy Cubby於2012年在TED talk的演講，以這篇論文的研究結果向聽眾宣傳&lt;strong&gt;權力姿勢效應&lt;/strong&gt;：改變身體語言能增加個人執行力。演講錄影的中文字幕版見下方影片：&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/McE-AuemcFg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  
+&lt;p&gt;這場演講錄影在英語世界至今已累積3千6百萬的瀏覽次數，youtube中文字幕版的瀏覽次數也逼近54萬人次。使用“
+&lt;a href=&#34;http://lmgtfy.com/?q=%E6%AC%8A%E5%8A%9B%E5%A7%BF%E5%8B%A2#&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;權力姿勢&lt;/a&gt;
+(Power Posing)”輸入google搜尋，會發現許多介紹及推廣這項研究及觀點的中文資料，而且都是一面倒的肯定。其中有一篇刊登於泛科學的
+&lt;a href=&#34;http://pansci.asia/archives/98176&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;介紹文&lt;/a&gt;
+，有研究內容的詳細介紹，尚不清楚&lt;strong&gt;權力姿勢效應&lt;/strong&gt;為何這麼轟動的讀者，建議先轉個彎去看這篇介紹文和Amy Cubby的演講，再回來看這場925事件:)&lt;/p&gt;
+&lt;p&gt;9月25日晚上，Dana Carney在
+&lt;a href=&#34;http://faculty.haas.berkeley.edu/dana_carney/pdf_My%20position%20on%20power%20poses.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開信&lt;/a&gt;
+裡表示&lt;strong&gt;我不再相信權力姿勢效應是真的(&amp;hellip;I do not believe that “power pose” effects are real.)&lt;/strong&gt;。就在一年前，2010年原始論文的共同作者還在同一本期刊，發表回顧文章
+&lt;a href=&#34;http://pss.sagepub.com/content/26/5/657.extract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Review and summary of research on the embodied effects of expansive (vs. contractive) nonverbal displays.&lt;/a&gt;
+，捍衛2010年的研究成果，相信權力姿勢效應經得起原研究團隊與其它實驗室的考驗。為何一年之後，其中一位成員轉換立場，並且做出學術界罕見的認錯聲明？心理科學人士與大眾能從這次事件獲得什麼教訓？&lt;/p&gt;
+&lt;h2 id=&#34;2015年的隔洋交鋒&#34;&gt;2015年的隔洋交鋒&lt;/h2&gt;
+&lt;p&gt;刊登Dana Carney三人第一份Power Posing研究成果的心理科學期刊，於2015年五月刊登一份由瑞士的學者Eva Ranehill等人主導的註冊再現研究(Registered Replication Research，參考
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;我寫的介紹&lt;/a&gt;
+)，在Dana Carney三人的原始研究設計中，Eva Ranehill等人增加原始研究沒有的權勢感受(feeling of power)自我評估，用意是確認擺姿勢會改變參與者的主觀自信，檢驗研究操作基本有效程度。這項評估在2010年之後，有部分後續研究採用，做為增加實驗信效度的措施，但是沒有研究採用與原始研究相同的操作條件與測量方式。&lt;br&gt;
+Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有42位；2015有200位)，同樣測量參與者在擺指定姿勢兩分鐘之後的決策行為與荷爾蒙濃度變化。結果如同大部分註冊再現研究一樣，行為與荷爾蒙的變化都沒有顯示&lt;strong&gt;權力姿勢效應&lt;/strong&gt;。Dana Carney三人也在這篇報告刊出時，
+&lt;a href=&#34;http://pss.sagepub.com/content/26/5/657.extract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;彙整包括2010年原始研究在內的33份已發表研究&lt;/a&gt;
+，主張Eva Ranehill等人的再現研究，只是眾多顯示有效的研究之中，少數顯示無效的發現。看似合理且有效的防衛，為何一年之後的9月25日，Dana Carney的立場發生180度的轉變？&lt;/p&gt;
+&lt;h2 id=&#34;天外飛來p-curve補刀&#34;&gt;天外飛來P-Curve補刀&lt;/h2&gt;
+&lt;p&gt;在U Penn任教的Uri Simonsohn與同事長期開發能評估某種主題的研究論文，存在&lt;strong&gt;出版偏誤&lt;/strong&gt;與**人為逼出顯著結果(p-hacking)**的方法。&lt;strong&gt;出版偏誤&lt;/strong&gt;是只有統計結果顯著的實驗機會，會獲得較高的出版機會，或者才會被研究者被寫入論文。&lt;strong&gt;人為逼出顯著結果&lt;/strong&gt;是對收集後的資料，在分析程序中進行各式“拷問手段”，直到獲得一般同意小於.05的p值為止。如果讀者不懂什麼是p值，可先看
+&lt;a href=&#34;http://mropengate.blogspot.nl/2015/03/hypothesis-testing-p-value.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;這篇blog&lt;/a&gt;
+建立概念。&lt;/p&gt;
+&lt;p&gt;Uri Simonsohn在2014年發表的
+&lt;a href=&#34;http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2256237&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;第一版P-Curve&lt;/a&gt;
+，提出一種可實作的方法學：如果一系列研究的有效結果都是因為&lt;strong&gt;出版偏誤&lt;/strong&gt;與&lt;strong&gt;人為逼出顯著結果&lt;/strong&gt;，才能得到顯著的報告，必定有很高比例的p值是在.05到.04之間。只要把一系列研究的p值排成次數分配，就能用統計檢定方法，讓有嫌疑的研究結果現形。&lt;/p&gt;
+&lt;p&gt;由德國心理學家Felix Schönbrodt建置的互動式網站shinyapps.org，已經納入最新版的P-Curve及經過驗證的資料。透過簡單的操作，讀者可以了解如何利用P-Curve判斷資料存在人為操作的程度。點開
+&lt;a href=&#34;http://shinyapps.org/apps/p-checker/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;p-checker網頁&lt;/a&gt;
+之後，先點選中間的&lt;strong&gt;p-Curve&lt;/strong&gt;，接著從網頁最左下角&lt;strong&gt;Load demo data&lt;/strong&gt;，選取想要看到的P-Curve分析資料。我建議讀者先選擇&lt;strong&gt;Non-hacked JPSP data&lt;/strong&gt;，看看沒有人為操作的研究結果P-Curve是什麼樣子。選取後網頁自動繪出下圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/JPSP_noHack.png&#34; alt=&#34;&#34; title=&#34;圖1. 沒有人為逼出顯著結果的P-Curve[藍色線條]。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果一系列研究結果是過度操作分析程序，而導致的結果，就會得到相反的曲線。從&lt;strong&gt;Load demo data&lt;/strong&gt;選取&lt;strong&gt;Elderly priming analysis&lt;/strong&gt;，就會看到下圖的P-Curve：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Elderly_Hack.png&#34; alt=&#34;&#34; title=&#34;圖2. 有人為逼出顯著結果的P-Curve[藍色線條]。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;那麼Dana Carney三人所列出的33篇實驗結果，繪製成P-Curve呈現什麼模樣？&lt;/p&gt;
+&lt;h2 id=&#34;讓dana-carney認輸的p-curve&#34;&gt;讓Dana Carney認輸的P-Curve&lt;/h2&gt;
+&lt;p&gt;Uri Simonsohn與同事在2016年九月正式公佈已被接受的
+&lt;a href=&#34;http://papers.ssrn.com/abstract=2843862&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;最新論文&lt;/a&gt;
+，p-checker網頁已經整合這份論文的資料，讀者只要從&lt;strong&gt;Load demo data&lt;/strong&gt;選取&lt;strong&gt;Power posing&lt;/strong&gt;，就會看到下圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/main_P_curve.png&#34; alt=&#34;&#34; title=&#34;圖3. 分析Dana Carney三人列舉的33份研究，繪製權力姿勢效應P-Curve[藍色線條]。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;這條P-Curve呈現扁平的W，正好介於前兩張圖之間的形態，表示這條P-Curve與&lt;strong&gt;虛無效應&lt;/strong&gt;相差無幾。也就是說2010年的原始研究與後續研究所發現的權力姿勢效應，都是&lt;strong&gt;不存在的&lt;/strong&gt;。這也是
+&lt;a href=&#34;http://faculty.haas.berkeley.edu/dana_carney/pdf_My%20position%20on%20power%20poses.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dana Carney的公開信&lt;/a&gt;
+裡首先提及，放棄
+&lt;a href=&#34;http://pss.sagepub.com/content/26/5/657.extract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2015年回顧論文&lt;/a&gt;
+立場的關鍵。&lt;/p&gt;
+&lt;p&gt;不過從好的方面來看，如果這條P-Curve類似圖2，就可以懷疑參與這33篇研究的團隊有集體造假(fabrication)的嫌疑。新聞熱度絕對上昇好幾倍，也許我不必出手寫這篇文章，就有華文媒體記者主動報導。這也透露P-Curve的限制，如果是僅有一篇報告的研究，除非有高手深入查案，外人無法得知是否經得起檢驗。&lt;/p&gt;
+&lt;h2 id=&#34;amy-cuddy仍不放棄&#34;&gt;Amy Cuddy仍不放棄&lt;/h2&gt;
+&lt;p&gt;Dana Carney的公開信發佈後五天，9月30日Amy Cuddy發表
+&lt;a href=&#34;http://nymag.com/scienceofus/2016/09/read-amy-cuddys-response-to-power-posing-critiques.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開聲明&lt;/a&gt;
+表達個人看法。聲明的重點是Amy Cuddy認為雖然決策行為與荷爾蒙改變都沒有顯示真正的權力姿勢效應，但是改變身體姿勢的確對個人自信心的主觀評估有明顯的改變。&lt;/p&gt;
+&lt;p&gt;雖然這份公開聲明裡沒有明白表示，Amy Cuddy提到她試圖確立一種&lt;em&gt;弱版本權力姿勢效應&lt;/em&gt;。如公開聲明中的其中一句話：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&amp;hellip;the one that I would call “the power posing effect,” is simple: adopting expansive postures causes people to feel more powerful.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;2017年2月22日，Amy Cuddy接受
+&lt;a href=&#34;http://shinyapps.org/apps/p-checker/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TED的訪談&lt;/a&gt;
+中透露她現在的研究專注於擺出&lt;em&gt;有擴張性的(expansive)&lt;em&gt;身體姿勢如何增強個人信心，並且使用新名詞&lt;/em&gt;姿勢回饋效應&lt;/em&gt;(postural feedback effect)稱呼她的研究主題。可參考有關TED的問題「什麼是權力姿勢效應？」，Amy Cuddy的回答：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I now refer to this general phenomenon as the “postural feedback effect,” but if I am choosing just one effect – one outcome — the key finding is simple: adopting expansive postures causes people to feel more powerful.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;但是擺姿勢會讓人有自信，有沒有必要靠這種科學研究來了解原因？心理科學人士檢討的重點在於要在「擺姿勢」與「提高自信」建立因果關係，研究設計要能控制兩者之外的任何因素，才能得到充分的證據。然而Amy Cuddy的答覆看不出她準備採取更嚴謹的研究方法，面對重新設定的主題。更有人懷疑她有沒有能力做真正嚴謹的研究，畢竟她的論文會出現中小學生都能指出的算術錯誤，請參考下面統計學者Andrew Gelman演講錄影的開頭六分鐘片段。&lt;/p&gt;
+&lt;div style=&#34;position:relative;height:0;padding-bottom:56.25%&#34;&gt;&lt;iframe src=&#34;https://www.youtube.com/embed/fc1hkFC2c1E?rel=0?ecver=2&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; style=&#34;position:absolute;width:100%;height:100%;left:0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;p&gt;至於大眾能學習的重點，我認為不是Amy Cubby的TED演講錄影何時會被下架，而是理解如何辨別這類看似有開創性的研究成果，實際是尚待檢驗，未能成為真正知識的假設。2016年10月1日Uri Simonsohn接受NPR的
+&lt;a href=&#34;http://www.npr.org/2016/10/01/496093672/power-poses-co-author-i-do-not-believe-the-effects-are-real&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;訪談&lt;/a&gt;
+，他提到一開始看起來有開創性的研究發現，其實只是意念(idea)與原型(prototype)，距離實質的應用，還欠缺足夠的檢驗。Amy Cuddy的TED演講讓許多人以為她們的發現，是可以直接運用的成果。&lt;/p&gt;
+&lt;p&gt;經過Uri Simonsohn等學者的宣傳之後，已有美國網友能用持平的角度看待Amy Cuddy的演講宣揚的觀點。就像2017年3月29日出現於
+&lt;a href=&#34;https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原始演講影片&lt;/a&gt;
+下方的留言，這位網友指出Amy Cuddy的姿勢提昇個人自信的說法，也許只適合剛好遇上重大打擊的一小群人，只是演講渲染成所有人在任何有需要的狀況，都可以嘗試的辦法。然而在中文世界，這起事件剛爆發時，Amy Cuddy的
+&lt;a href=&#34;http://www.books.com.tw/products/0010735568&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;暢銷書中文版&lt;/a&gt;
+
+剛好上市，並且經由
+&lt;a href=&#34;http://sa.ylib.com/MagArticle.aspx?Unit=columns&amp;amp;id=3266&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;中文科普雜誌廣告&lt;/a&gt;
+，現在是時候提供眾多中文讀者另一種觀點。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2017愚人節補記：任職於德國波鴻魯爾大學的博士後研究員Malte Elson，這天在與友人一起經營的部落格
+&lt;a href=&#34;http://www.the100.ci/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The 100% CI&lt;/a&gt;
+，發表一篇指控Andrew Gelman刻意長期隱匿支持權力姿勢效應正面證據，卻三不五時批評Amy Cuddy的
+&lt;a href=&#34;http://www.the100.ci/2017/04/01/posergate-how-andrew-gelman-betrayed-science-in-his-war-on-power-posing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;貼文&lt;/a&gt;
+。文中指出Andrew Gelman收集的資料足於證實權力姿勢能有效提昇個人自信心與冒險信念，並公開側錄Andrew Gelman研究過程的影片。不過Andrew Gelman看過之後，只說Malte Elson這夥人做研究還行，
+&lt;a href=&#34;http://andrewgelman.com/2017/04/01/move-nothing-see/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;寫部落格還不到家&lt;/a&gt;
+。看到貼文發佈日期後，網友皆留言按讚並延伸即興創作。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>時態門～無法再現的社會心理學實驗是因為不乾淨的資料</title>
+      <link>/zh-hant/post/text_2017004/</link>
+      <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2017004/</guid>
+      <description>&lt;p&gt;去年我寫的網誌「紀錄已經出現與即將出現的再現危機
+&lt;a href=&#34;http://scchen.com/post/zh/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1&lt;/a&gt;
+」，介紹加拿大阿拉巴馬大學社會心理學助理教授William Hart於2013年發表在心理科學期刊的論文
+&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pubmed/21193778&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Learning About What Others Were Doing: 
+Verb Aspect and Attributions of Mundane 
+and Criminal Intent for Past Actions&lt;/a&gt;
+，無法被12間實驗室再現的事件。這個月初(2/7)心理科學期刊宣佈撤銷William Hart於2013年發表的另一篇論文
+&lt;a href=&#34;http://journals.sagepub.com/doi/pdf/10.1177/0956797612446351&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Unlocking Past Emotion: Verb Use Affects 
+Mood and Happiness&lt;/a&gt;
+，使得事件有新的發展。這篇網誌整理至今為止，這兩篇論文牽涉的資料造假證據如何浮現。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/william_Hart.jpg&#34; alt=&#34;&#34; title=&#34;William Hart。圖像取自阿拉巴馬大學網站。&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;描述過去經驗的動詞時態能影響當下情緒&#34;&gt;描述過去經驗的動詞時態能影響當下情緒？&lt;/h3&gt;
+&lt;p&gt;William Hart的兩篇論文都是檢驗一個假設：描述一項事件的文字所使用的動詞時態(verb tense)，會影響聽者對事件的信念與情感。這兩篇論文讓受試者評估的敘事文，都有設計動詞是非完成時態(I am walking on &amp;hellip;)與完成時態(I walked on &amp;hellip;)兩種版本，2011的論文請受試者假想自已是陪審團團員，判斷一件虛擬的兇殺案情節裡，嫌疑人有沒有意圖殺害被害人。2013的論文有四個實驗，讓受試者以非完成或完成時態，回憶正面或負面記憶–包括個人或在實驗室裡操作的情節。2011年的研究假設完成時態較容易讓人相信嫌疑人有犯意，2013的研究假設非完成時態讓受試者能回憶負面記憶的更多細節，造成比完成時態更大的負面情緒。&lt;br&gt;
+2011論文的掛名作者是William Hart與UIUC的Dolores Albarracín，但是2013論文是William Hart單獨掛名。根據Retraction Watch的
+&lt;a href=&#34;http://retractionwatch.com/2017/02/07/study-words-effect-mood-retracted-investigation-finds-evidence-data-manipulation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;消息&lt;/a&gt;
+，是由實際參與2013論文研究的某位不具名的研究生，向阿拉巴馬大學的研究核實辦公室(Office of Research Compliance)舉發，提出這份論文原始資料的加工證據。校方通知心理科學期刊編輯部後，由期刊做出撤稿決定。讀者下載
+&lt;a href=&#34;http://journals.sagepub.com/doi/pdf/10.1177/0956797612446351&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2013年論文&lt;/a&gt;
+會發現，包括摘要的每個段落，幾乎都有第一人稱代名詞開頭的句子，像是I tested&amp;hellip;, I examined, I analyzed&amp;hellip;。雖然現代學術論文寫作指引建議作者可以適當地使用人稱代名詞，但是使用頻率如此之高，足以媲美現任美國總統川普先生的公開演講。&lt;br&gt;
+英國卡迪夫大學(Cardiff University)的Richard Morey，在事發數天後提出一個可公佈在PubPeer的
+&lt;a href=&#34;https://medium.com/@richarddmorey/about-that-hart-2013-retraction-79cfdaea5cb0#.j0v3rda4x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;論文內容檢查&lt;/a&gt;
+。論文之中的一個實驗，讓受試者一開始進行改錯字(anagrams)任務，William Hart的想法是調整改錯字的難度，造成受試者的正面(簡單的錯字)與負面(困難的錯字)記憶。之後以一項紀錄反應時間的記憶作業，評估受試者回憶負面記憶的效率。以論文報告的數據來看，非完成時態的反應時間比完成時態的反應時間快了一百毫秒。這對有研究經驗的心理學家來說是非常驚人的結果，因為只有少數經典的認知心理學實驗能在多次再現實驗中得到，社會心理學的計時實驗能有20毫秒的差距就是了不起的效果。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Hart2013.png&#34; alt=&#34;&#34; title=&#34;Hart[2013]的部分內文，醒目標示為Richard Morey批判的數據。圖像取自原始論文。&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;描述犯案情節的動詞時態能推測犯意&#34;&gt;描述犯案情節的動詞時態能推測犯意？&lt;/h3&gt;
+&lt;p&gt;2013論文被撤稿的討論還方興未艾，曾參與2011論文再現研究的荷蘭鹿特丹伊拉謨斯大學(Erasmus University Rotterdam)的Rolf Zwaan，在2月21日於個人部落格公佈一項
+&lt;a href=&#34;https://rolfzwaan.blogspot.tw/2017/02/replicating-effects-by-duplicating-data.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;內幕消息&lt;/a&gt;
+，為後續發展投下震撼彈。2013論文撤稿消息公開之後，Zwaan收到一項可靠消息來源(&lt;strong&gt;註1&lt;/strong&gt;)：William Hart在去年的再現研究結果正式發表後，自己進行了2011論文的再現研究，這次收集194位受試者的資料，並且成功再現2011論文的結果。但是Zwaan檢視來源提供的原始資料，發現其中73筆是複製貼上而成。能發現的原因很簡單，這項William Hart親自主持的再現實驗，最後會請受試者自由回答這項研究的可能目的，逐字紀錄在獨立欄位，用試算表軟體排序一下，就發現不尋常之處，就像下圖Zwaan公佈的部分資料內容：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Screen_Shot_Zwaan_blog.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;給心理學以及整個科學界的教訓&#34;&gt;給心理學以及整個科學界的教訓&lt;/h3&gt;
+&lt;p&gt;這起事件的發展再次顯出開放資料的重要性，這是各國各領域科學研究人員都必須面對的課題，差別僅在於要著重的層次。對心理學來說，採取
+&lt;a href=&#34;http://scchen.com/post/zh/text_2017002/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;註冊研究&lt;/a&gt;
+及開放資料的正當性再次提高。對於現在的台灣科學界，最急迫的任務是如何在造假事件發生初期，建立可徵信的研究資料保存機制。這起國外造假案件的後續發展，值得有心人士一起關注。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註1:&lt;/strong&gt; 根據私人通信，Rolf Zwaan表示，因為完整資料已經交給阿拉巴馬大學，目前他必須隱匿消息來源。不過根據部落格內容，我推測十之八九與那位不具名的研究生有關。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>開放科學在荷蘭</title>
+      <link>/zh-hant/post/text_2016006/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016006/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/VSNU_OA.jpg&#34; alt=&#34;&#34; title=&#34;荷蘭大學聯盟&amp;lt;VSNU&amp;gt;推行之開放取用文獻計畫&#34;&gt;&lt;/p&gt;
+&lt;p&gt;相信大家聽過一個名詞：科學普及(Popular Science，簡稱科普)，這是由專業科學家，書寫通俗易懂的書藉文章或進行公開演講，也可能參與媒體節目，向大眾傳播科學家們殫心竭慮收集分析資料後產生的知識精華。英語世界的科普活動已有數十年的歷史，至今已出現不少投入科普活動的知名科學家。中文世界最近較知名的例子，當然是謝伯讓老師的
+&lt;a href=&#34;http://www.books.com.tw/products/0010723238&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;大腦簡史&lt;/a&gt;
+。而你正在閱讀的本文，要介紹比科普更進一步，將科學知識透明化與公開化的開放科學運動(Open Science)。&lt;/p&gt;
+&lt;h2 id=&#34;開放科學運動之興起&#34;&gt;開放科學運動之興起&lt;/h2&gt;
+&lt;p&gt;開放科學運動的成因在歐美學術圈之內蘊釀已久，比較為大眾所知的近因可從諾貝爾經濟學獎得主Daniel Kahneman的科普佳作《快思慢想》（Thinking, Fast and Slow）見到端倪。Kahneman在書中引用一系列社會心理學「促發效應」(Priming effect)研究，佐證要推銷給讀者的核心概念：「人類心智能運用環境中的提示，在自動與主控的認知系統之間切換。」然而，就在這本書出版當年，統計學家運用剛開發出來偵測出版偏誤（publication bias）的方法，確認這一系列「促發效應」的研究論文報告的真實效果極低，只是剛好達到統計顯著的指標而已。以常用的統計顯著水準0.05做比喻，只是在二十次失敗實驗之後，剛好出現唯一一次成功實驗的結果。這篇文章要正式定稿前，長期研究心理科學研究再現性的社會心理學家Ulrish Schimmack在個人部落格貼出專業分析文：「
+&lt;a href=&#34;https://replicationindex.wordpress.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reconstruction of a Train Wreck: How Priming Research Went off the Rails&lt;/a&gt;
+」，分析這一系列促發研究如何引導社會心理學往無法獲得可靠知識的方向發展，讓這類文獻如同脫軌的火車衝撞好不容易建立起來的知識體系。雖然《快思慢想》的開頭九章，是Kahneman建立畢生學問精華的基石，卻因為充滿瑕疵證據的第四章，讓整本《快思慢想》的科學知識價值打了折扣（註1）。&lt;/p&gt;
+&lt;p&gt;促發效應的案例呈現科學社群之內長久不為人知的一面，但是「快思慢想」的瑕疵更顯現這類研究案例經歷長久發展之後，對科普造成難以逆轉的傷害，甚至是大眾對專業科學家的信任。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/train-wreck-1.jpg&#34; alt=&#34;&#34; title=&#34;有瑕疵的科學文獻大量累積之後，將導致一系列看似進步的科學知識，朝向火車出軌般的災難發展。圖像取自Ulrish Schimmack的部落格。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;於是，Kahneman在書籍出版隔年寫了一封給學術界的
+&lt;a href=&#34;http://www.nature.com/news/nobel-laureate-challenges-psychologists-to-clean-up-their-act-1.11535&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開信&lt;/a&gt;
+。他在信中建議心理學家如何對實驗結果看起來很美妙的研究，設計可信的再現研究，檢驗真正的知識價值。Kahneman主張的研究模式現在被稱為
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;「註冊再現研究」(Registered Replication Research)&lt;/a&gt;
+，而且已有科學家身體力行，現在最知名的註冊再現研究，像是2015年轟動全球科學界的消息「
+&lt;a href=&#34;https://www.thenewslens.com/article/23587&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;270科學家合作，僅能重複36%心理學實驗結果&lt;/a&gt;
+」。有許多心理學家，更運用這種模式檢驗科普圈中常被介紹的心理學發現。有興趣的讀者，可參考筆者的
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;另一篇文章&lt;/a&gt;
+。&lt;/p&gt;
+&lt;h2 id=&#34;開放科學是什麼&#34;&gt;開放科學是什麼？&lt;/h2&gt;
+&lt;p&gt;這波註冊再現研究的出現，揭示開放科學的兩個核心理念：透明(Transparency)與公開(openness)。科學專業的具體實踐是在收集資料前，要為他人能有效檢驗產生的結果，而預先註冊(pre-registered)所有研究資料。凡是有預先註冊的研究，不論是不是再現他人的研究結果，都可稱為「註冊研究」。預先註冊研究正式發表之後，就算是非專業但有能力從事科學研究的人士，都能運用透明公開的資料，重現專業科學家的發現。當前的開放科學，是基礎科學家與支持科學研究的公私機構所推動的運動，運動的目標是面向大眾。那麼，初次得知這個名稱的讀者，要如何認識這波運動的內容呢？&lt;/p&gt;
+&lt;p&gt;從事實驗心理學研究的筆者，藉著過去這一年在荷蘭訪問的機會，除了學習以註冊研究模式進行個人的研究，也從直接與間接管道了解開放科學運動的進行現況。筆者發現，在開放科學運動的幾個面向上，都有荷蘭科學家投入的身影，荷蘭政府也正在推動科學文獻的開放取用，並製定明確的政策目標及推動策略。由於筆者本身研究領域的關係，以下說明提到的人物，都是現在活躍的荷蘭心理學者。&lt;/p&gt;
+&lt;p&gt;根據
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Open_science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;維基百科&lt;/a&gt;
+，開放科學包括六個方向的運動：開放取用(Open Access)、開放源碼(Open Source)、開放資料(Open Data)、開放的研究流程(Open Methodology)、開放的同儕審查(Open Peer Review)、以及開放的教育資源(Open Educational Resource)。&lt;/p&gt;
+&lt;p&gt;此外，2016年開始的歐盟計畫「提昇歐洲開放科學訓練品質」(Facilitate Open Science Training for European Research，簡稱FOSTER)也提出開放科學運動的相關細項目標，並訂定明確的執行檢核效標。無論是維基百科或FOSTER的分類方式，都表達出一項概念：這項運動的參與者可以是個人、機構、國家、甚至跨國組織。為便於說明，本文根據維基百科的六大方向來和讀者說明什麼是開放科學運動。&lt;/p&gt;
+&lt;h3 id=&#34;1開放取用的研究文獻open-access-journals&#34;&gt;1.開放取用的研究文獻(Open Access Journals)&lt;/h3&gt;
+&lt;p&gt;閱讀及整理過去的研究成果，是所有科學活動的開始。現今的科學文獻是科學家投稿給有同儕審查制度的期刊，經過同儕審查被接受後，才由出版社發行，最後再讓圖書館訂購收藏，提供從事科學研究的人士搜尋。有長久歷史的學術出版社(例如荷蘭的Elsevier)，已發展出需要使用者付費，才能檢索文獻的機制。隨著要支付的訂購費用越來越高，學術圈已有集體抗議這種付費出版模式的
+&lt;a href=&#34;https://www.twreporter.org/a/elsevier-vs-sci-hub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;行動&lt;/a&gt;
+，這種模式也使科學文獻只對有訂購的機構開放，而非向所有人開放。所以開放取用運動的目標，就是達到有能力上網檢索的人士，能自由取用科學家的研究論文。現在實踐開放取用的具體方式有兩種途徑：一種是論文作者個人實踐的綠色途徑(Green Route)，另一種是由出版社發行開放取用期刊的黃金途徑(Gold Route)。&lt;/p&gt;
+&lt;p&gt;綠色途徑是論文作者將期刊接受的論文手稿(post-printed manuscript)，放在公開的社群網站，讓任何人可經由網路搜尋取得。論文手稿是依既定的論文格式撰寫，提供出版社編輯排版的原始稿件。許多期刊允許作者將這類稿件放在公開的資料庫網站，如果想確定接受稿件的期刊是否允許自由取得，可利用
+&lt;a href=&#34;http://www.sherpa.ac.uk/romeo/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SHERAP/RoMEO&lt;/a&gt;
+這個網站查詢，也可得知投稿的期刊支持開放取用的程度。任何有允許公開論文手稿的研究者，都能運用合法的資料庫平台公開手稿，像是由設在美國維吉尼亞州的
+&lt;a href=&#34;https://cos.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放科學中心（Center for Open Science）&lt;/a&gt;
+所經營的
+&lt;a href=&#34;https://osf.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放科學平台（Open Science Framework, OSF）&lt;/a&gt;
+。除此之外，還有提供科學研究者的社群網站
+&lt;a href=&#34;https://www.academia.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academia&lt;/a&gt;
+與
+&lt;a href=&#34;https://www.researchgate.net/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Research Gate&lt;/a&gt;
+。例如我一直在注意的兩位荷蘭實驗心理學者：
+&lt;a href=&#34;https://www.researchgate.net/profile/Bernhard_Hommel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bernhard Hommel&lt;/a&gt;
+與
+&lt;a href=&#34;https://www.researchgate.net/profile/Rolf_Zwaan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rolf Zwaan&lt;/a&gt;
+，已將個人曾發表過的與最新的著作，持續公開於這兩個網站。他們都是荷蘭科學界中生代的代表，以身作則也讓與他們合作的後輩也效法實踐綠色途徑。&lt;/p&gt;
+&lt;p&gt;綠色途徑仰賴研究者的個人意願，除非
+&lt;a href=&#34;https://goo.gl/T4ppxp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有機構強制推動&lt;/a&gt;
+，讀者就算查到想要的文獻，如果研究者不想讓自己的著作依此模式公開，只能從出版社的付費管道索取論文。至於黃金途徑的終極目標就是要出版社提供百分之百的開放取用論文，而荷蘭的教育部與
+&lt;a href=&#34;http://www.vsnu.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;大學聯盟(VSNU)&lt;/a&gt;
+已訂出2024年要讓荷蘭境內公民皆可自由取用所有科學文獻的目標，他們從2014年開始和Elsevier等主要學術出版社談判，已有初步成果。VSNU將階段性成果整理成
+&lt;a href=&#34;http://www.magazine-on-the-spot.nl/openaccess/eng/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;懶人包&lt;/a&gt;
+，提供世界各國參考。我摘出其中談判的四個要點：(1)由最需要收藏文獻的機構首長擔任主要談判人員，例如大學校長；(2)談判人員有所屬機構的充分授權；(3)堅守底線，例如不妥協於Elsevier所要求的收取額外40%出版費用；(4)政策支持，也就是荷蘭教育部已宣佈的目標。2016年底正好發生台灣與其它國家的科研機構向Elsevier要求談判的行動，荷蘭邁向黃金途徑的經驗值得學習。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/osf_preprints.png&#34; alt=&#34;&#34; title=&#34;Open Science Framework出版前論文手稿查詢頁面。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ZWAN_RG201701018.JPG&#34; alt=&#34;&#34; title=&#34;Rolf Zwaan的Rsearch Gate個人首頁&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Hommel_RG20170108.JPG&#34; alt=&#34;&#34; title=&#34;Bernhard Hommel的Rsearch Gate個人首頁&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2開源軟體open-source-software&#34;&gt;2.開源軟體(Open Source Software)&lt;/h3&gt;
+&lt;p&gt;收集資料是科學研究的重要步驟，要收集有意義的資料，運用設計良好的程序是重要環節。專業科學家的養成過程中，有一部分是熟練操作收集資料程序的軟體，這類軟體通常能編輯符合研究目的程序腳本。開放科學強調科學研究程序的可重製性，開源軟體以開放原始碼的方式，讓使用者自由使用與修改軟體內容，達成可重製研究的要求。這段時間我個人收集資料用的軟體都是荷蘭心理學研究者開發的開源軟體，除了為各位介紹這些軟體之外，也在此分享我的個人使用心得。&lt;/p&gt;
+&lt;h4 id=&#34;qrtengine&#34;&gt;QRTEngine&lt;/h4&gt;
+&lt;p&gt;我的研究有一部分需要透過網路問卷平台
+&lt;a href=&#34;https://www.qualtrics.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qualtrics&lt;/a&gt;
+進行實驗，由於需要紀錄填答者的按鍵反應，並且根據註冊研究要求，在正式收集資料前要備份程序腳本，雖然我的合作夥伴以前曾經編寫程序一樣的Qualtrics平台腳本，但是這個版本需要許多道人工操作程序，才能置入新的刺激項目，不利未來的重製研究。準備過程中，我找到了萊登大學（Leiden University）Henk van Steenbergen領導的團隊開發的
+&lt;a href=&#34;http://www.qrtengine.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QRTEngine&lt;/a&gt;
+，發現符合我的研究需求，因而花了一些時間學習運用這套函式庫編輯程序腳本。&lt;/p&gt;
+&lt;p&gt;Qualtrics是一套互動式網頁平台，能讓問卷設計者編輯各種網路問卷，也讓設計者可自行撰寫javascript，在問卷網頁呈現自己想要的互動方式。然而，心理學實驗需要的互動方式與問卷項目隨機程序相當複雜，QRTEngine開發團隊將這些要求化為一系列簡單的javascript函式。就算不完全了解javascript的寫作邏輯，甚至不會寫程式，只要依腳本設置對應的函式，設計者就能打造出研究所需要的網路問卷。收集好的資料可透過團隊提供的程式，轉換成任何資料分析軟體都能處理的格式。&lt;/p&gt;
+&lt;p&gt;然而遺憾的是，當我完成研究的時候，QRTEngine也停止更新。因為Qualtrics主要用於市場商業調查，2016年系統更新後，為了讓問卷設計能相容於各式上網載具，大幅減低使用者自行編輯javascript的彈性，2017年之後可能無法再使用同一套腳本進行相同的研究。。幸好，我常用的另一套開源軟體
+&lt;a href=&#34;http://osdoc.cogsci.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenSesame&lt;/a&gt;
+，有了新的進展。&lt;/p&gt;
+&lt;h4 id=&#34;opensesame&#34;&gt;OpenSesame&lt;/h4&gt;
+&lt;p&gt;OpenSesame是目前任教於格羅寧根大學（University of Groningen）的
+&lt;a href=&#34;http://www.cogsci.nl/smathot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sebastiaan Mathôt&lt;/a&gt;
+，在就讀博士班時期與同事一起開發出來的。OpenSesame的核心程式碼是以python撰寫，所以熟悉python的人能自行改變或增加OpenSesame的功能。開發團隊設計一套簡單易上手的使用者介面，即便是不懂python的使用者，在自行操作幾種範例之後，也能掌握編輯實驗腳本的基本方法。第三版開始的OpenSesame提供連結OSF專案庫的功能，研究者可直接在使用者介面將編輯好的腳本與收集完成的資料，備份到OSF專案庫。如果研究者的OSF專案庫是公開的，有意再製研究的人士，可直接在自己的OpenSesame使用者介面下載腳本，在不同地點直接再現實驗程序。&lt;/p&gt;
+&lt;p&gt;2016年七月，開發團隊在github公開OpenSesame網頁版
+&lt;a href=&#34;https://github.com/shyras/osweb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WEBOS&lt;/a&gt;
+的原始碼，使用者可以安裝於自己管理的伺服器，直接執行單機版OpenSesame的腳本。不過網頁版的功能還不夠完整，只能執行一些程序簡單的腳本。我看好網頁版的未來發展，是取代QRTEngine的潛力工具。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://osdoc.cogsci.nl/3.1/pages/manual/img/interface/interface.png&#34; alt=&#34;&#34; title=&#34;OpenSesame使用者介面。取自官方網頁。&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3開放資料open-data&#34;&gt;3.開放資料(Open Data)&lt;/h3&gt;
+&lt;p&gt;開放資料的概念，可從資料的保存（data reservation）與資料的取用（data access）兩方面描述。科學文獻報告的結果，都是原始資料的分析精華，保留原始資料則可回溯發現新知識的過程。保存資料的概念雖在科學研究者中人盡皆知，但非所有科學家有相同的共識。VSNU在2012年頒佈的荷蘭科學研究守則
+&lt;a href=&#34;http://vsnu.nl/en_GB/netherlands-code-of-conduct-scientific-practice.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Netherlands Code of Conduct for Scientific Practice&lt;/a&gt;
+中，對於有關可核實性（Verifiability）的項目，明訂加盟的大學從事科學研究的教師與學生，均有義務保留研究資料至少十年。&lt;/p&gt;
+&lt;p&gt;相關守則的依據是VSNU規劃將近十年的治理方針
+&lt;a href=&#34;http://www.vsnu.nl/en_GB/code-good-governance.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;（The codes of good goverance）&lt;/a&gt;
+，這些守則應該也是近年荷蘭推動高等教育升級方案的依據。查閱這個守則的公開資訊時，我發現研究守則的最新版出爐的前一年，正好爆發轟動荷蘭學術界的Diederik Stapel研究造假案。案件爆發前，Diederik Stapel是任教於VSNU的蒂爾堡大學（Tilburg University）的心理學教授，由於長期以來源不明的資料發表論文，被該校師生匿名檢舉之後，調查委員會清查從他攻讀博士時期開始發表的論文，發現有58篇已發表的論文都無法提出可供核實的資料。由於Diederik Stapel從博士班到服務過的三所大學皆是VSNU的會員(阿姆斯特丹大學、格羅寧根大學、蒂爾堡大學)，這件案例的教訓，應是促成VSNU將研究人員的責任具體載明於科學研究守則的重要因素。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://diederikstapel.com/afbeeldingen/foto%20diederik.gif&#34; alt=&#34;&#34; title=&#34;Diederik Stapel。照片取自Diederik Stapel個人網頁&#34;&gt;&lt;br&gt;
+
+&lt;a href=&#34;#&#34; title=&#34;2016年，台灣出現幾波研究人員在學術投稿上造假和違反科學倫理的事件，重創許多知名大學和教授的聲譽，並引發許多對科學研究和學術發表的檢討聲音。其實不只台灣，當前的國際學術界，也正經歷許多風起雲湧的改革。訴求將科學知識透明化與公開化的開放科學（open science）運動，便是近期科學社群倡議的一項主軸。荷蘭政府、大學和研究機構不僅參與了這波運動，還在某些項目上率先發難，取得顯著的成果，例如抵制學術資料庫公司收取高額期刊訂閱費，而往「開放取用的文獻」（open access journals）的目標前進。除此之外，荷蘭學者也在開放科學運動的其他面向上扮演了關鍵角色。那麼，就讓我們來看看開放科學運動究竟包含哪些內容，荷蘭的投入經驗如何，對台灣又有什麼啟發吧！&#34;&gt;//&lt;/a&gt;
+: # &amp;ldquo;Diederik Stapel potrait&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;在最理想的落實狀態下，開放資料的取用，是讓論文讀者能直接取得原始資料，核實獲得論文數據與圖表的真實性。如果整個學術界能達到這樣的境界，類似Diederik Stapel的案例就不可能發生。到目前為止，至少VSNU師生最近四年發表的論文，讀者都能獲得完整保存的資料，但是其它機構的研究者資料可就不一定了。蒂爾堡大學的博士生Chris Hartgerink為此提出一套折衷方案，將心理學期刊內論文的統計數據轉換成格式化資料，包裝為
+&lt;a href=&#34;https://github.com/chartgerink/2016statcheck_data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R套件 &lt;/a&gt;
+，讓這些期刊文獻的讀者可以自行做初步檢核。&lt;/p&gt;
+&lt;p&gt;這套方案源起Chris Hartgerink與同校的博士生Michele Nuijten合作開發的R套件 
+&lt;a href=&#34;https://github.com/MicheleNuijten/statcheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;statcheck&lt;/a&gt;
+。statcheck的功能是掃瞄及擷取論文中的統計數據，再檢驗統計數據是否符合報告所提計算統計數據的必要參數。現在原作者Michele Nuijten還推出
+&lt;a href=&#34;http://statcheck.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;網站版statcheck&lt;/a&gt;
+，使用者可以直接上傳論文pdf或網頁網址，從網站獲得檢查結果。而statcheck也被改造為自動化程式機器人，在知名的期刊論文核實網站
+&lt;a href=&#34;https://pubpeer.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pubpeer&lt;/a&gt;
+，張貼最新一期的心理學期刊論文數據核實簡報。有逛pubpeer的讀者會發現在該網站上有關心理學期刊的貼文大多數都是statcheck的作品。《自然》（Nature）期刊曾在2016年11月底以statcheck為例發表一篇
+&lt;a href=&#34;http://www.nature.com/news/post-publication-criticism-is-crucial-but-should-be-constructive-1.21058&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;評論&lt;/a&gt;
+，倡議pubpeer的核實應更具建設性。數據核實是評價科學論文真正價值的第一步，如何發掘某篇論文的錯誤或待澄清的地方，有賴讀者親自動手。我認為這是開放科學運動真正的目標，刺激那些在論文發現問題的研究者，做出更有意義的研究。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/statcheck_website.jpg&#34; alt=&#34;&#34; title=&#34;想知道你在讀的論文統計數據有沒有錯誤？先讓statcheck幫忙檢查一下。&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4開放的研究流程open-methodology&#34;&gt;4.開放的研究流程(Open Methodology)&lt;/h3&gt;
+&lt;p&gt;研究流程的開放模式有兩種：&lt;br&gt;
+重現(replication)：完整執行從收集資料到資料分析的完整步驟；重製(reproduce)：完整執行從原始資料到資料分析的所有步驟。第一種的難度與成本顯然較高，第二種則可以與開放資料運動一起推廣。2016年有兩套荷蘭學者所推出的開源軟體
+&lt;a href=&#34;https://jasp-stats.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JASP&lt;/a&gt;
+與
+&lt;a href=&#34;https://github.com/chartgerink/osfr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;osfr&lt;/a&gt;
+，皆有助推廣第二種重製模式。根據學習與操作的難易度，我姑且為之命名為新手級與專業級。&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://jasp-stats.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JASP&lt;/a&gt;
+是由阿姆斯特丹大學心理學系教授Eric-Jan Wagenmakers領軍的團隊開發，目的是推廣Eric-Jan Wagenmakers長期研究的貝式統計方法。JASP的使用者介面效法知名的商用統計軟體SPSS，但是多了一些SPSS沒有的特色。我提出兩個值得親自嘗試的特點：&lt;br&gt;
+首先是輸出的報表檔重新打開後，不只有圖表，還有原使用者的操作介面，所以JASP不需要看操作手冊學習，就可從開發團隊提供的範例檔了解想做的統計方法。第二，只要把JASP的報表檔上傳到OSF平台，就可讓他人透過任何網頁瀏覽器閱覽，所以如果老闆要你把跑完統計的結果寄給他看，只要將連結網址傳給老闆就好。如果對如何操作有興趣，可以參考我的
+&lt;a href=&#34;http://scchen.com/zh/post/text_2016007/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;介紹文&lt;/a&gt;
+。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://blog.efpsa.org/wp-content/uploads/2015/08/JASP_screenshoot_2.jpg&#34; alt=&#34;&#34; title=&#34;JASP的操作畫面。取自Journal of European Psychology Students部落格。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/chartgerink/osfr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;osfr&lt;/a&gt;
+是一套R套件，作者是前面提過的Chris Hartgerink。這個套件的功能是讓使用者自行撰寫R腳本管理OSF專案。最早已提到OSF可讓研究者自行管理要公開的檔案內容，對於重製模式來說，最理想的重製是讓讀者只要執行一套腳本，就能獲得文獻中呈現的所有圖表以及數據。如果論文作者提供有套用osfr函式庫的R腳本，讀者能直接執行與檢視這套腳本，了解論文作者如何製造放在論文之中的圖表。雖然osfr還有一些臭蟲尚待更正，，未來這個套件對開放科學的貢獻值得期待。有興趣的讀者，可以在youtube觀看Chris Hartgerink的示範影片，了解如何操作。&lt;/p&gt;
+&lt;div style=&#34;position:relative;height:0;padding-bottom:75.0%&#34;&gt;&lt;iframe src=&#34;https://www.youtube.com/embed/cnE3AcdeGVY?rel=0?ecver=2&#34; width=&#34;480&#34; height=&#34;360&#34; frameborder=&#34;0&#34; style=&#34;position:absolute;width:100%;height:100%;left:0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&#34;5開放的同儕審查open-peer-review&#34;&gt;5.開放的同儕審查(Open Peer Review)&lt;/h3&gt;
+&lt;p&gt;同儕審查是專業期刊決定研究者投稿的論文是否達到設定品質的評估程序。從1665年Henry Oldenburg在英國皇家學會（Royal Society）發表第一篇同儕審查的論文開始，同儕審查演變至今已成為專業科學家發表論文必過的關卡，以及具備擔任論文審查者的義務。各種科學期刊皆發展出一套有利於符合要求的審查制度，新進科學家也要學習如何辨識能刊登研究成果的期刊。但是科學研究的透明度與公開性－－&amp;ndash;正如開源運動、開放資料、開放研究流程所追求的目標，並不是傳統科學期刊重視的價值。像是開放原始碼、開放資料、開放研究流程，並非主流科學期刊的審查重點。現今許多主流科學期刊審查重視的，是想法夠不夠新穎，以及研究結果是不是夠顯著。開放同儕審查的運動方向，就是從論文評審者集體發起，引導學術界人士重視透明度公開性價值的運動。　　&lt;/p&gt;
+&lt;p&gt;英國皇家學會從2017年元旦開始，正式啟動
+&lt;a href=&#34;https://opennessinitiative.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Openness Initiative&lt;/a&gt;
+。這項運動徵求願意署名參與的學者，從2017年元旦開始，一旦收到期刊論文的審查邀請，將以作者是否在第三方平台（如OSF）公開原始研究資料，以及完成研究流程所需材料或軟體設定，做為接受審查該論文的條件。因此我們可以說，這項運動結合前面提到的所有運動目標，是科學社群內部發起的價值觀革新運動。&lt;/p&gt;
+&lt;p&gt;Openness Initiative與荷蘭有什麼關係？這項運動的
+&lt;a href=&#34;https://opennessinitiative.org/contact-us/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;主要發起者&lt;/a&gt;
+是來自英荷德美等四個國家，現任發言人
+&lt;a href=&#34;https://www.researchgate.net/profile/Richard_Morey&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Richard Morey&lt;/a&gt;
+來自美國，取得博士學位後到格羅寧根大學任教，期間與前面提到的Eric-Jan Wagenmakers合作開發許多貝氏統計方法，也是JASP的主要奠基者。2015年轉任英國卡迪夫大學，每年夏天還是會在阿姆斯特丹和Eric-Jan Wagenmakers一起舉辦貝式統計工作坊。在深入認識開放科學的過程中，我同時對貝氏統計有進一步了解，正是因為幾位核心人物也是開放科學運動的推廣者。讀者如果對貝氏統計有興趣，可以從這兩位學者的著作入手。&lt;/p&gt;
+&lt;p&gt;2012年英國皇家學院支持的出版社
+&lt;a href=&#34;http://www.ubiquitypress.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ubiquity Press&lt;/a&gt;
+開始發行四本公開同儕審查紀錄的開放取用期刊：
+&lt;a href=&#34;http://openarchaeologydata.metajnl.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Journal of Open Archaeology Data&lt;/a&gt;
+、
+&lt;a href=&#34;http://openpsychologydata.metajnl.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Journal of Open Psychology Data&lt;/a&gt;
+、
+&lt;a href=&#34;http://openhealthdata.metajnl.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Open Health Data&lt;/a&gt;
+、
+&lt;a href=&#34;http://openresearchsoftware.metajnl.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Journal of Open Research Software&lt;/a&gt;
+，這一系列期刊的政策包含了本文介紹至此的五個開放科學運動宗旨。專攻這些期刊領域的朋友，可以考慮將最新的研究成果投稿到這些期刊中。其中心理學《Journal of Open Psychology Data》的現任主編Jelte Wicherts，是statcheck主要作者Michèle Nuijten的指導教授。這群蒂爾堡大學師生挺身而出的行動，見證有理想的荷蘭科學家，透過全面實踐開放科學，回應震驚全國的學術醜聞所帶來的反思。　　&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/JOPD2016.jpg&#34; alt=&#34;&#34; title=&#34;Journal of Open Psychology Data最新一期網頁剪影&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6開放的教育資源open-educational-resource&#34;&gt;6.開放的教育資源(Open Educational Resource)&lt;/h3&gt;
+&lt;p&gt;如果同儕審查是推動開放科學的科學社群內部力量，教育就是召喚非專業卻關心科學發展的大眾，理解開放科學意義的外部管道，目前在學的大學生，即是他們第一波教育對象。說起和開放科學相關的課程，我推薦的第一門課程是Eric-Jan Wagenmakers在阿姆斯特丹大學開設
+&lt;a href=&#34;http://www.ejwagenmakers.com/GSBS/GSBS.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Good Science, Bad Science&lt;/a&gt;
+，授課內容全部公開在個人網站。這門課程主要介紹如何運用新的研究方法，評價一份研究成果的價值，以及提昇個人研究內容的公開性與透明度。課程偏向讓有初步認識的學生，透過動手操作來學習。由於教材都是開放資料，教師可以按照需要改造成對應在任何程度學生的課程中。&lt;/p&gt;
+&lt;p&gt;另一門值得介紹的課程是埃因霍溫科技大學的Daniel Lakens在Cousera推出的
+&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Improving your statistical inferences&lt;/a&gt;
+。這門課程內容在台灣的大學課程裡，相當於研究所的進階統計，但是短短七週課程涵蓋傳統的次數主義（Frequentist Statistics）與貝氏統計(Bayesian Statistics)兩大統計取向，第六週更談到科學哲學的議題，檢視開放科學運動的思想基礎。我自己親自完成每週作業後，認為這門課適合給想自我成長的科學研究人員，以及具備起碼基礎，想更上一層樓的學生們。除此之外，我也認為這門課的教材與作業設計，都是實現開放科學的必備技能。&lt;/p&gt;
+&lt;p&gt;透過Daniel Lakens的課程，我也注意到有新一代的荷蘭科學家正在尋找運用MOOC(大規模公開線上課程)推廣開放科學的最佳方法。萊登大學的博士生
+&lt;a href=&#34;http://www.timvanderzee.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tim van der Zee&lt;/a&gt;
+與
+&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Improving your statistical inferences&lt;/a&gt;
+之類的課程合作，設計有對照組的
+&lt;a href=&#34;https://taweihuang.wordpress.com/2016/09/25/%E5%AE%8C%E5%85%A8%E4%BA%86%E8%A7%A3-ab-%E6%B8%AC%E8%A9%A6-%E2%94%80-%E5%8F%AA%E5%AD%B8%E5%88%9D%E7%B5%B1%E4%B9%9F%E8%83%BD%E5%81%9A%E7%9A%84%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A/B測試&lt;/a&gt;
+，找出能增益學習者學習效益的影片設計模式。Tim在
+&lt;a href=&#34;http://blog.efpsa.org/2017/01/23/open-online-education-research/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;部落格文章&lt;/a&gt;
+以及與我與他的私人通信，都提到他的MOOC研究都會以註冊研究的規格設計與執行。如此可以讓更多有志人士了解如何進入開放科學，也能在這個人人被大量數據淹沒的時代，由MOOC的設計者與發行者開拓一條實踐開放科學的道路。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.timvanderzee.com/inhoud/uploads/2016/07/type-i-and-type-ii-errors.jpg&#34; alt=&#34;&#34; title=&#34;一張圖秒懂統計學的型一錯誤[偽陽性]與型二錯誤[偽陰性]。圖像取自Tim van der Zee個人網站。&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;荷蘭的運動模式台灣學得來嗎&#34;&gt;荷蘭的運動模式台灣學得來嗎？&lt;/h2&gt;
+&lt;p&gt;這篇文章的寫作架構得自Daniel Lakens的課程，部分內容介紹也得自他的指點。2016年的台灣科學界面臨前所未有的信任危機，跨入2017年依然方興未艾。類似的情節在2011年的荷蘭也曾發生過，但是從六個層面的開放科學運動，可以看到荷蘭的科學社群到政府機構，在研究工作內容到大眾知識傳播，進行提昇科學研究公開透明的改造工程。那麼台灣的科學界與社會能否從荷蘭的經驗得到脫胎換骨的機會？&lt;/p&gt;
+&lt;p&gt;以需要機構力量推動的科學文獻開放檢索，以及制訂科學研究守則等政策措施來說，現在的台灣政府與大學都面對更急迫複雜的問題，很難期待在一到三年出現會讓人有所期待的進展。就以2016年底開始的各大學停止訂閱Elsevier的事件為例，台灣是各大學圖書館組織的全國學術電子資訊資源共享聯盟(CONCERT)，每年負責與各主要出版社談判議價。我不清楚該聯盟負責談判人員的層級有多高，應該不會如同VSNU的做法，由大學校長親自出馬談判。而且談判人員也沒有得到政府的具體支持，像推動全面開放取用的明確年限。從Elsevier事件的
+&lt;a href=&#34;https://concert.stpi.narl.org.tw/news/249&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;最新發展&lt;/a&gt;
+可見，台灣社會還未形成對科學研究內容公開透明的要求或期待。但是在開放教育資源看到的例子，同樣致力發展MOOC的台灣各所大學，也許是培養台灣開放科學人才的可行途徑。&lt;/p&gt;
+&lt;p&gt;個人活動有希望為突破現狀帶來一些機會，特別在開源軟體、開放資料、以及開放研究流程。由於之前曾自學當紅的資料科學與機器學習方法，經過這一年的學習與研究經驗，我確認這些層面的運動是能讓受過高等教育的台灣民眾，最快理解開放科學價值的途徑，然而開放科學與資料科學有基本動機的差異。開放科學是確保科學知識的品質，建立在研究成果的可再現程度，需要有理論與問題意識引導資料的收集與分析。資料科學從已存資料探勘有意義的模式，理解人類行為的模式或誘因，知識品質建立在預測的優劣。兩者會使用的工具大致相同，對研究資料公開透明的要求幾乎一樣，但是追求知識的動機和目標有別。預期在幾年之內台灣的開放科學運動需要與資料科學合流，直到大眾能充分理解為止。&lt;/p&gt;
+&lt;p&gt;2016年十月曾透過網路視訊，與台灣關心心理科學研究品質的老師們一起辦了一場
+&lt;a href=&#34;https://www.youtube.com/watch?v=aF-UQDZBGnQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;研討會&lt;/a&gt;
+。結束後就規劃寫幾篇介紹荷蘭開放科學現況的文章，之後陸續發生許多相關的新聞，又花了不少時間消化資訊。這篇文章以荷蘭的人物與機構為主角，提供讀者作為認識開放科學的開始。如果有興趣了解更多推動開放科學的概念與做法，可以經由參與開放科學中心「
+&lt;a href=&#34;https://cos.io/our-communities/become-ambassador/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;大使計畫&lt;/a&gt;
+」，與可就近接觸的人士詢問討論，目前亞洲地區只有我與北京清華大學的胡傳鵬。期許藉此引出更多志同道合之士，提昇中文世界的科學知識品質與公開透明。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註1：&lt;/strong&gt; Kahneman本人於2017/2/14親自在Schimmack的該則部落格貼文回應，肯定Schimmack等人的指教，也正面看待促發效應研究會得到正面證據的支持。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>荷蘭科研補助機構推動提昇科研品質的五年計劃（一）：訊息整理</title>
+      <link>/zh-hant/post/text_2016003/</link>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016003/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;此文有三個系列構成：(一)2016年報導與查證的整理；（二）近十年重要事件回顧；（三）科學社群與社會大眾如何理解這項計劃&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一系列將以三個版本發展。第一版：初期報導及相關文章整理，構成大綱；第二版：彙整求證資訊與回饋；第三版：修正前版錯誤，補充重要資訊。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在今年來荷蘭進行訪問研究之前，已知道荷蘭有一群不同領域的學者，開始投入或促進科學研究領域轉向開放科學導向(open science)。2016年6月得知荷蘭政府準備在五年內逐步投資八百萬歐元，進行全國性科研品質調查與相關研究，以及補助針對有影響力的研究成進行再現研究。為了說明兩項政策將如何影響荷蘭科學研究的品質，我將以三篇文章說明與評論。首先介紹兩項政策的訊息，再來談促成兩項政策出現的歷史因素，最後從科研人員與社會大眾的角度，談談如何理解科研政策的變化對一國教育文化的影響。&lt;/p&gt;
+&lt;h2 id=&#34;nwo徵求探究與改進影響科研品質因素的研究計畫&#34;&gt;NWO徵求探究與改進影響科研品質因素的研究計畫&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.nwo.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NWO&lt;/a&gt;
+(荷文全名：De Nederlandse Organisatie voor Wetenschappelijk Onderzoek)是隸屬於荷蘭政府教育、文化與科學部的政府單位。負責推動促進荷蘭全國科學研究發展，特別是補助荷蘭國內研究機構及大學的研究人員與教授進行研究。功能類似台灣的科技部，不過以政府組織的位階來說，比較接近科技部的前身國科會。6/23報導全球高教近況的新聞網站Inside Higher Ed
+&lt;a href=&#34;https://www.insidehighered.com/news/2016/06/23/netherlands-starts-major-campaign-against-research-misconduct&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;發佈新聞&lt;/a&gt;
+，指出NWO將投入八百萬歐元用於補助影響研究誠信(Research Integrity)的調查計畫，與提昇研究品質的再現研究計畫。這篇報導的焦點是訪談推動這些計畫的重要推手–阿姆斯特丹自由大學(VU)的Lex Bouter教授，以及介紹NWO於今年推出的兩項重要補助政策名稱：&lt;strong&gt;Fostering Responsible Research Practices&lt;/strong&gt;與&lt;strong&gt;Replication Studies pilot&lt;/strong&gt;。由於這份新聞只有簡單提及推動政策的主因以及大致目標，為了完整介紹計劃內容，等到7月中旬NWO正式發佈兩項計劃的徵件訊息，完成這篇文章的資訊才充份到齊。&lt;/p&gt;
+&lt;h2 id=&#34;fostering-responsible-research-practices&#34;&gt;Fostering Responsible Research Practices&lt;/h2&gt;
+&lt;p&gt;這項補助政策的重點是理解研究者從申請研究計畫到發表研究成果的過程，任何會增進或降低研究誠信的因素。NWO命名這類研究計畫為
+&lt;a href=&#34;http://www.nwo.nl/financiering/onze-financieringsinstrumenten/zonmw/bevorderen-van-verantwoorde-onderzoekspraktijken---startsubsidie-levenscyclusproject/bevorderen-van-verantwoorde-onderzoekspraktijken---startsubsidie-levenscyclusproject.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The life cycle project&lt;/a&gt;
+，根據VU大學的校內媒體對Lex Bouter教授的
+&lt;a href=&#34;http://www.advalvas.vu.nl/nieuws/lex-bouter-onderzoekt-sjoemelwetenschap-mensen-zijn-soms-ijdel-en-inhalig&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;訪談&lt;/a&gt;
+，這項計畫是以荷蘭的科研人員為研究對象，運用各式調查方法理解並有效評估各項影響研究誠信的因素。由於兩份對Lex Bouter教授的訪問似乎是指NWO會主導調查方式，在計劃徵件訊息正式公告之後，我才理解是NWO向不同科學領域徵求主題研究計劃，像是
+&lt;a href=&#34;http://www.zonmw.nl/nl/subsidies/subsidiekalender/detail/item/bevorderen-van-verantwoorde-onderzoekspraktijken/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;生物醫學領域的The life cycle project&lt;/a&gt;
+已於7月中旬開始。社會科學計劃徵件雖尚未查到正式公告，但是可確定各領域的調查計劃爭取五百萬歐元的研究經費。&lt;br&gt;
+政策名稱之中的Responsible Research是指一項研究過程中的每項環節，研究人員都能提供責任保證。只要是依靠收集資料，驗證假設的實證研究，研究的過程都是一個循環。如同這張從
+&lt;a href=&#34;http://www.aimspress.com/article/10.3934/Neuroscience.2014.1.4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Instead of “playing the game” it is time to change the rules: Registered Reports at AIMS Neuroscience and beyond&lt;/a&gt;
+這篇論文引述的圖片：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.aimspress.com/fileOther/PIC/neuroscience/20140102-1.jpg&#34; alt=&#34;The hypothetico-deductive model of the scientific method. Retrived from (Chambers, Feredoes, Muthukumaraswamy, &amp; Etchells,  2014)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;這張圖其實簡化了部分步驟，例如論文審查出版程序，是只有專業研究人員才能理解的環節。不過圖中的紅字是已知會有害研究誠信的因素，負責一項研究的科研人員，在每個環節都會面對這些因素的考驗。因為最近十年越來越多分析研究揭露，多數研究人員面對這些因素通常無法通過考驗，整體現代科學知識有多少項目。因為這些因素的害處是經過不同研究者的長期文獻追蹤分析，才逐漸被辨識出來，將在歷史因素篇詳細介紹。不過就我的了解，Fostering Responsible Research Practices不只是要能發掘能有效評估各項因素對各領域科研成果傷害程度的研究方法，還希望能找到幫助科研人員正面突破考驗，對研究過程完全負責的方法。&lt;/p&gt;
+&lt;h2 id=&#34;replication-studies-pilot&#34;&gt;Replication Studies pilot&lt;/h2&gt;
+&lt;p&gt;這項政策是以重現各科研領域的奠基研究(conerstone research)為計劃徵件目標，生物醫學與社會科學研究將一起爭取總計三百萬歐元的經費。NWO的
+&lt;a href=&#34;http://www.nwo.nl/en/news-and-events/news/2016/nwo-makes-3-million-available-for-replication-studies-pilot.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;說明&lt;/a&gt;
+指出奠基研究是在特定領域中有高引用數，對公共政策的形成有重大影響的研究成果。也包括被許多教科書提及，或被媒體高度報導的研究成果。以近年所知的案例，
+&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E5%88%BA%E6%BF%80%E8%A7%B8%E7%99%BC%E6%80%A7%E5%A4%9A%E8%83%BD%E6%80%A7%E7%8D%B2%E5%BE%97%E7%B4%B0%E8%83%9E&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STAP細胞&lt;/a&gt;
+符合這項計畫的徵件條件。&lt;br&gt;
+還有更多大眾媒體不見得會報導，但是大學的專業科系會向學生傳授的奠基研究成果，如果大部分後續研究無法重現，對一個世代的學術傳承將造成不良影響。以去年出現於重要科學期刊專題及國際新聞的
+&lt;a href=&#34;http://talkecon.com/social-science-replication/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學實驗重製危機&lt;/a&gt;
+來說，270位心理學者重製2008年出版於三本高引用率的心理學期刊的研究，100項實驗只有39項再現結果與原始結果一致。也就是說，如果有一本引用這100項實驗成果寫成的教科書，只有39%的內容可信。&lt;br&gt;
+到了2016年7月，還有更多針對特定實驗的奠基研究剛好完成或正在進行，除了後續二篇，我已另闢
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章&lt;/a&gt;
+介紹。最重要的是NWO是全球各研究補助單位中，第一個願意補助純粹再現研究的政府單位。一般的研究計畫補助不論有沒有限定徵件主題，都強調研究主題與內容的原創性。重製既有研究成果的計畫毫無原創性可言，但是對了解不可重製的研究，如何對個別與整體研究成果帶來損害，是有進行的必要性。這種補助計劃的出現，其實與一國或一個社群的科研人員對此問題的意識程度有關，這會是展望篇的評論重點。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一版：20160726&lt;br&gt;
+第二版：20160801
+第三版：20160813&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>啟動你對促發實驗的認識</title>
+      <link>/zh-hant/post/text_2016001/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016001/</guid>
+      <description>&lt;h2 id=&#34;什麼是促發實驗priming-experiemnt&#34;&gt;什麼是促發實驗(Priming Experiemnt)？&lt;/h2&gt;
+&lt;p&gt;今年4月4號在家鄉台灣還在過清明長假的時候，我在臉書發現有人轉貼民報的報導：
+
+&lt;a href=&#34;http://www.peoplenews.tw/news/b1aa9871-c210-4182-a64f-fafa1f042c97&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【獨家】電競遊戲登上Nature‐台灣囝仔Jeffrey Lin 林侑霆&lt;/a&gt;
+。看了內文發現這位林侑霆先生與我算是同行，雖然標題強調林侑霆的台灣人身份應該要吸引同鄉網友點閱，兩位記者在報導內容努力地摘要自然期刊的重要內容並翻譯成中文，並將林侑霆2013到2015年在GDC的演講錄影連結附於文末，讓讀者能了解林侑霆的科學成就。不過自然期刊的原文格局是以林侑霆的研究成果為軸，探討如何運用科學方法認識並改變網路遊戲玩家的惡意行為(toxic behavior)。&lt;br&gt;
+然而這兩位記者大概沒有玩過任何網路遊戲(像是把toxic behavior照字面翻成&lt;em&gt;毒性行為&lt;/em&gt;)，更未曾查證心理學，讓一篇可以引發讀者探究林侑霆如何運用心理科學提昇英雄聯盟遊戲體驗的好文章，變得難以咀嚼。最重要的是自然期刊原文的其中一段：“Lin borrowed a concept from classic psychology. In late 2012, he initiated a massive test of priming, the idea that imagery or messages presented just before an activity can nudge behaviours in one direction or another.”，心理學系的學生都了解這是指林侑霆採用的是心理學研究常用的促發實驗(priming，大陸的心理學界稱為啟動實驗)。民報的中文報導變成&lt;strong&gt;在2012年底林侑霆採用經典的心理學概念啟動大規模的測試&amp;hellip;&lt;/strong&gt;。這一句使用粗體字是因為原來的中文報導也是粗體字標示，這個標示方式也成功達到心理學家在實驗室中的發現，兩天之後促發其它媒體對這則新聞的標題設定。像是中央社的
+&lt;a href=&#34;http://www.cna.com.tw/news/ahel/201604070232-1.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;台裔LOL首席設計師林侑霆 登上自然期刊&lt;/a&gt;
+，以及關鍵評論網的
+&lt;a href=&#34;http://www.thenewslens.com/post/308152/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《英雄聯盟》首席設計師是位台灣男孩—他用「經典心理學」讓電玩不再充滿仇恨&lt;/a&gt;
+。內容也都是民報的報導再精簡化，模式與這幾年常出現的「台灣沾光」新聞如出一轍，很難讓讀者看過後想去了解背後的科學，從轉載民報報導的
+&lt;a href=&#34;https://www.ptt.cc/bbs/Cognitive/M.1459772053.A.246.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;批踢踢認知科學討論區&lt;/a&gt;
+，引用者與推文者只有想到批踢踢的惡意行為可知一二。&lt;br&gt;
+我比較偏好台灣的心理學界將priming翻成_促發_的慣例，因為促發實驗在許多心理學實驗主題之內廣泛運用，不僅有得到增加行為表現的促進效應(facilitation effect)，也有降低行為表現的抑制效應(inhibition effect)。如果把priming翻成_啟動_，初次認識的讀者不自覺地會認為使用這種實驗方法，都會得到增加行為表現的結果。中文報導的二手及至三手傳播，很大程度地抑制讀者認識這種實驗方法的興趣，也讓看到這些標題就跳過的台灣心理學研究者與工作者，失去一次思辨心理學在台灣如何發展的機會。好在我有收集閱讀原始報導的習慣，所以撰寫這篇文章來談談什麼是促發實驗，以及今天的心理學家如何使用以及評價這種實驗方法對心理學知識的貢獻。&lt;/p&gt;
+&lt;h2 id=&#34;心理學家如何運用促發實驗&#34;&gt;心理學家如何運用促發實驗&lt;/h2&gt;
+&lt;p&gt;就從自然期刊的原報導
+&lt;a href=&#34;http://www.nature.com/news/can-a-video-game-company-tame-toxic-behaviour-1.19647&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Can a video game company tame toxic behaviour?&lt;/a&gt;
+，來認識什麼是促發實驗。之前引用的原文段落，自然期刊記者用簡潔的筆法說明實驗原則，透過報導語境翻譯就是：“在玩家行動之前，呈現的圖像或訊息能誘發某種行為表現”。在心理學家精心設計的實驗裡，參與者(participant)行動之前呈現的圖像或訊息稱為促發項(prime)或誘導項(probe)，呈現內容是促發實驗必定操作的獨變項，心理學實驗都會隨機分派設計好的促發項給參與者，再紀錄參與者經歷促發項之後的行動。參與者的行動可以是做出某種反應的速度，或者某種表現的次數，也是心理學家要先規劃好的資料分析項目。&lt;br&gt;
+自然期刊介紹的促發實驗，來自林侑霆在2013GDC大會的發表
+&lt;a href=&#34;http://gdcvault.com/play/1017940/The-Science-Behind-Shaping-Player&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Science Behind Shaping Player Behavior in Online Games&lt;/a&gt;
+，其中介紹的The Optimus Experiment。從這項實驗報告，可以一窺如何將線上遊戲介面，轉變成心理學實驗室。在網路平台越來越發達之後，有眾多玩家支持的電腦遊戲，開發者都會在遊戲介面安插遊戲提示，告知玩家遊戲訣竅或提醒保持網路禮節，像是這裡提到的「英雄聯盟」，還有暴雪公司的「魔獸世界」，都有設計在程式讀取畫面或遊戲畫面呈現提示。林侑霆的團點利用這個特性，設計五類24種提示訊息文字，有正向鼓勵合作行為，有負面警告惡意行為等等，玩家會收到那一類訊息，都是在遊戲開局前由伺服器端程式隨機決定。文字顏色也設計用紅色、藍色或白色隨機呈現，林侑霆的想法是在電腦遊戲或實驗裡，紅色文字通常有警告的意味，藍色文字有鼓勵受測者表現的暗示，白色文字常用於解說。再搭配提示訊息隨機出現在讀取畫面、遊戲畫面、或兩者皆有的設計，構成216種實驗情況。此外還有一種玩家從登入到登出都沒有提示的完全控制組(overall control)，做為216種實驗情況的測量基準線(baseline)，從2012年底開始進行這項實驗，當時全球英雄聯盟玩家之中的10%被分派到完全控制組，其它90%則隨機分派到216種實驗情況。雖然我沒有玩過英雄聯盟，我相信當時沒有一位玩家察覺自已正在參與一項心理學實驗。&lt;br&gt;
+所有玩家的遊戲表現，以及與隊友的即時溝通內容，都成為研究團隊的分析資料。運用簡單的統計方法，把任何一種實驗情況的玩家行為紀錄，與完全控制組玩家的行為紀錄相互比較，就能知道提示訊息內容，或文字顏色，以及提示出現時機，究竟促進或抑制什麼樣的行為表現。林侑霆2013GDC報告的投影片，以及自然期刊的原文報導，都有呈現一些有趣的分析結果，對於關切英雄聯盟的遊戲體驗的玩家或開發者，是很有意義的資訊。不過對於想認識促發實驗的讀者，值得認識更高一層的問題，像是研究倫理(Research Ethics)與開放資料(Open Data)的價值。我建議延伸閱讀紐約的科普作家
+&lt;a href=&#34;https://sciencehsu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jeremy Hsu&lt;/a&gt;
+在2015年1月發表的
+&lt;a href=&#34;https://backchannel.com/inside-the-largest-virtual-psychology-lab-in-the-world-7c0d2c43cda5#.ae9ffdaug&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inside the Largest Virtual Psychology Lab in the World&lt;/a&gt;
+。&lt;br&gt;
+推薦延伸閱讀的原因是雖然自然期刊也有談到這兩項問題，但是僅限於Riot的英雄聯盟，Jeremy Hsu的文章則從業界與學界的反應與現況，描寫研究倫理與開放資料的議題發展。以發表時間順序來看，很有可能是Jaremy Hsu的文章引發自然期刊編輯部的興趣。&lt;br&gt;
+除了Riot，臉書也有用自家平台進行線上心理學實驗，並且更為大眾所知，就是臉書與康乃爾大學合作，已於2014年發表於PNAS的
+&lt;a href=&#34;http://www.pnas.org/content/111/24/8788.full.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;情緒傳播實驗&lt;/a&gt;
+。這項實驗設計原則也是一種促發實驗，但是大眾更關注的是這項研究引起的倫理問題，例如常發表科普文章的黃揚名老師，就對這篇論文引發的研究倫理問題發表
+&lt;a href=&#34;http://yangminghuang.blogspot.nl/2014/06/blog-post_30.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;評論&lt;/a&gt;
+。那麼林侑霆透過英雄聯盟的平台進行實驗，有沒有相同的倫理爭議呢？我認為兩者對比突顯研究倫理問題的複雜度，來自研究者設計與執行專案的初始宗旨。我沒有詳細追蹤臉書的案例，不過就其於學術期刊發表成果的這項事實來看，業界與學界的雙方合作者有各自的利益考量，對學界來說就是在頂尖期刊發表論文，對業界來說就是改進能帶來更多收益的臉書演算法，所以這項研究所牽涉的利益衝突(conflict of interest)，一所大學的IRB也許無法預見這項研究成果會帶來的爭議。&lt;br&gt;
+不過英雄聯盟的線上實驗相對單純，因為Riot的目標是降低玩家之間惡意行為的發生，提高玩家的遊戲體驗。為此在公司內部設立IRB，審核像是林侑霆主持的內部研究案，林侑霆採用的方法是不直接改變玩家體驗的方式進行實驗，就像The Optimus Experiment操作遊戲內提示訊息，不只是玩家，一般電腦使用者對這些提示覺得可有可無。而從2014和2015的報告，可見到林侑霆的團隊是採用類實驗方法(quasi-experimental design)，結合文字探勘與機器學習等資料科學技術，根據玩家已熟悉的獎懲機制系統紀錄，分析惡意行為的起因與改變的過程。研究成果直接用於改進Riot自家產品，研究團隊除了拿部份結果去GDC報告，並未像臉書把全部資料整理之後投稿到學術期刊發表。所以一個研究來自利益目標不同的多方合作者時，誰有資格或如何辨識和衡量其中的利益問題？尤其像臉書是幾乎每個有上網設備的使用者都具備的社交平台，有沒有能超出所有利益角色，保障使用者個人權益不被研究措施侵害的措施？或者這種措施存在的合法性？這是對比英雄聯盟與臉書的線上大型實驗研究，所呈現的問題高度。&lt;br&gt;
+網路遊戲和臉書讓我們看到商業世界有運用網路平台，進行大型心理學實驗的實例，那麼已經運用促發實驗超過一世紀的學術界呢？Jeremy Hsu舉維吉尼亞大學社會心理學教授Brian Noek主持的
+&lt;a href=&#34;https://implicit.harvard.edu/implicit/research/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Project Implicit&lt;/a&gt;
+為例，說明學術界早就明白大型實驗的好處以及未來的潛力。Project Implicit是使用內隱連結測試(Implicit Association Test)研究不同語言與文化的參與者，對於特定議題的大型實驗計畫。台灣的科學人雜誌在2006年的一篇翻譯文章
+&lt;a href=&#34;http://sa.ylib.com/MagCont.aspx?Unit=columns&amp;amp;id=880&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;隱藏在內心的偏見&lt;/a&gt;
+，就已介紹這項測驗的源起與Project Implicit運作至2006年的狀況。我在這裡要談談這種大型實驗被心理學家重視的另一種功能，就是檢驗促發實驗結果的可再現性與帶來的知識價值，我想放到開放資料這一層來談。&lt;/p&gt;
+&lt;h2 id=&#34;運用開放資料評價促發實驗的知識價值&#34;&gt;運用開放資料評價促發實驗的知識價值&lt;/h2&gt;
+&lt;p&gt;為什麼談開放資料要兼談實驗結果的可再現性？這個切入點來自林侑霆在2013GDC報告的一張投影片。一開始介紹The Optimus Experiment，他用兩個著名的促發實驗向觀眾解釋實驗原理，一個是歷史悠久的Stroop效應，另一個是現於耶魯大學心理學系任教的John Bargh於1996年在Journal of personality and social psychology發表的
+&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed?cmd=Search&amp;amp;doptcmdl=Citation&amp;amp;defaultField=Title%20Word&amp;amp;term=Bargh%5Bauthor%5D%20AND%20Automaticity%20of%20social%20behavior%3A%20direct%20effects%20of%20trait%20construct%20and%20stereotype-activation%20on%20action.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elderly Priming&lt;/a&gt;
+。Bargh的促發實驗對今天美國的社會心理學具有重要的影響力，實驗的促發項是排字作業，讓參與者從一系列順序雜亂的單詞，排成有意義的句子，實驗者操作要排列的字詞內容，有與年老相關的字詞，以及與年輕有關的字詞。測量的行為是參與者完成排字作業之後，離開實驗室的走路速度。Bargh的論文報告的兩項實驗，顯示排列年老字詞的參與者，走路速度顯著比排列年輕字詞的參與者慢。這項實驗結果在發表後十年，帶動美國社會心理學家使用類似的促發實驗模式，研究概念建構促進或抑制的個人行動。甚至曾獲諾貝爾獎的心理學者Daniel Kahneman近年最為人所知的著作Thinking, Fast and Slow(快思慢想)，也引用John Bargh研究做為系統一自動化理論的佐證。&lt;br&gt;
+在Thinking, Fast and Slow出版的同一年，知名的開放取用期刊Plos One接受了一篇
+&lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029081#pone.0029081-Bargh1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;證實Elderly Priming無法再現的研究&lt;/a&gt;
+，此後開始了歐美科普作家對心理科學成果的
+&lt;a href=&#34;http://blogs.discovermagazine.com/notrocketscience/2012/01/18/primed-by-expectations-%E2%80%93-why-a-classic-psychology-experiment-isn%E2%80%99t-what-it-seemed/#.VwoQRGh95eU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;批判&lt;/a&gt;
+，科普作家與John Bargh的
+&lt;a href=&#34;https://www.psychologytoday.com/blog/the-natural-unconscious/201205/priming-effects-replicate-just-fine-thanks&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;筆戰&lt;/a&gt;
+，以及科普作家對於
+&lt;a href=&#34;https://hardsci.wordpress.com/2012/03/12/some-reflections-on-the-bargh-doyen-elderly-walking-priming-brouhaha/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原始實驗樣本太少的質疑&lt;/a&gt;
+。同一年秋天，Kahenman本人還親自發表一封
+&lt;a href=&#34;http://www.nature.com/news/nobel-laureate-challenges-psychologists-to-clean-up-their-act-1.11535&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開信&lt;/a&gt;
+，表達他對Elderly Priming的無法被其它實驗室再現的立場。&lt;br&gt;
+歐美科普作家對於Bargh的研究無法被同行再現有深刻的背景因素。就在Elderly Priming風波開始的前一年，時任荷蘭Tilburg大學的社會心理學教授
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Diederik_Stapel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Diederik Stapel&lt;/a&gt;
+，被踢爆所發表的研究結果都是自行捏造的數據，一直到今天，清查工作都還未結束。Diederik Stapel的研究類似youtube上某些知名頻道主設計的社會實驗節目，論文描述在公共場所或實驗室設計會誘發預期行為情節或擺設，實驗者從旁觀察行人的現場反應。也因此設計類似的Elderly Priming會被挑出來批判，至今依然餘波盪漾。其中一個值得注意的事件是一本刊登社會心理學研究的學術期刊Basic and Applied Social Psychology，在
+&lt;a href=&#34;http://www.tandfonline.com/doi/abs/10.1080/01973533.2015.1012991&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2015年2月宣佈&lt;/a&gt;
+投稿到該期刊的論文只能報告描述統計，傳統的推論統計如t檢定與變異數分析不必報告，以及有條件接受貝式統計分析結果。雖然未見過新聞報導與部落客將這件事與Elderly Priming風波放在一起談論，許多促發實驗無法被成功重現的現實，讓心理學家開始思考在實驗室裡執行的實驗結果，即使成功發表也不一定有真正的知識價值。&lt;br&gt;
+再回來看開放資料對於學術與商業的意義，最重要的是讓資料生產過程透明化。學術研究者可以使用開放資料檢驗實驗結果符合與不符合預期的條件，降低檢驗可再現性的成本。像是Elderly Priming的案例，如果在發表時能提供開放資料供評審或第三人檢驗，保證可再現的品質，也許至少不會引起無助澄清事實的各種風波。商品開發者可以使用開放資料檢視產品符合開發構想的程度，還可以藉此尋找有助改進產品的工程師。知識的價值不僅體現於研究者將所發現的事物包裝為讓讀者或消費者願意接受，更是提供開啟他人自行檢驗或探索知識的條件，讓原來的知識價值持續增加。如果英雄聯盟的營運能因此維持到下一個世代的玩家，那麼本來培養林侑霆的學術體系，有沒有可能藉著開放資料的時代機會，找到啟發新世代學人的新途徑？&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

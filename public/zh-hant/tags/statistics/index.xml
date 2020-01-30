@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>statistics | 陳紹慶的個人網站</title>
+    <link>/zh-hant/tags/statistics/</link>
+      <atom:link href="/zh-hant/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <description>statistics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>statistics</title>
+      <link>/zh-hant/tags/statistics/</link>
+    </image>
+    
+    <item>
+      <title>我們與「顯著」的距離 ~ p值是判斷科學研究成敗的過時指標嗎？</title>
+      <link>/zh-hant/post/comment-retired-p/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/comment-retired-p/</guid>
+      <description>
+
+
+&lt;p&gt;統計檢定是不是顯著，或者p值是不是小到可以接受的水準，是多數自然科學與社會科學的學術工作者們，分析資料判斷能否更新知識的工具。也是開發機器學習模型的數據分析人員，用來判斷收集到的資料能不能支持想驗證的假設之常見指標。自從重要奠基者Roland Fisher，Jerzy Neyman，與Egon Pearson分別發表p值以及推論犯錯率的重要概念與數學推導&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;，二次世界大戰後許多科學研究者，習慣用少於.05的p值推論獲得或發現預期的結果。統計推論的使用策略發展到二十一世紀的前十年，每個運用統計的科學領域已經累積不少批判與反省統計推論與p值的意見。2005年統計學者John Ioannidis發表批判生物醫學領域充斥偽陽性結果的經典論文&lt;a href=&#34;#fn3&#34; class=&#34;footnote-ref&#34; id=&#34;fnref3&#34;&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;，到2010年起心理學界密集爆發學術不端事件，以及高影響力期刊接受無法再現的爭議研究事件&lt;a href=&#34;#fn4&#34; class=&#34;footnote-ref&#34; id=&#34;fnref4&#34;&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;，讓科學家誤用p值的問題浮現。除了各領域學者集結推出各種改良方案與行動&lt;a href=&#34;#fn5&#34; class=&#34;footnote-ref&#34; id=&#34;fnref5&#34;&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn6&#34; class=&#34;footnote-ref&#34; id=&#34;fnref6&#34;&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;，2016年美國統計學會(ASA)理事會發表聲明&lt;a href=&#34;#fn7&#34; class=&#34;footnote-ref&#34; id=&#34;fnref7&#34;&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;，提出六點建議給需要運用統計推論做出結論的科學家們，如何正確使用與解讀p值。&lt;/p&gt;
+&lt;p&gt;ASA的建議公開的時候，台灣也有不少學者關注後續的影響。美國德州大學奧斯汀分校的林澤民教授於個人部落格分享當時的在台演講「p值的陷阱」&lt;a href=&#34;#fn8&#34; class=&#34;footnote-ref&#34; id=&#34;fnref8&#34;&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;，獲得華文知識圈廣大迴響。到了2019年三月，2016年代表ASA撰寫聲明的Ronald Wasserstein，將2016年參與ASA主辦的主題研討會學者發表的評論與建議，一共43篇論文集結於ASA專刊&lt;a href=&#34;#fn9&#34; class=&#34;footnote-ref&#34; id=&#34;fnref9&#34;&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;。參與其中兩篇專文的三位學者Valentin Amrhein，Sander Greenland，與Blake McShane，於專刊發表同日，在自然期刊發表主張，響應ASA的專刊主題&lt;a href=&#34;#fn10&#34; class=&#34;footnote-ref&#34; id=&#34;fnref10&#34;&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;。三位作者提到完成這份主張的初稿時，曾將預印本公佈於網路並收集連署，一星期內就獲得來自800多位統計學及自然與社會科學領域的學者響應。因此自然期刊公上網後，也吸引全球各地關心統計推論誤用問題人士的注目。&lt;/p&gt;
+&lt;p&gt;最初看到Amrhein等人的主張，我就留意過去幾年投入提昇心理學研究品質的學者一面倒地批判他們的建議做法：放棄p值的判斷閾限，提倡運用信賴區間評估實際結果與預期結果的相容性。主要的批判意見是這些學者提出的建議都是指點科學家們要做什麼，或者不要做什麼，而非討論為什麼該這麼做或不該這麼做。我看了幾天各方意見交流，也有自己的看法時，就收到林澤民教授的私訊，詢問有沒有興趣寫篇科普文章，向有興趣的讀者說明這幾年各界批評統計推論濫用的聲浪，帶來什麼訊息。當下我決定做個非正式調查，了解一下林教授「p值的陷阱」發佈三年後，華文圈的統計使用者正確了解p值人們有多少，還有探討誤解存在的原因，非正式的調查結果促成我寫作這篇文章的主要動機。2019年4月1日，我在個人臉書發佈下圖的動態訊息，建議第一次看到這則訊息的朋友，請自己先想想看，以你現在所知選擇你認為正確的答案：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/FB_question.png&#34; title=&#34;寫作前的調查問題&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;p值是什麼&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;p值是什麼？&lt;/h2&gt;
+&lt;p&gt;回首林教授「p值的陷阱」，林教授的解釋如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;p值是什麼？我想在座有很多專家比我都懂，但是也有一些同學在場，所以還是稍微解釋一下。p值是由Ronald Fisher在1920年代發展出來的，已將近一百年。p值檢定最開始，是檢定在一個model之下，實驗出來的data跟model到底吻合不吻合。這個被檢定的model，我們把它叫做虛無假設（null hypothesis），一般情況下，這個被檢定的model，是假設實驗並無系統性效應的，即效應是零，或是隨機狀態。在這個虛無假設之下，得到一個統計值，然後要算獲得這麼大(或這麼小)的統計值的機率有多少，這個機率就是p值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ASA的2016年聲明中，有關p值的解釋也是短短的一句話：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Informally, a p-value is the probability under a specified statistical model that a statistical summary of the data (e.g., the sample mean difference between two compared groups) would be equal to or more extreme than its observed value.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看過以上解釋，有仔細思考的讀者應該會把想選擇的答案縮小到3與4兩個選項。但是不太熟悉機率的讀者應該會困惑，p值是個什麼樣的機率？林教授說的「在這個虛無假設之下，得到一個統計值，然後要算獲得這麼大(或這麼小)的統計值的機率有多少」，以及ASA的解釋“the probability under a specified statistical model that a statistical summary of the data…”。兩種解釋都說明p值是一種&lt;strong&gt;條件機率&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;借用Deborah Mayo寫的書“Statistical inference as severe testing: how to get beyond the statistics wars”&lt;a href=&#34;#fn11&#34; class=&#34;footnote-ref&#34; id=&#34;fnref11&#34;&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;所記的公式，告訴我們p值是這樣的條件機率：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Pr (X \geq x_0 \mid H_0 ) = p(x_0)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;公式裡的&lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;代表虛無假設的統計模型(statistical model)，&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;代表實際資料的隨機變數，&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;代表虛無假設統計模型的隨機變數，一般來說&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;與&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;分別指實際資料的平均值與統計模型估計的期望值&lt;a href=&#34;#fn12&#34; class=&#34;footnote-ref&#34; id=&#34;fnref12&#34;&gt;&lt;sup&gt;12&lt;/sup&gt;&lt;/a&gt;。&lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;與&lt;span class=&#34;math inline&#34;&gt;\(x_0\)&lt;/span&gt;之間的差異越小，表示實際資料越符合虛無假設統計模型，得到的p值會越大，反之實際資料越不符合虛無假設統計模型，p值會越小。實際資料符合虛無假設統計模型的機率越小，表示&lt;strong&gt;實際資料有可能符合其他統計模型&lt;/strong&gt;。虛無假設統計模型通常代表沒有效果的預期結果，所以科學家通常希望得到的p值越小越好。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;為何許多人會誤解p值&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;為何許多人會誤解p值&lt;/h2&gt;
+&lt;p&gt;這次非正式調查列出的選項，最正確的是4，選項5要加上前提「具備高考驗力的條件時」才是正確。但是我發現許多只選一項的網友選擇3，部分網友表示3,4都有可能，這些網友身份從老師到學生都有，公佈答案時沒有人只選擇4。選項3所指是另一種條件機率：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Pr( H_0 \mid X \geq x_0) = p(H_0)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;這種條件機率的白話解釋是「當得到一個統計值，虛無假設統計模型存在的機率」，這種條件機率又被稱為&lt;strong&gt;事後機率&lt;/strong&gt;(posterior probability)，了解&lt;strong&gt;貝氏定理&lt;/strong&gt;可知事後機率通常無法直接估計，但可運用已知的&lt;strong&gt;事前機率&lt;/strong&gt;(prior probability)與&lt;strong&gt;似然性&lt;/strong&gt;(likelihood)逼近之。p值就是&lt;strong&gt;似然性&lt;/strong&gt;的一種估計方法。&lt;/p&gt;
+&lt;p&gt;中英文文法與數學公式文法有許多相反的地方，其中之一就是像林教授及ASA的白話解釋用「之下」與“under”描述虛無假設前提。不熟悉條件機率的讀者很容易以為&lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;是資料抽樣分佈的期望值，更別說對機率一知半解，卻常常要分析資料的科學家們。科學家以錯誤的理解使用統計推論，長年累月延續加上世代傳承，當然會產生許多不良研究結果，以及有損學術倫理的研究操作習慣。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;過嚴的判斷門檻&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;過嚴的判斷門檻&lt;/h2&gt;
+&lt;p&gt;除了許多人會誤解p值的真面目，更多被批判的誤用是將p值用於二分判斷，也就是以統計顯著與否推測有沒有發現預期的結果。前述的公式解說告訴我們p值是顯示實際資料與預期的統計模型之間的差異程度，是高是低應該視研究問題的性質而定。學過統計的朋友都聽過的.05就是一種最多科學領域依賴的判斷門檻。&lt;/p&gt;
+&lt;p&gt;然而設定判斷門檻這種作為，其實已經有違科學研究的共同宗旨：揭露不確定現象背後的規律。當一項研究主題僅憑幾次結果的p值未達門檻，就當是沒有價值的研究主題，有可能造成低估的錯誤。Amrhein等三位學者在自然期刊評論特別批判這種狀況，他們的舉例說明這個主題的所有結果若是都顯示一致的平均值，只以幾個p值沒有達到門檻，就決定放棄研究這個主題，長遠影響是有潛力的科學題目將無法開花結果。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;過鬆的判斷門檻&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;過鬆的判斷門檻&lt;/h2&gt;
+&lt;p&gt;相對於被低估的研究結果，另一個被批判的誤用是高估研究結果的真實性。這種誤用通常出現於p值僅剛好通過門檻，而且受人注目的原創研究。例如以「權力姿勢效應」而聲名大噪的社會心理學者Amy Cuddy，研究發表後由她本人與追隨者宣傳的其中一種效應，擺出擴張型姿勢會提高冒險動機的測量指標，在2010年發表的報告裡，實際的p值是0.049&lt;a href=&#34;#fn13&#34; class=&#34;footnote-ref&#34; id=&#34;fnref13&#34;&gt;&lt;sup&gt;13&lt;/sup&gt;&lt;/a&gt;。由於當時期刊並不要求寫出詳細的p值，報告只寫p &amp;lt; .05。若非之後其他學者的批評與無法再現的實驗結果，Amy Cuddy到現在可能還是將這項指標列為理論要素。&lt;/p&gt;
+&lt;p&gt;過去許多心理學研究以剛好通過門檻的研究結果當成支持理論的證據，累積許多難以再現的研究，對於歐美心理學界來說，再現危機是2010年代心理學的時代特徵。為了扭轉因高估p值所帶來的惡果，有學者提出偵測異常p值報告的方法&lt;a href=&#34;#fn14&#34; class=&#34;footnote-ref&#34; id=&#34;fnref14&#34;&gt;&lt;sup&gt;14&lt;/sup&gt;&lt;/a&gt;，也有許多領域的學者串聯倡議提高判斷門檻&lt;a href=&#34;#fn15&#34; class=&#34;footnote-ref&#34; id=&#34;fnref15&#34;&gt;&lt;sup&gt;15&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;如何表達不確定性&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;如何表達不確定性？&lt;/h2&gt;
+&lt;p&gt;相對於提高判斷門檻的倡議，還有兩種相反的意見與措施，提供科學家改善使用統計的做法。第一種是由專業學術期刊主動出手，要求投稿學者不得在報告裡使用p值或統計顯著與否呈現研究結果，例如社會心理學的Basic and Applied Social Psychology、政治學的Political Analysis。第二種是Amrhein等三位學者在自然期刊評論主張，以改名為「可容性區間」(compatibility interval)&lt;a href=&#34;#fn16&#34; class=&#34;footnote-ref&#34; id=&#34;fnref16&#34;&gt;&lt;sup&gt;16&lt;/sup&gt;&lt;/a&gt;的信賴區間取代p值及顯著性等二分判斷相關詞彙。參與這次ASA專刊的許多學者也是這類主張提倡者，例如心理學界的Calin-Jageman 與 Cumming&lt;a href=&#34;#fn17&#34; class=&#34;footnote-ref&#34; id=&#34;fnref17&#34;&gt;&lt;sup&gt;17&lt;/sup&gt;&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;至此提到的三種做法，提倡者的目的都是減少科學家過度肯定研究結果，降低無法再現的劣質研究充斥科學文獻的比例。但是用信賴區間取代p值的判斷門檻是好方法嗎？&lt;/p&gt;
+&lt;p&gt;在此借用密西根大學資訊科學系教授Matthew Kay公開演講簡報資料解說信賴區間是什麼&lt;a href=&#34;#fn18&#34; class=&#34;footnote-ref&#34; id=&#34;fnref18&#34;&gt;&lt;sup&gt;18&lt;/sup&gt;&lt;/a&gt;。這一段之後的示意圖是簡報圖片的重製，呈現事前機率(Prior)、似然性(Likelihood)、以及事後機率(Posterior)三種機率函數在資料空間的存在。其中似然性的機率函數相當於假設檢定之中的對立假設統計模型(H1)，事前機率的期望值等於虛無假設統計模型的預測。兩個統計模型差異越大，得到的p值越小，信賴區間(confidence interval，圖中橘色線條)也越不可能覆蓋虛無假設的期望值。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Visualize_Bayes.png&#34; title=&#34;圖解統計推論必知的三種機率函數&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖也呈現事後機率函數以及&lt;strong&gt;確信區間&lt;/strong&gt;(credibility interval，圖中紫色線條)，可見兩種區間是不同的估計結果。稍早提到事後機率是根據實際資料，統計模型確實存在的條件機率，所以確信區間比信賴區間更適合判斷實際資料相容理論預測的程度。然而許多情況缺乏事前機率的資訊，研究人員只能估計信賴區間。如果讀者想要更了解三種機率函數與兩種區間的差別，可以點擊此段附註提供的連結&lt;a href=&#34;#fn19&#34; class=&#34;footnote-ref&#34; id=&#34;fnref19&#34;&gt;&lt;sup&gt;19&lt;/sup&gt;&lt;/a&gt;，運用我製作的中文版shiny互動網頁探索。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;步步為營正確使用統計方法&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;步步為營正確使用統計方法&lt;/h2&gt;
+&lt;p&gt;如果讀者讀完這篇文章，準備要做統計分析寫報告，開始擔心自己是不是用錯誤的觀念與方法操作統計工具，那麼這篇文章就起了作用。這裡談到兩種有損科學研究品質的誤用狀況，以及三種改進的主張：提高判斷門檻；放棄p值；用信賴區間取代判斷門檻。就像統計推論的誤用者以過度簡化的二分門檻對待有連續性資訊的p值一樣，這些主張是以過度簡化的思維，以及缺乏考慮各領域科學研究複雜度所得到的結論。這些主張的提倡者都過度相信只要更換判斷標準或方法，科學家與統計使用者就不會犯相同的錯誤。&lt;/p&gt;
+&lt;p&gt;我在2017年曾參與荷蘭心理學者Daniel Lakens發起的集體寫作，回應提高判斷門檻的主張，並提出改進科學家設定統計方法的構想&lt;a href=&#34;#fn20&#34; class=&#34;footnote-ref&#34; id=&#34;fnref20&#34;&gt;&lt;sup&gt;20&lt;/sup&gt;&lt;/a&gt;。參與寫作的Stephen Benning在評論出版後，於個人部落格詳述實踐我們主張的具體作法&lt;a href=&#34;#fn21&#34; class=&#34;footnote-ref&#34; id=&#34;fnref21&#34;&gt;&lt;sup&gt;21&lt;/sup&gt;&lt;/a&gt;。作法是在研究開始之前，做好六道準備：(1)想清楚這次研究需不需要判斷門檻；(2)確定研究目標的性質(Benning列出四種範例)；(3)找出研究目標的最小效果量(minimal/smallest effect size of interest)；(4)設定最適判斷門檻；(5)設定最適考驗力；(6)如果有多重比較，慎選判斷策略。&lt;/p&gt;
+&lt;p&gt;六道準備步驟對於許多從事研究的讀者來說，最難的應該是找出最小效果量。關於此點，Lakens與他的博士生正在開發工具與教學材料，提供各領域的科學家運用&lt;a href=&#34;#fn22&#34; class=&#34;footnote-ref&#34; id=&#34;fnref22&#34;&gt;&lt;sup&gt;22&lt;/sup&gt;&lt;/a&gt;&lt;a href=&#34;#fn23&#34; class=&#34;footnote-ref&#34; id=&#34;fnref23&#34;&gt;&lt;sup&gt;23&lt;/sup&gt;&lt;/a&gt;。我們相信以妥善的統計規劃完成的研究，不論研究報告有沒有出現p值，有沒有表達顯著與否，都能讓讀者掌握研究結論的確定與不確定訊息。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;推薦閱讀&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;推薦閱讀&lt;/h2&gt;
+&lt;p&gt;Daniel Laken&lt;a href=&#34;#fn24&#34; class=&#34;footnote-ref&#34; id=&#34;fnref24&#34;&gt;&lt;sup&gt;24&lt;/sup&gt;&lt;/a&gt;提供如何改良統計與研究方法教育的建議，回應ASA專刊的主軸，有興趣知道如何改良統計教育的朋友可找來一讀。Deborah Mayo耕耘統計哲學研究數十年，近期著作&lt;a href=&#34;#fn25&#34; class=&#34;footnote-ref&#34; id=&#34;fnref25&#34;&gt;&lt;sup&gt;25&lt;/sup&gt;&lt;/a&gt;爬梳現代科學家誤用統計推論的歷史脈絡，ASA專刊主編Ronald Wasserstein也在序文首段推薦，想深入探討誤解與誤用問題由來的讀者，可以找來詳讀。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;Fisher, R. A. (1934). Statistical Methods for Research Workers. Edinburgh: Oliver and Boyd. (First published in 1925.)&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;Neyman, J., &amp;amp; Pearson, E. S. (1933). On the Problem of the Most Efficient Tests of Statistical Hypotheses. Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character, 231, 289–337. Retrieved from JSTOR.&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn3&#34;&gt;&lt;p&gt;Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are False. PLOS Med, 2(8), e124. &lt;a href=&#34;https://doi.org/10.1371/journal.pmed.0020124&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1371/journal.pmed.0020124&lt;/a&gt;&lt;a href=&#34;#fnref3&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn4&#34;&gt;&lt;p&gt;Chambers, C. (2017). The Seven Deadly Sins of Psychology: A Manifesto for Reforming the Culture of Scientific Practice. Princeton, NJ: Princeton University Press.&lt;a href=&#34;#fnref4&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn5&#34;&gt;&lt;p&gt;Simmons, J. P., &amp;amp; Simonsohn, U. (2017). Power Posing: P-Curving the Evidence. Psychological Science, 28(5), 687–693. doi: 10.1177/0956797616658563&lt;a href=&#34;#fnref5&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn6&#34;&gt;&lt;p&gt;Benjamin, D. J., Berger, J. O., Johannesson, M., Nosek, B. A., Wagenmakers, E.-J., Berk, R., … Johnson, V. E. (2017). Redefine statistical significance. Nature Human Behaviour, 1. doi: 10.1038/s41562-017-0189-z&lt;a href=&#34;#fnref6&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn7&#34;&gt;&lt;p&gt;Wasserstein, R. L., &amp;amp; Lazar, N. A. (2016). The ASA’s Statement on p-Values: Context, Process, and Purpose. The American Statistician, 70(2), 129–133. &lt;a href=&#34;https://doi.org/10.1080/00031305.2016.1154108&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2016.1154108&lt;/a&gt;&lt;a href=&#34;#fnref7&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn8&#34;&gt;&lt;p&gt;&lt;a href=&#34;http://blog.udn.com/nilnimest/84404190&#34; class=&#34;uri&#34;&gt;http://blog.udn.com/nilnimest/84404190&lt;/a&gt;&lt;a href=&#34;#fnref8&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn9&#34;&gt;&lt;p&gt;Wasserstein, R. L., Schirm, A. L., &amp;amp; Lazar, N. A. (2019). Moving to a World Beyond “p &amp;lt; 0.05.” The American Statistician, 73(sup1), 1–19. &lt;a href=&#34;https://doi.org/10.1080/00031305.2019.1583913&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2019.1583913&lt;/a&gt;&lt;a href=&#34;#fnref9&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn10&#34;&gt;&lt;p&gt;Amrhein, V., Greenland, S., &amp;amp; McShane, B. (2019). Scientists rise up against statistical significance. Nature, 567(7748), 305–307. &lt;a href=&#34;https://doi.org/10.1038/d41586-019-00857-9&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1038/d41586-019-00857-9&lt;/a&gt;&lt;a href=&#34;#fnref10&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn11&#34;&gt;&lt;p&gt;Mayo, D. G. (2018). Statistical inference as severe testing: how to get beyond the statistics wars. Retrieved from &lt;a href=&#34;https://doi.org/10.1017/9781107286184&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1017/9781107286184&lt;/a&gt;&lt;a href=&#34;#fnref11&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn12&#34;&gt;&lt;p&gt;本文的p值與事後機率之條件機率公式為方便解說的簡化版，Fisher所提出的完整公式請Mayo (2018)之單元3.2。&lt;a href=&#34;#fnref12&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn13&#34;&gt;&lt;p&gt;Carney, D. R., Cuddy, A. J. C., &amp;amp; Yap, A. J. (2010). Power Posing: Brief Nonverbal Displays Affect Neuroendocrine Levels and Risk Tolerance. Psychological Science, 21(10), 1363–1368. doi: 10.1177/0956797610383437&lt;a href=&#34;#fnref13&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn14&#34;&gt;&lt;p&gt;Simmons, J. P., &amp;amp; Simonsohn, U. (2017). Power Posing: P-Curving the Evidence. Psychological Science, 28(5), 687–693. doi: 10.1177/0956797616658563&lt;a href=&#34;#fnref14&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn15&#34;&gt;&lt;p&gt;Benjamin, D. J., Berger, J. O., Johannesson, M., Nosek, B. A., Wagenmakers, E.-J., Berk, R., … Johnson, V. E. (2017). Redefine statistical significance. Nature Human Behaviour, 1. doi: 10.1038/s41562-017-0189-z&lt;a href=&#34;#fnref15&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn16&#34;&gt;&lt;p&gt;「可容性區間」的中文翻譯，感謝國立中正大學哲學系陳瑞麟教授建議。&lt;a href=&#34;#fnref16&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn17&#34;&gt;&lt;p&gt;Calin-Jageman, R. J., &amp;amp; Cumming, G. (2019). The New Statistics for Better Science: Ask How Much, How Uncertain, and What Else Is Known. The American Statistician, 73(sup1), 271–280. &lt;a href=&#34;https://doi.org/10.1080/00031305.2018.1518266&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1080/00031305.2018.1518266&lt;/a&gt;&lt;a href=&#34;#fnref17&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn18&#34;&gt;&lt;p&gt;&lt;a href=&#34;http://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf&#34; class=&#34;uri&#34;&gt;http://www.mjskay.com/presentations/openvisconf2018-bayes-uncertainty-2.pdf&lt;/a&gt;&lt;a href=&#34;#fnref18&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn19&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://scchen.shinyapps.io/shiny-bayes-chi/&#34; class=&#34;uri&#34;&gt;https://scchen.shinyapps.io/shiny-bayes-chi/&lt;/a&gt;&lt;a href=&#34;#fnref19&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn20&#34;&gt;&lt;p&gt;Lakens, D., Adolfi, F. G., Albers, C. J., Anvari, F., Apps, M. A. J., Argamon, S. E., … Zwaan, R. A. (2018). Justify your alpha. Nature Human Behaviour, 2(3), 168–171. &lt;a href=&#34;https://doi.org/10.1038/s41562-018-0311-x&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1038/s41562-018-0311-x&lt;/a&gt;&lt;a href=&#34;#fnref20&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn21&#34;&gt;&lt;p&gt;Benning, S. D. (2018, March 1). How to justify your alpha: step by step – Stephen D. Benning. Retrieved March 1, 2018, from &lt;a href=&#34;https://sbenning.faculty.unlv.edu/2018/03/01/how-to-justify-your-alpha-step-by-step/&#34; class=&#34;uri&#34;&gt;https://sbenning.faculty.unlv.edu/2018/03/01/how-to-justify-your-alpha-step-by-step/&lt;/a&gt;&lt;a href=&#34;#fnref21&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn22&#34;&gt;&lt;p&gt;Lakens, D., Scheel, A. M., &amp;amp; Isager, P. M. (2018). Equivalence Testing for Psychological Research: A Tutorial. Advances in Methods and Practices in Psychological Science, 1(2), 259–269. &lt;a href=&#34;https://doi.org/10.1177/2515245918770963&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1177/2515245918770963&lt;/a&gt;&lt;a href=&#34;#fnref22&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn23&#34;&gt;&lt;p&gt;Anvari, F., &amp;amp; Lakens, D. (n.d.). Using Anchor-Based Methods to Determine the Smallest Effect Size of Interest. &lt;a href=&#34;https://doi.org/10.31234/osf.io/syp5a&#34; class=&#34;uri&#34;&gt;https://doi.org/10.31234/osf.io/syp5a&lt;/a&gt;&lt;a href=&#34;#fnref23&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn24&#34;&gt;&lt;p&gt;Lakens, D. (2019). The practical alternative to the p-value is the correctly used p-value [Preprint]. doi: 10.31234/osf.io/shm8v&lt;a href=&#34;#fnref24&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn25&#34;&gt;&lt;p&gt;Mayo, D. G. (2018). Statistical inference as severe testing: how to get beyond the statistics wars. Retrieved from &lt;a href=&#34;https://doi.org/10.1017/9781107286184&#34; class=&#34;uri&#34;&gt;https://doi.org/10.1017/9781107286184&lt;/a&gt;&lt;a href=&#34;#fnref25&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>運用jamovi認識與運用機率分配</title>
+      <link>/zh-hant/post/probability-distributions-jamovi-zh/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/probability-distributions-jamovi-zh/</guid>
+      <description>
+
+
+&lt;p&gt;機率是學習統計觀念與方法必學的一章。在我使用過或參考過的中文統計書籍，發現機率因為牽涉數學公式的推導，作者不是只有說明計算推導，就是省略不提。說明計算推導的書藉都會附上各種機率分佈的表格，雖然在各種要運用該機率分佈的統計方法，都有解釋如何使用這些表格，但是學習統計軟體分析資料之後，這些表格幾乎無用武之地。&lt;/p&gt;
+&lt;p&gt;我很早就放棄教學生學習使用這些表格，有幾個主要理由。首先這些表格是電子計算機的計算資源不夠，以及軟體使用介面不夠友善的時代產物。其次是所有表格都是列出各種機率分佈的累積機率函數(Cumulative Distribution Function)，或者是其反函數的輸出值。只要理解累積機率函數的觀念，這些表格在實用場合幾乎沒有運用價值。最後，因為有的表格是以位數(quantile)查詢累積機率(如二項分佈、常態分佈)，有的是以累積機率查詢位數(如t分佈、F分佈、卡方分佈)，學習新的分析方法就要學習不同的查表模式，反而不利養成正確的分析觀念。&lt;/p&gt;
+&lt;p&gt;個人研究使用R之後，我一直尋找與嘗試在教學裡運用R的方法。直到最近幾年&lt;a href=&#34;https://jasp-stats.org/&#34;&gt;JASP&lt;/a&gt;與&lt;a href=&#34;https://www.jamovi.org/&#34;&gt;jamovi&lt;/a&gt;的出現，終於看到運用的機會。特別是jamovi提供使用者開發套件，其中&lt;code&gt;Rj&lt;/code&gt;套件讓使用者能在報表中自行撰寫R程式碼，以及檢視輸出結果。R的基本套件本來就有一系列指令，用於計算常用機率分佈的累積機率函數與機率密度函數(Probability Density Function)。使用jamovi的話，能與各種分析方法模組結合運用，達到解釋報表中機率資訊的作用。&lt;/p&gt;
+&lt;p&gt;為了明年的教學需要，我編寫五個機率分佈的jamovi檔案，並開放有興趣的網友下載使用。要完整使用這些檔案之前，使用者除了要安裝最新較的jamovi，也要安裝或更新&lt;code&gt;Rj&lt;/code&gt;套件。使用者可以從jamovi的模組介面或&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;官方資源網頁&lt;/a&gt;下載安裝，開啟jamovi檔案之後，就能改寫其中的R程式碼，以及觀看執行成果。&lt;/p&gt;
+&lt;p&gt;除了公開jamovi檔案，每個機率分佈都錄一段簡短影片，示範如何使用檔案中的程式碼，以及觀看更新結果。其下每個影片上方的標題，都是該檔案的下載連結。歡迎網友下載使用，並給予批評指教。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/t5rs3/&#34;&gt;二項分佈&lt;/a&gt;(Binomial Distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/mipvvoudP7M&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/jzpmy/&#34;&gt;常態分佈&lt;/a&gt;(Normal Distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ZIxsYWOJTjg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/d9zg8/&#34;&gt;t分佈&lt;/a&gt;(t distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zGiKGsjdIwk&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/68usk/&#34;&gt;卡方分佈&lt;/a&gt;(chi square distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/YHG9DuRYeNg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/5mt8c/&#34;&gt;F分佈&lt;/a&gt;(F distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/2DVkpuCeccI&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學研究必用神器3 ~ 開源統計軟體</title>
+      <link>/zh-hant/post/jasp-jamovi/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/jasp-jamovi/</guid>
+      <description>
+
+
+&lt;p&gt;兩年前開始使用&lt;a href=&#34;https://jasp-stats.org/&#34;&gt;JASP&lt;/a&gt;分析研究資料時，我曾經寫過一篇&lt;a href=&#34;http://scchen.com/zh/post/text_2016007/&#34;&gt;網誌&lt;/a&gt;介紹這套開源軟體。之後更認識設計理念相同，功能擴充性更自由的&lt;a href=&#34;https://www.jamovi.org/&#34;&gt;jamovi&lt;/a&gt;。今年初我自已寫的&lt;a href=&#34;https://scgeeker.github.io/BasicStatistics/&#34;&gt;統計電子書&lt;/a&gt;整合兩套軟體，讓學生學習如何運用兩套軟體於實務。到了今年五月至八月期間，這兩套軟體版本都更新到0.9以上，功能與資源有大幅度更新，兩套軟體的操作雖然大同小異，使用者用過一段時間會發覺兩者更擅勝場。&lt;/p&gt;
+&lt;p&gt;這篇網誌介紹兩套軟體的介面、一般設定與特別的功能。做為之後開發教材與寫作網誌的補充資料。&lt;/p&gt;
+&lt;div id=&#34;介面特色&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;介面特色&lt;/h2&gt;
+&lt;p&gt;JASP 0.9.0.1與jamovi 0.9.2.3的啟動畫面如以下快照，畫面中JASP的&lt;code&gt;Common&lt;/code&gt;與jamovi的&lt;code&gt;Analyses&lt;/code&gt;都是操作功能模組與檢視分析報表的區域。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Initials.JPG&#34; title=&#34;Open&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP開啟資料檔案是在&lt;code&gt;File&lt;/code&gt;區域操作，下圖是JASP範例檔案庫的啟始畫面。操作方式類似Mac OS的Finder，JASP除了開啟本機檔案之外，也能直接連線使用者的OSF帳戶，下載與同步OSF專案裡的資料與JASP存檔(.jasp)。JASP存檔(.jasp)包括原始資料檔案與分析報表。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jasp-File.JPG&#34; title=&#34;JASP File&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;jamovi開啟與儲存資料檔案的選單，是按下&lt;code&gt;Data&lt;/code&gt;標籤左邊的三條橫線，就會出現如下圖的畫面。最新版的jamovi只能存取本機檔案，包括資料檔與jamovi存檔(.omv)。jamovi存檔(.omv)包括原始資料檔案與分析報表。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jamovi-Open.JPG&#34; title=&#34;jamovi Open&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;jamovi的&lt;code&gt;Data&lt;/code&gt;可以直接編輯與使用函式處理一到數個欄位資料，這個區域有些類似試算表軟體，只是要先確定每個欄位的&lt;strong&gt;資料型態&lt;/strong&gt;，才能正確使用jamovi提供的函式。這部分是jamovi與JASP的最大不同，JASP不可直接編輯資料，必須呼叫外部資料編輯器或試算表軟體。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/jamovi-Data.JPG&#34; title=&#34;jamovi Data&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;一般設定&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;一般設定&lt;/h2&gt;
+&lt;p&gt;JASP與jamovi的一般設定選單開啟按鈕都在主要介面右上角，如下圖的紅色圓圈標示。兩者共同設定有二：報表數值的小數點位數；資料檔案裡遺漏值(missing value)標記。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Options.JPG&#34; title=&#34;Options&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP與jamovi可設定小數點格式的數值只有兩類：一般的統計數值與p值，如以下畫面截圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/number-format.JPG&#34; title=&#34;Format&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP和jamovi都是輸入資料檔內的遺漏值字符，匯入資料後會自動辨識資料中的遺漏值，設定畫面如下圖。差異在於jamovi只能辨識一種字符，JASP可辨識多種，使用者還可根據實際情況自行增加。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/missing-Format.JPG&#34; title=&#34;Missing&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;JASP有需要編輯資料數值時，可以設定使用系統預設的試算表軟體，例如Excel。要使用此功能，就做如以下畫面的設定。若要外部編輯器存檔，並同步更新JASP資料，只要勾選以下畫面的第一個功能即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/JASP-editing.JPG&#34; title=&#34;JASP data editing&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;功能與資源比較&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;功能與資源比較&lt;/h2&gt;
+&lt;p&gt;以下整理本人認為值得學習的JASP與jamovi的重要功能與資源，提供讀者可依個人需要取用。&lt;/p&gt;
+&lt;div id=&#34;可匯入資料格式&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;可匯入資料格式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：CSV, SPSS, Libre試算表&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;: CSV, SPSS, SAS, Stata&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;擴充功能&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;擴充功能&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：非當用模組讓使用者自行開啟，目前有&lt;code&gt;Meta Analysis&lt;/code&gt;、&lt;code&gt;Network&lt;/code&gt;、&lt;code&gt;SEM&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;: 官方提供模組開發工具，以及&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;自訂模組庫&lt;/a&gt;。使用者可由jamovi程式裡安裝與更新，或由&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;自訂模組庫&lt;/a&gt;下載安裝。特別建議統計初學者，使用&lt;code&gt;Statkat&lt;/code&gt;協助學習。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;學習資源&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;學習資源&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;JASP&lt;/strong&gt;：官網不定期更新&lt;a href=&#34;https://jasp-stats.org/jasp-materials/&#34;&gt;推薦教材&lt;/a&gt;，2018年有&lt;a href=&#34;https://www.amazon.com/Research-your-Therapy-Examples-friendly-ebook/dp/B071LFPP47?_encoding=UTF8&amp;amp;psc=1&#34;&gt;研究方法與統計教科書&lt;/a&gt;出版。0.9版有豐富的Data Library，讓使用者依需要找示範檔案學習。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;jamovi&lt;/strong&gt;:&lt;a href=&#34;https://datalab.cc/tools/jamovi&#34;&gt;Datalab的CC授權課程&lt;/a&gt;提供&lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34;&gt;youtube教學單元&lt;/a&gt;，各單元教材公開於&lt;a href=&#34;https://drive.google.com/drive/folders/1gJJ9di69FBZPhAdG9dWqXHZnR_JJry0G?usp=sharing&#34;&gt;google雲端&lt;/a&gt;與&lt;a href=&#34;https://bit.ly/jamovi-osf&#34;&gt;OSF&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>電子書草稿上線：心理科學基礎統計</title>
+      <link>/zh-hant/post/basic-statistics/</link>
+      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/basic-statistics/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;https://scgeeker.github.io/BasicStatistics/&#34;&gt;電子書網址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;開始寫這本書有很多緣由，就從遠中近三個時間點的感想來說吧。遠因從我還是大學生小毛頭時開始，那時真正體悟學習統計的要訣，是去聽了幾位老師的授課，自行整理筆記得到收穫。當時讀過的幾本中英文教科書，最後成為案頭書的只有Roger Kirk的&lt;a href=&#34;https://us.sagepub.com/en-us/nam/experimental-design/book233742&#34;&gt;Experimental Design&lt;/a&gt;。到今天要我推薦初學者值得參考的中文書，我完全無法舉出理想的教材，除非學生有興趣透過學習資料科學入門，才有值得推薦的中文線上教材。&lt;/p&gt;
+&lt;p&gt;中程因素是2016年翻譯了Daniel Lakens的線上課程&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences&#34;&gt;提昇你的統計推論功力(Improving your statistical inferences)&lt;/a&gt;，我體會可以從培養學習者的思考實際問題能力，激發學習統計方法的動機，並且掌握正確的資訊。Daniel 使用的教材是近幾年引發心理學再現危機的指標研究，都有公開資料讓人取用。曉得這些研究背後故事，有助如何正確使用統計方法。&lt;/p&gt;
+&lt;p&gt;但是對於統計的初學者，甚至是心理學的初學者，這些故事還無法引起這些學習者的共鳴。如何激起初級學習者的學習興趣，並指引他們走上正確的學習道路，就是寫這本書的近因。這個任務有幾個要挑戰的目標：首先是使用能引發初學者興趣的案例，每一個世代的入門學習者特有特殊的共同記憶，形成不同的大眾興趣。這也帶來第二個挑戰，如何保持編寫教材的中心思想，又能時俱進引用有吸引力的案例？引導初學者認識開放科學理念與操作方法，是累積高品質研究的基礎。所以我編輯這套入門統計教材，希望協助初學者找到適合自已的學習門徑，能在幾個月之後有能力學習&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences&#34;&gt;提昇你的統計推論功力&lt;/a&gt;等進階課程。&lt;/p&gt;
+&lt;p&gt;所幸已經出現許多公開資源，讓我有面對這些挑戰的機會。編輯這本電子書R套件的&lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;bookdwon&lt;/a&gt;，能整合各種有助學習的互動式材料於多種平台。新世代資料科學家提供的自由整合資源，降低學習者掌握統計觀念的門檻。特別感激年輕的史丹福大學研究生&lt;a href=&#34;http://daniel-kunin.com/&#34;&gt;Daniel Kunin&lt;/a&gt;，與朋友一起花時間開發，又無私分享的&lt;a href=&#34;https://students.brown.edu/seeing-theory/index.html&#34;&gt;seeing theory&lt;/a&gt;，讓這本書能嘗試傳統教科書做不到的互動學習。開源又潛力無窮的統計軟體&lt;a href=&#34;https://jasp-stats.org/&#34;&gt;JASP&lt;/a&gt;與&lt;a href=&#34;https://www.jamovi.org/&#34;&gt;jamovi&lt;/a&gt;，學習者容易上手，又是資料分析工作的實用工具。兩套開源軟體與科學研究開放平台&lt;a href=&#34;https://osf.io/&#34;&gt;Open Science Framework&lt;/a&gt;密切整合，能彈性管理延伸學習材料。這本書的示範檔案，以及各單元習題，都發佈於&lt;a href=&#34;https://osf.io/kdtjq/&#34;&gt;心理科學基礎統計OSF專案&lt;/a&gt;，任何人有需要，不必註冊，可直接取用專案中的學習材料。&lt;/p&gt;
+&lt;p&gt;本書取用的示範與習題案例，都是可檢索論文全文與原始資料的研究，初始版本的案例主要來自Carlson與Winquist合著的教科書“An Introduction to Statistics: an Active Learning Approach”&lt;span class=&#34;citation&#34;&gt;(Carlson and Winquist 2018)&lt;/span&gt;，以及收集推特與臉書社團&lt;a href=&#34;https://www.facebook.com/groups/853552931365745/&#34;&gt;Psychological Methods Discussion Group&lt;/a&gt;，可以啟發初學者的案例。習題也是使用有公開資料的研究。編寫這本書時候，我正在研發一套習題模板，方便管理與擴充各單元的資源。我更希望有意充實這套教材的朋友與同學們，可以提供您認為值得學習的材料。&lt;/p&gt;
+&lt;p&gt;所有材料都不斷持續更新中，希望體現我想傳達給統計學習者與使用者我的學習觀：你今天學到的方法，是為了解決明天出現的新問題，而且會用另一種不同的面貌出現。&lt;/p&gt;
+&lt;p&gt;這本書預計完成九個單元，內容涵蓋大學行為科學科系的初等統計。歡迎各大學有教學需要的老師與同學取用，並給予批評指教。未來正式推出習題模板，更歡迎有志提昇學習教材的朋友提供材料。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;有關本書的任何意見，歡迎在下方留言區留言。&lt;/strong&gt;&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Carlsonintroductionstatisticsactive2018&#34;&gt;
+&lt;p&gt;Carlson, Kieth A., and Jennifer R. Winquist. 2018. &lt;em&gt;An Introduction to Statistics: An Active Learning Approach&lt;/em&gt;. Second edition. Los Angeles: SAGE.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>學術消息 | 陳紹慶的個人網站</title>
+    <link>/zh-hant/categories/%E5%AD%B8%E8%A1%93%E6%B6%88%E6%81%AF/</link>
+      <atom:link href="/zh-hant/categories/%E5%AD%B8%E8%A1%93%E6%B6%88%E6%81%AF/index.xml" rel="self" type="application/rss+xml" />
+    <description>學術消息</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>學術消息</title>
+      <link>/zh-hant/categories/%E5%AD%B8%E8%A1%93%E6%B6%88%E6%81%AF/</link>
+    </image>
+    
+    <item>
+      <title>2019年第一次線上預先註冊工作坊感想</title>
+      <link>/zh-hant/post/first-preregistration-workshop/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/first-preregistration-workshop/</guid>
+      <description>
+
+
+&lt;p&gt;兩年多前我寫下第一篇討論&lt;strong&gt;預先註冊&lt;/strong&gt;及&lt;strong&gt;註冊報告&lt;/strong&gt;的&lt;a href=&#34;https://scchen.com/zh/post/text_2017002/&#34;&gt;網誌&lt;/a&gt;，當時才剛開始準備第一項註冊報告。今年7/28與&lt;a href=&#34;https://osf.io/9d7y4/&#34;&gt;Chinese Open Science Network&lt;/a&gt;合作，舉辦第一次線上工作坊。透過帶領三位研究者規劃研究計畫的預先註冊，幫助有意願嘗試的研究者開啓第一次經驗，並向旁觀朋友推廣開放研究操作。三位研究者的專案來自發展心理學、社會心理學與認知心理學，計畫目標與規模也互有差異。與三位參與者還有熱心朋友的線上互動經驗，讓我更確信在開場建議的&lt;a href=&#34;https://scgeeker.github.io/Prereg_workshop/#/recommended-steps-&#34;&gt;準備三步驟&lt;/a&gt;，確實能形成值得信賴的預先註冊計畫：首先先確定最關鍵的研究問題，了解想採取的分析模式，最後盡可能列出有可能導致偽陽性結果的彈性研究操作，才能充分評估研究計畫是適合節制彈性操作的驗證性研究，還是最大化研究內容透明度的探索性研究。我就本次工作坊尚待改進的一些措施，做些檢討與建議。&lt;/p&gt;
+&lt;div id=&#34;值得改進的地方&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;值得改進的地方&lt;/h3&gt;
+&lt;p&gt;這次開始前除了要求有意願完成預先註冊的參與者繳交報名費，也要求以AsPredicted的格式提出初步計畫書。這些措施確實提高參與者動機，不過因為AsPredicted能說明的篇幅有限，加上我不是完全熟悉所有參與者的研究，作業開始後需要參與者花一些時間說明自已的研究問題與規劃。加上第一次使用分組線上會議功能，我與所有參與人員午休之前幾乎都在習慣這種線上互動模式，一直到中午之後才了解每位參與者的研究問題與想採用的分析策略是什麼。&lt;/p&gt;
+&lt;p&gt;從三參與者的&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzUxMTA0ODQ0OA==&amp;amp;tempkey=MTAyMF9SM09RT3VrTFB5M1lYd2o1cGUzQ3hFRVVuYzVFTHJyUmdHUThEaUZtQ0VWUTFMajA0a1htY1Foa2dKckxoTUlKdHh1MFFTZWktb09LYTRjVFlkT1puLXRyWTBUVjhrYU9Vb3NST0g1OWZ0Y0pnMmVwZGdJdGgydk1hSTFfNGZKRmlnZUg3eWVoWkJNdU5kTFNJb29Ic1BoanZRVG9GOS01ZmRmYzd3fn4%3D&amp;amp;chksm=7978eabf4e0f63a9b4def1f37cf8d7cf5b3eda94a01994eb8bd2530d374d91acca81f3374a3f&amp;amp;mpshare=1&amp;amp;scene=1&amp;amp;srcid=0804paJ1uabZ9LaiLl20WsG6&amp;amp;sharer_sharetime=1564901084274&amp;amp;sharer_shareid=aa12208c22b6dc4687f11b5dd4841c59&amp;amp;key=106d5d75642f6a67b2fbf45309ea9bb9f75bfd3ae8ca2f2c6547580d662fe7ae050587b5122f1c3cba31c2cb577cae593ccfb6f0b93558f20c5ee1acc38480587a7e5fceb1e74b78dff2b192f1deb869&amp;amp;ascene=1&amp;amp;uin=MTk4NjAyMzg0OQ%3D%3D&amp;amp;devicetype=Windows+10&amp;amp;version=62060833&amp;amp;lang=zh_TW&amp;amp;pass_ticket=3ENQk%2Frq8RrUcirmuWIJ4wSqH2eYcutILy3JYJMelpuNmFFgTHP8NjMa6mMUXYck&#34;&gt;回饋&lt;/a&gt;(此連結為暫時網頁，正式發佈後更新)，也證實參與者有接收到我想傳達的理念，但是因為事前準備不足的關係，尚未完全落實在活動成果，是讓我覺得最可惜的地方。在此必須感謝三位參與者，幫肋我與Chinese Open Science Network核心成員獲得寶貴經驗。除了繼續幫助他們完善本身的預先註冊計畫，也希望所有參與人士能更認識開放研究操作。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;改進建議&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;改進建議&lt;/h3&gt;
+&lt;p&gt;對於下一次不論是線上或現場活動，我們這次採用的模式對所有參與者都有正面幫助，不過主辦方應該有一些更積極的作為。首先是對於參與者提出的計畫，主要講者應該花些時間了解，最好能與每位參與者先做即時溝通，清楚每項研究真正的目標及想採取的資料分析策略。參與者可先準備完整的說明文件或影片，讓旁觀朋友在事前或現場隨時了解，有助眾人融入現場，更能提高主動參與的行為。&lt;/p&gt;
+&lt;p&gt;這次限於時間安排，彈性研究操作的樣態我只能用簡報約略帶過，也因為大多數作業時間在了解各項研究專案目標，並未帶領每位參與者完整區辨自己的研究計畫可能遇到的狀況。認識彈性研究操作需要親身體悟，才能明白其不良影響。我建議Chinese Open Science Network可以規劃幾次網路廣播，邀請各領域的朋友彼此分享與討論自己或熟人遇到的狀況，讓有意願嘗試預先註冊的朋友，真正了解關心科學知識品質的人士，推廣開放研究操作的宗旨。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>第一本華文心理學學術期刊開工了</title>
+      <link>/zh-hant/post/first-chinese-rr-journal/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/first-chinese-rr-journal/</guid>
+      <description>
+
+
+&lt;div id=&#34;台灣最老華文第一的心理學學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;台灣最老、華文第一的心理學學術期刊&lt;/h2&gt;
+&lt;p&gt;2018/2/22是台灣春節的開工第二日，回到研究室刷一下臉書看到了這則訊息：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Screenshot-2018-2-22_CJP_submission.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;去年我只有在自己服務的學校與中正大學舉辦兩場&lt;a href=&#34;https://osf.io/e69mb/&#34;&gt;小型註冊研究工作坊&lt;/a&gt;，就向中華心理學刊現任主編&lt;a href=&#34;http://www.psy.ccu.edu.tw/members/bio.php?PID=21&#34;&gt;姜定宇教授&lt;/a&gt;建議：籌備主題式註冊研究特刊，以及允許投稿作者於完成投稿後自行公開手稿。想不到今年開工看到更大的進展：今年起中華心理學刊歡迎作者投稿註冊研究計畫書，並採二階段評審。我想簡介一下這本期刊，還有給一些執行註冊研究徵稿政策的建議。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite&#34;&gt;中華心理學刊&lt;/a&gt;於1958年創刊，是台灣第一本心理學學術期刊，到今年正好一甲子，由&lt;a href=&#34;http://140.112.62.7/cpa/zh/&#34;&gt;台灣心理學會&lt;/a&gt;委派來自各領域的台灣資深心理學者擔任編輯。主要任務是提供各國任何心理學領域專業學者，以學者以中文或英文發表論文。2000年之後台灣出現提供臨床心理學與諮商心理學者發表中文論文的期刊，而這兩個領域是台灣心理學界專業人口最多的領域，加上多數中青代學者以投稿國外英文期刊為目標，刊登的論文數量逐漸下降。近年積極爭取轉型，除了舉辦各種專刊徵稿，也終於願意嘗試增加投稿樣態。過去的中華心理學期刊只接授原創性研究論文(research article)的投稿，今年開始徵求註冊研究(registered report)與檢驗原創性研究的重製研究報告(research report)。&lt;/p&gt;
+&lt;p&gt;雖然我看到消息時官方網站已經有&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite/blank-5&#34;&gt;中文徵稿啟事&lt;/a&gt;，期刊編輯部尚未更新&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite-english/instructions-to-authors&#34;&gt;英文徵稿啟事&lt;/a&gt;，也尚未見到期刊主編發表正式聲明。我推測現任主編群已經了解綜合性學術期刊需要多元投稿模式，才能吸引有品質的稿件，但是要如何吸引願意嘗試不同型態的學者，現任主編群必須拿出明確的策略方案。在主編構思聲明的此時，我用這篇文章回顧四本經營註冊研究已有規模的期刊，並提供我認為第一本華文註冊研究期刊可以著力的方向。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cortex第一本徵求註冊研究的學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cortex：第一本徵求註冊研究的學術期刊&lt;/h2&gt;
+&lt;p&gt;Cordex於2013年邀請英國卡迪夫大學心理學系教授&lt;a href=&#34;http://psych.cf.ac.uk/contactsandpeople/chambersc1.php&#34;&gt;Chris Chambers&lt;/a&gt;擔任註冊研究執行主編，成為全世界第一本提供註冊研究投稿的學術期刊。Chris Chambers發表的聲明&lt;span class=&#34;citation&#34;&gt;(2013)&lt;/span&gt;與設計的&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;投稿指南&lt;/a&gt;，成為其後開辦註冊研究期刊的範本。之後開辦的期刊都根據經營方針，修改這份投稿指南讓投稿者準備投稿資訊與研究材料。以下評審流程圖摘自&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;Cortex投稿指南&lt;/a&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/cortex-RR-workflow.JPG&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Chris Chambers經常受邀擔任工作坊講師，更公開每次的&lt;a href=&#34;https://osf.io/d4fh5/&#34;&gt;講演資料&lt;/a&gt;，是有心學習者可參考的資訊來源。Center for Open Science於2017年1月邀請他舉辦網路工作坊，以下是工作坊錄影。&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube-nocookie.com/embed/7MQ5XB1WUp8?rel=0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;journal-of-european-psychology-students由心理學研究生一手包辦的學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Journal of European Psychology Students：由心理學研究生一手包辦的學術期刊&lt;/h2&gt;
+&lt;p&gt;Journal of European Psychology Students是由正於歐洲各大學攻讀心理學博士的各領域研究生主辦的學術期刊，除了一般的投稿評審模式，2016年起也正式徵求註冊研究&lt;span class=&#34;citation&#34;&gt;(King et al. 2016)&lt;/span&gt;。&lt;a href=&#34;https://osf.io/qewck/&#34;&gt;投稿指南&lt;/a&gt;是Cortex版本的簡化版，並提供&lt;a href=&#34;https://osf.io/h7trs/&#34;&gt;重製型註冊研究範本&lt;/a&gt;以及&lt;a href=&#34;https://osf.io/8qk56/&#34;&gt;原創性註冊研究範本&lt;/a&gt;。儘管這本期刊沒有列入SCI或SSCI資料庫，經營方針是新興與尋求轉型的期刊可學習的對象。下圖是Journal of European Psychology Students的註冊研究評審流程：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/401-2791-1-PB.JPG&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;comprehensive-results-in-social-psychology百分之百的註冊研究學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Comprehensive Results in Social Psychology：百分之百的註冊研究學術期刊&lt;/h2&gt;
+&lt;p&gt;於2016年開始正式發行的Comprehensive Results in Social Psychology是完全以註冊研究模式經營的社會心理學期刊，&lt;a href=&#34;http://www.tandf.co.uk/journals/authors/rrsp-submission-guidelines.pdf&#34;&gt;投稿指南&lt;/a&gt;也是改良Cortex的版本。但是因此經營成本較高，部分稿件需付審查費，所有出版論文，包括主編聲明&lt;span class=&#34;citation&#34;&gt;(Jonas and Cesario 2016)&lt;/span&gt;，都是付費論文。除非作者自付費用，讀者只能下載公開於預印本平台的手稿。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;collabra-psychology-更嚴謹的註冊研究評審程序&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Collabra: Psychology 更嚴謹的註冊研究評審程序&lt;/h2&gt;
+&lt;p&gt;Collabra: Psychology是創刊剛滿五年的新興綜合型心理學學術期刊，到了2017年下半年才開始正式宣佈&lt;a href=&#34;https://medium.com/@CollabraOA/registered-reports-at-collabra-psychology-6938b2059fc7&#34;&gt;徵求註冊研究的啟事&lt;/a&gt;。執行主編正是Chris Chambers，所以推出&lt;a href=&#34;https://docs.google.com/document/d/1eeXPEC_oc4OYlywC9pRt6seL2xazlT58jAtRsCuEdCI/edit#&#34;&gt;進階的投稿指南&lt;/a&gt;。增加的要求是作者必須在計畫中提出研究紀錄登錄方式，並且確實執行。詳情可參考期刊的&lt;a href=&#34;https://osf.io/my3wa/&#34;&gt;投稿範本&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Collabra: Psychology的方針與&lt;a href=&#34;http://improvingpsych.org/&#34;&gt;Society for the Improvement of Psychological Science(SIPS)&lt;/a&gt;密切合作有關。從2016年起SIPS舉辦年度研討會，但是不同於一般學術研討會，SIPS以黑客松、工作坊與閃電演講為內容，創造與會者合作構思並規劃提昇心理科學品質方案的場域。未來兩方的合作可望推出讓註冊研究更普及的方案。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;中華心理學刊可採取的經營模式&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;中華心理學刊可採取的經營模式&lt;/h2&gt;
+&lt;p&gt;除了以上四本期刊，Center for Open Science的&lt;a href=&#34;https://cos.io/rr/&#34;&gt;註冊研究網頁&lt;/a&gt;不定期更新開辦註冊研究的期刊清單與投稿資訊，值得學刊編輯群與讀者留意。考量期刊的經營狀況，還有台灣以及華文學術環境，我認為Journal of European Psychology Students的經營模式比較適合現在的中華心理學刊。個人的理由來自幾點觀察：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;多數華人學者還不大了解註冊研究的流程，像是有位語言認知域的老師與我私下交談後，才知道註冊研究只在第一階段評審理論與分析方法的邏輯關聯。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;已經習慣傳統研究啟動及發表模式的研究者與團隊，覺得註冊研究模式會增加工作負荷與寫作時間。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;華文心理學圈缺乏有影響力的&lt;strong&gt;奠基研究(Capstone Research)&lt;/strong&gt;，使得這個社群的心理學者缺乏知識危機的意識，難以形成需要新型態發表模式的學術氛圍。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;基礎養成教育削弱研究者對&lt;strong&gt;待澄清的研究操作(Questionable Research Practices)&lt;/strong&gt;的認識，外在的績效制度與獎補助政策，也有可能助長研究者們採取只求有成果發表的動機。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由投稿須知的註冊研究說明「資料尚未收集的原創性實徵研究論文。」，我認為現在的方針是鼓勵研究者投稿的計畫書偏向&lt;strong&gt;探索性研究(Exploratory Research)&lt;/strong&gt;，重製已出版研究的&lt;strong&gt;確證性研究(Confirmatory Rsearch)&lt;/strong&gt;則歸為研究報告，而且該段投稿須知中沒有鼓勵研究者採&lt;strong&gt;預先註冊(pre-registreation)&lt;/strong&gt;執行計畫。對照第一本徵求註冊期刊Cortex在&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;投稿指南&lt;/a&gt;中，有說明Cortex平等對待原創性研究與高價值重製研究的文字(“High-value replication studies are welcome and will be treated with equal priority to novel studies.”)。以目前已公開的投稿須知，中華心理學刊將無法照搬Cortex的投稿指南。相對來說，Journal of European Psychology Students區分原創性與再現研究的投稿及評審模式，是比較可能採行的策略。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;促進註冊研究的策略&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;促進註冊研究的策略&lt;/h2&gt;
+&lt;p&gt;不論中華心理學刊會採取什麼樣的執行模式，讓更多研究者願意採用註冊研究模式經營研究計畫與發表成果，需要製造搭配條件，啟發內在動機。最後我提供一些可行措施：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;改善研究生畢業論文產製流程
+台灣各大學的心理學研究所畢業論文或報告要求，都是要學生先提出計畫書，再執行研究完成論文，各校的主要差別是計畫書的審查方式。如果採用註冊研究模式，學生提出的計畫書只要說明關鍵研究的理論基礎與執行方法，最後的口試以檢視有無按照計畫書執行為重點。中華心理學刊可做為計畫書評審平台，讓師生能明確掌握執行進度，也能確保畢業論文有正式發表的管道。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;輔助註冊研究的研究經費補助政策
+近幾年歐美各國已有&lt;a href=&#34;http://scchen.com/zh/post/text_2016003/&#34;&gt;提昇研究品質的經費補助政策&lt;/a&gt;，目前台灣的整體環境受制於預算總量管制，加上主政者的想法，未來幾年各機構研究者必然還是採現在的競爭模式爭取經費。但是我認為可以先從心理學門試行最低度補助計畫，也就是主持人提的研究計畫全部或部分內容已經通過期刊的第一階段評審，經費補助者可根據可執行的部分(參與者費、倫理審查費、設備租用費等)，核給最低限度的研究經費，接著再根據評分及意見決定其他項目經費。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;向各研究倫理中心介紹註冊研究與開放科學
+我舉辦兩次工作坊都遇到研究倫理審查的實務問題，去年底也遇到台灣大學研究倫理中心人員親自訪視。交流中發現如台大的倫理中心，負責人員完全不了解註冊研究。國外有實際操作經驗的研究者都肯定比起傳統研究流程，註冊研究的參與者隱私資料保護，比起倫理中心的建議更為嚴格。如果能讓各倫理中心負責人員了解註冊研究模式，有利增進申請與執行研究倫理保障程序的效率。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-ChambersRegisteredReportsnew2013&#34;&gt;
+&lt;p&gt;Chambers, Christopher D. 2013. “Registered Reports: A New Publishing Initiative at Cortex.” &lt;em&gt;Cortex&lt;/em&gt; 49 (3): 609–10. &lt;a href=&#34;https://doi.org/10.1016/j.cortex.2012.12.016&#34;&gt;https://doi.org/10.1016/j.cortex.2012.12.016&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-JonasHowcanpreregistration2016&#34;&gt;
+&lt;p&gt;Jonas, Kai J., and Joseph Cesario. 2016. “How Can Preregistration Contribute to Research in Our Field?” &lt;em&gt;Comprehensive Results in Social Psychology&lt;/em&gt; 1 (1-3): 1–7. &lt;a href=&#34;https://doi.org/10.1080/23743603.2015.1070611&#34;&gt;https://doi.org/10.1080/23743603.2015.1070611&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-KingRegisteredReportsStudent2016&#34;&gt;
+&lt;p&gt;King, Maedbh, Fabian Dablander, Lea Jakob, Maria Agan, Felicitas Huber, Jonas Haslbeck, and Katharina Brecht. 2016. “Registered Reports for Student Research.” &lt;em&gt;Journal of European Psychology Students&lt;/em&gt; 7 (1). &lt;a href=&#34;https://doi.org/10.5334/jeps.401&#34;&gt;https://doi.org/10.5334/jeps.401&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

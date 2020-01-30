@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="陳紹慶">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="使用動態文件寫作，寫文章就像寫程式一樣。">
+
+  
+  <link rel="alternate" hreflang="zh-Hant" href="/zh-hant/post/dynamic-writing/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#4caf50">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/zh-hant/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/zh-hant/post/dynamic-writing/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="陳紹慶的個人網站">
+  <meta property="og:url" content="/zh-hant/post/dynamic-writing/">
+  <meta property="og:title" content="心理科學研究必用神器4 ~ 動態文件寫作入門 | 陳紹慶的個人網站">
+  <meta property="og:description" content="使用動態文件寫作，寫文章就像寫程式一樣。"><meta property="og:image" content="/img/RMD.png">
+  <meta property="twitter:image" content="/img/RMD.png"><meta property="og:locale" content="zh-Hant">
+  
+    
+      <meta property="article:published_time" content="2018-10-16T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2018-10-16T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/zh-hant/post/dynamic-writing/"
+  },
+  "headline": "心理科學研究必用神器4 ~ 動態文件寫作入門",
+  
+  "datePublished": "2018-10-16T00:00:00Z",
+  "dateModified": "2018-10-16T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "陳紹慶"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "陳紹慶的個人網站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img//"
+    }
+  },
+  "description": "使用動態文件寫作，寫文章就像寫程式一樣。"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>心理科學研究必用神器4 ~ 動態文件寫作入門 | 陳紹慶的個人網站</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜尋</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜尋..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/zh-hant">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切換導航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/zh-hant">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#about"><span>關於我</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#posts"><span>網誌</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#projects"><span>專案</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#featured"><span>著作</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#contact"><span>聯絡方式</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+<div class="article-header">
+  
+  
+  <img src="/img/RMD.png" class="article-banner" alt="">
+  
+
+  <span class="article-header-caption">images</span>
+</div>
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>心理科學研究必用神器4 ~ 動態文件寫作入門</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 16, 2018
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 閱讀時間（分鐘）
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/zh-hant/post/dynamic-writing/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/zh-hant/categories/academic/">academic</a>, <a href="/zh-hant/categories/reproduce-practice/">Reproduce Practice</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p>這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。</p>
+<p>多數人習慣使用的文書處理軟體，像是WORD與google doc，集合文字編輯與排版。寫作正式文件時，需要同時顧慮編輯與排版的契合，雖然之前介紹的<a href="http://scchen.com/zh/post/zotero/">zotero</a>已經減輕編輯文內引用與排版參考文獻的工作，一份文件內要安置圖表，乃至數學符號與統計數據的整理，還是需要花時間在不同軟體之間剪貼。</p>
+<p>這篇網誌說明如何編輯一篇有列舉參考文獻，無任何圖表及數學符號的中文文件。讓讀者了解動態文件的文字編輯與排版是兩件分開的工作，並提出支援中文寫作的動態文件套件，還需要改進的地方。</p>
+<div id="基礎知識" class="section level2">
+<h2>基礎知識</h2>
+<p>與建置這套個人網站一樣，一切準備從安裝<a href="https://www.rstudio.com/">Rstudo</a>與<a href="https://www.r-project.org/">R</a>開始。Rstudio開發的套件<code>knitr</code>可由使用者自行安裝，或者是第一次使用Rstudio編輯動態文件時，會自動下載安裝。<code>knitr</code>的功能是將有指定語法標籤的純文字文件，例如<code>markdown</code>與<code>R</code>，轉換為其他排版軟體能辨識的內容。Rstudio已經整合一套開源排版軟體<a href="https://pandoc.org/">pandoc</a>，可將轉換後的純文字文件，按排版設定渲染(render)輸出word或pdf檔案。</p>
+<p><img src="/images/Rstudio-newfile.PNG" /></p>
+<p>上圖是Rstudio開啟新文件的選單，除了R script與Text File，其他檔案格式都是可用其他軟體渲染輸出各種排版或編譯產物。這也是為何管理動態文件，應區分文字編輯與排版兩種工作。以一份R Markdown文件為例，有開頭的<code>yaml</code>與內文兩部分，<code>yaml</code>是列舉排版這份文件的所需資訊，以符號 --- 標記資訊開始及結尾。以本文的<a href="https://osf.io/rze47">示範文件</a>為例，這份文件要輸出為WORD檔案，<code>yaml</code>包含的資訊如下：</p>
+<pre><code>output: 
+  word_document:
+    reference_docx: word_style_reference.docx
+bibliography: Turri.bib
+csl: apa-old-doi-prefix.csl</code></pre>
+<p>與這份示範文件放在一起的三個外部檔案：<strong><a href="https://osf.io/5x8h6">word_style_reference.docx</a></strong>、<strong><a href="https://osf.io/fw359">Turri.bib</a></strong>、<strong><a href="https://osf.io/z59hs">apa-old-doi-prefix.csl</a></strong>，分別提供渲染這份文件需要的<strong>排版樣式</strong>、<strong>書目資訊</strong>、以及<strong>引用格式</strong>。<a href="http://scchen.com/zh/post/zotero/">zotero</a>網誌曾介紹如何管理書目資訊與引用格式的檔案，docx檔是提供一份有所需樣式與版面設定範例的word檔，也就是一個排版範本，有關WORD的排版可參考<a href="https://support.office.com/zh-tw/article/%E8%87%AA%E8%A8%82%E6%88%96%E5%9C%A8-word-%E4%B8%AD%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%9A%84%E6%A8%A3%E5%BC%8F-d38d6e47-f6fc-48eb-a607-1eb120dec563">官方說明網站</a>。</p>
+</div>
+<div id="寫作示範" class="section level2">
+<h2>寫作示範</h2>
+<p>建議讀者先下載前述連結的檔案，嘗試重現示範文件的<a href="https://osf.io/j94pn">輸出成果</a>，會更理理以下示範說明。</p>
+<p>R markdown內文與一般markdown文件一樣，未在置入任何標籤的任何文字等於一般WORD文件的內文，<code>pandoc</code>會根據排版範本的<strong>內文</strong>樣式渲染。標記標題的#或##等，會根據排版範本的<strong>標題一</strong>、<strong>標題二</strong>等樣式渲染。如果使用者需要呈現頁碼，只要在排版範本預做安排。</p>
+<p>文內引用的書目是將存在於書目資訊檔案的<strong>bibtex key</strong>，置入在內文要呈現的地方，例如以下節錄的示範文字。詳細的置入語法與調整設定，可參考<a href="https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html">Rstudio的介紹</a>。</p>
+<pre><code>美國哲學家Gettier[-@gettierJustifiedTrueBelief1963]發表一篇短論文，提出兩個即使符合JTB三種條件，依然無法確定某人有沒有正確知識的反例。</code></pre>
+<p>只要有引用的書目資訊，<code>pandoc</code>會根據引用格式檔案內的資訊，與文末排列參考文獻。示範文件中使用的格式是APA 6並呈現doi的一般格式。因此一份文件由兩位以上共同編輯，只要共享需要的書目資訊，也不必依賴付費軟體編輯與管理引用文獻。有關格式檔案的設定方法，可參考<a href="http://blog.pulipuli.info/2014/08/zoteroapa-zotero-citation-style-apa.html">pulipuli的網誌</a>。</p>
+</div>
+<div id="進階套件" class="section level2">
+<h2>進階套件</h2>
+<p>未來我還會撰寫在動態文件編輯圖表與統計數據的網誌，待讀者熟練本篇介紹的操作，推薦安裝以下套件，增益編輯動態文件的效率：</p>
+<p><a href="https://github.com/crsh/citr"><code>citr</code></a>:這套Rstudio的外掛可幫助使用者在編輯過程中，有插入引用文獻的bibtext key的需要，以視窗介面搜尋並編輯。我的使用建議是先準備好書目資訊檔案，編輯過程中不必開啟zotero。如果有需要更新書目資訊檔案，最好先暫停文件編輯工作，更新完成後再繼續編輯。</p>
+<p><a href="https://github.com/crsh/papaja"><code>papaja</code></a>: <code>citr</code>作者的代表作，可創建符合APA格式的手稿檔案，並支援圖表與數據的排版功能。初版<a href="https://crsh.github.io/papaja_man/index.html">使用手冊</a>今年已正式上線。</p>
+</div>
+<div id="期待的改進" class="section level2">
+<h2>期待的改進</h2>
+<p>這篇介紹的動態文件套件在支援中文寫作有兩個值得改進之處。首先是生成pdf檔的問題，目前簡體中文有R牛人<a href="https://yihui.name/en/">Yihui Xie</a>的努力，已有支援出簡體中文pdf的套件，但是繁體中文仍然不夠全面。也可能是我找不到正確的支援方法所致，還請網友賜教。第二點是pandoc渲染參考文獻的功能只有支援英文書目，讀者可從<a href="https://osf.io/j94pn">示範文件</a>裡的中文書目發現問題。這兩個問題如果能獲得改進，相信更多研究者與學生會更容易接受動態文件，提高研究過程與成果的透明度也有更清楚的標準。</p>
+</div>
+<div id="突破補充" class="section level2">
+<h2>20190114突破補充</h2>
+<p>寫作這篇網誌到這個日期之間，我已使用papaja編寫至少兩篇論文，對於latex的排版語法有更新的認識。這一日終於試出能成功產生中文論文的方法，原理是相容中日韓字符xeCJK，，目前只有xelatex這套文件生成引擎能完整支援。加上中文字的特殊設定，YAML必須有以下設定。</p>
+<pre><code>## Get the header from http://newsletter.ascc.sinica.edu.tw/news/read_news.php?nid=2198
+## ptt latex board
+## Section begin: this section has to be above &#39;output:&#39;
+header-includes:
+ - \usepackage[no-math]{fontspec}
+ - \usepackage{xeCJK}
+ - \setCJKmainfont{標楷體}  ## 可改成已安裝的其他字型
+ - \XeTeXlinebreaklocale &quot;zh&quot;  
+ - \XeTeXlinebreakskip = 0pt plus 1pt
+## Section end: this section has to be above &#39;output:&#39;
+
+
+## Get this setting from https://stackoverflow.com/questions/36806255/rstudio-on-windows-not-using-xelatex
+## This option forced Rstudio use xelatex compile this document
+output: 
+   pdf_document:
+       latex_engine: xelatex</code></pre>
+<p>未來論文寫作工作告一段落，我將寫一份papaja完整中文教學，介紹如何運用這些套件製作可重製報告。</p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/zh-hant/tags/r/">R</a>
+  
+  <a class="badge badge-light" href="/zh-hant/tags/latex/">latex</a>
+  
+  <a class="badge badge-light" href="">開放科學</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/zh-hant/post/dynamic-writing/&amp;text=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a84%20~%20%e5%8b%95%e6%85%8b%e6%96%87%e4%bb%b6%e5%af%ab%e4%bd%9c%e5%85%a5%e9%96%80" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/zh-hant/post/dynamic-writing/&amp;t=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a84%20~%20%e5%8b%95%e6%85%8b%e6%96%87%e4%bb%b6%e5%af%ab%e4%bd%9c%e5%85%a5%e9%96%80" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a84%20~%20%e5%8b%95%e6%85%8b%e6%96%87%e4%bb%b6%e5%af%ab%e4%bd%9c%e5%85%a5%e9%96%80&amp;body=/zh-hant/post/dynamic-writing/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/zh-hant/post/dynamic-writing/&amp;title=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a84%20~%20%e5%8b%95%e6%85%8b%e6%96%87%e4%bb%b6%e5%af%ab%e4%bd%9c%e5%85%a5%e9%96%80" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a84%20~%20%e5%8b%95%e6%85%8b%e6%96%87%e4%bb%b6%e5%af%ab%e4%bd%9c%e5%85%a5%e9%96%80%20/zh-hant/post/dynamic-writing/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/zh-hant/post/dynamic-writing/&amp;title=%e5%bf%83%e7%90%86%e7%a7%91%e5%ad%b8%e7%a0%94%e7%a9%b6%e5%bf%85%e7%94%a8%e7%a5%9e%e5%99%a84%20~%20%e5%8b%95%e6%85%8b%e6%96%87%e4%bb%b6%e5%af%ab%e4%bd%9c%e5%85%a5%e9%96%80" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/zh-hant/authors/csc/avatar_hu3d590b371aacc9bbd6d33aea2a79116c_5560_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">陳紹慶</a></h5>
+      <h6 class="card-subtitle">副教授</h6>
+      <p class="card-text">My research interests include language processing and embodied cognition.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pmsp96@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-6092-6049" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=kSUyxs0AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/SCgeeker" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "sauchinchen" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>相關</h3>
+    <ul>
+      
+      <li><a href="/zh-hant/post/jasp-jamovi/">心理科學研究必用神器3 ~ 開源統計軟體</a></li>
+      
+      <li><a href="/zh-hant/post/open-science-framework.zh/">心理科學研究必用神器2 ~ Open Science Framework</a></li>
+      
+      <li><a href="/zh-hant/post/zotero/">心理科學研究必用神器1~Zotero</a></li>
+      
+      <li><a href="/zh-hant/post/orientation-language-part01/">物件方向效應跨語言研究經驗分享(一)：心理科學加速器合作專案</a></li>
+      
+      <li><a href="/zh-hant/post/first-chinese-rr-journal/">第一本華文心理學學術期刊開工了</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/zh-hant/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"找不到结果","placeholder":"搜尋...","results":"搜尋结果"};
+      const content_type = {
+        'post': "文章",
+        'project': "專案",
+        'publication' : "出版物",
+        'talk' : "演講"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://sauchinchen.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/zh-hant/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/zh-hant/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 複製
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下載
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

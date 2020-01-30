@@ -1,0 +1,1621 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>開放科學 | 陳紹慶的個人網站</title>
+    <link>/zh-hant/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/</link>
+      <atom:link href="/zh-hant/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/index.xml" rel="self" type="application/rss+xml" />
+    <description>開放科學</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Tue, 16 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>開放科學</title>
+      <link>/zh-hant/tags/%E9%96%8B%E6%94%BE%E7%A7%91%E5%AD%B8/</link>
+    </image>
+    
+    <item>
+      <title>心理科學研究必用神器4 ~ 動態文件寫作入門</title>
+      <link>/zh-hant/post/dynamic-writing/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/dynamic-writing/</guid>
+      <description>
+
+
+&lt;p&gt;這不是我第一篇介紹寫作動態文件的網誌，這個網站就是用開放源碼的動態文件套件架構與維護。有興趣的讀者可以到首頁，參考建構這個網站的資訊。這篇介紹如何寫作一般的報告與筆記，包括學生的報告，研究人員的計畫與論文手稿等。&lt;/p&gt;
+&lt;p&gt;多數人習慣使用的文書處理軟體，像是WORD與google doc，集合文字編輯與排版。寫作正式文件時，需要同時顧慮編輯與排版的契合，雖然之前介紹的&lt;a href=&#34;http://scchen.com/zh/post/zotero/&#34;&gt;zotero&lt;/a&gt;已經減輕編輯文內引用與排版參考文獻的工作，一份文件內要安置圖表，乃至數學符號與統計數據的整理，還是需要花時間在不同軟體之間剪貼。&lt;/p&gt;
+&lt;p&gt;這篇網誌說明如何編輯一篇有列舉參考文獻，無任何圖表及數學符號的中文文件。讓讀者了解動態文件的文字編輯與排版是兩件分開的工作，並提出支援中文寫作的動態文件套件，還需要改進的地方。&lt;/p&gt;
+&lt;div id=&#34;基礎知識&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;基礎知識&lt;/h2&gt;
+&lt;p&gt;與建置這套個人網站一樣，一切準備從安裝&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudo&lt;/a&gt;與&lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt;開始。Rstudio開發的套件&lt;code&gt;knitr&lt;/code&gt;可由使用者自行安裝，或者是第一次使用Rstudio編輯動態文件時，會自動下載安裝。&lt;code&gt;knitr&lt;/code&gt;的功能是將有指定語法標籤的純文字文件，例如&lt;code&gt;markdown&lt;/code&gt;與&lt;code&gt;R&lt;/code&gt;，轉換為其他排版軟體能辨識的內容。Rstudio已經整合一套開源排版軟體&lt;a href=&#34;https://pandoc.org/&#34;&gt;pandoc&lt;/a&gt;，可將轉換後的純文字文件，按排版設定渲染(render)輸出word或pdf檔案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Rstudio-newfile.PNG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖是Rstudio開啟新文件的選單，除了R script與Text File，其他檔案格式都是可用其他軟體渲染輸出各種排版或編譯產物。這也是為何管理動態文件，應區分文字編輯與排版兩種工作。以一份R Markdown文件為例，有開頭的&lt;code&gt;yaml&lt;/code&gt;與內文兩部分，&lt;code&gt;yaml&lt;/code&gt;是列舉排版這份文件的所需資訊，以符號 --- 標記資訊開始及結尾。以本文的&lt;a href=&#34;https://osf.io/rze47&#34;&gt;示範文件&lt;/a&gt;為例，這份文件要輸出為WORD檔案，&lt;code&gt;yaml&lt;/code&gt;包含的資訊如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;output: 
+  word_document:
+    reference_docx: word_style_reference.docx
+bibliography: Turri.bib
+csl: apa-old-doi-prefix.csl&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;與這份示範文件放在一起的三個外部檔案：&lt;strong&gt;&lt;a href=&#34;https://osf.io/5x8h6&#34;&gt;word_style_reference.docx&lt;/a&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;a href=&#34;https://osf.io/fw359&#34;&gt;Turri.bib&lt;/a&gt;&lt;/strong&gt;、&lt;strong&gt;&lt;a href=&#34;https://osf.io/z59hs&#34;&gt;apa-old-doi-prefix.csl&lt;/a&gt;&lt;/strong&gt;，分別提供渲染這份文件需要的&lt;strong&gt;排版樣式&lt;/strong&gt;、&lt;strong&gt;書目資訊&lt;/strong&gt;、以及&lt;strong&gt;引用格式&lt;/strong&gt;。&lt;a href=&#34;http://scchen.com/zh/post/zotero/&#34;&gt;zotero&lt;/a&gt;網誌曾介紹如何管理書目資訊與引用格式的檔案，docx檔是提供一份有所需樣式與版面設定範例的word檔，也就是一個排版範本，有關WORD的排版可參考&lt;a href=&#34;https://support.office.com/zh-tw/article/%E8%87%AA%E8%A8%82%E6%88%96%E5%9C%A8-word-%E4%B8%AD%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%9A%84%E6%A8%A3%E5%BC%8F-d38d6e47-f6fc-48eb-a607-1eb120dec563&#34;&gt;官方說明網站&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;寫作示範&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;寫作示範&lt;/h2&gt;
+&lt;p&gt;建議讀者先下載前述連結的檔案，嘗試重現示範文件的&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;輸出成果&lt;/a&gt;，會更理理以下示範說明。&lt;/p&gt;
+&lt;p&gt;R markdown內文與一般markdown文件一樣，未在置入任何標籤的任何文字等於一般WORD文件的內文，&lt;code&gt;pandoc&lt;/code&gt;會根據排版範本的&lt;strong&gt;內文&lt;/strong&gt;樣式渲染。標記標題的#或##等，會根據排版範本的&lt;strong&gt;標題一&lt;/strong&gt;、&lt;strong&gt;標題二&lt;/strong&gt;等樣式渲染。如果使用者需要呈現頁碼，只要在排版範本預做安排。&lt;/p&gt;
+&lt;p&gt;文內引用的書目是將存在於書目資訊檔案的&lt;strong&gt;bibtex key&lt;/strong&gt;，置入在內文要呈現的地方，例如以下節錄的示範文字。詳細的置入語法與調整設定，可參考&lt;a href=&#34;https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html&#34;&gt;Rstudio的介紹&lt;/a&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;美國哲學家Gettier[-@gettierJustifiedTrueBelief1963]發表一篇短論文，提出兩個即使符合JTB三種條件，依然無法確定某人有沒有正確知識的反例。&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;只要有引用的書目資訊，&lt;code&gt;pandoc&lt;/code&gt;會根據引用格式檔案內的資訊，與文末排列參考文獻。示範文件中使用的格式是APA 6並呈現doi的一般格式。因此一份文件由兩位以上共同編輯，只要共享需要的書目資訊，也不必依賴付費軟體編輯與管理引用文獻。有關格式檔案的設定方法，可參考&lt;a href=&#34;http://blog.pulipuli.info/2014/08/zoteroapa-zotero-citation-style-apa.html&#34;&gt;pulipuli的網誌&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;進階套件&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;進階套件&lt;/h2&gt;
+&lt;p&gt;未來我還會撰寫在動態文件編輯圖表與統計數據的網誌，待讀者熟練本篇介紹的操作，推薦安裝以下套件，增益編輯動態文件的效率：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/crsh/citr&#34;&gt;&lt;code&gt;citr&lt;/code&gt;&lt;/a&gt;:這套Rstudio的外掛可幫助使用者在編輯過程中，有插入引用文獻的bibtext key的需要，以視窗介面搜尋並編輯。我的使用建議是先準備好書目資訊檔案，編輯過程中不必開啟zotero。如果有需要更新書目資訊檔案，最好先暫停文件編輯工作，更新完成後再繼續編輯。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;: &lt;code&gt;citr&lt;/code&gt;作者的代表作，可創建符合APA格式的手稿檔案，並支援圖表與數據的排版功能。初版&lt;a href=&#34;https://crsh.github.io/papaja_man/index.html&#34;&gt;使用手冊&lt;/a&gt;今年已正式上線。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;期待的改進&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;期待的改進&lt;/h2&gt;
+&lt;p&gt;這篇介紹的動態文件套件在支援中文寫作有兩個值得改進之處。首先是生成pdf檔的問題，目前簡體中文有R牛人&lt;a href=&#34;https://yihui.name/en/&#34;&gt;Yihui Xie&lt;/a&gt;的努力，已有支援出簡體中文pdf的套件，但是繁體中文仍然不夠全面。也可能是我找不到正確的支援方法所致，還請網友賜教。第二點是pandoc渲染參考文獻的功能只有支援英文書目，讀者可從&lt;a href=&#34;https://osf.io/j94pn&#34;&gt;示範文件&lt;/a&gt;裡的中文書目發現問題。這兩個問題如果能獲得改進，相信更多研究者與學生會更容易接受動態文件，提高研究過程與成果的透明度也有更清楚的標準。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;突破補充&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;20190114突破補充&lt;/h2&gt;
+&lt;p&gt;寫作這篇網誌到這個日期之間，我已使用papaja編寫至少兩篇論文，對於latex的排版語法有更新的認識。這一日終於試出能成功產生中文論文的方法，原理是相容中日韓字符xeCJK，，目前只有xelatex這套文件生成引擎能完整支援。加上中文字的特殊設定，YAML必須有以下設定。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## Get the header from http://newsletter.ascc.sinica.edu.tw/news/read_news.php?nid=2198
+## ptt latex board
+## Section begin: this section has to be above &amp;#39;output:&amp;#39;
+header-includes:
+ - \usepackage[no-math]{fontspec}
+ - \usepackage{xeCJK}
+ - \setCJKmainfont{標楷體}  ## 可改成已安裝的其他字型
+ - \XeTeXlinebreaklocale &amp;quot;zh&amp;quot;  
+ - \XeTeXlinebreakskip = 0pt plus 1pt
+## Section end: this section has to be above &amp;#39;output:&amp;#39;
+
+
+## Get this setting from https://stackoverflow.com/questions/36806255/rstudio-on-windows-not-using-xelatex
+## This option forced Rstudio use xelatex compile this document
+output: 
+   pdf_document:
+       latex_engine: xelatex&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;未來論文寫作工作告一段落，我將寫一份papaja完整中文教學，介紹如何運用這些套件製作可重製報告。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學研究必用神器2 ~ Open Science Framework</title>
+      <link>/zh-hant/post/open-science-framework.zh/</link>
+      <pubDate>Tue, 21 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/open-science-framework.zh/</guid>
+      <description>
+
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#前言&#34;&gt;前言&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#註冊登入與帳戶設定&#34;&gt;註冊、登入與帳戶設定&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#帳戶設定&#34;&gt;帳戶設定&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#專案儀表板dashboard&#34;&gt;專案儀表板(Dashboard)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#創建與管理研究專案&#34;&gt;創建與管理研究專案&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#創建新專案&#34;&gt;創建新專案&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#管理專案&#34;&gt;管理專案&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#專案隱私設定&#34;&gt;專案隱私設定&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#專案協作者權限設定&#34;&gt;專案協作者權限設定&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#由專案主頁面設定&#34;&gt;由專案主頁面設定&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#由專案物件頁面設定協作者權限&#34;&gt;由專案物件頁面設定協作者權限&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#移除協作者專案管理權限&#34;&gt;移除協作者專案管理權限&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#專案協作項目&#34;&gt;專案協作項目&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#wiki&#34;&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#檔案files&#34;&gt;檔案(Files)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#專案註冊程序&#34;&gt;專案註冊程序&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#註冊實作1由專案主頁面進行&#34;&gt;註冊實作1：由專案主頁面進行&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#註冊實作2osf-rr專頁&#34;&gt;註冊實作2：OSF RR專頁&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;前言&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://osf.io/&#34;&gt;開放科學平台(Open Science Framework)&lt;/a&gt;是2013年開放科學中心(Center for Open Science)開始經營的科學研究協作平台，到了2018年7月已經有十萬名註冊使用者。雖然界面語言只有英文，世界各地能使用網路的研究者都知曉這個平台提供研究資料保存與協同合作服務。本人接觸的華文地區有不少科學研究者知道OSF服務，但是一直缺乏學習與使用機會，雖然我還沒有看到官方的正式統計，約略估計華文使用者運用OSF共享及版本控制等服務的普及率，應該低歐美各國使用者不只一倍。&lt;/p&gt;
+&lt;p&gt;寫作這篇網誌為本人教學與推廣使用。使用的OSF介面截圖取自COS官方&lt;a href=&#34;http://help.osf.io/&#34;&gt;功能介紹網頁&lt;/a&gt;，如果使用過程有任何問題，可至官方網頁查詢。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;註冊登入與帳戶設定&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;註冊、登入與帳戶設定&lt;/h2&gt;
+&lt;p&gt;初次使用請註冊帳號，只要按下如下圖的&lt;strong&gt;註冊(Sign up)&lt;/strong&gt;，就會進入註冊頁面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/122/original/048766b8-3803-4404-85cf-4a9ef552035a.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;註冊頁面只要輸入個人完整姓名(建議使用英文)，個人常用電子郵件信箱，以及自訂密碼能完成。請留意註冊網頁有防BOT機制(下圖1)，按下創建帳戶(下圖2)，再到個人電子郵件信箱查看確認信，按下確認連結就完成創建程序。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/126/original/5d42f457-8e4b-4660-a18d-4e4ee4c6b9d9.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;創建帳戶之後，你隨時可從任何可上網的網頁瀏覽器登入個人OSF帳戶。只要從首頁按下&lt;strong&gt;登入(Sign in)&lt;/strong&gt;即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/128/original/a81cbd79-fa9d-4825-9603-94b57e1a44c1.jpg&#34; /&gt;
+登入畫面輸入註冊的個人電子郵件信箱與密碼，正確即可登入。目前也支援使用者以&lt;a href=&#34;https://orcid.org/&#34;&gt;ORCID&lt;/a&gt;登入，如果使用者是專業學術工作者，建議登錄一個專屬ORCID，好處稍後會提到。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/808/052/original/b6e1c9ce-d700-47e6-b9f6-30b58c5f58f5.png&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;帳戶設定&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;帳戶設定&lt;/h3&gt;
+&lt;p&gt;首次登入使用者建議先花點時間在帳戶設定頁面(Profile)，填入個人重要資訊，帳戶設定頁面開啟途徑如下圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/168/original/44f06cff-0f24-4ebb-b51e-e24dd4254fb4.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;帳戶設定頁面如下圖，不過初次使用或未設定者應該是沒有任何資訊。要填入資訊請點一下如下圖的地方：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/275/461/original/8acf8b95-5c5e-4a1c-8650-3997b13008b4.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;個人資訊有四大項，首先是真實姓名(Name)。這個部分建議比照學術寫作格式建立姓名資訊，頁面下方還有預覽APA與MLA格式的姓名呈現，確認無誤就按&lt;code&gt;Save&lt;/code&gt;。如此一來，你所建立的專案就能使用合乎規範的格式於任何報告中引用，或者充實個人履歷的項目。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/164/original/5a55844a-2405-4b4b-b3c1-c096e752fc89.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;第二大項集合個人有實際使用的社群平台帳號(Social)，包括個人網頁、推特等。稍早提到的ORCID也是在此輸入，儲存後就能使用ORCID登入OSF。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/275/469/original/b1b3bcce-9f3f-4c47-94e3-f5a679d635d5.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;第三大項是工作經歷(Employment)，你希望在OSF公開的經歷都可以依下圖欄位填入，正在從事的職位只要勾選&lt;strong&gt;Ongoing&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/165/original/a1539e4c-9f37-4b52-ab8b-ecbed8a398fa.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;最後一項是學歷(Education)，你希望在OSF公開的學歷都可以依下圖欄位填入，在學中的學校只要勾選&lt;strong&gt;Ongoging&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/166/original/d88740f4-423a-4e2c-a8bc-3763dbcad120.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;個人展望&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;由於OSF支授ORCID登入，我個人希望OSF下一次改版能讓使用者直接由ORCID匯入。因為ORCID是專屬個人的學術經歷工作帳號，你希望公開讓人檢索的資訊都已經在建立於ORCID，並串連個人的學術作品。此外，ORCID有提供多國語言界面，未來OSF朝向多語界面改版，也能經由讀取使用者ORCID預設語言，自動切換為對應的語言介面。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;專案儀表板dashboard&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案儀表板(Dashboard)&lt;/h2&gt;
+&lt;p&gt;所有使用者登入OSF第一個看到的是如下圖的這個頁面。當使用者創建或協作的專案越多，頁面顯示的專案欄位就越多，欄位預設排序是以專案更新時間，由上至下排列。下圖中每欄的粗體字是專案頁面標題，有些以斜槓(/)區隔的標題，代表該項主專案之下的物件(Component)。在這個頁面你想找比較舊的專案，可以頁面上方的搜尋欄(Search your projects)，找出你要維護的專案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/936/original/81df1b9e-a0a8-427f-8053-71a851a0d748.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果要用比較有系統的方式整理與尋找專案，只要按如下圖的&lt;strong&gt;My Projects&lt;/strong&gt;，切換到&lt;strong&gt;專案管理介面&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/535/016/original/d7ac4196-594e-40f2-ba14-a6e9ebea7db5.png&#34; /&gt;
+專案管理介面如下圖。下圖畫面是先點選左側分割視的&lt;strong&gt;All my projects&lt;/strong&gt;，在右側分割視窗顯示所有參與的專案，使用者可以先點選一個專案使其標題反白(下圖1)，然後按一下右上角的箭頭(下圖2)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/611/original/16d8964f-8ea4-472c-b82c-d883ea8f037d.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;按下箭頭後會跳出如下圖的視窗，顯示已被選擇的專案摘要資訊，讓使用者檢視是否為要找的專案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/608/original/579951c4-107d-4dea-aa7c-d5df34b93789.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;專案管理介面和作業系統的檔案管理視窗類似，使用者可以自訂依專案名稱排序，或者依更新時間排序。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/600/original/0bb008f7-bbcd-42d3-981e-d7c01b46e40f.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;與專案儀表板主頁一樣，使雨者可以由過濾對話框(Filter displyaed projects)，讓這個頁面只顯示符合目標關鍵詞的專案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/411/original/1445569c-0d68-465e-84cf-367993bc27c1.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果你的專案有其他協作者，可由左側視窗選擇協作者姓名，過濾出與該位協作者合作的專案。如果有在專案主頁設定標籤(Tags)，也可帶此使用標籤選擇要管理的專案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/598/original/e1508448-9f27-4494-a504-3ede4d3dc807.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;以協作者姓名或標籤選擇專案後，可以繼續增減過濾條件，參考下圖2。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/584/original/1f1ab100-0f9a-4ccc-9715-b90ef57188a5.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;OSF的專案管理介面已預設歸類使用者已發佈預印本的專案(All my preprints)，以及已註冊的專案(All my registrations)。只要從左側視窗選擇這些歸類，就會只顯示這類專案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/591/original/c3875bb7-d060-441e-a50d-b4148d15ede8.png?1517944707&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;使用者可以自訂專案分類，從點選下圖標示的+開始：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/604/original/45795c3e-e721-4492-8e4a-05f318253aae.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著會出現如下圖的對話視窗，輸入使用者自訂的分類名稱即可：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/606/original/ddf60cbd-acbe-43ca-9cdf-1eb64c3be310.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;已建好的分類可隨時更改名稱或刪除，只要點選下圖的地方。要增加專案至自訂分類，滑鼠點擊按住要加入的專案欄位，反白後拖入自訂分類。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/613/original/544fb6ef-4996-4356-aaaa-45848bd0f974.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;要從自訂分類移除某個專案，按照下圖三個步驟即可。移出自訂分類的專案還是存在於專案儀表板。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/615/original/d42f961b-a402-4342-bbf6-45c9d4dd365c.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;看到其他使用者的公開專案值得參考，可用專案書籤收藏。只要在該專案主頁，點選如下圖的功能按鈕。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/409/original/328f6177-eaa6-4b37-be0e-4e6f84fc4f1c.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著從專案管理介面，左側視窗&lt;strong&gt;Bookmarks&lt;/strong&gt;分類就會看到曾收藏的專案，使用者也可以由此拖放專案到自訂分類。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/581/original/d4adc11b-ca99-4a07-b9db-1f27c17ad409.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;創建與管理研究專案&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;創建與管理研究專案&lt;/h2&gt;
+&lt;p&gt;OSF平台的每個研究專案(Project)像是個人硬碟裡的一個資料夾，OSF專案提供更多元的資料管理功能，善用這些功能能有效紀錄個人或團隊的研究過程，其他研究者能使用公開專案內容重現研究。&lt;/p&gt;
+&lt;div id=&#34;創建新專案&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;創建新專案&lt;/h3&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;建立空白專案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;從頭開始建立一個專案很簡單，由專案儀表板按下創建按鈕即可，如下圖提示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/573/original/c8ad9cf3-c9ad-43c2-a3a7-096fa36b35e1.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著出現如下圖對話視窗，預設只要輸入專案標題(Title)即可。不過使用者可以打開&lt;code&gt;More&lt;/code&gt;，輸入專案描述，或者選擇已存在的專案做為模板。基本上只要輸入標題，就可按下&lt;code&gt;Create&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/575/original/f231b36d-8774-43b5-9750-77c1d95e9646.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;創建完成可以選擇直接去專案主頁面(&lt;code&gt;Go to new project&lt;/code&gt;)，或者留在專案儀表板：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/534/581/original/52b08855-35e6-4ce8-96b1-fb8cbf546160.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;新建好的專案主頁面，下圖是以現存專案做模板建立的新專案，如果是空白專案，不會存在任可檔案(Files)與物件(Component)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/929/original/e384217e-ca2d-4d3a-aab2-ba4c216090c7.png&#34; /&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;使用公開專案創建新專案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;當使用者要計畫一項再現研究，或者讓學生規劃一項研究專案，最適合使用這種方法創建專案。進入做為模板的專案主頁面，從下圖標示的按鈕開始：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/961/original/71b53f70-d233-453b-8dd1-a0f8d2b1c281.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;按下後會出現如下圖的子視窗，選擇中間的&lt;code&gt;Duplicate template&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/957/original/195a9fb8-2492-4542-acd1-c167aed5d60c.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;確定要就此創建新專案，直接按下&lt;code&gt;Create&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/965/original/6d3fa518-42f2-413a-8dc6-1d5cbba59638.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;管理專案&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;管理專案&lt;/h3&gt;
+&lt;p&gt;使用者自建的專案可以隨時變更專案名稱。只要移動滑鼠到標題區域，快速點擊兩下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/307/original/5d8d43b9-cb42-4b23-bf29-7b3889b0f3f1.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;標題就會變成如下圖的對話框，使用者可以更改到滿意為止，按下綠色勾勾就完成更改。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/311/original/7a6ada14-da42-4607-ad61-b6bc9299db08.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果這個專案現在或未來要公開，使用者可以在主頁面決定授權方式，讓其他使用者了解合理使用專案內容的方法。授權設定從下圖標記處開始：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/333/original/2234c293-83a8-469e-b630-157b18c51e5a.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著出現如下圖的選單視窗，使用者可選擇一個最適合的授權方式，進行適當編輯後儲存，即可完成授權。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/337/original/bcbb9ff4-6014-483b-aa05-c213d0babf41.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;每個專案物件(Component)類似一個子資料夾，創建方法與專案大同小異。以下是創建空白物件的方法，從下圖標記處開始：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/944/original/811f1617-2273-4223-ac08-60f17d8c5fd9.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;下圖與創建空白專案的對話視窗差不多，只有最小面多了物件分類選單，使用者可以根據自訂的物件功能，給予合適的分類：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/946/original/0fdf2b89-e8c0-498e-9882-9bddeda32744.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;設定完成後，可自行選擇要去新建的物件頁面(&lt;code&gt;Go to new component&lt;/code&gt;)，還是留在專案主頁面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/942/original/757969a8-121e-4846-896b-af937452904f.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;到物件頁面會發現標題有些不一樣，斜槓之前是主專案標題，並且是一個超連結，讓使用者能回到專案主頁面：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/500/940/original/0e182e71-a032-4525-8cf5-4ccf18a44198.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;專案隱私設定&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;專案隱私設定&lt;/h3&gt;
+&lt;p&gt;每一個OSF專案與物件的隱私設定都是個別調整，預設都是不公開。要改為公開，只要在專案與物件主頁面的如下圖標示處，按下按鈕：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/216/original/a080cc6f-51c7-4268-b335-0ca939158dd4.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果是在專案主頁面，會出現如下圖是否要繼續的提示訊息。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/220/original/fbd05910-009f-465e-91ec-9fddaefa7ebd.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著會出現如下圖的對話視窗，列出專案之下的所有物件，可由此設定那些物件要公開，那些不公開。選好再按繼續鈕。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/214/original/1fe11b76-9ed6-4c62-a872-5865ac394799.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;確認要改成公開的專案與物件，無誤按&lt;code&gt;Confirm&lt;/code&gt;就大功告成。如果要重新選擇請按&lt;code&gt;Back&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/218/original/ce728501-75e8-41bc-9102-aa0c19ad04f2.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;已設為公開的專案與物件也可以改回不公開，按下圖標示處的按鈕，再走一次上面的選擇步驟即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/228/original/5399f894-f5cd-4235-8a75-f49689f9613b.jpg&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;專案協作者權限設定&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案協作者權限設定&lt;/h2&gt;
+&lt;p&gt;每個OSF專案與物件都可以指定協作者，合作管理專案與物件的內容。官方網站有&lt;a href=&#34;http://help.osf.io/m/projects/l/814917-understand-contributor-permissions&#34;&gt;詳細說明&lt;/a&gt;，以下簡單說明OSF的三種權限設定：&lt;/p&gt;
+&lt;p&gt;Read：有此權限的協作者只能檢閱專案與物件內容，由專案管理者新加入的協作者皆有此權限。
+Read+Write：有此權限的協作者可以增加與刪除存放於專案的檔案與wiki，調整外掛與建立物件，也可以修改專案頁面的協作者機構資訊。
+Administrator：專案創建者有全部管理者權限，包括調整專案與物件的隱私設定，專案的預先註冊等功能。&lt;/p&gt;
+&lt;p&gt;在專案與物件頁面列名的協作者不一定是有參與權限的協作者，可由協作者設定頁面安排。有列名的協作者是&lt;strong&gt;bibliographic&lt;/strong&gt;，未列名的協作者是&lt;strong&gt;non-bibliographic&lt;/strong&gt;。&lt;/p&gt;
+&lt;div id=&#34;由專案主頁面設定&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;由專案主頁面設定&lt;/h3&gt;
+&lt;p&gt;要增加與刪減協作者，有管理者權限的協作者先按一下下圖標記處，進入協作者設定頁面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/047/original/807610dd-6009-4b9a-97b0-8acb8939e866.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;要加入有OSF帳號的協作者，從下圖箭頭標示處按&lt;code&gt;Add&lt;/code&gt;開始：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/463/original/14b58412-6324-41ff-a111-c0bf37b5e2cb.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著出現如下圖的搜尋視窗，只要在搜尋對話框裡，輸入協作者註冊的全名。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/467/original/762b6de2-eb58-4e7e-96e8-91b39176cc48.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;有找到就會出現如下圖的搜尋結果，確認是這個使用者就按標記的&lt;code&gt;+&lt;/code&gt;號。協作者註冊時提供的個人資訊越完整，越容易找到。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/465/original/b2b62e3d-1ba3-4886-9745-c6853e2d2284.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果協作者沒有OSF帳號，會出現如下圖的提示訊息，可以點擊連結進入設定頁面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/461/original/34ac7e5a-e786-404a-b6fd-364f6ee90314.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;未註冊協作者的設定頁面只要輸入全名與電子郵件信箱，之後這位協作者只要在註冊頁面輸入這些資訊，就能快速完成帳戶創建，並在專案儀表板看到這項專案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/473/original/52a02de3-76fb-443e-8fdb-312fffee4508.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;確定要加入協作者會變成如下圖的畫面。管理者可在此設定協作者權限，包括是否列名。設定完成按&lt;code&gt;Add&lt;/code&gt;繼續。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/469/original/bba48c35-121a-4ba7-9858-fbe6ad323d5c.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/471/original/5709a65d-d640-4732-837e-0abbc8cf7b86.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果是從專案主頁面增加協作者，而且專案之下還有物件，上圖畫面會變成如下圖的提示按鈕：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/460/original/c02c52ec-eabd-4164-929b-a2214998d37d.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著從以下畫面，設定是否要讓協作者在每個物件裡有與專案主頁面相同的權限：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/458/original/0a87be96-939d-461d-aa38-4587d637f6fb.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;增加完成回到協作者設定頁面，管理者隨時可在此更改設定，以及移除協作者。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/456/original/9ca05050-ba31-431e-b323-d8a8d3285228.jpg&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;由專案物件頁面設定協作者權限&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;由專案物件頁面設定協作者權限&lt;/h3&gt;
+&lt;p&gt;與專案主頁面一樣，按一下下圖標記處進入協作者設定頁面：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/501/103/original/068122d1-8be3-4413-9871-1786470e21e0.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在協作者設定頁面按下如下圖的&lt;code&gt;Add&lt;/code&gt;按鈕，就可以增加已註冊或未註冊的協作者，步驟與專案的操作相同。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/377/original/bdbcd9af-c364-41b6-b4a6-6b80b2671e46.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;確認加入協作者之前，也可以調整管理與列名權限。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/379/original/b7ec7204-1c44-4299-92f6-75f7cd0320d5.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;物件的協作者設定頁面也可以隨時調整每位協作者權限。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/290/375/original/4b42acf7-584e-4405-aadd-48a394615427.jpg&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;移除協作者專案管理權限&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;移除協作者專案管理權限&lt;/h3&gt;
+&lt;p&gt;如果要將某依協作者從專案或物件中移除，從協作者設定頁面，按下要移除的協作者右邊的&lt;code&gt;X&lt;/code&gt;即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/647/original/4c8f6f92-0163-47d3-b44f-a483bd5596ba.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;確認要移除該位協作者，在下圖的提示視窗按下&lt;code&gt;Remove&lt;/code&gt;。如果是在專案主頁面進行這項操作，還可以選擇是否一併移除物件的管理權限。管理者權限也可以使用這種功能在協作者之間交接。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/581/645/original/45897782-13a5-4d8f-96ca-d7c827767d1b.jpg&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;專案協作項目&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案協作項目&lt;/h2&gt;
+&lt;p&gt;一起進行研究計畫的團隊人員要經常分析的資訊有資料檔案，執行紀錄與報告等。資料媒介因研究性質而異。OSF提供可協作維護的Wiki與檔案系統，讓協作者根據實際需要設定與增修內容。&lt;/p&gt;
+&lt;div id=&#34;wiki&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Wiki&lt;/h3&gt;
+&lt;p&gt;OSF wiki是一套線上動態文件編輯與展示功能，使用者只要運用&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;與&lt;a href=&#34;https://www.mathjax.org/&#34;&gt;MathJax&lt;/a&gt;兩套語法編輯文件內容，就可以在網頁展示頁看到編輯結果。希望運用動態文件紀錄研究過程與編輯報告元素的使用者，我建議花些時間去學習&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;與&lt;a href=&#34;https://www.mathjax.org/&#34;&gt;MathJax&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;要檢視一份Wiki的完整畫面，從如下圖畫面標記的兩個地方任何一處，點擊即可開啟全視窗畫面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/126/original/08097b47-4b8c-4ae3-a8e9-4108396b7566.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Wiki全視窗畫面如下圖，有編輯權限的使用者能在此看到各種與Wiki有關的功能。每個OSF專案與物件預設必有一個名為&lt;strong&gt;Home&lt;/strong&gt;的Wiki文件，如果用者需要增加其他Wiki文件，按一下下圖箭頭指示的New：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/671/original/20f2afdb-743e-431c-8397-5525adda58a0.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著會出現如下圖的對話視窗，請使用者輸入新Wiki文件的名稱，輸入完成按&lt;code&gt;Add&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/668/original/2ebe6b7d-bcb0-4f3e-875a-d37d395b7559.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;今天增加的Wiki文件叫做“Daily Lab Notes”，新增成功會變成以下畫面。中間是預覽視窗，最右邊是編輯視窗。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/666/original/b0ab6660-f79a-4269-aad8-822492d2af67.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Wiki編輯視窗輸入的內容馬上可在預覽視窗看到結果，以下畫面有Markdown與MathJax的編輯與預覽結果。更多編輯技巧請參考&lt;a href=&#34;http://help.osf.io/m/collaborating/l/524109-edit-the-wiki&#34;&gt;官網說明&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/430/376/original/63cb1387-65af-4349-a60c-e28144b0ea93.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;OSF Wiki編輯支援多人協作編輯，以及隨編隨存，使用者不必打幾個字就存一次檔。建議使用者設定編輯目標，達成才存檔。每存一次就會在預覽視窗最上方看到最近存檔時間，並且能與前次存檔比較版本差異，比較功能按下如下圖的&lt;code&gt;Compare&lt;/code&gt;即可開啟：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/760/original/e0783977-af8d-4991-a31a-4452762a599b.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;開啟後中間與右邊視窗可切換版本，比較不同版本內容差異。如果研究團隊約定每日更新研究紀錄，只要每日在Wiki記載指定事項，累積數日後可運用版本比較功能，檢視初期紀錄至今的內容變化。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/762/original/5803983f-7bd2-4484-84db-d9d3f80b43dd.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果日後專案要公開，團隊想把流水帳式的Wiki文字紀錄另外存檔。想要刪除原始Wiki文件，只要從全螢幕畫面選擇要刪除的Wiki，然後點擊如下圖的&lt;code&gt;Delete&lt;/code&gt;按鈕：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/673/original/051dff8c-30d1-4511-b41c-cbc65ed5b4eb.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;確認要刪除請按下如下圖視窗中的&lt;code&gt;Delete&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/663/original/1e61c427-eede-4a02-aa16-4475bd89c60a.jpg&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;檔案files&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;檔案(Files)&lt;/h3&gt;
+&lt;p&gt;如果使用者能接受專案是資料夾，就不難理解OSF專案與物件的檔案管理，與個人電腦作業系統無太大差異。除此之外還要知道的是檔案的&lt;strong&gt;版本控制&lt;/strong&gt;(Version Control)，這是運用OSF做專案備份的基本須知。&lt;/p&gt;
+&lt;p&gt;只要按一下下圖的區域，就可切換到全視窗的檔案檢視畫面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/285/original/bf92e417-5a5a-4997-9a54-673bd9459260.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果是在專案主頁面切換至此，會見到專案之下物件的檔案儲存節點。下圖畫面中每個&lt;code&gt;OSF Storage&lt;/code&gt;是上傳檔案到專案與物件的連結，需要備份的檔案，請在備份前規劃好要保存在專案與物件之中的檔案清單。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/069/original/e604eee7-01ab-402d-9eec-238dc81f188c.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上傳檔案之前，先選好要存放的&lt;code&gt;OSF Storage&lt;/code&gt;，點選後會出現如下圖的功能清單。按下Upload會出現檔案選擇清單，請選擇要從你的硬碟上傳的檔案，一次不限一個。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/433/original/0bbe4ae8-4e92-48d5-a403-0ed9cf4f32aa.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上傳成功就會如下圖，在檔案清單看到剛剛選擇的檔案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/431/original/544d41c8-db7f-4f05-aaab-a5022f1ff47e.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果上傳的檔案是Word、試算表、簡報等文件檔，以及常見格式的圖片檔案，可以從OSF網頁檢視內容。只要選擇要檢視的檔案，然後點擊兩下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/437/401/original/4ea3be60-ef48-416f-80fc-b7c49744d4fc.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;就可以開啟檢視畫面，如pdf檔可切換成全螢幕檢視或列印。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/437/403/original/c3287fc7-4862-436d-b404-b2f035d35852.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果使用者要增加檔案資料夾，在檔案檢視畫面功能選單有&lt;code&gt;Create Folder&lt;/code&gt;按鈕。選好要增加的資料夾的&lt;code&gt;OSF Storage&lt;/code&gt;，再按按鈕。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/655/original/70ccc83b-0fa2-4b3a-9d38-4bf4ac046d6d.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;按下後會出現如下圖的對話框，輸入使用者設定的資料夾名稱。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/660/original/81d1fe64-497c-48bc-98e3-0d87163ab55a.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;現在有許多支援遠端協同作業的個人雲端服務，運用OSF的附加功能(Add-on)，使用者能把在雲端服務編輯的檔案，轉移到OSF專案備份。使用者可自行查詢&lt;a href=&#34;http://help.osf.io/m/addons&#34;&gt;OSF支援的雲端服務&lt;/a&gt;，以下用Google雲端為例示範。&lt;/p&gt;
+&lt;p&gt;首先從專案主頁面的下圖標記處，開啟附加功能設定頁面。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/361/original/63d9741c-a8be-4b98-90a6-477df7dfba0e.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;從設定頁面選擇要附加的雲端服務，點一下&lt;strong&gt;Enable&lt;/strong&gt;開啟功能。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/565/original/31610c83-8e23-4619-a7d2-2ce271bba6f4.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;以下畫面是雲端服務附加事項說明，確認要使用就按箭頭標示處。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/556/original/8d335fc8-0909-4aa7-8e1c-7bf25523f37b.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;回到設定畫面會出現如下圖的欄位，再按箭頭指示的連結，正式連結OSF與個人Google雲端。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/442/563/original/89be8914-8744-4bc3-952c-792f0cc85a77.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Google雲端通常也有很多資料夾，可在以下畫面選擇要附加到這個OSF專案的資料夾。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/444/785/original/5ced9429-b95f-42f4-9f93-63a42e0dd21a.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;成功的話回到OSF專案檔案檢視畫面，會看到除了&lt;code&gt;OSF Storage&lt;/code&gt;，還多了&lt;code&gt;Google Drive&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/444/783/original/f2b14704-31b7-4c4f-8cce-492d4dc2e168.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果使用者要將個人雲端的檔案或資料夾移動到OSF專案，請參考下面GIF動畫。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/663/original/7df74ba5-50eb-403f-9e5a-1601fa525ac7.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;OSF檔案檢視頁面的功能選單有壓縮下載功能&lt;code&gt;Download as zip&lt;/code&gt;，選擇要下載檔案的資料夾，再按這個按鈕，就會下載zip壓縮檔。這個功能適用大量資料檔備份於OSF，分析前要一次下載的狀況。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/419/658/original/90c2fe05-a34e-49f2-bdf2-79603ad8d688.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;OSF最重要的&lt;strong&gt;檔案版本控制&lt;/strong&gt;是使用者必知的功能，善用此功能可減少產生重覆檔案。下圖的檔案檢視畫面有個R程式碼檔案，版本(Version)這一欄顯示3，表示使用者已做了三次編輯，每次編輯後都上傳到這個OSF專案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/835/original/b05e26a9-2baf-47b6-adc8-00e48adfd9c5.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果再更新一次並上傳，OSF就會判定為第4版。從檔案內容檢視畫面，使用者可以使用畫面上方功能選單裡的&lt;code&gt;Revisions&lt;/code&gt;，檢視檔案版本更新歷程。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/858/original/d4e2bad3-e97e-410a-b64a-1f761695aa71.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;按下&lt;code&gt;Revisions&lt;/code&gt;就出現如下圖的畫面，如果使用者有需要找出之前曾修改的內容，可以下載想看的版本。由此可知OSF對每一份檔案的每一次更新，都有保留備份。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/570/839/original/213e600a-ece1-4e25-8902-daf05d838d60.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果使用者想防止檔案進一步更改，可以使用檔案檢視畫面的&lt;code&gt;Check out file&lt;/code&gt;功能。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/194/404/original/d3a09e65-64bd-4c6a-b23f-3de0389a3d4e.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;確定Check out，OSF不會接受這份檔案的更新上傳。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/000/369/563/original/ff2bf6a0-5037-4dda-a69a-469766430700.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;要解除禁止更改，只要使用&lt;code&gt;Check in file&lt;/code&gt;這項功能。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/194/400/original/ec0f6baa-51f8-4e6f-9efb-748e35f75733.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;專案註冊程序&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案註冊程序&lt;/h2&gt;
+&lt;p&gt;OSF最為人熟知的功能是提供各式預先註冊的服務，也就是加上時間標章與研究者註解的檔案備份服務。前面的檔案功能已知OSF會備份使用者上傳檔案的每一份更新，如果這份檔案是要做&lt;strong&gt;預先註冊&lt;/strong&gt;或已通過&lt;strong&gt;註冊報告第一階段評審&lt;/strong&gt;的計畫書，OSF提供的&lt;strong&gt;註冊(Registration)&lt;/strong&gt;，實際操作就是使用者要選擇合適的備份註解加上檔案快照服務。手上正有研究計畫的讀者，如果不清楚要使用那一種備份註解，或者說較合適的預先註冊範本，請看我的演講投影片：&lt;a href=&#34;https://scgeeker.github.io/Opensci_integrity/2018aug.html#/4&#34;&gt;預先註冊範本建議&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;同時建議參考這段演講錄影，歡迎讀者於這篇文章留言，討論實際操作的任何疑問與心得：&lt;/p&gt;
+&lt;iframe width=&#34;640&#34; height=&#34;480&#34; src=&#34;https://www.youtube.com/embed/rI4TaWyoN8E?rel=0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;div id=&#34;註冊實作1由專案主頁面進行&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;註冊實作1：由專案主頁面進行&lt;/h3&gt;
+&lt;p&gt;這種方式適用&lt;strong&gt;預先註冊&lt;/strong&gt;，例如實驗團隊以自我要求執行研究計畫，OSF備份資料可做投稿附件；各式研究方法的教學專案；參與跨實驗室合作案的個別單位；自行測試註冊內容。&lt;/p&gt;
+&lt;p&gt;從以下畫面箭頭所指的Registration開始，只要使用者按下，就會切換到&lt;strong&gt;註冊紀錄畫面&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/425/original/2db88938-0c58-4113-a144-9d1a982589d5.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;準備第一次註冊的註冊紀錄畫面，按下&lt;code&gt;New registration&lt;/code&gt;就可以開始填寫註冊程序。如果這個專案有註冊程序尚未完成，可切換到&lt;strong&gt;Draft Registrations&lt;/strong&gt;檢視，看是否要繼續完成。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/415/original/16d59b13-a9db-4dc5-9356-1ca9857165b3.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;註冊程序第一步，選擇合適的範本。確定了就按&lt;code&gt;Create draft&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/412/original/4cb552ff-4417-4729-9b77-6c8269b4456f.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;每個範本都有需要填寫的註解資訊，下圖是最簡單的&lt;strong&gt;Open-Ended Registration&lt;/strong&gt;，只要在欄位中寫下說明即可。如果這次編輯使用者還未寫完或需要修改，需要中途離開的話請按&lt;code&gt;Save draft&lt;/code&gt;，下次再從&lt;strong&gt;Draft Registrations&lt;/strong&gt;頁面繼續編輯。如果已寫完該留資訊，就按&lt;code&gt;Preview for submission&lt;/code&gt;，預覽程序完成後，會看到的檔案備份註解資訊。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/428/original/76adf7b3-fb6d-4016-81e0-5dda5aff4219.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;檔案備份註解資訊預覽畫面。如果覺得不滿意，可按&lt;code&gt;Continue editing&lt;/code&gt;返回上一個頁面編輯。如果滿意，按&lt;code&gt;Register&lt;/code&gt;準備完成註冊程序。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/420/original/86da8b82-99e9-4821-9ecb-ce8dc98c75c7.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;正式完成註冊程序前，OSF問你要將備份的專案立刻公開，還是設定預定公開日期(embargo)。如果是立即，按下&lt;code&gt;Submit&lt;/code&gt;後，這份專案備份完成後，立刻在OSF完整公開。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/431/original/d653edb6-cd99-4705-ab5f-a88b34306a3b.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果是設定預定公開日期，OSF會設定備份的專案在公開日期之前，隱私設定為不公開。直到公開日期才會調整為公開。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/433/original/8f239cf9-a5aa-48b9-8791-006268619318.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;以下畫面是註冊程序完成後，備份專案的主頁面。按&lt;code&gt;View Registration Form&lt;/code&gt;會看到註冊程序中寫的備份註解，其中的wiki，檔案任何人都不能更動或刪除。使用者可以繼續更新原來的專案。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/607/409/original/708a5d98-5ec8-4d11-99ac-3c68005b1912.png&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;註冊實作2osf-rr專頁&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;註冊實作2：OSF RR專頁&lt;/h3&gt;
+&lt;p&gt;這種方式適用&lt;strong&gt;註冊報告&lt;/strong&gt;，就是正在準備或已經投稿註冊報告期刊之計畫書及論文，特別是已獲得期刊接受的第一階段計畫書，使用者可以由&lt;a href=&#34;https://osf.io/rr/&#34;&gt;RR專頁&lt;/a&gt;創建專案與完成註冊程序。&lt;/p&gt;
+&lt;p&gt;RR專頁的立意是提供研究者與期刊編輯評審，在公開平台檢視通過第一階段評審的計畫書，研究者按照計畫執行的實際達成度，因此以下畫面中的箭頭是從第二階段指向創建專案的按鈕。
+&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/085/original/1deb70eb-cce0-40f8-aa84-f52feec0f4b9.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果研究者的計畫在投稿第一階段評審之前，研究材料與分析程序已經準備到位，建議就以此專頁創建專案。按下書面左邊大按鈕，即出現輸入專案標題的對話框，再按下&lt;code&gt;Create&lt;/code&gt;，就完成空白專案創建。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/087/original/5b39f1c3-01bd-40d4-9a77-382bb678ba24.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;接著會進入計畫及專案註解頁面，這套註冊程序的步驟比從專案主頁面啟動來得多。建議先存為草稿，到專案頁面編輯wiki與上傳必要檔案，如計畫書與最後論文等。未完成的註冊程序，隨時可由&lt;a href=&#34;https://osf.io/rr/&#34;&gt;RR專頁&lt;/a&gt;，按下中間的大按鈕，回來繼續註冊程序。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/431/091/original/2ffd310e-3ea0-433d-a1be-001990b10930.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;到了完成填寫註解之前，研究者同樣可以預覽或儲存草稿，離開一陣子再回來繼續。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/522/original/5adfc278-11f5-4229-b3fd-105cede59b3c.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;確認完成註冊程序的預覽畫面，確定完成就按&lt;code&gt;Register&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/524/original/02853cc3-8e57-4920-ac1f-693e19b559cd.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;同樣可以設定立刻公開，或者設定預定公開日期。這個情況可以預估收到期刊回覆的時間。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/432/528/original/5da4d00d-6b6d-4f2c-b2ab-ba4c557c1176.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;註冊報告的備份專案，基本上與預先註冊的備份沒什麼差別，差異在於完成註冊程序的準備與經歷。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/372/original/34a3e5f4-73cf-440c-8295-7d70d185e8ce.jpg&#34; /&gt;&lt;/p&gt;
+&lt;!---
+
+### 管理已註冊專案
+
+隨著經手的研究越來越多，使用者必須管理正在進行與已結案的註冊專案。可參考的管理
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/536/784/original/96e8877b-626e-45b9-bee4-e1b6bbff540b.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/378/original/ca0bbfa7-8c8c-45d4-b23e-c3986fcfa3dd.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/386/original/7a67933a-ca34-4394-8280-32fbe2e996c2.png)
+
+提早公開已註冊專案
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/397/original/262f404f-e15d-4874-94a1-c845794d33be.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/393/original/f9e210e8-86d2-4cb5-87bc-b77d086d1de2.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/395/original/89b4b09a-6dd6-413a-a47a-99c8ef2b1587.png)
+
+撤除已註冊專案
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/504/404/original/b94bd973-1078-4963-837c-dd78b73c6304.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/399/original/ae6e6dfe-917c-4d42-a4ed-c37a5caffef2.png)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/291/403/original/425ba92e-7ddd-4530-926c-7f79c5f5cffd.png)
+
+從專案主網頁檢視紀錄
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/375/063/original/8828b37d-ddeb-4999-b7df-bebfec657805.png)
+
+---&gt;
+&lt;!---
+## 管理專案參考文獻
+
+[神器1](http://scchen.com/zh/post/zotero/)
+
+啟動
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/394/original/be5d82b5-7a81-49fd-8e53-8254e720ef02.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/392/original/44a564e0-cac0-4640-aa70-d7d2f920531f.jpg)
+
+連結
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/396/original/ebaed6f1-6fe8-4712-a593-757e5652baf8.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/399/original/4bdc9630-452b-4ddd-a451-3a078e81fc95.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/469/original/8661096d-8afc-4ad0-8981-1c6af926a1e6.jpg)
+
+指定文獻庫
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/403/original/37bd940e-f55d-449c-ba5b-f2a01b53651a.jpg)
+
+如果文獻庫裡有子文獻庫
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/401/original/09704a0c-0ffb-418e-847a-77909f940d9f.jpg)
+
+![](https://s3.amazonaws.com/screensteps_live/image_assets/assets/001/350/391/original/60745958-9b2f-4988-8868-77f4edc898fc.jpg)
+---&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學研究必用神器1~Zotero</title>
+      <link>/zh-hant/post/zotero/</link>
+      <pubDate>Sun, 12 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/zotero/</guid>
+      <description>
+
+
+&lt;blockquote&gt;
+&lt;p&gt;正在編寫的心理學實驗研究法教科書&lt;a href=&#34;https://scgeeker.github.io/EXPPSY_Opensci/&#34;&gt;實驗心理學：開放科學取向&lt;/a&gt;的第二章要介紹有利可重製研究的各種應用程式，我先透過部落格分享幾種今後心理科學學者最值得使用的工具。請留意介紹的一系列應用程式都是要安裝在桌上型電腦或筆記型電腦運作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;經常要讀論文寫報告的研究者都需要一個可靠的文獻管理工具，除了管理隨時隨地要下載收藏的論文，整理閱讀筆記，寫作正式報告時要引用看過的論文，更需要這樣的工具幫助你處理惱人的格式問題。目前常見的文獻管理軟體裡，我推薦&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt;的理由除了免費之外，經由雲端帳號或科學研究平台共享文獻資料與筆記，還有匯出的書目資料支援動態文件(例如&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;Rmarkdown&lt;/a&gt;)寫作。&lt;/p&gt;
+&lt;p&gt;幾年前Zotero還未釋出獨立的主程式，政治大學博士生陳勇汀就寫了一篇&lt;a href=&#34;http://blog.pulipuli.info/2013/07/zotero-introduce-zotero.html&#34;&gt;完整的介紹文章&lt;/a&gt;，我推薦有使用經驗的讀者也參考他分享的心得和好料。本篇設定讀者是看過本文才初次接觸的使用者，第一次安裝先用你習慣使用的瀏覽器打開官方網站&lt;a href=&#34;https://www.zotero.org/download/&#34;&gt;下載頁面&lt;/a&gt;。官方下載網頁會偵測你使用的作業系統與瀏覽器，提供下載路徑的圖示。請先由左方大圖下載安裝程式，安裝成功之後就可以使用。右方大圖是瀏覽器的附加元件，建議主程式安裝成功後再安裝，之後你的瀏覽器網址列會多出一個&lt;strong&gt;Save to Zotero&lt;/strong&gt;圖示，等一下就會說明這個附加元件的功用。&lt;/p&gt;
+&lt;div id=&#34;增加你的第一筆收藏&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;增加你的第一筆收藏&lt;/h3&gt;
+&lt;p&gt;任何人類的知識載體都有對應的書目格式，記錄該載體的詮釋資料(metadata)，就以大眾都知道的書藉來說，每本書都有獨一無二的ISBN，是詮釋資料必有的欄位。目前許多大學圖書館網站與購書網站會在網頁中嵌入詮釋資料，讓使用者能直接匯入書目管理軟體。&lt;/p&gt;
+&lt;p&gt;zotero安裝好主程式與瀏覽器附加元件後，你在購書網站看到想讀的書，要納入個人書目資料庫，這時只要打開zotero，就會發現你的瀏覽器網址列旁的附加元件圖示，變成像下圖的樣子(取自Washington and Lee University圖書館)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://library.wlu.edu/wp-content/uploads/2014/11/Zotero-Icons-2016.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;這時只要按一下圖示，網路順暢的話不用兩秒鐘，你就會在你的zotero主視窗看到這本書的資料已經成功匯入。相同的原理，任何論文資料庫網站，甚至有嵌入詮釋資料的個人網頁或部落格，zotero都會自動辨識其書目類型，按下圖示就能匯入zotero。如此累積一段時間，你的zotero書目資料庫會累積各種類型的書目資料。下圖是我的zotero書目一部分剪影，除了書藉與期刊論文之外，還有學位論文、程式碼、部落格文章，以及播客節目(podcast)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0001.JPG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;許多期刊論文網頁也提供論文全文下載網址，如果你有下載權限，附加元件的預設功能是匯入書目資料的同時，也會下載到你所設定的論文檔案儲存位置。檔案儲存位置可由主視窗上方的&lt;strong&gt;編輯&lt;/strong&gt;選單，選擇&lt;strong&gt;偏好設定&lt;/strong&gt;打開設定視窗，切換到「進階」-「檔案與資料夾」子視窗，自行設定&lt;strong&gt;庫目錄&lt;/strong&gt;，如下圖的示範：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0002.JPG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖視窗的&lt;strong&gt;資料目錄&lt;/strong&gt;是存放你已匯入zotero的所有書目資料，也就是每次打開Zotero在主視窗看到的所有資料。我的習慣是書目資料與論文檔案資料放在不同的資料夾，稍後我會說明如此設定的理由。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;管理文獻的推薦功能&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;管理文獻的推薦功能&lt;/h3&gt;
+&lt;p&gt;Zotero擔供像檔案總管的功能，讓使用者自訂文獻庫，將你要歸為同一類的書目資料放在同一個文獻庫。例如你正在寫一篇論文，你可以把這論文要引用的資料都歸類到這個文獻庫，之後不再需要這個文獻庫的話，可以直接刪除，而書目資料還是在你的Zotero&lt;strong&gt;資料目錄&lt;/strong&gt;。創建文獻庫只要滑鼠移到主視窗的&lt;strong&gt;我的文獻庫&lt;/strong&gt;資料夾圖示，按右鍵叫出如下圖的選單，點選&lt;strong&gt;新增文獻庫&lt;/strong&gt;，就像在檔案總管新增資料夾一樣，命名文獻庫名稱，並從&lt;strong&gt;我的文獻庫&lt;/strong&gt;拖放你要放入的書目資料。此外，你也注意到另一個功能&lt;strong&gt;新增搜尋結果&lt;/strong&gt;，這項功能也會建立文獻庫，不過你可以自訂搜尋條件，你的&lt;strong&gt;資料目錄&lt;/strong&gt;符合搜尋條件的書目資料，不論是已有的或之後新增的，都會自動加入這個文獻庫，適合累積上千筆書目資料時使用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0003.JPG&#34; title=&#34;bibliography manager functions&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖的選單之中還有其他功能，稍後我都會介紹。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;連結文書處理器與管理文獻樣式&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;連結文書處理器與管理文獻樣式&lt;/h3&gt;
+&lt;p&gt;你能找到的各家書目管理軟體都能輔助使用者在Word等書目管理軟體編輯文內引用與參考文獻，Zotero的輔助功能是由偏好設定啟動。請打開偏好設定視窗，再切換到如下圖的頁面。目前Zotero支援Word與LiberaOffice Writer兩種文書處理器，下圖顯示Zotero已經建立與已安裝的Word連結。這個頁面最下方有一個使用對話框選項，我建議勾選，等一下就知道有何功用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0004.JPG&#34; title=&#34;zotero word plugin&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;打開一份Word空白文件(我的版本是2016），上方選單會多一個Zotero欄位，切換過去會看到如下圖的畫面。一旦開始在Word編輯文件，一併啟動Zotero主程式，就可以開始使用這項選單中的所有功能。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0005.JPG&#34; title=&#34;word menu&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果你要編輯一份符合某個學術寫作格式的手稿，請先點選&lt;strong&gt;Document Preference&lt;/strong&gt;，開啟如下圖畫面的引用文獻樣式選擇視窗。除了預設的樣式，如果你要編輯的樣式不在其中，也可以自行擴充。Zotero官方提供&lt;a href=&#34;https://www.zotero.org/styles&#34;&gt;文獻樣式資料庫&lt;/a&gt;，你可以搜尋你需要的樣式csl檔。下載之後可直接雙擊匯入Zotero，或者由Zotero偏好設定中的&lt;strong&gt;引用&lt;/strong&gt;頁面匯入。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0006.JPG&#34; title=&#34;style manager&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;當你要在文件中插入要引用的文獻，或者編輯上一次置入的引用，只要點選Word的Zotero選單最左方&lt;strong&gt;Add/Edit Citation&lt;/strong&gt;，就會出現如以下圖的視窗。&lt;strong&gt;請留意&lt;/strong&gt;，如果在之前偏好設定裡的文書處理器沒有勾選最下方的選項，出現的是一個像網址列的對話框。下圖的對話框操作與Zotero主程式頁面大同小異，你可以從右上方對話框搜尋你要引用的文獻，或者使用你曾經建立的文獻庫，從左方選單切換到文獻庫中選擇。為寫作論文建立文獻庫如同打草稿，你如果是在Word之外的地方建立寫作大綱，這樣的功能剛好搭配你的寫作習慣。一旦你從選單中選好要插入的書目資料(可複選)，按下右下角的&lt;strong&gt;OK&lt;/strong&gt;，你的Word文件就會出現符合設定格式的文內引用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0007.JPG&#34; title=&#34;citation manager&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上圖的對話框還有更進一步的功能，有寫過論文的讀者知道APA的文內引用有不同型式。如果你要編輯像這樣的句子：“張三(2000)提出關於焦慮感量的理論”。選好要引用的文獻，只要開啟最下方的編輯器，可以在視窗中改變引用書目的文字內容。&lt;/p&gt;
+&lt;p&gt;如果你要引用兩項以上的書目資料，點選最下面的&lt;strong&gt;多重來源&lt;/strong&gt;，就會出現如上圖畫面最右方的欄位。接著你再從中央欄位選擇複數書目，增加到右方欄位。如果你要編輯書目的文字內容，同樣可在最下方編輯器視窗處理。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;bibtex與匯出書目檔bib&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;BibTex與匯出書目檔bib&lt;/h3&gt;
+&lt;p&gt;有時候你需要匯出一部分書目資料，分享給他人或用於其他工作。這時你就可以用到稍早提到的選單內(見下圖)&lt;strong&gt;匯出文獻庫&lt;/strong&gt;功能，只要先選好要匯出的文獻庫資料夾，點選這個功能就有對話框出現，讓你選擇要匯出的書目檔格式。我推薦&lt;a href=&#34;https://zh.wikipedia.org/zh-tw/BibTeX&#34;&gt;BibTex書目資料格式&lt;/a&gt;，因為這是各家書目管理軟體都支援的格式，並且是Latex排版軟體使用的格式，這項功能的好處我會在下一篇網誌介紹。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0003.JPG&#34; title=&#34;bibliography manager functions&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;我的Zotero有安裝外掛套件&lt;a href=&#34;https://github.com/retorquere/zotero-better-bibtex/releases/tag/v5.0.183&#34;&gt;better bibtex&lt;/a&gt;，才能使用上圖選單最後兩個功能。這個套件可以給予每個書目一個獨特的&lt;strong&gt;citation key&lt;/strong&gt;(見下圖)，能複製到markdown文件，經Latex排版渲染的文件符合學術寫作格式的文內引用與參考文獻。下一篇我將介紹如何使用Rmarkdown生成文件，也就是編輯動態文件的方法，有興趣者可以參考&lt;a href=&#34;https://retorque.re/zotero-better-bibtex/installation/&#34;&gt;安裝指南&lt;/a&gt;，在自已的zotero安裝這個套件。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0008.JPG&#34; title=&#34;citation key&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;註冊與使用你的zotero雲端帳號&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;註冊與使用你的zotero雲端帳號&lt;/h3&gt;
+&lt;p&gt;自已收集的書目資料可以透過Zotero雲端與他人分享，或者完全公開。首先在&lt;a href=&#34;https://www.zotero.org/user/login&#34;&gt;Zotero官網&lt;/a&gt;註冊帳號，你會有一個專屬頁面。接著在&lt;strong&gt;偏好設定&lt;/strong&gt;的&lt;strong&gt;同步&lt;/strong&gt;頁面，輸入你的帳號密碼，個人電腦的Zotero書目資料就可以同步到Zotero雲端。我的設定如下圖，因為官方雲端帳鳥只有1GB，所以我不同步全文內容。開啟&lt;strong&gt;自動同步&lt;/strong&gt;，每次開啟Zotero主程式都會自動同步雲端資料，你可以在個人的Zotero官網帳號頁面，檢視同步後的結果。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0009.JPG&#34; title=&#34;sync&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;與他人共享你收藏的文獻資料&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;與他人共享你收藏的文獻資料&lt;/h3&gt;
+&lt;p&gt;要與他人分享的書目資料，就放在&lt;strong&gt;群組文獻庫&lt;/strong&gt;吧。在主程式視窗左方，收起&lt;strong&gt;我的文獻庫&lt;/strong&gt;就會看到如下圖的圖示。管理方式與&lt;strong&gt;我的文獻庫&lt;/strong&gt;相同，把想要分享或公開的書目資料放到&lt;strong&gt;群組文獻庫&lt;/strong&gt;的資料夾即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0010.JPG&#34; title=&#34;Group Library&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;如果你要公開或與特定人士分享，就在個人的Zotero官網帳號頁面調整設定，例如下圖是一個&lt;strong&gt;群組文獻庫&lt;/strong&gt;的官網帳號設定，你可以根據實際需要隨時調整。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/myzotero-0011.JPG&#34; title=&#34;Group Library setting&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;未來學術寫作不必再煩惱論文格式&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;未來學術寫作不必再煩惱論文格式？&lt;/h3&gt;
+&lt;p&gt;最後為下一篇網誌做個預告。除了用傳統文書編輯器寫論文，現在的動態文件編輯已經越來越成熟，上手門檻也不斷降低。之前提到的匯出書目檔bib，能搭配&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudio&lt;/a&gt;編輯markdown格式文件，在文件內插入書目檔bib存在的citation key，就可以渲染符合寫作格式的pdf或Word檔案。現在還有輔助即時編輯的R套件&lt;a href=&#34;https://github.com/crsh/citr&#34;&gt;citr&lt;/a&gt;，這些套件還在演進中，我們寫作時雖然要知道該用那一套格式，但是這些套件讓我們不必再煩惱其中的細節。未來共享功能再提昇之後，我們將能與同事經過網路協作編輯動態文件。&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>物件方向效應跨語言研究經驗分享(一)：心理科學加速器合作專案</title>
+      <link>/zh-hant/post/orientation-language-part01/</link>
+      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/orientation-language-part01/</guid>
+      <description>
+
+
+&lt;div id=&#34;心理科學加速器是什麼&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;心理科學加速器是什麼？&lt;/h1&gt;
+&lt;p&gt;心理科學存在高比例的偽陽性結果(false positive results)的事實&lt;span class=&#34;citation&#34;&gt;(Fanelli 2010; Ioannidis 2005)&lt;/span&gt;，促成全球心理學者認清要評估研究發現的普遍性與真實性，需要累積大量的再現資料。最好的作法是組織不同地區的實驗室同時進行相同程序的實驗，以整合分析方法解析結果。2000年之後已經出現以多個機構長期合作收集資料的專案&lt;span class=&#34;citation&#34;&gt;(Reifman and Grahe 2016)&lt;/span&gt;，以及課題導向的短期合作專案&lt;span class=&#34;citation&#34;&gt;(Klein et al., n.d.; Open Science Collaboration 2015; Ebersole et al. 2016; Frank 2016; Reifman and Grahe 2016)&lt;/span&gt;。兩種合作模式關注的課題圍繞核心學者關心的方向，或多數學者公認的重要題目。尚有許多獨立研究者規劃長期經營，有理論潛力但是出版成果還不足以判斷研究發現的普遍性。2016年第一屆&lt;a href=&#34;http://improvingpsych.org/&#34;&gt;SIPS研討會&lt;/a&gt;，與會學者提出提供獨立研究徵求合作者，合作重現最新研究成果的媒合平台&lt;a href=&#34;https://osf.io/view/StudySwap/&#34;&gt;Study Swap&lt;/a&gt;，方便心理學原創研究，能透過語言文化條件相同的合作實驗室，迅速累積再現成果。&lt;/p&gt;
+&lt;p&gt;Study Swap平台主持人&lt;a href=&#34;https://christopherchartier.com/&#34;&gt;Christopher Chartier&lt;/a&gt;於2017年8月26日，在個人部落格發佈建立&lt;a href=&#34;https://christopherchartier.com/2017/08/26/building-a-cern-for-psychological-science/&#34;&gt;心理科學加速器的第一份公開文章&lt;/a&gt;，招集有共同理念的各國研究者組織&lt;a href=&#34;https://psysciacc.org/people/&#34;&gt;十個運作與諮詢委員會&lt;/a&gt;，將Study Swap的運作模式推廣至全球心理科學研究。心理科學加速器的初期報導已在2017年11月翻譯為&lt;a href=&#34;http://www.openedscience.org/?p=71&#34;&gt;中文&lt;/a&gt;，發起建立的第一天就邀請90多位各國學者一起發想及撰寫的&lt;a href=&#34;https://psyarxiv.com/785qu/&#34;&gt;說明&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Moshontz et al. 2018)&lt;/span&gt;剛於4月上旬正式投稿期刊Advances in Methods and Practices in Psychological Science (AMPPS)，五月至六月期間進行的第二次計畫徵件，每項計畫將由十位參與研究者以公開評審的方式，評估適合加盟實驗室同步進行的研究計畫。這篇文章整理提出計畫與參與運作的經驗，以及至目前為止的準備過程，給有興趣提出計畫的先進及後輩一些參考。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;研究構想提出過程&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;研究構想提出過程&lt;/h1&gt;
+&lt;p&gt;Christopher Chartier在召集創始成員時，同時開啟第一次計畫徵件。當時我剛將與Rolf Zwaan及Bjorn De Koning合作的物件方向研究計畫書送第一階段評審，這個計畫源自2001年Stanfield與Zwaan運用句圖判別作業發現的&lt;strong&gt;物件方向反應優勢&lt;/strong&gt;&lt;span class=&#34;citation&#34;&gt;(Stanfield and Zwaan 2001)&lt;/span&gt;。這項研究發現被許多研究者認為與Glenberg與Kaschak&lt;span class=&#34;citation&#34;&gt;(Glenberg and Kaschak 2002)&lt;/span&gt;提出的動作相容效應(Action-compatibility effect)，可用來檢驗體現知理論對語言理解的預測。然而合作過程中我理解物件方向反應優勢的原始構想是根據閱讀者讀過句子後，心智會模擬物件呈現形象的體現認知理論&lt;span class=&#34;citation&#34;&gt;(Barsalou 1999)&lt;/span&gt;，動作的心智模擬並未在可預測的因素之列。而且物件方向反應優勢是同類型實驗結果最微弱的系列，不過目前只有英語及荷語的研究結果&lt;span class=&#34;citation&#34;&gt;(Zwaan and Pecher 2012)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;有沒有語言能發現比英語更明顯的物件方向反應優勢，成為我提出研究構想的重要動機。第一次徵件包括我的計畫有8件，經由最初的領導小組(Leadership Team)與研究計畫遴選委員會(Study Selection Committee)成員合作評審。我本來只是抱持嘗試的心態姑且試之，沒想到最後被選為三件研究案之一，讀者可參考我根據評審反應修改的&lt;a href=&#34;https://docs.google.com/document/d/1VntzhDXmIEVG0RtF3kOn_liLTGxk7Ovzy-0ImrDFMOU/edit?usp=sharing&#34;&gt;構想書&lt;/a&gt;，&lt;a href=&#34;http://scchen.com/en/project/mental-simulation/&#34;&gt;我的網頁&lt;/a&gt;與&lt;a href=&#34;https://psysciacc.wordpress.com/2018/01/24/new-study-accepted-the-object-orientation-effect/&#34;&gt;心理科學加速器部落格&lt;/a&gt;都有這項計畫的介紹。這項研究案與其他兩項的不同處有這是此次唯一的認知心理學研究，唯一需要每個實驗室安裝指定實驗軟體的實驗，以及使用&lt;strong&gt;貝氏統計&lt;/strong&gt;隨時分析實驗結果，讓每個實驗室自行能調節實際的研究參與者人數。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;前置準備經驗&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;前置準備經驗&lt;/h1&gt;
+&lt;p&gt;接受構想書之後，就是開始準備讓專業期刊進行審查的註冊研究計畫書。提出構想的研究者如果是獨立研究者，Christopher Chartier會媒合一位參與運作小組或委員會的成員，與主要研究者一起合作規畫與撰寫計畫書。像是我的與另一項研究案&lt;a href=&#34;https://psysciacc.wordpress.com/2017/12/05/accepted-for-2018-gendered-social-category-representations/&#34;&gt;The Gendered Nature of Prejudice&lt;/a&gt;，都有與一位不同機構甚至不同國家的研究者遠端合作。心理科學加速器也希望藉此機會嘗試同時執行兩種不同性質的研究，加盟實驗室的執行狀況，還有資料的可用性。&lt;/p&gt;
+&lt;p&gt;因為有國外合作者的幫忙，很快就選定要投稿的期刊。撰寫計畫書時了解到原始實驗的刺激材料，對於非英語系國家或長期生活於美國社會的參與者來說，不見得全部都熟悉。所以我們規劃一套物件熟悉度評量表，將請聯盟實驗室的成員協助評估，做為正式實驗調整不同語言刺激項目的參考。&lt;/p&gt;
+&lt;p&gt;由於有兩個不同性質的研究可能同時進行，為了評估遷移效應(carry-over effect)對兩件研究結果的影響，現在正在五間美國的實驗室進行預先試驗(pilot study)。我還有一個目的是建立任何實驗室都能操作的實驗結果分析方法，藉著目前已收集到的資料，我已經完成分析方法的程序說明與範例。等預先試驗資料收集且分析完成，計畫書即可正式投稿。至於接受合作實驗室的報名，最早可能會在正式投稿之前，因為現在有部分期刊要求正式投稿時，要附上合作實驗室的倫理審查證明。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;給有意提案者的建議&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;給有意提案者的建議&lt;/h1&gt;
+&lt;p&gt;因為第一次的經驗，新一波計畫徵件的評審預計將更有系統的挑選評審者。登記參與心理科學加速器的實驗室主持人，都有機會參與評審，但是為了讓委員會能找到適當的評審者，建議已登記的研究者在&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1z6nIPLtDs26GnrdKz_WwJnuN5aw8Vi3CGLra0L-HUGk/edit?usp=sharing&#34;&gt;實驗室現況登記表&lt;/a&gt;，登錄主持人專長資料。觀察他人的計畫構想，有助思考自已想探索的問題，需要全世界實驗室一起收集資料的計畫。&lt;/p&gt;
+&lt;p&gt;如果你目前不是有正職工作的獨立研究者，你還是可以提出計畫，也可以向Christopher Chartier自我推薦參與某個委員會的運作，只要你備齊個人履歷與說明能幫助目標委員會運作的理由，領導小組同意就能加入。除了是計畫評審候補，也有機會與被接受的計畫主持人合作，增加研究經歷。&lt;/p&gt;
+&lt;p&gt;今後計畫的可執行性是必要考量條件，不需要加盟實驗室付出增添軟硬體的額外成本，也能執行的計畫較容易獲得青睞。像是第一次接受的另外兩項研究，都是網頁實驗，資料直接由計畫主持人管理。計畫有沒有讓全球實驗室合作參與價值，也會是評審的重點，只是價值的判斷可能將隨著運作經驗的累積，變得越來越細緻複雜。&lt;/p&gt;
+&lt;p&gt;所有的計畫都必須投稿期刊，取得第一階段註冊研究計畫接受才能正式開始研究。因此有信心取得目標期刊接受的計畫，也會是得到PSA選案委員接受的重點。這也代表加盟實驗室想用運用註冊研究或開放科學原則經營團隊，可以透過提交計畫或參與執行學習。例如我的計畫需要合作實驗室預先註冊逐次分析的樣本數。&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-BarsalouPerceptualsymbolsystems1999&#34;&gt;
+&lt;p&gt;Barsalou, Lawrence W. 1999. “Perceptual Symbol Systems.” &lt;em&gt;Behavioral and Brain Sciences&lt;/em&gt; 22: 577–660. &lt;a href=&#34;https://doi.org/10.1017/S0140525X99002149&#34;&gt;https://doi.org/10.1017/S0140525X99002149&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-EbersoleManyLabsEvaluating2016&#34;&gt;
+&lt;p&gt;Ebersole, Charles R., Olivia E. Atherton, Aimee L. Belanger, Hayley M. Skulborstad, Jill M. Allen, Jonathan B. Banks, Erica Baranski, et al. 2016. “Many Labs 3: Evaluating Participant Pool Quality Across the Academic Semester via Replication.” &lt;em&gt;Journal of Experimental Social Psychology&lt;/em&gt;, Special issue: Confirmatory, 67 (November): 68–82. &lt;a href=&#34;https://doi.org/10.1016/j.jesp.2015.10.012&#34;&gt;https://doi.org/10.1016/j.jesp.2015.10.012&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-FanelliPositiveResultsIncrease2010&#34;&gt;
+&lt;p&gt;Fanelli, Daniele. 2010. “‘Positive’ Results Increase down the Hierarchy of the Sciences.” &lt;em&gt;PLOS ONE&lt;/em&gt; 5 (4): e10068. &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0010068&#34;&gt;https://doi.org/10.1371/journal.pone.0010068&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Frankcollaborativeapproachinfant2016&#34;&gt;
+&lt;p&gt;Frank, Michael. 2016. “A Collaborative Approach to Infant Research: Promoting Reproducibility, Best Practices, and Theory-Building.” PsyArXiv. &lt;a href=&#34;https://doi.org/10.17605/OSF.IO/27B43&#34;&gt;https://doi.org/10.17605/OSF.IO/27B43&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-GlenbergGroundinglanguageaction2002&#34;&gt;
+&lt;p&gt;Glenberg, ArthurM, and MichaelP Kaschak. 2002. “Grounding Language in Action.” &lt;em&gt;Psychonomic Bulletin &amp;amp; Review&lt;/em&gt; 9 (September): 558–65. &lt;a href=&#34;https://doi.org/10.3758/bf03196313&#34;&gt;https://doi.org/10.3758/bf03196313&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ioannidis_why_2005&#34;&gt;
+&lt;p&gt;Ioannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” &lt;em&gt;PLOS Med&lt;/em&gt; 2 (8): e124. &lt;a href=&#34;https://doi.org/10.1371/journal.pmed.0020124&#34;&gt;https://doi.org/10.1371/journal.pmed.0020124&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-KleinInvestigatingVariationReplicability2014&#34;&gt;
+&lt;p&gt;Klein, Richard A., Kate A. Ratliff, Michelangelo Vianello, Reginald B. Adams Jr, Štěpán Bahnı́k, Michael J. Bernstein, Konrad Bocian, et al. n.d. “Investigating Variation in Replicability.” &lt;em&gt;Social Psychology&lt;/em&gt; 45: 142–52. &lt;a href=&#34;https://doi.org/10.1027/1864-9335/a000178&#34;&gt;https://doi.org/10.1027/1864-9335/a000178&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-MoshontzPsychologicalScienceAccelerator2018&#34;&gt;
+&lt;p&gt;Moshontz, Hannah, Lorne Campbell, Charles R. Ebersole, Hans IJzerman, Heather L. Urry, Patrick S. Forscher, Jon Grahe, et al. 2018. “The Psychological Science Accelerator: Advancing Psychology Through a Distributed Collaborative Network.” &lt;em&gt;PsyArXiv&lt;/em&gt;, April. &lt;a href=&#34;https://doi.org/10.17605/OSF.IO/785QU&#34;&gt;https://doi.org/10.17605/OSF.IO/785QU&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-OpenScienceCollaborationEstimatingreproducibilitypsychological2015&#34;&gt;
+&lt;p&gt;Open Science Collaboration. 2015. “Estimating the Reproducibility of Psychological Science.” &lt;em&gt;Science&lt;/em&gt; 349 (6251): aac4716. &lt;a href=&#34;https://doi.org/10.1126/science.aac4716&#34;&gt;https://doi.org/10.1126/science.aac4716&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ReifmanIntroductionSpecialIssue2016&#34;&gt;
+&lt;p&gt;Reifman, Alan, and Jon E. Grahe. 2016. “Introduction to the Special Issue of Emerging Adulthood.” &lt;em&gt;Emerging Adulthood&lt;/em&gt; 4 (3): 135–41. &lt;a href=&#34;https://doi.org/10.1177/2167696815588022&#34;&gt;https://doi.org/10.1177/2167696815588022&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-stanfield_effect_2001&#34;&gt;
+&lt;p&gt;Stanfield, R. A., and R. A. Zwaan. 2001. “The Effect of Implied Orientation Derived from Verbal Context on Picture Recognition.” &lt;em&gt;Psychological Science&lt;/em&gt; 12 (2): 153–56. &lt;a href=&#34;https://doi.org/10.1111/1467-9280.00326&#34;&gt;https://doi.org/10.1111/1467-9280.00326&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ZwaanRevisitingMentalSimulation2012&#34;&gt;
+&lt;p&gt;Zwaan, Rolf A., and Diane Pecher. 2012. “Revisiting Mental Simulation in Language Comprehension: Six Replication Attempts.” &lt;em&gt;PLoS ONE&lt;/em&gt; 7: e51382. &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0051382&#34;&gt;https://doi.org/10.1371/journal.pone.0051382&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>第一本華文心理學學術期刊開工了</title>
+      <link>/zh-hant/post/first-chinese-rr-journal/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/first-chinese-rr-journal/</guid>
+      <description>
+
+
+&lt;div id=&#34;台灣最老華文第一的心理學學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;台灣最老、華文第一的心理學學術期刊&lt;/h2&gt;
+&lt;p&gt;2018/2/22是台灣春節的開工第二日，回到研究室刷一下臉書看到了這則訊息：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Screenshot-2018-2-22_CJP_submission.png&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;去年我只有在自己服務的學校與中正大學舉辦兩場&lt;a href=&#34;https://osf.io/e69mb/&#34;&gt;小型註冊研究工作坊&lt;/a&gt;，就向中華心理學刊現任主編&lt;a href=&#34;http://www.psy.ccu.edu.tw/members/bio.php?PID=21&#34;&gt;姜定宇教授&lt;/a&gt;建議：籌備主題式註冊研究特刊，以及允許投稿作者於完成投稿後自行公開手稿。想不到今年開工看到更大的進展：今年起中華心理學刊歡迎作者投稿註冊研究計畫書，並採二階段評審。我想簡介一下這本期刊，還有給一些執行註冊研究徵稿政策的建議。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite&#34;&gt;中華心理學刊&lt;/a&gt;於1958年創刊，是台灣第一本心理學學術期刊，到今年正好一甲子，由&lt;a href=&#34;http://140.112.62.7/cpa/zh/&#34;&gt;台灣心理學會&lt;/a&gt;委派來自各領域的台灣資深心理學者擔任編輯。主要任務是提供各國任何心理學領域專業學者，以學者以中文或英文發表論文。2000年之後台灣出現提供臨床心理學與諮商心理學者發表中文論文的期刊，而這兩個領域是台灣心理學界專業人口最多的領域，加上多數中青代學者以投稿國外英文期刊為目標，刊登的論文數量逐漸下降。近年積極爭取轉型，除了舉辦各種專刊徵稿，也終於願意嘗試增加投稿樣態。過去的中華心理學期刊只接授原創性研究論文(research article)的投稿，今年開始徵求註冊研究(registered report)與檢驗原創性研究的重製研究報告(research report)。&lt;/p&gt;
+&lt;p&gt;雖然我看到消息時官方網站已經有&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite/blank-5&#34;&gt;中文徵稿啟事&lt;/a&gt;，期刊編輯部尚未更新&lt;a href=&#34;https://cjpsy2007.wixsite.com/cjpsysite-english/instructions-to-authors&#34;&gt;英文徵稿啟事&lt;/a&gt;，也尚未見到期刊主編發表正式聲明。我推測現任主編群已經了解綜合性學術期刊需要多元投稿模式，才能吸引有品質的稿件，但是要如何吸引願意嘗試不同型態的學者，現任主編群必須拿出明確的策略方案。在主編構思聲明的此時，我用這篇文章回顧四本經營註冊研究已有規模的期刊，並提供我認為第一本華文註冊研究期刊可以著力的方向。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;cortex第一本徵求註冊研究的學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Cortex：第一本徵求註冊研究的學術期刊&lt;/h2&gt;
+&lt;p&gt;Cordex於2013年邀請英國卡迪夫大學心理學系教授&lt;a href=&#34;http://psych.cf.ac.uk/contactsandpeople/chambersc1.php&#34;&gt;Chris Chambers&lt;/a&gt;擔任註冊研究執行主編，成為全世界第一本提供註冊研究投稿的學術期刊。Chris Chambers發表的聲明&lt;span class=&#34;citation&#34;&gt;(2013)&lt;/span&gt;與設計的&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;投稿指南&lt;/a&gt;，成為其後開辦註冊研究期刊的範本。之後開辦的期刊都根據經營方針，修改這份投稿指南讓投稿者準備投稿資訊與研究材料。以下評審流程圖摘自&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;Cortex投稿指南&lt;/a&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/cortex-RR-workflow.JPG&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Chris Chambers經常受邀擔任工作坊講師，更公開每次的&lt;a href=&#34;https://osf.io/d4fh5/&#34;&gt;講演資料&lt;/a&gt;，是有心學習者可參考的資訊來源。Center for Open Science於2017年1月邀請他舉辦網路工作坊，以下是工作坊錄影。&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube-nocookie.com/embed/7MQ5XB1WUp8?rel=0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;div id=&#34;journal-of-european-psychology-students由心理學研究生一手包辦的學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Journal of European Psychology Students：由心理學研究生一手包辦的學術期刊&lt;/h2&gt;
+&lt;p&gt;Journal of European Psychology Students是由正於歐洲各大學攻讀心理學博士的各領域研究生主辦的學術期刊，除了一般的投稿評審模式，2016年起也正式徵求註冊研究&lt;span class=&#34;citation&#34;&gt;(King et al. 2016)&lt;/span&gt;。&lt;a href=&#34;https://osf.io/qewck/&#34;&gt;投稿指南&lt;/a&gt;是Cortex版本的簡化版，並提供&lt;a href=&#34;https://osf.io/h7trs/&#34;&gt;重製型註冊研究範本&lt;/a&gt;以及&lt;a href=&#34;https://osf.io/8qk56/&#34;&gt;原創性註冊研究範本&lt;/a&gt;。儘管這本期刊沒有列入SCI或SSCI資料庫，經營方針是新興與尋求轉型的期刊可學習的對象。下圖是Journal of European Psychology Students的註冊研究評審流程：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/401-2791-1-PB.JPG&#34; width=&#34;75%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;comprehensive-results-in-social-psychology百分之百的註冊研究學術期刊&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Comprehensive Results in Social Psychology：百分之百的註冊研究學術期刊&lt;/h2&gt;
+&lt;p&gt;於2016年開始正式發行的Comprehensive Results in Social Psychology是完全以註冊研究模式經營的社會心理學期刊，&lt;a href=&#34;http://www.tandf.co.uk/journals/authors/rrsp-submission-guidelines.pdf&#34;&gt;投稿指南&lt;/a&gt;也是改良Cortex的版本。但是因此經營成本較高，部分稿件需付審查費，所有出版論文，包括主編聲明&lt;span class=&#34;citation&#34;&gt;(Jonas and Cesario 2016)&lt;/span&gt;，都是付費論文。除非作者自付費用，讀者只能下載公開於預印本平台的手稿。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;collabra-psychology-更嚴謹的註冊研究評審程序&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Collabra: Psychology 更嚴謹的註冊研究評審程序&lt;/h2&gt;
+&lt;p&gt;Collabra: Psychology是創刊剛滿五年的新興綜合型心理學學術期刊，到了2017年下半年才開始正式宣佈&lt;a href=&#34;https://medium.com/@CollabraOA/registered-reports-at-collabra-psychology-6938b2059fc7&#34;&gt;徵求註冊研究的啟事&lt;/a&gt;。執行主編正是Chris Chambers，所以推出&lt;a href=&#34;https://docs.google.com/document/d/1eeXPEC_oc4OYlywC9pRt6seL2xazlT58jAtRsCuEdCI/edit#&#34;&gt;進階的投稿指南&lt;/a&gt;。增加的要求是作者必須在計畫中提出研究紀錄登錄方式，並且確實執行。詳情可參考期刊的&lt;a href=&#34;https://osf.io/my3wa/&#34;&gt;投稿範本&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Collabra: Psychology的方針與&lt;a href=&#34;http://improvingpsych.org/&#34;&gt;Society for the Improvement of Psychological Science(SIPS)&lt;/a&gt;密切合作有關。從2016年起SIPS舉辦年度研討會，但是不同於一般學術研討會，SIPS以黑客松、工作坊與閃電演講為內容，創造與會者合作構思並規劃提昇心理科學品質方案的場域。未來兩方的合作可望推出讓註冊研究更普及的方案。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;中華心理學刊可採取的經營模式&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;中華心理學刊可採取的經營模式&lt;/h2&gt;
+&lt;p&gt;除了以上四本期刊，Center for Open Science的&lt;a href=&#34;https://cos.io/rr/&#34;&gt;註冊研究網頁&lt;/a&gt;不定期更新開辦註冊研究的期刊清單與投稿資訊，值得學刊編輯群與讀者留意。考量期刊的經營狀況，還有台灣以及華文學術環境，我認為Journal of European Psychology Students的經營模式比較適合現在的中華心理學刊。個人的理由來自幾點觀察：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;多數華人學者還不大了解註冊研究的流程，像是有位語言認知域的老師與我私下交談後，才知道註冊研究只在第一階段評審理論與分析方法的邏輯關聯。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;已經習慣傳統研究啟動及發表模式的研究者與團隊，覺得註冊研究模式會增加工作負荷與寫作時間。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;華文心理學圈缺乏有影響力的&lt;strong&gt;奠基研究(Capstone Research)&lt;/strong&gt;，使得這個社群的心理學者缺乏知識危機的意識，難以形成需要新型態發表模式的學術氛圍。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;基礎養成教育削弱研究者對&lt;strong&gt;待澄清的研究操作(Questionable Research Practices)&lt;/strong&gt;的認識，外在的績效制度與獎補助政策，也有可能助長研究者們採取只求有成果發表的動機。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由投稿須知的註冊研究說明「資料尚未收集的原創性實徵研究論文。」，我認為現在的方針是鼓勵研究者投稿的計畫書偏向&lt;strong&gt;探索性研究(Exploratory Research)&lt;/strong&gt;，重製已出版研究的&lt;strong&gt;確證性研究(Confirmatory Rsearch)&lt;/strong&gt;則歸為研究報告，而且該段投稿須知中沒有鼓勵研究者採&lt;strong&gt;預先註冊(pre-registreation)&lt;/strong&gt;執行計畫。對照第一本徵求註冊期刊Cortex在&lt;a href=&#34;https://www.elsevier.com/__data/promis_misc/PROMIS%20pub_idt_CORTEX%20Guidelines_RR_29_04_2013.pdf&#34;&gt;投稿指南&lt;/a&gt;中，有說明Cortex平等對待原創性研究與高價值重製研究的文字(“High-value replication studies are welcome and will be treated with equal priority to novel studies.”)。以目前已公開的投稿須知，中華心理學刊將無法照搬Cortex的投稿指南。相對來說，Journal of European Psychology Students區分原創性與再現研究的投稿及評審模式，是比較可能採行的策略。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;促進註冊研究的策略&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;促進註冊研究的策略&lt;/h2&gt;
+&lt;p&gt;不論中華心理學刊會採取什麼樣的執行模式，讓更多研究者願意採用註冊研究模式經營研究計畫與發表成果，需要製造搭配條件，啟發內在動機。最後我提供一些可行措施：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;改善研究生畢業論文產製流程
+台灣各大學的心理學研究所畢業論文或報告要求，都是要學生先提出計畫書，再執行研究完成論文，各校的主要差別是計畫書的審查方式。如果採用註冊研究模式，學生提出的計畫書只要說明關鍵研究的理論基礎與執行方法，最後的口試以檢視有無按照計畫書執行為重點。中華心理學刊可做為計畫書評審平台，讓師生能明確掌握執行進度，也能確保畢業論文有正式發表的管道。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;輔助註冊研究的研究經費補助政策
+近幾年歐美各國已有&lt;a href=&#34;http://scchen.com/zh/post/text_2016003/&#34;&gt;提昇研究品質的經費補助政策&lt;/a&gt;，目前台灣的整體環境受制於預算總量管制，加上主政者的想法，未來幾年各機構研究者必然還是採現在的競爭模式爭取經費。但是我認為可以先從心理學門試行最低度補助計畫，也就是主持人提的研究計畫全部或部分內容已經通過期刊的第一階段評審，經費補助者可根據可執行的部分(參與者費、倫理審查費、設備租用費等)，核給最低限度的研究經費，接著再根據評分及意見決定其他項目經費。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;向各研究倫理中心介紹註冊研究與開放科學
+我舉辦兩次工作坊都遇到研究倫理審查的實務問題，去年底也遇到台灣大學研究倫理中心人員親自訪視。交流中發現如台大的倫理中心，負責人員完全不了解註冊研究。國外有實際操作經驗的研究者都肯定比起傳統研究流程，註冊研究的參與者隱私資料保護，比起倫理中心的建議更為嚴格。如果能讓各倫理中心負責人員了解註冊研究模式，有利增進申請與執行研究倫理保障程序的效率。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-ChambersRegisteredReportsnew2013&#34;&gt;
+&lt;p&gt;Chambers, Christopher D. 2013. “Registered Reports: A New Publishing Initiative at Cortex.” &lt;em&gt;Cortex&lt;/em&gt; 49 (3): 609–10. &lt;a href=&#34;https://doi.org/10.1016/j.cortex.2012.12.016&#34;&gt;https://doi.org/10.1016/j.cortex.2012.12.016&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-JonasHowcanpreregistration2016&#34;&gt;
+&lt;p&gt;Jonas, Kai J., and Joseph Cesario. 2016. “How Can Preregistration Contribute to Research in Our Field?” &lt;em&gt;Comprehensive Results in Social Psychology&lt;/em&gt; 1 (1-3): 1–7. &lt;a href=&#34;https://doi.org/10.1080/23743603.2015.1070611&#34;&gt;https://doi.org/10.1080/23743603.2015.1070611&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-KingRegisteredReportsStudent2016&#34;&gt;
+&lt;p&gt;King, Maedbh, Fabian Dablander, Lea Jakob, Maria Agan, Felicitas Huber, Jonas Haslbeck, and Katharina Brecht. 2016. “Registered Reports for Student Research.” &lt;em&gt;Journal of European Psychology Students&lt;/em&gt; 7 (1). &lt;a href=&#34;https://doi.org/10.5334/jeps.401&#34;&gt;https://doi.org/10.5334/jeps.401&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>`bookdownplus`使用心得</title>
+      <link>/zh-hant/post/use-bookdownplus/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/use-bookdownplus/</guid>
+      <description>
+
+
+&lt;p&gt;學會使用RMarkdown寫作之後，我一直在尋找能整合研究與教學寫作的方法與工具。認識&lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Aust and Barth 2017)&lt;/span&gt;之後，讓我開始想像有一天我的電腦只會剩下&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudio&lt;/a&gt;與&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt;兩種軟體。但是&lt;code&gt;papaja&lt;/code&gt;只適用英文論文寫作，無法滿足經常需要中文寫作的我。接著看到&lt;strong&gt;R忍者大師&lt;/strong&gt;謝益輝開發的&lt;a href=&#34;https://bookdown.org/yihui/bookdown/get-started.html&#34;&gt;&lt;code&gt;bookdown&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Xie 2017)&lt;/span&gt;，讓我開始燃起希望。不過最終版完全是編輯與出版書本的套件，從此多了個好用的編書工具，還不是全方位的學術寫作工具箱。&lt;/p&gt;
+&lt;p&gt;好在正在奧地利因斯布魯克的大學進行博士後研究的&lt;a href=&#34;http://www.pzhao.org/zh/&#34;&gt;趙鵬&lt;/a&gt;有相同的需要，自行改良出進階的&lt;a href=&#34;https://github.com/pzhaonet/bookdownplus&#34;&gt;&lt;code&gt;bookdownplus&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Zhao 2017)&lt;/span&gt;。&lt;code&gt;bookdownplus&lt;/code&gt;提供簡易的指令與多樣模板(templates)。根據說明檔，目前有&lt;code&gt;academic article&lt;/code&gt;, &lt;code&gt;book&lt;/code&gt;, &lt;code&gt;thesis&lt;/code&gt;, &lt;code&gt;poster&lt;/code&gt;, 與 &lt;code&gt;journals&lt;/code&gt;等學術出版格式模板。還有趙博士個人興趣的&lt;code&gt;poem book&lt;/code&gt;與&lt;code&gt;guitar chords&lt;/code&gt;模板。這些模板的成品可參考以下來自官方github的截圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_article.jpg&#34; title=&#34;academic article&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_yihui_zh.jpg&#34; title=&#34;book&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_thesis_classic.jpg&#34; title=&#34;thesis&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poem.jpg&#34; title=&#34;poster&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_journal.jpg&#34; title=&#34;journal&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poster.jpg&#34; title=&#34;poem book&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_guitar.jpg&#34; title=&#34;guitar&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;’journal’模板想必會在開放科學界炙手可熱。研究團隊成員可以透過協作，運用’journal’模板紀錄研究過程。研究成果正式出版之後，就能公開讓大眾檢視。&lt;/p&gt;
+&lt;p&gt;如我一樣的繁體中文使用者，必須在完成手冊中的安裝程序之後，安裝一些字型才能正常使用中文套件。根據我在WINDOWS 10的測試，需要安裝的字型檔至少有&lt;code&gt;KaiTi.ttf&lt;/code&gt;, &lt;code&gt;simfang.ttf&lt;/code&gt;, &lt;code&gt;simhei.ttf&lt;/code&gt;, 與&lt;code&gt;simkai.ttf&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;對於’bookdownplus’的未來，我希望能加強多位元編碼的文字支援。如果使用者也能分享自設模板，必定是西方世界之外開放科學社群的好用工具。&lt;/p&gt;
+&lt;div id=&#34;參考文獻&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;參考文獻&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-AustpapajaReproducibleAPA2017&#34;&gt;
+&lt;p&gt;Aust, Frederik, and Marius Barth. 2017. &lt;em&gt;Papaja: Reproducible APA Manuscripts with R Markdown&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-XiebookdownAuthoringBooks2017&#34;&gt;
+&lt;p&gt;Xie, Yihui. 2017. &lt;em&gt;Bookdown: Authoring Books and Technical Documents with R Markdown&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ZhaobookdownplusTextbook2017&#34;&gt;
+&lt;p&gt;Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus Textbook&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>開放科學與資料科學如何兼容？</title>
+      <link>/zh-hant/post/text_2017011/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2017011/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;按&lt;/strong&gt;：這是為2017/11/11將在
+&lt;a href=&#34;http://datasci.tw/?conf=DS&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;台灣資料科學年會&lt;/a&gt;
+發表的演講，所寫的文字稿。演講投影片以圖像為主，講述幾個相關的故事。文字版濃縮我想傳達的想法與觀察，為一年之後有機會再做演講時，比較此時與彼時的變化。&lt;/p&gt;
+&lt;p&gt;三年前(2014)，我得知
+&lt;a href=&#34;http://dx.doi.org/10.1027/1864-9335/a000178&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Many Labs Project&lt;/strong&gt;&lt;/a&gt;
+的出現，開始注意這種大規模合作的心理學研究，將對心理科學的研究文化產生什麼影響。這類專案運用的資料科學方法，帶領我在隔一年透過Coursera自學
+&lt;a href=&#34;https://www.coursera.org/specializations/jhu-data-science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;資料科學課程&lt;/a&gt;
+，並嘗試翻新自已的研究與教學內容。這一段時間，我曾以為我從事的科學研究要向資料科學學習，才能有所突破。又一年，經歷與國外推動開放科學的學者第一手合作註冊研究的經驗，認清如果要更新我所從事的經典科學，要先覺悟長久習慣的研究手段容易造成低品質的科學成果，吸納資料科學的
+&lt;a href=&#34;http://scchen.com/Reproducible-Think/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製方法&lt;/a&gt;
+，改善個人乃至團隊的科學活動品質，經典科學才能蛻變為&lt;strong&gt;開放科學&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;為何稱呼我從事的科學是&lt;strong&gt;經典科學&lt;/strong&gt;？這要從經典科學與資料科學的根本分際談起。從目的來說，任何領域的經典科學是要根據可重現的事實建立能被考驗的理論。資料科學追求能有效預測、控制現象發生的模型。中央研究院資訊所陳昇瑋老師的知名簡報：
+&lt;a href=&#34;http://www.iis.sinica.edu.tw/~swc/talk/big_data_in_books.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;網路購書大數據－給出版者的洞察分析&lt;/a&gt;
+，其中所舉的三種類型暢銷書預測模型，體現資料科學所追求的目標。把這些模型放到經典科學的場域，提問的方向應該會變成：「這些模型能呈現這個社會的閱讀品味嗎？」&lt;/p&gt;
+&lt;p&gt;目的不同還不足以充分解釋經典科學為何是&lt;strong&gt;經典&lt;/strong&gt;，應該從兩種&lt;em&gt;科學家&lt;/em&gt;的知識觀(Epistemology)做一些探討。我認為了解兩者如何收集與處理資料，能對兩造知識觀做一個簡單剖析。經典科學是依研究計畫收集資料，資料格式符合設計與分析方法的設定。資料科學取用未具格式或待清理的資料，使用各種數學方法(機器學習是當紅的一種)，找出最能解釋資料的模型。資料最終都會形成有意義的知識，但是經典科學家追求能成為&lt;strong&gt;經典&lt;/strong&gt;的知識典範。而許多資料科學家獲得的知識，是能助人能獲得實際利益的模式。&lt;/p&gt;
+&lt;p&gt;經典科學與資料科學在達到目的與追求新知的過程，都遇到的失敗的經驗，從兩個例子可略窺一二。2008年google團隊提出
+&lt;a href=&#34;http://www.nature.com/nature/journal/v457/n7232/full/nature07634.html?foxtrotcallback=true&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;預測流感的演算法&lt;/a&gt;
+而喧騰一時，不出一年就預測失準而修正。經過幾年數次的修正，到了2014年，
+&lt;a href=&#34;https://scitechvista.nat.gov.tw/c/HqLz.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;團隊宣佈失敗並關閉網站&lt;/a&gt;
+，將資料釋出給其他團隊接手。其中細節並非我的專業不便評論，但是這個故事給所有期待依賴資料與統計模型獲取知識的人們明確的教訓：只有資料無法萃鍊真正有效的預測模型。&lt;/p&gt;
+&lt;p&gt;與之對比的經典科學失敗之例也發生在2014年。當年美國國家科學院通訊(搜尋結果
+Proceedings of the National Academy of Sciences)刊登一篇臉書研發部門與康乃爾大學合作的
+&lt;a href=&#34;http://www.pnas.org/content/111/24/8788.full.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;情緒渲染實驗&lt;/a&gt;
+。除了研究倫理問題導致臉書在論文發表數月後，
+&lt;a href=&#34;https://www.theguardian.com/technology/2014/oct/02/facebook-sorry-secret-psychological-experiment-users&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開向受影響的70萬用戶致歉&lt;/a&gt;
+，這篇論文宣稱臉書使用者接受大量負面情緒訊息，個人在臉書留言的負面訊息會顯著增加。實際上，這句結論根據的統計資訊，是非常微弱的效果量(d = 0.001)。這筆數值反映一位臉書使用者的留言要累積達一萬字，才會出現四個負面字眼。因為收集的樣本龐大，如此微小的差距才有統計顯著，但是毫無實質的科學意義，或者吸引投資研發的魅力。&lt;/p&gt;
+&lt;p&gt;更值得探討的是，登場時光芒萬丈，過沒幾年甚至幾天黯然下台的知識案例，在過去的科學史層出不窮，也可預期未來還有更多經不起長久考驗的知識出現。為何會出現這些案例的原因，是值得從事經典科學與資料科學的人士探究的題目。我認為有兩個方向是所有現代科學製造低品質知識的起源：一是因子大雜燴(Crud Factors)，二是以確證的主張包裝尚在探索的發現(Exploration-as-Confirmation Fallacy)。&lt;/p&gt;
+&lt;p&gt;因子大雜燴是已故的美國心理學家Paul Mheel於
+&lt;a href=&#34;http://goodsciencebadscience.nl/?p=471&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;1990年的論文&lt;/a&gt;
+提出的現象歸納。他以此名稱，形容任何無盡地累積一種現象的資料，最終必能發現顯著變項間相關的任何研究(the phenomenon that ultimately everything correlates to some extent with everything else)。Meehl以1966年與同事Lkynn曾從事的研究為例，他們接受委託分析57,000名明尼蘇達州高中生的諮商量表資料，一共有15項變項，構成105筆相關係數。以顯著性檢定分析，他們發現其中101筆的p值最大者只到小數點後6位。在此我讓讀者自己評斷，這些情節與前面提到的google流感預測，是不是有相似之處？&lt;/p&gt;
+&lt;p&gt;如果有研究會被人以確證的主張包裝尚在探索的發現，通常帶著幾個明顯的特徵：觀點新穎、發表的成果一面倒支持原作者觀點、尚未有與原作者無利益衝突的其他研究者成功重現。近期最著名的例子就是&lt;strong&gt;權力姿勢效應&lt;/strong&gt;，請參考我過去寫的
+&lt;a href=&#34;http://scchen.com/Text/text_2016005e01/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章&lt;/a&gt;
+。&lt;/p&gt;
+&lt;p&gt;當我彙整上述案例時，部落客Ruben Arslan發表
+&lt;a href=&#34;http://www.the100.ci/2017/09/14/overfitting-vs-open-data/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Overfitting vs. Open Data&lt;/a&gt;
+，談論資料科學實務經常碰到的過度適應(Overfitting)與科學界的再現危機(Replication crisis)相似之處，讓我想到這是讓資料科學人士理解為何經典科學要邁進開放科學的好入口。許多案例的預測模型都是先透過訓練資料(Training data)建立，再以測試資料(Testing data)驗證。有時模型能完美預測訓練資料的變項關係，測試資料的預測誤差卻超過容許範圍，這種情況就是過度適應。如果把訓練資料當成新穎的研究成果，測試資料就是後續的再現研究，無法被重現的新奇發現，就是經典科學版過度適應現象。&lt;/p&gt;
+&lt;p&gt;開放科學人士推廣
+&lt;a href=&#34;http://scchen.com/Text/text_2017002/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;註冊研究&lt;/a&gt;
+的重要原因，就是要消除經典科學家們製造因子大雜燴，以及用確證的主張為探索性目的做結論的內在動機。資料科學克服過度適應所獲得的經驗，我相信是現在期望借重資料科學方法的經典科學人士，應該學習的課題。如此產生的知識，才能有效的累積。要促進這樣的景況，需要參與其中的任何人，不管是經典科學家還是資料科學家，過程中要維持當下的決定與作為，會不會造成無法再現或過度適應。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>「提昇你的統計推論功力」中文資源使用說明及學習指南</title>
+      <link>/zh-hant/post/text_2017009/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2017009/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/curves.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;中英字幕對照檔已於8/21上傳Coursera，有註冊Coursera的朋友可直接在平台觀看有中文字幕的影片。這份指南與教材的翻譯文本是繁體中文，大陸及港澳地區朋友，如果閱讀中無法習慣字體與詞彙用語，請多多見諒。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;終於完成Coursera的課程「提昇你的統計推論功力」
+&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home/welcome&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;( Improving your statistical inferences )&lt;/a&gt;
+教材(每週課程說明，影片字幕)第一階段中文翻譯。這門課程是由荷蘭埃因霍溫科技大學副教授Daniel Lakens設計講授，於2016年10月上架。因為我從2015年起就訂閱Daniel的部落格「20%的統計學家」(
+&lt;a href=&#34;http://daniellakens.blogspot.tw/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt; The 20% Statistician &lt;/a&gt;
+)，所以首先是從
+&lt;a href=&#34;http://daniellakens.blogspot.tw/2016/10/improving-your-statistical-inferences.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;他發佈的部落格貼文&lt;/a&gt;
+得知。當時我正在荷蘭進行訪問研究，也正在學習使用這門課程推廣的幾種統計分析方法，所以我就聯絡Daniel，願不願意讓更多中文世界的學者與學生們認識這門課程？他欣然接受這個點子，於使我們一起在OSF開了一份
+&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開專案&lt;/a&gt;
+，開始了第一階段影片字幕翻譯計畫：翻譯並公開每週課程介紹與影片字幕，讓有興趣但英文閱聽能力有限的華文人士，可以理解課程內容，直接使用課程資源。並且也歡迎各方高手協助校正，為第二階段作業資源中文化工作做準備。&lt;/p&gt;
+&lt;p&gt;Daniel Lakens曾參與2015年轟動全球，不到40%心理學研究可被再現的「
+&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學再現研究專案&lt;/a&gt;
+」資料分析工作。Daneil因為自己博士班時期的原創研究無法被他人成功再現，決心深入學習多數心理學家幾乎不接觸的數理與生物統計學，他把學習成果轉化為多篇幫助心理學家改善研究設計與統計分析的論文。還以每篇論文為基礎，撰寫至少一篇部落格文章，這門課程可說是他整理個人近幾年研究與教學的精華。&lt;/p&gt;
+&lt;p&gt;我決定開這個坑有幾個理由，除了課程品質好，課程設計對習慣台灣系統，甚至是東亞國家的統計與研究方法教學系統的學生，都是全新的體驗。像是在課程裡安排的一段科學哲學的介紹，讓學習者了解Daneil為什麼主張視情況善用次數主義統計(Frequentist  statistics)與貝氏統計(Bayesian statistics)的方法。課程中的不少案例是到2015年止，在學術界引起結果無法再現的研究。不曉得2015年為什麼會有「
+&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學再現研究專案&lt;/a&gt;
+」出現的朋友，上到第三週大概就會明白，這項專案並不是有一群心理學家故意找另一群心理學家的麻煩，而是為了重新喚起心理科學的求真精神。&lt;/p&gt;
+&lt;p&gt;除了幾部影片字幕是由朋友協力翻譯，我自己在參加2017年的SIPS研討會
+&lt;a href=&#34;http://improvingpsych.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;提昇心理科學協會(Society for the Improvement of Psychological Science (SIPS) Meeting )&lt;/a&gt;
+之前，完成了大部分的字幕初翻。除了想要當面向Daneil致意，也為準備參加會議活動做準備。結果真的派上用場，在其中一場設計新世代研究方法課程的
+&lt;a href=&#34;https://osf.io/zbwr4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;黑客松&lt;/a&gt;
+裡，就直接取用了這門課的部分資料與作業。&lt;/p&gt;
+&lt;h2 id=&#34;上課前要做什麼準備&#34;&gt;上課前，要做什麼準備？&lt;/h2&gt;
+&lt;p&gt;除了講師的影片語言，簡介說明，參考資料與作業測驗都是英文，對於英文程度不流利的學生有些吃力。課程內容是設定決定上課的學生，有修習初級統計，並有一兩次的研究執行與資料分析經驗。這門課不會告訴你什麼是平均數還有標準差，第一週介紹完統計方法流派之後，就立刻談_p_值的意義與誤解。如果你之前還沒有學過任何推論統計方法，不只可能看不懂影片，也不會了解作業如何下手。建議有意學習者曾修過大學的基礎統計與初階研究方法，或者已修過Coursera的任何一門基礎統計課程。&lt;/p&gt;
+&lt;p&gt;本課程的許多作業都是要實際操作R與Excel試算表軟體，多數台灣社會科學領域的學生多少有一些操作Excel的經驗，但是R可能對這群學生還是高門檻的統計語言。好在台灣有許多熱心推廣R的資料科學高手，可以先找一門自學教材上手。我推薦Wush Wu設計維護的
+&lt;a href=&#34;http://datascienceandr.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R語言翻轉教室&lt;/a&gt;
+，先熟悉一下R的使用環境與語法，就能從課程作業了解講師希望你透過操作能學到什麼東西。這門課程作業的R真的不難，只要照著題目說明，改一兩個地方就能看到執行結果。&lt;/p&gt;
+&lt;h2 id=&#34;開始課程前先了解各週學習重點&#34;&gt;開始課程前，先了解各週學習重點&lt;/h2&gt;
+&lt;p&gt;課程共有八週，除了最後一週是提出自己的研究計畫與同學線上互評，第一週到第七週每週有三段主要視頻、一到二件數據模擬與分析作業，以及一份當週測驗卷。每週測驗卷有A/B兩種版本，是Daniel與萊登大學博士生Tim van de Zee合作設計，要收集選修這門課程的人士學習表現，分析後做為之後改進課程內容的依據。我建議修課同學，將每週的課程資料下載，並依週次建檔，之後有用時可知如何找到需要的資源。建檔結構可參考
+&lt;a href=&#34;https://github.com/SCgeeker/IST_course_data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;我的github儲存庫&lt;/a&gt;
+。&lt;/p&gt;
+&lt;p&gt;每門課程都有一則簡短的課程概論，說明每段視頻與作業的重點，並列出與視頻內容有關的參考文獻。七週課程概 論的中譯初稿已在
+&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開專案&lt;/a&gt;
+上線，強烈建議初學者先閱讀課程概論，了解自已能否從影片與作業學習到Daniel要傳達給你的資訊，判斷自已需不需要尋找同儕互助學習。每週課程影片的中英對照字幕可由
+&lt;a href=&#34;https://osf.io/7b6k4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開專案&lt;/a&gt;
+下載，這系列的課程影片都可以下載觀賞，英聽不夠好的同學可以下載影片和字幕，用可外掛字幕的播放軟體觀賞。&lt;/p&gt;
+&lt;p&gt;以下簡述七週學習重點與經驗：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一週/引言與次數主義統計：第一段介紹三種統計推論取向，後兩段的重點是討論_p_值的正確與錯誤運用方式。對於有研究經驗的同學來說，最值得仔細理解的是，有沒有曾經認為_p_值就等於研究結果型一錯誤率？有沒有以為_p_值是虛無假設成立的機率？Daniel在這週課程為你解惑。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二週/似然值與貝氏統計：介紹&lt;strong&gt;似然值&lt;/strong&gt;與&lt;strong&gt;貝氏統計&lt;/strong&gt;，這兩種統計推論方法在亞洲的許多大學統計課都從被納入。如果你曾在論文裡看過貝氏因子(&lt;em&gt;BF&lt;/em&gt;)與可信區間(Cridible interval)，這週課程會給你一個初步的認識。
+&lt;a href=&#34;http://www.lifesci.sussex.ac.uk/home/Zoltan_Dienes/inference/index.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Daniel推薦的書籍 Understanding Psychology as a Science &lt;/a&gt;
+，是第一本為心理學家寫的貝氏統計入門教科書，值得找來一讀。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第三週/有效控制推論錯誤率：延續第一週的課題，介紹有效控制型一與型二錯誤率的方法。第三段還談到如何運用這先方法，規劃可靠又有效的&lt;strong&gt;預先註冊研究(preregistration)&lt;/strong&gt;。做完這週作業與測驗，你手上正好有準備執行或規劃中的方法，可以嘗試使用預先註冊會變得如何？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第四週/效果量(effect size)專題：效果量是進行整合性分析(meta analysis)與註冊確證性研究(confirmatory research)，不可或缺的元素。你希望研究的證據力要有多高，就要先評估效果量與考驗力(power)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第五週/良好的樣本數估計：基礎統計就會學到的信賴區間(Confidence interval)，以及決定樣本數(Sample Size)的策略。Daniel在這週讓你認清過去從教科書或課堂學習中不足夠的地方，並介紹近幾年竄起的統計品質分析工具：p-Curve。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第六週/科學哲學：不完全是統計課的一週。Daniel淺談科學哲學入門，以及理論的建構。
+&lt;a href=&#34;http://daniellakens.blogspot.tw/2017/08/towards-more-collaborative-science-with.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;最近Daniel的部落格文章&lt;/a&gt;
+提到，接下來心理科學將進入&lt;strong&gt;理論危機(Theory Crisis)&lt;/strong&gt;，配合閱讀能了解這一週課程內容如此安排的用意。如果你有不知如何定義虛無假設的理論意義，這週Daniel介紹他的最愛：等效測試(equivalence testing)。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第七週/開放科學：集中談論前六週偶爾提到的再現研究與出版偏誤，這是2015年200多位心理學家自願參與
+&lt;a href=&#34;http://science.sciencemag.org/content/349/6251/aac4716.full?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學再現研究專案&lt;/a&gt;
+的重要因素。最後一段展望能消除這些問題的&lt;strong&gt;開放科學&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;完成各週作業之後的學習方向&#34;&gt;完成各週作業之後的學習方向&lt;/h2&gt;
+&lt;p&gt;如果你有時間，建議完成第八週的互評作業。計畫要分析的資料不一定要親自收集，可以找有興趣主題的公開資料，測試你想檢驗的假設。我認為台灣學生可以透過這項作業，測試看看現在國內各公家機關的開放資料，能完成多少真正有意義的分析。&lt;/p&gt;
+&lt;p&gt;各週推薦閱讀是之後深化學習的途徑，每篇論文都值得找來閱讀，有附件資料的還能試著操作，學到就有使用的機會。我個人的最大收穫是認識
+&lt;a href=&#34;http://meehl.umn.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;被譽為二十世紀最聰明的心理學家&lt;em&gt;Paul Meehl&lt;/em&gt;&lt;/a&gt;
+，正在消化他於1989年講演哲學心理學(Philosophical Psychology)的課程錄影與資料。&lt;/p&gt;
+&lt;p&gt;翻譯中文字幕的動機是讓華文地區的心理科學人士，了解另一種學習及運用統計的方式，以及不同於習慣的角度看待心理學研究品質。這門課程資料不需要付認證費用，只要註冊Coursera就能全部取得，符合開放科學的精神。當然要持續深入學習，母語對有些學生可能會是限制，如果你能在生活區域找到一起學習的伙伴，建議一起定期討論作業與推薦論文。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;已上線的中文翻譯初稿為各方人士貢獻，本人無法保證所有材料的翻譯品質都維持在相同水準。藉此招募有意願的高手加入協助，開啟第二階段作業資源中文化。&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>從科學危機認識開放科學(科學月刊投稿版)</title>
+      <link>/zh-hant/post/text_2017003/</link>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2017003/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/TFaS.jpg&#34; alt=&#34;&#34; title=&#34;快思慢想原文書封面。取自亞馬遜網站。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;「Thinking, Fast and Slow」(中譯：快思慢想)是諾貝爾經濟學獎得主丹尼爾．卡尼曼(Daniel Kahneman)於2011年出版的心理學科普好書，各國譯本至今仍保持不錯的暢銷度。然而出版的同一年，許多社會心理學研究無法再現的批評逐漸浮出檯面。在「快思慢想」的第四章裡，卡尼曼引用大量的社會心理學「促發效應研究」(Priming Effect)，為他所定義的「系統一」提供研究證據。這類研究的模式是比較兩組受試者在不同情境的安排裡，運用設計好的量尺對研究者 設定的目標進行價值判斷，研究者以組間判斷的差異推論情境存在導致「促發效應」的原因。「促發效應研究」假設其中一種情境能引發受試者內隱聯想(implicit association)，無意識地影響價值判斷。然而，卡尼曼在這一章所引用的一系列研究，
+&lt;a href=&#34;https://replicationindex.wordpress.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/&#34; title=&#34;Reconstruction of a Train Wreck: How Priming Research Went off the Rails&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;已經被確認或推測難以在接近的條件下再現&lt;/a&gt;
+。這個例子顯示原來只有心理學家與統計學家關注的心理科學危機(Crisis in Psychological Science)，有可能演變為科普危機(Crisis in Popular Science)。&lt;/p&gt;
+&lt;p&gt;本文以「快思慢想」第四章引用，證實臉部表情回饋假說(Facial Feedback Hypothesis)實質性的經典實驗，如何被確認難以再現的故事，介紹科學家為扭轉這一連串危機而啟動的開放科學運動(Open Science)。臉部表情回饋假說在「快思慢想」上市之前就在許多心理學課程中講授，最廣為人知是1988年德國心理學家弗列茲．斯崔克(Fritz Strack)報告的
+&lt;a href=&#34;http://psycnet.apa.org/journals/psp/54/5/768/&#34; title=&#34;Strack, F., Martin, L. L., &amp;amp; Stepper, S. (1988). Inhibiting and facilitating conditions of the human smile: a nonobtrusive test of the facial feedback hypothesis. Journal of Personality and Social Psychology, 54, 768–777. doi: 10.1037/0022-3514.54.5.768&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;實驗結果&lt;/a&gt;
+。他請兩組受試者用嘴巴含住原子筆，以這樣的姿勢在評分紙上，為五則幽默漫畫的好笑程度評分。其中一組用牙齒咬住，自然呈現微笑表情(見圖一)，另一組用嘴唇含筆，呈現無情緒的表情(見圖二)。斯崔克發現前者的評分顯著高於後者，可證實臉部表情回饋假說的合理性。後續研究稍微更改原始操作，像是請受試者以嘴巴含著筆，用手做反應，但是得到的結果各不相同。然而更重要的是，原始研究從未在相同的條件下重覆驗證，研究內容又經過許多教科書與科普作品的間接轉述，讓很多人以為只要像圖一的女孩一樣含著筆，心情自然就會好起來。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Pouting.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;嘴唇含筆示範圖。取自示範投影片。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Smiling.jpg&#34; alt=&#34;&#34;&gt;
+&lt;em&gt;牙齒含筆示範圖。取自示範投影片。&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;開放科學面對的挑戰&#34;&gt;開放科學面對的挑戰&lt;/h3&gt;
+&lt;p&gt;科學危機的直接影響反映在兩大課題：如何確認高影響力實驗結果的可再現性？如何扭轉多數人的既定認識？兩個課題涵蓋開放科學所關注的
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Open_science&#34; title=&#34;Open science. (2017, January 11). In Wikipedia, The Free Encyclopedia. Retrieved 13:39, February 14, 2017, from https://en.wikipedia.org/w/index.php?title=Open_science&amp;amp;oldid=759414011&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;六大面向&lt;/a&gt;
+：開放源碼(Open Source)、開放資料(Open Data)、開放方法(Open Methodology)、開放的同儕評審(Open Peer Review)、開放取用(Open Access)與開放的教育資源(Open Educational Resource)。讓我先用臉部回饋假設的再現研究，解說第一個課題牽涉的&lt;strong&gt;開放源碼&lt;/strong&gt;、&lt;strong&gt;開放資料&lt;/strong&gt;、&lt;strong&gt;開放方法&lt;/strong&gt;與&lt;strong&gt;開放的同儕評審&lt;/strong&gt;等四項宗旨。這四項構成荷蘭阿姆斯特丹大學的艾瑞克傑．維格馬克斯(Eric-Jan Wagenmakers)所發起的
+&lt;a href=&#34;http://journals.sagepub.com/doi/full/10.1177/1745691616674458&#34; title=&#34;Wagenmakers, E.-J., Beek, T., Dijkhoff, L., Gronau, Q. F., Acosta, A., Adams, R. B., … Zwaan, R. A. (2016). Registered Replication Report Strack, Martin, &amp;amp; Stepper (1988). Perspectives on Psychological Science, 1745691616674458. doi: 10.1177/1745691616674458&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;註冊再現研究(Registered Replication Research)&lt;/a&gt;
+。註冊再現研究是曾出版科普書「為什麼你沒看見大猩猩」的認知心理學家丹尼爾．西蒙斯(Daniel Simons)與心理科學觀點(Perspectives on Psychological Science)期刊主編史蒂芬．林賽(Stephen Lindsay)一起制定的合作研究發表模式。註冊再現研究是針對學術圈內廣泛引用，但是未曾完整檢驗可再現性的研究。提出計畫的發起者必須招募有興趣的實驗室，同時以幾乎接近的條件進行獨立的再現研究。為了讓各實驗室以儘可能相同的條件進行研究，發起者要先提出經過同儕評審的公開協議書及附件，內容包括完整的實驗方法、資料收集的儲存格式、可在所有參與實驗室佈署的實驗材料及設備清單，以及一致的分析程序。因此註冊再現研究的協議書具體呈現開放源碼、開放資料與開放方法在科學研究應達到的標準。加上公佈招募合作實驗之前，由原始研究者具名評審協議書內容，保障後續研究過程及發表結果的可信度。&lt;/p&gt;
+&lt;p&gt;維格馬克斯發起的再現研究招募到17間橫跨歐美的實驗室參與。受試者要評分的漫畫是事前從1988年原始研究採用的同一位漫畫家系列作品中挑選，請120位心理系學生對這一系列漫畫的好笑程度評分，最後挑選平均評分屬於中度好笑的四則做為正式實驗的材料。實驗中評分的用紙都與斯崔克的原始實驗相同，為從0分(我覺得不好笑)到9分(我覺得很好笑)的十點量尺，要受試者含住的原子筆也選用外形幾乎一模一樣的品牌。重要的不同處置是採用統一的影片向受試者解說實驗流程，取代原始研究的口頭解說，以及每個實驗室招募的受試者人數比原始研究(兩組共92人)多出一些(兩組至少各50人)。由於協議書設定如果受試者表示做實驗之前就已經知道這個實驗，這些受試者的資料就不納入正式分析，所以最後有三個實驗室的資料未達到設定的人數。&lt;/p&gt;
+&lt;p&gt;原始研究的兩組評分差異達到0.82分，有達到最起碼的統計顯著水準(p值是0.03)。17間實驗室的再現結果只有九間得到正向的差異分數，而且最大的差異分數只有0.35分，沒有一間的差異分數達到統計顯著水準。維格馬克斯還計算每個實驗室結果的貝氏因子(Bayes Factor)，評估每個實驗室結果的證據強度。相較於p值僅呈現無效果的假設為真，而獲得當下結果的機率，貝氏因子呈現有效果的假設為真而獲得當下結果，對比無效果的假設為真而獲得當下結果的賠率。有最起碼證據強度的實驗結果，貝氏因子至少要大於1，然而17間實驗室沒有一間的結果出現大於1的貝氏因子。&lt;/p&gt;
+&lt;p&gt;雖然沒有實驗室能成功再現斯崔克的原始研究，不表示可以百分之百地否定臉部表情回饋假說，但是維格馬克斯主持的再現研究，就像探索頻道的知名節目「流言終結者」一樣，信服報告結果的讀者可以開始反向宣傳「假裝微笑不能讓你真的心情變好」。然而報告是篇正經八百的學術論文，必須經過科學家或作家改寫成通俗易懂的材料，才容易向大眾傳播。這正是開放科學要挑戰的第二道課題：如何扭轉多數人的既定認識？開放科學的應對之道就是&lt;strong&gt;開放取用&lt;/strong&gt;與&lt;strong&gt;開放的教育資源&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;開放取用是指對第一手科學新知有興趣的人士，能直接取得研究文獻的完整內容。維格馬克斯所在的荷蘭，應該是現在世界各國推動開放取用最有策略，而且最有成效的國家，請容我節錄自己的網誌「開放科學在荷蘭」的部分內容：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;現在實踐開放取用的具體作為有兩種途徑：一種是論文作者個人實踐的綠色途徑(Green Route)，另一種是由出版社發行開放取用期刊的黃金途徑(Gold Route)。&lt;/p&gt;
+&lt;p&gt;綠色途徑是論文作者將被接受的論文手稿(post-printed manuscript)，放在公開的社群網站，讓任何人可經由網路搜尋取得。論文手稿是依既定的論文格式撰寫，提供出版社編輯排版的原始稿件。許多期刊允許作者將這類稿件放在公開的資料庫網站，如果想確定接受稿件的期刊是否允許，可利用
+&lt;a href=&#34;http://www.sherpa.ac.uk/romeo/index.php&#34; title=&#34;http://www.sherpa.ac.uk/romeo/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SHERAP/RoMEO&lt;/a&gt;
+這個網站查詢，也可得知投稿的期刊支持開放取用的程度。任何有著作發表於允計公開論文手稿的研究者，都能運用合法的資料庫平台公開手稿，&amp;hellip;&lt;/p&gt;
+&lt;p&gt;綠色途徑仰賴研究者的個人意願，如果研究者不想讓自己的著作依此模式公開，讀者就只能從出版社的付費管道索取論文。至於黃金途徑的終極目標就是要出版社提供百分之百的開放取用論文，而荷蘭的教育部與大學聯盟(VSNU)已訂出2024年讓荷蘭境內公民皆可自由取用所有科學文獻的目標，從2014年開始和Elsevier等主要學術出版社談判，並已有初步成果。VSNU將階段性成果整理成
+&lt;a href=&#34;http://www.magazine-on-the-spot.nl/openaccess/eng/&#34; title=&#34;The Netherlands: paving the way for open access&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;懶人包&lt;/a&gt;
+，提供世界各國參考。我摘出其中歸納的四點：(1)由最需要收藏文獻的機構首長擔任主要談判人員，例如大學校長；(2)談判人員有所屬機構的充分授權；(3)堅守底線，例如不向Elsevier要求收取額外40%出版費用妥協；(4)政策支持，也就是荷蘭教育部已宣佈的目標。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最後來談開放的教育資源。在本文談論的範圍之內，教育的功能是將遵照前五項宗旨而產生的知識成果，讓有意學習的人能取得使用。姑且不論維基百科的
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Open_educational_resources&#34; title=&#34;Open educational resources. (2017, February 13). In Wikipedia, The Free Encyclopedia. Retrieved 13:47, February 14, 2017, from https://en.wikipedia.org/w/index.php?title=Open_educational_resources&amp;amp;oldid=765319552&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放的教育資源條目&lt;/a&gt;
+，談到的幾項定義問題，我舉出兩個例子，讓讀者想想臉部表情回饋假設的再現研究，所公開的資料能如何運用於教育現場。在一般的心理學課程，如果談到斯崔克的原始研究是如何進行的，師生可以從
+&lt;a href=&#34;https://osf.io/hgi2y/&#34; title=&#34;Simons, D. J., Dijkhoff, L. C., Beek, T. F., Wagenmakers, E.-J., &amp;amp; Gronau, Q. F. (2016, July 11). RRR - Strack et al (1988). Retrieved from osf.io/hgi2y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;專案網頁&lt;/a&gt;
+下載說明影片，以及要讓受試者填寫的圖紙，了解整個實驗程序。如果教學場域的空間設備允許，能直接拿來進行小型再現研究，探討17間實驗室無法成功再現的原因。另一個可以運用的教育現場是統計學課程，這份研究的分析方法結合次數主義(Frequetism)與貝氏統計(Baysian Statistics)，除了所有實驗室的原始資料，維格馬克斯還公開處理資料的R原始碼，教師能自行改編為適合學習者程度的教材；自學者能直接下載測試，了解如何產生報告裡的數據與圖表；科普作家能運用原始資料及程式碼重新組織圖表，創作更通俗易懂的作品。&lt;/p&gt;
+&lt;p&gt;從以上的說明中，我認為教育資源要有多開放，取決於研究者期許研究成果的影響力要多深多廣。要扭轉「控制表情就能控制心情」的深刻印象，需要更多的二次創作，讓更多人理解原始研究不能成功再現的原因及意義。研究內容的透明度越高，越有利有創意的科普作者生產令人深刻的二次創作。只要大略檢視造成心理科學危機的一系列研究，最明顯的共同特徵是研究內容不夠公開透明，結論卻讓人感覺有趣或顯得很重要。就此來看，未來評估一位學者的學術成就，應是看公開的研究內容如何有利其它學者規劃條件接近的再現研究，以及有利各種教育場合轉化運用的程度。&lt;/p&gt;
+&lt;h3 id=&#34;營造開放科學的有利條件&#34;&gt;營造開放科學的有利條件&lt;/h3&gt;
+&lt;p&gt;本文的最後，我想以與外國學者直接交流合作的經驗，提供有心參與開放科學的學習者、各領域需要收集數據更新知識的科學家、與願意提供資源促成發展的人士一些建議：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;使用可公開且可重製的格式紀錄學習內容。&lt;/strong&gt; 明確的建議是從今天開始，使用有版本控制(version control)功能的應用程式，管理個人學習內容。以這篇文章為例，原稿是以markdown格式編輯，編輯完成後可立刻更新至個人網頁。讀者可以從
+&lt;a href=&#34;https://github.com/SCgeeker/SCgeeker.github.io/commits/master&#34; title=&#34;我的網頁更新紀錄&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;我公開的更新紀錄&lt;/a&gt;
+，了解這篇文章的製作過程。只要習慣以這樣的方式紀錄個人學習內容之後，就能有效維持公開內容的可信度。不過沒有程式設計經驗的學習者，需要一段學習時間才能掌握這套筆記系統，建議運用如
+&lt;a href=&#34;https://osf.io/&#34; title=&#34;https://osf.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;open science framework&lt;/a&gt;
+等有提供版本控制的雲端平台，管理個人學習筆記。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;收集資料前備份研究計畫，公開地紀錄過程中的一切行動。&lt;/strong&gt; 這是規劃與執行註冊研究(Registered Research)的基本原則，搭配版本控制的紀錄，科學家能確保研究過程按照計畫步驟執行，並明確紀錄過程中必須改變初始設定的原因。不論最後有沒有得到支持假設的結果，報告都可以有助更新現有的知識。最重要的是，這樣的研究紀錄方式充分地將學術誠信的原則轉化為實際行動。致於為何推動開放科學可以落實學術誠信，值得寫一篇專文說明，限於月刊篇幅限制，只能在此埋個伏筆。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;建置連結各項開放科學運動的中繼平台。&lt;/strong&gt;  近幾年台灣社會出現許多以「開放資料」為核心的社會運動，也有不少各級學校教師投入有共享價值的民間教育改造計畫。除了開放取用需要政府及大學真正重視，推動其它五項開放科學宗旨的社會條件，都已經具備可觀的規模，只要有方便使用的中繼平台整合各項運動及資源，提供現役及未來的科學研究人員完整的開放科學養成教育，台灣的學術研究及教育環境很可能因此脫胎換骨。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;歐盟從2016年開始的「提昇歐洲開放科學訓練品質計畫」(Facilitate Open Science Training for European Research，簡稱
+&lt;a href=&#34;https://www.fosteropenscience.eu/&#34; title=&#34;https://www.fosteropenscience.eu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FOSTER&lt;/a&gt;
+)，是值得效法的參考對象。不過我認為政府不必急著出錢送人去歐洲觀摩，先分析目前台灣科研環境的優劣勢，就能了解需要建置什麼樣的平台，幫助國內優秀的科研人才，產出可信且有高品質的研究成果，回饋台灣及國際社會。&lt;/p&gt;
+&lt;h3 id=&#34;參考資料&#34;&gt;參考資料&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>註冊研究(Registered Research)</title>
+      <link>/zh-hant/post/text_2017002/</link>
+      <pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2017002/</guid>
+      <description>&lt;p&gt;我曾在
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;纪錄已經出現與即將出現的再現危機&lt;/a&gt;
+與
+&lt;a href=&#34;http://scchen.com/Text/text_2016006/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放科學在荷蘭&lt;/a&gt;
+談過註冊研究。這篇文章整理個人經驗與收集各方資料，完整說明現在的心理科學研究如何規畫與執行註冊研究，做為個人研究與教學，以及向各方推廣註冊研究的參考依據。註冊研究發展至今已進入核心觀念穩定的階段，正由熱心的科學研究者在不同科學領域推廣落實。2015年之後值得注意的研究成果，除了心理科學的
+&lt;a href=&#34;https://osf.io/ezcuj/wiki/home/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;100項重要期刊論文之可再現性&lt;/a&gt;
+，
+&lt;a href=&#34;https://osf.io/e81xl/wiki/home/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;50項高引用數癌症研究之可再現性&lt;/a&gt;
+的研究成果正在陸續公開，不論最後的結果是讓人振奮或令人失望，2017年很可能是註冊研究執行樣態向所有科學領域拓展的重要時機。未來如果出現值得宣傳的概念或方法，以及個人認為重要的突破，會適度補充更新文章內容。&lt;/p&gt;
+&lt;h2 id=&#34;什麼樣的研究可以成為註冊研究&#34;&gt;什麼樣的研究可以成為註冊研究？&lt;/h2&gt;
+&lt;p&gt;以我的理解，只要是有系統地累積資料或事實，分析資料提出能更新人類知識的論述，研究題目都可以成為註冊研究。
+&lt;a href=&#34;https://osf.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放科學中心(Center of Open Sciences)&lt;/a&gt;
+整理各種學科領域的註冊研究樣態，歸納出四項要件：(1)有明確的研究問題(Research Question)；(2)掌握樣本母群與合理樣本數(Population and sample size)；(3)能回應研究問題的研究設計(General design)；(4)依照設定的變項(variables)或已編碼的資料集(dataset)處理資料。&lt;/p&gt;
+&lt;p&gt;趁著一年一度奥斯卡金像獎即將到來，我藉勢設定一個範例研究：「入圍年度奧斯卡且正在台灣各地電影院上映的電影，一旦獲獎，台灣民眾會不會更願意進電影院觀賞？樣本來源就是奧斯卡頒獎典禮前一個月與後一個月的
+&lt;a href=&#34;http://www.tfi.org.tw/about-publicinfo04.asp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;票房資訊&lt;/a&gt;
+，能回答問題的設計是列舉這兩個月期間，正在台灣上映的入圍電影的票房資料，要分析的資料是這些電影在典禮前後的票房收入與放映廳數。」。範例中的設定涵蓋以上提到的四個要件。　　&lt;/p&gt;
+&lt;p&gt;我相信無論是熟悉或正在學習研究方法的研究者，都能根據四項要件擬定這個題目的假設與方法，寫出更充實的計畫書。然而不論計畫書寫得多麼長，參考文獻有多豐富，實際操作往往是另一回事。研究過程中會遇到許多誘因或阻礙，讓研究者中途更改研究計畫的設定。即使得到會讓人感興趣的結果，資料分析也變得不可信。註冊研究就是要研究者遵循自己設定的假設與方法，自始至終地貫徹執行。接下來我要說明為何今天的研究者需要適應註冊研究，以及現在的研究者能運用什麼樣的資源，完成內容可信的註冊研究。&lt;/p&gt;
+&lt;h2 id=&#34;為何需要註冊研究&#34;&gt;為何需要註冊研究？&lt;/h2&gt;
+&lt;p&gt;如果讀者真的親手找資料執行我提出來的範例研究，有可能遇到一些天人交戰的時刻。例如「我該不該找更多的資料，像是典禮前後網友的評論？」、「剛好不在典禮前檔期上映的電影要不要剔除？」、「更早以前的票房資訊要不要納入分析？」、「我要用總票房收入，還是除以放映廳數的平均收入做為分析變項？」、「我要不要順便分析youtube影評者的影響？」。如果這些問題出現在你的腦海裡，表示你陷入要不要保持研究者自由度的困境(Researcher degrees of freedom)。&lt;/p&gt;
+&lt;p&gt;不論研究的執行規模大小，或者成本高低，都會遇上要不要擴張研究者自由度的抉擇時刻。註冊研究問世之前，研究者都是憑個人價值觀自行判斷，在注重輩份的社會裡，學生與資淺研究者就是聽從師長前輩的意見。如果這項研究在其中一個地方做點調整，就能得出吸引人的結論，很少研究者能不心動。像是如果可以發現台灣的網路影評人會跟著入圍名單的公佈引導台灣觀眾的觀影意願，這個結論雖然偏離一開始設定的計畫目標，不過只要增加一些不在計畫範圍內的資料以及分析方法，你願不願意這麼做？更重要的問題：*&lt;strong&gt;你認為自己有沒有責任告知報告的讀者，你要改變執行內容的原因？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;拿這個問題詢問有註冊研究經驗的學者，他們會告訴你認為不必負責任的想法，是滋養
+&lt;a href=&#34;https://www.cmu.edu/dietrich/sds/docs/loewenstein/MeasPrevalQuestTruthTelling.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;待澄清的研究操作(Questionable Research Practices，簡稱QRPs)&lt;/a&gt;
+的溫床。碰上像範例研究提到的天人交戰時刻，一旦研究者決定改變計畫設定，後續採取的任何行動都是QRP。觀察這幾年在歐美學術界發生的案例，對QRPs習以為常的研究者，即使能生產引人注目的研究成果，很有可能落得如
+&lt;a href=&#34;http://scchen.com/Text/text_2016005/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amy Cubby&lt;/a&gt;
+，或者
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Diederik_Stapel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Diderick Stapel&lt;/a&gt;
+的下場。近期(2016~2017)讓台灣社會憂心的學術造假案，從某一則流出的
+&lt;a href=&#34;https://www.ptt.cc/bbs/AfterPhD/M.1480607623.A.7F1.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;內幕消息&lt;/a&gt;
+來看，就顯示這個實驗團隊的成員視QRPs為理所當然。&lt;/p&gt;
+&lt;p&gt;不可否認，許多改變人類對世界認識的研究成果，與研究者一開始設定的執行內容完全不同。但是因為縱容QRPs而產生的研究發現佔全球文獻的比例越來越高，造成科學危機的研究案例層出不窮，已造成無效的心理科學知識經由大眾媒體傳播，就像讓著名的科普書「快思慢想」跌價的「
+&lt;a href=&#34;https://replicationindex.wordpress.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;促發效應研究&lt;/a&gt;
+」；還有推廣神經語言規劃（Neuro-Linguistic Programming）的民間人士，經常舉例的「
+&lt;a href=&#34;http://scchen.com/Text/text_2016005/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;權力姿勢效應&lt;/a&gt;
+」。長此以往，很難將學術品質的保證寄託於研究者個人的價值判斷，註冊研究正是為扭轉這樣的趨勢應運而生。&lt;/p&gt;
+&lt;h2 id=&#34;評估合適的註冊模式&#34;&gt;評估合適的註冊模式&lt;/h2&gt;
+&lt;p&gt;將研究計畫註冊之前，先再想想這份計畫是探索性(Exploratory Research)還是確證性(Confimatory)，還是兩者皆具。我曾在
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;纪錄已經出現與即將出現的再現危機&lt;/a&gt;
+一文說明兩種研究的差異，當時還以為一項研究不是探索性就是確證性，之後親身參加
+&lt;a href=&#34;https://osf.io/ukem4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放科學中心的工作坊&lt;/a&gt;
+，以及自己與
+&lt;a href=&#34;https://eur.academia.edu/RolfZwaan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rolf Zwaan&lt;/a&gt;
+和
+&lt;a href=&#34;https://independent.academia.edu/Bj%C3%B6rndeKoning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Björn de Koning&lt;/a&gt;
+/的合作經驗，了解一項註冊研究可以有彈性地兼容兩者。讀者可以用以下兩道問題，評估正在構想或進行中的計畫，屬於探索或確證的部分是什麼：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;收集資料是要發展假設，還是驗證假設？&lt;/li&gt;
+&lt;li&gt;收集資料前有什麼已經確定的分析方法？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以本文所舉的範例研究來說，要驗證的假設是電影得獎狀況或許會反映在典禮前後的台灣地區票房收入。與此假設有直接關係資料來源是有入圍年度奧斯卡獎，並且典禮前後正在台灣各大戲院上映的電影，這些資料就是確證性的部分。能直接驗證假設的分析方法是計算這些電影在典禮前後的收入差異，與放映廳數的變化，最後用t檢定或卡方檢定呈現前後數字的對比程度。除去可直接驗證假設的資料來源與分析方法，中途發現其它值得探討的問題，而需要增加的資料來源與分析方法，都是探索性的部分。註冊研究就是在收集資料前，在計畫書裡明確區分要確證與要探索的部分，經註冊程序宣告自己在確證性的部分如何照章行事，以及規範探索性部分的自由度範圍。&lt;/p&gt;
+&lt;p&gt;確證性研究的分析方法有必須事先宣告的要件，包括樣本數大小(Sample size)，資料處理與篩選程序(Data processing and cleaning procedures)，剔除無效資料的標準(Exclusion criterion)，以及任何預定要執行的統計分析方法(Statistical Analyses)。在能達成的範圍內，研究者要在註冊的計畫書中，儘可能交待這些分析方法要件的關鍵。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如何辨識研究計畫的探索性與確證性內容&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;探索性必要條件&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;確證性必要條件&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;需要累積資料(事實)才能回答的研究問題&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;事先評估所需樣本數&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;掌握資料(事實)來源的樣本&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;已擬定的資料處理與篩選程序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;能將資料(事實)轉化為可推論證據的研究設計&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;剔除無效資料的標準&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;已設定資料(事實)的集合結構或變項&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;能做有效推論的統計分析方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h6 id=&#34;註上表適用所有根據可檢測的假設設計研究累積資料驗證假設的科學領域表內所提的專有名詞來自筆者熟悉之心理科學如果與讀者熟悉的專有名詞有所出入可自行置換&#34;&gt;**註：**上表適用所有根據可檢測的假設設計研究，累積資料驗證假設的科學領域。表內所提的專有名詞來自筆者熟悉之心理科學，如果與讀者熟悉的專有名詞有所出入，可自行置換。&lt;/h6&gt;
+&lt;h2 id=&#34;註冊研究的執行模式&#34;&gt;註冊研究的執行模式&lt;/h2&gt;
+&lt;p&gt;無論是什麼樣的註冊模式，研究者必須於收集資料前，在支援開放資料的雲端平台(例如
+&lt;a href=&#34;https://osf.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSF&lt;/a&gt;
+)，備份註冊計畫書與已準備好的研究內容。現在科學界接受的註冊研究模式有三種：無同儕審核的事前註冊計畫(Unreviewed preregisteration)，有同儕審核的註冊報告(Registered Reports)，跨團隊合作的註冊再現研究(Registered Replication Reports)。最後一種我在
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;纪錄已經出現與即將出現的再現危機&lt;/a&gt;
+有詳細介紹，在此僅補充說明個人認為值得注意的特點。由於註冊再現研究是直接再現已經發表的研究(direct replication)，需在計畫總主持人能允許的條件之內，執行收集與分析資料的工作。合作研究者如果有想探索的部分，例如採用不同於總主持人制定的分析方法，可以在獨立報告中提出。如果讀者想更了解註冊再現研究的成果，除了由總主持人主筆的論文，還可以查看各實驗室的獨立報告。&lt;/p&gt;
+&lt;p&gt;有同儕審核的註冊報告是研究者在收集資料之前，把要註冊的研究計畫投稿給期刊，經過期刊邀請的審查者同意接受後，再進行資料收集與分析。最後正式論文再經過樣的審查者審稿，與傳統投稿審查不同之處是，這些審查者評價正式論文的標準是有沒有依照計畫進行，而非檢視研究結果有沒有確實支持假設。與此模式類似，且在醫藥科學領域行之有年的臨床研究(Clinical Research)相互比較，不同之處在於無主管機關監督，而是研究者要自行完整公開過程中的所有衍生資訊，可否出版(上市)也不是以有無達成計畫目標為依據。&lt;/p&gt;
+&lt;p&gt;以一份兼容探索性與確證性的研究專案來說，如果兩者所佔比例不相上下，有同儕審核的註冊報告是最適合的。若想評估自已的研究是否適合這種模式，可以參考已公開徵求註冊報告的
+&lt;a href=&#34;https://cos.io/rr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;期刊&lt;/a&gt;
+。這些期刊的投稿說明都有解釋現在接受的研究報告，屬於確證性研究的基本條件，以及能允許的研究者自由度範圍。如果期刊主題及政策相容正在進行的研究，不妨試試看。&lt;/p&gt;
+&lt;p&gt;無同儕審核的事前註冊計畫可在分析方法的設定保持更大的彈性空間，但是需公開的內容與有同儕審核的註冊報告完全相同。運用這個模式完成研究之後，可以將事前註冊的計畫書做為附件投稿給傳統期刊。許多對註冊研究抱持觀望態度的期刊，都能接受這種方式。&lt;/p&gt;
+&lt;p&gt;至今為止，最多學術領域可接受的事前註冊計畫書格式有Open-Ended Registration與AsPredicted Preregistration兩種，而且OSF都有支援。前者是一份空白表格，讓研究者自行以任意長度的文字表達想確認與想探索的部分，不過原則上不超過一頁的A4或Letter頁面最佳。後者來自Uri Simonsohn，Joe Simmons與Leif Nelson三位學者建立的
+&lt;a href=&#34;https://aspredicted.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;網站&lt;/a&gt;
+，設定8項問題及3200字元的限制，研究者以此格式說明研究專案裡屬於確證性的部分，做為註冊內容。由於OSF的支援，研究者可以把待探索的研究項目，撰寫內容更完整的計畫書或準備用來收集資料的預備文件及程式等，與Aspredicted計畫書一起備份。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小心得：儘管確證性的內容只佔研究計畫1%，建議使用AsPredicted格式註冊。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;註冊研究的好處&#34;&gt;註冊研究的好處&lt;/h2&gt;
+&lt;p&gt;有許多歐美學者身體力行，讓同儕與後輩理解註冊研究能對學術知識的新陳代謝帶來長期的正面影響。這裡擷取幾位學者的部落格文章，供讀者參考。首先是
+&lt;a href=&#34;https://rolfzwaan.blogspot.nl/2016/12/a-commitment-to-better-research.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rolf Zwaan的2017新年心願&lt;/a&gt;
+，列出12條研究者能做到的註冊研究事項，前兩項就是前面談到，在擬定研究計畫時，如何判別研究內容屬於確證性與探索性的部分。後十條是規劃與執行註冊研究的細節，這些細節都是維持註冊研究品質的關鍵，像是傳統研究模式忽略的資料公開是第三點，優先於其它細節，這點表示註冊研究是
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Open_science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放科學&lt;/a&gt;
+的發動機。我認為這幾點透過交互辯證更能理解這些細節的意義，將在正式課程與公開報告中提出說明並與聽眾及學生討論。&lt;/p&gt;
+&lt;p&gt;史丹福大學研究嬰幼兒語言發展的Michael Frank在
+&lt;a href=&#34;http://babieslearninglanguage.blogspot.nl/2016/07/preregister-everything.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Preregister everything&lt;/a&gt;
+提到四個好處：增加分析結果的可信度(confidence)、促進研究者養成隨時紀錄執行狀況的習慣、訓練學生做研究的最佳模式、不妨礙研究者探索新問題。我只在第一點加上英文原始附註，是因為只提中文的「可信度」，讀者也許會以為Michael Frank講的是「信度」(reliability)。為何增加分析結果的可信度是好處？請讀者看一看台大論文造假案的新聞便可領略。第二點與第四點我有親身體會，是讓我寫出這篇文章的動力。第三點是未來我要在教學中落實的措施，而且很我很好奇在只有閱讀書藉文獻的課程，加入註冊研究的觀念會有什麼效果？&lt;/p&gt;
+&lt;p&gt;最後分享
+&lt;a href=&#34;http://www.timvanderzee.com/academic-dreams/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tim van der Zee的夢想&lt;/a&gt;
+，他是正在攻讀教育學博士學位的年輕學者，卻有與前兩位前輩一樣的願景。他的貼文指出註冊研究對研究者個人的好處，是能掌握研究過程的每個階段性目標，這也是
+&lt;a href=&#34;https://rolfzwaan.blogspot.nl/2016/12/a-commitment-to-better-research.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rolf Zwaan建議更好的研究操作&lt;/a&gt;
+所提的細節，都能具體落實之後，能帶來的實際效果。Tim van der Zee也提到如果每個研究者都能用註冊研究的規格執行個人研究計畫，整體學術發展的終極好處是出版偏誤(publication bias)會成為歷史名詞。究竟會不會成真，需要收集長期的證據來證實，而你我都可以為此夢想做出貢獻。&lt;/p&gt;
+&lt;h2 id=&#34;如何調適轉換&#34;&gt;如何調適轉換&lt;/h2&gt;
+&lt;p&gt;如果你認為註冊研究不適合自己的研究模式，不妨參考Michael Frank的覺醒經驗。在貼出
+&lt;a href=&#34;http://babieslearninglanguage.blogspot.nl/2016/07/preregister-everything.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Preregister everything&lt;/a&gt;
+之前，Michael Frank在至少長達兩年的時間裡，對註冊研究抱持懷疑態度。親自實踐之後，他發現可以對研究計畫內容想得更深入，評估完成實驗所需的成本有更準確的評估，不只是能估計達成有效分析的樣本大小，也因為更能掌握分析方法，而縮短寫作論文的時程。&lt;/p&gt;
+&lt;p&gt;另一個可參考的是英屬哥倫比亞大學的社會心理學教授
+&lt;a href=&#34;https://dunn.psych.ubc.ca/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elizabeth Dunn&lt;/a&gt;
+，在2017年一月的人格與社會心理學學會年會(SPSP)分享執行註冊研究的經驗，以及一些可以讓註冊研究更能兼容驗證性與探索性項目的技巧。她也曾經歷一段懷疑時期，嘗試之後就經驗到前面所提的好處，更表示註冊研究能有效利用計畫補助的每一分錢。&lt;/p&gt;
+&lt;p&gt;註冊研究對任何科學領域都是全新的研究模式，就像Elizabeth Dunn的演講提到，沒有老師會教，沒有可參考的教科書。但是對於一些處境風雨飄搖的知識體系，從現在起累積可信任的註冊研究成果，就能重建知識價值。只要是有心的研究者，不論過去成就如何，未來進行研究之前先做註冊，以及開放研究資料，就有機會逐步重建大眾對科學專業的信心。本文以Elizabeth Dunn的演講錄影作為結束：&lt;/p&gt;
+&lt;iframe width=&#34;640&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/QJbH3RoOMpk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;2017/3/5更新：COS webinar~ Registered Reports for Early Career Researchers&lt;/strong&gt;&lt;/p&gt;
+&lt;iframe src=&#34;https://www.youtube.com/embed/tnugQLY2Zog?rel=0?ecver=2&#34; width=&#34;640&#34; height=&#34;400&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;  
+Cortex註冊報告(Registered Report)責任主編Chris Chambers現身說法，以及解答註冊研究的FAQ:   
+重要問題開始時間~   
+[22:52](https://youtu.be/tnugQLY2Zog?t=22m52s) 我的研究領適合註冊報告嗎?  
+[26:08](https://youtu.be/tnugQLY2Zog?t=26m8s) 註冊報告的退稿率/接收率?  
+[27:47](https://youtu.be/tnugQLY2Zog?t=27m47s) 註冊報告審稿時間多長?  
+[37:19](https://youtu.be/tnugQLY2Zog?t=37m19s) reviewer會不會趁機偷走我的點子?  
+[41:09](https://youtu.be/tnugQLY2Zog?t=41m9s) 如何說服我的老闆/指導教授嘗試註冊研究?  
+&lt;h2 id=&#34;參考資料&#34;&gt;參考資料&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.psychologicalscience.org/observer/research-preregistration-101#.WJBG6BsrJeX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Research Preregistration 101&lt;/a&gt;
+&lt;br&gt;
+
+&lt;a href=&#34;http://babieslearninglanguage.blogspot.nl/2016/07/preregister-everything.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Preregister everything&lt;/a&gt;
+&lt;br&gt;
+
+&lt;a href=&#34;https://rolfzwaan.blogspot.nl/2016/12/a-commitment-to-better-research.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Commitment to Better Research Practices (BRPs) in Psychological Science&lt;/a&gt;
+&lt;br&gt;
+
+&lt;a href=&#34;http://www.timvanderzee.com/academic-dreams/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic dreams&lt;/a&gt;
+&lt;br&gt;
+
+&lt;a href=&#34;https://osf.io/ukem4/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COS Reproducibility Workshops in Europe&lt;/a&gt;
+&lt;br&gt;
+
+&lt;a href=&#34;http://daniellakens.blogspot.nl/2014_09_01_archive.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;What p-hacking really looks like: A comment on Masicampo &amp;amp; LaLande (2012)&lt;/a&gt;
+&lt;br&gt;
+
+&lt;a href=&#34;https://www.youtube.com/watch?v=QJbH3RoOMpk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Preregistration: The Perspective of a Skeptical Convert&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JASP~操作像SPSS的程序可重製統計開源軟體</title>
+      <link>/zh-hant/post/text_2016007/</link>
+      <pubDate>Tue, 10 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016007/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://jasp-stats.org/wp-content/themes/jasp/images/logo.svg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;趁著這陣子台灣最高學府的學術醜聞細節不斷浮出，許多經常使用統計軟體分析資料的人士多少會回憶使用套裝統計軟體的痛苦經驗。像是都用SPSS，分析同一份資料，為什麼學長姐能跑出顯著結果，我怎麼調都做不出相同的結果。如果你有類似的際遇，就值得認識這套開源統計軟體
+&lt;a href=&#34;https://jasp-stats.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JASP&lt;/a&gt;
+，並且試著今天就開始更新手上的統計工具。&lt;/p&gt;
+&lt;h2 id=&#34;jasp的開發團隊&#34;&gt;JASP的開發團隊&lt;/h2&gt;
+&lt;p&gt;JASP是由荷蘭阿姆斯特丹大學心理學系教授
+&lt;a href=&#34;http://www.ejwagenmakers.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Eric-Jan Wagenmakers&lt;/a&gt;
+(以下簡稱EJ)主持的實驗室，以及長期合作的程式設計師一起開發與更新。EJ研究貝式統計學的應用多年，2014年出版為認知科學研究而寫的教學書藉
+&lt;a href=&#34;https://bayesmodels.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bayesian Cognitive Modeling&lt;/a&gt;
+，也開始JASP的開發以及每年定期舉辦工作坊。JASP的核心是R套件
+&lt;a href=&#34;http://bayesfactorpcl.r-forge.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BayesFactor&lt;/a&gt;
+，由
+&lt;a href=&#34;https://richarddmorey.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Richard Morey&lt;/a&gt;
+等三位計量心理學者為讓R使用者能簡易計算貝式因子(Bayes Factor)而開發，所以JASP從一開始就走開源之道。Richard Morey也是JASP開發團隊核心成員，也和EJ一起擔任工作坊講師。
+因為核心成員是貝式統計的專家，JASP不僅能做傳統的統計，簡單實驗的貝式統計，如比較兩組平均數的貝式因子，都可以用JASP計算，並且操作方式與SPSS一樣，所以就算你還不明白貝氏因子，甚至也不甚了解貝式定理，也可以用手上資料計算貝式因子。EJ已公佈
+&lt;a href=&#34;https://osf.io/r73y9/?view_only=c8f313fa105c467881c55be64f1bc83e&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;工作坊教材&lt;/a&gt;
+，有心的讀者可運用。本文採用EJ今年的代表作，
+&lt;a href=&#34;http://pps.sagepub.com/content/early/2016/10/21/1745691616674458.abstract&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;臉部回饋表情假設經典實驗的再現研究&lt;/a&gt;
+，做個初步示範與說明。&lt;/p&gt;
+&lt;h2 id=&#34;入門影片示範&#34;&gt;入門影片示範&lt;/h2&gt;
+&lt;p&gt;JASP的下載與安裝與一般開源軟體完全相同，有windows，Mac與Linux三種平台版本。有意使用的讀者可以從官網下載適合個人作業系統的版本。如何開始第一次使用，官網有工程師的youtube示範影片，雖然現在的版本0.8.0.0比示範影片的新，但是操作都是相同的，最新版可做初階因素分析，所以有問卷資料要分析的讀者可以試試看。
+注得一提的是輸出結果檔能上傳
+&lt;a href=&#34;https://osf.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSF&lt;/a&gt;
+，可以直接在專案網頁瀏覽，而且其它使用者下載結果檔，用自已的JASP打開後，可以檢視及調整原作者的軟體設定。細節可參考官網影片示範。如此一來，實驗室的學長姐畢業後，能無痛交接給學弟妹了。&lt;/p&gt;
+&lt;h2 id=&#34;使用示範重製strack-rrr&#34;&gt;使用示範：重製Strack RRR&lt;/h2&gt;
+&lt;p&gt;我曾在之前的
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章&lt;/a&gt;
+介紹臉部回饋表情假設的再現研究，EJ是這項研究的總主持人，也負責主要的分析工作。實驗設計細節請參考前文，我以此研究為例，簡單介紹貝式因子的計算與解讀方法。&lt;/p&gt;
+&lt;h3 id=&#34;貝式因子簡介&#34;&gt;貝式因子簡介&lt;/h3&gt;
+&lt;p&gt;貝式因子是一筆資料在兩個機率分配之內的似然性比值(likelihood ratio)。這兩個機率分配就是進行假設檢定時，分別代表虛無假設($ H_0 $)與對立假設($ H_1 $)的機率分配，似然性指一筆資料在某個假設為真的情況，支持這項假設的証據強度。如果對於似然性尚未有足夠的認識，可當作兩種似然性數值對應假設檢定的p值與考驗力。&lt;br&gt;
+兩個似然性相除表示這項證據支持一種假設的強度是支持另一種假設的多少倍。以虛無假設的似然性除以對立假設的似然性，得到的貝氏因子通常寫成$ BF_0 $$ _1 $；以對立假設的似然性除以虛無假設的似然性，得到的貝氏因子通常寫成$ BF_1 $$  _0 $。研究者要報告那一種貝氏因子，可根據這次研究看中那種假設應該得到研究結果的支持。通常原創研究會報告$ BF_0 $$ _1 $，根據之前的研結果或認定存在某種效果，都會以$ BF_1 $$  _0 $進行推論。&lt;br&gt;
+統計學者Kass與Raftery在1995年提出貝式因子數值的
+&lt;a href=&#34;http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;強度分界&lt;/a&gt;
+：貝氏因子至少大於1，代表位於分子的假設與位於分母的假設有起碼的差異；貝氏因子大於3，代表手上的證據正面支持位於分子的假設；貝氏因子大於20，手上證據強烈支持位於分子的假設；到了大於150，可以說沒有反證能推翻位於分子的假設。&lt;br&gt;
+以直接再現研究來說，已有支持臉部肌肉回饋假說的原始研究結果，自然有興趣知道再現結果的$ BF_1 $$  _0 $會不會至少大於1。此外，根據貝式定理，計算貝式因子或似然性數值需要先得知假設的先驗機率，也就是不論有無證據，假設認定的效果確實存在的機率分配。傳統的統計方法不會處理這一塊，我規畫撰寫一篇較深入的文章介紹，現在讀者只要知道JASP給了一個方便法門–預設先驗機率(default prior)。因為也是兩個假設的比值，又可稱先驗機率賠率。好比一場賽馬比賽，有兩匹初次上場的賽馬，沒有人知道那匹馬會勝出，只能由馬匹的出身背景先做推估，下注者就得到誰勝誰負的賠率。EJ在2012年發表的
+&lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3505519/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;論文&lt;/a&gt;
+，主張預設先驗機率賠率可設為0.707，這也是打開JASP的貝氏統計程序，會看到的預設值。&lt;br&gt;
+臉部肌肉回饋假說的實驗，就像「牙齒組評分高於嘴唇組評分」與「牙齒組評分等於嘴唇組評分」兩個可能結果，在一間實驗室裡同場較量。0.707代表未做實驗之前，對前者的看好度是後者的0.707倍，貝式因子表示完成實驗之後，這間實驗室判定前者真正勝過或負於後者的比例。所以貝式因子至少大於1，表示「牙齒組評分高於嘴唇組評分」確實比「牙齒組評分等於嘴唇組評分」早一點點抵達終點線。17個實驗室的貝式因子都沒有大於1，表示臉部肌肉回饋假說看好的結果都沒有真正勝過沒有差異的結果。&lt;/p&gt;
+&lt;h3 id=&#34;取用重製成果&#34;&gt;取用重製成果&lt;/h3&gt;
+&lt;p&gt;臉部肌肉回饋假說再現研究的所有資料，已公開於
+&lt;a href=&#34;https://osf.io/hgi2y/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OSF專案&lt;/a&gt;
+，
+&lt;a href=&#34;https://osf.io/6jtny/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;論文&lt;/a&gt;
+的表2記綠所有17個實驗室結果的貝氏因子。產生論文中所有圖表的
+&lt;a href=&#34;https://osf.io/9j72u/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原始資料&lt;/a&gt;
+與
+&lt;a href=&#34;https://osf.io/tbq26/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;分析腳本&lt;/a&gt;
+壓縮檔下載後，可重製論文中的所有圖表。不過我發現重製出來的貝氏因子和論文表2有些出入，可比較下圖與原始表格：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Strack_RRR_BF.png&#34; alt=&#34;&#34; title=&#34;重製原論文表2。黃底表格顯示的數值不同於已出版論文&#34;&gt;&lt;/p&gt;
+&lt;p&gt;為何自已跑出來的結果有些許不同，我會去信向EJ詢問。但是讀者們可以像我一樣，用JASP重製單側假設檢定的貝氏因子，只要下載我的
+&lt;a href=&#34;https://osf.io/byht3/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;jasp檔&lt;/a&gt;
+，了解我的重製方法。&lt;/p&gt;
+&lt;h2 id=&#34;經由可重製分析流程學習與使用統計&#34;&gt;經由可重製分析流程學習與使用統計&lt;/h2&gt;
+&lt;p&gt;由於原始實驗室曾發生「牙齒組評分高於嘴唇組評分」勝出的事實，所以EJ在這次再現研究嘗試一種為評估再現研究信效度而開發的貝式因子，在2014年發表的
+&lt;a href=&#34;http://doi.apa.org/getdoi.cfm?doi=10.1037/a0036731&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;論文&lt;/a&gt;
+，提到以原始研究的統計值為種子，取得逼近合理先驗機率賠率的方法。這套演算方法尚未收錄於任何套件，所以現版本的JASP未能重製。然而論文表2顯示，只有Zeelenberg的實驗室出現「牙齒組評分高於嘴唇組評分」稍微勝出的結果。上圖的再製表格卻無法再現相同的分析結果。&lt;br&gt;
+透過這次重製經驗，即使我未能完全了解論文中的公式推導，卻能從公開的程式碼，了解這套演算方法的邏輯。相信有心提昇個人統計功力的讀者，也能透過這樣的方式學習觀念與工具。&lt;/p&gt;
+&lt;h4 id=&#34;本文隨jasp重要升級持續更新&#34;&gt;本文隨JASP重要升級持續更新&lt;/h4&gt;
+&lt;p&gt;JASP 1.0還未正式推出，未來更新有何變化尚未可知，因此本文內容如果因為將來的更新而有改變，會進行相對的更新與修正。有興趣學習的JASP與貝式統計的讀者，可以到EJ常駐的
+&lt;a href=&#34;http://forum.cogsci.nl/index.php?p=/categories/jasp-bayesfactor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;網路論壇&lt;/a&gt;
+提問，與EJ及其它高手直接交流。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>開放科學在荷蘭</title>
+      <link>/zh-hant/post/text_2016006/</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016006/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/images/VSNU_OA.jpg&#34; alt=&#34;&#34; title=&#34;荷蘭大學聯盟&amp;lt;VSNU&amp;gt;推行之開放取用文獻計畫&#34;&gt;&lt;/p&gt;
+&lt;p&gt;相信大家聽過一個名詞：科學普及(Popular Science，簡稱科普)，這是由專業科學家，書寫通俗易懂的書藉文章或進行公開演講，也可能參與媒體節目，向大眾傳播科學家們殫心竭慮收集分析資料後產生的知識精華。英語世界的科普活動已有數十年的歷史，至今已出現不少投入科普活動的知名科學家。中文世界最近較知名的例子，當然是謝伯讓老師的
+&lt;a href=&#34;http://www.books.com.tw/products/0010723238&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;大腦簡史&lt;/a&gt;
+。而你正在閱讀的本文，要介紹比科普更進一步，將科學知識透明化與公開化的開放科學運動(Open Science)。&lt;/p&gt;
+&lt;h2 id=&#34;開放科學運動之興起&#34;&gt;開放科學運動之興起&lt;/h2&gt;
+&lt;p&gt;開放科學運動的成因在歐美學術圈之內蘊釀已久，比較為大眾所知的近因可從諾貝爾經濟學獎得主Daniel Kahneman的科普佳作《快思慢想》（Thinking, Fast and Slow）見到端倪。Kahneman在書中引用一系列社會心理學「促發效應」(Priming effect)研究，佐證要推銷給讀者的核心概念：「人類心智能運用環境中的提示，在自動與主控的認知系統之間切換。」然而，就在這本書出版當年，統計學家運用剛開發出來偵測出版偏誤（publication bias）的方法，確認這一系列「促發效應」的研究論文報告的真實效果極低，只是剛好達到統計顯著的指標而已。以常用的統計顯著水準0.05做比喻，只是在二十次失敗實驗之後，剛好出現唯一一次成功實驗的結果。這篇文章要正式定稿前，長期研究心理科學研究再現性的社會心理學家Ulrish Schimmack在個人部落格貼出專業分析文：「
+&lt;a href=&#34;https://replicationindex.wordpress.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reconstruction of a Train Wreck: How Priming Research Went off the Rails&lt;/a&gt;
+」，分析這一系列促發研究如何引導社會心理學往無法獲得可靠知識的方向發展，讓這類文獻如同脫軌的火車衝撞好不容易建立起來的知識體系。雖然《快思慢想》的開頭九章，是Kahneman建立畢生學問精華的基石，卻因為充滿瑕疵證據的第四章，讓整本《快思慢想》的科學知識價值打了折扣（註1）。&lt;/p&gt;
+&lt;p&gt;促發效應的案例呈現科學社群之內長久不為人知的一面，但是「快思慢想」的瑕疵更顯現這類研究案例經歷長久發展之後，對科普造成難以逆轉的傷害，甚至是大眾對專業科學家的信任。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/train-wreck-1.jpg&#34; alt=&#34;&#34; title=&#34;有瑕疵的科學文獻大量累積之後，將導致一系列看似進步的科學知識，朝向火車出軌般的災難發展。圖像取自Ulrish Schimmack的部落格。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;於是，Kahneman在書籍出版隔年寫了一封給學術界的
+&lt;a href=&#34;http://www.nature.com/news/nobel-laureate-challenges-psychologists-to-clean-up-their-act-1.11535&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開信&lt;/a&gt;
+。他在信中建議心理學家如何對實驗結果看起來很美妙的研究，設計可信的再現研究，檢驗真正的知識價值。Kahneman主張的研究模式現在被稱為
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;「註冊再現研究」(Registered Replication Research)&lt;/a&gt;
+，而且已有科學家身體力行，現在最知名的註冊再現研究，像是2015年轟動全球科學界的消息「
+&lt;a href=&#34;https://www.thenewslens.com/article/23587&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;270科學家合作，僅能重複36%心理學實驗結果&lt;/a&gt;
+」。有許多心理學家，更運用這種模式檢驗科普圈中常被介紹的心理學發現。有興趣的讀者，可參考筆者的
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;另一篇文章&lt;/a&gt;
+。&lt;/p&gt;
+&lt;h2 id=&#34;開放科學是什麼&#34;&gt;開放科學是什麼？&lt;/h2&gt;
+&lt;p&gt;這波註冊再現研究的出現，揭示開放科學的兩個核心理念：透明(Transparency)與公開(openness)。科學專業的具體實踐是在收集資料前，要為他人能有效檢驗產生的結果，而預先註冊(pre-registered)所有研究資料。凡是有預先註冊的研究，不論是不是再現他人的研究結果，都可稱為「註冊研究」。預先註冊研究正式發表之後，就算是非專業但有能力從事科學研究的人士，都能運用透明公開的資料，重現專業科學家的發現。當前的開放科學，是基礎科學家與支持科學研究的公私機構所推動的運動，運動的目標是面向大眾。那麼，初次得知這個名稱的讀者，要如何認識這波運動的內容呢？&lt;/p&gt;
+&lt;p&gt;從事實驗心理學研究的筆者，藉著過去這一年在荷蘭訪問的機會，除了學習以註冊研究模式進行個人的研究，也從直接與間接管道了解開放科學運動的進行現況。筆者發現，在開放科學運動的幾個面向上，都有荷蘭科學家投入的身影，荷蘭政府也正在推動科學文獻的開放取用，並製定明確的政策目標及推動策略。由於筆者本身研究領域的關係，以下說明提到的人物，都是現在活躍的荷蘭心理學者。&lt;/p&gt;
+&lt;p&gt;根據
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Open_science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;維基百科&lt;/a&gt;
+，開放科學包括六個方向的運動：開放取用(Open Access)、開放源碼(Open Source)、開放資料(Open Data)、開放的研究流程(Open Methodology)、開放的同儕審查(Open Peer Review)、以及開放的教育資源(Open Educational Resource)。&lt;/p&gt;
+&lt;p&gt;此外，2016年開始的歐盟計畫「提昇歐洲開放科學訓練品質」(Facilitate Open Science Training for European Research，簡稱FOSTER)也提出開放科學運動的相關細項目標，並訂定明確的執行檢核效標。無論是維基百科或FOSTER的分類方式，都表達出一項概念：這項運動的參與者可以是個人、機構、國家、甚至跨國組織。為便於說明，本文根據維基百科的六大方向來和讀者說明什麼是開放科學運動。&lt;/p&gt;
+&lt;h3 id=&#34;1開放取用的研究文獻open-access-journals&#34;&gt;1.開放取用的研究文獻(Open Access Journals)&lt;/h3&gt;
+&lt;p&gt;閱讀及整理過去的研究成果，是所有科學活動的開始。現今的科學文獻是科學家投稿給有同儕審查制度的期刊，經過同儕審查被接受後，才由出版社發行，最後再讓圖書館訂購收藏，提供從事科學研究的人士搜尋。有長久歷史的學術出版社(例如荷蘭的Elsevier)，已發展出需要使用者付費，才能檢索文獻的機制。隨著要支付的訂購費用越來越高，學術圈已有集體抗議這種付費出版模式的
+&lt;a href=&#34;https://www.twreporter.org/a/elsevier-vs-sci-hub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;行動&lt;/a&gt;
+，這種模式也使科學文獻只對有訂購的機構開放，而非向所有人開放。所以開放取用運動的目標，就是達到有能力上網檢索的人士，能自由取用科學家的研究論文。現在實踐開放取用的具體方式有兩種途徑：一種是論文作者個人實踐的綠色途徑(Green Route)，另一種是由出版社發行開放取用期刊的黃金途徑(Gold Route)。&lt;/p&gt;
+&lt;p&gt;綠色途徑是論文作者將期刊接受的論文手稿(post-printed manuscript)，放在公開的社群網站，讓任何人可經由網路搜尋取得。論文手稿是依既定的論文格式撰寫，提供出版社編輯排版的原始稿件。許多期刊允許作者將這類稿件放在公開的資料庫網站，如果想確定接受稿件的期刊是否允許自由取得，可利用
+&lt;a href=&#34;http://www.sherpa.ac.uk/romeo/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SHERAP/RoMEO&lt;/a&gt;
+這個網站查詢，也可得知投稿的期刊支持開放取用的程度。任何有允許公開論文手稿的研究者，都能運用合法的資料庫平台公開手稿，像是由設在美國維吉尼亞州的
+&lt;a href=&#34;https://cos.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放科學中心（Center for Open Science）&lt;/a&gt;
+所經營的
+&lt;a href=&#34;https://osf.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放科學平台（Open Science Framework, OSF）&lt;/a&gt;
+。除此之外，還有提供科學研究者的社群網站
+&lt;a href=&#34;https://www.academia.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academia&lt;/a&gt;
+與
+&lt;a href=&#34;https://www.researchgate.net/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Research Gate&lt;/a&gt;
+。例如我一直在注意的兩位荷蘭實驗心理學者：
+&lt;a href=&#34;https://www.researchgate.net/profile/Bernhard_Hommel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bernhard Hommel&lt;/a&gt;
+與
+&lt;a href=&#34;https://www.researchgate.net/profile/Rolf_Zwaan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rolf Zwaan&lt;/a&gt;
+，已將個人曾發表過的與最新的著作，持續公開於這兩個網站。他們都是荷蘭科學界中生代的代表，以身作則也讓與他們合作的後輩也效法實踐綠色途徑。&lt;/p&gt;
+&lt;p&gt;綠色途徑仰賴研究者的個人意願，除非
+&lt;a href=&#34;https://goo.gl/T4ppxp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;有機構強制推動&lt;/a&gt;
+，讀者就算查到想要的文獻，如果研究者不想讓自己的著作依此模式公開，只能從出版社的付費管道索取論文。至於黃金途徑的終極目標就是要出版社提供百分之百的開放取用論文，而荷蘭的教育部與
+&lt;a href=&#34;http://www.vsnu.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;大學聯盟(VSNU)&lt;/a&gt;
+已訂出2024年要讓荷蘭境內公民皆可自由取用所有科學文獻的目標，他們從2014年開始和Elsevier等主要學術出版社談判，已有初步成果。VSNU將階段性成果整理成
+&lt;a href=&#34;http://www.magazine-on-the-spot.nl/openaccess/eng/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;懶人包&lt;/a&gt;
+，提供世界各國參考。我摘出其中談判的四個要點：(1)由最需要收藏文獻的機構首長擔任主要談判人員，例如大學校長；(2)談判人員有所屬機構的充分授權；(3)堅守底線，例如不妥協於Elsevier所要求的收取額外40%出版費用；(4)政策支持，也就是荷蘭教育部已宣佈的目標。2016年底正好發生台灣與其它國家的科研機構向Elsevier要求談判的行動，荷蘭邁向黃金途徑的經驗值得學習。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/osf_preprints.png&#34; alt=&#34;&#34; title=&#34;Open Science Framework出版前論文手稿查詢頁面。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/ZWAN_RG201701018.JPG&#34; alt=&#34;&#34; title=&#34;Rolf Zwaan的Rsearch Gate個人首頁&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Hommel_RG20170108.JPG&#34; alt=&#34;&#34; title=&#34;Bernhard Hommel的Rsearch Gate個人首頁&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2開源軟體open-source-software&#34;&gt;2.開源軟體(Open Source Software)&lt;/h3&gt;
+&lt;p&gt;收集資料是科學研究的重要步驟，要收集有意義的資料，運用設計良好的程序是重要環節。專業科學家的養成過程中，有一部分是熟練操作收集資料程序的軟體，這類軟體通常能編輯符合研究目的程序腳本。開放科學強調科學研究程序的可重製性，開源軟體以開放原始碼的方式，讓使用者自由使用與修改軟體內容，達成可重製研究的要求。這段時間我個人收集資料用的軟體都是荷蘭心理學研究者開發的開源軟體，除了為各位介紹這些軟體之外，也在此分享我的個人使用心得。&lt;/p&gt;
+&lt;h4 id=&#34;qrtengine&#34;&gt;QRTEngine&lt;/h4&gt;
+&lt;p&gt;我的研究有一部分需要透過網路問卷平台
+&lt;a href=&#34;https://www.qualtrics.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Qualtrics&lt;/a&gt;
+進行實驗，由於需要紀錄填答者的按鍵反應，並且根據註冊研究要求，在正式收集資料前要備份程序腳本，雖然我的合作夥伴以前曾經編寫程序一樣的Qualtrics平台腳本，但是這個版本需要許多道人工操作程序，才能置入新的刺激項目，不利未來的重製研究。準備過程中，我找到了萊登大學（Leiden University）Henk van Steenbergen領導的團隊開發的
+&lt;a href=&#34;http://www.qrtengine.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;QRTEngine&lt;/a&gt;
+，發現符合我的研究需求，因而花了一些時間學習運用這套函式庫編輯程序腳本。&lt;/p&gt;
+&lt;p&gt;Qualtrics是一套互動式網頁平台，能讓問卷設計者編輯各種網路問卷，也讓設計者可自行撰寫javascript，在問卷網頁呈現自己想要的互動方式。然而，心理學實驗需要的互動方式與問卷項目隨機程序相當複雜，QRTEngine開發團隊將這些要求化為一系列簡單的javascript函式。就算不完全了解javascript的寫作邏輯，甚至不會寫程式，只要依腳本設置對應的函式，設計者就能打造出研究所需要的網路問卷。收集好的資料可透過團隊提供的程式，轉換成任何資料分析軟體都能處理的格式。&lt;/p&gt;
+&lt;p&gt;然而遺憾的是，當我完成研究的時候，QRTEngine也停止更新。因為Qualtrics主要用於市場商業調查，2016年系統更新後，為了讓問卷設計能相容於各式上網載具，大幅減低使用者自行編輯javascript的彈性，2017年之後可能無法再使用同一套腳本進行相同的研究。。幸好，我常用的另一套開源軟體
+&lt;a href=&#34;http://osdoc.cogsci.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenSesame&lt;/a&gt;
+，有了新的進展。&lt;/p&gt;
+&lt;h4 id=&#34;opensesame&#34;&gt;OpenSesame&lt;/h4&gt;
+&lt;p&gt;OpenSesame是目前任教於格羅寧根大學（University of Groningen）的
+&lt;a href=&#34;http://www.cogsci.nl/smathot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Sebastiaan Mathôt&lt;/a&gt;
+，在就讀博士班時期與同事一起開發出來的。OpenSesame的核心程式碼是以python撰寫，所以熟悉python的人能自行改變或增加OpenSesame的功能。開發團隊設計一套簡單易上手的使用者介面，即便是不懂python的使用者，在自行操作幾種範例之後，也能掌握編輯實驗腳本的基本方法。第三版開始的OpenSesame提供連結OSF專案庫的功能，研究者可直接在使用者介面將編輯好的腳本與收集完成的資料，備份到OSF專案庫。如果研究者的OSF專案庫是公開的，有意再製研究的人士，可直接在自己的OpenSesame使用者介面下載腳本，在不同地點直接再現實驗程序。&lt;/p&gt;
+&lt;p&gt;2016年七月，開發團隊在github公開OpenSesame網頁版
+&lt;a href=&#34;https://github.com/shyras/osweb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WEBOS&lt;/a&gt;
+的原始碼，使用者可以安裝於自己管理的伺服器，直接執行單機版OpenSesame的腳本。不過網頁版的功能還不夠完整，只能執行一些程序簡單的腳本。我看好網頁版的未來發展，是取代QRTEngine的潛力工具。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://osdoc.cogsci.nl/3.1/pages/manual/img/interface/interface.png&#34; alt=&#34;&#34; title=&#34;OpenSesame使用者介面。取自官方網頁。&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3開放資料open-data&#34;&gt;3.開放資料(Open Data)&lt;/h3&gt;
+&lt;p&gt;開放資料的概念，可從資料的保存（data reservation）與資料的取用（data access）兩方面描述。科學文獻報告的結果，都是原始資料的分析精華，保留原始資料則可回溯發現新知識的過程。保存資料的概念雖在科學研究者中人盡皆知，但非所有科學家有相同的共識。VSNU在2012年頒佈的荷蘭科學研究守則
+&lt;a href=&#34;http://vsnu.nl/en_GB/netherlands-code-of-conduct-scientific-practice.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Netherlands Code of Conduct for Scientific Practice&lt;/a&gt;
+中，對於有關可核實性（Verifiability）的項目，明訂加盟的大學從事科學研究的教師與學生，均有義務保留研究資料至少十年。&lt;/p&gt;
+&lt;p&gt;相關守則的依據是VSNU規劃將近十年的治理方針
+&lt;a href=&#34;http://www.vsnu.nl/en_GB/code-good-governance.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;（The codes of good goverance）&lt;/a&gt;
+，這些守則應該也是近年荷蘭推動高等教育升級方案的依據。查閱這個守則的公開資訊時，我發現研究守則的最新版出爐的前一年，正好爆發轟動荷蘭學術界的Diederik Stapel研究造假案。案件爆發前，Diederik Stapel是任教於VSNU的蒂爾堡大學（Tilburg University）的心理學教授，由於長期以來源不明的資料發表論文，被該校師生匿名檢舉之後，調查委員會清查從他攻讀博士時期開始發表的論文，發現有58篇已發表的論文都無法提出可供核實的資料。由於Diederik Stapel從博士班到服務過的三所大學皆是VSNU的會員(阿姆斯特丹大學、格羅寧根大學、蒂爾堡大學)，這件案例的教訓，應是促成VSNU將研究人員的責任具體載明於科學研究守則的重要因素。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://diederikstapel.com/afbeeldingen/foto%20diederik.gif&#34; alt=&#34;&#34; title=&#34;Diederik Stapel。照片取自Diederik Stapel個人網頁&#34;&gt;&lt;br&gt;
+
+&lt;a href=&#34;#&#34; title=&#34;2016年，台灣出現幾波研究人員在學術投稿上造假和違反科學倫理的事件，重創許多知名大學和教授的聲譽，並引發許多對科學研究和學術發表的檢討聲音。其實不只台灣，當前的國際學術界，也正經歷許多風起雲湧的改革。訴求將科學知識透明化與公開化的開放科學（open science）運動，便是近期科學社群倡議的一項主軸。荷蘭政府、大學和研究機構不僅參與了這波運動，還在某些項目上率先發難，取得顯著的成果，例如抵制學術資料庫公司收取高額期刊訂閱費，而往「開放取用的文獻」（open access journals）的目標前進。除此之外，荷蘭學者也在開放科學運動的其他面向上扮演了關鍵角色。那麼，就讓我們來看看開放科學運動究竟包含哪些內容，荷蘭的投入經驗如何，對台灣又有什麼啟發吧！&#34;&gt;//&lt;/a&gt;
+: # &amp;ldquo;Diederik Stapel potrait&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;在最理想的落實狀態下，開放資料的取用，是讓論文讀者能直接取得原始資料，核實獲得論文數據與圖表的真實性。如果整個學術界能達到這樣的境界，類似Diederik Stapel的案例就不可能發生。到目前為止，至少VSNU師生最近四年發表的論文，讀者都能獲得完整保存的資料，但是其它機構的研究者資料可就不一定了。蒂爾堡大學的博士生Chris Hartgerink為此提出一套折衷方案，將心理學期刊內論文的統計數據轉換成格式化資料，包裝為
+&lt;a href=&#34;https://github.com/chartgerink/2016statcheck_data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R套件 &lt;/a&gt;
+，讓這些期刊文獻的讀者可以自行做初步檢核。&lt;/p&gt;
+&lt;p&gt;這套方案源起Chris Hartgerink與同校的博士生Michele Nuijten合作開發的R套件 
+&lt;a href=&#34;https://github.com/MicheleNuijten/statcheck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;statcheck&lt;/a&gt;
+。statcheck的功能是掃瞄及擷取論文中的統計數據，再檢驗統計數據是否符合報告所提計算統計數據的必要參數。現在原作者Michele Nuijten還推出
+&lt;a href=&#34;http://statcheck.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;網站版statcheck&lt;/a&gt;
+，使用者可以直接上傳論文pdf或網頁網址，從網站獲得檢查結果。而statcheck也被改造為自動化程式機器人，在知名的期刊論文核實網站
+&lt;a href=&#34;https://pubpeer.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pubpeer&lt;/a&gt;
+，張貼最新一期的心理學期刊論文數據核實簡報。有逛pubpeer的讀者會發現在該網站上有關心理學期刊的貼文大多數都是statcheck的作品。《自然》（Nature）期刊曾在2016年11月底以statcheck為例發表一篇
+&lt;a href=&#34;http://www.nature.com/news/post-publication-criticism-is-crucial-but-should-be-constructive-1.21058&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;評論&lt;/a&gt;
+，倡議pubpeer的核實應更具建設性。數據核實是評價科學論文真正價值的第一步，如何發掘某篇論文的錯誤或待澄清的地方，有賴讀者親自動手。我認為這是開放科學運動真正的目標，刺激那些在論文發現問題的研究者，做出更有意義的研究。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/statcheck_website.jpg&#34; alt=&#34;&#34; title=&#34;想知道你在讀的論文統計數據有沒有錯誤？先讓statcheck幫忙檢查一下。&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4開放的研究流程open-methodology&#34;&gt;4.開放的研究流程(Open Methodology)&lt;/h3&gt;
+&lt;p&gt;研究流程的開放模式有兩種：&lt;br&gt;
+重現(replication)：完整執行從收集資料到資料分析的完整步驟；重製(reproduce)：完整執行從原始資料到資料分析的所有步驟。第一種的難度與成本顯然較高，第二種則可以與開放資料運動一起推廣。2016年有兩套荷蘭學者所推出的開源軟體
+&lt;a href=&#34;https://jasp-stats.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JASP&lt;/a&gt;
+與
+&lt;a href=&#34;https://github.com/chartgerink/osfr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;osfr&lt;/a&gt;
+，皆有助推廣第二種重製模式。根據學習與操作的難易度，我姑且為之命名為新手級與專業級。&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://jasp-stats.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;JASP&lt;/a&gt;
+是由阿姆斯特丹大學心理學系教授Eric-Jan Wagenmakers領軍的團隊開發，目的是推廣Eric-Jan Wagenmakers長期研究的貝式統計方法。JASP的使用者介面效法知名的商用統計軟體SPSS，但是多了一些SPSS沒有的特色。我提出兩個值得親自嘗試的特點：&lt;br&gt;
+首先是輸出的報表檔重新打開後，不只有圖表，還有原使用者的操作介面，所以JASP不需要看操作手冊學習，就可從開發團隊提供的範例檔了解想做的統計方法。第二，只要把JASP的報表檔上傳到OSF平台，就可讓他人透過任何網頁瀏覽器閱覽，所以如果老闆要你把跑完統計的結果寄給他看，只要將連結網址傳給老闆就好。如果對如何操作有興趣，可以參考我的
+&lt;a href=&#34;http://scchen.com/zh/post/text_2016007/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;介紹文&lt;/a&gt;
+。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://blog.efpsa.org/wp-content/uploads/2015/08/JASP_screenshoot_2.jpg&#34; alt=&#34;&#34; title=&#34;JASP的操作畫面。取自Journal of European Psychology Students部落格。&#34;&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/chartgerink/osfr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;osfr&lt;/a&gt;
+是一套R套件，作者是前面提過的Chris Hartgerink。這個套件的功能是讓使用者自行撰寫R腳本管理OSF專案。最早已提到OSF可讓研究者自行管理要公開的檔案內容，對於重製模式來說，最理想的重製是讓讀者只要執行一套腳本，就能獲得文獻中呈現的所有圖表以及數據。如果論文作者提供有套用osfr函式庫的R腳本，讀者能直接執行與檢視這套腳本，了解論文作者如何製造放在論文之中的圖表。雖然osfr還有一些臭蟲尚待更正，，未來這個套件對開放科學的貢獻值得期待。有興趣的讀者，可以在youtube觀看Chris Hartgerink的示範影片，了解如何操作。&lt;/p&gt;
+&lt;div style=&#34;position:relative;height:0;padding-bottom:75.0%&#34;&gt;&lt;iframe src=&#34;https://www.youtube.com/embed/cnE3AcdeGVY?rel=0?ecver=2&#34; width=&#34;480&#34; height=&#34;360&#34; frameborder=&#34;0&#34; style=&#34;position:absolute;width:100%;height:100%;left:0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&#34;5開放的同儕審查open-peer-review&#34;&gt;5.開放的同儕審查(Open Peer Review)&lt;/h3&gt;
+&lt;p&gt;同儕審查是專業期刊決定研究者投稿的論文是否達到設定品質的評估程序。從1665年Henry Oldenburg在英國皇家學會（Royal Society）發表第一篇同儕審查的論文開始，同儕審查演變至今已成為專業科學家發表論文必過的關卡，以及具備擔任論文審查者的義務。各種科學期刊皆發展出一套有利於符合要求的審查制度，新進科學家也要學習如何辨識能刊登研究成果的期刊。但是科學研究的透明度與公開性－－&amp;ndash;正如開源運動、開放資料、開放研究流程所追求的目標，並不是傳統科學期刊重視的價值。像是開放原始碼、開放資料、開放研究流程，並非主流科學期刊的審查重點。現今許多主流科學期刊審查重視的，是想法夠不夠新穎，以及研究結果是不是夠顯著。開放同儕審查的運動方向，就是從論文評審者集體發起，引導學術界人士重視透明度公開性價值的運動。　　&lt;/p&gt;
+&lt;p&gt;英國皇家學會從2017年元旦開始，正式啟動
+&lt;a href=&#34;https://opennessinitiative.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Openness Initiative&lt;/a&gt;
+。這項運動徵求願意署名參與的學者，從2017年元旦開始，一旦收到期刊論文的審查邀請，將以作者是否在第三方平台（如OSF）公開原始研究資料，以及完成研究流程所需材料或軟體設定，做為接受審查該論文的條件。因此我們可以說，這項運動結合前面提到的所有運動目標，是科學社群內部發起的價值觀革新運動。&lt;/p&gt;
+&lt;p&gt;Openness Initiative與荷蘭有什麼關係？這項運動的
+&lt;a href=&#34;https://opennessinitiative.org/contact-us/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;主要發起者&lt;/a&gt;
+是來自英荷德美等四個國家，現任發言人
+&lt;a href=&#34;https://www.researchgate.net/profile/Richard_Morey&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Richard Morey&lt;/a&gt;
+來自美國，取得博士學位後到格羅寧根大學任教，期間與前面提到的Eric-Jan Wagenmakers合作開發許多貝氏統計方法，也是JASP的主要奠基者。2015年轉任英國卡迪夫大學，每年夏天還是會在阿姆斯特丹和Eric-Jan Wagenmakers一起舉辦貝式統計工作坊。在深入認識開放科學的過程中，我同時對貝氏統計有進一步了解，正是因為幾位核心人物也是開放科學運動的推廣者。讀者如果對貝氏統計有興趣，可以從這兩位學者的著作入手。&lt;/p&gt;
+&lt;p&gt;2012年英國皇家學院支持的出版社
+&lt;a href=&#34;http://www.ubiquitypress.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ubiquity Press&lt;/a&gt;
+開始發行四本公開同儕審查紀錄的開放取用期刊：
+&lt;a href=&#34;http://openarchaeologydata.metajnl.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Journal of Open Archaeology Data&lt;/a&gt;
+、
+&lt;a href=&#34;http://openpsychologydata.metajnl.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Journal of Open Psychology Data&lt;/a&gt;
+、
+&lt;a href=&#34;http://openhealthdata.metajnl.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Open Health Data&lt;/a&gt;
+、
+&lt;a href=&#34;http://openresearchsoftware.metajnl.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Journal of Open Research Software&lt;/a&gt;
+，這一系列期刊的政策包含了本文介紹至此的五個開放科學運動宗旨。專攻這些期刊領域的朋友，可以考慮將最新的研究成果投稿到這些期刊中。其中心理學《Journal of Open Psychology Data》的現任主編Jelte Wicherts，是statcheck主要作者Michèle Nuijten的指導教授。這群蒂爾堡大學師生挺身而出的行動，見證有理想的荷蘭科學家，透過全面實踐開放科學，回應震驚全國的學術醜聞所帶來的反思。　　&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/JOPD2016.jpg&#34; alt=&#34;&#34; title=&#34;Journal of Open Psychology Data最新一期網頁剪影&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6開放的教育資源open-educational-resource&#34;&gt;6.開放的教育資源(Open Educational Resource)&lt;/h3&gt;
+&lt;p&gt;如果同儕審查是推動開放科學的科學社群內部力量，教育就是召喚非專業卻關心科學發展的大眾，理解開放科學意義的外部管道，目前在學的大學生，即是他們第一波教育對象。說起和開放科學相關的課程，我推薦的第一門課程是Eric-Jan Wagenmakers在阿姆斯特丹大學開設
+&lt;a href=&#34;http://www.ejwagenmakers.com/GSBS/GSBS.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Good Science, Bad Science&lt;/a&gt;
+，授課內容全部公開在個人網站。這門課程主要介紹如何運用新的研究方法，評價一份研究成果的價值，以及提昇個人研究內容的公開性與透明度。課程偏向讓有初步認識的學生，透過動手操作來學習。由於教材都是開放資料，教師可以按照需要改造成對應在任何程度學生的課程中。&lt;/p&gt;
+&lt;p&gt;另一門值得介紹的課程是埃因霍溫科技大學的Daniel Lakens在Cousera推出的
+&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Improving your statistical inferences&lt;/a&gt;
+。這門課程內容在台灣的大學課程裡，相當於研究所的進階統計，但是短短七週課程涵蓋傳統的次數主義（Frequentist Statistics）與貝氏統計(Bayesian Statistics)兩大統計取向，第六週更談到科學哲學的議題，檢視開放科學運動的思想基礎。我自己親自完成每週作業後，認為這門課適合給想自我成長的科學研究人員，以及具備起碼基礎，想更上一層樓的學生們。除此之外，我也認為這門課的教材與作業設計，都是實現開放科學的必備技能。&lt;/p&gt;
+&lt;p&gt;透過Daniel Lakens的課程，我也注意到有新一代的荷蘭科學家正在尋找運用MOOC(大規模公開線上課程)推廣開放科學的最佳方法。萊登大學的博士生
+&lt;a href=&#34;http://www.timvanderzee.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tim van der Zee&lt;/a&gt;
+與
+&lt;a href=&#34;https://www.coursera.org/learn/statistical-inferences/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Improving your statistical inferences&lt;/a&gt;
+之類的課程合作，設計有對照組的
+&lt;a href=&#34;https://taweihuang.wordpress.com/2016/09/25/%E5%AE%8C%E5%85%A8%E4%BA%86%E8%A7%A3-ab-%E6%B8%AC%E8%A9%A6-%E2%94%80-%E5%8F%AA%E5%AD%B8%E5%88%9D%E7%B5%B1%E4%B9%9F%E8%83%BD%E5%81%9A%E7%9A%84%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A/B測試&lt;/a&gt;
+，找出能增益學習者學習效益的影片設計模式。Tim在
+&lt;a href=&#34;http://blog.efpsa.org/2017/01/23/open-online-education-research/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;部落格文章&lt;/a&gt;
+以及與我與他的私人通信，都提到他的MOOC研究都會以註冊研究的規格設計與執行。如此可以讓更多有志人士了解如何進入開放科學，也能在這個人人被大量數據淹沒的時代，由MOOC的設計者與發行者開拓一條實踐開放科學的道路。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.timvanderzee.com/inhoud/uploads/2016/07/type-i-and-type-ii-errors.jpg&#34; alt=&#34;&#34; title=&#34;一張圖秒懂統計學的型一錯誤[偽陽性]與型二錯誤[偽陰性]。圖像取自Tim van der Zee個人網站。&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;荷蘭的運動模式台灣學得來嗎&#34;&gt;荷蘭的運動模式台灣學得來嗎？&lt;/h2&gt;
+&lt;p&gt;這篇文章的寫作架構得自Daniel Lakens的課程，部分內容介紹也得自他的指點。2016年的台灣科學界面臨前所未有的信任危機，跨入2017年依然方興未艾。類似的情節在2011年的荷蘭也曾發生過，但是從六個層面的開放科學運動，可以看到荷蘭的科學社群到政府機構，在研究工作內容到大眾知識傳播，進行提昇科學研究公開透明的改造工程。那麼台灣的科學界與社會能否從荷蘭的經驗得到脫胎換骨的機會？&lt;/p&gt;
+&lt;p&gt;以需要機構力量推動的科學文獻開放檢索，以及制訂科學研究守則等政策措施來說，現在的台灣政府與大學都面對更急迫複雜的問題，很難期待在一到三年出現會讓人有所期待的進展。就以2016年底開始的各大學停止訂閱Elsevier的事件為例，台灣是各大學圖書館組織的全國學術電子資訊資源共享聯盟(CONCERT)，每年負責與各主要出版社談判議價。我不清楚該聯盟負責談判人員的層級有多高，應該不會如同VSNU的做法，由大學校長親自出馬談判。而且談判人員也沒有得到政府的具體支持，像推動全面開放取用的明確年限。從Elsevier事件的
+&lt;a href=&#34;https://concert.stpi.narl.org.tw/news/249&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;最新發展&lt;/a&gt;
+可見，台灣社會還未形成對科學研究內容公開透明的要求或期待。但是在開放教育資源看到的例子，同樣致力發展MOOC的台灣各所大學，也許是培養台灣開放科學人才的可行途徑。&lt;/p&gt;
+&lt;p&gt;個人活動有希望為突破現狀帶來一些機會，特別在開源軟體、開放資料、以及開放研究流程。由於之前曾自學當紅的資料科學與機器學習方法，經過這一年的學習與研究經驗，我確認這些層面的運動是能讓受過高等教育的台灣民眾，最快理解開放科學價值的途徑，然而開放科學與資料科學有基本動機的差異。開放科學是確保科學知識的品質，建立在研究成果的可再現程度，需要有理論與問題意識引導資料的收集與分析。資料科學從已存資料探勘有意義的模式，理解人類行為的模式或誘因，知識品質建立在預測的優劣。兩者會使用的工具大致相同，對研究資料公開透明的要求幾乎一樣，但是追求知識的動機和目標有別。預期在幾年之內台灣的開放科學運動需要與資料科學合流，直到大眾能充分理解為止。&lt;/p&gt;
+&lt;p&gt;2016年十月曾透過網路視訊，與台灣關心心理科學研究品質的老師們一起辦了一場
+&lt;a href=&#34;https://www.youtube.com/watch?v=aF-UQDZBGnQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;研討會&lt;/a&gt;
+。結束後就規劃寫幾篇介紹荷蘭開放科學現況的文章，之後陸續發生許多相關的新聞，又花了不少時間消化資訊。這篇文章以荷蘭的人物與機構為主角，提供讀者作為認識開放科學的開始。如果有興趣了解更多推動開放科學的概念與做法，可以經由參與開放科學中心「
+&lt;a href=&#34;https://cos.io/our-communities/become-ambassador/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;大使計畫&lt;/a&gt;
+」，與可就近接觸的人士詢問討論，目前亞洲地區只有我與北京清華大學的胡傳鵬。期許藉此引出更多志同道合之士，提昇中文世界的科學知識品質與公開透明。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註1：&lt;/strong&gt; Kahneman本人於2017/2/14親自在Schimmack的該則部落格貼文回應，肯定Schimmack等人的指教，也正面看待促發效應研究會得到正面證據的支持。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>纪錄已經出現與即將出現的再現危機~2016版</title>
+      <link>/zh-hant/post/text_2016004/</link>
+      <pubDate>Mon, 15 Aug 2016 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016004/</guid>
+      <description>&lt;h2 id=&#34;紀錄的理由&#34;&gt;紀錄的理由&lt;/h2&gt;
+&lt;p&gt;註冊再現研究(Registered Replication Report，以下簡稱RRR)廣為世人注意，是2015年發表於科學期刊的
+&lt;a href=&#34;http://www.sciencemag.org/cgi/content/full/349/6251/aac4716?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Estimating the reproducibility of psychological science&lt;/a&gt;
+。實際上有多項RRR從2012年開始運作，2014年就有論文發表，例如
+&lt;a href=&#34;http://psycnet.apa.org/journals/zsp/45/3/142/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;In vestigating Variation inReplicability: A &amp;ldquo;Many Labs&amp;rdquo; Replication Project&lt;/a&gt;
+。心理科學協會(Association for Psychological Science)在2014年開始徵求
+&lt;a href=&#34;http://www.psychologicalscience.org/index.php/replication/instructions-for-proposers&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;跨實驗室合作的RRR項目&lt;/a&gt;
+，完成的研究刊登於協會發行的專業期刊
+&lt;a href=&#34;http://www.psychologicalscience.org/index.php/publications/journals/perspectives&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Perspectives on Psychological Science&lt;/a&gt;
+。從第一項RRR成案開始，協會公開
+&lt;a href=&#34;http://www.psychologicalscience.org/index.php/replication/ongoing-projects&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RRR近況網頁&lt;/a&gt;
+，讓各界可以追蹤每件RRR項目的近況與結果。這項紀錄撰寫於2016年七月下旬至九月上旬，這段期間網頁已登錄8件項目，其中三件已經結案並發表論文，四件已結案尚在撰寫報告(其中兩件在2016年8月被正式接受)，最新一件正在徵求合作團隊。已正式發表的三件只有一件能成功再現原始研究的部分結果，令人好奇還未正發表的其他五件結果會是如何？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;奠基研究capstone-research&#34;&gt;奠基研究(Capstone Research)&lt;/h3&gt;
+&lt;p&gt;在特定領域中有高引用數的原創性研究，引用該研究的研究直接或概念性重現原創性研究的方法與發現，逐漸形成正面支持這項原創性研究論點的發表鏈。這項原創性研究在主觀或客觀來看，吸引許多研究者嘗試確認研究結果，或探索研究結果啟發的新問題。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;比起一次性再現多項研究的
+&lt;a href=&#34;http://www.sciencemag.org/cgi/content/full/349/6251/aac4716?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Estimating the reproducibility of psychological science&lt;/a&gt;
+，心理科學協會支持的RRR項目是針對一項或數項奠基研究(capstone research)，招募實驗室或個人依照同一份計劃協議(protocol)同時進行獨立研究。協議內容是收集與分析資料的標準化程序：含刺激材料、施測軟硬體設置、招募參與者的人數與條件、資料處理及分析的流程、研究過程的紀錄格式、以及最後獨立報告的撰寫格式。發起RRR項目的總主持人會延請原始研究的主要發表者檢視計劃協議，待原始研究者同意協議細節之後，才會正式招募有意參與的團隊。所有RRR項目可以看成各方有志一同的研究者，針對學界有共識但存在爭議的奠基研究，進行炮口一致的集火射擊，檢驗這份研究能否經得起再現性考驗。&lt;br&gt;
+參與一項公開招募的RRR項目簡要流程是：一項計劃協議經APS同意開始進行之後，有意參加的研究者先閱讀首先公開的計劃協議，確定自已的團隊有能力執行，依指定格式填寫計畫書，並於Perspectives on Psychological Science的投稿網站提交，由項目總主持人審核研究者的團隊可否參加。研究者所在地如果有研究倫理審查的需要，可將此計畫書逕行送合格的IRB審核。如果研究者有合適的補助管道，也能自行爭取經費。&lt;/p&gt;
+&lt;p&gt;我在此彙整介紹現已公開的RRR項目，以及各方面的意見迴響。&lt;/p&gt;
+&lt;h3 id=&#34;schooler-and-engstler-schooler1990verbal-overshadowing-effect6已完成己發表&#34;&gt;Schooler and Engstler-Schooler(1990)：
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Verbal_overshadowing&#34; title=&#34;Verbal overshadowing, wiki entry&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Verbal Overshadowing Effect&lt;/a&gt;
+已完成。己發表。&lt;/h3&gt;
+&lt;p&gt;先給原始研究一個中文稱呼「口語過度跟隨」。這項記憶實驗請參與者在實驗室裡觀賞一支虛構的銀行搶案錄影片段，稍後指認在影片裡犯下搶劫的嫌疑人。在看完影片到指認犯人之間，有的參與者要口頭說明犯人的特徵，有的參與者進行無相關的作業，例如完成一項字謎遊戲。原始研究發現詳細說明特徵的參與者，平均指認正確率比進行無關作業的參與者低25%。因為是中途口語報告造成的回憶正確率下降，故得此名。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;直接再現direct-replication&#34;&gt;直接再現(direct replication)&lt;/h3&gt;
+&lt;p&gt;其它實驗室按照原始研究的方法細節，於不同地點時間完整照表操課收集資料，檢視能否再現原始研究的發現。這種再現模式在有規模的實驗室之間經常發生，一篇緊接著原創性研究出現的研究論文，首先會嘗試直接再現原始研究的發現。不過最理想的直接再現研究並不存在，即使是在曾進行原創研究的地點，以相同的設備進行，能招募的參與者已經不同於原始研究。有共識的直接再現模式是由原始研究者提供研究材料，甚至資料分析程序，讓其它研究者在不同地點以最逼近原始條件的空間設備進行再現。或者諮詢原始研究者的意見，在許可範圍內變更部分研究細節，APS公開的RRR項目皆屬稍做變動的直接再現。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Schooler與Engstler-Schooler的原始研究之後有許多研究報告表示無法再現原始研究的成果，這個項目針對原始研究的第一項與第四項實驗，進行研究程序稍做變動的直接再現(direct replication)。選擇這兩項實驗的原因是第一項的程序比第四項緊湊，第一項的參與者完成中途作業馬上指認犯人，第四項有延宕20分鍾，原始研究結果顯示兩項實驗都有顯著的指認正確率差異。&lt;br&gt;
+彙整所有參與再現的實驗團隊結果，第一項的平均差異只有4%，第四項的平均差異為16%。這項RRR報告的結論肯定有口語過度跟隨效果，但是程序延宕的影響需要被謹慎評估。這是至今為止經APS RRR認證的認知心理學實驗結果，其後的單項研究RRR都是社會心理學領域的研究，也是目前唯一一項再現結果爭議較小的項目。&lt;/p&gt;
+&lt;h3 id=&#34;hart--albarracín-2011linguistic-cues-and-firing-guns7已完成己發表&#34;&gt;Hart &amp;amp; Albarracín (2011):
+&lt;a href=&#34;https://rolfzwaan.blogspot.nl/2016_01_01_archive.html&#34; title=&#34;Linguistic Cues and Firing Guns: Some Background on a Registered Replication Report&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Linguistic Cues and Firing Guns&lt;/a&gt;
+已完成。己發表。&lt;/h3&gt;
+&lt;p&gt;用比較聳動的說法描述這項RRR的原始研究：「動詞時態會控制法庭的判決」。原始研究符合西方社會心理學的規格，運用三種設計各異的實驗檢驗同一個假設：使用完成式的文字(例如He pulled the gun)描述被告的犯罪過程，會比使用非完成式的文字(例如He was pulling the gun)，更容易讓法官或陪審團員相信被告有充分的犯罪意圖。這項RRR是直接再現原始研究的第三項實驗，因為唯一操作的獨變項是判例中的動詞是完成式或非完成式，程序是參與者對一椿判例裡的被告有無槍殺被害都的意圖，填寫三種量表表達自已的看法。三種量表分別請參與者評估被告知曉個人行為過程的程度，做出行為的意圖強烈度，對犯案結果的覺知度。看過完成式判例的參與者在三種量表給的評分，都顯著高於看過非完式判例的參與者給的評分。&lt;br&gt;
+這項RRR的參與團隊運用紙筆問卷施測及網路閱卷施測，一面倒地顯示未發現如同原始研究的顯著結果。總主持人之一Rolf Zwaan在論文正式發表時，於個人部落格有發表一篇介紹這項RRR
+&lt;a href=&#34;https://rolfzwaan.blogspot.nl/2016_01_01_archive.html&#34; title=&#34;Linguistic Cues and Firing Guns: Some Background on a Registered Replication Report&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;來龍去脈的文章&lt;/a&gt;
+。兩個月後，原始研究者Hart於Perspective on Psychological Science發表
+&lt;a href=&#34;http://pps.sagepub.com/content/11/2/309.short&#34; title=&#34;A Comment on Eerland et al. (2016)&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;評論&lt;/a&gt;
+，認為這項RRR之所以沒有實驗室能成功再現，是因為原始研究招募的採與者都是偏保守立場的學生(以2016年美國總統大選情勢比喻，都是共和黨候選人Donald Trump的鐵粉)，參與RRR的實驗室招募的參與者來自四面八方，各種立場都有，因此「稀釋」原始研究發現的效應。這篇評論刊登時，Zwaan在部落格以一個問題回應Hart的評論：
+&lt;a href=&#34;https://rolfzwaan.blogspot.nl/2016/03/truth-in-advertising.html&#34; title=&#34;Truth in Advertising&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原始研究根本沒提過參與者的政治立場？&lt;/a&gt;
+&lt;br&gt;
+這項RRR雖然是針對一篇較新的社會心理學研究，但是理論基礎來自語言理解的認知心理學研究，因此原始研究的想法與發現都有原創價值。原始研究者想要捍衛其研究結果有其情感基礎，但是科學訓練讓所有研究者依循一種沙漏模型表達研究內容，也就是理論-&amp;gt;假設-&amp;gt;方法-&amp;gt;結果-&amp;gt;討論。這項RRR揭露原始研究的方法不如研究者所宣稱有效，可說是一具破碎的沙漏。若從科學知識進步的角度來看，RRR的反面證據讓有爭議的研究有個較清楚的處理方向(&lt;em&gt;雖然大多數還是吵架&lt;/em&gt;)，檢查最初的研究是否如原始研究者宣稱，是一具能產出可再現結果的沙漏。&lt;/p&gt;
+&lt;p&gt;&lt;a title=&#34;By Tom Toyosaki (Own work) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons&#34; href=&#34;https://commons.wikimedia.org/wiki/File%3AWineglass_model_for_IMRaD_structure..png&#34;&gt;&lt;img width=&#34;512&#34; alt=&#34;表達科學研究內容的沙漏模型。By Tom Toyosaki - Own work, CC BY-SA 4.0&#34; src=&#34;https://upload.wikimedia.org/wikipedia/commons/7/75/Wineglass_model_for_IMRaD_structure..png&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;sripada-et-al-2014ego-depletion8已完成己發表&#34;&gt;Sripada et al. (2014):
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Ego_depletion&#34; title=&#34;Ego depletion&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ego Depletion&lt;/a&gt;
+已完成。己發表。&lt;/h3&gt;
+&lt;p&gt;「自我耗損」是已經出版的APS的RRR項目中，知名度較高的課題。因為Roy Baumeister的
+&lt;a href=&#34;http://psycnet.apa.org/psycinfo/1998-01923-011&#34; title=&#34;Ego depletion: Is the active self a limited resource?&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原始研究&lt;/a&gt;
+不只在社會心理學界開枝散葉，其中一支成為正向心理學的重要課題，也已經透過數本暢銷書讓大眾認識，特別是談「意志力」的書藉。原始研究是請參與者到實驗室裡參加一項解題測試，只是實驗從測試前就開始，參與者被隨機分派到兩種測試前清況之一：面前有小餅乾卻只能吃紅蘿蔔；面前有小餅乾可以拿來吃。測試題目是無人能解的難題，測量項目是參與者放棄解題的時間，結果顯示不能吃小餅乾的參與者，顯著比能吃小餅乾的參與者提早放棄作答。這項發現支持Roy Baumeister的假設：意志力是一種認知資源，過度運用之後需要足夠時間恢復，否則會影響個人認知表現。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;概念性再現conceptual-replication&#34;&gt;概念性再現(conceptual replication)&lt;/h3&gt;
+&lt;p&gt;原始研究的關鍵操作，以假設條件可容許，但是與原始研究相異的方式設置，在其它控制變項接近原始研究進行的再現研究。例如自我耗損實驗有其它學者使用其它物品，例如檸檬汁，或可以耗損意志力的其它方法，例如這項RRR使用的挑字母作業，能得到相同效應的結果。概念性再現通常用來測試假說的通用性，也有許多學者認為這是改善實驗研究的外在效度，最佳的方案之一。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;不過心理學界對於原始研究以及正面支持的概念性再現(conceptual replication)，一直存在懷疑及批判之聲。這些批評在這項RRR的總主持人Hagger與Chatzisarantis發覺出版偏誤(publication bias)可能造成各式自我耗損效應被高估(參考
+&lt;a href=&#34;http://www.slate.com/articles/health_and_science/cover_story/2016/03/ego_depletion_an_influential_theory_in_psychology_may_have_just_been_debunked.html&#34; title=&#34;Everything Is Crumbling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Everthing is Crumbling&lt;/a&gt;
+)，因此提案這項RRR，並邀請包括Roy Baumeister在內的三位研究者審核計畫協議。這項RRR的目標是再現Sripada等人於2014年發表的注意力耗損作業，這項作業的操作是把Roy Baumeister的小餅乾換成在電腦螢幕執行的挑字母作業(簡介參考
+&lt;a href=&#34;http://www.guokr.com/article/441263/?page=2&#34; title=&#34;心理学又陷一城：自制力真的会越用越少吗？&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;果殼網的翻譯&lt;/a&gt;
+)，Sripada的原始發現是作業難度起高，後續作業表現越差，與其它自我耗損研究發現一致。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;出版偏誤publication-bias&#34;&gt;出版偏誤(publication bias)&lt;/h3&gt;
+&lt;p&gt;當一個研究主題的原創研究，與緊接著的再現研究都普遍支持原創研究的發現。再之後的研究如果有與原創研究不一致的發現，很不容易獲得接受發表的機會。結構性因素是原創研究的發表者與支持者，很容易成為相關論文的同儕審查者。近年許多實驗科學領域的原創研究案例因為樣本數少，統計考驗力偏低，有學者如
+&lt;a href=&#34;http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124&#34; title=&#34;Why Most Published Research Findings Are False&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ioannidis(2005)&lt;/a&gt;
+以實際資料配合數據模擬，估計一門實驗科學的發展規模隨論文數擴增，難以再現的原創及概念性再現研究增加幅度。出版偏誤因此被視為不利一門主題研究健康發展的因素。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然而經過23個獨立實驗室的直接再現，沒有一間獲得與Sripada同樣顯著的結果。Roy Baumeister的初期反應與Hart類似，他的論點是這個項目的總主持人只採納他建議的各種作業之中，最容易重製的電腦實驗版。不過Roy Baumeister的回應更有道理：Sripada的實驗只是眾多自我耗損作業的一種，不代表所有自我耗損作業都不能再現。也就是說一個沙漏品質有問題，不是所有沙漏都有問題。著名科學懷疑論部落客neuroskeptic特別標記Roy Baumeister回應之中的
+&lt;a href=&#34;http://blogs.discovermagazine.com/neuroskeptic/2016/07/31/end-of-ego-depletion/#.V68YGY9OJmh&#34; title=&#34;The end of ego-depletion theory&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;宣言&lt;/a&gt;
+:支持自我耗損的研究者們將推出以早期發表的作業為主的RRR項目。APS的RRR網頁何時的更新會新增這一條？或者這群研究者會另外尋找其它執行RRR的平台？甚至直接開闢一個新平台？後續情勢會如何影響註冊研究的發展值得觀注。&lt;/p&gt;
+&lt;h3 id=&#34;many-labs-2-investigating-variation-in-replicability-across-sample-and-setting9&#34;&gt;
+&lt;a href=&#34;https://osf.io/8cd4r/&#34; title=&#34;Many Labs 2: Investigating Variation in Replicability Across Sample and Setting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Many Labs 2: Investigating Variation in Replicability Across Sample and Setting&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;不只是心理科學，任何實驗科學都會發現這樣的例子：甲教授的實驗室發現A效果確實存在，乙教授採用極為接近甲教授實驗室的條件，卻沒有發現A效果。是什麼導致同一項實驗在兩個實驗室有完全不同的結果？樣本來源？實驗環境設置？還是取樣誤差？這個是統計學者與實驗科學家一直在探討的老問題，對於再現研究來說，如果並未發現如同原始研究一致的結果，卻沒有提出樣本或設置造成的偏誤評估，很難說服原始研究發現的支持者接受再現研究的結論，就像
+&lt;a href=&#34;http://www.sciencemag.org/cgi/content/full/349/6251/aac4716?ijkey=1xgFoCnpLswpk&amp;amp;keytype=ref&amp;amp;siteid=sci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Estimating the reproducibility of psychological science&lt;/a&gt;
+的每項研究只有一個實驗室負責，可能因為樣本與設置已不同於原始研究，而導致不同的發現。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Figure1.web.1200x1200.jpeg&#34; alt=&#34;&#34; title=&#34;Many Lab Project 13項再現研究結果&#34;&gt;&lt;/p&gt;
+&lt;p&gt;這個項目的前身
+&lt;a href=&#34;http://psycnet.apa.org/journals/zsp/45/3/142/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Many Lab Project&lt;/a&gt;
+以研究的奠基程度挑選13項社會心理學研究，每項經過36個實驗室的直接再現，發現再現研究得到的關鍵效果量，與樣本及設置的變異並不大。然而Many Lab發起的目的裡，並未有系統檢測樣本及設置的變異，13項再現研究的資料，只能推論使用促發程序的社會心理學研究。Many Lab 2的發起小組首先海選100多件認知與社會心理學研究，候選的研究關鍵效果在原始研究目的之中，就有預測樣本或實驗設置造成的差異。再經由進一步投票決定28件研究，並分成兩群分別是13項與15項的兩套專案串(slate)，參與的實驗室要再現至少其中一串的每項實驗。這次專案包含多項道德認知的研究，包括已在2010年因研究造假案而辭去哈佛大學教授職位的Mark Hauser，於2007年發表的語言認與與道德認知研究，他的道德認知研究被放在15項專案串。此外，在Many Lab Project大獲全勝的己故學者Tversky，他的研究有框架效應與相似性效應的兩項研究入選。&lt;br&gt;
+這項專案的資料收集已在2014年結束之前完成，不過報告至紀錄的時候尚未傳出已被接收的消息。但是從已公開的
+&lt;a href=&#34;https://github.com/FredHasselman/ManyLabRs/blob/master/FunnelPerSlate.pdf&#34; title=&#34;FunnelPerSlate.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;報表&lt;/a&gt;
+，可知第一套13項專案串有70個實驗室參與，其中有當時在台灣師範大學任教的
+&lt;a href=&#34;https://www.ioe.sinica.edu.tw/Content/Researcher/content.aspx?&amp;amp;SiteID=530167135246736660&amp;amp;MenuID=530167136406372131&amp;amp;Fid=0&amp;amp;MSID=654065665616347242&#34; title=&#34;張仁和(Chang, Jen-Ho) 中央研究院民族學研究所&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;張仁和老師&lt;/a&gt;
+領導的團隊，第二套15項專案串有61個實驗室參與。從報表的統計圖推測，Mark Hauser的語言認知研究應該有成功再現(Hauser.1)，但是道德認知的研究有無成功再現需要等待團隊的判讀(Hauser.4)。Tversky的框架效應再現結果並未出現在這張報表裡，原因有待報告出爐，相似性效應的分析結果分散在四張統計圖，一半有明顯效果一半則無，如果要了解這些結果的意義需要參照原始論文，或等待Many Labs 2的最終報告。&lt;/p&gt;
+&lt;h3 id=&#34;strack-et-al-1988-facial-feedback-hypothesis10已完成發表中&#34;&gt;Strack et al. (1988): 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Facial_feedback_hypothesis&#34; title=&#34;Facial feedback hypothesis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Facial Feedback Hypothesis&lt;/a&gt;
+已完成。發表中。&lt;/h3&gt;
+&lt;p&gt;我私自認為這項RRR的公開資料可以直接運用於心理學教學與研究法實作。「臉部肌肉回饋假說」的想法始於Charles Darwin有關
+&lt;a href=&#34;http://darwin-online.org.uk/content/frameset?itemID=F1142&amp;amp;viewtype=text&amp;amp;pageseq=1&#34; title=&#34;The Expression of the Emotions in Man and Animals.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;人類與動物情緒表達的報告&lt;/a&gt;
+，他觀察到人類與動物都有運動意識可控制的骨胳肌，表達內在情緒的能力，也可以抑制情緒表達，因此猜想控制表達情緒的骨骼肌可能會影響內在情緒。之後美國心理學家William James在他的重要著作
+&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Principles_of_Psychology&#34; title=&#34;The Principles of Psychology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Principles of Psychology&lt;/a&gt;
+，主張身體肌肉的變化是引發情緒的重要刺激。從此之後，心理學家的任務是建立可檢驗Willam James主張的實驗方法。到了1988年Strack, Martin, 與Stepper三人於Journal of Personality and Social Psychology發表的方法，是第一個能在過程維持參與者的笑肌(Risorius)運動模式，並測量參與者快樂感受的實驗。原始研究在維持參與者的笑肌運動模式時，測量參與者觀賞卡通影片之後，評估卡通的歡樂程度，做為臉部表情能導致情緒的直接證據。除了控制組是用非慣用手全程作答，另外兩個實驗組：&lt;strong&gt;嘴唇組&lt;/strong&gt;與&lt;strong&gt;牙齒組&lt;/strong&gt;是按以下照片的方式，參與者全程用嘴巴含住原子筆作答：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Pouting.jpg&#34; alt=&#34;&#34; title=&#34;嘴唇組：嘴唇含筆，不可用牙齒咬&#34;&gt;
+&lt;em&gt;嘴唇組：嘴唇含筆，不可用牙齒咬&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/Smiling.jpg&#34; alt=&#34;&#34; title=&#34;牙齒組：牙齒含筆，不可碰觸嘴唇&#34;&gt;
+&lt;em&gt;牙齒組：牙齒含筆，不可碰觸嘴唇&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;以上兩張圖節錄自這項RRR公開的
+&lt;a href=&#34;https://osf.io/hsgz5/&#34; title=&#34;Instructions Pouting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;嘴唇組示範投影片&lt;/a&gt;
+與
+&lt;a href=&#34;https://osf.io/nsprv/&#34; title=&#34;Instructions Smiling&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;牙齒組示範投影片&lt;/a&gt;
+，很明顯牙齒組自然地做出微笑表情。Strack三人的原始結果顯示牙齒組觀賞影片後給的評分，顯著高於嘴唇組。這套實驗方法被廣泛運用在許多情緒感受與表達的研究，雖然後來的多數研究也有類似發現，但是都未完全依照原始研究的細節設計，特別是含住原子筆的方式，以及使用其它反應設備作答等。所以「臉部肌肉回饋假說」類似「自我耗損」的狀況：原始研究之後出現很多概念性再現，但是最初的發現從未經過直接再現的考驗。&lt;br&gt;
+因為要完整再現原始實驗，每個參與實驗室都要有獨立空間，讓個別參與者以紙筆進行實驗，所以
+&lt;a href=&#34;https://osf.io/pkd65/&#34; title=&#34;Beek, T. F., Dijkhoff, L. C., Wagenmakers, E.-J., &amp;amp; Simons, D. J. (2015, April 14). Strack Replication. Retrieved from osf.io/pkd65&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開的計劃協議與實驗材料&lt;/a&gt;
+相當完整，我也從寫作這項紀錄更新以前對此研究的錯誤認識。&lt;br&gt;
+2016年8月中旬，這項RRR的
+&lt;a href=&#34;http://www.psychologicalscience.org/index.php/publications/replication-strack-martin-stepper&#34; title=&#34;A Multilab Direct Replication of Study 1 From Strack, Martin, &amp;amp; Stepper (1988)&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;報告&lt;/a&gt;
+已被正式接受，將與Strack的回應同時出版。16個橫跨歐美的實驗室再現結果，經整合分析之後，發現牙齒組與嘴唇組的差異只有0.03，遠低於原始研究的0.82，因此團隊結論這項原始研究無法直接再現。Strack的回應提出四點造成再現失敗的可能因素，都有值得思考之處：(1)這項實驗在許多大學的基礎心理學課程中，都會向學生介紹，參與這項RRR的多數實驗室，是從參與者庫招募正在修課的學生。計劃協議有設定事先知道此實驗內容的參與者，參與資料不能列入分析，最後總計有24%的參與者資料因此被排除，究竟參與者的先備知識對再現實驗結果的影響有多大，還需要更深入的分析。(2)讓參與者評分的卡通影片是1988年的原始研究使用的同系列影片，如此雖然符合直接再現的要旨，但是現在的大學生與三十年前的大學生笑點是否相同？(3)與原始研究不同之處是這項RRR使用數位相機全程錄影，讓參與者自覺維持含筆的姿勢，但是如此是否反而讓參與者有意識維持臉部肌肉的動作，降低無意識的影響？(4)通常有出版偏誤(publication bias)或人為逼出顯著結果(p-hacking)嫌疑的系列研究，有關鍵效果量與樣本數呈現負相關的特徵。也就是說樣本數越少，效果越明顯的研究越容易被接受出版。這項RRR的16個獨立再現結果，卻呈現相反的正相關，如此結果會不會是一種&lt;strong&gt;逆出版偏誤&lt;/strong&gt;：不顯著的結果才會受到RRR的青睞？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h3 id=&#34;人為逼出顯著結果p-hacking&#34;&gt;人為逼出顯著結果(p-hacking)&lt;/h3&gt;
+&lt;p&gt;在完成資料收集，進行資料分析的過程中，會發現即使已依慣例排除或轉換極端值，依然存在一筆資料導致分析後的結果不如預期顯著。有研究者會改用較低的顯著水準，報告結果符合預期。有研究者會剔除不利的資料，以達到符合預期的分析結果。現在歐美心理學界更關注一種製造顯著結果的模式，一個實驗室內多次執行一項實驗，挑出一次符合預期的顯著結果，再以此結果寫成論文。這種行為又稱為&lt;em&gt;挑賣相好的&lt;/em&gt;(cherry picking)。&lt;br&gt;
+這些行為都屬於人為逼出顯著結果，而根本原因有研究者對統計方法的誤解與誤用，以及需要發表論文的壓力。這類行為還稱不上學術造假，因為資料皆是按計劃收集得來且未經變造。人為逼出顯著結果對研究再現性的傷害，來自原始研究者不願意公開資料分析的程序，導致其它研究者難以再現卻又找不到真正原因。現行註冊研究流程設計，就是要讓研究者承擔公開分析資料程序的責任，也讓期刊審查者願意接受不如預期的分析結果。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;finkel-et-al-2002-power-of-commitment11已完成發表中&#34;&gt;Finkel et al. (2002): 
+&lt;a href=&#34;http://www.psychologicalscience.org/index.php/publications/observer/obsonline/commitment-and-forgiveness-in-relationships-focus-of-aps-registered-replication-report-project.html&#34; title=&#34;Commitment and Forgiveness in Relationships Focus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Power of Commitment&lt;/a&gt;
+已完成。發表中。&lt;/h3&gt;
+&lt;p&gt;親密關係如何維持是社會心理學中最引人感興趣，也吸引心理學家使用各種已知的研究方法探討的課題。其中一個主題是伴侶之間若有一人背叛對方，被背叛者會選擇原諒的主要因素是什麼，McCullough等人在1998年整理至當時為止的研究，已知會影響被背叛的一方願意原諒伴侶的諸項因素，為後來的學者建立某些因素與原諒行為的因果關係指出導路，其中一項最可能有直接因果關係的因素是「承諾感」(commitment)。Finkel等人的這份研究使用促發程序，在經過設計的實驗情境誘導參與者與想像的伴侶，彼此之間存在高承諾感(high commitment)或低承諾感(low commitment)，接著被詢問假想伴侶背叛自已的情境裡，會選擇好言相勸(voice)或忠心守候(lotalty)之類的正面原諒行為，還是主動離開(exit)或視而不見(neglect)之類的負面原諒行為。&lt;br&gt;
+由於這類研究文獻數量可觀，許多概念非長期接觸相關研究者能夠嘗握，光看計劃協議我無法準確掌握實驗操作與測量的意義。為了妥善說明研究內容，我請教了專門寫作親密行為的科普寫手
+&lt;a href=&#34;https://www.facebook.com/Haitaibear/&#34; title=&#34;海苔熊粉絲頁&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;海苔熊&lt;/a&gt;
+，學會使用「承諾感」這個詞彙，描述這項研究的獨變項操作。Finkel設計五道問題讓參與者自行想像寫作，被分派到高承諾感組的參與者得到的題目是「描述兩件與伴侶在一起時，日常生活最常做的事」，低承諾感組的參與者得到的題目是「描述兩件伴侶不在一起時，日常生活最常做的事」。完成各組的五道題目之後，所有參與者再對12種被伴侶背叛的假想情境，從代表四種原諒行為的選項，選出自已最有可能做出的行為。12種狀況的作答次數依選項統計，轉換為兩組會做出某項原諒行為的指標分數。Finkel等人發現高低承諾感兩組參與者之間行為在原諒的選擇表現沒有顯著差別，只在結束關係的選擇有明顯差異。由此發現開始，Finkel與他的同事致力建立伴侶之間的承諾感，如何決定原諒行為的因果關係模型。 &lt;br&gt;
+兩位現任的加拿大心理學教授，Irene Cheung與Lorne Campbell，以及服務於柏克萊大學推動社會科學透明化中心(Initiative for Transparency in the Social Sciences, BITSS)的Etienne LeBel等三位社會心理學者，有鑑於Finkel等人的因果推論在社會心理學界存在許多爭議，例如Riek與Mania在2012年發表的整合性分析顯示，與原諒行為相關性最高的是當事人的同理心，承諾感與背叛者的歉意有顯著相關，並非直接影響原諒行為的因素。而且原始研究的結果並未有明確的直接再現結果，因此提出直接再現Finkel等人2002第一項實驗的RRR項目。除了參與者全程於電腦輸入作答，取代原始研究的紙筆作答，其它可控制的條件都逼近原始研究。下表合併呈現原始研究與參與這項RRR的16個實驗室的整合分析結果。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;主動離開(Exit)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;好言相勸(Voice)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;忠心守候(Loyalty)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;視而不見(Neglect)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;低承諾感 Finkel(2002)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2.51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4.95&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3.80&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3.92&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;高承諾感 Finkel(2002)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.85&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5.39&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4.10&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;3.50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;組間差異 Finkel(2002)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-.42*&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.17&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.05&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-.32*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RRR組間差異平均值,95%信賴區間&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-.06, [-.17, .05]&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.03,[-.08, .13]&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;.00,[-.08, .09]&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-.06,[-.18, .07]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;*代表組間差異的p值小於設定的顯著水準&lt;/p&gt;
+&lt;p&gt;簡而言之，原始研究沒有顯著組間差異的正面原諒行為，RRR同樣沒有顯著，但是原始研究有顯著組間差異的負面原諒行為，RRR的結果相當於沒有差異。原始研究者Eli Finkel對此結果的
+&lt;a href=&#34;http://www.psychologicalscience.org/pdf/Finkel_Reply_FINAL.pdf&#34; title=&#34;Reflections on the Commitment–Forgiveness RRR &#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;回應&lt;/a&gt;
+，則出現了至今為止僅見的君子風度。我引述回應結論部分的一句話結束這項紀錄。&lt;br&gt;
+&lt;em&gt;Consequently, I will no longer cite that study as providing causal evidence for the effect of commitment on forgiveness, and I discourage others from doing so.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rand-et-al-2012-spontaneous-giving-and-calculated-greed12&#34;&gt;Rand et al. (2012): 
+&lt;a href=&#34;http://www.nature.com/nature/journal/v489/n7416/full/nature11467.html&#34; title=&#34;Spontaneous giving and calculated greed&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Spontaneous Giving and Calculated Greed&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;要了解這項RRR要先認識&lt;strong&gt;公共財賽局&lt;/strong&gt;(public goods game)。最著名的實驗方法由經濟學者
+&lt;a href=&#34;https://ideas.repec.org/p/ces/ceswps/_183.html&#34; title=&#34;Cooperation and Punishment in Public Goods Experiments&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fehr與Gächter提出&lt;/a&gt;
+，參與者從一開始擁有相同資產，每回合開始都有捐出部分資產以增加分紅，與不捐獻任何資產兩種選項，在不同條件之下的十回合賽局中，紀錄參與者願意捐獻的資產數目。一回合中所有參與者，能獲得的分紅由四項參數決定：捐獻資產的增加倍數、捐獻資產的人數、個別捐獻的資產數值、以及該回合所有參與人數。前三項參數的乘積除以所有參與人數，就是所有參與者在該回合能獲得的分紅。例如有三十位參與者在一開始各自拿到100塊資產，第一回合有六位捐出全部100塊資產，這回合捐獻資產的增加倍數是5，因此回合結束所有參與者拿到1000塊分紅。此時6位有100塊資產與24位有200塊資產的參與者要在即將開始的第二回合，決定要不要捐獻？以及捐獻多少？&lt;br&gt;
+實驗經濟學的重點是觀察不同情勢之下，參與者想堅持做一個理性的經濟決策者：不捐獻任何一毛錢；還是做合作的投資者：評估情勢捐出自認合理的資產額度。心理學家則想了解人類在此情況下，什麼條件造成個人願意合作的動機？因此Rand等人(2012)採用&lt;strong&gt;一回合制公共財賽局&lt;/strong&gt;(one shot public goods game)，依照決策時間越少人類越依賴直覺做決策的假設，操作決策時間條件：限時之內做決定(time pressure)與限時之後做決定(forced delay)，預測必須在限時之內做決定的多數參與者，捐獻的資產數值會顯著高於限時之後做決定的參與者。根據Rand等人的論文報告，在線上實驗平台
+&lt;a href=&#34;https://www.mturk.com/mturk/welcome&#34; title=&#34;Amazon Mechanical Turk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amazon Mechanical Turk&lt;/a&gt;
+與能容納多人同時施測的電腦教室之中，都發現符合預期的實驗結果。&lt;br&gt;
+然而在2012年之後，Rand的團隊與其它研究者在Amazon Mechanical Turk直接再現數次相同實驗，都發現組間差異逐漸縮小至無差異。可能原因是有在Amazon Mechanical Turk註冊的參與者，大多數越來越熟悉這套線上平台，任何實驗條件操作對參與者來說影響有限。實驗室實驗有改變條件的概念性再現，但尚未有直接再現。這項RRR收集的資料是來自Amazon Mechanical Turk，與參與實驗室在所屬機構的電腦教室進行。Amazon Mechanical Turk部分會區分註冊參與者的「資深程度」。&lt;br&gt;
+參與這項專案的22個實驗室在2016年五月結束資料收集，寫成紀錄的時候整體資料尚在分析中。在將來報告出爐時，值得關注的是Amazon Mechanical Turk再現結果與實驗室再現結果的比較，因為除了臉部回饋假設，紀錄於此的每項RRR，都有透過Amazon Mechanical Turk進行再現研究。如果這項專案能發現參與者資深程度對實驗表現的影響，對於要再評估已出版的RRR資料，以及未來的RRR運用線上實驗平台進行再現研究，要如何評估測量限制等，應能提供可靠的參考條件。&lt;/p&gt;
+&lt;h3 id=&#34;dijksterhuis--van-knippenberg-1998-foundation-of-unconscious-social-cognition132016828募集完成&#34;&gt;Dijksterhuis &amp;amp; van Knippenberg (1998): 
+&lt;a href=&#34;https://www.researchgate.net/publication/13710149_The_Relation_Between_Perception_and_Behavior_or_How_to_Win_a_Game_of_Trivial_Pursuit&#34; title=&#34;The Relation Between Perception and Behavior, or How to Win a Game of Trivial Pursuit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Foundation of Unconscious Social Cognition&lt;/a&gt;
+2016/8/28募集完成&lt;/h3&gt;
+&lt;p&gt;「想像自已是貝多芬，就能考高分；想像自已是笨蛋，只能考鴨蛋」。這是模倣媒體記者如果讀過這項原始研究，應該會下的新聞標題。這項專案來自原始研究作者
+&lt;a href=&#34;https://nl.wikipedia.org/wiki/Ap_Dijksterhuis&#34; title=&#34;Ap Dijksterhuis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ap Dijksterhuis&lt;/a&gt;
+在1998年於Journal of Personality and Social Psychology發表的研究，他與合作者設計四個實驗，讓參與者先做一段想像是某種典型人物的自我表述，當年的實驗採用&lt;strong&gt;大學教授&lt;/strong&gt;(貝多芬)與&lt;strong&gt;足球流氓&lt;/strong&gt;(笨蛋)做典型人物，參與者被隨機指派想像自已是其中一種身份。經過五分鐘的自我想像之後，進行20題益智問答。實驗的測量就是兩組參與者的益知問答答對率的差異。1998論文的第四個實驗，也就是這項RRR要再現的實驗，發現想像自已是大學教授的參與者平均答對率達56%，想像自已是&lt;strong&gt;足球流氓&lt;/strong&gt;的參與者平均答對率有43%，兩組相差13%，並且達到統計顯著水準。然而Dijksterhuis後來自已嘗試重現，兩組差異不到3%，這項發現至今從未發表。&lt;br&gt;
+這項RRR與之前的RRR最大不同之處，是由原始研究者主動提出，而非其它學者邀請Dijksterhuis評估計劃協議而成案。從
+&lt;a href=&#34;https://osf.io/hzg2v/&#34; title=&#34;RRR protocol for Dijksterhuis &amp;amp; Van Knippenberg (1998)&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;計劃協議&lt;/a&gt;
+透露的背景資訊，Dijksterhuis有鑑於自已無法再現自已研究的經驗，以及這幾年心理學界對促發實驗可再現性的質疑與案例接踵出現(參考拙作
+&lt;a href=&#34;http://scchen.com/Text/text_2016001/&#34; title=&#34;啟動你對促發實驗的認識&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;啟動你對促發實驗的認識&lt;/a&gt;
+)，自已向APS提案，邀請全世界想挑戰這項實驗可再現性的心理學者。除了將1998年的另一個獨變項改成參與者性別，變動益智問答題目與實驗程序控制軟體，其餘條件都與1998年的設定相同。此次實驗也歡迎不同語言的心理學實驗室一起參與，我認為這是觀察RRR的概念在這段時間已經散佈多廣的一個機會。與這項實驗類似的促發實驗，並且爭議頗多的原始研究者(拙作中有點名)，會不會受到激勵而接受挑戰？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>荷蘭科研補助機構推動提昇科研品質的五年計劃（一）：訊息整理</title>
+      <link>/zh-hant/post/text_2016003/</link>
+      <pubDate>Wed, 15 Jun 2016 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016003/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;此文有三個系列構成：(一)2016年報導與查證的整理；（二）近十年重要事件回顧；（三）科學社群與社會大眾如何理解這項計劃&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一系列將以三個版本發展。第一版：初期報導及相關文章整理，構成大綱；第二版：彙整求證資訊與回饋；第三版：修正前版錯誤，補充重要資訊。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在今年來荷蘭進行訪問研究之前，已知道荷蘭有一群不同領域的學者，開始投入或促進科學研究領域轉向開放科學導向(open science)。2016年6月得知荷蘭政府準備在五年內逐步投資八百萬歐元，進行全國性科研品質調查與相關研究，以及補助針對有影響力的研究成進行再現研究。為了說明兩項政策將如何影響荷蘭科學研究的品質，我將以三篇文章說明與評論。首先介紹兩項政策的訊息，再來談促成兩項政策出現的歷史因素，最後從科研人員與社會大眾的角度，談談如何理解科研政策的變化對一國教育文化的影響。&lt;/p&gt;
+&lt;h2 id=&#34;nwo徵求探究與改進影響科研品質因素的研究計畫&#34;&gt;NWO徵求探究與改進影響科研品質因素的研究計畫&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.nwo.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NWO&lt;/a&gt;
+(荷文全名：De Nederlandse Organisatie voor Wetenschappelijk Onderzoek)是隸屬於荷蘭政府教育、文化與科學部的政府單位。負責推動促進荷蘭全國科學研究發展，特別是補助荷蘭國內研究機構及大學的研究人員與教授進行研究。功能類似台灣的科技部，不過以政府組織的位階來說，比較接近科技部的前身國科會。6/23報導全球高教近況的新聞網站Inside Higher Ed
+&lt;a href=&#34;https://www.insidehighered.com/news/2016/06/23/netherlands-starts-major-campaign-against-research-misconduct&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;發佈新聞&lt;/a&gt;
+，指出NWO將投入八百萬歐元用於補助影響研究誠信(Research Integrity)的調查計畫，與提昇研究品質的再現研究計畫。這篇報導的焦點是訪談推動這些計畫的重要推手–阿姆斯特丹自由大學(VU)的Lex Bouter教授，以及介紹NWO於今年推出的兩項重要補助政策名稱：&lt;strong&gt;Fostering Responsible Research Practices&lt;/strong&gt;與&lt;strong&gt;Replication Studies pilot&lt;/strong&gt;。由於這份新聞只有簡單提及推動政策的主因以及大致目標，為了完整介紹計劃內容，等到7月中旬NWO正式發佈兩項計劃的徵件訊息，完成這篇文章的資訊才充份到齊。&lt;/p&gt;
+&lt;h2 id=&#34;fostering-responsible-research-practices&#34;&gt;Fostering Responsible Research Practices&lt;/h2&gt;
+&lt;p&gt;這項補助政策的重點是理解研究者從申請研究計畫到發表研究成果的過程，任何會增進或降低研究誠信的因素。NWO命名這類研究計畫為
+&lt;a href=&#34;http://www.nwo.nl/financiering/onze-financieringsinstrumenten/zonmw/bevorderen-van-verantwoorde-onderzoekspraktijken---startsubsidie-levenscyclusproject/bevorderen-van-verantwoorde-onderzoekspraktijken---startsubsidie-levenscyclusproject.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The life cycle project&lt;/a&gt;
+，根據VU大學的校內媒體對Lex Bouter教授的
+&lt;a href=&#34;http://www.advalvas.vu.nl/nieuws/lex-bouter-onderzoekt-sjoemelwetenschap-mensen-zijn-soms-ijdel-en-inhalig&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;訪談&lt;/a&gt;
+，這項計畫是以荷蘭的科研人員為研究對象，運用各式調查方法理解並有效評估各項影響研究誠信的因素。由於兩份對Lex Bouter教授的訪問似乎是指NWO會主導調查方式，在計劃徵件訊息正式公告之後，我才理解是NWO向不同科學領域徵求主題研究計劃，像是
+&lt;a href=&#34;http://www.zonmw.nl/nl/subsidies/subsidiekalender/detail/item/bevorderen-van-verantwoorde-onderzoekspraktijken/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;生物醫學領域的The life cycle project&lt;/a&gt;
+已於7月中旬開始。社會科學計劃徵件雖尚未查到正式公告，但是可確定各領域的調查計劃爭取五百萬歐元的研究經費。&lt;br&gt;
+政策名稱之中的Responsible Research是指一項研究過程中的每項環節，研究人員都能提供責任保證。只要是依靠收集資料，驗證假設的實證研究，研究的過程都是一個循環。如同這張從
+&lt;a href=&#34;http://www.aimspress.com/article/10.3934/Neuroscience.2014.1.4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Instead of “playing the game” it is time to change the rules: Registered Reports at AIMS Neuroscience and beyond&lt;/a&gt;
+這篇論文引述的圖片：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.aimspress.com/fileOther/PIC/neuroscience/20140102-1.jpg&#34; alt=&#34;The hypothetico-deductive model of the scientific method. Retrived from (Chambers, Feredoes, Muthukumaraswamy, &amp; Etchells,  2014)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;這張圖其實簡化了部分步驟，例如論文審查出版程序，是只有專業研究人員才能理解的環節。不過圖中的紅字是已知會有害研究誠信的因素，負責一項研究的科研人員，在每個環節都會面對這些因素的考驗。因為最近十年越來越多分析研究揭露，多數研究人員面對這些因素通常無法通過考驗，整體現代科學知識有多少項目。因為這些因素的害處是經過不同研究者的長期文獻追蹤分析，才逐漸被辨識出來，將在歷史因素篇詳細介紹。不過就我的了解，Fostering Responsible Research Practices不只是要能發掘能有效評估各項因素對各領域科研成果傷害程度的研究方法，還希望能找到幫助科研人員正面突破考驗，對研究過程完全負責的方法。&lt;/p&gt;
+&lt;h2 id=&#34;replication-studies-pilot&#34;&gt;Replication Studies pilot&lt;/h2&gt;
+&lt;p&gt;這項政策是以重現各科研領域的奠基研究(conerstone research)為計劃徵件目標，生物醫學與社會科學研究將一起爭取總計三百萬歐元的經費。NWO的
+&lt;a href=&#34;http://www.nwo.nl/en/news-and-events/news/2016/nwo-makes-3-million-available-for-replication-studies-pilot.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;說明&lt;/a&gt;
+指出奠基研究是在特定領域中有高引用數，對公共政策的形成有重大影響的研究成果。也包括被許多教科書提及，或被媒體高度報導的研究成果。以近年所知的案例，
+&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E5%88%BA%E6%BF%80%E8%A7%B8%E7%99%BC%E6%80%A7%E5%A4%9A%E8%83%BD%E6%80%A7%E7%8D%B2%E5%BE%97%E7%B4%B0%E8%83%9E&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;STAP細胞&lt;/a&gt;
+符合這項計畫的徵件條件。&lt;br&gt;
+還有更多大眾媒體不見得會報導，但是大學的專業科系會向學生傳授的奠基研究成果，如果大部分後續研究無法重現，對一個世代的學術傳承將造成不良影響。以去年出現於重要科學期刊專題及國際新聞的
+&lt;a href=&#34;http://talkecon.com/social-science-replication/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理學實驗重製危機&lt;/a&gt;
+來說，270位心理學者重製2008年出版於三本高引用率的心理學期刊的研究，100項實驗只有39項再現結果與原始結果一致。也就是說，如果有一本引用這100項實驗成果寫成的教科書，只有39%的內容可信。&lt;br&gt;
+到了2016年7月，還有更多針對特定實驗的奠基研究剛好完成或正在進行，除了後續二篇，我已另闢
+&lt;a href=&#34;http://scchen.com/Text/text_2016004/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章&lt;/a&gt;
+介紹。最重要的是NWO是全球各研究補助單位中，第一個願意補助純粹再現研究的政府單位。一般的研究計畫補助不論有沒有限定徵件主題，都強調研究主題與內容的原創性。重製既有研究成果的計畫毫無原創性可言，但是對了解不可重製的研究，如何對個別與整體研究成果帶來損害，是有進行的必要性。這種補助計劃的出現，其實與一國或一個社群的科研人員對此問題的意識程度有關，這會是展望篇的評論重點。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;第一版：20160726&lt;br&gt;
+第二版：20160801
+第三版：20160813&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>啟動你對促發實驗的認識</title>
+      <link>/zh-hant/post/text_2016001/</link>
+      <pubDate>Sun, 15 May 2016 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/post/text_2016001/</guid>
+      <description>&lt;h2 id=&#34;什麼是促發實驗priming-experiemnt&#34;&gt;什麼是促發實驗(Priming Experiemnt)？&lt;/h2&gt;
+&lt;p&gt;今年4月4號在家鄉台灣還在過清明長假的時候，我在臉書發現有人轉貼民報的報導：
+
+&lt;a href=&#34;http://www.peoplenews.tw/news/b1aa9871-c210-4182-a64f-fafa1f042c97&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;【獨家】電競遊戲登上Nature‐台灣囝仔Jeffrey Lin 林侑霆&lt;/a&gt;
+。看了內文發現這位林侑霆先生與我算是同行，雖然標題強調林侑霆的台灣人身份應該要吸引同鄉網友點閱，兩位記者在報導內容努力地摘要自然期刊的重要內容並翻譯成中文，並將林侑霆2013到2015年在GDC的演講錄影連結附於文末，讓讀者能了解林侑霆的科學成就。不過自然期刊的原文格局是以林侑霆的研究成果為軸，探討如何運用科學方法認識並改變網路遊戲玩家的惡意行為(toxic behavior)。&lt;br&gt;
+然而這兩位記者大概沒有玩過任何網路遊戲(像是把toxic behavior照字面翻成&lt;em&gt;毒性行為&lt;/em&gt;)，更未曾查證心理學，讓一篇可以引發讀者探究林侑霆如何運用心理科學提昇英雄聯盟遊戲體驗的好文章，變得難以咀嚼。最重要的是自然期刊原文的其中一段：“Lin borrowed a concept from classic psychology. In late 2012, he initiated a massive test of priming, the idea that imagery or messages presented just before an activity can nudge behaviours in one direction or another.”，心理學系的學生都了解這是指林侑霆採用的是心理學研究常用的促發實驗(priming，大陸的心理學界稱為啟動實驗)。民報的中文報導變成&lt;strong&gt;在2012年底林侑霆採用經典的心理學概念啟動大規模的測試&amp;hellip;&lt;/strong&gt;。這一句使用粗體字是因為原來的中文報導也是粗體字標示，這個標示方式也成功達到心理學家在實驗室中的發現，兩天之後促發其它媒體對這則新聞的標題設定。像是中央社的
+&lt;a href=&#34;http://www.cna.com.tw/news/ahel/201604070232-1.aspx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;台裔LOL首席設計師林侑霆 登上自然期刊&lt;/a&gt;
+，以及關鍵評論網的
+&lt;a href=&#34;http://www.thenewslens.com/post/308152/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;《英雄聯盟》首席設計師是位台灣男孩—他用「經典心理學」讓電玩不再充滿仇恨&lt;/a&gt;
+。內容也都是民報的報導再精簡化，模式與這幾年常出現的「台灣沾光」新聞如出一轍，很難讓讀者看過後想去了解背後的科學，從轉載民報報導的
+&lt;a href=&#34;https://www.ptt.cc/bbs/Cognitive/M.1459772053.A.246.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;批踢踢認知科學討論區&lt;/a&gt;
+，引用者與推文者只有想到批踢踢的惡意行為可知一二。&lt;br&gt;
+我比較偏好台灣的心理學界將priming翻成_促發_的慣例，因為促發實驗在許多心理學實驗主題之內廣泛運用，不僅有得到增加行為表現的促進效應(facilitation effect)，也有降低行為表現的抑制效應(inhibition effect)。如果把priming翻成_啟動_，初次認識的讀者不自覺地會認為使用這種實驗方法，都會得到增加行為表現的結果。中文報導的二手及至三手傳播，很大程度地抑制讀者認識這種實驗方法的興趣，也讓看到這些標題就跳過的台灣心理學研究者與工作者，失去一次思辨心理學在台灣如何發展的機會。好在我有收集閱讀原始報導的習慣，所以撰寫這篇文章來談談什麼是促發實驗，以及今天的心理學家如何使用以及評價這種實驗方法對心理學知識的貢獻。&lt;/p&gt;
+&lt;h2 id=&#34;心理學家如何運用促發實驗&#34;&gt;心理學家如何運用促發實驗&lt;/h2&gt;
+&lt;p&gt;就從自然期刊的原報導
+&lt;a href=&#34;http://www.nature.com/news/can-a-video-game-company-tame-toxic-behaviour-1.19647&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Can a video game company tame toxic behaviour?&lt;/a&gt;
+，來認識什麼是促發實驗。之前引用的原文段落，自然期刊記者用簡潔的筆法說明實驗原則，透過報導語境翻譯就是：“在玩家行動之前，呈現的圖像或訊息能誘發某種行為表現”。在心理學家精心設計的實驗裡，參與者(participant)行動之前呈現的圖像或訊息稱為促發項(prime)或誘導項(probe)，呈現內容是促發實驗必定操作的獨變項，心理學實驗都會隨機分派設計好的促發項給參與者，再紀錄參與者經歷促發項之後的行動。參與者的行動可以是做出某種反應的速度，或者某種表現的次數，也是心理學家要先規劃好的資料分析項目。&lt;br&gt;
+自然期刊介紹的促發實驗，來自林侑霆在2013GDC大會的發表
+&lt;a href=&#34;http://gdcvault.com/play/1017940/The-Science-Behind-Shaping-Player&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Science Behind Shaping Player Behavior in Online Games&lt;/a&gt;
+，其中介紹的The Optimus Experiment。從這項實驗報告，可以一窺如何將線上遊戲介面，轉變成心理學實驗室。在網路平台越來越發達之後，有眾多玩家支持的電腦遊戲，開發者都會在遊戲介面安插遊戲提示，告知玩家遊戲訣竅或提醒保持網路禮節，像是這裡提到的「英雄聯盟」，還有暴雪公司的「魔獸世界」，都有設計在程式讀取畫面或遊戲畫面呈現提示。林侑霆的團點利用這個特性，設計五類24種提示訊息文字，有正向鼓勵合作行為，有負面警告惡意行為等等，玩家會收到那一類訊息，都是在遊戲開局前由伺服器端程式隨機決定。文字顏色也設計用紅色、藍色或白色隨機呈現，林侑霆的想法是在電腦遊戲或實驗裡，紅色文字通常有警告的意味，藍色文字有鼓勵受測者表現的暗示，白色文字常用於解說。再搭配提示訊息隨機出現在讀取畫面、遊戲畫面、或兩者皆有的設計，構成216種實驗情況。此外還有一種玩家從登入到登出都沒有提示的完全控制組(overall control)，做為216種實驗情況的測量基準線(baseline)，從2012年底開始進行這項實驗，當時全球英雄聯盟玩家之中的10%被分派到完全控制組，其它90%則隨機分派到216種實驗情況。雖然我沒有玩過英雄聯盟，我相信當時沒有一位玩家察覺自已正在參與一項心理學實驗。&lt;br&gt;
+所有玩家的遊戲表現，以及與隊友的即時溝通內容，都成為研究團隊的分析資料。運用簡單的統計方法，把任何一種實驗情況的玩家行為紀錄，與完全控制組玩家的行為紀錄相互比較，就能知道提示訊息內容，或文字顏色，以及提示出現時機，究竟促進或抑制什麼樣的行為表現。林侑霆2013GDC報告的投影片，以及自然期刊的原文報導，都有呈現一些有趣的分析結果，對於關切英雄聯盟的遊戲體驗的玩家或開發者，是很有意義的資訊。不過對於想認識促發實驗的讀者，值得認識更高一層的問題，像是研究倫理(Research Ethics)與開放資料(Open Data)的價值。我建議延伸閱讀紐約的科普作家
+&lt;a href=&#34;https://sciencehsu.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jeremy Hsu&lt;/a&gt;
+在2015年1月發表的
+&lt;a href=&#34;https://backchannel.com/inside-the-largest-virtual-psychology-lab-in-the-world-7c0d2c43cda5#.ae9ffdaug&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Inside the Largest Virtual Psychology Lab in the World&lt;/a&gt;
+。&lt;br&gt;
+推薦延伸閱讀的原因是雖然自然期刊也有談到這兩項問題，但是僅限於Riot的英雄聯盟，Jeremy Hsu的文章則從業界與學界的反應與現況，描寫研究倫理與開放資料的議題發展。以發表時間順序來看，很有可能是Jaremy Hsu的文章引發自然期刊編輯部的興趣。&lt;br&gt;
+除了Riot，臉書也有用自家平台進行線上心理學實驗，並且更為大眾所知，就是臉書與康乃爾大學合作，已於2014年發表於PNAS的
+&lt;a href=&#34;http://www.pnas.org/content/111/24/8788.full.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;情緒傳播實驗&lt;/a&gt;
+。這項實驗設計原則也是一種促發實驗，但是大眾更關注的是這項研究引起的倫理問題，例如常發表科普文章的黃揚名老師，就對這篇論文引發的研究倫理問題發表
+&lt;a href=&#34;http://yangminghuang.blogspot.nl/2014/06/blog-post_30.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;評論&lt;/a&gt;
+。那麼林侑霆透過英雄聯盟的平台進行實驗，有沒有相同的倫理爭議呢？我認為兩者對比突顯研究倫理問題的複雜度，來自研究者設計與執行專案的初始宗旨。我沒有詳細追蹤臉書的案例，不過就其於學術期刊發表成果的這項事實來看，業界與學界的雙方合作者有各自的利益考量，對學界來說就是在頂尖期刊發表論文，對業界來說就是改進能帶來更多收益的臉書演算法，所以這項研究所牽涉的利益衝突(conflict of interest)，一所大學的IRB也許無法預見這項研究成果會帶來的爭議。&lt;br&gt;
+不過英雄聯盟的線上實驗相對單純，因為Riot的目標是降低玩家之間惡意行為的發生，提高玩家的遊戲體驗。為此在公司內部設立IRB，審核像是林侑霆主持的內部研究案，林侑霆採用的方法是不直接改變玩家體驗的方式進行實驗，就像The Optimus Experiment操作遊戲內提示訊息，不只是玩家，一般電腦使用者對這些提示覺得可有可無。而從2014和2015的報告，可見到林侑霆的團隊是採用類實驗方法(quasi-experimental design)，結合文字探勘與機器學習等資料科學技術，根據玩家已熟悉的獎懲機制系統紀錄，分析惡意行為的起因與改變的過程。研究成果直接用於改進Riot自家產品，研究團隊除了拿部份結果去GDC報告，並未像臉書把全部資料整理之後投稿到學術期刊發表。所以一個研究來自利益目標不同的多方合作者時，誰有資格或如何辨識和衡量其中的利益問題？尤其像臉書是幾乎每個有上網設備的使用者都具備的社交平台，有沒有能超出所有利益角色，保障使用者個人權益不被研究措施侵害的措施？或者這種措施存在的合法性？這是對比英雄聯盟與臉書的線上大型實驗研究，所呈現的問題高度。&lt;br&gt;
+網路遊戲和臉書讓我們看到商業世界有運用網路平台，進行大型心理學實驗的實例，那麼已經運用促發實驗超過一世紀的學術界呢？Jeremy Hsu舉維吉尼亞大學社會心理學教授Brian Noek主持的
+&lt;a href=&#34;https://implicit.harvard.edu/implicit/research/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Project Implicit&lt;/a&gt;
+為例，說明學術界早就明白大型實驗的好處以及未來的潛力。Project Implicit是使用內隱連結測試(Implicit Association Test)研究不同語言與文化的參與者，對於特定議題的大型實驗計畫。台灣的科學人雜誌在2006年的一篇翻譯文章
+&lt;a href=&#34;http://sa.ylib.com/MagCont.aspx?Unit=columns&amp;amp;id=880&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;隱藏在內心的偏見&lt;/a&gt;
+，就已介紹這項測驗的源起與Project Implicit運作至2006年的狀況。我在這裡要談談這種大型實驗被心理學家重視的另一種功能，就是檢驗促發實驗結果的可再現性與帶來的知識價值，我想放到開放資料這一層來談。&lt;/p&gt;
+&lt;h2 id=&#34;運用開放資料評價促發實驗的知識價值&#34;&gt;運用開放資料評價促發實驗的知識價值&lt;/h2&gt;
+&lt;p&gt;為什麼談開放資料要兼談實驗結果的可再現性？這個切入點來自林侑霆在2013GDC報告的一張投影片。一開始介紹The Optimus Experiment，他用兩個著名的促發實驗向觀眾解釋實驗原理，一個是歷史悠久的Stroop效應，另一個是現於耶魯大學心理學系任教的John Bargh於1996年在Journal of personality and social psychology發表的
+&lt;a href=&#34;http://www.ncbi.nlm.nih.gov/pubmed?cmd=Search&amp;amp;doptcmdl=Citation&amp;amp;defaultField=Title%20Word&amp;amp;term=Bargh%5Bauthor%5D%20AND%20Automaticity%20of%20social%20behavior%3A%20direct%20effects%20of%20trait%20construct%20and%20stereotype-activation%20on%20action.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elderly Priming&lt;/a&gt;
+。Bargh的促發實驗對今天美國的社會心理學具有重要的影響力，實驗的促發項是排字作業，讓參與者從一系列順序雜亂的單詞，排成有意義的句子，實驗者操作要排列的字詞內容，有與年老相關的字詞，以及與年輕有關的字詞。測量的行為是參與者完成排字作業之後，離開實驗室的走路速度。Bargh的論文報告的兩項實驗，顯示排列年老字詞的參與者，走路速度顯著比排列年輕字詞的參與者慢。這項實驗結果在發表後十年，帶動美國社會心理學家使用類似的促發實驗模式，研究概念建構促進或抑制的個人行動。甚至曾獲諾貝爾獎的心理學者Daniel Kahneman近年最為人所知的著作Thinking, Fast and Slow(快思慢想)，也引用John Bargh研究做為系統一自動化理論的佐證。&lt;br&gt;
+在Thinking, Fast and Slow出版的同一年，知名的開放取用期刊Plos One接受了一篇
+&lt;a href=&#34;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029081#pone.0029081-Bargh1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;證實Elderly Priming無法再現的研究&lt;/a&gt;
+，此後開始了歐美科普作家對心理科學成果的
+&lt;a href=&#34;http://blogs.discovermagazine.com/notrocketscience/2012/01/18/primed-by-expectations-%E2%80%93-why-a-classic-psychology-experiment-isn%E2%80%99t-what-it-seemed/#.VwoQRGh95eU&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;批判&lt;/a&gt;
+，科普作家與John Bargh的
+&lt;a href=&#34;https://www.psychologytoday.com/blog/the-natural-unconscious/201205/priming-effects-replicate-just-fine-thanks&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;筆戰&lt;/a&gt;
+，以及科普作家對於
+&lt;a href=&#34;https://hardsci.wordpress.com/2012/03/12/some-reflections-on-the-bargh-doyen-elderly-walking-priming-brouhaha/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原始實驗樣本太少的質疑&lt;/a&gt;
+。同一年秋天，Kahenman本人還親自發表一封
+&lt;a href=&#34;http://www.nature.com/news/nobel-laureate-challenges-psychologists-to-clean-up-their-act-1.11535&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;公開信&lt;/a&gt;
+，表達他對Elderly Priming的無法被其它實驗室再現的立場。&lt;br&gt;
+歐美科普作家對於Bargh的研究無法被同行再現有深刻的背景因素。就在Elderly Priming風波開始的前一年，時任荷蘭Tilburg大學的社會心理學教授
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Diederik_Stapel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Diederik Stapel&lt;/a&gt;
+，被踢爆所發表的研究結果都是自行捏造的數據，一直到今天，清查工作都還未結束。Diederik Stapel的研究類似youtube上某些知名頻道主設計的社會實驗節目，論文描述在公共場所或實驗室設計會誘發預期行為情節或擺設，實驗者從旁觀察行人的現場反應。也因此設計類似的Elderly Priming會被挑出來批判，至今依然餘波盪漾。其中一個值得注意的事件是一本刊登社會心理學研究的學術期刊Basic and Applied Social Psychology，在
+&lt;a href=&#34;http://www.tandfonline.com/doi/abs/10.1080/01973533.2015.1012991&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2015年2月宣佈&lt;/a&gt;
+投稿到該期刊的論文只能報告描述統計，傳統的推論統計如t檢定與變異數分析不必報告，以及有條件接受貝式統計分析結果。雖然未見過新聞報導與部落客將這件事與Elderly Priming風波放在一起談論，許多促發實驗無法被成功重現的現實，讓心理學家開始思考在實驗室裡執行的實驗結果，即使成功發表也不一定有真正的知識價值。&lt;br&gt;
+再回來看開放資料對於學術與商業的意義，最重要的是讓資料生產過程透明化。學術研究者可以使用開放資料檢驗實驗結果符合與不符合預期的條件，降低檢驗可再現性的成本。像是Elderly Priming的案例，如果在發表時能提供開放資料供評審或第三人檢驗，保證可再現的品質，也許至少不會引起無助澄清事實的各種風波。商品開發者可以使用開放資料檢視產品符合開發構想的程度，還可以藉此尋找有助改進產品的工程師。知識的價值不僅體現於研究者將所發現的事物包裝為讓讀者或消費者願意接受，更是提供開啟他人自行檢驗或探索知識的條件，讓原來的知識價值持續增加。如果英雄聯盟的營運能因此維持到下一個世代的玩家，那麼本來培養林侑霆的學術體系，有沒有可能藉著開放資料的時代機會，找到啟發新世代學人的新途徑？&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

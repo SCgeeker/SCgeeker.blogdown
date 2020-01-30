@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="陳紹慶">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="為了鼓勵中文研究者了解並採用透明研究操作，我以生涯第一件註冊報告錄製影片，示範如何透過網路收集資料。">
+
+  
+  <link rel="alternate" hreflang="zh-Hant" href="/zh-hant/post/gorilla_prolific_online/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#4caf50">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/zh-hant/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/zh-hant/post/gorilla_prolific_online/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="陳紹慶的個人網站">
+  <meta property="og:url" content="/zh-hant/post/gorilla_prolific_online/">
+  <meta property="og:title" content="運用Gorilla與Prolific進行線上實驗的簡單示範 | 陳紹慶的個人網站">
+  <meta property="og:description" content="為了鼓勵中文研究者了解並採用透明研究操作，我以生涯第一件註冊報告錄製影片，示範如何透過網路收集資料。"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="zh-Hant">
+  
+    
+      <meta property="article:published_time" content="2019-12-21T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-12-21T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/zh-hant/post/gorilla_prolific_online/"
+  },
+  "headline": "運用Gorilla與Prolific進行線上實驗的簡單示範",
+  
+  "datePublished": "2019-12-21T00:00:00Z",
+  "dateModified": "2019-12-21T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "陳紹慶"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "陳紹慶的個人網站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img//"
+    }
+  },
+  "description": "為了鼓勵中文研究者了解並採用透明研究操作，我以生涯第一件註冊報告錄製影片，示範如何透過網路收集資料。"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>運用Gorilla與Prolific進行線上實驗的簡單示範 | 陳紹慶的個人網站</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜尋</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜尋..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/zh-hant">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切換導航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/zh-hant">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#about"><span>關於我</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#posts"><span>網誌</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#projects"><span>專案</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#featured"><span>著作</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh-hant/#contact"><span>聯絡方式</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>運用Gorilla與Prolific進行線上實驗的簡單示範</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Dec 21, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 閱讀時間（分鐘）
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/zh-hant/post/gorilla_prolific_online/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/zh-hant/categories/reproduce-practice/">Reproduce Practice</a>, <a href="">研究心得</a>, <a href="">軟體介紹</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p><a href="https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6">可獲得啓動點數的Gorilla註冊網址</a></p>
+<p><a href="https://www.prolific.co/?ref=XPQ3NN2Y">可獲得啓動資金的Prolific註冊網址</a></p>
+<p>這三年與荷蘭學者Bjorn de Korning 與 Rolf Zwaan 合作的<a href="https://psyarxiv.com/a3vwc/">註冊研究專案</a>終於被<a href="https://us.hogrefe.com/products/journals/exppsy">Experimental Psychology</a>正式接受。這項專案達成了幾件個人學術創舉，其中之一是透過網路收集資料的線上實驗。我們的發表報告採用透明的研究操作，即公開研究材料、原始資料、以及統計腳本。這項專案運用線上實驗平台<a href="https://gorilla.sc/">Gorilla</a>設計研究材料及執行程序，以及透過行為研究協作平台<a href="https://www.prolific.ac/">Prolific</a>等途徑招募參與者。運用線上平台進行實驗研究，對於所屬機構較難獲得大量樣本的研究者，是從事基礎研究課題的可行途徑。為了讓有興趣的朋友能快速了解，我錄製七段<a href="https://www.youtube.com/playlist?list=PLSxoRcsvTAqA7oJrQYdVnih1_rnS_Gl4n">公開示範影片</a>，並在這個網誌介紹相關資訊。</p>
+<ol style="list-style-type: decimal">
+<li>註冊Gorrila平台</li>
+</ol>
+<p>Gorrila是2016年由<a href="http://cauldron.sc/welcome">Cauldron</a>公司推出的雲端產品，因為創辦人有實驗心理學研究背景，Gorrila的開發以服務行為科學研究者的需求為主，除了基本的多媒體呈現及按鍵反應時間紀錄，目前也提供語音紀錄與眼動軌跡紀錄等套件，讓研究者能將在傳統實驗室進行的實驗，讓參與者透過網路在熟悉的生活空間貢獻資料。</p>
+<p>註冊Gorrila不需付費，因為這家公司的收費來自使用平台的研究者執行線上實驗的點數費。為了鼓勵研究者多加運用，推出呼朋引伴的點數回饋。有興趣使用的讀者可使用<a href="https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6">可獲得啓動點數的Gorilla註冊網址</a>，在學校就學或服務的朋友請以機構電子郵件註冊，購買點數的費用有折扣。註冊成功後可參考影片自行瀏覽。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/HSSAwcb3J4o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="2" style="list-style-type: decimal">
+<li>專案元素</li>
+</ol>
+<p>使用者只要依計畫流程將<a href="https://gorilla.sc/support/reference/faq/questionnaires">線上測驗(Questionnaires)</a>及<a href="https://gorilla.sc/support/reference/faq/task-builder">線上作業(Tasks)</a>串連為<a href="https://gorilla.sc/support/reference/faq/experiments">實驗(Experiments)</a>，包裹在專案(Project)之人內。三項元素都有專屬編輯器，除了直接運用Gorilla提供的元件設計需要的測驗、作業及實驗，使用者可運用javascript設計需要的實驗元件。一件專案可包含複數元素，只有實驗是可正式上線收集資料的元素。</p>
+<p>註冊使用者能協同合作編輯一件專案，創建專案的使用者只要透過Settings -&gt; Collaborate -&gt; 加入註冊使用者的e-mail。專案也能建立複本，只要運用Settings -&gt; Clone。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/SDCKy_fys90" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="3" style="list-style-type: decimal">
+<li>線上測驗創建與測試示範</li>
+</ol>
+<p>使用者除了運用編輯器自行建立與測試線上測驗，也可以由<a href="https://gorilla.sc/support/samples">示範資源庫(Samples)</a>取得官方範本，或由<a href="https://gorilla.sc/openmaterials/">開放材料庫(Open Materials)</a>取得其他使用者公開的測驗腳本。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/h828x0PFn00" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="4" style="list-style-type: decimal">
+<li>線上作業程序設計與材料準備示範</li>
+</ol>
+<p>使用者除了運用編輯器自行建立與測試線上作業及編輯實驗素材，也可以由<a href="https://gorilla.sc/support/samples">示範資源庫(Samples)</a>取得官方範本及素材，或由<a href="https://gorilla.sc/openmaterials/">開放材料庫(Open Materials)</a>取得其他使用者公開的資源。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/lnK91_rTmCo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="5" style="list-style-type: decimal">
+<li>實驗流程構成示範</li>
+</ol>
+<p>Gorilla實驗流程編輯器是圖像互動介面，使用者可自由調整作業與測驗的執行順序，並可加入流程控制元件實行隨機分派。如果官方元件未提供符合計畫需要的流程控制，使用者可撰寫javascript腳本。使用流程控制元件除了參考<a href="https://gorilla.sc/support/reference/faq/experiments">官方範例</a>，也可從<a href="https://gorilla.sc/openmaterials/">開放材料庫(Open Materials)</a>取得合適的流程。</p>
+<p>一件專案可依計畫設計多套實驗流程，並能測試流程執行以及收集的資料結果。Gorilla的資料以試算表格式輸出，我建議採用CSB匯出，以利分析的可重製性。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/oJM128pBlHI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="6" style="list-style-type: decimal">
+<li>實驗上線管理</li>
+</ol>
+<p>Gorilla提供多種實驗上線方式，任何上線方式收集一次完整資料，就要消耗一個點數(token)。如果使用者希望收集有代表性的樣本，建議在有過濾參與者條件的第三方平台上線。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BeRB7rECZDA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<ol start="7" style="list-style-type: decimal">
+<li>Prolific註冊與建立專案</li>
+</ol>
+<p>接續前一點，有過濾參與者條件的第三方平台最成功的是英語系國家的MTurk與Prolific，這次是透過Prolific收集英語參與者資料。這段影片示範如何在Prolific上線收集資料，也期望拋轉引玉，尋找有膽識的朋友們創建功能類似，以中文人口為主的第三方平台。Prolific註冊免費，按成功樣本收費。與Gorilla一樣要事先儲值，有興趣註冊找參與者的朋友，可透過<a href="https://www.prolific.co/?ref=XPQ3NN2Y">可獲得啓動資金的Prolific註冊網址</a>，註冊帳號獲得第一桶金。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1J6rk7eM9RY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/zh-hant/tags/experiment_design/">Experiment_Design</a>
+  
+  <a class="badge badge-light" href="">註冊研究</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/zh-hant/post/gorilla_prolific_online/&amp;text=%e9%81%8b%e7%94%a8Gorilla%e8%88%87Prolific%e9%80%b2%e8%a1%8c%e7%b7%9a%e4%b8%8a%e5%af%a6%e9%a9%97%e7%9a%84%e7%b0%a1%e5%96%ae%e7%a4%ba%e7%af%84" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/zh-hant/post/gorilla_prolific_online/&amp;t=%e9%81%8b%e7%94%a8Gorilla%e8%88%87Prolific%e9%80%b2%e8%a1%8c%e7%b7%9a%e4%b8%8a%e5%af%a6%e9%a9%97%e7%9a%84%e7%b0%a1%e5%96%ae%e7%a4%ba%e7%af%84" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e9%81%8b%e7%94%a8Gorilla%e8%88%87Prolific%e9%80%b2%e8%a1%8c%e7%b7%9a%e4%b8%8a%e5%af%a6%e9%a9%97%e7%9a%84%e7%b0%a1%e5%96%ae%e7%a4%ba%e7%af%84&amp;body=/zh-hant/post/gorilla_prolific_online/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/zh-hant/post/gorilla_prolific_online/&amp;title=%e9%81%8b%e7%94%a8Gorilla%e8%88%87Prolific%e9%80%b2%e8%a1%8c%e7%b7%9a%e4%b8%8a%e5%af%a6%e9%a9%97%e7%9a%84%e7%b0%a1%e5%96%ae%e7%a4%ba%e7%af%84" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=%e9%81%8b%e7%94%a8Gorilla%e8%88%87Prolific%e9%80%b2%e8%a1%8c%e7%b7%9a%e4%b8%8a%e5%af%a6%e9%a9%97%e7%9a%84%e7%b0%a1%e5%96%ae%e7%a4%ba%e7%af%84%20/zh-hant/post/gorilla_prolific_online/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/zh-hant/post/gorilla_prolific_online/&amp;title=%e9%81%8b%e7%94%a8Gorilla%e8%88%87Prolific%e9%80%b2%e8%a1%8c%e7%b7%9a%e4%b8%8a%e5%af%a6%e9%a9%97%e7%9a%84%e7%b0%a1%e5%96%ae%e7%a4%ba%e7%af%84" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/zh-hant/authors/csc/avatar_hu3d590b371aacc9bbd6d33aea2a79116c_5560_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">陳紹慶</a></h5>
+      <h6 class="card-subtitle">副教授</h6>
+      <p class="card-text">My research interests include language processing and embodied cognition.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pmsp96@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-6092-6049" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=kSUyxs0AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/SCgeeker" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "sauchinchen" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>相關</h3>
+    <ul>
+      
+      <li><a href="/zh-hant/post/hku-mass-mobilize/">香港大學學生群眾動員學習研究行動演講會後談</a></li>
+      
+      <li><a href="/zh-hant/post/first-preregistration-workshop/">2019年第一次線上預先註冊工作坊感想</a></li>
+      
+      <li><a href="/zh-hant/post/classical-memory-studies/">三個經典記憶實驗重現研究教程</a></li>
+      
+      <li><a href="/zh-hant/post/orientation-language-part01/">物件方向效應跨語言研究經驗分享(一)：心理科學加速器合作專案</a></li>
+      
+      <li><a href="/zh-hant/post/first-chinese-rr-journal/">第一本華文心理學學術期刊開工了</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.4/mermaid.min.js" integrity="sha256-JEqEejGt4tR35L0a1zodzsV0/PJ6GIf7J4yDtywdrH8=" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/zh-hant/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"找不到结果","placeholder":"搜尋...","results":"搜尋结果"};
+      const content_type = {
+        'post': "文章",
+        'project': "專案",
+        'publication' : "出版物",
+        'talk' : "演講"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://sauchinchen.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/zh-hant/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/zh-hant/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 複製
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下載
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

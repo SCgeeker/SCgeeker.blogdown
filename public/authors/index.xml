@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Sau-Chin Chen&#39;s website</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 30 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title>de Koning B. Bjorn</title>
+      <link>/authors/de-koning-b.-bjorn/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/de-koning-b.-bjorn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rolf A. Zwaan</title>
+      <link>/authors/rolf-a.-zwaan/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/rolf-a.-zwaan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sau-Chin Chen</title>
+      <link>/authors/sau-chin-chen/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/sau-chin-chen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/csc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/csc/</guid>
+      <description>&lt;p&gt;Sau-Chin Chen is the associate professor of 
+&lt;a href=&#34;http://www.hdd.tcu.edu.tw/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Department of Human Development and Psychology, Tzu-Chi University&lt;/a&gt;
+ since 2017. Between 2016 Feb and 2017 Jan, I was visiting 
+&lt;a href=&#34;http://www.eur.nl/fsw/english/psychology/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Department of Psychology, Erasmus University Rotterdam&lt;/a&gt;
+. Durning this period, I am collaborating with 
+&lt;a href=&#34;http://rolfzwaan.blogspot.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rolf Zwaan&lt;/a&gt;
+ on the mental simulation in language comprehension. You will find the articles and blog posts about my research that are going to be updated.&lt;/p&gt;
+&lt;p&gt;This website is updated based on my knowledge about 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Data_science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;data science&lt;/a&gt;
+. The data of the previous website are stored on 
+&lt;a href=&#34;https://github.com/SCgeeker/SCgeeker.oldsite&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this repository&lt;/a&gt;
+. Since 2017, I have participated in 
+&lt;a href=&#34;https://cos.io/our-communities/become-ambassador/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;COS Ambassador project&lt;/a&gt;
+ and registered the membership of 
+&lt;a href=&#34;http://improvingpsych.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Society for the Improvement of Psychological Science (SIPS)&lt;/a&gt;
+. This experience truns me out the interests to evaluate and improve the quality of psycholinguistic researches. I am developing the Chinese tutorial of open sciences and registered reports. Welcome share my materials of 
+&lt;a href=&#34;https://osf.io/e69mb/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Registered Report Workshop&lt;/a&gt;
+. I would like to share with people who wish to improve the psychology science.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

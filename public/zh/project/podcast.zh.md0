@@ -1,0 +1,50 @@
++++
+# Date this page was created.
+date = "2020-01-16"
+
+# Project title.
+title = "網路廣播"
+
+# Project summary to display on homepage.
+summary = "TBA"
+
+# Optional image to display on homepage (relative to `static/img/` folder).
+image_preview = "opnecafe-cover.png"
+
+# Tags: can be used for filtering projects.
+# Example: `tags = ["machine-learning", "deep-learning"]`
+tags = ["心理科學", "開放科學"]
+
+# Optional external URL for project (replaces project detail page).
+external_link = ""
+
+# Does the project detail page use math formatting?
+math = true
+
+# Optional featured image (relative to `static/img/` folder).
+[header]
+image = "headers/opencafe-logo.png"
+caption = ""
+
+
+
++++
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Apple Podcasts</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+</div>
+
+[Anchor RSS](https://anchor.fm/s/1103f1e0/podcast/rss)
+
+[iTune Store](https://podcasts.apple.com/us/podcast/%E9%96%8B%E6%94%BE%E5%92%96%E5%95%A1%E8%A7%92/id1493188841?uo=4)
+
+[Spotify](https://open.spotify.com/show/43RFFv6NCWWnCuMBbyIWaq)
+
+[Breaker](https://www.breaker.audio/kai-fang-ka-pei-jiao)
+
+[Google Podcast](https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8xMTAzZjFlMC9wb2RjYXN0L3Jzcw==)
+
+[Overcast](https://overcast.fm/itunes1493188841)
+
+[Pocket Casts](https://pca.st/j1mn9j4g)
+
+[RadioPublic](https://radiopublic.com/-60K5az)

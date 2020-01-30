@@ -1,0 +1,41 @@
++++
+date = 2017-01-01T00:00:00  # Schedule page publish date.
+
+title = "淺談如何兼容資料科學與開放科學"
+time_start = 2017-11-11T14:15:00
+time_end = 2017-11-11T15:00:00
+abstract = ""
+abstract_short = ""
+event = "2017台灣資料科學年會"
+event_url = "http://datasci.tw/agenda/?conf=DS"
+location = "台北中央研究院 人文社會科學館 第一會議室 R1"
+
+# Is this a selected talk? (true/false)
+selected = true
+
+# Projects (optional).
+#   Associate this talk with one or more of your projects.
+#   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
+projects = ""
+
+# Links (optional).
+url_pdf = ""
+url_slides = ""
+url_video = ""
+url_code = "https://hackmd.io/p/rJxEkDpq-#/"
+
+# Does the content use math formatting?
+math = true
+
+# Does the content use source code highlighting?
+highlight = true
+
+# Featured image
+# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+[header]
+image = ""
+caption = ""
+
++++
+
+Embed your slides or video here using [shortcodes](https://sourcethemes.com/academic/post/writing-markdown-latex/). Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code.

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bayesian | Sau-Chin Chen&#39;s website</title>
+    <link>/tags/bayesian/</link>
+      <atom:link href="/tags/bayesian/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bayesian</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Bayesian</title>
+      <link>/tags/bayesian/</link>
+    </image>
+    
+    <item>
+      <title>If Emily Rosa met Thomas Bayes ...</title>
+      <link>/post/if-emily-rosa-met-thomas-bayes/</link>
+      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>/post/if-emily-rosa-met-thomas-bayes/</guid>
+      <description>
+
+
+&lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients’ body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scgeeker.github.io/BasicStatistics/images/theraputic-touch.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Emily was curious how real was TT technique. To test their skill under unbiased observations, she designed the test table like the below figure shows. Every trainee would run 10 trials in one test. In each trial, Emily placed her right hand above one of the participated trainee’ hand, decided by flipped coin. She had the hypothesis if the skill of TT trainees was real, they would give the correct answers in at least 8 of the trials.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jamanetwork.com/data/Journals/JAMA/4554/joc71352f1.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Emily ran this study two times between 1996 and 1997. At the first time 15 TT trainees were invited to this study. She deiced to run the second time after the TV station interviewed her. At the second time 13 TT trainees, included 7 had participated in the first time, joined this study. Their analysis showed the average accuracy of these trainees as equal to the random guessing.&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/mNoRxCRJ-Y0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;We would learn many things from Emily’s study till today. First of all the critical finding was the null effect. Today the behavioral scientists share more attention about the null effect than 1998. The other interesting thing is that the prediction could be verified by one point. It is rare to use the one-sample t-test in the psychological studies, but almost every psychologist learned the one-sample t-test before the independent t-test and paired t-test. Latest but may be critical, the idea of little Emily embodied the statistical thinking.&lt;/p&gt;
+&lt;p&gt;Emily’s data were summarized in the reproduced figure as below. They ran the one-sample t-test for the results of two times respectively. The analyses disconfirmed the reality of TT technique, but Emily and her parents might show a kind of researcher flexibility: they used the small samples in their first and follow-up studies. Could we upgrade their results in addition to conduct a registered replication plan?&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Rosa1998Fig2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Rosa1998Fig2-1.png&#34; alt=&#34;Reproductive test results of Rosa et al.(1998)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Reproductive test results of Rosa et al.(1998)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If Emily had learned Bayesian statistics in 1998, she would show the reporters her stronger belief how fake the TT technique was. Next, I use the binomial probability distribution to reanalyze Emily’s data in the simple Bayesian inference. My first step is the recovery of the original correct frequency of every TT participant. Although Emily’s paper gave the range of scores (initial study: 2 to 8; follow-up study: 1 to 7), they did not provide the how many correct trials conducted by every participant. I arranged the numbers based on the averages and number of total correct responses as follows:&lt;/p&gt;
+&lt;p&gt;(R-chunk, vectors of numbers)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Initial test data
+Data_initial &amp;lt;- c(2,3,3,3,3,4,5,5,5,5,5,6,6,7,8)
+# Follow-up data
+Data_followup &amp;lt;- c(1,3,3,3,3,4,4,4,4,5,5,7,7)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I required the theoretical parameters representing Emily’s hypothesis. Her study in nature was a game of coin tossing. She assumed certificated TT participants, given their technique was real, could answer correctly in more than 8 trials. In the other word, among the ten coins flipped by Emily, they could look into which 8, 9, or all sides on the top. Before the initial study, Emily could assume the probability each participant give the correct answer in a trial to be more than 0.5. If she used Bayesian inference, she would expect the posterior probability higher than 0.8. Therefore I prepared the uniform distribution ranged between 0.5 and 1 as the prior probability of the Bayesian inference.&lt;/p&gt;
+&lt;p&gt;It was recorded that only one participant returned 8 correct answers in the initial study. My Bayesian model used the binomial distribution with the arguments of 10 trials and prior probabilities. This model generated the posterior probability distribution given the data of Emily’s initial study. The average of the initial study was 4.67; thus I retrieved the posterior probability distribution of 5 from the Bayesian model.&lt;/p&gt;
+(R-chunk, Bayesian model and posterior histogram of initial)
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Bayes-initial&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-initial-1.png&#34; alt=&#34;Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Post-initial&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-initial-1.png&#34; alt=&#34;Posterior probability distribution of initial study result&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: Posterior probability distribution of initial study result
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.03&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+(R-chunk, Bayesian model and posterior histogram of follow-up)
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Bayes-followup&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Post-followup&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-followup-1.png&#34; alt=&#34;Posterior probability distribution of follow-up study result&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 5: Posterior probability distribution of follow-up study result
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The histogram of the posterior probability distribution shows zero possibility beyond 8. My reanalysis indicates that Emily’s study indeed falsified the reality of Therapeutic Touch. You may wonder if people have updated the understanding of Therapeutic Touch because of Emily’s study. Till today &lt;a href=&#34;http://therapeutictouch.org/&#34;&gt;the official website of Therapeutic Touch&lt;/a&gt; is regularly upgrading the latest information. More efforts are required to guide people thinking this world with scientific and statistical knowledge.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autopsy of NHST and Bayesian Models (part 1)</title>
+      <link>/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
+      <description>
+
+
+&lt;p&gt;Chapter 2 of &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated &lt;strong&gt;Data Story&lt;/strong&gt;, then &lt;strong&gt;update&lt;/strong&gt; the models by filling data in, and finally &lt;strong&gt;evaluate&lt;/strong&gt; all the &lt;strong&gt;upated&lt;/strong&gt; models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s &lt;a href=&#34;https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf&#34;&gt;Bayesian Basics: A Conceptual Introduction with Application in R and Stan&lt;/a&gt; on &lt;a href=&#34;http://mc-stan.org/documentation/&#34;&gt;Stan official site&lt;/a&gt;, I require the key to understand the difference between the two golems.&lt;/p&gt;
+&lt;p&gt;The critical difference is which type of &lt;strong&gt;conditional probability&lt;/strong&gt; the statistical method is used to evaluate the model. Once we collected the data based on some hypothesis, we have the distribution of hypothesis $ p( ) $ and the distribution of data $ p(y) $. NHST compuates the probability we have the data when the hypothesis is true $ p(y|) $. In practical, &lt;em&gt;p&lt;/em&gt; value refers to the &lt;strong&gt;conditional probability&lt;/strong&gt; of the null hypothesis, and * confidence interval* suggests a range of plausible outcomes based on the &lt;em&gt;confiditional probability&lt;/em&gt; of the real hypothesis. A Bayesian method compuates the probability the hypothesis is approved based on the data we have $ p(|y) $. Because the computation of $ p(|y) $ needs the likelihood $ p(y|) $ and the priori $ p() $, of course a Baysian method cost more steps than NHST.&lt;/p&gt;
+&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
+&lt;p&gt;Here is a pseudo experiment I want to know if a test is success based on the expect value smaller than 5 (Obersvations are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10). I completed an experiment of 25 observations and an experiment 36 observations. In use of NHST with a critical value (p &amp;lt; .05), the criterion change with the sample size. The simulation&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
+OBV &amp;lt;- 1:10
+Dist25 &amp;lt;- NULL
+Dist36 &amp;lt;- NULL
+count = 100
+while(count &amp;gt; 0){Dist25 &amp;lt;- c(Dist25,mean(sample(OBV, 25,replace = TRUE) ) ); count &amp;lt;- count - 1}
+Dist25_Density &amp;lt;- data.frame(Theta = density(Dist25, kernel = &amp;quot;gaussian&amp;quot;)$x, Density = density(Dist25, kernel = &amp;quot;gaussian&amp;quot;)$y)
+CL25 &amp;lt;- max(Dist25_Density$Theta[Dist25_Density$Theta &amp;lt; 5 &amp;amp; Dist25_Density$Density &amp;lt; .05])
+print(CL25)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4.286263&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;count = 100
+while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
+Dist36_Density &amp;lt;- data.frame(Theta = density(Dist36, kernel = &amp;quot;gaussian&amp;quot;)$x, Density = density(Dist36, kernel = &amp;quot;gaussian&amp;quot;)$y)
+CL36 &amp;lt;- max(Dist36_Density$Theta[Dist36_Density$Theta &amp;lt; 5 &amp;amp; Dist36_Density$Density &amp;lt; .05])
+print(CL36)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4.345472&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When this experiment outputs a avarage value between 4.15 and 4.42, would you like to collect the data more than 36 participants? This is the opportunity many researchers have to struggle in their study. Researchers who are educated as like me used to collect the observation till the &lt;em&gt;p&lt;/em&gt; value is smaller than .05. Most researchers used to stop the experiment till the 36th participant finished the experiment. However, this treatment lacks of the serious scientific thinking. If the hypothesis has set up the conditions to have the average, the sample size should be appointed before the start of experiment.&lt;/p&gt;
+&lt;p&gt;The appointment of sample size could be loose when the possible average is uncertain. When the experiment is conducted at first time in the world, NHST without the appointment of sample size could draw the range of averages that might obey the hypothesis. On the other hand, the following studies better has the appointment of sample size. In this case, NHST has to accompany the other statistical evaluation, such as power, effect size, to find the appropriate sample size. Therefore, NHST will perform well when the researcher conducted the first study or have the preparation as well as the first study. This will be the key in my autopsy of Bayesian method.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
