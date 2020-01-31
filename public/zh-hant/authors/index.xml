@@ -5,12 +5,36 @@
     <link>/zh-hant/authors/</link>
       <atom:link href="/zh-hant/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Thu, 30 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Authors</title>
       <link>/zh-hant/authors/</link>
     </image>
+    
+    <item>
+      <title>de Koning B. Bjorn</title>
+      <link>/zh-hant/authors/de-koning-b.-bjorn/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/authors/de-koning-b.-bjorn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rolf A. Zwaan</title>
+      <link>/zh-hant/authors/rolf-a.-zwaan/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/authors/rolf-a.-zwaan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sau-Chin Chen</title>
+      <link>/zh-hant/authors/sau-chin-chen/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/authors/sau-chin-chen/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title></title>

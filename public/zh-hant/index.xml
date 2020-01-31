@@ -5,12 +5,36 @@
     <link>/zh-hant/</link>
       <atom:link href="/zh-hant/index.xml" rel="self" type="application/rss+xml" />
     <description>陳紹慶的個人網站</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Thu, 30 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>陳紹慶的個人網站</title>
       <link>/zh-hant/</link>
     </image>
+    
+    <item>
+      <title>Does Object Size Matter with Regard to the Mental Simulation of Object Orientation?</title>
+      <link>/zh-hant/publication/size-orientation/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/publication/size-orientation/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!---
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&#39;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---&gt;
+&lt;p&gt;Access the sources at 
+&lt;a href=&#34;https://curatescience.org/app/article/536&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Curate Science&lt;/a&gt;
+.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>運用Gorilla與Prolific進行線上實驗的簡單示範</title>

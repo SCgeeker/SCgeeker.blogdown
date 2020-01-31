@@ -86,7 +86,7 @@ SUCCESS = data.frame(n,PASS_P)
 colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
 print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- html table generated in R 3.6.2 by xtable 1.8-4 package --&gt;
-&lt;!-- Tue Jan 28 21:19:11 2020 --&gt;
+&lt;!-- Thu Jan 30 18:30:16 2020 --&gt;
 &lt;table border=&#34;1&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;

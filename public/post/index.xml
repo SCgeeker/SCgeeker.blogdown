@@ -56,7 +56,7 @@ Figure 2: Bayesian inferece of initial study: Prior probability distribution (y 
 Figure 3: Posterior probability distribution of initial study result
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.03&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.02&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
 (R-chunk, Bayesian model and posterior histogram of follow-up)
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Bayes-followup&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
@@ -790,7 +790,7 @@ SUCCESS = data.frame(n,PASS_P)
 colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
 print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- html table generated in R 3.6.2 by xtable 1.8-4 package --&gt;
-&lt;!-- Tue Jan 28 21:19:11 2020 --&gt;
+&lt;!-- Thu Jan 30 18:30:16 2020 --&gt;
 &lt;table border=&#34;1&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -1387,7 +1387,7 @@ Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sig
 Then:&lt;br /&gt;
 &lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2020-01-28 21:19:05&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2020-01-30 18:30:09&lt;/p&gt;
 </description>
     </item>
     
