@@ -3,6 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/zh-hant/project/</loc>
+    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/project/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/tags/</loc>
+    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/tags/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/</loc>
+    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh-hant/tags/%E7%B6%B2%E8%B7%AF%E5%BB%A3%E6%92%AD/</loc>
+    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh-hant/project/opne-cafe/</loc>
+    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/zh-hant/</loc>
+    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/"
+                />
+  </url>
+  
+  <url>
     <loc>/zh-hant/publication_types/2/</loc>
     <lastmod>2020-01-30T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -119,36 +179,6 @@
                 rel="alternate"
                 hreflang="zh-hant"
                 href="/zh-hant/authors/sau-chin-chen/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/tags/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/"
                 />
   </url>
   
@@ -499,26 +529,6 @@
   
   <url>
     <loc>/zh-hant/project/meehl/</loc>
-    <lastmod>2018-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/zh-hant/project/</loc>
-    <lastmod>2018-05-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/project/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/tags/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/</loc>
     <lastmod>2018-05-05T00:00:00+00:00</lastmod>
   </url>
   

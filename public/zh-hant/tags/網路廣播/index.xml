@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>網路廣播 | 陳紹慶的個人網站</title>
+    <link>/zh-hant/tags/%E7%B6%B2%E8%B7%AF%E5%BB%A3%E6%92%AD/</link>
+      <atom:link href="/zh-hant/tags/%E7%B6%B2%E8%B7%AF%E5%BB%A3%E6%92%AD/index.xml" rel="self" type="application/rss+xml" />
+    <description>網路廣播</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>網路廣播</title>
+      <link>/zh-hant/tags/%E7%B6%B2%E8%B7%AF%E5%BB%A3%E6%92%AD/</link>
+    </image>
+    
+    <item>
+      <title>開放咖啡角</title>
+      <link>/zh-hant/project/opne-cafe/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/project/opne-cafe/</guid>
+      <description>&lt;p&gt;這是我策劃的網路廣播，宗旨是討論最核心的社會科學研究議題，有意願的人士都可以主持製作。歡迎到我們的
+&lt;a href=&#34;https://www.facebook.com/opencafetw/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;臉書粉絲專頁&lt;/a&gt;
+留言，給予回饋或參與製作。&lt;/p&gt;
+&lt;h2 id=&#34;ep3-協同合作解決危機&#34;&gt;EP3 協同合作解決危機&lt;/h2&gt;
+&lt;iframe src=&#34;https://anchor.fm/opensci-cafe/embed/episodes/EP3_-ea8l1n/a-a1asqs0&#34; height=&#34;96px&#34; width=&#34;600px&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;這一集以2020年1月6號發表在Nature index的報導，介紹Brian Nosek發起的Many Labs專案。這些專案帶起許多心理科學家重視並實踐開放科學操作，以及透過跨國協同合作，累積高信賴度的研究成果。報導全文請點
+&lt;a href=&#34;https://www.natureindex.com/news-blog/psychology-looks-physics-to-solve-replication-crisis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;這個連結&lt;/a&gt;
+；節目中提到的音頻節目，OSF下載網址來自開放科學學習社群WEekly Learn Open Science Team (WE LOST): &lt;a href=&#34;https://osf.io/pjv9g/&#34;&gt;https://osf.io/pjv9g/&lt;/a&gt;    &lt;a href=&#34;https://osf.io/9xfec/&#34;&gt;https://osf.io/9xfec/&lt;/a&gt;  本節朗讀稿
+&lt;a href=&#34;https://osf.io/vrz3p/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;下載網址&lt;/a&gt;
+，錄音檔
+&lt;a href=&#34;https://osf.io/gfc5k/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;下載網址&lt;/a&gt;
+。&lt;/p&gt;
+&lt;h2 id=&#34;ep2-確證性研究&#34;&gt;EP2 確證性研究&lt;/h2&gt;
+&lt;iframe src=&#34;https://anchor.fm/opensci-cafe/embed/episodes/EP2_-ea11f1/a-a196usj&#34; height=&#34;96px&#34; width=&#34;600px&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;第二集介紹確證性研究，以及何謂預先註冊Preregistration，與這篇論文同時發表的特刊，帶起至今餘波盪漾的再現危機話題。原始論文下載網址：https://journals.sagepub.com/doi/full/10.1177/1745691612463078&lt;/p&gt;
+&lt;p&gt;本集錄音存檔與朗讀稿可至 &lt;a href=&#34;https://osf.io/nmk2w/&#34;&gt;https://osf.io/nmk2w/&lt;/a&gt; 下載。節目製作指南請參考 &lt;a href=&#34;https://osf.io/mskef/&#34;&gt;https://osf.io/mskef/&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;Wagenmakers, E.-J., Wetzels, R., Borsboom, D., Maas, H. L. J. van der, &amp;amp; Kievit, R. A. (2012). An Agenda for Purely Confirmatory Research. Perspectives on Psychological Science, 7(6), 632–638. doi: 10.1177/1745691612463078&lt;/p&gt;
+&lt;h2 id=&#34;ep1-偽陽心理學&#34;&gt;EP1 偽陽心理學&lt;/h2&gt;
+&lt;iframe src=&#34;https://anchor.fm/opensci-cafe/embed/episodes/EP1_-e9tgd5/a-a1pvtc&#34; height=&#34;96px&#34; width=&#34;600px&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;第一集介紹心理科學再現危機必讀論文False Psychology，談談為何事後操作如何造成許多公開發表的研究結果在以被同行人士重現。原始論文下載網址：http://pss.sagepub.com/content/22/11/1359 
+本集錄音存檔與朗讀稿可至 &lt;a href=&#34;https://osf.io/nmk2w/&#34;&gt;https://osf.io/nmk2w/&lt;/a&gt; 下載。節目製作指南請參考 &lt;a href=&#34;https://osf.io/mskef/&#34;&gt;https://osf.io/mskef/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Simmons, J. P., Nelson, L. D., &amp;amp; Simonsohn, U. (2011). False-Positive Psychology Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. doi: 10.1177/0956797611417632&lt;/p&gt;
+&lt;h2 id=&#34;ep0-試播集&#34;&gt;EP0 試播集&lt;/h2&gt;
+&lt;iframe src=&#34;https://anchor.fm/opensci-cafe/embed/episodes/EP0_-e9tfmt/a-a18b3au&#34; height=&#34;96px&#34; width=&#34;600px&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;本集主持人：陳紹慶
+開放咖啡角向世界說哈囉。本集介紹製作動機與製作方式，歡迎有興趣透同本節目分享論文閱讀心得，或討論重要議題的朋友參與製作。本集錄音存檔與朗讀稿可至 &lt;a href=&#34;https://osf.io/nmk2w/&#34;&gt;https://osf.io/nmk2w/&lt;/a&gt; 下載。節目製作指南請參考 &lt;a href=&#34;https://osf.io/mskef/u&#34;&gt;https://osf.io/mskef/u&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

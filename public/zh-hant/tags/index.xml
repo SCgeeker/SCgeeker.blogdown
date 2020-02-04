@@ -5,12 +5,28 @@
     <link>/zh-hant/tags/</link>
       <atom:link href="/zh-hant/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Thu, 30 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Tags</title>
       <link>/zh-hant/tags/</link>
     </image>
+    
+    <item>
+      <title>心理科學</title>
+      <link>/zh-hant/tags/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/tags/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>網路廣播</title>
+      <link>/zh-hant/tags/%E7%B6%B2%E8%B7%AF%E5%BB%A3%E6%92%AD/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/tags/%E7%B6%B2%E8%B7%AF%E5%BB%A3%E6%92%AD/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>預印本</title>
@@ -137,14 +153,6 @@
       <link>/zh-hant/tags/preregistration/</link>
       <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
       <guid>/zh-hant/tags/preregistration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>心理科學</title>
-      <link>/zh-hant/tags/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/</link>
-      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
-      <guid>/zh-hant/tags/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/</guid>
       <description></description>
     </item>
     
