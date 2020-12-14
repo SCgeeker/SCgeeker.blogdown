@@ -12,37 +12,5 @@
       <link>/categories/</link>
     </image>
     
-    <item>
-      <title>Practices</title>
-      <link>/categories/practices/</link>
-      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>/categories/practices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>/categories/teaching/</link>
-      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>/categories/teaching/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>academic</title>
-      <link>/categories/academic/</link>
-      <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>/categories/academic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reproduce Practice</title>
-      <link>/categories/reproduce-practice/</link>
-      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/categories/reproduce-practice/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
