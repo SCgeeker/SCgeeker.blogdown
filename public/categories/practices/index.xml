@@ -18,6 +18,9 @@
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
       <guid>/post/if-emily-rosa-met-thomas-bayes/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients’ body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
@@ -56,7 +59,7 @@ Figure 2: Bayesian inferece of initial study: Prior probability distribution (y 
 Figure 3: Posterior probability distribution of initial study result
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.02&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.017&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
 (R-chunk, Bayesian model and posterior histogram of follow-up)
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Bayes-followup&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
@@ -80,6 +83,9 @@ Figure 5: Posterior probability distribution of follow-up study result
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
       <guid>/post/2017-05-08-bibliography-management-optimization/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;ul&gt;
@@ -111,6 +117,9 @@ Figure 5: Posterior probability distribution of follow-up study result
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
       <guid>/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;ul&gt;
@@ -142,6 +151,9 @@ Figure 5: Posterior probability distribution of follow-up study result
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       <guid>/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;this-post-is-for-future-posts.&#34; class=&#34;section level2&#34;&gt;
@@ -164,6 +176,9 @@ Figure 5: Posterior probability distribution of follow-up study result
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-09-14-randomization-in-latin-square/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;I’m managing an opensesame script for the coming project. In this project, there are four stimuli lists included all the within-participant conditions. I denote the four lists &lt;strong&gt;A&lt;/strong&gt;, &lt;strong&gt;B&lt;/strong&gt;, &lt;strong&gt;C&lt;/strong&gt;, and &lt;strong&gt;D&lt;/strong&gt;. A participant will have one of the stimuli lists in terms of the counter balanced principle. The best assignment method is 4X4 Latin Square. For every 16 participants, there are 24 sequences to be used. Here are three of the sequences.&lt;/p&gt;
@@ -256,6 +271,9 @@ exp.set(&amp;#39;List&amp;#39;, lst)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
@@ -376,6 +394,9 @@ head(New_Table)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-05-31-why-we-need-a-readable-data-table/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
@@ -496,11 +517,14 @@ head(New_Table)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-05-05-rethink-significance/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;To trace the fallacy of use hypothesis testing, I am programming the examples in Dr. Adrianus D. de Groot’s paper &lt;code&gt;The meaning of “signiﬁcance” for different types of research&lt;/code&gt;. This paper is published in 1956 in the Dutch journal &lt;em&gt;Nederlands Tijdschrift voor de Psychologie en Haar Grensgebieden&lt;/em&gt;. &lt;a href=&#34;https://en.wikipedia.org/wiki/Adriaan_de_Groot&#34;&gt;Adrianus De Groot&lt;/a&gt; is Dutch psychologist and chess master. During 1950s and 1960s, he suggested the concept of emperical cycle for the researchers who use the statistical tools in the social and behavioral researches.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;Emperical cycle&#34; /&gt;
+&lt;img src=&#34;/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Emperical cycle&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;de Groot’s emperical cycle distinguish two types of emperical research: &lt;strong&gt;exploratory research&lt;/strong&gt; and &lt;strong&gt;confirmatory research&lt;/strong&gt;. &lt;strong&gt;Exploratory research&lt;/strong&gt; aims to formulate the hypotheses that covers the process from &lt;code&gt;observation&lt;/code&gt; to &lt;code&gt;induction&lt;/code&gt;. &lt;strong&gt;Confirmatory research&lt;/strong&gt; attempts to test the predicited concequences based the hypothesis. Thus a &lt;strong&gt;Confirmatory research&lt;/strong&gt; covers &lt;code&gt;deduction&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, and &lt;code&gt;evaluation&lt;/code&gt;.&lt;/p&gt;
@@ -523,8 +547,8 @@ for(k in n){
 SUCCESS = data.frame(n,PASS_P)
 colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
 print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
-&lt;!-- html table generated in R 3.6.2 by xtable 1.8-4 package --&gt;
-&lt;!-- Thu Jan 30 18:30:16 2020 --&gt;
+&lt;!-- html table generated in R 4.0.3 by xtable 1.8-4 package --&gt;
+&lt;!-- Mon Dec 14 22:02:53 2020 --&gt;
 &lt;table border=&#34;1&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -645,6 +669,9 @@ Probability(Positive Results)
       <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Chapter 2 of &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated &lt;strong&gt;Data Story&lt;/strong&gt;, then &lt;strong&gt;update&lt;/strong&gt; the models by filling data in, and finally &lt;strong&gt;evaluate&lt;/strong&gt; all the &lt;strong&gt;upated&lt;/strong&gt; models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s &lt;a href=&#34;https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf&#34;&gt;Bayesian Basics: A Conceptual Introduction with Application in R and Stan&lt;/a&gt; on &lt;a href=&#34;http://mc-stan.org/documentation/&#34;&gt;Stan official site&lt;/a&gt;, I require the key to understand the difference between the two golems.&lt;/p&gt;
@@ -678,424 +705,518 @@ print(CL36)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt
       <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Since two weeks before I published this post, I have started read the book &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; written by &lt;a href=&#34;http://xcelab.net/rm/&#34;&gt;Richard McElreath&lt;/a&gt;. Richard is the evolutionary anthropologist at Max Planck Institute. He wrote this textbook for the PhD students who will use the Bayesian statistics in their research projects. Compared to the textbooks written by statisians and data scientistst, Richard’s book explain and demonstrate the statistical methods with examples instead of equations. His intention is to help who are not staticians but used to use statistics realize one fact: we rely on the statistical models as the representations of our answers rather than answer the questions by the raw data or naked truth. Many non-statisticians are used to find and learn what kind of methods or apps to deal with their data, but few are interested to know the models under the mentods and apps they are using. The trouble and danger is that they thought their jobs are done when the program printed the tables and figures but these outputs are from the statistical model is unable to answer their question. This situation is originated from many non-statisticans consider themselves the end-users of statistical models. Like any user of a packaged software, non-statisticans have no time to understand how the tools in their hands designed and conducted by statisticans.&lt;br /&gt;
 Richard introduced the story of &lt;a href=&#34;https://en.wikipedia.org/wiki/Golem&#34;&gt;golem&lt;/a&gt; to raise the non-statsiticans’ attention to the troubles they had made and will make. A statistical model, like a golem, has the power beyond human to finish the work the human are unable to do, for example, trace the passengers’ track from the trillion of camera. Its power could be misused or out of control if we do not understand what is the root of its action. A user of ststistical method, no matter you are or are not stistician, have to keep the awareness of engineer when you are dealing with your data. Today everyone has many easier ways than a decade ago to keep the awareness of engineer. One advantage is that the learning curve for being an part-time hacker is getting smooth. Increasing R apps are opening many windows for who are want to outlook and modify the statistical models.&lt;br /&gt;
 Since this post, every post listed in the category &lt;code&gt;Rethinking&lt;/code&gt; is one of the summaries and feedbacks to &lt;a href=&#34;https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-Stan/McElreath/9781482253443&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt;. At first I have to check my toolkits for create and manipulate the statistical models. They are R core and the packages. Years ago I have used to use the packages in my data processing. Now I show them for who start to use R after read this post.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;install.packages(c(&amp;quot;rpart&amp;quot;,&amp;quot;chron&amp;quot;,&amp;quot;Hmisc&amp;quot;,&amp;quot;Design&amp;quot;,&amp;quot;Matrix&amp;quot;,&amp;quot;stringr&amp;quot;,&amp;quot;lme4&amp;quot;,&amp;quot;coda&amp;quot;,&amp;quot;e1071&amp;quot;,&amp;quot;zipfR&amp;quot;,&amp;quot;ape&amp;quot;,&amp;quot;languageR&amp;quot;,&amp;quot;multcomp&amp;quot;,&amp;quot;contrast&amp;quot;,&amp;quot;shiny&amp;quot;,&amp;quot;ggplot2&amp;quot;, &amp;quot;dplyr&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Some of the packages are learned from I participated in &lt;a href=&#34;https://www.coursera.org/specializations/jhu-data-science&#34;&gt;Cousera Data Science&lt;/a&gt;. Now I used to use &lt;code&gt;dplyr&lt;/code&gt; to process the raw data, and I am learning how to draw the figures I need in use of &lt;code&gt;ggplot2&lt;/code&gt;. When this post is published, I have updated my R to R version 3.6.2 (2019-12-12). Through &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;the codes of Heuristic Andrew&lt;/a&gt;, here are my installed packages.&lt;/p&gt;
+&lt;p&gt;Some of the packages are learned from I participated in &lt;a href=&#34;https://www.coursera.org/specializations/jhu-data-science&#34;&gt;Cousera Data Science&lt;/a&gt;. Now I used to use &lt;code&gt;dplyr&lt;/code&gt; to process the raw data, and I am learning how to draw the figures I need in use of &lt;code&gt;ggplot2&lt;/code&gt;. When this post is published, I have updated my R to R version 4.0.3 (2020-10-10). Through &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;the codes of Heuristic Andrew&lt;/a&gt;, here are my installed packages.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ip &amp;lt;- as.data.frame(installed.packages()[,c(1,3:4)])
 rownames(ip) &amp;lt;- NULL
 ip &amp;lt;- ip[is.na(ip$Priority),1:2,drop=FALSE]
 print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##              Package     Version
-##                abind       1.4-5
-##              acepack       1.4.1
-##                 afex      0.26-0
-##           ANOVApower       0.0.3
-##              anytime       0.3.7
-##                  apa       0.3.2
-##                  arm      1.10-1
-##              askpass         1.1
-##           assertthat       0.2.1
-##            backports       1.1.5
-##            base64enc       0.1-3
-##          BayesFactor  0.9.12-4.2
-##           bayestestR       0.5.0
-##                   BH    1.72.0-3
-##               bibtex     0.4.2.2
-##                bindr       0.1.1
-##             bindrcpp       0.2.2
-##               binman       0.1.1
-##                binom       1.1-1
-##               bitops       1.0-6
-##             blogdown        0.17
-##             bookdown      0.17.2
-##                 brew       1.0-6
-##       bridgesampling       0.8-1
-##          Brobdingnag       1.2-6
-##                broom       0.5.3
-##          broom.mixed       0.2.4
-##           broomExtra       1.0.1
-##                   ca        0.71
-##                callr       3.4.0
-##                  car       3.0-6
-##              carData       3.0-3
-##              caTools      1.18.0
-##                cdata       1.1.5
-##           cellranger       1.1.0
-##            checkmate       1.9.4
-##             circlize       0.4.8
-##                 citr       0.3.2
-##                  cli       2.0.1
-##                clipr       0.7.0
-##           clisymbols       1.2.0
-##                 coda      0.19-3
-##                 coin       1.3-1
-##           colorspace       1.4-1
-##         colourpicker         1.0
-##           commonmark         1.7
-##           compute.es       0.2-4
-##             contfrac      1.1-12
-##                 covr       3.4.0
-##              cowplot       1.0.0
-##               crayon       1.3.4
-##            crosstalk       1.0.0
-##                 crul       0.9.0
-##                 curl         4.3
-##           data.table      1.12.8
-##                  DBI       1.1.0
-##               dbplyr       1.4.2
-##                 desc       1.2.0
-##            DescTools     0.99.32
-##              deSolve      1.27.1
-##             devtools       2.2.1
-##          DiceKriging       1.5.6
-##            dichromat       2.0-0
-##               digest      0.6.23
-##                dplyr       0.8.3
-##                   DT        0.11
-##           effectsize       0.0.1
-##              effsize       0.7.6
-##              ellipse       0.4.1
-##             ellipsis       0.3.0
-##             elliptic       1.4-0
-##              emmeans    1.4.3.01
-##                  EMT         1.1
-##         estimability         1.3
-##             evaluate        0.14
-##                 expm     0.999-4
-##            extrafont        0.17
-##          extrafontdb         1.0
-##                   ez       4.4-0
-##                fansi       0.4.1
-##               farver       2.0.3
-##              fastmap       1.0.1
-##                 faux  0.0.0.9013
-##              fauxpas       0.2.0
-##        flexdashboard     0.5.1.1
-##            flextable       0.5.6
-##              forcats       0.4.0
-##              foreach       1.4.7
-##              Formula       1.2-3
-##                   fs       1.3.1
-##        gameofthrones       1.0.0
-##               gargle       0.4.0
-##                gdata      2.18.0
-##              gdtools       0.2.1
-##             generics       0.0.2
-##            geosphere      1.5-10
-##              getPass       0.2-2
-##               GGally       1.4.0
-##           ggcorrplot       0.1.3
-##            ggeffects      0.14.0
-##              ggExtra         0.9
-##              ggforce       0.3.1
-##                  ggm         2.3
-##                ggmap       3.0.0
-##              ggplot2       3.2.1
-##               ggraph       2.0.0
-##              ggrepel       0.8.1
-##             ggridges       0.5.2
-##             ggsignif       0.6.0
-##          ggstatsplot       0.1.4
-##             ggthemes       4.2.0
-##                   gh       1.0.1
-##                git2r      0.26.1
-##              glmmTMB       0.2.3
-##        GlobalOptions       0.1.1
-##                 glue       1.3.1
-##                  gnm       1.1-0
-##          googledrive       1.0.0
-##         googlesheets       0.3.0
-##        googlesheets4       0.1.0
-##          GPArotation   2014.11-1
-##               gplots     3.0.1.2
-##         graphlayouts       0.5.0
-##            gridExtra         2.3
-##         groupedstats       0.1.1
-##                  gsl       2.1-6
-##               gtable       0.3.0
-##               gtools       3.8.1
-##          harrypotter       2.1.0
-##                haven       2.2.0
-##                headR       0.1.1
-##                 here         0.1
-##                highr         0.8
-##                Hmisc       4.3-0
-##                  hms       0.5.3
-##           hrbrthemes       0.6.0
-##             htmldeps       0.1.1
-##            htmlTable      1.13.3
-##            htmltools       0.4.0
-##          htmlwidgets       1.5.1
-##             httpcode       0.2.0
-##               httpuv       1.5.2
-##                 httr       1.4.1
-##             hunspell         3.0
-##             hypergeo      1.2-13
-##               igraph     1.2.4.2
-##                  ini       0.3.1
-##               inline      0.3.15
-##              insight       0.8.0
-##             installr      0.22.0
-##             ISOcodes  2019.12.22
-##            iterators      1.0.12
-##          janeaustenr       0.1.5
-##              jcolors       0.0.4
-##                  jmv       1.0.8
-##           jmvconnect       1.0.9
-##              jmvcore       1.0.8
-##                 jpeg     0.1-8.1
-##             jsonlite         1.6
-##             jspsychr  0.0.0.9000
-##           kableExtra       1.1.0
-##                knitr        1.27
-##               koRpus      0.11-5
-##       koRpus.lang.en       0.1-3
-##             labeling         0.3
-##        LaplacesDemon      16.1.1
-##                later       1.0.0
-##         latticeExtra      0.6-29
-##               lavaan       0.6-5
-##             lazyeval       0.2.2
-##              leaflet       2.0.3
-##    leaflet.providers       1.9.0
-##              libcoin       1.0-5
-##            lifecycle       0.1.0
-##                 lme4      1.1-21
-##               lme4.0  0.999999-4
-##             lmerTest       3.1-1
-##               lmtest      0.9-37
-##            logspline      2.1.15
-##                  loo       2.2.0
-##            lubridate       1.7.4
-##                 lutz       0.3.1
-##               magick         2.2
-##             magrittr         1.5
-##              mapproj       1.2.6
-##                 maps       3.3.0
-##             maptools       0.9-9
-##             markdown         1.1
-##           matrixcalc       1.0-3
-##         MatrixModels       0.4-1
-##          matrixStats      0.55.0
-##                MBESS       4.6.0
-##                 mc2d      0.1-18
-##              memoise       1.1.0
-##                MEMSS       0.9-3
-##              metaBMA       0.6.2
-##              metafor       2.1-0
-##                   mi         1.0
-##                 mime         0.8
-##               miniUI     0.1.1.1
-##                minqa       1.2.4
-##               mnormt       1.5-5
-##               modelr       0.1.5
-##           modeltools      0.2-22
-##                 MOTE       1.0.2
-##             multcomp      1.4-12
-##         multcompView       0.1-8
-##                MuMIn     1.43.15
-##              munsell       0.5.0
-##           mvnormtest       0.1-9
-##              mvtnorm      1.0-12
-##                nlmeU      0.70-3
-##               nloptr       1.2.1
-##              nortest       1.0-4
-##             numDeriv  2016.8-1.1
-##              officer       0.3.6
-##            oompaBase       3.2.9
-##               OpenMx      2.15.5
-##              openssl       1.4.1
-##             openxlsx       4.1.4
-##                 osfr       0.2.4
-##              packrat       0.5.0
-##  pairwiseComparisons       0.1.3
-##            paletteer       1.0.0
-##                 palr       0.1.0
-##                 pals         1.6
-##               pander       0.6.3
-##               papaja  0.1.0.9842
-##           parameters       0.4.1
-##            patchwork       1.0.0
-##              pbapply       1.4-2
-##             pbivnorm       0.6.0
-##             pbkrtest       0.4-7
-##          performance       0.4.3
-##               pillar       1.4.3
-##             pkgbuild       1.0.6
-##            pkgconfig       2.0.3
-##              pkgload       1.0.2
-##                  PKI     0.1-5.1
-##                plogr       0.2.0
-##              plotrix       3.7-7
-##              plumber       0.4.6
-##                 plyr       1.8.5
-##                PMCMR         4.3
-##                  png       0.1-7
-##             polyclip      1.10-0
-##                ppcor         1.1
-##               praise       1.0.0
-##               prereg       0.4.0
-##          prettyunits       1.1.0
-##            prismatic       0.2.0
-##             processx       3.4.1
-##             progress       1.2.2
-##             promises       1.1.0
-##                proto       1.0.0
-##                   ps       1.3.0
-##                psych   1.9.12.31
-##                purrr       0.3.3
-##            QuantPsyc         1.5
-##             quantreg        5.54
-##               qvcalc       1.0.1
-##              R.cache      0.14.0
-##          R.methodsS3       1.7.1
-##                 R.oo      1.23.0
-##              R.utils       2.9.2
-##                   R6       2.4.1
-##           randomizeR       2.0.0
-##             rappdirs       0.3.1
-##               raster       3.0-7
-##            rcmdcheck       1.3.3
-##         RColorBrewer       1.1-2
-##           rcompanion      2.3.21
-##                 Rcpp       1.0.3
-##        RcppArmadillo 0.9.800.3.0
-##            RcppEigen   0.3.3.7.0
-##                RCurl   1.95-4.12
-##             readbulk       1.1.2
-##                readr       1.3.1
-##               readxl       1.3.1
-##           RefManageR      1.2.12
-##               relimp       1.0-5
-##              rematch       1.0.1
-##             rematch2       2.1.0
-##              remotes       2.1.0
-##                 repr       1.0.2
-##               reprex       0.3.0
-##              reshape       0.8.8
-##             reshape2       1.4.3
-##             revealjs         0.9
-##                  rex       1.1.2
-##          RgoogleMaps     1.4.5.1
-##                  rio      0.5.16
-##                rJava      0.9-11
-##                rjson      0.2.20
-##              RJSONIO     1.3-1.4
-##                rlang       0.4.2
-##               RLRsim       3.1-3
-##            rmarkdown         2.1
-##             rmdfiltr       0.1.2
-##                 ROCR       1.0-7
-##               rorcid       0.5.0
-##             roxygen2       7.0.2
-##           rpart.plot       3.0.8
-##                  rpf        0.62
-##            rprojroot       1.3-2
-##          rqdatatable       1.2.5
-##               rquery       1.4.2
-##            rsconnect      0.8.16
-##            RSelenium       1.7.5
-##                rstan      2.19.2
-##           rstantools       2.0.0
-##           rstudioapi        0.10
-##              rticles        0.13
-##             Rttf2pt1       1.3.8
-##            rversions       2.0.1
-##                rvest       0.3.5
-##             sandwich       2.5-1
-##               scales       1.1.0
-##              scholar       0.1.7
-##                scico       1.1.0
-##         scienceverse  0.0.0.9001
-##              selectr       0.4-2
-##                  sem       3.1-9
-##             semTools       0.5-2
-##               semver       0.2.0
-##                servr        0.15
-##          sessioninfo       1.1.1
-##                shape       1.4.4
-##                shiny       1.4.0
-##       shinydashboard       0.7.1
-##              shinyjs         1.1
-##          shinythemes       1.1.2
-##                 sigr       1.0.6
-##                 simr       1.0.5
-##           sjlabelled       1.1.2
-##               sjmisc       2.8.3
-##               sjPlot       2.8.1
-##              sjstats      0.17.8
-##                skimr       2.0.2
-##                   sm     2.2-5.6
-##            SnowballC       0.6.0
-##          sourcetools       0.1.7
-##                   sp       1.3-2
-##              SparseM        1.78
-##          StanHeaders    2.21.0-1
-##     statsExpressions       0.2.0
-##            stopwords         1.0
-##              stringi       1.4.5
-##              stringr       1.4.0
-##           subprocess       0.8.3
-##                sylly       0.1-5
-##             sylly.en       0.1-3
-##                  sys         3.3
-##          systemfonts       0.1.1
-##               tables       0.8.8
-##             testthat       2.3.1
-##              TH.data      1.0-10
-##               tibble       2.1.3
-##            tidygraph       1.1.2
-##                tidyr       1.0.0
-##           tidyselect       0.2.5
-##             tidytext       0.2.2
-##            tidyverse       1.3.0
-##              tinytex        0.19
-##                  TMB      1.7.16
-##           tokenizers       0.2.1
-##           translateR         2.0
-##            triebeard       0.3.0
-##            truncnorm       1.0-8
-##               tweenr       1.0.1
-##             urltools       1.7.3
-##              usethis       1.5.1
-##                 utf8       1.1.4
-##                 uuid       0.1-2
-##                  vcd       1.4-5
-##             vcdExtra       0.7-1
-##                vctrs       0.2.1
-##              viridis       0.5.1
-##          viridisLite       0.3.0
-##                wdman       0.2.4
-##              webshot       0.5.2
-##          wesanderson       0.3.6
-##              whisker         0.4
-##                withr       2.1.2
-##       wordcountaddin  0.3.0.9000
-##            workflowr       1.6.0
-##                wrapr       1.9.5
-##                 WRS2       1.0-0
-##              WVPlots       1.2.3
-##              WWGbook       1.0.1
-##             xaringan        0.14
-##                 xfun        0.12
-##            XLConnect      0.2-15
-##        XLConnectJars      0.2-15
-##                 xlsx       0.6.1
-##             xlsxjars       0.6.1
-##                  XML   3.98-1.20
-##                 xml2       1.2.2
-##                xopen       1.0.0
-##               xtable       1.8-4
-##                 yaml       2.2.0
-##              zeallot       0.1.0
-##                  zip       2.0.4
-##                  zoo       1.8-7&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                   Package    Version
+##                     abind      1.4-5
+##                   acepack      1.4.1
+##                      afex     0.28-0
+##                ANOVApower      0.0.3
+##                   anytime      0.3.9
+##                       apa      0.3.3
+##                       ape      5.4-1
+##                       arm     1.11-2
+##                   askpass        1.1
+##                assertthat      0.2.1
+##                 backports      1.2.0
+##                 base64enc      0.1-3
+##               BayesFactor 0.9.12-4.2
+##                bayestestR      0.7.5
+##                     bbmle   1.0.23.1
+##                 bdsmatrix      1.3-4
+##                        BH   1.72.0-3
+##                    bibtex    0.4.2.3
+##                     bindr      0.1.1
+##                  bindrcpp      0.2.2
+##                    binman      0.1.2
+##                     binom      1.1-1
+##                    bitops      1.0-6
+##                      blob      1.2.1
+##                  blogdown       0.21
+##                  bookdown       0.21
+##                      brew      1.0-6
+##            bridgesampling      1.0-0
+##                      brio      1.1.0
+##               Brobdingnag      1.2-6
+##                     broom      0.7.2
+##               broom.mixed      0.2.6
+##                broomExtra      4.1.0
+##                   BWStest      0.2.2
+##                        ca     0.71.1
+##                     callr      3.5.1
+##                       car     3.0-10
+##                   carData      3.0-4
+##                   caTools     1.18.0
+##                     cdata      1.1.9
+##                cellranger      1.1.0
+##                 checkmate      2.0.0
+##                  circlize     0.4.11
+##                      citr      0.3.2
+##                       cli      2.2.0
+##                     clipr      0.7.1
+##                clisymbols      1.2.0
+##                      coda     0.19-4
+##                      coin      1.3-1
+##                colorspace      2.0-0
+##              colourpicker      1.1.0
+##                commonmark        1.7
+##                compute.es      0.2-5
+##                   conquer      1.0.2
+##                  contfrac     1.1-12
+##               correlation      0.5.0
+##                  corrplot       0.84
+##                      covr      3.5.1
+##                   cowplot      1.1.0
+##                     cpp11      0.2.4
+##                    crayon      1.3.4
+##                 crosstalk    1.1.0.1
+##                      crul      1.0.0
+##                   cubelyr      1.0.1
+##                      curl        4.3
+##                   dagitty      0.3-0
+##                data.table     1.13.2
+##                       DBI      1.1.0
+##                    dbplyr      2.0.0
+##                      desc      1.2.0
+##                 DescTools    0.99.38
+##                   deSolve       1.28
+##                  devtools      2.3.2
+##               DiceKriging      1.5.8
+##                 dichromat      2.0-0
+##                   diffobj      0.3.2
+##                    digest     0.6.27
+##                 dotCall64      1.0-0
+##                     dplyr      1.0.2
+##                        DT       0.16
+##                 dunn.test      1.3.5
+##                  dygraphs    1.1.1.6
+##                     e1071      1.7-4
+##                effectsize      0.4.0
+##                   effsize      0.8.1
+##                   ellipse      0.4.2
+##                  ellipsis      0.3.1
+##                  elliptic      1.4-0
+##                   emmeans    1.5.2-1
+##                       emo 0.0.0.9000
+##                       EMT        1.1
+##               equivalence      0.7.2
+##              estimability        1.3
+##                  evaluate       0.14
+##                     Exact        2.1
+##            exactRankTests     0.8-31
+##                      expm    0.999-5
+##                 extrafont       0.17
+##               extrafontdb        1.0
+##                        ez      4.4-0
+##                     fansi      0.4.1
+##                    farver      2.0.3
+##                fastGHQuad        1.0
+##                   fastmap      1.0.1
+##                      faux    0.0.1.5
+##                   fauxpas      0.5.0
+##                    fields       11.6
+##                  finalfit      1.0.2
+##           fivethirtyeight      0.6.1
+##             flexdashboard      0.5.2
+##                 flextable      0.6.0
+##                   forcats      0.5.0
+##                   foreach      1.5.1
+##                   Formula      1.2-4
+##             formula.tools      1.7.1
+##                        fs      1.5.0
+##             gameofthrones      1.0.2
+##                 gapminder      0.3.0
+##                    gargle      0.5.0
+##                     gdata     2.18.0
+##                   gdtools      0.2.2
+##                  generics      0.1.0
+##                 geosphere     1.5-10
+##                   getPass      0.2-2
+##                    GGally      2.0.0
+##                ggcorrplot      0.1.3
+##                 ggeffects      1.0.0
+##                   ggExtra        0.9
+##                   ggforce      0.3.2
+##                       ggm        2.5
+##                     ggmap      3.0.0
+##                   ggplot2      3.3.2
+##             ggplot2movies      0.0.1
+##                    ggpubr      0.4.0
+##                    ggraph      2.0.4
+##                   ggrepel      0.8.2
+##                  ggridges      0.5.2
+##                     ggsci        2.9
+##                  ggsignif      0.6.0
+##               ggstatsplot      0.6.6
+##                  ggthemes      4.2.0
+##                        gh      1.2.0
+##                     git2r     0.27.1
+##                  gitcreds      0.1.1
+##                       gld      2.6.2
+##                   glmmTMB    1.0.2.1
+##             GlobalOptions      0.1.2
+##                      glue      1.4.2
+##                       gmp      0.6-1
+##                       gnm      1.1-1
+##               googledrive      1.0.1
+##              googlesheets      0.3.0
+##             googlesheets4      0.2.0
+##               GPArotation  2014.11-1
+##                    gplots      3.1.1
+##              graphlayouts      0.7.1
+##                 gridExtra        2.3
+##                 groundhog      1.1.0
+##              groupedstats      2.0.0
+##                       gsl      2.1-6
+##                    gtable      0.3.0
+##                    gtools      3.8.2
+##               harrypotter      2.1.1
+##                     haven      2.3.1
+##                     headR      0.1.1
+##                      here      1.0.0
+##                     highr        0.8
+##                     Hmisc      4.4-2
+##                       hms      0.5.3
+##                hrbrthemes      0.8.0
+##                  htmldeps      0.1.1
+##                 htmlTable      2.1.0
+##                 htmltools      0.5.0
+##               htmlwidgets      1.5.2
+##                  httpcode      0.3.0
+##                    httpuv      1.5.4
+##                      httr      1.4.2
+##                  hunspell        3.0
+##                  hypergeo     1.2-13
+##                       ids      1.0.1
+##                    igraph      1.2.6
+##                     infer      0.5.3
+##                       ini      0.3.1
+##                    inline     0.3.17
+##                   insight     0.11.0
+##                  installr     0.22.0
+##                    ipmisc      4.1.0
+##                      ISLR        1.2
+##                   isoband      0.2.3
+##                  ISOcodes 2020.12.04
+##                 iterators     1.0.13
+##               janeaustenr      0.1.5
+##                   janitor      2.0.1
+##                   jcolors      0.0.4
+##                       jmv     1.2.23
+##                jmvconnect     1.2.18
+##                   jmvcore     1.2.23
+##                      jomo      2.7-2
+##                      jpeg    0.1-8.1
+##                  jsonlite      1.7.1
+##                  jspsychr 0.0.0.9000
+##                kableExtra      1.3.1
+##                     km.ci      0.5-2
+##                    KMsurv      0.1-5
+##                     knitr       1.30
+##                    koRpus     0.13-3
+##            koRpus.lang.en      0.1-4
+##                  kSamples      1.2-9
+##                  labeling      0.4.2
+##                 languageR      1.5.0
+##             LaplacesDemon     16.1.4
+##                     later    1.1.0.1
+##              latticeExtra     0.6-29
+##                    lavaan      0.6-7
+##                  lazyeval      0.2.2
+##                   LCFdata        2.0
+##                   leaflet      2.0.3
+##         leaflet.providers      1.9.0
+##                   libcoin      1.0-6
+##                 lifecycle      0.2.0
+##                      lme4     1.1-26
+##  LMERConvenienceFunctions        3.0
+##                  lmerTest      3.1-3
+##                      lmom        2.8
+##                    lmtest     0.9-38
+##                 logspline     2.1.16
+##                       loo      2.3.1
+##                   lsmeans     2.30-0
+##                 lubridate    1.7.9.2
+##                      lutz      0.3.1
+##                    magick      2.5.2
+##                  magrittr      2.0.1
+##          manipulateWidget     0.10.1
+##                   mapproj      1.2.7
+##                      maps      3.3.0
+##                  maptools      1.0-2
+##                  markdown        1.1
+##                  mathjaxr      1.0-1
+##                matrixcalc      1.0-3
+##              MatrixModels      0.4-1
+##               matrixStats     0.57.0
+##                   maxstat     0.7-25
+##                     MBESS      4.8.0
+##                      mc2d     0.1-18
+##                   memoise      1.1.0
+##                     MEMSS      0.9-3
+##                   metaBMA      0.6.5
+##                   metafor      2.4-0
+##                  metaplus     0.7-11
+##                        mi        1.0
+##                      mice     3.12.0
+##                      mime        0.9
+##                    miniUI    0.1.1.1
+##                     minqa      1.2.4
+##                     mitml      0.3-7
+##                    mnormt      2.0.2
+##                    modelr      0.1.8
+##                modeltools     0.2-23
+##                moderndive      0.5.0
+##                      MOTE      1.0.2
+##                  multcomp     1.4-15
+##              multcompView      0.1-8
+##                     MuMIn    1.43.17
+##                   munsell      0.5.0
+##                mvnormtest      0.1-9
+##                   mvtnorm      1.1-1
+##                     nlmeU     0.70-3
+##                    nloptr    1.2.2.2
+##                   nortest      1.0-4
+##                  numDeriv 2016.8-1.1
+##              nycflights13      1.0.1
+##                   officer     0.3.15
+##                 oompaBase      3.2.9
+##                    OpenMx     2.18.1
+##                   openssl      1.4.3
+##                  openxlsx      4.2.3
+##            operator.tools      1.6.3
+##                   ordinal 2019.12-10
+##                      osfr      0.2.8
+##                   packrat      0.5.0
+##                PairedData      1.1.1
+##       pairwiseComparisons      3.1.1
+##                 paletteer      1.2.0
+##                      palr      0.2.0
+##                      pals        1.6
+##                       pan        1.6
+##                    pander      0.6.3
+##                    papaja 0.1.0.9942
+##                parameters     0.10.0
+##                 patchwork      1.1.0
+##                   pbapply      1.4-3
+##                  pbivnorm      0.6.0
+##                  pbkrtest    0.4-8.6
+##               performance      0.6.0
+##                    pillar      1.4.7
+##                  pkgbuild      1.1.0
+##                 pkgconfig      2.0.3
+##                   pkgload      1.1.0
+##                       PKI      0.1-7
+##                     plogr      0.2.0
+##                   plotrix      3.7-8
+##                   plumber      1.0.0
+##                      plyr      1.8.6
+##                     PMCMR        4.3
+##                 PMCMRplus      1.7.1
+##                       png      0.1-7
+##                  polyclip     1.10-0
+##                   polynom      1.4-0
+##                     ppcor        1.1
+##                    praise      1.0.0
+##                    prereg      0.5.0
+##               prettyunits      1.1.1
+##                 prismatic      0.2.0
+##                      pROC     1.16.2
+##                  processx      3.4.5
+##                  progress      1.2.2
+##                  promises      1.1.1
+##                     proto      1.0.0
+##                        ps      1.4.0
+##                     psych      2.0.9
+##                     purrr      0.3.4
+##                       pwr      1.3-0
+##                 QuantPsyc        1.5
+##                  quantreg       5.75
+##                    qvcalc      1.0.2
+##                   R.cache     0.14.0
+##               R.methodsS3      1.8.1
+##                      R.oo     1.24.0
+##                   R.utils     2.10.1
+##                        R6      2.5.0
+##                randomizeR      2.0.0
+##                  rappdirs      0.3.1
+##                    raster      3.4-5
+##                 rcmdcheck      1.3.3
+##              RColorBrewer      1.1-2
+##                rcompanion     2.3.26
+##                      Rcpp      1.0.5
+##             RcppArmadillo 0.10.1.2.0
+##                 RcppEigen  0.3.3.7.0
+##              RcppParallel      5.0.2
+##                     RCurl   1.98-1.2
+##                  readbulk      1.1.3
+##                     readr      1.4.0
+##                    readxl      1.3.1
+##                RefManageR      1.3.0
+##                    relimp      1.0-5
+##                   rematch      1.0.1
+##                  rematch2      2.1.2
+##                   remotes      2.2.0
+##                      repr      1.1.0
+##                    reprex      0.3.0
+##                   reshape      0.8.8
+##                  reshape2      1.4.4
+##                  revealjs        0.9
+##                       rex      1.2.0
+##                       rgl    0.103.5
+##               RgoogleMaps    1.4.5.3
+##                       rio     0.5.16
+##                     rJava     0.9-13
+##                     rjson     0.2.20
+##                   RJSONIO    1.3-1.4
+##                     rlang      0.4.9
+##                    RLRsim      3.1-6
+##                 rmarkdown        2.5
+##                  rmdfiltr      0.1.3
+##                     Rmpfr      0.8-2
+##                      ROCR     1.0-11
+##                 rootSolve    1.8.2.1
+##                    rorcid      0.6.4
+##                  roxygen2      7.1.1
+##                rpart.plot      3.0.9
+##                       rpf      1.0.5
+##                 rprojroot      2.0.2
+##               rqdatatable      1.2.9
+##                    rquery      1.4.6
+##                 rsconnect     0.8.16
+##                 RSelenium      1.7.7
+##                     rstan     2.21.2
+##                rstantools      2.1.1
+##                   rstatix      0.6.0
+##                rstudioapi       0.13
+##                   rticles       0.17
+##                  Rttf2pt1      1.3.8
+##                 rversions      2.0.2
+##                     rvest      0.3.6
+##                  sandwich      3.0-0
+##                    scales      1.1.1
+##                   scholar      0.1.7
+##                     scico      1.2.0
+##              scienceverse 0.0.0.9004
+##                   selectr      0.4-2
+##                       sem     3.1-11
+##                  semTools      0.5-3
+##                    semver      0.2.0
+##                     servr       0.20
+##               sessioninfo      1.1.1
+##                     shape      1.4.5
+##                     shiny      1.5.0
+##            shinydashboard      0.7.1
+##                   shinyjs      2.0.0
+##               shinythemes      1.1.2
+##                      sigr      1.1.3
+##                      simr      1.0.5
+##                sjlabelled      1.1.7
+##                    sjmisc      2.8.5
+##                    sjPlot      2.8.6
+##                   sjstats     0.18.0
+##                     skimr      2.1.2
+##                      slam     0.1-48
+##                        sm    2.2-5.6
+##                 snakecase     0.11.0
+##                 SnowballC      0.7.0
+##                    sodium        1.1
+##               sourcetools      0.1.7
+##                        sp      1.4-4
+##                      spam      2.5-1
+##                   SparseM       1.78
+##               StanHeaders   2.21.0-6
+##                   statmod     1.4.35
+##          statsExpressions      0.6.1
+##                 stopwords        2.0
+##                   stringi      1.5.3
+##                   stringr      1.4.0
+##                subprocess      0.8.3
+##                Superpower      0.1.0
+##                 SuppDists    1.1-9.5
+##                 survminer      0.4.8
+##                  survMisc      0.5.5
+##                   swagger     3.33.1
+##                  sylcount      0.2-2
+##                     sylly      0.1-6
+##                  sylly.en      0.1-3
+##                       sys        3.4
+##               systemfonts      0.3.2
+##                    tables      0.9.6
+##                       tau     0.0-22
+##                  testthat      3.0.0
+##                   textcat      1.0-7
+##                   TH.data     1.0-10
+##                    tibble      3.0.4
+##                    tidyBF      0.4.0
+##                 tidygraph      1.2.0
+##                     tidyr      1.1.2
+##                   tidyRSS      2.0.3
+##                tidyselect      1.1.0
+##                  tidytext      0.2.6
+##                 tidyverse      1.3.0
+##                   tinytex       0.27
+##                       TMB     1.7.18
+##                   tmvnsim      1.0-2
+##                tokenizers      0.2.1
+##                    TOSTER      0.3.4
+##                translateR        1.0
+##                 triebeard      0.3.0
+##                 truncnorm      1.0-8
+##                    tweenr      1.0.1
+##                    ucminf      1.1-4
+##                  urltools      1.7.3
+##                   usethis      1.6.3
+##                      utf8      1.1.4
+##                      uuid      0.1-4
+##                        V8      3.4.0
+##                       vcd      1.4-8
+##                  vcdExtra      0.7-1
+##                     vctrs      0.3.5
+##                   viridis      0.5.1
+##               viridisLite      0.3.0
+##                     waldo      0.2.3
+##                     wdman      0.2.5
+##                   webshot      0.5.2
+##                  webutils        1.1
+##               wesanderson      0.3.6
+##                   whisker        0.4
+##                     withr      2.3.0
+##            wordcountaddin 0.3.0.9000
+##                 workflowr      1.6.2
+##                     wrapr      2.0.5
+##                      WRS2      1.1-0
+##                   WVPlots      1.3.1
+##                   WWGbook      1.0.1
+##                  xaringan       0.18
+##                      xfun       0.19
+##                 XLConnect      1.0.1
+##             XLConnectJars     0.2-15
+##                      xlsx      0.6.5
+##                  xlsxjars      0.6.1
+##                       XML   3.99-0.5
+##                      xml2      1.3.2
+##                     xopen      1.0.0
+##                    xtable      1.8-4
+##                       xts     0.12.1
+##                      yaml      2.2.1
+##                   zeallot      0.1.0
+##                       zip      2.1.1
+##                       zoo      1.8-8&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;print(paste0(&amp;quot;There are &amp;quot;,dim(ip)[1], &amp;quot; packages installed in my laptop.&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;There are 404 packages installed in my laptop.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;There are 495 packages installed in my laptop.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Richard’s book inspired me help people control their golems/ststistical models in the process of coding. In his book, literature and codes are separated. Readers who are not familiar with coding skill might hardly follow his literature. Literatural coding might be the best way to impliment the &lt;code&gt;Rethinking&lt;/code&gt;. I am going to accumulating the codes of Bayesian statistics and thake notes of his and others literatures in the coming posts.&lt;/p&gt;
 </description>
     </item>
@@ -1106,6 +1227,9 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-04-05-display-math-equation-in-post/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:&lt;/p&gt;
@@ -1121,7 +1245,7 @@ Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sig
 Then:&lt;br /&gt;
 &lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2020-01-30 18:30:09&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2020-12-14 22:02:38&lt;/p&gt;
 </description>
     </item>
     
@@ -1131,6 +1255,9 @@ Then:&lt;br /&gt;
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;When a set of data/observations is imported to R, it is usually treated as &lt;code&gt;vector&lt;/code&gt;. Vector has two mathematical forms as following:&lt;/p&gt;
@@ -1188,6 +1315,9 @@ SS&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.&lt;/p&gt;

@@ -18,6 +18,9 @@
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
       <guid>/post/if-emily-rosa-met-thomas-bayes/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients’ body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
@@ -56,7 +59,7 @@ Figure 2: Bayesian inferece of initial study: Prior probability distribution (y 
 Figure 3: Posterior probability distribution of initial study result
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.02&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.017&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
 (R-chunk, Bayesian model and posterior histogram of follow-up)
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Bayes-followup&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;

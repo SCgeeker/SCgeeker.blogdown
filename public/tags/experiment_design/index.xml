@@ -18,6 +18,9 @@
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-09-14-randomization-in-latin-square/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;I’m managing an opensesame script for the coming project. In this project, there are four stimuli lists included all the within-participant conditions. I denote the four lists &lt;strong&gt;A&lt;/strong&gt;, &lt;strong&gt;B&lt;/strong&gt;, &lt;strong&gt;C&lt;/strong&gt;, and &lt;strong&gt;D&lt;/strong&gt;. A participant will have one of the stimuli lists in terms of the counter balanced principle. The best assignment method is 4X4 Latin Square. For every 16 participants, there are 24 sequences to be used. Here are three of the sequences.&lt;/p&gt;

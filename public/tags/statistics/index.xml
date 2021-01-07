@@ -18,6 +18,9 @@
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
       <guid>/post/if-emily-rosa-met-thomas-bayes/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients’ body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
@@ -56,7 +59,7 @@ Figure 2: Bayesian inferece of initial study: Prior probability distribution (y 
 Figure 3: Posterior probability distribution of initial study result
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.02&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.017&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
 (R-chunk, Bayesian model and posterior histogram of follow-up)
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Bayes-followup&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
@@ -80,6 +83,9 @@ Figure 5: Posterior probability distribution of follow-up study result
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
@@ -200,6 +206,9 @@ head(New_Table)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-05-31-why-we-need-a-readable-data-table/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
@@ -320,11 +329,14 @@ head(New_Table)&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-05-05-rethink-significance/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;To trace the fallacy of use hypothesis testing, I am programming the examples in Dr. Adrianus D. de Groot’s paper &lt;code&gt;The meaning of “signiﬁcance” for different types of research&lt;/code&gt;. This paper is published in 1956 in the Dutch journal &lt;em&gt;Nederlands Tijdschrift voor de Psychologie en Haar Grensgebieden&lt;/em&gt;. &lt;a href=&#34;https://en.wikipedia.org/wiki/Adriaan_de_Groot&#34;&gt;Adrianus De Groot&lt;/a&gt; is Dutch psychologist and chess master. During 1950s and 1960s, he suggested the concept of emperical cycle for the researchers who use the statistical tools in the social and behavioral researches.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;Emperical cycle&#34; /&gt;
+&lt;img src=&#34;/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Emperical cycle&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;de Groot’s emperical cycle distinguish two types of emperical research: &lt;strong&gt;exploratory research&lt;/strong&gt; and &lt;strong&gt;confirmatory research&lt;/strong&gt;. &lt;strong&gt;Exploratory research&lt;/strong&gt; aims to formulate the hypotheses that covers the process from &lt;code&gt;observation&lt;/code&gt; to &lt;code&gt;induction&lt;/code&gt;. &lt;strong&gt;Confirmatory research&lt;/strong&gt; attempts to test the predicited concequences based the hypothesis. Thus a &lt;strong&gt;Confirmatory research&lt;/strong&gt; covers &lt;code&gt;deduction&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, and &lt;code&gt;evaluation&lt;/code&gt;.&lt;/p&gt;
@@ -347,8 +359,8 @@ for(k in n){
 SUCCESS = data.frame(n,PASS_P)
 colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
 print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
-&lt;!-- html table generated in R 3.6.2 by xtable 1.8-4 package --&gt;
-&lt;!-- Thu Jan 30 18:30:16 2020 --&gt;
+&lt;!-- html table generated in R 4.0.3 by xtable 1.8-4 package --&gt;
+&lt;!-- Mon Dec 14 22:02:53 2020 --&gt;
 &lt;table border=&#34;1&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -469,6 +481,9 @@ Probability(Positive Results)
       <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Chapter 2 of &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated &lt;strong&gt;Data Story&lt;/strong&gt;, then &lt;strong&gt;update&lt;/strong&gt; the models by filling data in, and finally &lt;strong&gt;evaluate&lt;/strong&gt; all the &lt;strong&gt;upated&lt;/strong&gt; models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s &lt;a href=&#34;https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf&#34;&gt;Bayesian Basics: A Conceptual Introduction with Application in R and Stan&lt;/a&gt; on &lt;a href=&#34;http://mc-stan.org/documentation/&#34;&gt;Stan official site&lt;/a&gt;, I require the key to understand the difference between the two golems.&lt;/p&gt;
@@ -502,6 +517,9 @@ print(CL36)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-04-05-display-math-equation-in-post/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:&lt;/p&gt;
@@ -517,7 +535,7 @@ Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sig
 Then:&lt;br /&gt;
 &lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2020-01-30 18:30:09&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2020-12-14 22:02:38&lt;/p&gt;
 </description>
     </item>
     
@@ -527,6 +545,9 @@ Then:&lt;br /&gt;
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;When a set of data/observations is imported to R, it is usually treated as &lt;code&gt;vector&lt;/code&gt;. Vector has two mathematical forms as following:&lt;/p&gt;
@@ -584,6 +605,9 @@ SS&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
       <guid>/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.&lt;/p&gt;

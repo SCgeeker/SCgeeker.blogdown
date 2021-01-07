@@ -3,6 +3,161 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/zh-hant/publication_types/2/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/publication_types/2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/publication_types/2/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/authors/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/authors/de-koning-b.-bjorn/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/de-koning-b.-bjorn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/authors/de-koning-b.-bjorn/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/publication/size-orientation/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/publication/size-orientation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/publication/size-orientation/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/publication_types/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/publication/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/publication/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/publication/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/authors/rolf-a.-zwaan/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/rolf-a.-zwaan/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/authors/rolf-a.-zwaan/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/authors/sau-chin-chen/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/authors/sau-chin-chen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/authors/sau-chin-chen/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/tags/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/tags/%E9%A0%90%E5%8D%B0%E6%9C%AC/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/zh-hant/project/</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14,21 +169,6 @@
                 rel="alternate"
                 hreflang="zh-hant"
                 href="/zh-hant/project/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/tags/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/tags/"
                 />
   </url>
   
@@ -45,146 +185,6 @@
   <url>
     <loc>/zh-hant/project/opne-cafe/</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/zh-hant/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/publication_types/2/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication_types/2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/publication_types/2/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/authors/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/authors/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/authors/de-koning-b.-bjorn/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/de-koning-b.-bjorn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/authors/de-koning-b.-bjorn/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/publication/size-orientation/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication/size-orientation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/publication/size-orientation/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/publication_types/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication_types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/publication_types/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/publication/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/publication/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/publication/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/authors/rolf-a.-zwaan/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/rolf-a.-zwaan/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/authors/rolf-a.-zwaan/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/authors/sau-chin-chen/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/authors/sau-chin-chen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/authors/sau-chin-chen/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/tags/%E9%A0%90%E5%8D%B0%E6%9C%AC/</loc>
-    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -478,36 +478,6 @@
   </url>
   
   <url>
-    <loc>/zh-hant/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/privacy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/privacy/"
-                />
-  </url>
-  
-  <url>
-    <loc>/zh-hant/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/terms/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="/zh-hant/terms/"
-                />
-  </url>
-  
-  <url>
     <loc>/zh-hant/tags/preregistration/</loc>
     <lastmod>2018-06-19T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -756,6 +726,20 @@
                 rel="alternate"
                 hreflang="zh-hant"
                 href="/zh-hant/talk/"
+                />
+  </url>
+  
+  <url>
+    <loc>/zh-hant/privacy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="/zh-hant/privacy/"
                 />
   </url>
   

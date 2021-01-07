@@ -5,12 +5,35 @@
     <link>/zh-hant/</link>
       <atom:link href="/zh-hant/index.xml" rel="self" type="application/rss+xml" />
     <description>陳紹慶的個人網站</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>陳紹慶的個人網站</title>
       <link>/zh-hant/</link>
     </image>
+    
+    <item>
+      <title>Does Object Size Matter with Regard to the Mental Simulation of Object Orientation?</title>
+      <link>/zh-hant/publication/size-orientation/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/publication/size-orientation/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    使用書目管理軟體的訪客，可點擊&lt;code&gt;引用&lt;/code&gt;按鈕，取得匯入書目庫的bibtex資訊。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!---
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://curatescience.org/app/article/536&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Curate Science&lt;/a&gt;可獲取所有研究資訊。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>開放咖啡角</title>
@@ -39,29 +62,6 @@
 &lt;iframe src=&#34;https://anchor.fm/opensci-cafe/embed/episodes/EP0_-e9tfmt/a-a18b3au&#34; height=&#34;96px&#34; width=&#34;600px&#34; frameborder=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;本集主持人：陳紹慶
 開放咖啡角向世界說哈囉。本集介紹製作動機與製作方式，歡迎有興趣透同本節目分享論文閱讀心得，或討論重要議題的朋友參與製作。本集錄音存檔與朗讀稿可至 &lt;a href=&#34;https://osf.io/nmk2w/&#34;&gt;https://osf.io/nmk2w/&lt;/a&gt; 下載。節目製作指南請參考 &lt;a href=&#34;https://osf.io/mskef/u&#34;&gt;https://osf.io/mskef/u&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Does Object Size Matter with Regard to the Mental Simulation of Object Orientation?</title>
-      <link>/zh-hant/publication/size-orientation/</link>
-      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/zh-hant/publication/size-orientation/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;!---
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-
----&gt;
-&lt;p&gt;Access the sources at 
-&lt;a href=&#34;https://curatescience.org/app/article/536&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Curate Science&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -1221,24 +1221,6 @@ Administrator：專案創建者有全部管理者權限，包括調整專案與�
     </item>
     
     <item>
-      <title>Privacy Policy</title>
-      <link>/zh-hant/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/zh-hant/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/zh-hant/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/zh-hant/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>三個經典記憶實驗重現研究教程</title>
       <link>/zh-hant/post/classical-memory-studies/</link>
       <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
@@ -1548,9 +1530,21 @@ Administrator：專案創建者有全部管理者權限，包括調整專案與�
 &lt;li&gt;(PB)以第一堂曾提過的「凱撒渡過盧比孔河」說明邏輯學者如何判斷這句陳述是真相。&lt;/li&gt;
 &lt;li&gt;(CSC) 根據維根斯坦，以上陳述的表達方式~
 Semantic concept of truth:
-|後設言談 |客觀言談|
-|&amp;mdash;|&amp;mdash;|
-|$[Caesar crossed the Rubicon]$ is true | iff Caesar crossed the Rubicon|&lt;/li&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;後設言談&lt;/th&gt;
+&lt;th&gt;客觀言談&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$[Caesar crossed the Rubicon]$ is true&lt;/td&gt;
+&lt;td&gt;iff Caesar crossed the Rubicon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
 &lt;li&gt;(CSC) 如何以後設言談與客觀言談表達真相，建議參考
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Rudolf_Carnap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;卡爾納普&lt;/a&gt;與
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Felix_Kaufmann&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;考夫曼&lt;/a&gt;之間的討論。&lt;/li&gt;
@@ -1813,6 +1807,9 @@ Semantic concept of truth:
       <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
       <guid>/zh-hant/post/basic-statistics/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;&lt;a href=&#34;https://scgeeker.github.io/BasicStatistics/&#34;&gt;電子書網址&lt;/a&gt;&lt;/p&gt;
@@ -1824,9 +1821,9 @@ Semantic concept of truth:
 &lt;p&gt;所有材料都不斷持續更新中，希望體現我想傳達給統計學習者與使用者我的學習觀：你今天學到的方法，是為了解決明天出現的新問題，而且會用另一種不同的面貌出現。&lt;/p&gt;
 &lt;p&gt;這本書預計完成九個單元，內容涵蓋大學行為科學科系的初等統計。歡迎各大學有教學需要的老師與同學取用，並給予批評指教。未來正式推出習題模板，更歡迎有志提昇學習教材的朋友提供材料。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;有關本書的任何意見，歡迎在下方留言區留言。&lt;/strong&gt;&lt;/p&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-Carlsonintroductionstatisticsactive2018&#34;&gt;
-&lt;p&gt;Carlson, Kieth A., and Jennifer R. Winquist. 2018. &lt;em&gt;An Introduction to Statistics: An Active Learning Approach&lt;/em&gt;. Second edition. Los Angeles: SAGE.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-Carlsonintroductionstatisticsactive2018&#34; class=&#34;csl-entry&#34;&gt;
+Carlson, Kieth A., and Jennifer R. Winquist. 2018. &lt;em&gt;An Introduction to Statistics: An Active Learning Approach&lt;/em&gt;. Second edition. Los Angeles: &lt;span&gt;SAGE&lt;/span&gt;.
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -1838,6 +1835,9 @@ Semantic concept of truth:
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
       <guid>/zh-hant/post/use-bookdownplus/</guid>
       <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;學會使用RMarkdown寫作之後，我一直在尋找能整合研究與教學寫作的方法與工具。認識&lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Aust and Barth 2017)&lt;/span&gt;之後，讓我開始想像有一天我的電腦只會剩下&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudio&lt;/a&gt;與&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt;兩種軟體。但是&lt;code&gt;papaja&lt;/code&gt;只適用英文論文寫作，無法滿足經常需要中文寫作的我。接著看到&lt;strong&gt;R忍者大師&lt;/strong&gt;謝益輝開發的&lt;a href=&#34;https://bookdown.org/yihui/bookdown/get-started.html&#34;&gt;&lt;code&gt;bookdown&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Xie 2017)&lt;/span&gt;，讓我開始燃起希望。不過最終版完全是編輯與出版書本的套件，從此多了個好用的編書工具，還不是全方位的學術寫作工具箱。&lt;/p&gt;
@@ -1854,15 +1854,15 @@ Semantic concept of truth:
 &lt;p&gt;對於’bookdownplus’的未來，我希望能加強多位元編碼的文字支援。如果使用者也能分享自設模板，必定是西方世界之外開放科學社群的好用工具。&lt;/p&gt;
 &lt;div id=&#34;參考文獻&#34; class=&#34;section level3 unnumbered&#34;&gt;
 &lt;h3&gt;參考文獻&lt;/h3&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-AustpapajaReproducibleAPA2017&#34;&gt;
-&lt;p&gt;Aust, Frederik, and Marius Barth. 2017. &lt;em&gt;Papaja: Reproducible APA Manuscripts with R Markdown&lt;/em&gt;.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-AustpapajaReproducibleAPA2017&#34; class=&#34;csl-entry&#34;&gt;
+Aust, Frederik, and Marius Barth. 2017. &lt;em&gt;Papaja: &lt;span&gt;Reproducible APA&lt;/span&gt; Manuscripts with &lt;span&gt;R Markdown&lt;/span&gt;&lt;/em&gt;.
 &lt;/div&gt;
-&lt;div id=&#34;ref-XiebookdownAuthoringBooks2017&#34;&gt;
-&lt;p&gt;Xie, Yihui. 2017. &lt;em&gt;Bookdown: Authoring Books and Technical Documents with R Markdown&lt;/em&gt;.&lt;/p&gt;
+&lt;div id=&#34;ref-XiebookdownAuthoringBooks2017&#34; class=&#34;csl-entry&#34;&gt;
+Xie, Yihui. 2017. &lt;em&gt;Bookdown: &lt;span&gt;Authoring Books&lt;/span&gt; and &lt;span&gt;Technical Documents&lt;/span&gt; with &lt;span&gt;R Markdown&lt;/span&gt;&lt;/em&gt;.
 &lt;/div&gt;
-&lt;div id=&#34;ref-ZhaobookdownplusTextbook2017&#34;&gt;
-&lt;p&gt;Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus Textbook&lt;/em&gt;.&lt;/p&gt;
+&lt;div id=&#34;ref-ZhaobookdownplusTextbook2017&#34; class=&#34;csl-entry&#34;&gt;
+Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;/em&gt;.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2325,26 +2325,26 @@ Mood and Happiness&lt;/a&gt;，使得事件有新的發展。這篇網誌整理�
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;center&#34;&gt;探索性必要條件&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;確證性必要條件&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;探索性必要條件&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;確證性必要條件&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;需要累積資料(事實)才能回答的研究問題&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;事先評估所需樣本數&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;需要累積資料(事實)才能回答的研究問題&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;事先評估所需樣本數&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;掌握資料(事實)來源的樣本&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;已擬定的資料處理與篩選程序&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;掌握資料(事實)來源的樣本&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;已擬定的資料處理與篩選程序&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;能將資料(事實)轉化為可推論證據的研究設計&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;剔除無效資料的標準&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;能將資料(事實)轉化為可推論證據的研究設計&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;剔除無效資料的標準&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td align=&#34;center&#34;&gt;已設定資料(事實)的集合結構或變項&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;能做有效推論的統計分析方法&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;已設定資料(事實)的集合結構或變項&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;能做有效推論的統計分析方法&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2707,40 +2707,40 @@ Cortex註冊報告(Registered Report)責任主編Chris Chambers現身說法，�
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;主動離開(Exit)&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;好言相勸(Voice)&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;忠心守候(Loyalty)&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;視而不見(Neglect)&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;主動離開(Exit)&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;好言相勸(Voice)&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;忠心守候(Loyalty)&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;視而不見(Neglect)&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;低承諾感 Finkel(2002)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;2.51&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;4.95&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;3.80&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;3.92&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2.51&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4.95&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3.80&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3.92&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;高承諾感 Finkel(2002)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;1.85&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.39&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;4.10&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;3.50&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1.85&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.39&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4.10&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3.50&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;組間差異 Finkel(2002)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-.42*&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;.17&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;.05&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-.32*&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-.42*&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;.17&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;.05&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-.32*&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;RRR組間差異平均值,95%信賴區間&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-.06, [-.17, .05]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;.03,[-.08, .13]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;.00,[-.08, .09]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;-.06,[-.18, .07]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-.06, [-.17, .05]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;.03,[-.08, .13]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;.00,[-.08, .09]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-.06,[-.18, .07]&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -2900,6 +2900,47 @@ Cortex註冊報告(Registered Report)責任主編Chris Chambers現身說法，�
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Diederik_Stapel&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Diederik Stapel&lt;/a&gt;，被踢爆所發表的研究結果都是自行捏造的數據，一直到今天，清查工作都還未結束。Diederik Stapel的研究類似youtube上某些知名頻道主設計的社會實驗節目，論文描述在公共場所或實驗室設計會誘發預期行為情節或擺設，實驗者從旁觀察行人的現場反應。也因此設計類似的Elderly Priming會被挑出來批判，至今依然餘波盪漾。其中一個值得注意的事件是一本刊登社會心理學研究的學術期刊Basic and Applied Social Psychology，在
 &lt;a href=&#34;http://www.tandfonline.com/doi/abs/10.1080/01973533.2015.1012991&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2015年2月宣佈&lt;/a&gt;投稿到該期刊的論文只能報告描述統計，傳統的推論統計如t檢定與變異數分析不必報告，以及有條件接受貝式統計分析結果。雖然未見過新聞報導與部落客將這件事與Elderly Priming風波放在一起談論，許多促發實驗無法被成功重現的現實，讓心理學家開始思考在實驗室裡執行的實驗結果，即使成功發表也不一定有真正的知識價值。&lt;br&gt;
 再回來看開放資料對於學術與商業的意義，最重要的是讓資料生產過程透明化。學術研究者可以使用開放資料檢驗實驗結果符合與不符合預期的條件，降低檢驗可再現性的成本。像是Elderly Priming的案例，如果在發表時能提供開放資料供評審或第三人檢驗，保證可再現的品質，也許至少不會引起無助澄清事實的各種風波。商品開發者可以使用開放資料檢視產品符合開發構想的程度，還可以藉此尋找有助改進產品的工程師。知識的價值不僅體現於研究者將所發現的事物包裝為讓讀者或消費者願意接受，更是提供開啟他人自行檢驗或探索知識的條件，讓原來的知識價值持續增加。如果英雄聯盟的營運能因此維持到下一個世代的玩家，那麼本來培養林侑霆的學術體系，有沒有可能藉著開放資料的時代機會，找到啟發新世代學人的新途徑？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>隱私權條款</title>
+      <link>/zh-hant/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/zh-hant/privacy/</guid>
+      <description>&lt;p&gt;非常歡迎您光臨「陳紹慶的個人網站」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：&lt;/p&gt;
+&lt;h3 id=&#34;一隱私權保護政策的適用範圍&#34;&gt;一、隱私權保護政策的適用範圍&lt;/h3&gt;
+&lt;p&gt;隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。&lt;/p&gt;
+&lt;h3 id=&#34;二個人資料的蒐集處理及利用方式&#34;&gt;二、個人資料的蒐集、處理及利用方式&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;當您造訪本網站或使用本網站所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本網站不會將個人資料用於其他用途。&lt;/li&gt;
+&lt;li&gt;本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。&lt;/li&gt;
+&lt;li&gt;於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的IP位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，決不對外公佈。&lt;/li&gt;
+&lt;li&gt;為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;三資料之保護&#34;&gt;三、資料之保護&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。&lt;/li&gt;
+&lt;li&gt;如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;四網站對外的相關連結&#34;&gt;四、網站對外的相關連結&lt;/h3&gt;
+&lt;p&gt;本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。&lt;/p&gt;
+&lt;h3 id=&#34;五與第三人共用個人資料之政策&#34;&gt;五、與第三人共用個人資料之政策&lt;/h3&gt;
+&lt;p&gt;本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。&lt;/p&gt;
+&lt;p&gt;前項但書之情形包括不限於：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;經由您書面同意。&lt;/li&gt;
+&lt;li&gt;法律明文規定。&lt;/li&gt;
+&lt;li&gt;為免除您生命、身體、自由或財產上之危險。&lt;/li&gt;
+&lt;li&gt;與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集者依其揭露方式無從識別特定之當事人。&lt;/li&gt;
+&lt;li&gt;當您在網站的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。&lt;/li&gt;
+&lt;li&gt;有利於您的權益。&lt;/li&gt;
+&lt;li&gt;本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;六cookie之使用&#34;&gt;六、Cookie之使用&lt;/h3&gt;
+&lt;p&gt;為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的Cookie，若您不願接受Cookie的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕Cookie的寫入，但可能會導致網站某些功能無法正常執行 。&lt;/p&gt;
+&lt;h3 id=&#34;七隱私權保護政策之修正&#34;&gt;七、隱私權保護政策之修正&lt;/h3&gt;
+&lt;p&gt;本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。&lt;/p&gt;
 </description>
     </item>
     

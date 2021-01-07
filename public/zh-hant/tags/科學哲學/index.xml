@@ -269,9 +269,21 @@
 &lt;li&gt;(PB)以第一堂曾提過的「凱撒渡過盧比孔河」說明邏輯學者如何判斷這句陳述是真相。&lt;/li&gt;
 &lt;li&gt;(CSC) 根據維根斯坦，以上陳述的表達方式~
 Semantic concept of truth:
-|後設言談 |客觀言談|
-|&amp;mdash;|&amp;mdash;|
-|$[Caesar crossed the Rubicon]$ is true | iff Caesar crossed the Rubicon|&lt;/li&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;後設言談&lt;/th&gt;
+&lt;th&gt;客觀言談&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$[Caesar crossed the Rubicon]$ is true&lt;/td&gt;
+&lt;td&gt;iff Caesar crossed the Rubicon&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
 &lt;li&gt;(CSC) 如何以後設言談與客觀言談表達真相，建議參考
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Rudolf_Carnap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;卡爾納普&lt;/a&gt;與
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Felix_Kaufmann&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;考夫曼&lt;/a&gt;之間的討論。&lt;/li&gt;
