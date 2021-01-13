@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practices | Sau-Chin Chen&#39;s website</title>
+    <link>https://scchen.com/category/practices/</link>
+      <atom:link href="https://scchen.com/category/practices/index.xml" rel="self" type="application/rss+xml" />
+    <description>Practices</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Practices</title>
+      <link>https://scchen.com/category/practices/</link>
+    </image>
+    
+    <item>
+      <title>If Emily Rosa met Thomas Bayes ...</title>
+      <link>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/</link>
+      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients’ body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scgeeker.github.io/BasicStatistics/images/theraputic-touch.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Emily was curious how real was TT technique. To test their skill under unbiased observations, she designed the test table like the below figure shows. Every trainee would run 10 trials in one test. In each trial, Emily placed her right hand above one of the participated trainee’ hand, decided by flipped coin. She had the hypothesis if the skill of TT trainees was real, they would give the correct answers in at least 8 of the trials.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jamanetwork.com/data/Journals/JAMA/4554/joc71352f1.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Emily ran this study two times between 1996 and 1997. At the first time 15 TT trainees were invited to this study. She deiced to run the second time after the TV station interviewed her. At the second time 13 TT trainees, included 7 had participated in the first time, joined this study. Their analysis showed the average accuracy of these trainees as equal to the random guessing.&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/mNoRxCRJ-Y0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;p&gt;We would learn many things from Emily’s study till today. First of all the critical finding was the null effect. Today the behavioral scientists share more attention about the null effect than 1998. The other interesting thing is that the prediction could be verified by one point. It is rare to use the one-sample t-test in the psychological studies, but almost every psychologist learned the one-sample t-test before the independent t-test and paired t-test. Latest but may be critical, the idea of little Emily embodied the statistical thinking.&lt;/p&gt;
+&lt;p&gt;Emily’s data were summarized in the reproduced figure as below. They ran the one-sample t-test for the results of two times respectively. The analyses disconfirmed the reality of TT technique, but Emily and her parents might show a kind of researcher flexibility: they used the small samples in their first and follow-up studies. Could we upgrade their results in addition to conduct a registered replication plan?&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Rosa1998Fig2&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Rosa1998Fig2-1.png&#34; alt=&#34;Reproductive test results of Rosa et al.(1998)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: Reproductive test results of Rosa et al.(1998)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If Emily had learned Bayesian statistics in 1998, she would show the reporters her stronger belief how fake the TT technique was. Next, I use the binomial probability distribution to reanalyze Emily’s data in the simple Bayesian inference. My first step is the recovery of the original correct frequency of every TT participant. Although Emily’s paper gave the range of scores (initial study: 2 to 8; follow-up study: 1 to 7), they did not provide the how many correct trials conducted by every participant. I arranged the numbers based on the averages and number of total correct responses as follows:&lt;/p&gt;
+&lt;p&gt;(R-chunk, vectors of numbers)&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Initial test data
+Data_initial &amp;lt;- c(2,3,3,3,3,4,5,5,5,5,5,6,6,7,8)
+# Follow-up data
+Data_followup &amp;lt;- c(1,3,3,3,3,4,4,4,4,5,5,7,7)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I required the theoretical parameters representing Emily’s hypothesis. Her study in nature was a game of coin tossing. She assumed certificated TT participants, given their technique was real, could answer correctly in more than 8 trials. In the other word, among the ten coins flipped by Emily, they could look into which 8, 9, or all sides on the top. Before the initial study, Emily could assume the probability each participant give the correct answer in a trial to be more than 0.5. If she used Bayesian inference, she would expect the posterior probability higher than 0.8. Therefore I prepared the uniform distribution ranged between 0.5 and 1 as the prior probability of the Bayesian inference.&lt;/p&gt;
+&lt;p&gt;It was recorded that only one participant returned 8 correct answers in the initial study. My Bayesian model used the binomial distribution with the arguments of 10 trials and prior probabilities. This model generated the posterior probability distribution given the data of Emily’s initial study. The average of the initial study was 4.67; thus I retrieved the posterior probability distribution of 5 from the Bayesian model.&lt;/p&gt;
+(R-chunk, Bayesian model and posterior histogram of initial)
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Bayes-initial&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-initial-1.png&#34; alt=&#34;Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Post-initial&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-initial-1.png&#34; alt=&#34;Posterior probability distribution of initial study result&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: Posterior probability distribution of initial study result
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.017&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+(R-chunk, Bayesian model and posterior histogram of follow-up)
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Bayes-followup&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Post-followup&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-followup-1.png&#34; alt=&#34;Posterior probability distribution of follow-up study result&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 5: Posterior probability distribution of follow-up study result
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The histogram of the posterior probability distribution shows zero possibility beyond 8. My reanalysis indicates that Emily’s study indeed falsified the reality of Therapeutic Touch. You may wonder if people have updated the understanding of Therapeutic Touch because of Emily’s study. Till today &lt;a href=&#34;http://therapeutictouch.org/&#34;&gt;the official website of Therapeutic Touch&lt;/a&gt; is regularly upgrading the latest information. More efforts are required to guide people thinking this world with scientific and statistical knowledge.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Manage a blog for the bibliography management optimization</title>
+      <link>https://scchen.com/post/2017-05-08-bibliography-management-optimization/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2017-05-08-bibliography-management-optimization/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many promoters of open-accessible literature spread their preprinted articles through the personal and collaborative blogs. Bloggers and followers like me usually manage the last updated posts in the reference managers. My &lt;a href=&#34;https://www.zotero.org/&#34;&gt;zotero&lt;/a&gt; have collected a lot of blog posts to be commented and to be cited in my coming articles. After collected hundreds of posts, I found that zotero not always imported the meta data of the blog posts for the correct citations. This post presents why not all the necessary meta data can be imported by the reference managers, and shows how the readers and bloggers could manage these situations.&lt;/p&gt;
+&lt;p&gt;Referring to the 76th example of APA 6th style and the &lt;a href=&#34;http://blog.apastyle.org/apastyle/2016/04/how-to-cite-a-blog-post-in-apa-style.html&#34;&gt;explain of Timothy McAdoo (2016)&lt;/a&gt;, I demonstrates the reference format of a blog post like following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Who&amp;quot;. (Year, Month, Day). &amp;quot;Title of the post&amp;quot;[Blog post]. Retrieved from &amp;quot;my url&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For a long time, I had been confused why some imported posts have no released date, and some do not include the author’s name. Until read this blog post about &lt;a href=&#34;https://moz.com/blog/meta-data-templates-123&#34;&gt;social meta tags&lt;/a&gt;, I realized that &lt;strong&gt;zotero&lt;/strong&gt; establish the items for the blog posts and webpages in terms of the &lt;code&gt;meta&lt;/code&gt; tags in the source html files. To have the correct citation of a blog post, a post at least has to have the three &lt;code&gt;meta&lt;/code&gt; tags: &lt;code&gt;author&lt;/code&gt;, &lt;code&gt;article:published_time&lt;/code&gt;, &lt;code&gt;og:title&lt;/code&gt;. I built a &lt;a href=&#34;http://scchen.com/blog/2017/05/templete-of-a-citable-blog-post.html&#34;&gt;template&lt;/a&gt; showing how these tag are included in my &lt;code&gt;head.html&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Many of my collected posts are from the active psychologists and statisticans. &lt;a href=&#34;http://psychbrief.com&#34;&gt;PsychBrief&lt;/a&gt; has gathered the &lt;a href=&#34;http://psychbrief.com/psychological-methods-blog-feed/&#34;&gt;43 this kind of academic blogs&lt;/a&gt;. After a short survey, I found that &lt;strong&gt;WordPress&lt;/strong&gt; is the favorite of these bloggers (29 blogs). &lt;strong&gt;Google blogpost&lt;/strong&gt; is the second preference (7 blogs). Almost all the &lt;strong&gt;WordPress&lt;/strong&gt; blog posts are able to export the &lt;code&gt;meta&lt;/code&gt; tags for the correct citations. However, some collaborative blogs, such as Andrew Gelman’s &lt;a href=&#34;http://andrewgelman.com/&#34;&gt;Statistical Modeling, Causal Inference, and Social Science&lt;/a&gt;, have no the &lt;code&gt;author&lt;/code&gt; tag. &lt;strong&gt;Google blogpost&lt;/strong&gt; at default have no the tag &lt;code&gt;article:published_time&lt;/code&gt;. As a user of &lt;strong&gt;zotero&lt;/strong&gt;, I have to fill in these information by hands after imported these blog posts.&lt;/p&gt;
+&lt;p&gt;To help the supporters of open accessible literature have the efficient bibliography management, I summarize three situations according to my survey and experience:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Single bloggers manages the &lt;strong&gt;WordPress&lt;/strong&gt; blog.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: It’s fortune. All necessary tags are able to be imported.&lt;br /&gt;
+&lt;em&gt;For bloggers&lt;/em&gt;: The author’s name have been registered since the day you opened your blog. When some posts are collaborative works, the default &lt;code&gt;author&lt;/code&gt; tag many not show the authorship as your wish.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Many bloggers share one &lt;strong&gt;WordPress&lt;/strong&gt; blog; Bloggers manage the personal site in the other services.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: Keep in mind that not all the necessary tags could be exported from these posts.&lt;br /&gt;
+&lt;em&gt;For bloogers&lt;/em&gt;: If you want to help your readers’ bibliography managements easier, you could take hours to study how to put all the necessary &lt;code&gt;meta&lt;/code&gt; tags on each post.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bloggers manage the &lt;strong&gt;jekyll-based&lt;/strong&gt; blog.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: It’s the worst that many jekyll themes set the fewest &lt;code&gt;meta&lt;/code&gt; tags at default. On the ohter hand, it’s the best that the bloggers realized every things the readers need.&lt;br /&gt;
+&lt;em&gt;For bloggers&lt;/em&gt;: In use of the &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;markdown syntax&lt;/a&gt;, your blog post is able to fetch the &lt;code&gt;author&lt;/code&gt;, &lt;code&gt;published_time&lt;/code&gt;, and &lt;code&gt;og:title&lt;/code&gt; in &lt;a href=&#34;https://en.wikipedia.org/wiki/YAML&#34;&gt;YAML&lt;/a&gt;. There is the flexibility that a blog collects the works of a single author and the collaborative consequence.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Manage a blog for the bibliography management optimization</title>
+      <link>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many promoters of open-accessible literature spread their preprinted articles through the personal and collaborative blogs. Bloggers and followers like me usually manage the last updated posts in the reference managers. My &lt;a href=&#34;https://www.zotero.org/&#34;&gt;zotero&lt;/a&gt; have collected a lot of blog posts to be commented and to be cited in my coming articles. After collected hundreds of posts, I found that zotero not always imported the meta data of the blog posts for the correct citations. This post presents why not all the necessary meta data can be imported by the reference managers, and shows how the readers and bloggers could manage these situations.&lt;/p&gt;
+&lt;p&gt;Referring to the 76th example of APA 6th style and the &lt;a href=&#34;http://blog.apastyle.org/apastyle/2016/04/how-to-cite-a-blog-post-in-apa-style.html&#34;&gt;explain of Timothy McAdoo (2016)&lt;/a&gt;, I demonstrates the reference format of a blog post like following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Who&amp;quot;. (Year, Month, Day). &amp;quot;Title of the post&amp;quot;[Blog post]. Retrieved from &amp;quot;my url&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For a long time, I had been confused why some imported posts have no released date, and some do not include the author’s name. Until read this blog post about &lt;a href=&#34;https://moz.com/blog/meta-data-templates-123&#34;&gt;social meta tags&lt;/a&gt;, I realized that &lt;strong&gt;zotero&lt;/strong&gt; establish the items for the blog posts and webpages in terms of the &lt;code&gt;meta&lt;/code&gt; tags in the source html files. To have the correct citation of a blog post, a post at least has to have the three &lt;code&gt;meta&lt;/code&gt; tags: &lt;code&gt;author&lt;/code&gt;, &lt;code&gt;article:published_time&lt;/code&gt;, &lt;code&gt;og:title&lt;/code&gt;. I built a &lt;a href=&#34;http://scchen.com/blog/2017/05/templete-of-a-citable-blog-post.html&#34;&gt;template&lt;/a&gt; showing how these tag are included in my &lt;code&gt;head.html&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Many of my collected posts are from the active psychologists and statisticans. &lt;a href=&#34;http://psychbrief.com&#34;&gt;PsychBrief&lt;/a&gt; has gathered the &lt;a href=&#34;http://psychbrief.com/psychological-methods-blog-feed/&#34;&gt;43 this kind of academic blogs&lt;/a&gt;. After a short survey, I found that &lt;strong&gt;WordPress&lt;/strong&gt; is the favorite of these bloggers (29 blogs). &lt;strong&gt;Google blogpost&lt;/strong&gt; is the second preference (7 blogs). Almost all the &lt;strong&gt;WordPress&lt;/strong&gt; blog posts are able to export the &lt;code&gt;meta&lt;/code&gt; tags for the correct citations. However, some collaborative blogs, such as Andrew Gelman’s &lt;a href=&#34;http://andrewgelman.com/&#34;&gt;Statistical Modeling, Causal Inference, and Social Science&lt;/a&gt;, have no the &lt;code&gt;author&lt;/code&gt; tag. &lt;strong&gt;Google blogpost&lt;/strong&gt; at default have no the tag &lt;code&gt;article:published_time&lt;/code&gt;. As a user of &lt;strong&gt;zotero&lt;/strong&gt;, I have to fill in these information by hands after imported these blog posts.&lt;/p&gt;
+&lt;p&gt;To help the supporters of open accessible literature have the efficient bibliography management, I summarize three situations according to my survey and experience:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Single bloggers manages the &lt;strong&gt;WordPress&lt;/strong&gt; blog.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: It’s fortune. All necessary tags are able to be imported.&lt;br /&gt;
+&lt;em&gt;For bloggers&lt;/em&gt;: The author’s name have been registered since the day you opened your blog. When some posts are collaborative works, the default &lt;code&gt;author&lt;/code&gt; tag many not show the authorship as your wish.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Many bloggers share one &lt;strong&gt;WordPress&lt;/strong&gt; blog; Bloggers manage the personal site in the other services.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: Keep in mind that not all the necessary tags could be exported from these posts.&lt;br /&gt;
+&lt;em&gt;For bloogers&lt;/em&gt;: If you want to help your readers’ bibliography managements easier, you could take hours to study how to put all the necessary &lt;code&gt;meta&lt;/code&gt; tags on each post.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bloggers manage the &lt;strong&gt;jekyll-based&lt;/strong&gt; blog.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: It’s the worst that many jekyll themes set the fewest &lt;code&gt;meta&lt;/code&gt; tags at default. On the ohter hand, it’s the best that the bloggers realized every things the readers need.&lt;br /&gt;
+&lt;em&gt;For bloggers&lt;/em&gt;: In use of the &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;markdown syntax&lt;/a&gt;, your blog post is able to fetch the &lt;code&gt;author&lt;/code&gt;, &lt;code&gt;published_time&lt;/code&gt;, and &lt;code&gt;og:title&lt;/code&gt; in &lt;a href=&#34;https://en.wikipedia.org/wiki/YAML&#34;&gt;YAML&lt;/a&gt;. There is the flexibility that a blog collects the works of a single author and the collaborative consequence.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Template of a citable blog post</title>
+      <link>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;this-post-is-for-future-posts.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;This post is for future posts.&lt;/h2&gt;
+&lt;p&gt;Check the lines 5 to 9 of my post template &lt;a href=&#34;https://github.com/SCgeeker/SCgeeker.github.io/blob/master/_includes/head.html&#34;&gt;&lt;code&gt;head.html&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;html&#34;&gt;&lt;code&gt;    &amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;blogger&amp;quot;/&amp;gt;
+    &amp;lt;meta name=&amp;quot;author&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;quot;/&amp;gt;
+    # A if-then loop imports page.title.
+    &amp;lt;meta property=&amp;quot;og:title&amp;quot; content=&amp;quot;{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}&amp;quot;/&amp;gt;
+    # A if-then loop imports page.date.
+    &amp;lt;meta property=&amp;quot;article:published_time&amp;quot; content=&amp;quot;{% if page.date %}{{ page.date | date: &amp;quot;%B %-d, %Y&amp;quot;}}{% else %}{{ site.date }}{% endif %}&amp;quot;/&amp;gt;
+    &amp;lt;meta property=&amp;quot;og:site_name&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;#39;s website&amp;quot;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Randomization in Latin Square</title>
+      <link>https://scchen.com/post/2016-09-14-randomization-in-latin-square/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-09-14-randomization-in-latin-square/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I’m managing an opensesame script for the coming project. In this project, there are four stimuli lists included all the within-participant conditions. I denote the four lists &lt;strong&gt;A&lt;/strong&gt;, &lt;strong&gt;B&lt;/strong&gt;, &lt;strong&gt;C&lt;/strong&gt;, and &lt;strong&gt;D&lt;/strong&gt;. A participant will have one of the stimuli lists in terms of the counter balanced principle. The best assignment method is 4X4 Latin Square. For every 16 participants, there are 24 sequences to be used. Here are three of the sequences.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4]
+## [1,] &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot; 
+## [2,] &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot; 
+## [3,] &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot; 
+## [4,] &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4]
+## [1,] &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot; 
+## [2,] &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot; 
+## [3,] &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot; 
+## [4,] &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3] [,4]
+## [1,] &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot; 
+## [2,] &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot; 
+## [3,] &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot;  &amp;quot;B&amp;quot; 
+## [4,] &amp;quot;B&amp;quot;  &amp;quot;C&amp;quot;  &amp;quot;D&amp;quot;  &amp;quot;A&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If this experiment will recruit 32 participant, the first 16 and second 16 better obtain one of the 24 sequences in a pseudo randomization. On the other hand, I wish to reproduce this random sequence in the other place. The best way is to generate the randomization sequence in terms of a seed. Thanks to &lt;a href=&#34;http://osdoc.cogsci.nl/&#34;&gt;Opensesame&lt;/a&gt;, I found the way to make this plan come true.&lt;/p&gt;
+&lt;p&gt;Opensesame is the open source experiment software. Because it is developed in &lt;a href=&#34;https://www.python.org/&#34;&gt;python&lt;/a&gt;, the users are able to create the function based on their need. This program offers the object &lt;strong&gt;inline_script&lt;/strong&gt; where the users put the python codes. I created the python codes to select the stimuli list from the file pool. You can use it before the program runs the object &lt;strong&gt;loop&lt;/strong&gt; based on the list.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;### Get the subject number
+nr = self.get(&amp;#39;subject_nr&amp;#39;)
+
+### Generate a random sequence based the prior seed
+### Defind seed by yourself
+import random
+SEED = 345
+
+seq = [0,4,8,12]
+random.seed(SEED)
+random.shuffle(seq)
+
+### Shift the subject numbers
+### Push to the next sequence
+if nr &amp;lt;=16:
+    nr += seq[0]
+elif nr &amp;gt; 16 &amp;amp; nr &amp;lt;= 32:
+    nr += seq[1]
+elif nr &amp;gt; 32 &amp;amp; nr &amp;lt;= 48:
+    nr += seq[2]
+else:
+    nr += seq[3]
+
+### Assign the list in one Latin Squane
+if (nr / 4) % 4 == 1:
+    if nr % 4 == 0:
+        lst = &amp;#39;List01.csv&amp;#39;
+    elif nr % 4 == 1:
+        lst = &amp;#39;List02.csv&amp;#39;
+    elif nr % 4 == 2:
+        lst = &amp;#39;List03.csv&amp;#39;
+    else:
+        lst = &amp;#39;List04.csv&amp;#39;
+elif (nr / 4) % 4 == 2:
+    if nr % 4 == 1:
+        lst = &amp;#39;List01.csv&amp;#39;
+    elif nr % 4 == 2:
+        lst = &amp;#39;List02.csv&amp;#39;
+    elif nr % 4 == 3:
+        lst = &amp;#39;List03.csv&amp;#39;
+    else:
+        lst = &amp;#39;List04.csv&amp;#39;
+elif (nr / 4) % 4 == 3:
+    if nr % 4 == 2:
+        lst = &amp;#39;List01.csv&amp;#39;
+    elif nr % 4 == 3:
+        lst = &amp;#39;List02.csv&amp;#39;
+    elif nr % 4 == 0:
+        lst = &amp;#39;List03.csv&amp;#39;
+    else:
+        lst = &amp;#39;List04.csv&amp;#39;
+else:
+    if nr % 4 == 3:
+        lst = &amp;#39;List01.csv&amp;#39;
+    elif nr % 4 == 0:
+        lst = &amp;#39;List02.csv&amp;#39;
+    elif nr % 4 == 1:
+        lst = &amp;#39;List03.csv&amp;#39;
+    else:
+        lst = &amp;#39;List04.csv&amp;#39;
+
+### Output [List] to the loop object
+exp.set(&amp;#39;List&amp;#39;, lst)&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why we need a readable data table in behavioral scientific research?</title>
+      <link>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A bad case&lt;/h3&gt;
+&lt;p&gt;A few days ago I was dealing with a raw data set as like the following table.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;th&gt;Group&lt;/th&gt;
+&lt;th&gt;I01&lt;/th&gt;
+&lt;th&gt;I02&lt;/th&gt;
+&lt;th&gt;I03&lt;/th&gt;
+&lt;th&gt;I04&lt;/th&gt;
+&lt;th&gt;I05&lt;/th&gt;
+&lt;th&gt;I06&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s01&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s02&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s03&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s04&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s05&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s06&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This table is a tiny version I copied from a master graduate’s spss raw data table. The format of the table is frequently seen in the data files for SPSS software. This format originated the “row cognition” for data in every mind who are not familar with the statistical tools. Without the awareness of structure, people used to stack a lot of bricks horizontally. As like the table shows, there are the data of 6 participants. A new statistical tool user tend to fill all the information and data for a participant in a row as possible. This format fits human cognition for the naive thing who never manipulate before. However, the computers recognize the table by column, in other words, a “column cognition”. I show you how computer deal with the summation of one participant’s scores by the following codes.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;s01_data &amp;lt;- c(3,4,5,1,2,3)
+units &amp;lt;- rep(1,6)
+sum(s01_data)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;[1] 18&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t(units)%*%s01_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt; [,1]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;[1,] 18&lt;/p&gt;
+&lt;p&gt;The function &lt;code&gt;sum&lt;/code&gt; is one of the first functions a new statistical tool user have learned at the first class. &lt;code&gt;sum&lt;/code&gt; is used to add all the scores of a participant. A new user tend to append the summation to the end of a row. But the last code show you a programing language recognizes the scores of a participant by column. The evidence is that the sturcture of &lt;code&gt;t(units)&lt;/code&gt; is row but the structure of &lt;code&gt;s01_data&lt;/code&gt; is a column. How do we eliminate the difference between human and machine cognition? Why human tend to deal with the data by row rather by column?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;codes-to-make-the-table-readable&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Codes to make the table readable&lt;/h3&gt;
+&lt;p&gt;To make the table readable for the computer, I have to modify the format of this table as like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Table &amp;lt;- read.csv(&amp;quot;data.csv&amp;quot;)
+New_Table = data.frame(ID = rep(Table[,1],6), Group = rep(Table[,2],6), Item = rep(names(Table[,3:8]), each = 6), Resp = unlist(c(Table[,3:8])), row.names = NULL)
+head(New_Table)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    ID Group Item Resp
+## 1 s01     A  I01    3
+## 2 s02     A  I01    2
+## 3 s03     A  I01    4
+## 4 s04     B  I01    2
+## 5 s05     B  I01    2
+## 6 s06     B  I01    2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The new table arrange all the raw scores in one column. I create a new column &lt;code&gt;Item&lt;/code&gt; in this table. &lt;code&gt;Item&lt;/code&gt; is the index like &lt;code&gt;ID&lt;/code&gt; and &lt;code&gt;Group&lt;/code&gt;. We are able to summarize the total score of each participant by combine the index ‘ID’ and ‘Item’. We also average the group means by the index &lt;code&gt;Group&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;configurate-human-mind-approaching-a-readable-data-table&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Configurate human mind approaching a readable data table&lt;/h3&gt;
+&lt;p&gt;Why we have to make effort for waving a table readable for the computer? It is the human nature we prefer every column filled with meanings in a table. Every item has the reason a researcher put it into the study. Organizing all scores of items in a row occupy the meanings in the human cognition, but the index of items is meaningless for every human mind. A researcher need a table filled with the analyzable data for the statitical tool. In the case of this post, the analyzable data is the summation of all 6 items. A table like this case embodies the desired table for the researcher but needs a column of summarized scores for the computer. This gap has to be fixed before a precise statistical process is conducted. The solution I prefer is design the table format at first. This is the main reason I and my students have to prepare a code book before the start of the experiment.&lt;/p&gt;
+&lt;p&gt;The secondary solution depends on the packaged functions. There are many raw data table organized like the bad case at first, because the software to collect the raw data and organize them in this way, for example, google From apps. To deal with these data, I have to transform the raw data before I import them to R. A reproducible way is to transform them in use of the R codes. The functions have to isolate which columns are index and which columns are raw responses. To my knowledge, a code book is needed to define the columns to be arranged.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why we need a readable data table in behavioral scientific research?</title>
+      <link>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A bad case&lt;/h3&gt;
+&lt;p&gt;A few days ago I was dealing with a raw data set as like the following table.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;th&gt;Group&lt;/th&gt;
+&lt;th&gt;I01&lt;/th&gt;
+&lt;th&gt;I02&lt;/th&gt;
+&lt;th&gt;I03&lt;/th&gt;
+&lt;th&gt;I04&lt;/th&gt;
+&lt;th&gt;I05&lt;/th&gt;
+&lt;th&gt;I06&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s01&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s02&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s03&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s04&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s05&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s06&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This table is a tiny version I copied from a master graduate’s spss raw data table. The format of the table is frequently seen in the data files for SPSS software. This format originated the “row cognition” for data in every mind who are not familar with the statistical tools. Without the awareness of structure, people used to stack a lot of bricks horizontally. As like the table shows, there are the data of 6 participants. A new statistical tool user tend to fill all the information and data for a participant in a row as possible. This format fits human cognition for the naive thing who never manipulate before. However, the computers recognize the table by column, in other words, a “column cognition”. I show you how computer deal with the summation of one participant’s scores by the following codes.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;s01_data &amp;lt;- c(3,4,5,1,2,3)
+units &amp;lt;- rep(1,6)
+sum(s01_data)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;[1] 18&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t(units)%*%s01_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt; [,1]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;[1,] 18&lt;/p&gt;
+&lt;p&gt;The function &lt;code&gt;sum&lt;/code&gt; is one of the first functions a new statistical tool user have learned at the first class. &lt;code&gt;sum&lt;/code&gt; is used to add all the scores of a participant. A new user tend to append the summation to the end of a row. But the last code show you a programing language recognizes the scores of a participant by column. The evidence is that the sturcture of &lt;code&gt;t(units)&lt;/code&gt; is row but the structure of &lt;code&gt;s01_data&lt;/code&gt; is a column. How do we eliminate the difference between human and machine cognition? Why human tend to deal with the data by row rather by column?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;codes-to-make-the-table-readable&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Codes to make the table readable&lt;/h3&gt;
+&lt;p&gt;To make the table readable for the computer, I have to modify the format of this table as like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Table &amp;lt;- read.csv(&amp;quot;data.csv&amp;quot;)
+New_Table = data.frame(ID = rep(Table[,1],6), Group = rep(Table[,2],6), Item = rep(names(Table[,3:8]), each = 6), Resp = unlist(c(Table[,3:8])), row.names = NULL)
+head(New_Table)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    ID Group Item Resp
+## 1 s01     A  I01    3
+## 2 s02     A  I01    2
+## 3 s03     A  I01    4
+## 4 s04     B  I01    2
+## 5 s05     B  I01    2
+## 6 s06     B  I01    2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The new table arrange all the raw scores in one column. I create a new column &lt;code&gt;Item&lt;/code&gt; in this table. &lt;code&gt;Item&lt;/code&gt; is the index like &lt;code&gt;ID&lt;/code&gt; and &lt;code&gt;Group&lt;/code&gt;. We are able to summarize the total score of each participant by combine the index ‘ID’ and ‘Item’. We also average the group means by the index &lt;code&gt;Group&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;configurate-human-mind-approaching-a-readable-data-table&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Configurate human mind approaching a readable data table&lt;/h3&gt;
+&lt;p&gt;Why we have to make effort for waving a table readable for the computer? It is the human nature we prefer every column filled with meanings in a table. Every item has the reason a researcher put it into the study. Organizing all scores of items in a row occupy the meanings in the human cognition, but the index of items is meaningless for every human mind. A researcher need a table filled with the analyzable data for the statitical tool. In the case of this post, the analyzable data is the summation of all 6 items. A table like this case embodies the desired table for the researcher but needs a column of summarized scores for the computer. This gap has to be fixed before a precise statistical process is conducted. The solution I prefer is design the table format at first. This is the main reason I and my students have to prepare a code book before the start of the experiment.&lt;/p&gt;
+&lt;p&gt;The secondary solution depends on the packaged functions. There are many raw data table organized like the bad case at first, because the software to collect the raw data and organize them in this way, for example, google From apps. To deal with these data, I have to transform the raw data before I import them to R. A reproducible way is to transform them in use of the R codes. The functions have to isolate which columns are index and which columns are raw responses. To my knowledge, a code book is needed to define the columns to be arranged.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rethink Significance</title>
+      <link>https://scchen.com/post/2016-05-05-rethink-significance/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-05-05-rethink-significance/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;To trace the fallacy of use hypothesis testing, I am programming the examples in Dr. Adrianus D. de Groot’s paper &lt;code&gt;The meaning of “signiﬁcance” for different types of research&lt;/code&gt;. This paper is published in 1956 in the Dutch journal &lt;em&gt;Nederlands Tijdschrift voor de Psychologie en Haar Grensgebieden&lt;/em&gt;. &lt;a href=&#34;https://en.wikipedia.org/wiki/Adriaan_de_Groot&#34;&gt;Adrianus De Groot&lt;/a&gt; is Dutch psychologist and chess master. During 1950s and 1960s, he suggested the concept of emperical cycle for the researchers who use the statistical tools in the social and behavioral researches.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://scchen.com/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Emperical cycle&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;de Groot’s emperical cycle distinguish two types of emperical research: &lt;strong&gt;exploratory research&lt;/strong&gt; and &lt;strong&gt;confirmatory research&lt;/strong&gt;. &lt;strong&gt;Exploratory research&lt;/strong&gt; aims to formulate the hypotheses that covers the process from &lt;code&gt;observation&lt;/code&gt; to &lt;code&gt;induction&lt;/code&gt;. &lt;strong&gt;Confirmatory research&lt;/strong&gt; attempts to test the predicited concequences based the hypothesis. Thus a &lt;strong&gt;Confirmatory research&lt;/strong&gt; covers &lt;code&gt;deduction&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, and &lt;code&gt;evaluation&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In the time de Groot started his academic career, the protocol of hypothesis testing has been completed by the leading statisticans, &lt;a href=&#34;https://en.wikipedia.org/wiki/Ronald_Fisher&#34;&gt;Ronald Fisher&lt;/a&gt;, &lt;a href=&#34;https://en.wikipedia.org/wiki/Jerzy_Neyman&#34;&gt;Jerzy Neyman&lt;/a&gt;, and &lt;a href=&#34;https://en.wikipedia.org/wiki/Egon_Pearson&#34;&gt;Egon Pearson&lt;/a&gt;. Psychologists at that time learned and used &lt;em&gt;p value&lt;/em&gt; to evaluate the results. de Groot in his paper has suggested that the hypothesis testing is the appropriate tool to evaluate the result of a confirmatory reserach. He in the same paper also discussed the problems that perhapes happen when the hypothesis testing was used to decide the available hypotheses in an exploratory research. There are two cases of explorartoy research discussed in his paper. One has finite hypotheses, and the other has infinite hypotheses. Both cases show up in front of every researcher in anytime and in anywhere. Many researcher struggle how to pick the available hypotheses up according to the data in hands.&lt;/p&gt;
+&lt;div id=&#34;exploratory-research-has-finite-hypotheses&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exploratory research has finite hypotheses&lt;/h3&gt;
+&lt;p&gt;The section title in de Groot’s paper is &lt;code&gt;Hypothesis testing research for multiple hypotheses&lt;/code&gt;. He presumed the case as follow:&lt;/p&gt;
+&lt;p&gt;We give &lt;em&gt;N&lt;/em&gt; as the number of hypotheses yet to be tested. Every hypothesis is going to be evaluated by the hypothesis testing. We also give &lt;em&gt;n&lt;/em&gt; as the number of hypothese successfully passed the test. Every hypothesis have the probability .05 pass the test. This probability refers to the type 1 error in the present hypothesis testing.&lt;/p&gt;
+&lt;p&gt;Today we have 10 hypotheses (N = 10) to be evaluated by the data. Consider all the consequences, we can calculate all the probabilities given the counts of positive hypotheses.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(xtable)
+N &amp;lt;- 10
+n &amp;lt;- 0:10
+alpha &amp;lt;- .05
+REJECT_P &amp;lt;- 0
+PASS_P &amp;lt;- rep(0,length(n))
+for(k in n){
+        REJECT_P = REJECT_P + choose(N,k)*alpha^k*(1 - alpha)^(N - k) 
+        PASS_P[k+1] = 1 - REJECT_P
+}
+SUCCESS = data.frame(n,PASS_P)
+colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
+print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
+&lt;!-- html table generated in R 4.0.3 by xtable 1.8-4 package --&gt;
+&lt;!-- Mon Dec 14 22:02:53 2020 --&gt;
+&lt;table border=&#34;1&#34;&gt;
+&lt;tr&gt;
+&lt;th&gt;
+n
+&lt;/th&gt;
+&lt;th&gt;
+Probability(Positive Results)
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.40
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.09
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+2
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.01
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+3
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.00
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.00
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+5
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.00
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.00
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+7
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.00
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+8
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.00
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+9
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.00
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;right&#34;&gt;
+10
+&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;
+0.00
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(PASS_P ~ n, xlab = &amp;quot;Smallest Number of Positive Hypotheses&amp;quot;, ylab = &amp;quot;Probability(Positive Results)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://scchen.com/en/post/2016-05-05-rethink-significance_files/figure-html/MultiHypo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;That table is telling us if we wish acquire at least one positive hypothesis, the probability is 0.4012631. That plot shows the probability dramatically decrease with the increasing numbers in our wish. In other words, when we have no precise knowlegde about the use of hyphtesis testing, the more hypotheses we want to induce, the higher risk we get nothing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;exploratory-research-has-infinite-hypotheses&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Exploratory research has infinite hypotheses&lt;/h3&gt;
+&lt;p&gt;This case is everywhere in this era of big data. de Groot called this case &lt;code&gt;Material-exploration: N becomes unspeciﬁed&lt;/code&gt;. In his paper, material refers to data because data is a low frequency word in his era. The researchers in his era has realized the best way to deal with this case is &lt;strong&gt;to let the data tell the story&lt;/strong&gt;. The research on this case obviously is an &lt;strong&gt;exploratory research&lt;/strong&gt;. For the researchers in de Groot’s era and in the era of big data, there are two routes to finish this kind of research project. One route is to label and categorize the hypotheses. This route is the hot topic of &lt;a href=&#34;https://en.wikipedia.org/wiki/Machine_learning&#34;&gt;machine learning&lt;/a&gt; in the present data science. The other route is to decide the possible hypotheses. Today the researchers on this route mostly rely on the multiple variate statistical tools.&lt;/p&gt;
+&lt;p&gt;de Groot suggests the caution to the research that attempts to decide the potential hypotheses. &lt;strong&gt;N&lt;/strong&gt; is infinite because not all hypotheses could be induced in this case. Whe we have 20 testable hypotheses from 200 potential hypotheses. If a researcher confirmed that 10 of the 20 hypotheses have the positive support by the data, based on the type 1 error, he/she has to understand that 5% hypotheses are positive (10/200) but 50% hypotheses are positive (10/20). This caution is like the misuse of golem that is discussed in &lt;a href=&#34;https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-Stan/McElreath/9781482253443&#34;&gt;Statistical Rethingking&lt;/a&gt;. In the timing I am writing this note, this caution implied the researchers who are thinking the potential hypotheses are decided assumed that they have finished a emperical circle.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;role-of-preregisteration&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Role of Preregisteration&lt;/h3&gt;
+&lt;p&gt;Decades of misusing the hypothesis testing have resulted in a bad situation we have to faced. There is no clear cutoff between the exploratory research and the confirmatory research. Many published papers in nature are the exploratory researches, but they are packaged in the form of confirmatory research by the authors (editors and reviewers have the responsibility too). This is why de Groot’s originated paper was translated and published 60 years later. This post is one of the fundemental I will cite when I introduce and discuss the preregistration.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autopsy of NHST and Bayesian Models (part 1)</title>
+      <link>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
+      <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Chapter 2 of &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated &lt;strong&gt;Data Story&lt;/strong&gt;, then &lt;strong&gt;update&lt;/strong&gt; the models by filling data in, and finally &lt;strong&gt;evaluate&lt;/strong&gt; all the &lt;strong&gt;upated&lt;/strong&gt; models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s &lt;a href=&#34;https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf&#34;&gt;Bayesian Basics: A Conceptual Introduction with Application in R and Stan&lt;/a&gt; on &lt;a href=&#34;http://mc-stan.org/documentation/&#34;&gt;Stan official site&lt;/a&gt;, I require the key to understand the difference between the two golems.&lt;/p&gt;
+&lt;p&gt;The critical difference is which type of &lt;strong&gt;conditional probability&lt;/strong&gt; the statistical method is used to evaluate the model. Once we collected the data based on some hypothesis, we have the distribution of hypothesis $ p( ) $ and the distribution of data $ p(y) $. NHST compuates the probability we have the data when the hypothesis is true $ p(y|) $. In practical, &lt;em&gt;p&lt;/em&gt; value refers to the &lt;strong&gt;conditional probability&lt;/strong&gt; of the null hypothesis, and * confidence interval* suggests a range of plausible outcomes based on the &lt;em&gt;confiditional probability&lt;/em&gt; of the real hypothesis. A Bayesian method compuates the probability the hypothesis is approved based on the data we have $ p(|y) $. Because the computation of $ p(|y) $ needs the likelihood $ p(y|) $ and the priori $ p() $, of course a Baysian method cost more steps than NHST.&lt;/p&gt;
+&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;https://scchen.com/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
+&lt;p&gt;Here is a pseudo experiment I want to know if a test is success based on the expect value smaller than 5 (Obersvations are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10). I completed an experiment of 25 observations and an experiment 36 observations. In use of NHST with a critical value (p &amp;lt; .05), the criterion change with the sample size. The simulation&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
+OBV &amp;lt;- 1:10
+Dist25 &amp;lt;- NULL
+Dist36 &amp;lt;- NULL
+count = 100
+while(count &amp;gt; 0){Dist25 &amp;lt;- c(Dist25,mean(sample(OBV, 25,replace = TRUE) ) ); count &amp;lt;- count - 1}
+Dist25_Density &amp;lt;- data.frame(Theta = density(Dist25, kernel = &amp;quot;gaussian&amp;quot;)$x, Density = density(Dist25, kernel = &amp;quot;gaussian&amp;quot;)$y)
+CL25 &amp;lt;- max(Dist25_Density$Theta[Dist25_Density$Theta &amp;lt; 5 &amp;amp; Dist25_Density$Density &amp;lt; .05])
+print(CL25)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4.286263&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;count = 100
+while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
+Dist36_Density &amp;lt;- data.frame(Theta = density(Dist36, kernel = &amp;quot;gaussian&amp;quot;)$x, Density = density(Dist36, kernel = &amp;quot;gaussian&amp;quot;)$y)
+CL36 &amp;lt;- max(Dist36_Density$Theta[Dist36_Density$Theta &amp;lt; 5 &amp;amp; Dist36_Density$Density &amp;lt; .05])
+print(CL36)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4.345472&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When this experiment outputs a avarage value between 4.15 and 4.42, would you like to collect the data more than 36 participants? This is the opportunity many researchers have to struggle in their study. Researchers who are educated as like me used to collect the observation till the &lt;em&gt;p&lt;/em&gt; value is smaller than .05. Most researchers used to stop the experiment till the 36th participant finished the experiment. However, this treatment lacks of the serious scientific thinking. If the hypothesis has set up the conditions to have the average, the sample size should be appointed before the start of experiment.&lt;/p&gt;
+&lt;p&gt;The appointment of sample size could be loose when the possible average is uncertain. When the experiment is conducted at first time in the world, NHST without the appointment of sample size could draw the range of averages that might obey the hypothesis. On the other hand, the following studies better has the appointment of sample size. In this case, NHST has to accompany the other statistical evaluation, such as power, effect size, to find the appropriate sample size. Therefore, NHST will perform well when the researcher conducted the first study or have the preparation as well as the first study. This will be the key in my autopsy of Bayesian method.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Check My Tools to Create and Manipulate Golems</title>
+      <link>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
+      <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Since two weeks before I published this post, I have started read the book &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; written by &lt;a href=&#34;http://xcelab.net/rm/&#34;&gt;Richard McElreath&lt;/a&gt;. Richard is the evolutionary anthropologist at Max Planck Institute. He wrote this textbook for the PhD students who will use the Bayesian statistics in their research projects. Compared to the textbooks written by statisians and data scientistst, Richard’s book explain and demonstrate the statistical methods with examples instead of equations. His intention is to help who are not staticians but used to use statistics realize one fact: we rely on the statistical models as the representations of our answers rather than answer the questions by the raw data or naked truth. Many non-statisticians are used to find and learn what kind of methods or apps to deal with their data, but few are interested to know the models under the mentods and apps they are using. The trouble and danger is that they thought their jobs are done when the program printed the tables and figures but these outputs are from the statistical model is unable to answer their question. This situation is originated from many non-statisticans consider themselves the end-users of statistical models. Like any user of a packaged software, non-statisticans have no time to understand how the tools in their hands designed and conducted by statisticans.&lt;br /&gt;
+Richard introduced the story of &lt;a href=&#34;https://en.wikipedia.org/wiki/Golem&#34;&gt;golem&lt;/a&gt; to raise the non-statsiticans’ attention to the troubles they had made and will make. A statistical model, like a golem, has the power beyond human to finish the work the human are unable to do, for example, trace the passengers’ track from the trillion of camera. Its power could be misused or out of control if we do not understand what is the root of its action. A user of ststistical method, no matter you are or are not stistician, have to keep the awareness of engineer when you are dealing with your data. Today everyone has many easier ways than a decade ago to keep the awareness of engineer. One advantage is that the learning curve for being an part-time hacker is getting smooth. Increasing R apps are opening many windows for who are want to outlook and modify the statistical models.&lt;br /&gt;
+Since this post, every post listed in the category &lt;code&gt;Rethinking&lt;/code&gt; is one of the summaries and feedbacks to &lt;a href=&#34;https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-Stan/McElreath/9781482253443&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt;. At first I have to check my toolkits for create and manipulate the statistical models. They are R core and the packages. Years ago I have used to use the packages in my data processing. Now I show them for who start to use R after read this post.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;install.packages(c(&amp;quot;rpart&amp;quot;,&amp;quot;chron&amp;quot;,&amp;quot;Hmisc&amp;quot;,&amp;quot;Design&amp;quot;,&amp;quot;Matrix&amp;quot;,&amp;quot;stringr&amp;quot;,&amp;quot;lme4&amp;quot;,&amp;quot;coda&amp;quot;,&amp;quot;e1071&amp;quot;,&amp;quot;zipfR&amp;quot;,&amp;quot;ape&amp;quot;,&amp;quot;languageR&amp;quot;,&amp;quot;multcomp&amp;quot;,&amp;quot;contrast&amp;quot;,&amp;quot;shiny&amp;quot;,&amp;quot;ggplot2&amp;quot;, &amp;quot;dplyr&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some of the packages are learned from I participated in &lt;a href=&#34;https://www.coursera.org/specializations/jhu-data-science&#34;&gt;Cousera Data Science&lt;/a&gt;. Now I used to use &lt;code&gt;dplyr&lt;/code&gt; to process the raw data, and I am learning how to draw the figures I need in use of &lt;code&gt;ggplot2&lt;/code&gt;. When this post is published, I have updated my R to R version 4.0.3 (2020-10-10). Through &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;the codes of Heuristic Andrew&lt;/a&gt;, here are my installed packages.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ip &amp;lt;- as.data.frame(installed.packages()[,c(1,3:4)])
+rownames(ip) &amp;lt;- NULL
+ip &amp;lt;- ip[is.na(ip$Priority),1:2,drop=FALSE]
+print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                   Package    Version
+##                     abind      1.4-5
+##                   acepack      1.4.1
+##                      afex     0.28-0
+##                ANOVApower      0.0.3
+##                   anytime      0.3.9
+##                       apa      0.3.3
+##                       ape      5.4-1
+##                       arm     1.11-2
+##                   askpass        1.1
+##                assertthat      0.2.1
+##                 backports      1.2.0
+##                 base64enc      0.1-3
+##               BayesFactor 0.9.12-4.2
+##                bayestestR      0.7.5
+##                     bbmle   1.0.23.1
+##                 bdsmatrix      1.3-4
+##                        BH   1.72.0-3
+##                    bibtex    0.4.2.3
+##                     bindr      0.1.1
+##                  bindrcpp      0.2.2
+##                    binman      0.1.2
+##                     binom      1.1-1
+##                    bitops      1.0-6
+##                      blob      1.2.1
+##                  blogdown       0.21
+##                  bookdown       0.21
+##                      brew      1.0-6
+##            bridgesampling      1.0-0
+##                      brio      1.1.0
+##               Brobdingnag      1.2-6
+##                     broom      0.7.2
+##               broom.mixed      0.2.6
+##                broomExtra      4.1.0
+##                   BWStest      0.2.2
+##                        ca     0.71.1
+##                     callr      3.5.1
+##                       car     3.0-10
+##                   carData      3.0-4
+##                   caTools     1.18.0
+##                     cdata      1.1.9
+##                cellranger      1.1.0
+##                 checkmate      2.0.0
+##                  circlize     0.4.11
+##                      citr      0.3.2
+##                       cli      2.2.0
+##                     clipr      0.7.1
+##                clisymbols      1.2.0
+##                      coda     0.19-4
+##                      coin      1.3-1
+##                colorspace      2.0-0
+##              colourpicker      1.1.0
+##                commonmark        1.7
+##                compute.es      0.2-5
+##                   conquer      1.0.2
+##                  contfrac     1.1-12
+##               correlation      0.5.0
+##                  corrplot       0.84
+##                      covr      3.5.1
+##                   cowplot      1.1.0
+##                     cpp11      0.2.4
+##                    crayon      1.3.4
+##                 crosstalk    1.1.0.1
+##                      crul      1.0.0
+##                   cubelyr      1.0.1
+##                      curl        4.3
+##                   dagitty      0.3-0
+##                data.table     1.13.2
+##                       DBI      1.1.0
+##                    dbplyr      2.0.0
+##                      desc      1.2.0
+##                 DescTools    0.99.38
+##                   deSolve       1.28
+##                  devtools      2.3.2
+##               DiceKriging      1.5.8
+##                 dichromat      2.0-0
+##                   diffobj      0.3.2
+##                    digest     0.6.27
+##                 dotCall64      1.0-0
+##                     dplyr      1.0.2
+##                        DT       0.16
+##                 dunn.test      1.3.5
+##                  dygraphs    1.1.1.6
+##                     e1071      1.7-4
+##                effectsize      0.4.0
+##                   effsize      0.8.1
+##                   ellipse      0.4.2
+##                  ellipsis      0.3.1
+##                  elliptic      1.4-0
+##                   emmeans    1.5.2-1
+##                       emo 0.0.0.9000
+##                       EMT        1.1
+##               equivalence      0.7.2
+##              estimability        1.3
+##                  evaluate       0.14
+##                     Exact        2.1
+##            exactRankTests     0.8-31
+##                      expm    0.999-5
+##                 extrafont       0.17
+##               extrafontdb        1.0
+##                        ez      4.4-0
+##                     fansi      0.4.1
+##                    farver      2.0.3
+##                fastGHQuad        1.0
+##                   fastmap      1.0.1
+##                      faux    0.0.1.5
+##                   fauxpas      0.5.0
+##                    fields       11.6
+##                  finalfit      1.0.2
+##           fivethirtyeight      0.6.1
+##             flexdashboard      0.5.2
+##                 flextable      0.6.0
+##                   forcats      0.5.0
+##                   foreach      1.5.1
+##                   Formula      1.2-4
+##             formula.tools      1.7.1
+##                        fs      1.5.0
+##             gameofthrones      1.0.2
+##                 gapminder      0.3.0
+##                    gargle      0.5.0
+##                     gdata     2.18.0
+##                   gdtools      0.2.2
+##                  generics      0.1.0
+##                 geosphere     1.5-10
+##                   getPass      0.2-2
+##                    GGally      2.0.0
+##                ggcorrplot      0.1.3
+##                 ggeffects      1.0.0
+##                   ggExtra        0.9
+##                   ggforce      0.3.2
+##                       ggm        2.5
+##                     ggmap      3.0.0
+##                   ggplot2      3.3.2
+##             ggplot2movies      0.0.1
+##                    ggpubr      0.4.0
+##                    ggraph      2.0.4
+##                   ggrepel      0.8.2
+##                  ggridges      0.5.2
+##                     ggsci        2.9
+##                  ggsignif      0.6.0
+##               ggstatsplot      0.6.6
+##                  ggthemes      4.2.0
+##                        gh      1.2.0
+##                     git2r     0.27.1
+##                  gitcreds      0.1.1
+##                       gld      2.6.2
+##                   glmmTMB    1.0.2.1
+##             GlobalOptions      0.1.2
+##                      glue      1.4.2
+##                       gmp      0.6-1
+##                       gnm      1.1-1
+##               googledrive      1.0.1
+##              googlesheets      0.3.0
+##             googlesheets4      0.2.0
+##               GPArotation  2014.11-1
+##                    gplots      3.1.1
+##              graphlayouts      0.7.1
+##                 gridExtra        2.3
+##                 groundhog      1.1.0
+##              groupedstats      2.0.0
+##                       gsl      2.1-6
+##                    gtable      0.3.0
+##                    gtools      3.8.2
+##               harrypotter      2.1.1
+##                     haven      2.3.1
+##                     headR      0.1.1
+##                      here      1.0.0
+##                     highr        0.8
+##                     Hmisc      4.4-2
+##                       hms      0.5.3
+##                hrbrthemes      0.8.0
+##                  htmldeps      0.1.1
+##                 htmlTable      2.1.0
+##                 htmltools      0.5.0
+##               htmlwidgets      1.5.2
+##                  httpcode      0.3.0
+##                    httpuv      1.5.4
+##                      httr      1.4.2
+##                  hunspell        3.0
+##                  hypergeo     1.2-13
+##                       ids      1.0.1
+##                    igraph      1.2.6
+##                     infer      0.5.3
+##                       ini      0.3.1
+##                    inline     0.3.17
+##                   insight     0.11.0
+##                  installr     0.22.0
+##                    ipmisc      4.1.0
+##                      ISLR        1.2
+##                   isoband      0.2.3
+##                  ISOcodes 2020.12.04
+##                 iterators     1.0.13
+##               janeaustenr      0.1.5
+##                   janitor      2.0.1
+##                   jcolors      0.0.4
+##                       jmv     1.2.23
+##                jmvconnect     1.2.18
+##                   jmvcore     1.2.23
+##                      jomo      2.7-2
+##                      jpeg    0.1-8.1
+##                  jsonlite      1.7.1
+##                  jspsychr 0.0.0.9000
+##                kableExtra      1.3.1
+##                     km.ci      0.5-2
+##                    KMsurv      0.1-5
+##                     knitr       1.30
+##                    koRpus     0.13-3
+##            koRpus.lang.en      0.1-4
+##                  kSamples      1.2-9
+##                  labeling      0.4.2
+##                 languageR      1.5.0
+##             LaplacesDemon     16.1.4
+##                     later    1.1.0.1
+##              latticeExtra     0.6-29
+##                    lavaan      0.6-7
+##                  lazyeval      0.2.2
+##                   LCFdata        2.0
+##                   leaflet      2.0.3
+##         leaflet.providers      1.9.0
+##                   libcoin      1.0-6
+##                 lifecycle      0.2.0
+##                      lme4     1.1-26
+##  LMERConvenienceFunctions        3.0
+##                  lmerTest      3.1-3
+##                      lmom        2.8
+##                    lmtest     0.9-38
+##                 logspline     2.1.16
+##                       loo      2.3.1
+##                   lsmeans     2.30-0
+##                 lubridate    1.7.9.2
+##                      lutz      0.3.1
+##                    magick      2.5.2
+##                  magrittr      2.0.1
+##          manipulateWidget     0.10.1
+##                   mapproj      1.2.7
+##                      maps      3.3.0
+##                  maptools      1.0-2
+##                  markdown        1.1
+##                  mathjaxr      1.0-1
+##                matrixcalc      1.0-3
+##              MatrixModels      0.4-1
+##               matrixStats     0.57.0
+##                   maxstat     0.7-25
+##                     MBESS      4.8.0
+##                      mc2d     0.1-18
+##                   memoise      1.1.0
+##                     MEMSS      0.9-3
+##                   metaBMA      0.6.5
+##                   metafor      2.4-0
+##                  metaplus     0.7-11
+##                        mi        1.0
+##                      mice     3.12.0
+##                      mime        0.9
+##                    miniUI    0.1.1.1
+##                     minqa      1.2.4
+##                     mitml      0.3-7
+##                    mnormt      2.0.2
+##                    modelr      0.1.8
+##                modeltools     0.2-23
+##                moderndive      0.5.0
+##                      MOTE      1.0.2
+##                  multcomp     1.4-15
+##              multcompView      0.1-8
+##                     MuMIn    1.43.17
+##                   munsell      0.5.0
+##                mvnormtest      0.1-9
+##                   mvtnorm      1.1-1
+##                     nlmeU     0.70-3
+##                    nloptr    1.2.2.2
+##                   nortest      1.0-4
+##                  numDeriv 2016.8-1.1
+##              nycflights13      1.0.1
+##                   officer     0.3.15
+##                 oompaBase      3.2.9
+##                    OpenMx     2.18.1
+##                   openssl      1.4.3
+##                  openxlsx      4.2.3
+##            operator.tools      1.6.3
+##                   ordinal 2019.12-10
+##                      osfr      0.2.8
+##                   packrat      0.5.0
+##                PairedData      1.1.1
+##       pairwiseComparisons      3.1.1
+##                 paletteer      1.2.0
+##                      palr      0.2.0
+##                      pals        1.6
+##                       pan        1.6
+##                    pander      0.6.3
+##                    papaja 0.1.0.9942
+##                parameters     0.10.0
+##                 patchwork      1.1.0
+##                   pbapply      1.4-3
+##                  pbivnorm      0.6.0
+##                  pbkrtest    0.4-8.6
+##               performance      0.6.0
+##                    pillar      1.4.7
+##                  pkgbuild      1.1.0
+##                 pkgconfig      2.0.3
+##                   pkgload      1.1.0
+##                       PKI      0.1-7
+##                     plogr      0.2.0
+##                   plotrix      3.7-8
+##                   plumber      1.0.0
+##                      plyr      1.8.6
+##                     PMCMR        4.3
+##                 PMCMRplus      1.7.1
+##                       png      0.1-7
+##                  polyclip     1.10-0
+##                   polynom      1.4-0
+##                     ppcor        1.1
+##                    praise      1.0.0
+##                    prereg      0.5.0
+##               prettyunits      1.1.1
+##                 prismatic      0.2.0
+##                      pROC     1.16.2
+##                  processx      3.4.5
+##                  progress      1.2.2
+##                  promises      1.1.1
+##                     proto      1.0.0
+##                        ps      1.4.0
+##                     psych      2.0.9
+##                     purrr      0.3.4
+##                       pwr      1.3-0
+##                 QuantPsyc        1.5
+##                  quantreg       5.75
+##                    qvcalc      1.0.2
+##                   R.cache     0.14.0
+##               R.methodsS3      1.8.1
+##                      R.oo     1.24.0
+##                   R.utils     2.10.1
+##                        R6      2.5.0
+##                randomizeR      2.0.0
+##                  rappdirs      0.3.1
+##                    raster      3.4-5
+##                 rcmdcheck      1.3.3
+##              RColorBrewer      1.1-2
+##                rcompanion     2.3.26
+##                      Rcpp      1.0.5
+##             RcppArmadillo 0.10.1.2.0
+##                 RcppEigen  0.3.3.7.0
+##              RcppParallel      5.0.2
+##                     RCurl   1.98-1.2
+##                  readbulk      1.1.3
+##                     readr      1.4.0
+##                    readxl      1.3.1
+##                RefManageR      1.3.0
+##                    relimp      1.0-5
+##                   rematch      1.0.1
+##                  rematch2      2.1.2
+##                   remotes      2.2.0
+##                      repr      1.1.0
+##                    reprex      0.3.0
+##                   reshape      0.8.8
+##                  reshape2      1.4.4
+##                  revealjs        0.9
+##                       rex      1.2.0
+##                       rgl    0.103.5
+##               RgoogleMaps    1.4.5.3
+##                       rio     0.5.16
+##                     rJava     0.9-13
+##                     rjson     0.2.20
+##                   RJSONIO    1.3-1.4
+##                     rlang      0.4.9
+##                    RLRsim      3.1-6
+##                 rmarkdown        2.5
+##                  rmdfiltr      0.1.3
+##                     Rmpfr      0.8-2
+##                      ROCR     1.0-11
+##                 rootSolve    1.8.2.1
+##                    rorcid      0.6.4
+##                  roxygen2      7.1.1
+##                rpart.plot      3.0.9
+##                       rpf      1.0.5
+##                 rprojroot      2.0.2
+##               rqdatatable      1.2.9
+##                    rquery      1.4.6
+##                 rsconnect     0.8.16
+##                 RSelenium      1.7.7
+##                     rstan     2.21.2
+##                rstantools      2.1.1
+##                   rstatix      0.6.0
+##                rstudioapi       0.13
+##                   rticles       0.17
+##                  Rttf2pt1      1.3.8
+##                 rversions      2.0.2
+##                     rvest      0.3.6
+##                  sandwich      3.0-0
+##                    scales      1.1.1
+##                   scholar      0.1.7
+##                     scico      1.2.0
+##              scienceverse 0.0.0.9004
+##                   selectr      0.4-2
+##                       sem     3.1-11
+##                  semTools      0.5-3
+##                    semver      0.2.0
+##                     servr       0.20
+##               sessioninfo      1.1.1
+##                     shape      1.4.5
+##                     shiny      1.5.0
+##            shinydashboard      0.7.1
+##                   shinyjs      2.0.0
+##               shinythemes      1.1.2
+##                      sigr      1.1.3
+##                      simr      1.0.5
+##                sjlabelled      1.1.7
+##                    sjmisc      2.8.5
+##                    sjPlot      2.8.6
+##                   sjstats     0.18.0
+##                     skimr      2.1.2
+##                      slam     0.1-48
+##                        sm    2.2-5.6
+##                 snakecase     0.11.0
+##                 SnowballC      0.7.0
+##                    sodium        1.1
+##               sourcetools      0.1.7
+##                        sp      1.4-4
+##                      spam      2.5-1
+##                   SparseM       1.78
+##               StanHeaders   2.21.0-6
+##                   statmod     1.4.35
+##          statsExpressions      0.6.1
+##                 stopwords        2.0
+##                   stringi      1.5.3
+##                   stringr      1.4.0
+##                subprocess      0.8.3
+##                Superpower      0.1.0
+##                 SuppDists    1.1-9.5
+##                 survminer      0.4.8
+##                  survMisc      0.5.5
+##                   swagger     3.33.1
+##                  sylcount      0.2-2
+##                     sylly      0.1-6
+##                  sylly.en      0.1-3
+##                       sys        3.4
+##               systemfonts      0.3.2
+##                    tables      0.9.6
+##                       tau     0.0-22
+##                  testthat      3.0.0
+##                   textcat      1.0-7
+##                   TH.data     1.0-10
+##                    tibble      3.0.4
+##                    tidyBF      0.4.0
+##                 tidygraph      1.2.0
+##                     tidyr      1.1.2
+##                   tidyRSS      2.0.3
+##                tidyselect      1.1.0
+##                  tidytext      0.2.6
+##                 tidyverse      1.3.0
+##                   tinytex       0.27
+##                       TMB     1.7.18
+##                   tmvnsim      1.0-2
+##                tokenizers      0.2.1
+##                    TOSTER      0.3.4
+##                translateR        1.0
+##                 triebeard      0.3.0
+##                 truncnorm      1.0-8
+##                    tweenr      1.0.1
+##                    ucminf      1.1-4
+##                  urltools      1.7.3
+##                   usethis      1.6.3
+##                      utf8      1.1.4
+##                      uuid      0.1-4
+##                        V8      3.4.0
+##                       vcd      1.4-8
+##                  vcdExtra      0.7-1
+##                     vctrs      0.3.5
+##                   viridis      0.5.1
+##               viridisLite      0.3.0
+##                     waldo      0.2.3
+##                     wdman      0.2.5
+##                   webshot      0.5.2
+##                  webutils        1.1
+##               wesanderson      0.3.6
+##                   whisker        0.4
+##                     withr      2.3.0
+##            wordcountaddin 0.3.0.9000
+##                 workflowr      1.6.2
+##                     wrapr      2.0.5
+##                      WRS2      1.1-0
+##                   WVPlots      1.3.1
+##                   WWGbook      1.0.1
+##                  xaringan       0.18
+##                      xfun       0.19
+##                 XLConnect      1.0.1
+##             XLConnectJars     0.2-15
+##                      xlsx      0.6.5
+##                  xlsxjars      0.6.1
+##                       XML   3.99-0.5
+##                      xml2      1.3.2
+##                     xopen      1.0.0
+##                    xtable      1.8-4
+##                       xts     0.12.1
+##                      yaml      2.2.1
+##                   zeallot      0.1.0
+##                       zip      2.1.1
+##                       zoo      1.8-8&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;print(paste0(&amp;quot;There are &amp;quot;,dim(ip)[1], &amp;quot; packages installed in my laptop.&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;There are 495 packages installed in my laptop.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Richard’s book inspired me help people control their golems/ststistical models in the process of coding. In his book, literature and codes are separated. Readers who are not familiar with coding skill might hardly follow his literature. Literatural coding might be the best way to impliment the &lt;code&gt;Rethinking&lt;/code&gt;. I am going to accumulating the codes of Bayesian statistics and thake notes of his and others literatures in the coming posts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Display Math Equation in Post</title>
+      <link>https://scchen.com/post/2016-04-05-display-math-equation-in-post/</link>
+      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-04-05-display-math-equation-in-post/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ E = mc^2 \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Use the steps 1 and 2 indtroducted in &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s post&lt;/a&gt;, my website is able to show the equation in any post. Because this theme use &lt;code&gt;kramdown&lt;/code&gt; as the engine of markdown, I pass the step 4.&lt;/p&gt;
+&lt;p&gt;Here are the proof the central limitation theorem. Mix of inline and one-line equations.&lt;br /&gt;
+We have a sequence of independent random variables,&lt;span class=&#34;math display&#34;&gt;\[ X_1, X_2, \ldots \]&lt;/span&gt;&lt;br /&gt;
+And the mean and variance of them:&lt;br /&gt;
+Mean &lt;span class=&#34;math display&#34;&gt;\[ E \left[{X_i}\right] = \mu \in \left({-\infty \,.\,.\, \infty}\right) \]&lt;/span&gt;&lt;br /&gt;
+Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sigma^2 &amp;gt; 0 \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Assume:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ S_n = \sum_{i \mathop = 1}^n X_i \]&lt;/span&gt;&lt;br /&gt;
+Then:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2020-12-14 22:02:38&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vectors in mathematics and in codes</title>
+      <link>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
+      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;When a set of data/observations is imported to R, it is usually treated as &lt;code&gt;vector&lt;/code&gt;. Vector has two mathematical forms as following:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;column vector&lt;/strong&gt;:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \vec{a} = \begin{bmatrix}
+ 1\\
+ 2\\
+ 3\\
+\end{bmatrix} \]&lt;/span&gt;&lt;br /&gt;
+&lt;strong&gt;row vector&lt;/strong&gt;:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \vec{a} = [ 1\ 2\ 3 ] \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Default form of vector in R is column vector. More precisely, it is treated as a matrix:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;a &amp;lt;- 1:3
+a&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 1 2 3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;class(a)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;integer&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;str(a)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  int [1:3] 1 2 3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t(a)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3]
+## [1,]    1    2    3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In a statistical work, we used to calcuate the sum of square (SS) for the deviations to mean. The common equation is like:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \sum_{i=1}^{n}(Y_{i}-\overline{Y})^2 \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is the fundemental for calculating the variance of this set of data/observations. The equation of variance is like this:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \frac{\sum_{i=1}^{n}(Y_{i}-\overline{Y})^2}{n} \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Because the data/observations are treated as matrix, we are able to have the sum of square by the multiplication of this matrix.&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \mathbf{A&amp;#39;A} = 
+\begin{bmatrix} A_1 A_2 A_3 \dots\end{bmatrix}
+\times
+\begin{bmatrix}
+   A_1 \\
+   A_2 \\
+   A_3 \\
+   \vdots
+\end{bmatrix}　\]&lt;/span&gt;　　&lt;/p&gt;
+&lt;p&gt;Here are ten observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, the average of this data is 5.5. Let’s have the SS and variance in use of the multiplication of matrix:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;SS &amp;lt;- t(1:10 - mean(1:10)) %*% (1:10 - mean(1:10)) 
+VAR &amp;lt;- SS/length(1:10)
+SS&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1]
+## [1,] 82.5&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;VAR&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1]
+## [1,] 8.25&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In R &lt;code&gt;base&lt;/code&gt; package, the function &lt;code&gt;var&lt;/code&gt; outputs a sampling variance, not a population variance as above.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;var(1:10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 9.166667&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning Sampling Distribution in R Programming</title>
+      <link>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
+      <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.&lt;/p&gt;
+&lt;p&gt;In this pseudo experiment, there are only ten observations we will collect in every sample. They are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Accodring to the design of the experiment, a sample will have one observation to countless observations. I assume the distrubtions are accumulated from 100 samples of 1 observation, 9 observations, ,16 observations, 25 observations, and 36 observations. Every sample will be collapsed to a average value and become the components of sampling distribution. I use &lt;code&gt;ggplot2&lt;/code&gt; to draw the five sampling distributions. Look at what they are look like.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suppressPackageStartupMessages({
+  library(ggplot2)
+  library(xtable)
+  })
+
+set.seed(1)
+OBV &amp;lt;- 1:10
+Dist1 &amp;lt;- NULL
+Dist9 &amp;lt;- NULL
+Dist16 &amp;lt;- NULL
+Dist25 &amp;lt;- NULL
+Dist36 &amp;lt;- NULL
+count = 100
+while(count &amp;gt; 0){Dist1 &amp;lt;- c(Dist1,sample(OBV, 1, replace = TRUE)); count &amp;lt;- count - 1}
+count = 100
+while(count &amp;gt; 0){Dist9 &amp;lt;- c(Dist9,mean(sample(OBV, 9,replace = TRUE) ) ); count &amp;lt;- count - 1}
+count = 100
+while(count &amp;gt; 0){Dist16 &amp;lt;- c(Dist16,mean(sample(OBV, 16,replace = TRUE) ) ); count &amp;lt;- count - 1}
+count = 100
+while(count &amp;gt; 0){Dist25 &amp;lt;- c(Dist25,mean(sample(OBV, 25,replace = TRUE) ) ); count &amp;lt;- count - 1}
+count = 100
+while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
+Dist.df &amp;lt;- data.frame(Size = factor(rep(c(1,9,16,25,36), each=100)), Sample_Means = c(Dist1, Dist9, Dist16, Dist25, Dist36) )
+ggplot(Dist.df, aes(Sample_Means, fill = Size)) + geom_histogram() + facet_grid(. ~ Size)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://scchen.com/en/post/2016-03-30-learning-sampling-distribution-in-r-programming_files/figure-html/Sampling-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We call the set of observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 &lt;strong&gt;population&lt;/strong&gt; in any circumstance we conduct this experiment. This population has the average 5.5 and the variance/standard deviation 8.25/2.87. With the increase of sample size, you find more and more samples collapsed to the average of population. The variation of each sample distribution decreases with the increasing of sample size as well. The following table illustrate the average and variance/standard deviation of each sampling distribution.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;center&#34;&gt;Sample Size&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Average&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Variance&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Standard Deviation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;6.06&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;8.14&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2.85&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5.62&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.91&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.96&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;16&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5.6&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.58&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.76&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;25&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5.54&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.43&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.66&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;36&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5.51&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.27&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.52&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There are three findings in this simulation. First, the average of every sample is as equal as the average of population. Second, the variance of every sample is close to the divide of population variance by the sample size. Third, the standard deviation of every sample is close to the divide of population standard deviation by the square of sample size. These facts matches &lt;a href=&#34;https://en.wikipedia.org/wiki/Central_limit_theorem&#34;&gt;Central limit theorem&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

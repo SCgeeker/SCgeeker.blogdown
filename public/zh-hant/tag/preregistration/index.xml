@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>preregistration | 陳紹慶的個人網站</title>
+    <link>https://scchen.com/zh-hant/tag/preregistration/</link>
+      <atom:link href="https://scchen.com/zh-hant/tag/preregistration/index.xml" rel="self" type="application/rss+xml" />
+    <description>preregistration</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Tue, 19 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>preregistration</title>
+      <link>https://scchen.com/zh-hant/tag/preregistration/</link>
+    </image>
+    
+    <item>
+      <title>三個經典記憶實驗重現研究教程</title>
+      <link>https://scchen.com/zh-hant/post/classical-memory-studies/</link>
+      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/classical-memory-studies/</guid>
+      <description>
+
+
+&lt;div id=&#34;以再現研究教學的必要性&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;以再現研究教學的必要性&lt;/h2&gt;
+&lt;p&gt;多數原創研究難以再現的問題已由許多大型專案報告揭露，例如&lt;a href=&#34;http://www.sciencemag.org/content/349/6251/aac4716&#34;&gt;重製100件心理學研究&lt;/a&gt;、&lt;a href=&#34;http://pps.sagepub.com/content/9/6/666&#34;&gt;複數實驗室的註冊再現研究&lt;/a&gt;等。如何向大學生傳達再現研究的經驗與重要性，也是推動開放科學的重點。第一線的教學者藉此重新省思該如何介紹何謂科學，我所參考的國外公開教材與部落格，有許多推動開放科學的國外老師都重新閱讀科學哲學家卡爾．波普爾(Karl Popper)於1959年出版的&lt;strong&gt;科學發現的邏輯(The Logic of Scientific Discovery)&lt;/strong&gt;，引述波普爾對於研究再現是科學基礎的說法。以下這段關於科學發現再現的說法，出自查汝強與邱仁宗的&lt;a href=&#34;http://www.angelibrary.com/philosophy/dale/sciencelogic/001.htm&#34;&gt;中譯版&lt;/a&gt;：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;只有當某些事件能按照定律或規律性重複發生時，像在可
+重複的實驗裡的情況那樣，我們的觀察在原則上才能被任何人所檢驗。在我們重複
+和檢驗它們之前，我們甚至對自己的觀察也不大認真對待，也不承認它們是科學的
+觀察。只有根據這些重複，我們才確信我們處理的並不僅是一個孤立的「巧合」，
+而是原則上可以主體間相互檢驗的事件，因為它們有規律性和可重複性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的實踐方式是使用有完整公開資料的心理學實驗專案做為教材，引導學生運用接近原始專案的方式，設計與執行實驗專案，親自體會經典實驗揭示的&lt;strong&gt;規律性和可重複性&lt;/strong&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;專案介紹&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案介紹&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://rolfzwaan.blogspot.com/2017/05/sometimes-you-can-step-into-same-river.html&#34;&gt;Rolf Zwaan&lt;/a&gt;與同事從2014年起設計九套認知心理學實驗的線上版本，分別來自知覺、記憶與語言三個領域。經&lt;a href=&#34;https://www.mturk.com/&#34;&gt;Amazon Mechanical Turk&lt;/a&gt;徵求參與者登錄其中一套實驗，並間隔數天參與相同程序的實驗。這九套實驗的第一次參與結果與第二次參與結果的效果量有高度正相關，顯示這九套實驗能成為認知心理學的知識基石，是因為實驗結果的規律性與重複性。這一系列結果給希望提出能做為知識奠基的原始研究，可以邀請同一批參與者重新參與，確認研究結果的可重複性。&lt;/p&gt;
+&lt;p&gt;九套實驗的研究材料與實驗資料都&lt;a href=&#34;https://osf.io/ghv6m/&#34;&gt;完整公開&lt;/a&gt;，任何人都能下載檢驗分析結果與使用程序腳本執行實驗。Zwaan設計的專案使用次數主義統計與貝氏統計進行分析，能讓學生在收集資料的過程，學習&lt;a href=&#34;https://link.springer.com/article/10.3758/s13423-017-1230-y&#34;&gt;根據證據強度評估可結束實驗的時機&lt;/a&gt;。更重要的是九套實驗執行前已有&lt;strong&gt;預先註冊&lt;/strong&gt;，是在實驗心理學導入註冊研究的最佳範本。&lt;/p&gt;
+&lt;p&gt;這學期讓同學自行選擇三套記憶實驗演練，三項專案都已經完成，由於資源有限，收集的資料不多，所有專案只邀請參與者進行一次實驗，卻都得到有最低證據強度的研究結果。藉此網誌分享經驗，提供有意設計中文開放科學教材的師生，進行改造與創作。&lt;/p&gt;
+&lt;div id=&#34;序列效應&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;序列效應&lt;/h3&gt;
+&lt;p&gt;Murdock (1962) 報告的自由回憶實驗顯示，人類連續背誦一系列項目，接著測試表現最好的是位置排序最前面(初始效應)與最後面(新近效應)的項目。這套實驗請參與者記憶一系列項目後，在測驗視窗限時輸入記得的項目。這項實驗對多數心理系學生來說並不陌生，我們把Zwaan版的刺激詞翻成中文，收集7位有效參與者就得到有效結果，實驗材料與分析報告可參考&lt;a href=&#34;https://osf.io/t3pxm/&#34;&gt;專案OSF&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scchen.com/images/Serial_position.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;間隔效應&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;間隔效應&lt;/h3&gt;
+&lt;p&gt;同樣是學習一系列項目，應該要密集學習還是間隔學習，才有最好的學習效果？其中顯現的記憶特性是什麼？是1970年代之後記憶心理學者熱衷探討的主題。Greene(1989)提出重覆學習-自由回憶作業，測試導致間隔效應的假設。重覆學習的項目有連續兩個嘗試的密集學習項目，以及間隔至少一個嘗試再重覆學習的項目。Greene發現後者的回憶正率顯著高於前者，Zwaan版的線上作業也顯示穩定的差異效果，我們把學習與測試詞改成詞頻分佈接近的中文詞彙，&lt;a href=&#34;https://osf.io/nma6w/&#34;&gt;有效的14位參與者資料也得到可靠的結果&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;假記憶drm&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;假記憶(DRM)&lt;/h3&gt;
+&lt;p&gt;在序列效應研究蓬勃發展1960年代，就有心理學者發現有些參與者會在自由回憶作業報告並非學習項目，卻與學習項目有關的詞彙。直到1995年，Roediger與McDermott終於提出能穩定重現實驗結果的程序。因為改良自Desse(1959)的程序，這套假記憶實驗程序又稱為DRM作業。Zwaan版的DRM作業學習詞根據1995年的設計原則，擴充挑選32套項目之間有強度聯想關係的列表，&lt;a href=&#34;https://osf.io/uh2wd/&#34;&gt;我們的專案&lt;/a&gt;取其中一半的列表做本土化翻譯，收集6位有效參與者資料，就發現有關誘導詞誤答率高於無關誘導詞誤答率。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;使用建議&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;使用建議&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;自由實驗軟體學習素材
+所有專案都是在實驗室之內的單機操作，程序腳本以&lt;a href=&#34;http://osdoc.cogsci.nl/&#34;&gt;自由實驗軟體OpenSesame&lt;/a&gt;準備及執行，每項專案的刺激項目都存於腳本之內。有興趣的讀者如果不熟悉OpenSesame，可以從微調刺激項目，配合OpenSesame官方的&lt;a href=&#34;http://osdoc.cogsci.nl/3.2/tutorials/beginner/&#34;&gt;教程&lt;/a&gt;，學習如何使用專案素材執行實驗。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;預先註冊演練範本
+我們的專案以創用CC(姓名標示─非商業性)公開授權，執行一項專案之前，都有預先註冊&lt;strong&gt;假設&lt;/strong&gt;與&lt;strong&gt;方法&lt;/strong&gt;區塊，兩個區塊是一般研究計畫書必備內容，加上事先準備紀錄及程序腳本。想演練預先註冊的老師同學，可以參考專案內容，提出自行準備的假設與方法進行預先註冊，再照表操作，按步完成最終報告。希望參考操作的各界人士能公開分享你們的專案成果，我們很有興趣了解在不同學校場域執行的研究成果，也可以檢驗這些經典實驗結果在華文地區的普遍性。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;統計分析教材
+所有專案延續Zwaan版的分析方法，都有計算關鍵效果的貝氏因子，以及關鍵效果與刺激版本的二因子混合變異數分析。有興趣的老師可以整合Rolf Zwaan與我們的專案資料，作為如何事前決定樣本數，或者了解如何使用貝氏統計評估當前資料的證據強度，為註冊研究計畫設定有合理彈性的資料收集計畫。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>物件方向效應跨語言研究經驗分享(一)：心理科學加速器合作專案</title>
+      <link>https://scchen.com/zh-hant/post/orientation-language-part01/</link>
+      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/orientation-language-part01/</guid>
+      <description>
+
+
+&lt;div id=&#34;心理科學加速器是什麼&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;心理科學加速器是什麼？&lt;/h1&gt;
+&lt;p&gt;心理科學存在高比例的偽陽性結果(false positive results)的事實&lt;span class=&#34;citation&#34;&gt;(Fanelli 2010; Ioannidis 2005)&lt;/span&gt;，促成全球心理學者認清要評估研究發現的普遍性與真實性，需要累積大量的再現資料。最好的作法是組織不同地區的實驗室同時進行相同程序的實驗，以整合分析方法解析結果。2000年之後已經出現以多個機構長期合作收集資料的專案&lt;span class=&#34;citation&#34;&gt;(Reifman and Grahe 2016)&lt;/span&gt;，以及課題導向的短期合作專案&lt;span class=&#34;citation&#34;&gt;(Klein et al., n.d.; Open Science Collaboration 2015; Ebersole et al. 2016; Frank 2016; Reifman and Grahe 2016)&lt;/span&gt;。兩種合作模式關注的課題圍繞核心學者關心的方向，或多數學者公認的重要題目。尚有許多獨立研究者規劃長期經營，有理論潛力但是出版成果還不足以判斷研究發現的普遍性。2016年第一屆&lt;a href=&#34;http://improvingpsych.org/&#34;&gt;SIPS研討會&lt;/a&gt;，與會學者提出提供獨立研究徵求合作者，合作重現最新研究成果的媒合平台&lt;a href=&#34;https://osf.io/view/StudySwap/&#34;&gt;Study Swap&lt;/a&gt;，方便心理學原創研究，能透過語言文化條件相同的合作實驗室，迅速累積再現成果。&lt;/p&gt;
+&lt;p&gt;Study Swap平台主持人&lt;a href=&#34;https://christopherchartier.com/&#34;&gt;Christopher Chartier&lt;/a&gt;於2017年8月26日，在個人部落格發佈建立&lt;a href=&#34;https://christopherchartier.com/2017/08/26/building-a-cern-for-psychological-science/&#34;&gt;心理科學加速器的第一份公開文章&lt;/a&gt;，招集有共同理念的各國研究者組織&lt;a href=&#34;https://psysciacc.org/people/&#34;&gt;十個運作與諮詢委員會&lt;/a&gt;，將Study Swap的運作模式推廣至全球心理科學研究。心理科學加速器的初期報導已在2017年11月翻譯為&lt;a href=&#34;http://www.openedscience.org/?p=71&#34;&gt;中文&lt;/a&gt;，發起建立的第一天就邀請90多位各國學者一起發想及撰寫的&lt;a href=&#34;https://psyarxiv.com/785qu/&#34;&gt;說明&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Moshontz et al. 2018)&lt;/span&gt;剛於4月上旬正式投稿期刊Advances in Methods and Practices in Psychological Science (AMPPS)，五月至六月期間進行的第二次計畫徵件，每項計畫將由十位參與研究者以公開評審的方式，評估適合加盟實驗室同步進行的研究計畫。這篇文章整理提出計畫與參與運作的經驗，以及至目前為止的準備過程，給有興趣提出計畫的先進及後輩一些參考。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;研究構想提出過程&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;研究構想提出過程&lt;/h1&gt;
+&lt;p&gt;Christopher Chartier在召集創始成員時，同時開啟第一次計畫徵件。當時我剛將與Rolf Zwaan及Bjorn De Koning合作的物件方向研究計畫書送第一階段評審，這個計畫源自2001年Stanfield與Zwaan運用句圖判別作業發現的&lt;strong&gt;物件方向反應優勢&lt;/strong&gt;&lt;span class=&#34;citation&#34;&gt;(Stanfield and Zwaan 2001)&lt;/span&gt;。這項研究發現被許多研究者認為與Glenberg與Kaschak&lt;span class=&#34;citation&#34;&gt;(Glenberg and Kaschak 2002)&lt;/span&gt;提出的動作相容效應(Action-compatibility effect)，可用來檢驗體現知理論對語言理解的預測。然而合作過程中我理解物件方向反應優勢的原始構想是根據閱讀者讀過句子後，心智會模擬物件呈現形象的體現認知理論&lt;span class=&#34;citation&#34;&gt;(Barsalou 1999)&lt;/span&gt;，動作的心智模擬並未在可預測的因素之列。而且物件方向反應優勢是同類型實驗結果最微弱的系列，不過目前只有英語及荷語的研究結果&lt;span class=&#34;citation&#34;&gt;(Zwaan and Pecher 2012)&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;有沒有語言能發現比英語更明顯的物件方向反應優勢，成為我提出研究構想的重要動機。第一次徵件包括我的計畫有8件，經由最初的領導小組(Leadership Team)與研究計畫遴選委員會(Study Selection Committee)成員合作評審。我本來只是抱持嘗試的心態姑且試之，沒想到最後被選為三件研究案之一，讀者可參考我根據評審反應修改的&lt;a href=&#34;https://docs.google.com/document/d/1VntzhDXmIEVG0RtF3kOn_liLTGxk7Ovzy-0ImrDFMOU/edit?usp=sharing&#34;&gt;構想書&lt;/a&gt;，&lt;a href=&#34;http://scchen.com/en/project/mental-simulation/&#34;&gt;我的網頁&lt;/a&gt;與&lt;a href=&#34;https://psysciacc.wordpress.com/2018/01/24/new-study-accepted-the-object-orientation-effect/&#34;&gt;心理科學加速器部落格&lt;/a&gt;都有這項計畫的介紹。這項研究案與其他兩項的不同處有這是此次唯一的認知心理學研究，唯一需要每個實驗室安裝指定實驗軟體的實驗，以及使用&lt;strong&gt;貝氏統計&lt;/strong&gt;隨時分析實驗結果，讓每個實驗室自行能調節實際的研究參與者人數。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;前置準備經驗&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;前置準備經驗&lt;/h1&gt;
+&lt;p&gt;接受構想書之後，就是開始準備讓專業期刊進行審查的註冊研究計畫書。提出構想的研究者如果是獨立研究者，Christopher Chartier會媒合一位參與運作小組或委員會的成員，與主要研究者一起合作規畫與撰寫計畫書。像是我的與另一項研究案&lt;a href=&#34;https://psysciacc.wordpress.com/2017/12/05/accepted-for-2018-gendered-social-category-representations/&#34;&gt;The Gendered Nature of Prejudice&lt;/a&gt;，都有與一位不同機構甚至不同國家的研究者遠端合作。心理科學加速器也希望藉此機會嘗試同時執行兩種不同性質的研究，加盟實驗室的執行狀況，還有資料的可用性。&lt;/p&gt;
+&lt;p&gt;因為有國外合作者的幫忙，很快就選定要投稿的期刊。撰寫計畫書時了解到原始實驗的刺激材料，對於非英語系國家或長期生活於美國社會的參與者來說，不見得全部都熟悉。所以我們規劃一套物件熟悉度評量表，將請聯盟實驗室的成員協助評估，做為正式實驗調整不同語言刺激項目的參考。&lt;/p&gt;
+&lt;p&gt;由於有兩個不同性質的研究可能同時進行，為了評估遷移效應(carry-over effect)對兩件研究結果的影響，現在正在五間美國的實驗室進行預先試驗(pilot study)。我還有一個目的是建立任何實驗室都能操作的實驗結果分析方法，藉著目前已收集到的資料，我已經完成分析方法的程序說明與範例。等預先試驗資料收集且分析完成，計畫書即可正式投稿。至於接受合作實驗室的報名，最早可能會在正式投稿之前，因為現在有部分期刊要求正式投稿時，要附上合作實驗室的倫理審查證明。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;給有意提案者的建議&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;給有意提案者的建議&lt;/h1&gt;
+&lt;p&gt;因為第一次的經驗，新一波計畫徵件的評審預計將更有系統的挑選評審者。登記參與心理科學加速器的實驗室主持人，都有機會參與評審，但是為了讓委員會能找到適當的評審者，建議已登記的研究者在&lt;a href=&#34;https://docs.google.com/spreadsheets/d/1z6nIPLtDs26GnrdKz_WwJnuN5aw8Vi3CGLra0L-HUGk/edit?usp=sharing&#34;&gt;實驗室現況登記表&lt;/a&gt;，登錄主持人專長資料。觀察他人的計畫構想，有助思考自已想探索的問題，需要全世界實驗室一起收集資料的計畫。&lt;/p&gt;
+&lt;p&gt;如果你目前不是有正職工作的獨立研究者，你還是可以提出計畫，也可以向Christopher Chartier自我推薦參與某個委員會的運作，只要你備齊個人履歷與說明能幫助目標委員會運作的理由，領導小組同意就能加入。除了是計畫評審候補，也有機會與被接受的計畫主持人合作，增加研究經歷。&lt;/p&gt;
+&lt;p&gt;今後計畫的可執行性是必要考量條件，不需要加盟實驗室付出增添軟硬體的額外成本，也能執行的計畫較容易獲得青睞。像是第一次接受的另外兩項研究，都是網頁實驗，資料直接由計畫主持人管理。計畫有沒有讓全球實驗室合作參與價值，也會是評審的重點，只是價值的判斷可能將隨著運作經驗的累積，變得越來越細緻複雜。&lt;/p&gt;
+&lt;p&gt;所有的計畫都必須投稿期刊，取得第一階段註冊研究計畫接受才能正式開始研究。因此有信心取得目標期刊接受的計畫，也會是得到PSA選案委員接受的重點。這也代表加盟實驗室想用運用註冊研究或開放科學原則經營團隊，可以透過提交計畫或參與執行學習。例如我的計畫需要合作實驗室預先註冊逐次分析的樣本數。&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-BarsalouPerceptualsymbolsystems1999&#34;&gt;
+&lt;p&gt;Barsalou, Lawrence W. 1999. “Perceptual Symbol Systems.” &lt;em&gt;Behavioral and Brain Sciences&lt;/em&gt; 22: 577–660. &lt;a href=&#34;https://doi.org/10.1017/S0140525X99002149&#34;&gt;https://doi.org/10.1017/S0140525X99002149&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-EbersoleManyLabsEvaluating2016&#34;&gt;
+&lt;p&gt;Ebersole, Charles R., Olivia E. Atherton, Aimee L. Belanger, Hayley M. Skulborstad, Jill M. Allen, Jonathan B. Banks, Erica Baranski, et al. 2016. “Many Labs 3: Evaluating Participant Pool Quality Across the Academic Semester via Replication.” &lt;em&gt;Journal of Experimental Social Psychology&lt;/em&gt;, Special issue: Confirmatory, 67 (November): 68–82. &lt;a href=&#34;https://doi.org/10.1016/j.jesp.2015.10.012&#34;&gt;https://doi.org/10.1016/j.jesp.2015.10.012&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-FanelliPositiveResultsIncrease2010&#34;&gt;
+&lt;p&gt;Fanelli, Daniele. 2010. “‘Positive’ Results Increase down the Hierarchy of the Sciences.” &lt;em&gt;PLOS ONE&lt;/em&gt; 5 (4): e10068. &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0010068&#34;&gt;https://doi.org/10.1371/journal.pone.0010068&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Frankcollaborativeapproachinfant2016&#34;&gt;
+&lt;p&gt;Frank, Michael. 2016. “A Collaborative Approach to Infant Research: Promoting Reproducibility, Best Practices, and Theory-Building.” PsyArXiv. &lt;a href=&#34;https://doi.org/10.17605/OSF.IO/27B43&#34;&gt;https://doi.org/10.17605/OSF.IO/27B43&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-GlenbergGroundinglanguageaction2002&#34;&gt;
+&lt;p&gt;Glenberg, ArthurM, and MichaelP Kaschak. 2002. “Grounding Language in Action.” &lt;em&gt;Psychonomic Bulletin &amp;amp; Review&lt;/em&gt; 9 (September): 558–65. &lt;a href=&#34;https://doi.org/10.3758/bf03196313&#34;&gt;https://doi.org/10.3758/bf03196313&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ioannidis_why_2005&#34;&gt;
+&lt;p&gt;Ioannidis, John P. A. 2005. “Why Most Published Research Findings Are False.” &lt;em&gt;PLOS Med&lt;/em&gt; 2 (8): e124. &lt;a href=&#34;https://doi.org/10.1371/journal.pmed.0020124&#34;&gt;https://doi.org/10.1371/journal.pmed.0020124&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-KleinInvestigatingVariationReplicability2014&#34;&gt;
+&lt;p&gt;Klein, Richard A., Kate A. Ratliff, Michelangelo Vianello, Reginald B. Adams Jr, Štěpán Bahnı́k, Michael J. Bernstein, Konrad Bocian, et al. n.d. “Investigating Variation in Replicability.” &lt;em&gt;Social Psychology&lt;/em&gt; 45: 142–52. &lt;a href=&#34;https://doi.org/10.1027/1864-9335/a000178&#34;&gt;https://doi.org/10.1027/1864-9335/a000178&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-MoshontzPsychologicalScienceAccelerator2018&#34;&gt;
+&lt;p&gt;Moshontz, Hannah, Lorne Campbell, Charles R. Ebersole, Hans IJzerman, Heather L. Urry, Patrick S. Forscher, Jon Grahe, et al. 2018. “The Psychological Science Accelerator: Advancing Psychology Through a Distributed Collaborative Network.” &lt;em&gt;PsyArXiv&lt;/em&gt;, April. &lt;a href=&#34;https://doi.org/10.17605/OSF.IO/785QU&#34;&gt;https://doi.org/10.17605/OSF.IO/785QU&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-OpenScienceCollaborationEstimatingreproducibilitypsychological2015&#34;&gt;
+&lt;p&gt;Open Science Collaboration. 2015. “Estimating the Reproducibility of Psychological Science.” &lt;em&gt;Science&lt;/em&gt; 349 (6251): aac4716. &lt;a href=&#34;https://doi.org/10.1126/science.aac4716&#34;&gt;https://doi.org/10.1126/science.aac4716&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ReifmanIntroductionSpecialIssue2016&#34;&gt;
+&lt;p&gt;Reifman, Alan, and Jon E. Grahe. 2016. “Introduction to the Special Issue of Emerging Adulthood.” &lt;em&gt;Emerging Adulthood&lt;/em&gt; 4 (3): 135–41. &lt;a href=&#34;https://doi.org/10.1177/2167696815588022&#34;&gt;https://doi.org/10.1177/2167696815588022&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-stanfield_effect_2001&#34;&gt;
+&lt;p&gt;Stanfield, R. A., and R. A. Zwaan. 2001. “The Effect of Implied Orientation Derived from Verbal Context on Picture Recognition.” &lt;em&gt;Psychological Science&lt;/em&gt; 12 (2): 153–56. &lt;a href=&#34;https://doi.org/10.1111/1467-9280.00326&#34;&gt;https://doi.org/10.1111/1467-9280.00326&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ZwaanRevisitingMentalSimulation2012&#34;&gt;
+&lt;p&gt;Zwaan, Rolf A., and Diane Pecher. 2012. “Revisiting Mental Simulation in Language Comprehension: Six Replication Attempts.” &lt;em&gt;PLoS ONE&lt;/em&gt; 7: e51382. &lt;a href=&#34;https://doi.org/10.1371/journal.pone.0051382&#34;&gt;https://doi.org/10.1371/journal.pone.0051382&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

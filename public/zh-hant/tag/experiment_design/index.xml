@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experiment_Design | 陳紹慶的個人網站</title>
+    <link>https://scchen.com/zh-hant/tag/experiment_design/</link>
+      <atom:link href="https://scchen.com/zh-hant/tag/experiment_design/index.xml" rel="self" type="application/rss+xml" />
+    <description>Experiment_Design</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Experiment_Design</title>
+      <link>https://scchen.com/zh-hant/tag/experiment_design/</link>
+    </image>
+    
+    <item>
+      <title>運用Gorilla與Prolific進行線上實驗的簡單示範</title>
+      <link>https://scchen.com/zh-hant/post/gorilla_prolific_online/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/gorilla_prolific_online/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6&#34;&gt;可獲得啓動點數的Gorilla註冊網址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.prolific.co/?ref=XPQ3NN2Y&#34;&gt;可獲得啓動資金的Prolific註冊網址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;這三年與荷蘭學者Bjorn de Korning 與 Rolf Zwaan 合作的&lt;a href=&#34;https://psyarxiv.com/a3vwc/&#34;&gt;註冊研究專案&lt;/a&gt;終於被&lt;a href=&#34;https://us.hogrefe.com/products/journals/exppsy&#34;&gt;Experimental Psychology&lt;/a&gt;正式接受。這項專案達成了幾件個人學術創舉，其中之一是透過網路收集資料的線上實驗。我們的發表報告採用透明的研究操作，即公開研究材料、原始資料、以及統計腳本。這項專案運用線上實驗平台&lt;a href=&#34;https://gorilla.sc/&#34;&gt;Gorilla&lt;/a&gt;設計研究材料及執行程序，以及透過行為研究協作平台&lt;a href=&#34;https://www.prolific.ac/&#34;&gt;Prolific&lt;/a&gt;等途徑招募參與者。運用線上平台進行實驗研究，對於所屬機構較難獲得大量樣本的研究者，是從事基礎研究課題的可行途徑。為了讓有興趣的朋友能快速了解，我錄製七段&lt;a href=&#34;https://www.youtube.com/playlist?list=PLSxoRcsvTAqA7oJrQYdVnih1_rnS_Gl4n&#34;&gt;公開示範影片&lt;/a&gt;，並在這個網誌介紹相關資訊。&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;註冊Gorrila平台&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Gorrila是2016年由&lt;a href=&#34;http://cauldron.sc/welcome&#34;&gt;Cauldron&lt;/a&gt;公司推出的雲端產品，因為創辦人有實驗心理學研究背景，Gorrila的開發以服務行為科學研究者的需求為主，除了基本的多媒體呈現及按鍵反應時間紀錄，目前也提供語音紀錄與眼動軌跡紀錄等套件，讓研究者能將在傳統實驗室進行的實驗，讓參與者透過網路在熟悉的生活空間貢獻資料。&lt;/p&gt;
+&lt;p&gt;註冊Gorrila不需付費，因為這家公司的收費來自使用平台的研究者執行線上實驗的點數費。為了鼓勵研究者多加運用，推出呼朋引伴的點數回饋。有興趣使用的讀者可使用&lt;a href=&#34;https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6&#34;&gt;可獲得啓動點數的Gorilla註冊網址&lt;/a&gt;，在學校就學或服務的朋友請以機構電子郵件註冊，購買點數的費用有折扣。註冊成功後可參考影片自行瀏覽。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/HSSAwcb3J4o&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;專案元素&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用者只要依計畫流程將&lt;a href=&#34;https://gorilla.sc/support/reference/faq/questionnaires&#34;&gt;線上測驗(Questionnaires)&lt;/a&gt;及&lt;a href=&#34;https://gorilla.sc/support/reference/faq/task-builder&#34;&gt;線上作業(Tasks)&lt;/a&gt;串連為&lt;a href=&#34;https://gorilla.sc/support/reference/faq/experiments&#34;&gt;實驗(Experiments)&lt;/a&gt;，包裹在專案(Project)之人內。三項元素都有專屬編輯器，除了直接運用Gorilla提供的元件設計需要的測驗、作業及實驗，使用者可運用javascript設計需要的實驗元件。一件專案可包含複數元素，只有實驗是可正式上線收集資料的元素。&lt;/p&gt;
+&lt;p&gt;註冊使用者能協同合作編輯一件專案，創建專案的使用者只要透過Settings -&amp;gt; Collaborate -&amp;gt; 加入註冊使用者的e-mail。專案也能建立複本，只要運用Settings -&amp;gt; Clone。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/SDCKy_fys90&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;線上測驗創建與測試示範&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用者除了運用編輯器自行建立與測試線上測驗，也可以由&lt;a href=&#34;https://gorilla.sc/support/samples&#34;&gt;示範資源庫(Samples)&lt;/a&gt;取得官方範本，或由&lt;a href=&#34;https://gorilla.sc/openmaterials/&#34;&gt;開放材料庫(Open Materials)&lt;/a&gt;取得其他使用者公開的測驗腳本。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/h828x0PFn00&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;線上作業程序設計與材料準備示範&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用者除了運用編輯器自行建立與測試線上作業及編輯實驗素材，也可以由&lt;a href=&#34;https://gorilla.sc/support/samples&#34;&gt;示範資源庫(Samples)&lt;/a&gt;取得官方範本及素材，或由&lt;a href=&#34;https://gorilla.sc/openmaterials/&#34;&gt;開放材料庫(Open Materials)&lt;/a&gt;取得其他使用者公開的資源。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/lnK91_rTmCo&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;實驗流程構成示範&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Gorilla實驗流程編輯器是圖像互動介面，使用者可自由調整作業與測驗的執行順序，並可加入流程控制元件實行隨機分派。如果官方元件未提供符合計畫需要的流程控制，使用者可撰寫javascript腳本。使用流程控制元件除了參考&lt;a href=&#34;https://gorilla.sc/support/reference/faq/experiments&#34;&gt;官方範例&lt;/a&gt;，也可從&lt;a href=&#34;https://gorilla.sc/openmaterials/&#34;&gt;開放材料庫(Open Materials)&lt;/a&gt;取得合適的流程。&lt;/p&gt;
+&lt;p&gt;一件專案可依計畫設計多套實驗流程，並能測試流程執行以及收集的資料結果。Gorilla的資料以試算表格式輸出，我建議採用CSB匯出，以利分析的可重製性。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/oJM128pBlHI&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;實驗上線管理&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Gorilla提供多種實驗上線方式，任何上線方式收集一次完整資料，就要消耗一個點數(token)。如果使用者希望收集有代表性的樣本，建議在有過濾參與者條件的第三方平台上線。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/BeRB7rECZDA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Prolific註冊與建立專案&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;接續前一點，有過濾參與者條件的第三方平台最成功的是英語系國家的MTurk與Prolific，這次是透過Prolific收集英語參與者資料。這段影片示範如何在Prolific上線收集資料，也期望拋轉引玉，尋找有膽識的朋友們創建功能類似，以中文人口為主的第三方平台。Prolific註冊免費，按成功樣本收費。與Gorilla一樣要事先儲值，有興趣註冊找參與者的朋友，可透過&lt;a href=&#34;https://www.prolific.co/?ref=XPQ3NN2Y&#34;&gt;可獲得啓動資金的Prolific註冊網址&lt;/a&gt;，註冊帳號獲得第一桶金。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1J6rk7eM9RY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>三個經典記憶實驗重現研究教程</title>
+      <link>https://scchen.com/zh-hant/post/classical-memory-studies/</link>
+      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/classical-memory-studies/</guid>
+      <description>
+
+
+&lt;div id=&#34;以再現研究教學的必要性&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;以再現研究教學的必要性&lt;/h2&gt;
+&lt;p&gt;多數原創研究難以再現的問題已由許多大型專案報告揭露，例如&lt;a href=&#34;http://www.sciencemag.org/content/349/6251/aac4716&#34;&gt;重製100件心理學研究&lt;/a&gt;、&lt;a href=&#34;http://pps.sagepub.com/content/9/6/666&#34;&gt;複數實驗室的註冊再現研究&lt;/a&gt;等。如何向大學生傳達再現研究的經驗與重要性，也是推動開放科學的重點。第一線的教學者藉此重新省思該如何介紹何謂科學，我所參考的國外公開教材與部落格，有許多推動開放科學的國外老師都重新閱讀科學哲學家卡爾．波普爾(Karl Popper)於1959年出版的&lt;strong&gt;科學發現的邏輯(The Logic of Scientific Discovery)&lt;/strong&gt;，引述波普爾對於研究再現是科學基礎的說法。以下這段關於科學發現再現的說法，出自查汝強與邱仁宗的&lt;a href=&#34;http://www.angelibrary.com/philosophy/dale/sciencelogic/001.htm&#34;&gt;中譯版&lt;/a&gt;：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;只有當某些事件能按照定律或規律性重複發生時，像在可
+重複的實驗裡的情況那樣，我們的觀察在原則上才能被任何人所檢驗。在我們重複
+和檢驗它們之前，我們甚至對自己的觀察也不大認真對待，也不承認它們是科學的
+觀察。只有根據這些重複，我們才確信我們處理的並不僅是一個孤立的「巧合」，
+而是原則上可以主體間相互檢驗的事件，因為它們有規律性和可重複性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的實踐方式是使用有完整公開資料的心理學實驗專案做為教材，引導學生運用接近原始專案的方式，設計與執行實驗專案，親自體會經典實驗揭示的&lt;strong&gt;規律性和可重複性&lt;/strong&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;專案介紹&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;專案介紹&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://rolfzwaan.blogspot.com/2017/05/sometimes-you-can-step-into-same-river.html&#34;&gt;Rolf Zwaan&lt;/a&gt;與同事從2014年起設計九套認知心理學實驗的線上版本，分別來自知覺、記憶與語言三個領域。經&lt;a href=&#34;https://www.mturk.com/&#34;&gt;Amazon Mechanical Turk&lt;/a&gt;徵求參與者登錄其中一套實驗，並間隔數天參與相同程序的實驗。這九套實驗的第一次參與結果與第二次參與結果的效果量有高度正相關，顯示這九套實驗能成為認知心理學的知識基石，是因為實驗結果的規律性與重複性。這一系列結果給希望提出能做為知識奠基的原始研究，可以邀請同一批參與者重新參與，確認研究結果的可重複性。&lt;/p&gt;
+&lt;p&gt;九套實驗的研究材料與實驗資料都&lt;a href=&#34;https://osf.io/ghv6m/&#34;&gt;完整公開&lt;/a&gt;，任何人都能下載檢驗分析結果與使用程序腳本執行實驗。Zwaan設計的專案使用次數主義統計與貝氏統計進行分析，能讓學生在收集資料的過程，學習&lt;a href=&#34;https://link.springer.com/article/10.3758/s13423-017-1230-y&#34;&gt;根據證據強度評估可結束實驗的時機&lt;/a&gt;。更重要的是九套實驗執行前已有&lt;strong&gt;預先註冊&lt;/strong&gt;，是在實驗心理學導入註冊研究的最佳範本。&lt;/p&gt;
+&lt;p&gt;這學期讓同學自行選擇三套記憶實驗演練，三項專案都已經完成，由於資源有限，收集的資料不多，所有專案只邀請參與者進行一次實驗，卻都得到有最低證據強度的研究結果。藉此網誌分享經驗，提供有意設計中文開放科學教材的師生，進行改造與創作。&lt;/p&gt;
+&lt;div id=&#34;序列效應&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;序列效應&lt;/h3&gt;
+&lt;p&gt;Murdock (1962) 報告的自由回憶實驗顯示，人類連續背誦一系列項目，接著測試表現最好的是位置排序最前面(初始效應)與最後面(新近效應)的項目。這套實驗請參與者記憶一系列項目後，在測驗視窗限時輸入記得的項目。這項實驗對多數心理系學生來說並不陌生，我們把Zwaan版的刺激詞翻成中文，收集7位有效參與者就得到有效結果，實驗材料與分析報告可參考&lt;a href=&#34;https://osf.io/t3pxm/&#34;&gt;專案OSF&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scchen.com/images/Serial_position.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;間隔效應&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;間隔效應&lt;/h3&gt;
+&lt;p&gt;同樣是學習一系列項目，應該要密集學習還是間隔學習，才有最好的學習效果？其中顯現的記憶特性是什麼？是1970年代之後記憶心理學者熱衷探討的主題。Greene(1989)提出重覆學習-自由回憶作業，測試導致間隔效應的假設。重覆學習的項目有連續兩個嘗試的密集學習項目，以及間隔至少一個嘗試再重覆學習的項目。Greene發現後者的回憶正率顯著高於前者，Zwaan版的線上作業也顯示穩定的差異效果，我們把學習與測試詞改成詞頻分佈接近的中文詞彙，&lt;a href=&#34;https://osf.io/nma6w/&#34;&gt;有效的14位參與者資料也得到可靠的結果&lt;/a&gt;。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;假記憶drm&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;假記憶(DRM)&lt;/h3&gt;
+&lt;p&gt;在序列效應研究蓬勃發展1960年代，就有心理學者發現有些參與者會在自由回憶作業報告並非學習項目，卻與學習項目有關的詞彙。直到1995年，Roediger與McDermott終於提出能穩定重現實驗結果的程序。因為改良自Desse(1959)的程序，這套假記憶實驗程序又稱為DRM作業。Zwaan版的DRM作業學習詞根據1995年的設計原則，擴充挑選32套項目之間有強度聯想關係的列表，&lt;a href=&#34;https://osf.io/uh2wd/&#34;&gt;我們的專案&lt;/a&gt;取其中一半的列表做本土化翻譯，收集6位有效參與者資料，就發現有關誘導詞誤答率高於無關誘導詞誤答率。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;使用建議&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;使用建議&lt;/h2&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;自由實驗軟體學習素材
+所有專案都是在實驗室之內的單機操作，程序腳本以&lt;a href=&#34;http://osdoc.cogsci.nl/&#34;&gt;自由實驗軟體OpenSesame&lt;/a&gt;準備及執行，每項專案的刺激項目都存於腳本之內。有興趣的讀者如果不熟悉OpenSesame，可以從微調刺激項目，配合OpenSesame官方的&lt;a href=&#34;http://osdoc.cogsci.nl/3.2/tutorials/beginner/&#34;&gt;教程&lt;/a&gt;，學習如何使用專案素材執行實驗。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;預先註冊演練範本
+我們的專案以創用CC(姓名標示─非商業性)公開授權，執行一項專案之前，都有預先註冊&lt;strong&gt;假設&lt;/strong&gt;與&lt;strong&gt;方法&lt;/strong&gt;區塊，兩個區塊是一般研究計畫書必備內容，加上事先準備紀錄及程序腳本。想演練預先註冊的老師同學，可以參考專案內容，提出自行準備的假設與方法進行預先註冊，再照表操作，按步完成最終報告。希望參考操作的各界人士能公開分享你們的專案成果，我們很有興趣了解在不同學校場域執行的研究成果，也可以檢驗這些經典實驗結果在華文地區的普遍性。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;統計分析教材
+所有專案延續Zwaan版的分析方法，都有計算關鍵效果的貝氏因子，以及關鍵效果與刺激版本的二因子混合變異數分析。有興趣的老師可以整合Rolf Zwaan與我們的專案資料，作為如何事前決定樣本數，或者了解如何使用貝氏統計評估當前資料的證據強度，為註冊研究計畫設定有合理彈性的資料收集計畫。&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

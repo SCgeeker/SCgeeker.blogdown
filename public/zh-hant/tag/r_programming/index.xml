@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R_programming | 陳紹慶的個人網站</title>
+    <link>https://scchen.com/zh-hant/tag/r_programming/</link>
+      <atom:link href="https://scchen.com/zh-hant/tag/r_programming/index.xml" rel="self" type="application/rss+xml" />
+    <description>R_programming</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Thu, 11 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>R_programming</title>
+      <link>https://scchen.com/zh-hant/tag/r_programming/</link>
+    </image>
+    
+    <item>
+      <title>`bookdownplus`使用心得</title>
+      <link>https://scchen.com/zh-hant/post/use-bookdownplus/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/use-bookdownplus/</guid>
+      <description>
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;學會使用RMarkdown寫作之後，我一直在尋找能整合研究與教學寫作的方法與工具。認識&lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Aust and Barth 2017)&lt;/span&gt;之後，讓我開始想像有一天我的電腦只會剩下&lt;a href=&#34;https://www.rstudio.com/&#34;&gt;Rstudio&lt;/a&gt;與&lt;a href=&#34;https://www.zotero.org/&#34;&gt;Zotero&lt;/a&gt;兩種軟體。但是&lt;code&gt;papaja&lt;/code&gt;只適用英文論文寫作，無法滿足經常需要中文寫作的我。接著看到&lt;strong&gt;R忍者大師&lt;/strong&gt;謝益輝開發的&lt;a href=&#34;https://bookdown.org/yihui/bookdown/get-started.html&#34;&gt;&lt;code&gt;bookdown&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Xie 2017)&lt;/span&gt;，讓我開始燃起希望。不過最終版完全是編輯與出版書本的套件，從此多了個好用的編書工具，還不是全方位的學術寫作工具箱。&lt;/p&gt;
+&lt;p&gt;好在正在奧地利因斯布魯克的大學進行博士後研究的&lt;a href=&#34;http://www.pzhao.org/zh/&#34;&gt;趙鵬&lt;/a&gt;有相同的需要，自行改良出進階的&lt;a href=&#34;https://github.com/pzhaonet/bookdownplus&#34;&gt;&lt;code&gt;bookdownplus&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Zhao 2017)&lt;/span&gt;。&lt;code&gt;bookdownplus&lt;/code&gt;提供簡易的指令與多樣模板(templates)。根據說明檔，目前有&lt;code&gt;academic article&lt;/code&gt;, &lt;code&gt;book&lt;/code&gt;, &lt;code&gt;thesis&lt;/code&gt;, &lt;code&gt;poster&lt;/code&gt;, 與 &lt;code&gt;journals&lt;/code&gt;等學術出版格式模板。還有趙博士個人興趣的&lt;code&gt;poem book&lt;/code&gt;與&lt;code&gt;guitar chords&lt;/code&gt;模板。這些模板的成品可參考以下來自官方github的截圖：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_article.jpg&#34; title=&#34;academic article&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_yihui_zh.jpg&#34; title=&#34;book&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_thesis_classic.jpg&#34; title=&#34;thesis&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poem.jpg&#34; title=&#34;poster&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_journal.jpg&#34; title=&#34;journal&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poster.jpg&#34; title=&#34;poem book&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_guitar.jpg&#34; title=&#34;guitar&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;’journal’模板想必會在開放科學界炙手可熱。研究團隊成員可以透過協作，運用’journal’模板紀錄研究過程。研究成果正式出版之後，就能公開讓大眾檢視。&lt;/p&gt;
+&lt;p&gt;如我一樣的繁體中文使用者，必須在完成手冊中的安裝程序之後，安裝一些字型才能正常使用中文套件。根據我在WINDOWS 10的測試，需要安裝的字型檔至少有&lt;code&gt;KaiTi.ttf&lt;/code&gt;, &lt;code&gt;simfang.ttf&lt;/code&gt;, &lt;code&gt;simhei.ttf&lt;/code&gt;, 與&lt;code&gt;simkai.ttf&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;對於’bookdownplus’的未來，我希望能加強多位元編碼的文字支援。如果使用者也能分享自設模板，必定是西方世界之外開放科學社群的好用工具。&lt;/p&gt;
+&lt;div id=&#34;參考文獻&#34; class=&#34;section level3 unnumbered&#34;&gt;
+&lt;h3&gt;參考文獻&lt;/h3&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-AustpapajaReproducibleAPA2017&#34; class=&#34;csl-entry&#34;&gt;
+Aust, Frederik, and Marius Barth. 2017. &lt;em&gt;Papaja: &lt;span&gt;Reproducible APA&lt;/span&gt; Manuscripts with &lt;span&gt;R Markdown&lt;/span&gt;&lt;/em&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-XiebookdownAuthoringBooks2017&#34; class=&#34;csl-entry&#34;&gt;
+Xie, Yihui. 2017. &lt;em&gt;Bookdown: &lt;span&gt;Authoring Books&lt;/span&gt; and &lt;span&gt;Technical Documents&lt;/span&gt; with &lt;span&gt;R Markdown&lt;/span&gt;&lt;/em&gt;.
+&lt;/div&gt;
+&lt;div id=&#34;ref-ZhaobookdownplusTextbook2017&#34; class=&#34;csl-entry&#34;&gt;
+Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;/em&gt;.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

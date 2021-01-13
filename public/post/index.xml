@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Sau-Chin Chen&#39;s website</title>
-    <link>/post/</link>
-      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://scchen.com/post/</link>
+      <atom:link href="https://scchen.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
-      <link>/post/</link>
+      <link>https://scchen.com/post/</link>
     </image>
     
     <item>
       <title>If Emily Rosa met Thomas Bayes ...</title>
-      <link>/post/if-emily-rosa-met-thomas-bayes/</link>
+      <link>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/</link>
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>/post/if-emily-rosa-met-thomas-bayes/</guid>
+      <guid>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients’ body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
@@ -33,7 +33,7 @@
 &lt;p&gt;We would learn many things from Emily’s study till today. First of all the critical finding was the null effect. Today the behavioral scientists share more attention about the null effect than 1998. The other interesting thing is that the prediction could be verified by one point. It is rare to use the one-sample t-test in the psychological studies, but almost every psychologist learned the one-sample t-test before the independent t-test and paired t-test. Latest but may be critical, the idea of little Emily embodied the statistical thinking.&lt;/p&gt;
 &lt;p&gt;Emily’s data were summarized in the reproduced figure as below. They ran the one-sample t-test for the results of two times respectively. The analyses disconfirmed the reality of TT technique, but Emily and her parents might show a kind of researcher flexibility: they used the small samples in their first and follow-up studies. Could we upgrade their results in addition to conduct a registered replication plan?&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Rosa1998Fig2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Rosa1998Fig2-1.png&#34; alt=&#34;Reproductive test results of Rosa et al.(1998)&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Rosa1998Fig2-1.png&#34; alt=&#34;Reproductive test results of Rosa et al.(1998)&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: Reproductive test results of Rosa et al.(1998)
 &lt;/p&gt;
@@ -48,13 +48,13 @@ Data_followup &amp;lt;- c(1,3,3,3,3,4,4,4,4,5,5,7,7)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;It was recorded that only one participant returned 8 correct answers in the initial study. My Bayesian model used the binomial distribution with the arguments of 10 trials and prior probabilities. This model generated the posterior probability distribution given the data of Emily’s initial study. The average of the initial study was 4.67; thus I retrieved the posterior probability distribution of 5 from the Bayesian model.&lt;/p&gt;
 (R-chunk, Bayesian model and posterior histogram of initial)
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Bayes-initial&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-initial-1.png&#34; alt=&#34;Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-initial-1.png&#34; alt=&#34;Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Post-initial&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-initial-1.png&#34; alt=&#34;Posterior probability distribution of initial study result&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-initial-1.png&#34; alt=&#34;Posterior probability distribution of initial study result&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: Posterior probability distribution of initial study result
 &lt;/p&gt;
@@ -62,13 +62,13 @@ Figure 3: Posterior probability distribution of initial study result
 &lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.017&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
 (R-chunk, Bayesian model and posterior histogram of follow-up)
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Bayes-followup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 4: Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Post-followup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-followup-1.png&#34; alt=&#34;Posterior probability distribution of follow-up study result&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;https://scchen.com/en/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-followup-1.png&#34; alt=&#34;Posterior probability distribution of follow-up study result&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 5: Posterior probability distribution of follow-up study result
 &lt;/p&gt;
@@ -79,13 +79,13 @@ Figure 5: Posterior probability distribution of follow-up study result
     
     <item>
       <title>Psychological Science Podcasts</title>
-      <link>/post/ps-podcasts/</link>
+      <link>https://scchen.com/post/ps-podcasts/</link>
       <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>/post/ps-podcasts/</guid>
+      <guid>https://scchen.com/post/ps-podcasts/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;There are psychological scientists have started produce the internet podcasts since 2016. Audience will know the latest news and ideas because many hosts are open science promoters. Until now 8 podcasts are in my pocket. They are the treasure for whom want to know the true faces of scientists. Two days ago I have completed &lt;a href=&#34;http://scchen.com/zh/post/ps-podcasts.zh/&#34;&gt;Chinese version&lt;/a&gt;. I wish the scientific podcasts out of English will be online in coming months.&lt;/p&gt;
@@ -276,13 +276,13 @@ Figure 5: Posterior probability distribution of follow-up study result
     
     <item>
       <title>Use bookdownplus write papers and manage lab logs</title>
-      <link>/post/use-bookdownplus/</link>
+      <link>https://scchen.com/post/use-bookdownplus/</link>
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/post/use-bookdownplus/</guid>
+      <guid>https://scchen.com/post/use-bookdownplus/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met &lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Aust and Barth 2017)&lt;/span&gt; three years ago, it is my dream someday I will use &lt;code&gt;R&lt;/code&gt;&lt;span class=&#34;citation&#34;&gt;(R Development Core Team 2010)&lt;/span&gt; process all my works. &lt;code&gt;papaja&lt;/code&gt; is amazing but it is implemented to English only. Later I found &lt;a href=&#34;https://bookdown.org/yihui/bookdown/get-started.html&#34;&gt;&lt;code&gt;bookdown&lt;/code&gt;&lt;/a&gt; developed by Yihui Xie&lt;span class=&#34;citation&#34;&gt;(Xie 2017)&lt;/span&gt;. &lt;code&gt;bookdown&lt;/code&gt; has the potential to manage Chinese writings. However, this package is primarily developed for writing and publishing books.&lt;/p&gt;
@@ -319,13 +319,13 @@ Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;
     
     <item>
       <title>Manage a blog for the bibliography management optimization</title>
-      <link>/post/2017-05-08-bibliography-management-optimization/</link>
+      <link>https://scchen.com/post/2017-05-08-bibliography-management-optimization/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
-      <guid>/post/2017-05-08-bibliography-management-optimization/</guid>
+      <guid>https://scchen.com/post/2017-05-08-bibliography-management-optimization/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;ul&gt;
@@ -353,13 +353,13 @@ Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;
     
     <item>
       <title>Manage a blog for the bibliography management optimization</title>
-      <link>/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
+      <link>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
-      <guid>/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
+      <guid>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;ul&gt;
@@ -387,13 +387,13 @@ Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;
     
     <item>
       <title>Template of a citable blog post</title>
-      <link>/post/2017-05-05-templete-of-a-citable-blog-post/</link>
+      <link>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
-      <guid>/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
+      <guid>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;this-post-is-for-future-posts.&#34; class=&#34;section level2&#34;&gt;
@@ -412,16 +412,13 @@ Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;
     
     <item>
       <title>A Plain Markdown Post</title>
-      <link>/post/2016-12-30-hello-markdown/</link>
+      <link>https://scchen.com/post/2016-12-30-hello-markdown/</link>
       <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      <guid>/post/2016-12-30-hello-markdown/</guid>
+      <guid>https://scchen.com/post/2016-12-30-hello-markdown/</guid>
       <description>&lt;p&gt;This is a post written in plain Markdown (&lt;code&gt;*.md&lt;/code&gt;) instead of R Markdown (&lt;code&gt;*.Rmd&lt;/code&gt;). The major differences are:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (&lt;code&gt;```{r}&lt;/code&gt;);&lt;/li&gt;
-&lt;li&gt;A plain Markdown post is rendered through 
-&lt;a href=&#34;https://gohugo.io/overview/configuration/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blackfriday&lt;/a&gt;, and an R Markdown document is compiled by 
-&lt;a href=&#34;http://rmarkdown.rstudio.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;&lt;/a&gt; and 
-&lt;a href=&#34;http://pandoc.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pandoc&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A plain Markdown post is rendered through &lt;a href=&#34;https://gohugo.io/overview/configuration/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blackfriday&lt;/a&gt;, and an R Markdown document is compiled by &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;rmarkdown&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;http://pandoc.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pandoc&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:&lt;/p&gt;
 &lt;ul&gt;
@@ -430,8 +427,7 @@ Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; &amp;hellip;&lt;/li&gt;
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Profit!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (
-&lt;a href=&#34;https://github.com/yihui/hugo-lithium&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo-lithium&lt;/a&gt;) but there is a caveat for plain Markdown posts: you have to include math expressions in a pair of backticks (inline: &lt;code&gt;`$ $`&lt;/code&gt;; display style: &lt;code&gt;`$$ $$`&lt;/code&gt;), e.g., &lt;code&gt;$S_n = \sum_{i=1}^n X_i$&lt;/code&gt;.^[This is because we have to protect the math expressions from being interpreted as Markdown. You may not need the backticks if your math expression does not contain any special Markdown syntax such as underscores or asterisks, but it is always a safer choice to use backticks. When you happen to have a pair of literal dollar signs inside the same element, you can escape one dollar sign, e.g., &lt;code&gt;\$50 and $100&lt;/code&gt; renders &amp;ldquo;$50 and $100&amp;rdquo;.] For R Markdown posts, you do not need the backticks, because Pandoc can identify and process math expressions.&lt;/p&gt;
+&lt;p&gt;Similarly, Blackfriday does not support LaTeX math and Pandoc does. I have added the MathJax support to this theme (&lt;a href=&#34;https://github.com/yihui/hugo-lithium&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hugo-lithium&lt;/a&gt;) but there is a caveat for plain Markdown posts: you have to include math expressions in a pair of backticks (inline: &lt;code&gt;`$ $`&lt;/code&gt;; display style: &lt;code&gt;`$$ $$`&lt;/code&gt;), e.g., &lt;code&gt;$S_n = \sum_{i=1}^n X_i$&lt;/code&gt;.^[This is because we have to protect the math expressions from being interpreted as Markdown. You may not need the backticks if your math expression does not contain any special Markdown syntax such as underscores or asterisks, but it is always a safer choice to use backticks. When you happen to have a pair of literal dollar signs inside the same element, you can escape one dollar sign, e.g., &lt;code&gt;\$50 and $100&lt;/code&gt; renders &amp;ldquo;$50 and $100&amp;rdquo;.] For R Markdown posts, you do not need the backticks, because Pandoc can identify and process math expressions.&lt;/p&gt;
 &lt;p&gt;When creating a new post, you have to decide whether the post format is Markdown or R Markdown, and this can be done via the &lt;code&gt;ext&lt;/code&gt; argument of the function &lt;code&gt;blogdown::new_post()&lt;/code&gt;, e.g.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::new_post(&amp;quot;Post Title&amp;quot;, ext = &#39;.Rmd&#39;)
 &lt;/code&gt;&lt;/pre&gt;
@@ -440,13 +436,13 @@ Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;
     
     <item>
       <title>Randomization in Latin Square</title>
-      <link>/post/2016-09-14-randomization-in-latin-square/</link>
+      <link>https://scchen.com/post/2016-09-14-randomization-in-latin-square/</link>
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-09-14-randomization-in-latin-square/</guid>
+      <guid>https://scchen.com/post/2016-09-14-randomization-in-latin-square/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;I’m managing an opensesame script for the coming project. In this project, there are four stimuli lists included all the within-participant conditions. I denote the four lists &lt;strong&gt;A&lt;/strong&gt;, &lt;strong&gt;B&lt;/strong&gt;, &lt;strong&gt;C&lt;/strong&gt;, and &lt;strong&gt;D&lt;/strong&gt;. A participant will have one of the stimuli lists in terms of the counter balanced principle. The best assignment method is 4X4 Latin Square. For every 16 participants, there are 24 sequences to be used. Here are three of the sequences.&lt;/p&gt;
@@ -535,13 +531,13 @@ exp.set(&amp;#39;List&amp;#39;, lst)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Why we need a readable data table in behavioral scientific research?</title>
-      <link>/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
+      <link>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
+      <guid>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
@@ -658,13 +654,13 @@ head(New_Table)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Why we need a readable data table in behavioral scientific research?</title>
-      <link>/post/2016-05-31-why-we-need-a-readable-data-table/</link>
+      <link>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table/</link>
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-05-31-why-we-need-a-readable-data-table/</guid>
+      <guid>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
@@ -781,18 +777,18 @@ head(New_Table)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Rethink Significance</title>
-      <link>/post/2016-05-05-rethink-significance/</link>
+      <link>https://scchen.com/post/2016-05-05-rethink-significance/</link>
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-05-05-rethink-significance/</guid>
+      <guid>https://scchen.com/post/2016-05-05-rethink-significance/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;To trace the fallacy of use hypothesis testing, I am programming the examples in Dr. Adrianus D. de Groot’s paper &lt;code&gt;The meaning of “signiﬁcance” for different types of research&lt;/code&gt;. This paper is published in 1956 in the Dutch journal &lt;em&gt;Nederlands Tijdschrift voor de Psychologie en Haar Grensgebieden&lt;/em&gt;. &lt;a href=&#34;https://en.wikipedia.org/wiki/Adriaan_de_Groot&#34;&gt;Adrianus De Groot&lt;/a&gt; is Dutch psychologist and chess master. During 1950s and 1960s, he suggested the concept of emperical cycle for the researchers who use the statistical tools in the social and behavioral researches.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;&#34; /&gt;
+&lt;img src=&#34;https://scchen.com/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Emperical cycle&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;de Groot’s emperical cycle distinguish two types of emperical research: &lt;strong&gt;exploratory research&lt;/strong&gt; and &lt;strong&gt;confirmatory research&lt;/strong&gt;. &lt;strong&gt;Exploratory research&lt;/strong&gt; aims to formulate the hypotheses that covers the process from &lt;code&gt;observation&lt;/code&gt; to &lt;code&gt;induction&lt;/code&gt;. &lt;strong&gt;Confirmatory research&lt;/strong&gt; attempts to test the predicited concequences based the hypothesis. Thus a &lt;strong&gt;Confirmatory research&lt;/strong&gt; covers &lt;code&gt;deduction&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, and &lt;code&gt;evaluation&lt;/code&gt;.&lt;/p&gt;
@@ -916,7 +912,7 @@ Probability(Positive Results)
 &lt;/tr&gt;
 &lt;/table&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(PASS_P ~ n, xlab = &amp;quot;Smallest Number of Positive Hypotheses&amp;quot;, ylab = &amp;quot;Probability(Positive Results)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/en/post/2016-05-05-rethink-significance_files/figure-html/MultiHypo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scchen.com/en/post/2016-05-05-rethink-significance_files/figure-html/MultiHypo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;That table is telling us if we wish acquire at least one positive hypothesis, the probability is 0.4012631. That plot shows the probability dramatically decrease with the increasing numbers in our wish. In other words, when we have no precise knowlegde about the use of hyphtesis testing, the more hypotheses we want to induce, the higher risk we get nothing.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;exploratory-research-has-infinite-hypotheses&#34; class=&#34;section level3&#34;&gt;
@@ -933,18 +929,18 @@ Probability(Positive Results)
     
     <item>
       <title>Autopsy of NHST and Bayesian Models (part 1)</title>
-      <link>/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
+      <link>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
       <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
+      <guid>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Chapter 2 of &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated &lt;strong&gt;Data Story&lt;/strong&gt;, then &lt;strong&gt;update&lt;/strong&gt; the models by filling data in, and finally &lt;strong&gt;evaluate&lt;/strong&gt; all the &lt;strong&gt;upated&lt;/strong&gt; models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s &lt;a href=&#34;https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf&#34;&gt;Bayesian Basics: A Conceptual Introduction with Application in R and Stan&lt;/a&gt; on &lt;a href=&#34;http://mc-stan.org/documentation/&#34;&gt;Stan official site&lt;/a&gt;, I require the key to understand the difference between the two golems.&lt;/p&gt;
 &lt;p&gt;The critical difference is which type of &lt;strong&gt;conditional probability&lt;/strong&gt; the statistical method is used to evaluate the model. Once we collected the data based on some hypothesis, we have the distribution of hypothesis $ p( ) $ and the distribution of data $ p(y) $. NHST compuates the probability we have the data when the hypothesis is true $ p(y|) $. In practical, &lt;em&gt;p&lt;/em&gt; value refers to the &lt;strong&gt;conditional probability&lt;/strong&gt; of the null hypothesis, and * confidence interval* suggests a range of plausible outcomes based on the &lt;em&gt;confiditional probability&lt;/em&gt; of the real hypothesis. A Bayesian method compuates the probability the hypothesis is approved based on the data we have $ p(|y) $. Because the computation of $ p(|y) $ needs the likelihood $ p(y|) $ and the priori $ p() $, of course a Baysian method cost more steps than NHST.&lt;/p&gt;
-&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
+&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;https://scchen.com/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
 &lt;p&gt;Here is a pseudo experiment I want to know if a test is success based on the expect value smaller than 5 (Obersvations are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10). I completed an experiment of 25 observations and an experiment 36 observations. In use of NHST with a critical value (p &amp;lt; .05), the criterion change with the sample size. The simulation&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
 OBV &amp;lt;- 1:10
@@ -969,13 +965,13 @@ print(CL36)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt
     
     <item>
       <title>Check My Tools to Create and Manipulate Golems</title>
-      <link>/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
+      <link>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
       <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
+      <guid>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Since two weeks before I published this post, I have started read the book &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; written by &lt;a href=&#34;http://xcelab.net/rm/&#34;&gt;Richard McElreath&lt;/a&gt;. Richard is the evolutionary anthropologist at Max Planck Institute. He wrote this textbook for the PhD students who will use the Bayesian statistics in their research projects. Compared to the textbooks written by statisians and data scientistst, Richard’s book explain and demonstrate the statistical methods with examples instead of equations. His intention is to help who are not staticians but used to use statistics realize one fact: we rely on the statistical models as the representations of our answers rather than answer the questions by the raw data or naked truth. Many non-statisticians are used to find and learn what kind of methods or apps to deal with their data, but few are interested to know the models under the mentods and apps they are using. The trouble and danger is that they thought their jobs are done when the program printed the tables and figures but these outputs are from the statistical model is unable to answer their question. This situation is originated from many non-statisticans consider themselves the end-users of statistical models. Like any user of a packaged software, non-statisticans have no time to understand how the tools in their hands designed and conducted by statisticans.&lt;br /&gt;
@@ -1491,13 +1487,13 @@ print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Display Math Equation in Post</title>
-      <link>/post/2016-04-05-display-math-equation-in-post/</link>
+      <link>https://scchen.com/post/2016-04-05-display-math-equation-in-post/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-04-05-display-math-equation-in-post/</guid>
+      <guid>https://scchen.com/post/2016-04-05-display-math-equation-in-post/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:&lt;/p&gt;
@@ -1519,13 +1515,13 @@ Then:&lt;br /&gt;
     
     <item>
       <title>Vectors in mathematics and in codes</title>
-      <link>/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
+      <link>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
+      <guid>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;When a set of data/observations is imported to R, it is usually treated as &lt;code&gt;vector&lt;/code&gt;. Vector has two mathematical forms as following:&lt;/p&gt;
@@ -1579,13 +1575,13 @@ SS&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Learning Sampling Distribution in R Programming</title>
-      <link>/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
+      <link>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
+      <guid>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://scchen.com/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.&lt;/p&gt;
@@ -1614,7 +1610,7 @@ count = 100
 while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
 Dist.df &amp;lt;- data.frame(Size = factor(rep(c(1,9,16,25,36), each=100)), Sample_Means = c(Dist1, Dist9, Dist16, Dist25, Dist36) )
 ggplot(Dist.df, aes(Sample_Means, fill = Size)) + geom_histogram() + facet_grid(. ~ Size)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/en/post/2016-03-30-learning-sampling-distribution-in-r-programming_files/figure-html/Sampling-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scchen.com/en/post/2016-03-30-learning-sampling-distribution-in-r-programming_files/figure-html/Sampling-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We call the set of observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 &lt;strong&gt;population&lt;/strong&gt; in any circumstance we conduct this experiment. This population has the average 5.5 and the variance/standard deviation 8.25/2.87. With the increase of sample size, you find more and more samples collapsed to the average of population. The variation of each sample distribution decreases with the increasing of sample size as well. The following table illustrate the average and variance/standard deviation of each sampling distribution.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -1664,9 +1660,9 @@ ggplot(Dist.df, aes(Sample_Means, fill = Size)) + geom_histogram() + facet_grid(
     
     <item>
       <title>Lorem Ipsum</title>
-      <link>/post/2015-01-01-lorem-ipsum/</link>
+      <link>https://scchen.com/post/2015-01-01-lorem-ipsum/</link>
       <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      <guid>/post/2015-01-01-lorem-ipsum/</guid>
+      <guid>https://scchen.com/post/2015-01-01-lorem-ipsum/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em&gt;magna aliqua&lt;/em&gt;. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
     </item>

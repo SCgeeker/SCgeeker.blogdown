@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog_skill | 陳紹慶的個人網站</title>
+    <link>https://scchen.com/zh-hant/tag/blog_skill/</link>
+      <atom:link href="https://scchen.com/zh-hant/tag/blog_skill/index.xml" rel="self" type="application/rss+xml" />
+    <description>blog_skill</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>blog_skill</title>
+      <link>https://scchen.com/zh-hant/tag/blog_skill/</link>
+    </image>
+    
+    <item>
+      <title>網站昇級復出紀錄</title>
+      <link>https://scchen.com/zh-hant/post/update_website_log/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/update_website_log/</guid>
+      <description>&lt;p&gt;和許多人的2020年一樣，充滿許多預期計畫之外的變數。開始了我的一直想經營的&lt;a href=&#34;https://anchor.fm/opensci-cafe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;podcast&lt;/a&gt;；開始經營在地的&lt;a href=&#34;https://sites.google.com/gms.tcu.edu.tw/exppsyunion/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製科學推廣社群&lt;/a&gt;；預想能結束的研究專案要改變收集資料的方法；無法出國卻因緣際會開啓新的研究專案。在新的一年開始重新整理個人網站是個不錯的開始。&lt;/p&gt;
+&lt;p&gt;剛開始podcast時想過整合到個人網站，當時也遇到更新網站的&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic theme&lt;/a&gt;。那時的更新造成原來的disqus失效，造成一些想聯絡我的朋友只能從我的臉書連絡。趁這次更新，我換成以github留言系統為基礎的API ~ &lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;utterances&lt;/a&gt;。更新個人網站的過程只有找到英文的說明與安裝心得，在此留下我的經驗做為參考：&lt;/p&gt;
+&lt;h3 id=&#34;utterance安裝前置作業&#34;&gt;utterance安裝前置作業&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;個人網站資料是存放在公開的github repository&lt;/li&gt;
+&lt;li&gt;確認存放要出現留言的網頁模板，我的例子是&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

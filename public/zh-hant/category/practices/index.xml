@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practices | 陳紹慶的個人網站</title>
+    <link>https://scchen.com/zh-hant/category/practices/</link>
+      <atom:link href="https://scchen.com/zh-hant/category/practices/index.xml" rel="self" type="application/rss+xml" />
+    <description>Practices</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Tue, 25 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Practices</title>
+      <link>https://scchen.com/zh-hant/category/practices/</link>
+    </image>
+    
+    <item>
+      <title>運用jamovi認識與運用機率分配</title>
+      <link>https://scchen.com/zh-hant/post/probability-distributions-jamovi-zh/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/probability-distributions-jamovi-zh/</guid>
+      <description>
+
+
+&lt;p&gt;機率是學習統計觀念與方法必學的一章。在我使用過或參考過的中文統計書籍，發現機率因為牽涉數學公式的推導，作者不是只有說明計算推導，就是省略不提。說明計算推導的書藉都會附上各種機率分佈的表格，雖然在各種要運用該機率分佈的統計方法，都有解釋如何使用這些表格，但是學習統計軟體分析資料之後，這些表格幾乎無用武之地。&lt;/p&gt;
+&lt;p&gt;我很早就放棄教學生學習使用這些表格，有幾個主要理由。首先這些表格是電子計算機的計算資源不夠，以及軟體使用介面不夠友善的時代產物。其次是所有表格都是列出各種機率分佈的累積機率函數(Cumulative Distribution Function)，或者是其反函數的輸出值。只要理解累積機率函數的觀念，這些表格在實用場合幾乎沒有運用價值。最後，因為有的表格是以位數(quantile)查詢累積機率(如二項分佈、常態分佈)，有的是以累積機率查詢位數(如t分佈、F分佈、卡方分佈)，學習新的分析方法就要學習不同的查表模式，反而不利養成正確的分析觀念。&lt;/p&gt;
+&lt;p&gt;個人研究使用R之後，我一直尋找與嘗試在教學裡運用R的方法。直到最近幾年&lt;a href=&#34;https://jasp-stats.org/&#34;&gt;JASP&lt;/a&gt;與&lt;a href=&#34;https://www.jamovi.org/&#34;&gt;jamovi&lt;/a&gt;的出現，終於看到運用的機會。特別是jamovi提供使用者開發套件，其中&lt;code&gt;Rj&lt;/code&gt;套件讓使用者能在報表中自行撰寫R程式碼，以及檢視輸出結果。R的基本套件本來就有一系列指令，用於計算常用機率分佈的累積機率函數與機率密度函數(Probability Density Function)。使用jamovi的話，能與各種分析方法模組結合運用，達到解釋報表中機率資訊的作用。&lt;/p&gt;
+&lt;p&gt;為了明年的教學需要，我編寫五個機率分佈的jamovi檔案，並開放有興趣的網友下載使用。要完整使用這些檔案之前，使用者除了要安裝最新較的jamovi，也要安裝或更新&lt;code&gt;Rj&lt;/code&gt;套件。使用者可以從jamovi的模組介面或&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;官方資源網頁&lt;/a&gt;下載安裝，開啟jamovi檔案之後，就能改寫其中的R程式碼，以及觀看執行成果。&lt;/p&gt;
+&lt;p&gt;除了公開jamovi檔案，每個機率分佈都錄一段簡短影片，示範如何使用檔案中的程式碼，以及觀看更新結果。其下每個影片上方的標題，都是該檔案的下載連結。歡迎網友下載使用，並給予批評指教。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/t5rs3/&#34;&gt;二項分佈&lt;/a&gt;(Binomial Distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/mipvvoudP7M&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/jzpmy/&#34;&gt;常態分佈&lt;/a&gt;(Normal Distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ZIxsYWOJTjg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/d9zg8/&#34;&gt;t分佈&lt;/a&gt;(t distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zGiKGsjdIwk&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/68usk/&#34;&gt;卡方分佈&lt;/a&gt;(chi square distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/YHG9DuRYeNg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/5mt8c/&#34;&gt;F分佈&lt;/a&gt;(F distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/2DVkpuCeccI&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
