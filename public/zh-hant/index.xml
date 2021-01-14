@@ -22,8 +22,219 @@
 &lt;h3 id=&#34;utterance安裝前置作業&#34;&gt;utterance安裝前置作業&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;個人網站資料是存放在公開的github repository&lt;/li&gt;
-&lt;li&gt;確認存放要出現留言的網頁模板，我的例子是&lt;/li&gt;
+&lt;li&gt;確認存放要出現留言的網頁模板，我將&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic theme&lt;/a&gt;4.1版昇級到&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wowchemy&lt;/a&gt;，都有嘗試掛上&lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;utterances&lt;/a&gt;。匯整&lt;a href=&#34;https://mscipio.github.io/post/utterances-comment-engine/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MICHELE SCIPIONI&lt;/a&gt;與&lt;a href=&#34;https://davidfong.netlify.app/post/hugoacademiccommentswithutterances/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;David Fong&lt;/a&gt;的紀錄，&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wowchemy&lt;/a&gt;的自訂網頁模板是集合在&lt;code&gt;[根目錄]/layouts&lt;/code&gt;之內。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;網站github-repo安裝utterance-api&#34;&gt;網站github repo安裝utterance api&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;透過&lt;a href=&#34;https://github.com/apps/utterances&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;app網頁&lt;/a&gt;，依照指示將utterance api安裝到存放網站資料的github repo。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在&lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;utterances&lt;/a&gt;生成網頁模板。首先在以下欄位輸入&lt;code&gt;github帳號/repo名稱&lt;/code&gt;。下圖是這個網站的例子。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://scchen.com/zh-hant/post/update_website_log/utterances_configuration_hu413664db90fe3fad3c4bbdf0d72bc002_22080_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://scchen.com/zh-hant/post/update_website_log/utterances_configuration_hu413664db90fe3fad3c4bbdf0d72bc002_22080_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1360&#34; height=&#34;705&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;評論標籤(label)以及留言頁面背景(Theme)可自行決定要不要設定。按下範例圖最下方的&lt;strong&gt;Copy&lt;/strong&gt;，複製網頁模板內容。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://scchen.com/zh-hant/post/update_website_log/utterances_template_hu5b5956f7a6ac714dd48727695caf40c3_39573_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://scchen.com/zh-hant/post/update_website_log/utterances_template_hu5b5956f7a6ac714dd48727695caf40c3_39573_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1342&#34; height=&#34;1363&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;設定網頁模板&#34;&gt;設定網頁模板&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;前一步驟複製的網頁模板存於檔案&lt;code&gt;utterances.html&lt;/code&gt;，檔案存放路徑為&lt;code&gt;[根目錄]/layouts/partials/comments&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改&lt;code&gt;[根目錄]/layouts/partials/comments.html&lt;/code&gt;的內容如下：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;{{ if site.Params.comments.engine | and (index site.Params.comments.commentable .Type) | and (ne .Params.commentable false) | or .Params.commentable }}
+&amp;lt;section id=&amp;quot;comments&amp;quot;&amp;gt;
+  {{ if eq site.Params.comments.engine 1 }}
+    {{ partial &amp;quot;comments/disqus.html&amp;quot; . }}
+  {{ else if eq site.Params.comments.engine 2 }}
+    {{ partial &amp;quot;comments/commento.html&amp;quot; . }}
+  {{ else if eq site.Params.comments.engine 3 }}
+    {{ partial &amp;quot;comments/utterances.html&amp;quot; . }}
+  {{ end }}
+&amp;lt;/section&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;修改&lt;code&gt;[根目錄]/config/_default/params.toml&lt;/code&gt;裡有關留言的設定。這個網站設定可留言的部分是網誌與專案，因此設定如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;############################
+## Comments
+############################
+[comments]
+  # Comment provider:
+  #   0: Disabled
+  #   1: Disqus (https://disqus.com)
+  #   2: Commento (https://commento.io)
+  #   3: Utterances (https://utteranc.es/)
+  engine = 3
+
+  # Which page types are commentable?
+  commentable = {page = false, post = true, docs = false, project = true, publication = false, talk = false}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;置入留言模板的shortcode 到網誌與專案的模板網頁，分別存放於&lt;code&gt;[根目錄]/layouts/_default/single.html&lt;/code&gt;與&lt;code&gt;[根目錄]/layouts/project/single.html&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-網誌模板&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://scchen.com/zh-hant/post/update_website_log/post_template_hu1b62b25ddec5fa46d91e66984b0e7b88_21257_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;網誌模板&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://scchen.com/zh-hant/post/update_website_log/post_template_hu1b62b25ddec5fa46d91e66984b0e7b88_21257_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1246&#34; height=&#34;848&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    網誌模板
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure id=&#34;figure-專案模板&#34;&gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://scchen.com/zh-hant/post/update_website_log/project_template_hudc6a7a1f0e9efbcb2e602a4b5bb32a77_18503_2000x2000_fit_lanczos_2.png&#34; data-caption=&#34;專案模板&#34;&gt;
+
+
+  &lt;img data-src=&#34;https://scchen.com/zh-hant/post/update_website_log/project_template_hudc6a7a1f0e9efbcb2e602a4b5bb32a77_18503_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1202&#34; height=&#34;640&#34;&gt;
+&lt;/a&gt;
+
+
+  
+  
+  &lt;figcaption&gt;
+    專案模板
+  &lt;/figcaption&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;使用須知&#34;&gt;使用須知&lt;/h3&gt;
+&lt;p&gt;utterance使用github的留言系統，因此留言者必須註冊並登入github帳號是一個不方便的地方。不過對於像我一樣許多公開專案在github部署的使用者，可運用這個機制引導想深入學習者使用github，更能讓高手直接指出專案的問題。&lt;/p&gt;
 </description>
     </item>
     
