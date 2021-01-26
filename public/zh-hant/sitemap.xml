@@ -3,6 +3,145 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://scchen.com/zh-hant/openstat/unit00/</loc>
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/openstat/unit09/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/openstat/unit10/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/categories/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scchen.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://scchen.com/zh-hant/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/post/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scchen.com/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://scchen.com/zh-hant/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/tag/r/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scchen.com/tag/r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://scchen.com/zh-hant/tag/r/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/category/reproduce-practice/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scchen.com/category/reproduce-practice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://scchen.com/zh-hant/category/reproduce-practice/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/tag/statistics/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scchen.com/tag/statistics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://scchen.com/zh-hant/tag/statistics/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/tags/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scchen.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://scchen.com/zh-hant/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/category/teaching/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scchen.com/category/teaching/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://scchen.com/zh-hant/category/teaching/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/post/learning-data-skill-on-cloud/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://scchen.com/zh-hant/</loc>
+    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://scchen.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-hant"
+                href="https://scchen.com/zh-hant/"
+                />
+  </url>
+  
+  <url>
     <loc>https://scchen.com/zh-hant/category/academic/</loc>
     <lastmod>2021-01-19T17:12:34+08:00</lastmod>
     <xhtml:link
@@ -14,21 +153,6 @@
                 rel="alternate"
                 hreflang="zh-hant"
                 href="https://scchen.com/zh-hant/category/academic/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/zh-hant/categories/</loc>
-    <lastmod>2021-01-19T17:12:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/categories/"
                 />
   </url>
   
@@ -53,33 +177,8 @@
   </url>
   
   <url>
-    <loc>https://scchen.com/zh-hant/post/</loc>
-    <lastmod>2021-01-19T17:12:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/zh-hant/tags/</loc>
-    <lastmod>2021-01-19T17:12:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tags/"
-                />
+    <loc>https://scchen.com/zh-hant/openstat/</loc>
+    <lastmod>2021-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -88,38 +187,8 @@
   </url>
   
   <url>
-    <loc>https://scchen.com/zh-hant/</loc>
-    <lastmod>2021-01-19T17:12:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/"
-                />
-  </url>
-  
-  <url>
     <loc>https://scchen.com/zh-hant/tag/blog_skill/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/zh-hant/category/reproduce-practice/</loc>
-    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/category/reproduce-practice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/category/reproduce-practice/"
-                />
   </url>
   
   <url>
@@ -318,21 +387,6 @@
   </url>
   
   <url>
-    <loc>https://scchen.com/zh-hant/category/teaching/</loc>
-    <lastmod>2019-11-27T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/category/teaching/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/category/teaching/"
-                />
-  </url>
-  
-  <url>
     <loc>https://scchen.com/zh-hant/tag/%E7%A7%91%E5%AD%B8%E7%B2%BE%E7%A5%9E/</loc>
     <lastmod>2019-11-27T00:00:00+00:00</lastmod>
   </url>
@@ -365,21 +419,6 @@
   <url>
     <loc>https://scchen.com/zh-hant/post/preprint-self-archiving/</loc>
     <lastmod>2019-07-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/zh-hant/tag/statistics/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/tag/statistics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/statistics/"
-                />
   </url>
   
   <url>
@@ -449,21 +488,6 @@
                 rel="alternate"
                 hreflang="zh-hant"
                 href="https://scchen.com/zh-hant/tag/latex/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/zh-hant/tag/r/</loc>
-    <lastmod>2018-10-16T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/tag/r/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/r/"
                 />
   </url>
   

@@ -5,12 +5,57 @@
     <link>https://scchen.com/zh-hant/tag/r/</link>
       <atom:link href="https://scchen.com/zh-hant/tag/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Tue, 16 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>R</title>
       <link>https://scchen.com/zh-hant/tag/r/</link>
     </image>
+    
+    <item>
+      <title>可重製統計線上學習專案</title>
+      <link>https://scchen.com/zh-hant/post/learning-data-skill-on-cloud/</link>
+      <pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/learning-data-skill-on-cloud/</guid>
+      <description>&lt;h2 id=&#34;起源&#34;&gt;起源&lt;/h2&gt;
+&lt;p&gt;資料科學技巧除了是大數據商務與學術應用的基礎能力，也能深入理解統計與機率的數學原理，更是實現可重製科學研究操作的基礎。開始在研究專案落實可重製科學研究操作之後，我一直想在教學中落實。資料科學技巧的入門必學的資料清理、資料視覺化等課題，在傳統統計課程是被忽略的單元，即使使用開源統計軟體JASP與jamovi，因為教材都是清理完成的資料，無法幫助學生學習資料科學技巧。&lt;/p&gt;
+&lt;p&gt;2019年&lt;a href=&#34;https://rstudio.cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rstudio Cloud&lt;/a&gt;正式上線，註冊使用者能免費在個人雲端工作空間創建專案，使用與本機版幾乎一模一樣的功能。2020年推出的&lt;a href=&#34;https://rstudio.cloud/plans/instructor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;講師專案&lt;/a&gt;，每月付15美金，就能製作共享專案，透過邀請讓學生登入取得專案。也就是說任何申請講師專案的Rstudio Cloud用戶，可以開發經營個人的&lt;strong&gt;非同步線上教學平台&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;我遇到的挑戰還有教材內容。以我的學生客群來說，現在還沒有為心理學相關科系學生設計，平行學習資料科學技巧與統計觀念的教材是缺乏的。幾年前自編的&lt;a href=&#34;https://scgeeker.github.io/BasicStatistics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;中文電子書&lt;/a&gt;是以傳統課程架構編輯，並未加入資料科學技巧，但是要整合原來的內容就必須翻新教材架構。很幸運這幾年認識了英國格拉斯哥大學心理學系&lt;a href=&#34;https://psyteachr.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsyTeachR&lt;/a&gt;團隊的核心教師&lt;a href=&#34;https://twitter.com/LisaDeBruine&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lisa DeBruine&lt;/a&gt;，這個團隊已經開發從大學一年級到研究所的R與統計學習教材，並且不斷實踐。2021年初她公開了電子書&lt;a href=&#34;https://psyteachr.github.io/msc-data-skills/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製科學的資料科學基本功&lt;/a&gt;以及R套件，這套資源的架構與內容，就是我所期望的新世代心理科學學生需要的教材。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://psyteachr.github.io/msc-data-skills/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製科學的資料科學基本功&lt;/a&gt;在十個單元的前七個安排完整的資料科學技巧學習示範與演練問題，最後四個單元才是機率以及統計方法。以傳統統計科學的架構來看，一定有人懷疑能否真的學到觀念與正確的方法。但是我從研究的經驗體認到，先習得資料科學技巧，更容易學習機率觀念，以及運用&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E4%B8%80%E8%88%AC%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;通用線性模型&lt;/a&gt;能有效組織所有基本統計方法。&lt;/p&gt;
+&lt;p&gt;編寫一本這樣的中文書是個很花時間的工程，因此我決定結合各地有學習需要的學生，將PsyTeachR的資源轉換成非同步線上課程，累積眾人的學習紀錄，形成更新前一版&lt;a href=&#34;https://scgeeker.github.io/BasicStatistics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;中文教科書&lt;/a&gt;的資源。這篇網誌是課程導覽，接著就來看學生如何加入這門課程，如何運用專案學習資料科學技巧與基本統計。&lt;/p&gt;
+&lt;h2 id=&#34;註冊與登入r-studio-cloud&#34;&gt;註冊與登入R studio Cloud&lt;/h2&gt;
+&lt;p&gt;首先到&lt;a href=&#34;https://rstudio.cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R studio Cloud網站&lt;/a&gt;註冊帳號，首創這份網誌時的頁面如下圖，首次註冊從右上角&amp;quot;Sign Up&amp;quot;開始。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Rstudio_Cloud.png&#34; alt=&#34;Rstudio Cloud首頁。&#34;&gt;
+註冊方式有三種：&lt;strong&gt;自填資料&lt;/strong&gt;、&lt;strong&gt;連結Google帳戶&lt;/strong&gt;、&lt;strong&gt;連結Github帳戶&lt;/strong&gt;。個人推薦想深入學習的學生用Github帳戶註冊，也方便在這篇網誌留言。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Rstudio_Cloud_signup_board.png&#34; alt=&#34;R stuido Cloud Sign Up&#34;&gt;&lt;/p&gt;
+&lt;p&gt;確認註冊方法後就會到選擇使用方案的頁面，只是想體驗或加入線上課程專案，只要選擇免費方案(Free)。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Rstudio_Cloud_signup.png&#34; alt=&#34;Rstudio Cloud Plan&#34;&gt;&lt;/p&gt;
+&lt;p&gt;認證完成就能登入個人工作空間(workspace)，請見影片示範。確認可以操作，就能透過&lt;a href=&#34;https://rstudio.cloud/spaces/113159/join?access_code=SQu6pEVkMk1uqjskHo7pkWV35UE%2BiyUO%2BZoRhyd6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;專案邀請連結&lt;/a&gt;加入課程專案，影片有示範入門操作，專案裡的&lt;code&gt;Student_clickme.Rmd&lt;/code&gt;這份文件，有說明如何搭配&lt;a href=&#34;https://psyteachr.github.io/msc-data-skills/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製科學的資料科學基本功&lt;/a&gt;的內容進行自主或合作學習。&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NlZpmK3evis&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;學習方案建議&#34;&gt;學習方案建議&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;專案內置的檔案有&lt;a href=&#34;https://psyteachr.github.io/msc-data-skills/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製科學的資料科學基本功&lt;/a&gt;的源始Rmarkdown檔案，提供學生自行編輯筆記與演練書裡的範例。這些源始Rmarkdown檔案保留原始的英文內容，對於英文程度不高的學生會是挑戰，建議找朋友同學一起學習。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;各單元演練題己經完成中文化改編。請先閱讀單元電子書內容，並演練所有範例題，再來操作挑戰題。進行順序請見專案裡的&lt;code&gt;Student_clickme.Rmd&lt;/code&gt;這份文件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;加入專案的學生會在個人的工作空間看到專屬的專案副本，就像下圖示範。個人專案內容是學生加入時，這份課程專案的最新內容。學生如果想了解演練題的操作是否正確，在學校上我開設的課程，可以直接找我討論；透過網路遠端參與的學生，可以透過網站所留的聯絡方式，請我給你提供意見，我確認之後，會找時間在你的專案裡，與問題有關的檔案內容留下文字建議。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;Rstudio.Cloud_workspace.png&#34; alt=&#34;R studio workspace&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;教學材料更新計畫&#34;&gt;教學材料更新計畫&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://psyteachr.github.io/msc-data-skills/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製科學的資料科學基本功&lt;/a&gt;的第8及第9單元與我自編的&lt;a href=&#34;https://scgeeker.github.io/BasicStatistics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;中文電子書&lt;/a&gt;大部分重疊，經過幾次的授課操作，深覺資料科學技巧與通用線性模型是新一代學習者必學的基礎。要加入這些必須直接使用R等程式語言做為學習工具，因此必須要捨棄依賴套裝軟體的思維，先幫助學生將R內化為個人能力。我希望透過累積現場與遠端學生的學習紀錄與回饋，加速中文電子書的更新。新的電子書將整合為個人網站的一部分，幫助更多學生更有意願運用R學習統計，還在使用套裝統計軟體的學生與老師也能有興趣更新工具。&lt;/p&gt;
+&lt;h2 id=&#34;歡迎來上課&#34;&gt;歡迎來上課&lt;/h2&gt;
+&lt;p&gt;除了&lt;a href=&#34;https://psyteachr.github.io/msc-data-skills/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;電子書&lt;/a&gt;內容是英文，與統計有關的部分只比大學部基礎統計稍難一些，即使是大一學生，只要願意找輔助資料，也能獲得修習研究方法及進階課程所需要的基礎統計能力。&lt;strong&gt;如果發現內容有任何錯誤&lt;/strong&gt;，請使用網誌留言回應，方便同時運用這套專案的學生了解。&lt;strong&gt;如果是個人學習觀念或寫作程式碼的問題&lt;/strong&gt;，請使用網誌最下方提供的個人聯絡方式告知，我會在你的專案中給予建議。&lt;/p&gt;
+&lt;p&gt;不論你是會修我的現場課程，還是只能遠端參與的學生，想要學習的話就點下&lt;a href=&#34;https://rstudio.cloud/spaces/113159/join?access_code=SQu6pEVkMk1uqjskHo7pkWV35UE%2BiyUO%2BZoRhyd6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;專案邀請連結&lt;/a&gt;加入吧。&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>心理科學研究必用神器4 ~ 動態文件寫作入門</title>
