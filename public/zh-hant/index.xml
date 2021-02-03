@@ -5,12 +5,115 @@
     <link>https://scchen.com/zh-hant/</link>
       <atom:link href="https://scchen.com/zh-hant/index.xml" rel="self" type="application/rss+xml" />
     <description>陳紹慶的個人網站</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hant</language><lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>陳紹慶的個人網站</title>
       <link>https://scchen.com/zh-hant/</link>
     </image>
+    
+    <item>
+      <title>如何使用wowchemy架設podcast網站</title>
+      <link>https://scchen.com/zh-hant/post/how-to-build-podcast-website/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://scchen.com/zh-hant/post/how-to-build-podcast-website/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;歡迎到&lt;a href=&#34;https://open-cafe.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放咖啡角podcast網站&lt;/a&gt;選擇平台收聽節目，各集資訊網頁可以按讚打賞並留言評論。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我自建的&lt;a href=&#34;https://gpodder.net/user/CSC/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;podcast清單&lt;/a&gt;有許多心理科學家的英文節目都有專屬網站，整合節目的各集資訊，還有提供觀眾可留言互動的社群平台與贊助連結。這些節目都是使用podcast平台商提供的網站建置功能，其中最多節目使用的是&lt;a href=&#34;https://fireside.fm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FIRESIDE&lt;/a&gt;。付費平台雖然設定方便，不過每個月必須支付一些費用才能運作，在節目的流量還不夠支撐常態支出前，我選擇使用&lt;a href=&#34;https://anchor.fm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anchor&lt;/a&gt;製作和推送節目內容，觀眾的互動平台在&lt;a href=&#34;https://www.facebook.com/opencafetw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FB&lt;/a&gt;與&lt;a href=&#34;https://t.me/open_cafe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;telegram&lt;/a&gt;。經過一年的製作，我決定採用比較熟悉的開源架站套件&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wowchemy&lt;/a&gt;架設podcast網站，並且置入&lt;a href=&#34;https://liker.land/pmsp9698261/civic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Like coin按讚打賞&lt;/a&gt;，讓聽眾用按讚實質支持這個節目。&lt;/p&gt;
+&lt;p&gt;建站的參考資料都是英文網站，因此特別做個紀錄，也給想使用&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wowchemy&lt;/a&gt;架設個人或專案的朋友參考。&lt;/p&gt;
+&lt;h4 id=&#34;步驟1&#34;&gt;步驟1&lt;/h4&gt;
+&lt;p&gt;依照&lt;a href=&#34;https://wowchemy.com/docs/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt;官網&lt;a href=&#34;https://wowchemy.com/docs/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;建議步驟&lt;/a&gt;，選定模板從&lt;a href=&#34;https://app.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;netlify&lt;/a&gt;啟動建站步驟及連結github。啟動後可由github修改初始設定及啟動CMS。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;待解問題:&lt;/strong&gt; 網站預設語系必須是en；改成其他語系就無法啟動網站。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註:&lt;/strong&gt; &amp;ldquo;關於本節目&amp;quot;在github編輯完成，該頁資訊置於&lt;code&gt;content/authors/admin/_index.md&lt;/code&gt;，節目代表圖&lt;code&gt;avatar.png&lt;/code&gt;置相同路徑。網站視窗圖示&amp;quot;favicon&amp;quot;與首頁頁首代表圖&amp;quot;logo&amp;quot;置於&lt;code&gt;static/media&lt;/code&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;步驟2&#34;&gt;步驟2&lt;/h4&gt;
+&lt;p&gt;pull網站內容，使用終端編輯器進一步編輯。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註:&lt;/strong&gt; 我使用Rstudio編輯, 在powershell使用指令&lt;code&gt;hugo server&lt;/code&gt;啟動網站預覽，編輯一段落再push remote。&lt;/p&gt;
+&lt;h4 id=&#34;步驟3&#34;&gt;步驟3&lt;/h4&gt;
+&lt;p&gt;設定主頁各集資訊分頁&lt;code&gt;project.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註:&lt;/strong&gt; &lt;code&gt;project.md&lt;/code&gt; yaml template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+widget: portfolio
+headless: true  # This file represents a page section.
+
+# ... Put Your Section Options Here (title etc.) ...
+weight: 20
+
+title: 
+subtitle: &#39;&#39;
+
+content:
+  # Page type to display. E.g. project.
+  page_type: project
+
+  # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below)
+  filter_default: 0
+
+  # Filter toolbar (optional).
+  # Add or remove as many filters (`filter_button` instances) as you like.
+  # To show all items, set `tag` to &amp;quot;*&amp;quot;.
+  # To filter by a specific tag, set `tag` to an existing tag name.
+  # To remove toolbar, delete/comment all instances of `filter_button` below.
+  filter_button:
+    - name: 全部
+      tag: &#39;*&#39;
+    - name: 咖啡伴侶
+      tag: 咖啡伴侶
+    - name: 烘焙工坊
+      tag: 烘焙工坊
+    - name: 隨行外帶
+      tag: 隨行外帶
+design:
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns: &#39;2&#39;
+  # Toggle between the various page layout types.
+  #   1 = List
+  #   2 = Compact  
+  #   3 = Card
+  #   5 = Showcase
+  view: 3
+  # For Showcase view, flip alternate rows?
+  flip_alt_rows: false
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;步驟4&#34;&gt;步驟4&lt;/h4&gt;
+&lt;p&gt;建立各集資訊網頁：&lt;code&gt;content/project/&lt;/code&gt;建立project子資料夾，內置該集資訊&lt;code&gt;index.md&lt;/code&gt;與封面圖`featured.png&#39;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註:&lt;/strong&gt; &lt;code&gt;index.md&lt;/code&gt; yaml template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: (該集標題)
+summary: (該集摘要)
+tags:
+- 咖啡伴侶
+- 烘焙工坊
+- 隨行外帶
+date: (建立日期) &amp;lt;--- 網頁單集widget順序依日期由新至舊排列
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;步驟5&#34;&gt;步驟5&lt;/h4&gt;
+&lt;p&gt;設定各集留言utteranc。比照&lt;a href=&#34;https://scchen.com/zh-hant/post/update_website_log/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;個人網站的設定方法&lt;/a&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;步驟6&#34;&gt;步驟6&lt;/h4&gt;
+&lt;p&gt;在首頁&lt;code&gt;intro.md&lt;/code&gt;設定收聽平台連結。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;待解問題:&lt;/strong&gt; 目前無法呈現各平台logo&lt;/p&gt;
+&lt;h4 id=&#34;步驟7&#34;&gt;步驟7&lt;/h4&gt;
+&lt;p&gt;設定likecoin按鈕：可參考&lt;a href=&#34;https://medium.com/likecoin/likecoin-button-%E6%95%B4%E5%90%88%E6%96%B9%E6%B3%95%E5%92%8C%E7%A4%BA%E7%AF%84-579045858eae&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GordonWei的網誌&lt;/a&gt; 以及&lt;a href=&#34;https://docs.like.co/v/zh/user-guide/creator/self-host/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Likecoin Q&amp;amp;A&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我的設定步驟：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;build &lt;code&gt;/layout/partial/likecoin.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe class=&amp;quot;LikeCoin&amp;quot; height=&amp;quot;235&amp;quot; src=&amp;quot;https://button.like.co/in/embed/{{ .Site.Params.likerID }}/button?referrer={{ .Permalink }}&amp;quot; width=&amp;quot;100%&amp;quot; frameborder=0&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;config.toml: 增加設定likerID&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;[params]
+  likerID = &amp;quot;yourLikerID&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;設定&lt;code&gt;layouts/project/single.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;.Content後面加入{{ partial &amp;ldquo;likecoin.html&amp;rdquo; . }}&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>可重製統計線上學習專案</title>
