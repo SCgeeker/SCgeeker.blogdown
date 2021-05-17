@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reading sentence | Sau-Chin Chen&#39;s website</title>
+    <link>http://scchen.com/en/tag/reading-sentence/</link>
+      <atom:link href="http://scchen.com/en/tag/reading-sentence/index.xml" rel="self" type="application/rss+xml" />
+    <description>reading sentence</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Fri, 30 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>reading sentence</title>
+      <link>http://scchen.com/en/tag/reading-sentence/</link>
+    </image>
+    
+    <item>
+      <title>Orientation Effects across Languages</title>
+      <link>http://scchen.com/en/project/mental_simulation/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/project/mental_simulation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

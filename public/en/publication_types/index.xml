@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types on Sau-Chin Chen&#39;s Website</title>
-    <link>/en/publication_types/</link>
-    <description>Recent content in Publication_types on Sau-Chin Chen&#39;s Website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    
-	<atom:link href="/en/publication_types/index.xml" rel="self" type="application/rss+xml" />
-    
+    <title>Publication_types | Sau-Chin Chen&#39;s website</title>
+    <link>http://scchen.com/en/publication_types/</link>
+      <atom:link href="http://scchen.com/en/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publication_types</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>Publication_types</title>
+      <link>http://scchen.com/en/publication_types/</link>
+    </image>
     
   </channel>
 </rss>

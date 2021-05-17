@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Sau-Chin Chen&#39;s website</title>
-    <link>https://scchen.com/authors/</link>
-      <atom:link href="https://scchen.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://scchen.com/authors/</link>
+      <atom:link href="http://scchen.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
       <title>Authors</title>
-      <link>https://scchen.com/authors/</link>
+      <link>http://scchen.com/authors/</link>
     </image>
     
   </channel>

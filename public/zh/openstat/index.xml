@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>心理科學基礎統計 | 陳紹慶的個人網站</title>
+    <link>http://scchen.com/zh/openstat/</link>
+      <atom:link href="http://scchen.com/zh/openstat/index.xml" rel="self" type="application/rss+xml" />
+    <description>心理科學基礎統計</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>心理科學基礎統計</title>
+      <link>http://scchen.com/zh/openstat/</link>
+    </image>
+    
+  </channel>
+</rss>

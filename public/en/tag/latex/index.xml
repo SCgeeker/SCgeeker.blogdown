@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>latex | Sau-Chin Chen&#39;s website</title>
+    <link>http://scchen.com/en/tag/latex/</link>
+      <atom:link href="http://scchen.com/en/tag/latex/index.xml" rel="self" type="application/rss+xml" />
+    <description>latex</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Tue, 05 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>latex</title>
+      <link>http://scchen.com/en/tag/latex/</link>
+    </image>
+    
+    <item>
+      <title>Display Math Equation in Post</title>
+      <link>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</link>
+      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</guid>
+      <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ E = mc^2 \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Use the steps 1 and 2 indtroducted in &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s post&lt;/a&gt;, my website is able to show the equation in any post. Because this theme use &lt;code&gt;kramdown&lt;/code&gt; as the engine of markdown, I pass the step 4.&lt;/p&gt;
+&lt;p&gt;Here are the proof the central limitation theorem. Mix of inline and one-line equations.&lt;br /&gt;
+We have a sequence of independent random variables,&lt;span class=&#34;math display&#34;&gt;\[ X_1, X_2, \ldots \]&lt;/span&gt;&lt;br /&gt;
+And the mean and variance of them:&lt;br /&gt;
+Mean &lt;span class=&#34;math display&#34;&gt;\[ E \left[{X_i}\right] = \mu \in \left({-\infty \,.\,.\, \infty}\right) \]&lt;/span&gt;&lt;br /&gt;
+Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sigma^2 &amp;gt; 0 \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Assume:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ S_n = \sum_{i \mathop = 1}^n X_i \]&lt;/span&gt;&lt;br /&gt;
+Then:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2021-05-13 20:51:38&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vectors in mathematics and in codes</title>
+      <link>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
+      <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
+      <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;When a set of data/observations is imported to R, it is usually treated as &lt;code&gt;vector&lt;/code&gt;. Vector has two mathematical forms as following:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;column vector&lt;/strong&gt;:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \vec{a} = \begin{bmatrix}
+ 1\\
+ 2\\
+ 3\\
+\end{bmatrix} \]&lt;/span&gt;&lt;br /&gt;
+&lt;strong&gt;row vector&lt;/strong&gt;:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \vec{a} = [ 1\ 2\ 3 ] \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Default form of vector in R is column vector. More precisely, it is treated as a matrix:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;a &amp;lt;- 1:3
+a&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 1 2 3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;class(a)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;integer&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;str(a)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  int [1:3] 1 2 3&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t(a)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1] [,2] [,3]
+## [1,]    1    2    3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In a statistical work, we used to calcuate the sum of square (SS) for the deviations to mean. The common equation is like:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \sum_{i=1}^{n}(Y_{i}-\overline{Y})^2 \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is the fundemental for calculating the variance of this set of data/observations. The equation of variance is like this:&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \frac{\sum_{i=1}^{n}(Y_{i}-\overline{Y})^2}{n} \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Because the data/observations are treated as matrix, we are able to have the sum of square by the multiplication of this matrix.&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \mathbf{A&amp;#39;A} = 
+\begin{bmatrix} A_1 A_2 A_3 \dots\end{bmatrix}
+\times
+\begin{bmatrix}
+   A_1 \\
+   A_2 \\
+   A_3 \\
+   \vdots
+\end{bmatrix}　\]&lt;/span&gt;　　&lt;/p&gt;
+&lt;p&gt;Here are ten observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, the average of this data is 5.5. Let’s have the SS and variance in use of the multiplication of matrix:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;SS &amp;lt;- t(1:10 - mean(1:10)) %*% (1:10 - mean(1:10)) 
+VAR &amp;lt;- SS/length(1:10)
+SS&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1]
+## [1,] 82.5&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;VAR&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      [,1]
+## [1,] 8.25&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In R &lt;code&gt;base&lt;/code&gt; package, the function &lt;code&gt;var&lt;/code&gt; outputs a sampling variance, not a population variance as above.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;var(1:10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 9.166667&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

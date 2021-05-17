@@ -1,0 +1,1192 @@
+<!DOCTYPE html><html lang="zh-hant" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="陳紹慶" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="透過一位小女孩的科學專案，了解科學家如何設計 不帶偏見的調查研究，以及運用統計分析評估結論的可信度。" />
+
+  
+  <link rel="alternate" hreflang="zh-hant" href="http://scchen.com/zh/openstat/unit09/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#4caf50" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.39aeb80ca18d6d31dc33f7fc232b8e06.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+    <link rel="alternate" href="/zh/openstat/unit09/index.xml" type="application/rss+xml" title="陳紹慶的個人網站" />
+  
+
+  
+    <link rel="manifest" href="/zh/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="http://scchen.com/zh/openstat/unit09/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="陳紹慶的個人網站" />
+  <meta property="og:url" content="http://scchen.com/zh/openstat/unit09/" />
+  <meta property="og:title" content="第9單元:統計思考開門 | 陳紹慶的個人網站" />
+  <meta property="og:description" content="透過一位小女孩的科學專案，了解科學家如何設計 不帶偏見的調查研究，以及運用統計分析評估結論的可信度。" /><meta property="og:image" content="http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="zh-hant" />
+  
+    
+      <meta property="og:updated_time" content="2021-01-19T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#4caf50",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#4caf50"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "本网站使用cookies来确保您在本网站上获得最佳体验。",
+        "dismiss": "知道了!",
+        "link": "了解更多",
+        "href": "/zh/privacy/"
+      }
+    })});
+  </script>
+
+
+  
+
+
+
+
+
+  <title>第9單元:統計思考開門 | 陳紹慶的個人網站</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="7b1ae78011bb7902e65b95b3b104d515" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.226a9011996d125bf3fe4a5f22353a49.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/zh/">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/zh/">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#about"><span>關於我</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#posts"><span>網誌</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#projects"><span>專案</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#featured"><span>著作</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#contact"><span>聯絡方式</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>浅色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>深色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>自动</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          心理科學基礎統計
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">搜索...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/zh/openstat/"><i class="fas fa-arrow-left pr-1"></i>心理科學基礎統計</a></li>
+      </ul>
+
+      
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link  active" href="/zh/openstat/unit09/"><i class="fas fa-book-reader pr-1"></i>統計思考開門</a>
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">在本页</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#統計思考實例emily-rosa的專題研究">統計思考實例：Emily Rosa的專題研究</a></li>
+    <li><a href="#統計思考養成途徑">統計思考養成途徑</a></li>
+    <li><a href="#統計方法運用指南">統計方法運用指南</a></li>
+    <li><a href="#總結">總結</a></li>
+    <li><a href="#習題">習題</a>
+      <ul>
+        <li><a href="#參考文獻">參考文獻</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+  
+
+  <li class="breadcrumb-item">
+    <a href="/zh/">
+      
+        Home
+      
+    </a>
+  </li>
+
+
+  <li class="breadcrumb-item">
+    <a href="/zh/openstat/">
+      
+        心理科學基礎統計
+      
+    </a>
+  </li>
+
+
+      <li class="breadcrumb-item active" aria-current="page">
+        統計思考開門
+      </li>
+    </ol>
+  </nav>
+
+
+          
+
+          <h1>第9單元:統計思考開門</h1>
+
+          <div class="article-style">
+            <h1 id="heading"></h1>
+<p>科學創見從對現象的推測開始，只要好奇親眼目睹或耳聞的現象之發生原因，推測如何發生的過程，就有最初步的<strong>假設(Hypothesis)</strong>。假設要成為讓人信服的說法，需要有<strong>正面證據(Positive Evidence)<strong>的支持，以及不被</strong>反面證據(Negative Evidence)<strong>推翻。決定該找到什麼樣的證據，還有收集證據的方法，與假設放在一起就構成</strong>科學思考(Scientific thinking)</strong>。當證據是需要經過<strong>隨機化(Randomization)<strong>取得的</strong>資料(Data)</strong>，並且使用<strong>機率模型(Probability Model)<strong>整理與驗證資料裡的</strong>正反面訊息</strong>，這種科學思考就是<strong>統計思考(Statistical Thinking)</strong>。</p>
+<h2 id="統計思考實例emily-rosa的專題研究">統計思考實例：Emily Rosa的專題研究</h2>
+<p>曾擔任美國神智學會(Theosophical Society in America)會長的Dora Kunz在1970年代起提倡<a href="https://en.wikipedia.org/w/index.php?title=Therapeutic_touch&amp;oldid=813367620" target="_blank" rel="noopener"><strong>治療性撫慰</strong></a>(therapeutic touch)，幫助病患紓解病痛與焦慮。提倡者主張人類身體自然散發能量場(energy field)，受過訓練的治療師能不接觸患者身體，感應患者的能量場，並運用自身能量撫慰患部，紓解病患的痛苦。到了今天，包括美國在內，全球大約有80所護理學校列治療性撫慰為正式課程，光是北美地區有80所左右的醫療機構允許護理人員使用治療性撫慰幫助住院患者。有興趣的讀者使用關鍵詞“therapeutic touch”搜尋網路資訊，還能發現有組織定期舉辦教育工作坊。</p>
+<div class="figure" style="text-align: center">
+<p><img src="theraputic-touch.jpg" alt="正在接受治療性撫慰的男士。圖像取自HEAVYSTONES.com" width="30%" /></p>
+<p class="caption">
+Figure 1: 正在接受治療性撫慰的男士。圖像取自HEAVYSTONES.com
+</p>
+</div>
+<p>1998年當時11歲的美國女孩Emily Rosa，想知道治療師感應人體能量場的真實能力，改造流傳已久的擲硬幣遊戲，設計出一套簡易測試。她請治療師坐在同一張桌子對面，兩人之間有一塊隔板，雖然能對話但是看不見彼此，隔板下方有兩個孔洞。測試時治療師將雙手穿過孔洞伸到另一邊，每次測試前測試者先投擲硬幣，決定要將自已的手伸到治療師的那一隻手掌上方8至10公分處，再請治療師說出測試者的手是在左手還是右手上方，每位治療師反覆進行十次測試。以擲硬幣對賭的所有可能性來看，<strong>Emily假設如果治療師真的有感應人體能量場的能力，十次測試的答對率應該比完全亂猜(50%)高出許多</strong>，當年的Emily認為一位治療師至少要答對8次，才能證實真有本事。</p>
+<div class="figure" style="text-align: center">
+<p><img src="342px-Emily_Rosa.jpg" alt="左：Emily Rosa 11歲時的留影，取自維基百科。右：Emily Rosa施測現場素描，取自Rosa et al. (1998) Figure 1" width="70%" /></p>
+<p class="caption">
+Figure 2: 左：Emily Rosa 11歲時的留影，取自維基百科。右：Emily Rosa施測現場素描，取自Rosa et al. (1998) Figure 1
+</p>
+</div>
+<p>在父母的幫助下，1996年Emily邀請到15位實際從事治療性撫慰的人士參與測試，一年後因為電視台的專訪，又找了曾參與先前研究在內的7位等共13位人士，進行第二次研究。Emily與父母以及一位醫師一起將兩次研究結果寫成論文發表(Rosa et al. 1998)。論文中的長條圖呈現28人次的正確次數，圖<a href="#fig:Rosa1998Fig2">3</a>是原始統計圖的重製版本：</p>
+<pre><code>## png 
+##   2
+</code></pre>
+<div class="figure" style="text-align: center">
+<p><img src="Rosa1998-fig2.png" alt="Emily Rosa的研究結果" width="60%" /></p>
+<p class="caption">
+Figure 3: Emily Rosa的研究結果
+</p>
+</div>
+<p>測試結果究竟證實了治療師們真有本事？還是揭露治療性撫慰的誇大不實？回答這些問題之前，我們先來解析這件專題研究的思路。如果你認為Emily Rosa的<strong>假設</strong>與<strong>測試方法</strong>是有道理的，或者你認為可以做更好的改良，那麼你已經有科學思考的基本能力。Emily的專題研究讓我們知道，能以科學思考探究的問題，必定有<strong>可測試的假設</strong>，以及<strong>可實作的測試方法</strong>。更嚴謹的話，還要加上<strong>正反證據的成立條件</strong>。</p>
+<p>那麼為何Emily Rosa的專題研究是一種<strong>統計思考</strong>？首先Emily提出的假設有預期測量結果的發生機率：如果治療師們沒有宣稱的本事，全部的答對率應該和丟硬幣猜是正面還是反面向上的機率一樣：50%。如果治療師們真的有本事，答對率應該明顯高於50%，這也是正面證據與反面證據有效的條件。至於Emily使用的測試方法，看上去可以有效累積每位治療師的答對率。</p>
+<p>圖 <a href="#fig:Rosa1998Fig2">3</a> 標示21位治療師的平均答對次數是4.4次，表示10次測試裡有4至5次是正確的。<strong>平均4.4次</strong>似乎與50%差不了多少，憑這個數值，Emily能推斷這群治療師的本事言過其實嗎？</p>
+<h2 id="統計思考養成途徑">統計思考養成途徑</h2>
+<p>Emily Rosa的報告裡是以數值呈現的機率資訊，判斷治療師有本事的可能性，有沒有高過治療師沒有本事的可能性。她所收集的資料，能以全部治療師的正確反應次數估計可能性，也可以每位治療師的正確率估計可能性。本書運用這個案例，介紹每位統計初學者首先學習的單一樣本樣本推論統計(第<a href="#onesample"><strong>??</strong></a>單元)。</p>
+<p>學習第一套推論統計之前，我們要先認識描述資料的方法，也就是描述統計。描述統計的功用是劃清要進行推論的資訊，符合想確證的假設。好的描述統計能展現分析者對問題的理解，以及從資料獲得的判斷。在第<a href="#describe"><strong>??</strong></a>單元，我們將學習類別變數與連續變數的資料尺度以及統計量數，還有表現各種變項組合的統計圖表。</p>
+<p>接著在第<a href="#probability"><strong>??</strong></a>單元，我們要重新學習機率事件的計算，以及機率分佈的概念，再次深入了解何謂條件機率，以及運用貝氏定理計算事後機率。到了第<a href="#distribution"><strong>??</strong></a>單元，我們要運用程式模擬認識機率分配，探討為何在隨機化條件下收集的資料，才是能代表母群的樣本。這兩個單元都會運用相同的案例，介紹機率的計算與模擬。</p>
+<p>充分認識機率的計算與模擬，我們就能運用這些觀念與方法，理解推論統計的運作邏輯。第<a href="#onesample"><strong>??</strong></a>單元以TT治療師的測試分析，學習假設檢定的正確運用方法，我們將了解如何考量無窮次的型一與型二錯誤率，謹慎推論一次的顯著性檢定結果；還有初步認識母數推論統計與無母數推論統計的差異。</p>
+<p>第<a href="#paired"><strong>??</strong></a>單元將前進到相依樣本的推論統計，在此將認識第一種效果量：標準化平均數差異，以及如何搭配樣本數及考驗力等資訊，判斷推論結果的可靠性。第<a href="#independent"><strong>??</strong></a>單元以獨立樣本的推論統計範例，讓初學者認識實驗設計如何影響分析結果。</p>
+<p>第<a href="#corr-reg"><strong>??</strong></a>單元將認識第二種效果量：相關係數，以及最簡單的一元一次線性迴歸式。這個單元的範例與第<a href="#paired"><strong>??</strong></a>單元與第<a href="#independent"><strong>??</strong></a>單元有所關聯，以此引導初學者了解兩種推論方法與變異數分析的關聯性。進入第<a href="#oneway-anova"><strong>??</strong></a>單元，就能運用線性迴歸了解正確使用變異數分析的關鍵，以及解讀及呈現分析結果的方式。</p>
+<h2 id="統計方法運用指南">統計方法運用指南</h2>
+<p>本書編排架構參考Rivka de Vries博士建置的教學網站<a href="https://statkat.com/" target="_blank" rel="noopener">統計貓咪(statkat)</a>，以分析問題的變項結構設定篇章介紹統計方法。鑑於本書預設讀者是尚未有豐富統計分析實務的初學者，集中介紹適用單一自變項與單一應變項之間，或者只有一個獨變項與一個依變項的統計方法。我將本書介紹的方法，與章節連結整理於下表：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">依變項為類別變項</th>
+<th style="text-align:center">依變項為連續變項</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無獨變項</td>
+<td style="text-align:center">二項檢定( 單元<a href="#onesample-binomial"><strong>??</strong></a> )</td>
+<td style="text-align:center">單一平均數z檢定( 單元<a href="#onesample-z"><strong>??</strong></a> )</td>
+</tr>
+<tr>
+<td>獨變項為相依樣本</td>
+<td style="text-align:center">McNemar氏檢定( 單元<a href="#paired-categorical"><strong>??</strong></a> )</td>
+<td style="text-align:center">相依樣本t檢定(單元<a href="#paired-continuous"><strong>??</strong></a>)</td>
+</tr>
+<tr>
+<td>獨變項為獨立樣本</td>
+<td style="text-align:center">卡方獨立性檢定(單元<a href="#independent-chisquare"><strong>??</strong></a>)</td>
+<td style="text-align:center">獨立樣本t檢定(單元<a href="#independent-t"><strong>??</strong></a>)</td>
+</tr>
+<tr>
+<td>單一自變項為連續變數</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">皮爾森相關(單元<a href="#corr-reg-person"><strong>??</strong></a>), 簡單迴歸(單元<a href="#corr-reg-simple"><strong>??</strong></a>)</td>
+</tr>
+<tr>
+<td>單一獨變項有三組以上獨立樣本</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">獨立樣本變異數分析(單元<a href="#oneway-independent"><strong>??</strong></a>)</td>
+</tr>
+<tr>
+<td>單一獨變項有三組以上相依樣本</td>
+<td style="text-align:center"></td>
+<td style="text-align:center">重覆量數變異數分析(單元<a href="#oneway-repeated"><strong>??</strong></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>讀者除了可由表格快速找到自已想查閱的章節資料，這份表格也是<a href="https://statkat.com/" target="_blank" rel="noopener">統計貓咪(statkat)</a>提供的方法檢索表微型版。當讀者熟練本書介紹的統計方法之後，一旦有需要學習其他統計方法，可經由該網站尋找相關資訊。該如何找到自己需要的統計方法？就要從了解變項的性質開始，所以下一章要好好認識描述統計。</p>
+<h2 id="總結">總結</h2>
+<ul>
+<li>科學思考講究平等對待正面證據與反面證據；統計思考透過機率模型評估各種證據的可能性。</li>
+<li>養成統計思考需要洞察肯定或否定理論的證據皆可能發生，也需要不斷自我提醒，當下得到的結果只是長久觀察的一種可能性。</li>
+<li>任何需要統計分析的資料必有依變項，分析之前先確認測量尺度，能掌握合適的分析方法。</li>
+</ul>
+<h2 id="習題">習題</h2>
+<ol>
+<li>
+<p>安裝與設定JASP與jamovi。如果電腦有連接網路，由jamovi的模組選單(Modules)，下載試用<code>Rj</code>、<code>statkat</code>、以及<code>learning statistics with jamovi</code>。</p>
+</li>
+<li>
+<p>根據你的學習指南，開啟指定的JASP與jamovi資料收藏檔案，進行第一次嘗試並儲存分析結果。</p>
+</li>
+<li>
+<p>註冊OSF與管理管理專案，上傳展示你的第一次分析結果。</p>
+</li>
+</ol>
+<h3 id="參考文獻">參考文獻</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-RosaCloseLookTherapeutic1998" class="csl-entry">
+<p>Rosa, Linda, Emily Rosa, Larry Sarner, and Stephen Barrett. 1998. “A Close Look at Therapeutic Touch.” <em>JAMA</em> 279 (13): 1005. <a href="https://doi.org/10.1001/jama.279.13.1005">https://doi.org/10.1001/jama.279.13.1005</a>.</p>
+</div>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>最近更新于 Jan 19, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+  
+  <p class="powered-by">
+    
+      <a href="/zh/privacy/">隱私權條款</a>
+    
+    
+  </p>
+  
+
+  
+  <p class="powered-by">
+    © 2017~2021 Sau-Chin Chen
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/markdown.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.522eb70afb0572dcb0f5f96298aded03.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

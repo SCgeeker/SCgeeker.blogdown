@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog_skill | 陳紹慶的個人網站</title>
+    <link>http://scchen.com/zh/tag/blog_skill/</link>
+      <atom:link href="http://scchen.com/zh/tag/blog_skill/index.xml" rel="self" type="application/rss+xml" />
+    <description>blog_skill</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>blog_skill</title>
+      <link>http://scchen.com/zh/tag/blog_skill/</link>
+    </image>
+    
+    <item>
+      <title>網站昇級復出紀錄</title>
+      <link>http://scchen.com/zh/post/update_website_log/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/post/update_website_log/</guid>
+      <description>&lt;p&gt;和許多人的2020年一樣，充滿許多預期計畫之外的變數。開始了我的一直想經營的&lt;a href=&#34;https://anchor.fm/opensci-cafe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;podcast&lt;/a&gt;；開始經營在地的&lt;a href=&#34;https://sites.google.com/gms.tcu.edu.tw/exppsyunion/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製科學推廣社群&lt;/a&gt;；預想能結束的研究專案要改變收集資料的方法；無法出國卻因緣際會開啓新的研究專案。在新的一年開始重新整理個人網站是個不錯的開始。&lt;/p&gt;
+&lt;p&gt;剛開始podcast時想過整合到個人網站，當時也遇到更新網站的&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic theme&lt;/a&gt;。那時的更新造成原來的disqus失效，造成一些想聯絡我的朋友只能從我的臉書連絡。趁這次更新，我換成以github留言系統為基礎的API ~ &lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;utterances&lt;/a&gt;。更新個人網站的過程只有找到英文的說明與安裝心得，在此留下我的經驗做為參考：&lt;/p&gt;
+&lt;h3 id=&#34;utterance安裝前置作業&#34;&gt;utterance安裝前置作業&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;個人網站資料是存放在公開的github repository&lt;/li&gt;
+&lt;li&gt;確認存放要出現留言的網頁模板，我將&lt;a href=&#34;https://themes.gohugo.io/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic theme&lt;/a&gt;4.1版昇級到&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wowchemy&lt;/a&gt;，都有嘗試掛上&lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;utterances&lt;/a&gt;。匯整&lt;a href=&#34;https://mscipio.github.io/post/utterances-comment-engine/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MICHELE SCIPIONI&lt;/a&gt;與&lt;a href=&#34;https://davidfong.netlify.app/post/hugoacademiccommentswithutterances/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;David Fong&lt;/a&gt;的紀錄，&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wowchemy&lt;/a&gt;的自訂網頁模板是集合在&lt;code&gt;[根目錄]/layouts&lt;/code&gt;之內。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;網站github-repo安裝utterance-api&#34;&gt;網站github repo安裝utterance api&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;透過&lt;a href=&#34;https://github.com/apps/utterances&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;app網頁&lt;/a&gt;，依照指示將utterance api安裝到存放網站資料的github repo。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在&lt;a href=&#34;https://utteranc.es/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;utterances&lt;/a&gt;生成網頁模板。首先在以下欄位輸入&lt;code&gt;github帳號/repo名稱&lt;/code&gt;。下圖是這個網站的例子。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /zh/post/update_website_log/utterances_configuration_hu413664db90fe3fad3c4bbdf0d72bc002_22080_a00bb15569c1e9013509e7b790054434.png 400w,
+               /zh/post/update_website_log/utterances_configuration_hu413664db90fe3fad3c4bbdf0d72bc002_22080_286d75a04574f4936f5c530d1e6d1961.png 760w,
+               /zh/post/update_website_log/utterances_configuration_hu413664db90fe3fad3c4bbdf0d72bc002_22080_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;http://scchen.com/zh/post/update_website_log/utterances_configuration_hu413664db90fe3fad3c4bbdf0d72bc002_22080_a00bb15569c1e9013509e7b790054434.png&#34;
+               width=&#34;760&#34;
+               height=&#34;394&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;評論標籤(label)以及留言頁面背景(Theme)可自行決定要不要設定。按下範例圖最下方的&lt;strong&gt;Copy&lt;/strong&gt;，複製網頁模板內容。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;&#34; srcset=&#34;
+               /zh/post/update_website_log/utterances_template_hu5b5956f7a6ac714dd48727695caf40c3_39573_0b2930377c1a7d2354de4756ec3aef66.png 400w,
+               /zh/post/update_website_log/utterances_template_hu5b5956f7a6ac714dd48727695caf40c3_39573_ac99bfa3dd46625c57ec40283785425d.png 760w,
+               /zh/post/update_website_log/utterances_template_hu5b5956f7a6ac714dd48727695caf40c3_39573_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;http://scchen.com/zh/post/update_website_log/utterances_template_hu5b5956f7a6ac714dd48727695caf40c3_39573_0b2930377c1a7d2354de4756ec3aef66.png&#34;
+               width=&#34;749&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;設定網頁模板&#34;&gt;設定網頁模板&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;前一步驟複製的網頁模板存於檔案&lt;code&gt;utterances.html&lt;/code&gt;，檔案存放路徑為&lt;code&gt;[根目錄]/layouts/partials/comments&lt;/code&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改&lt;code&gt;[根目錄]/layouts/partials/comments.html&lt;/code&gt;的內容如下：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;{{ if site.Params.comments.engine | and (index site.Params.comments.commentable .Type) | and (ne .Params.commentable false) | or .Params.commentable }}
+&amp;lt;section id=&amp;quot;comments&amp;quot;&amp;gt;
+  {{ if eq site.Params.comments.engine 1 }}
+    {{ partial &amp;quot;comments/disqus.html&amp;quot; . }}
+  {{ else if eq site.Params.comments.engine 2 }}
+    {{ partial &amp;quot;comments/commento.html&amp;quot; . }}
+  {{ else if eq site.Params.comments.engine 3 }}
+    {{ partial &amp;quot;comments/utterances.html&amp;quot; . }}
+  {{ end }}
+&amp;lt;/section&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;修改&lt;code&gt;[根目錄]/config/_default/params.toml&lt;/code&gt;裡有關留言的設定。這個網站設定可留言的部分是網誌與專案，因此設定如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;############################
+## Comments
+############################
+[comments]
+  # Comment provider:
+  #   0: Disabled
+  #   1: Disqus (https://disqus.com)
+  #   2: Commento (https://commento.io)
+  #   3: Utterances (https://utteranc.es/)
+  engine = 3
+
+  # Which page types are commentable?
+  commentable = {page = false, post = true, docs = false, project = true, publication = false, talk = false}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;更新&#34;&gt;更新!!!&lt;/h4&gt;
+&lt;p&gt;如果設定檔是&lt;code&gt;params.yaml&lt;/code&gt;，設定方式如下:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;comments:
+  provider: &#39;Utterances&#39;
+  commentable:
+    post: true
+    book: false
+    project: false
+    publication: false
+    event: false
+  disqus:
+    shortname: &#39;&#39;
+    show_count: false
+  commento:
+    url: &#39;&#39;
+  Utterances:
+    url: &#39;https://utteranc.es/&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;置入留言模板的shortcode 到網誌與專案的模板網頁，分別存放於&lt;code&gt;[根目錄]/layouts/_default/single.html&lt;/code&gt;與&lt;code&gt;[根目錄]/layouts/project/single.html&lt;/code&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-網誌模板&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;網誌模板&#34; srcset=&#34;
+               /zh/post/update_website_log/post_template_hu1b62b25ddec5fa46d91e66984b0e7b88_21257_ad8549cc5063357e19e9128d6d217cb7.png 400w,
+               /zh/post/update_website_log/post_template_hu1b62b25ddec5fa46d91e66984b0e7b88_21257_3a632fe6494b20624c548e72dd2258b9.png 760w,
+               /zh/post/update_website_log/post_template_hu1b62b25ddec5fa46d91e66984b0e7b88_21257_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;http://scchen.com/zh/post/update_website_log/post_template_hu1b62b25ddec5fa46d91e66984b0e7b88_21257_ad8549cc5063357e19e9128d6d217cb7.png&#34;
+               width=&#34;760&#34;
+               height=&#34;517&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      網誌模板
+    &lt;/figcaption&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-專案模板&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;
+        &lt;img alt=&#34;專案模板&#34; srcset=&#34;
+               /zh/post/update_website_log/project_template_hudc6a7a1f0e9efbcb2e602a4b5bb32a77_18503_782ba7abc785031733192cbebed5eff4.png 400w,
+               /zh/post/update_website_log/project_template_hudc6a7a1f0e9efbcb2e602a4b5bb32a77_18503_71c45f2d9dc4176b13f816753f831327.png 760w,
+               /zh/post/update_website_log/project_template_hudc6a7a1f0e9efbcb2e602a4b5bb32a77_18503_1200x1200_fit_lanczos_2.png 1200w&#34;
+               src=&#34;http://scchen.com/zh/post/update_website_log/project_template_hudc6a7a1f0e9efbcb2e602a4b5bb32a77_18503_782ba7abc785031733192cbebed5eff4.png&#34;
+               width=&#34;760&#34;
+               height=&#34;405&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      專案模板
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;使用須知&#34;&gt;使用須知&lt;/h3&gt;
+&lt;p&gt;utterance使用github的留言系統，因此留言者必須註冊並登入github帳號是一個不方便的地方。不過對於像我一樣許多公開專案在github部署的使用者，可運用這個機制引導想深入學習者使用github，更能讓高手直接指出專案的問題。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

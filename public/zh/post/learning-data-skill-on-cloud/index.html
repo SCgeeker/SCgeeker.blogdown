@@ -1,0 +1,1351 @@
+<!DOCTYPE html><html lang="zh-hant" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="陳紹慶" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="使用R studio Cloud開設的非同步線上教學平台" />
+
+  
+  <link rel="alternate" hreflang="zh-hant" href="http://scchen.com/zh/post/learning-data-skill-on-cloud/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#4caf50" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.39aeb80ca18d6d31dc33f7fc232b8e06.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/zh/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="http://scchen.com/zh/post/learning-data-skill-on-cloud/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="陳紹慶的個人網站" />
+  <meta property="og:url" content="http://scchen.com/zh/post/learning-data-skill-on-cloud/" />
+  <meta property="og:title" content="可重製統計線上學習專案 | 陳紹慶的個人網站" />
+  <meta property="og:description" content="使用R studio Cloud開設的非同步線上教學平台" /><meta property="og:image" content="http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="zh-hant" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-01-26T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-01-26T11:02:40&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://scchen.com/zh/post/learning-data-skill-on-cloud/"
+  },
+  "headline": "可重製統計線上學習專案",
+  
+  "datePublished": "2021-01-26T00:00:00Z",
+  "dateModified": "2021-01-26T11:02:40+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "陳紹慶"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "陳紹慶的個人網站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "使用R studio Cloud開設的非同步線上教學平台"
+}
+</script>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#4caf50",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#4caf50"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "本网站使用cookies来确保您在本网站上获得最佳体验。",
+        "dismiss": "知道了!",
+        "link": "了解更多",
+        "href": "/zh/privacy/"
+      }
+    })});
+  </script>
+
+
+  
+
+
+
+
+
+  <title>可重製統計線上學習專案 | 陳紹慶的個人網站</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9208a85d4b3b2b626041317264127d73" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.226a9011996d125bf3fe4a5f22353a49.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/zh/">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/zh/">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#about"><span>關於我</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#posts"><span>網誌</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#projects"><span>專案</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#featured"><span>著作</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#contact"><span>聯絡方式</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>浅色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>深色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>自动</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>可重製統計線上學習專案</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          最近更新于
+      
+    
+    Jan 26, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/zh/category/teaching/">Teaching</a>, <a href="/zh/category/reproduce-practice/">Reproduce Practice</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="起源">起源</h2>
+<p>資料科學技巧除了是大數據商務與學術應用的基礎能力，也能深入理解統計與機率的數學原理，更是實現可重製科學研究操作的基礎。開始在研究專案落實可重製科學研究操作之後，我一直想在教學中落實。資料科學技巧的入門必學的資料清理、資料視覺化等課題，在傳統統計課程是被忽略的單元，即使使用開源統計軟體JASP與jamovi，因為教材都是清理完成的資料，無法幫助學生學習資料科學技巧。</p>
+<p>2019年<a href="https://rstudio.cloud/" target="_blank" rel="noopener">Rstudio Cloud</a>正式上線，註冊使用者能免費在個人雲端工作空間創建專案，使用與本機版幾乎一模一樣的功能。2020年推出的<a href="https://rstudio.cloud/plans/instructor" target="_blank" rel="noopener">講師專案</a>，每月付15美金，就能製作共享專案，透過邀請讓學生登入取得專案。也就是說任何申請講師專案的Rstudio Cloud用戶，可以開發經營個人的<strong>非同步線上教學平台</strong>。</p>
+<p>我遇到的挑戰還有教材內容。以我的學生客群來說，現在還沒有為心理學相關科系學生設計，平行學習資料科學技巧與統計觀念的教材是缺乏的。幾年前自編的<a href="https://scgeeker.github.io/BasicStatistics/" target="_blank" rel="noopener">中文電子書</a>是以傳統課程架構編輯，並未加入資料科學技巧，但是要整合原來的內容就必須翻新教材架構。很幸運這幾年認識了英國格拉斯哥大學心理學系<a href="https://psyteachr.github.io/" target="_blank" rel="noopener">PsyTeachR</a>團隊的核心教師<a href="https://twitter.com/LisaDeBruine" target="_blank" rel="noopener">Lisa DeBruine</a>，這個團隊已經開發從大學一年級到研究所的R與統計學習教材，並且不斷實踐。2021年初她公開了電子書<a href="https://psyteachr.github.io/msc-data-skills/" target="_blank" rel="noopener">可重製科學的資料科學基本功</a>以及R套件，這套資源的架構與內容，就是我所期望的新世代心理科學學生需要的教材。</p>
+<p><a href="https://psyteachr.github.io/msc-data-skills/" target="_blank" rel="noopener">可重製科學的資料科學基本功</a>在十個單元的前七個安排完整的資料科學技巧學習示範與演練問題，最後四個單元才是機率以及統計方法。以傳統統計科學的架構來看，一定有人懷疑能否真的學到觀念與正確的方法。但是我從研究的經驗體認到，先習得資料科學技巧，更容易學習機率觀念，以及運用<a href="https://zh.wikipedia.org/wiki/%E4%B8%80%E8%88%AC%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B" target="_blank" rel="noopener">通用線性模型</a>能有效組織所有基本統計方法。</p>
+<p>編寫一本這樣的中文書是個很花時間的工程，因此我決定結合各地有學習需要的學生，將PsyTeachR的資源轉換成非同步線上課程，累積眾人的學習紀錄，形成更新前一版<a href="https://scgeeker.github.io/BasicStatistics/" target="_blank" rel="noopener">中文教科書</a>的資源。這篇網誌是課程導覽，接著就來看學生如何加入這門課程，如何運用專案學習資料科學技巧與基本統計。</p>
+<h2 id="註冊與登入r-studio-cloud">註冊與登入R studio Cloud</h2>
+<p>首先到<a href="https://rstudio.cloud/" target="_blank" rel="noopener">R studio Cloud網站</a>註冊帳號，首創這份網誌時的頁面如下圖，首次註冊從右上角&quot;Sign Up&quot;開始。</p>
+<p><img src="Rstudio_Cloud.png" alt="Rstudio Cloud首頁。">
+註冊方式有三種：<strong>自填資料</strong>、<strong>連結Google帳戶</strong>、<strong>連結Github帳戶</strong>。個人推薦想深入學習的學生用Github帳戶註冊，也方便在這篇網誌留言。</p>
+<p><img src="Rstudio_Cloud_signup_board.png" alt="R stuido Cloud Sign Up"></p>
+<p>確認註冊方法後就會到選擇使用方案的頁面，只是想體驗或加入線上課程專案，只要選擇免費方案(Free)。</p>
+<p><img src="Rstudio_Cloud_signup.png" alt="Rstudio Cloud Plan"></p>
+<p>認證完成就能登入個人工作空間(workspace)，請見影片示範。確認可以操作，就能透過<a href="https://rstudio.cloud/spaces/113159/join?access_code=SQu6pEVkMk1uqjskHo7pkWV35UE%2BiyUO%2BZoRhyd6" target="_blank" rel="noopener">專案邀請連結</a>加入課程專案，影片有示範入門操作，專案裡的<code>Student_clickme.Rmd</code>這份文件，有說明如何搭配<a href="https://psyteachr.github.io/msc-data-skills/" target="_blank" rel="noopener">可重製科學的資料科學基本功</a>的內容進行自主或合作學習。</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/NlZpmK3evis" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="學習方案建議">學習方案建議</h2>
+<ul>
+<li>
+<p>專案內置的檔案有<a href="https://psyteachr.github.io/msc-data-skills/" target="_blank" rel="noopener">可重製科學的資料科學基本功</a>的源始Rmarkdown檔案，提供學生自行編輯筆記與演練書裡的範例。這些源始Rmarkdown檔案保留原始的英文內容，對於英文程度不高的學生會是挑戰，建議找朋友同學一起學習。</p>
+</li>
+<li>
+<p>各單元演練題己經完成中文化改編。請先閱讀單元電子書內容，並演練所有範例題，再來操作挑戰題。進行順序請見專案裡的<code>Student_clickme.Rmd</code>這份文件。</p>
+</li>
+<li>
+<p>加入專案的學生會在個人的工作空間看到專屬的專案副本，就像下圖示範。個人專案內容是學生加入時，這份課程專案的最新內容。學生如果想了解演練題的操作是否正確，在學校上我開設的課程，可以直接找我討論；透過網路遠端參與的學生，可以透過網站所留的聯絡方式，請我給你提供意見，我確認之後，會找時間在你的專案裡，與問題有關的檔案內容留下文字建議。</p>
+</li>
+</ul>
+<p><img src="Rstudio.Cloud_workspace.png" alt="R studio workspace"></p>
+<h2 id="教學材料更新計畫">教學材料更新計畫</h2>
+<p><a href="https://psyteachr.github.io/msc-data-skills/" target="_blank" rel="noopener">可重製科學的資料科學基本功</a>的第8及第9單元與我自編的<a href="https://scgeeker.github.io/BasicStatistics/" target="_blank" rel="noopener">中文電子書</a>大部分重疊，經過幾次的授課操作，深覺資料科學技巧與通用線性模型是新一代學習者必學的基礎。要加入這些必須直接使用R等程式語言做為學習工具，因此必須要捨棄依賴套裝軟體的思維，先幫助學生將R內化為個人能力。我希望透過累積現場與遠端學生的學習紀錄與回饋，加速中文電子書的更新。新的電子書將整合為個人網站的一部分，幫助更多學生更有意願運用R學習統計，還在使用套裝統計軟體的學生與老師也能有興趣更新工具。</p>
+<h2 id="歡迎來上課">歡迎來上課</h2>
+<p>除了<a href="https://psyteachr.github.io/msc-data-skills/" target="_blank" rel="noopener">電子書</a>內容是英文，與統計有關的部分只比大學部基礎統計稍難一些，即使是大一學生，只要願意找輔助資料，也能獲得修習研究方法及進階課程所需要的基礎統計能力。<strong>如果發現內容有任何錯誤</strong>，請使用網誌留言回應，方便同時運用這套專案的學生了解。<strong>如果是個人學習觀念或寫作程式碼的問題</strong>，請使用網誌最下方提供的個人聯絡方式告知，我會在你的專案中給予建議。</p>
+<p>不論你是會修我的現場課程，還是只能遠端參與的學生，想要學習的話就點下<a href="https://rstudio.cloud/spaces/113159/join?access_code=SQu6pEVkMk1uqjskHo7pkWV35UE%2BiyUO%2BZoRhyd6" target="_blank" rel="noopener">專案邀請連結</a>加入吧。</p>
+
+    </div>
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  <section id="comments">
+    <center><h5>!登入個人github帳號就能留言!</h5></center>
+
+<script src="https://utteranc.es/client.js"
+        repo="SCgeeker/SCgeeker.blogdown"
+        issue-term="pathname"
+        label="comments 💬"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+  </section>
+  
+
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/zh/tag/r/">R</a>
+  
+  <a class="badge badge-light" href="/zh/tag/statistics/">statistics</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://scchen.com/zh/post/learning-data-skill-on-cloud/&amp;text=%e5%8f%af%e9%87%8d%e8%a3%bd%e7%b5%b1%e8%a8%88%e7%b7%9a%e4%b8%8a%e5%ad%b8%e7%bf%92%e5%b0%88%e6%a1%88" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://scchen.com/zh/post/learning-data-skill-on-cloud/&amp;t=%e5%8f%af%e9%87%8d%e8%a3%bd%e7%b5%b1%e8%a8%88%e7%b7%9a%e4%b8%8a%e5%ad%b8%e7%bf%92%e5%b0%88%e6%a1%88" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e5%8f%af%e9%87%8d%e8%a3%bd%e7%b5%b1%e8%a8%88%e7%b7%9a%e4%b8%8a%e5%ad%b8%e7%bf%92%e5%b0%88%e6%a1%88&amp;body=http://scchen.com/zh/post/learning-data-skill-on-cloud/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://scchen.com/zh/post/learning-data-skill-on-cloud/&amp;title=%e5%8f%af%e9%87%8d%e8%a3%bd%e7%b5%b1%e8%a8%88%e7%b7%9a%e4%b8%8a%e5%ad%b8%e7%bf%92%e5%b0%88%e6%a1%88" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%e5%8f%af%e9%87%8d%e8%a3%bd%e7%b5%b1%e8%a8%88%e7%b7%9a%e4%b8%8a%e5%ad%b8%e7%bf%92%e5%b0%88%e6%a1%88%20http://scchen.com/zh/post/learning-data-skill-on-cloud/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://scchen.com/zh/post/learning-data-skill-on-cloud/&amp;title=%e5%8f%af%e9%87%8d%e8%a3%bd%e7%b5%b1%e8%a8%88%e7%b7%9a%e4%b8%8a%e5%ad%b8%e7%bf%92%e5%b0%88%e6%a1%88" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://scchen.com/"><img class="avatar mr-3 avatar-circle" src="/zh/author/%E9%99%B3%E7%B4%B9%E6%85%B6/avatar_hu3d590b371aacc9bbd6d33aea2a79116c_5560_270x270_fill_q75_lanczos_center.jpg" alt="陳紹慶"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://scchen.com/">陳紹慶</a></h5>
+      <h6 class="card-subtitle">認知心理學副教授</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pmsp96@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-6092-6049" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=kSUyxs0AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/SCgeeker" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/zh/files/CV_CSC_English_2021Jan.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  <section id="comments">
+    <center><h5>!登入個人github帳號就能留言!</h5></center>
+
+<script src="https://utteranc.es/client.js"
+        repo="SCgeeker/SCgeeker.blogdown"
+        issue-term="pathname"
+        label="comments 💬"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+  </section>
+  
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>相关</h3>
+    <ul>
+      
+      <li><a href="/zh/post/jasp-jamovi/">心理科學研究必用神器3 ~ 開源統計軟體</a></li>
+      
+      <li><a href="/zh/post/basic-statistics/">電子書草稿上線：心理科學基礎統計</a></li>
+      
+      <li><a href="/zh/post/probability-distributions-jamovi-zh/">運用jamovi認識與運用機率分配</a></li>
+      
+      <li><a href="/zh/post/dynamic-writing/">心理科學研究必用神器4 ~ 動態文件寫作入門</a></li>
+      
+      <li><a href="/zh/post/open-science-framework.zh/">心理科學研究必用神器2 ~ Open Science Framework</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+  <p class="powered-by">
+    
+      <a href="/zh/privacy/">隱私權條款</a>
+    
+    
+  </p>
+  
+
+  
+  <p class="powered-by">
+    © 2017~2021 Sau-Chin Chen
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/markdown.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.522eb70afb0572dcb0f5f96298aded03.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R | Sau-Chin Chen&#39;s website</title>
+    <link>http://scchen.com/en/tag/r/</link>
+      <atom:link href="http://scchen.com/en/tag/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>R</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>R</title>
+      <link>http://scchen.com/en/tag/r/</link>
+    </image>
+    
+    <item>
+      <title>If Emily Rosa met Thomas Bayes ...</title>
+      <link>http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/</link>
+      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/</guid>
+      <description>&lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to &amp;ldquo;TT&amp;rdquo;) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients&#39; body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;theraputic-touch.jpg&#34; alt=&#34;A TT therapist is healing a paitent.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Emily was curious how real was TT technique. To test their skill under unbiased observations, she designed the test table like the below figure shows. Every trainee would run 10 trials in one test. In each trial, Emily placed her right hand above one of the participated trainee&#39; hand, decided by flipped coin. She had the hypothesis if the skill of TT trainees was real, they would give the correct answers in at least 8 of the trials.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;joc71352f1.gif&#34; alt=&#34;Emily Rosa is testing her subjest.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Emily ran this study two times between 1996 and 1997. At the first time 15 TT trainees were invited to this study. She deiced to run the second time after the TV station interviewed her. At the second time 13 TT trainees, included 7 had participated in the first time, joined this study.  Their analysis showed the average accuracy of these trainees as equal to the random guessing.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mNoRxCRJ-Y0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We would learn many things from Emily&amp;rsquo;s study till today. First of all the critical finding was the null effect. Today the behavioral scientists share more attention about the null effect than 1998. The other interesting thing is that the prediction could be verified by one point. It is rare to use the one-sample t-test in the psychological studies, but almost every psychologist learned the one-sample t-test before the independent t-test and paired t-test. Latest but may be critical, the idea of little Emily embodied the statistical thinking.&lt;/p&gt;
+&lt;p&gt;Emily&amp;rsquo;s data were summarized in the reproduced figure as below. They ran the one-sample t-test for the results of two times respectively. The analyses disconfirmed the reality of TT technique, but Emily and her parents might show a kind of researcher flexibility: they used the small samples in their first and follow-up studies. Could we upgrade their results in addition to conduct a registered replication plan?&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Rosa1998Fig2-1.png&#34; alt=&#34;Reproductive test results of Rosa et al.(1998)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 1: Reproductive test results of Rosa et al.(1998)&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If Emily had learned Bayesian statistics in 1998, she would show the reporters her stronger belief how fake the TT technique was. Next, I use the binomial probability distribution to reanalyze Emily&amp;rsquo;s data in the simple Bayesian inference. My first step is the recovery of the original correct frequency of every TT participant. Although Emily&amp;rsquo;s paper gave the range of scores (initial study: 2 to 8; follow-up study: 1 to 7), they did not provide the how many correct trials conducted by every participant. I arranged the numbers based on the averages and number of total correct responses as follows:&lt;/p&gt;
+&lt;p&gt;(R-chunk, vectors of numbers)&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Initial test data
+Data_initial &amp;lt;- c(2,3,3,3,3,4,5,5,5,5,5,6,6,7,8)
+# Follow-up data
+Data_followup &amp;lt;- c(1,3,3,3,3,4,4,4,4,5,5,7,7)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I required the theoretical parameters representing Emily&amp;rsquo;s hypothesis. Her study in nature was a game of coin tossing. She assumed certificated TT participants, given their technique was real, could answer correctly in more than 8 trials. In the other word, among the ten coins flipped by Emily, they could look into which 8, 9, or all sides on the top. Before the initial study, Emily could assume the probability each participant give the correct answer in a trial to be more than 0.5. If she used Bayesian inference, she would expect the posterior probability higher than 0.8. Therefore I prepared the uniform distribution ranged between 0.5 and 1 as the prior probability of the Bayesian inference.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Study parameters
+n_TT &amp;lt;- 10000
+n_trials &amp;lt;- 10
+
+# Theoretical accuracies
+min_acc &amp;lt;- 0.5
+max_acc &amp;lt;- 1
+
+### Analaysis of initial test
+
+# Prior accuracy of TT partitioners before initial test
+Correct_proportions_initial &amp;lt;- runif(n=n_TT, min=min_acc,max=max_acc)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It was recorded that only one participant returned 8 correct answers in the initial study. My Bayesian model used the binomial distribution with the arguments of 10 trials and prior probabilities. This model generated the posterior probability distribution given the data of Emily&amp;rsquo;s initial study. The average of the initial study was 4.67; thus I retrieved the posterior probability distribution of 5 from the Bayesian model.&lt;/p&gt;
+&lt;!---
+(R-chunk, Bayesian model and posterior histogram of initial)
+---&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Bayes-initial-1.png&#34; alt=&#34;Bayes&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 2: Bayes&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Post-initial-1.png&#34; alt=&#34;Posterior distribution&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 3: Posterior distribution&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.018&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+&lt;!---
+(R-chunk, Bayesian model and posterior histogram of follow-up)
+---&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 4: Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Post-followup-1.png&#34; alt=&#34;Posterior probability distribution of follow-up study result&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 5: Posterior probability distribution of follow-up study result&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The histogram of the posterior probability distribution shows zero possibility beyond 8. My reanalysis indicates that Emily&amp;rsquo;s study indeed falsified the reality of Therapeutic Touch. You may wonder if people have updated the understanding of Therapeutic Touch because of Emily&amp;rsquo;s study. Till today &lt;a href=&#34;http://therapeutictouch.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the official website of Therapeutic Touch&lt;/a&gt; is regularly upgrading the latest information. More efforts are required to guide people thinking this world with scientific and statistical knowledge.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why we need a readable data table in behavioral scientific research?</title>
+      <link>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
+      <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;A bad case&lt;/h3&gt;
+&lt;p&gt;A few days ago I was dealing with a raw data set as like the following table.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;ID&lt;/th&gt;
+&lt;th&gt;Group&lt;/th&gt;
+&lt;th&gt;I01&lt;/th&gt;
+&lt;th&gt;I02&lt;/th&gt;
+&lt;th&gt;I03&lt;/th&gt;
+&lt;th&gt;I04&lt;/th&gt;
+&lt;th&gt;I05&lt;/th&gt;
+&lt;th&gt;I06&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s01&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s02&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s03&lt;/td&gt;
+&lt;td&gt;A&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s04&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;s05&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;s06&lt;/td&gt;
+&lt;td&gt;B&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This table is a tiny version I copied from a master graduate’s spss raw data table. The format of the table is frequently seen in the data files for SPSS software. This format originated the “row cognition” for data in every mind who are not familar with the statistical tools. Without the awareness of structure, people used to stack a lot of bricks horizontally. As like the table shows, there are the data of 6 participants. A new statistical tool user tend to fill all the information and data for a participant in a row as possible. This format fits human cognition for the naive thing who never manipulate before. However, the computers recognize the table by column, in other words, a “column cognition”. I show you how computer deal with the summation of one participant’s scores by the following codes.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;s01_data &amp;lt;- c(3,4,5,1,2,3)
+units &amp;lt;- rep(1,6)
+sum(s01_data)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;[1] 18&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;t(units)%*%s01_data&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt; [,1]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;[1,] 18&lt;/p&gt;
+&lt;p&gt;The function &lt;code&gt;sum&lt;/code&gt; is one of the first functions a new statistical tool user have learned at the first class. &lt;code&gt;sum&lt;/code&gt; is used to add all the scores of a participant. A new user tend to append the summation to the end of a row. But the last code show you a programing language recognizes the scores of a participant by column. The evidence is that the sturcture of &lt;code&gt;t(units)&lt;/code&gt; is row but the structure of &lt;code&gt;s01_data&lt;/code&gt; is a column. How do we eliminate the difference between human and machine cognition? Why human tend to deal with the data by row rather by column?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;codes-to-make-the-table-readable&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Codes to make the table readable&lt;/h3&gt;
+&lt;p&gt;To make the table readable for the computer, I have to modify the format of this table as like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Table &amp;lt;- read.csv(&amp;quot;data.csv&amp;quot;)
+New_Table = data.frame(ID = rep(Table[,1],6), Group = rep(Table[,2],6), Item = rep(names(Table[,3:8]), each = 6), Resp = unlist(c(Table[,3:8])), row.names = NULL)
+head(New_Table)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    ID Group Item Resp
+## 1 s01     A  I01    3
+## 2 s02     A  I01    2
+## 3 s03     A  I01    4
+## 4 s04     B  I01    2
+## 5 s05     B  I01    2
+## 6 s06     B  I01    2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The new table arrange all the raw scores in one column. I create a new column &lt;code&gt;Item&lt;/code&gt; in this table. &lt;code&gt;Item&lt;/code&gt; is the index like &lt;code&gt;ID&lt;/code&gt; and &lt;code&gt;Group&lt;/code&gt;. We are able to summarize the total score of each participant by combine the index ‘ID’ and ‘Item’. We also average the group means by the index &lt;code&gt;Group&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;configurate-human-mind-approaching-a-readable-data-table&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Configurate human mind approaching a readable data table&lt;/h3&gt;
+&lt;p&gt;Why we have to make effort for waving a table readable for the computer? It is the human nature we prefer every column filled with meanings in a table. Every item has the reason a researcher put it into the study. Organizing all scores of items in a row occupy the meanings in the human cognition, but the index of items is meaningless for every human mind. A researcher need a table filled with the analyzable data for the statitical tool. In the case of this post, the analyzable data is the summation of all 6 items. A table like this case embodies the desired table for the researcher but needs a column of summarized scores for the computer. This gap has to be fixed before a precise statistical process is conducted. The solution I prefer is design the table format at first. This is the main reason I and my students have to prepare a code book before the start of the experiment.&lt;/p&gt;
+&lt;p&gt;The secondary solution depends on the packaged functions. There are many raw data table organized like the bad case at first, because the software to collect the raw data and organize them in this way, for example, google From apps. To deal with these data, I have to transform the raw data before I import them to R. A reproducible way is to transform them in use of the R codes. The functions have to isolate which columns are index and which columns are raw responses. To my knowledge, a code book is needed to define the columns to be arranged.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,36 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rolf A. Zwaan | Sau-Chin Chen&#39;s website</title>
-    <link>https://scchen.com/author/rolf-a.-zwaan/</link>
-      <atom:link href="https://scchen.com/author/rolf-a.-zwaan/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://scchen.com/author/rolf-a.-zwaan/</link>
+      <atom:link href="http://scchen.com/author/rolf-a.-zwaan/index.xml" rel="self" type="application/rss+xml" />
     <description>Rolf A. Zwaan</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://scchen.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
       <title>Rolf A. Zwaan</title>
-      <link>https://scchen.com/author/rolf-a.-zwaan/</link>
+      <link>http://scchen.com/author/rolf-a.-zwaan/</link>
     </image>
     
     <item>
       <title>Does Object Size Matter with Regard to the Mental Simulation of Object Orientation?</title>
-      <link>https://scchen.com/publication/size-orientation/</link>
+      <link>http://scchen.com/publication/journal-article/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://scchen.com/publication/size-orientation/</guid>
+      <guid>http://scchen.com/publication/journal-article/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;!---
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-
----&gt;
 &lt;p&gt;Access the sources at &lt;a href=&#34;https://curatescience.org/app/article/536&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Curate Science&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>

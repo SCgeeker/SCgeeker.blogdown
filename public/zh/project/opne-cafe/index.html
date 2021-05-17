@@ -1,0 +1,1345 @@
+<!DOCTYPE html><html lang="zh-hant" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="陳紹慶" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="自製中文音頻節目，介紹或討論值得關注的開放科學文獻或評論，以及討論需要深入閱讀的重要文獻。為此我們持續製作兩種單元：(1)咖啡伴侶；(2)烘焙工坊。 &lt;br&gt;咖啡伴侶由一位主講人以大約五到十分鐘的時間，介紹開放科學入門文獻，或值得關注的公開評論先準備好一杯咖啡，品嚐完畢就能聽完一篇文獻的介紹與評論。&lt;br&gt;烘焙工坊邀請兩位以上來賓，一起談論值得深入閱讀的著作。長度不設限，與你一起評論重量級論文的觀點，以及討論值得關注的科學議題。&lt;br&gt;本節目討論的資料由主持人挑選或聽眾推薦，部分單元將結合主持人線下開設的課程或論文研讀班，提供線上互動討論及學習的資源。&lt;br&gt;&lt;br&gt;每集節目原始錄音檔與朗讀稿可從節目[OSF](https://osf.io/nmk2w/)取得。&lt;br&gt;歡迎到我們的[臉書粉絲專頁](https://www.facebook.com/opencafetw/)留言，給予回饋或參與製作。" />
+
+  
+  <link rel="alternate" hreflang="zh-hant" href="http://scchen.com/zh/project/opne-cafe/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#4caf50" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.39aeb80ca18d6d31dc33f7fc232b8e06.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/zh/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="http://scchen.com/zh/project/opne-cafe/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="陳紹慶的個人網站" />
+  <meta property="og:url" content="http://scchen.com/zh/project/opne-cafe/" />
+  <meta property="og:title" content="開放咖啡角 | 陳紹慶的個人網站" />
+  <meta property="og:description" content="自製中文音頻節目，介紹或討論值得關注的開放科學文獻或評論，以及討論需要深入閱讀的重要文獻。為此我們持續製作兩種單元：(1)咖啡伴侶；(2)烘焙工坊。 &lt;br&gt;咖啡伴侶由一位主講人以大約五到十分鐘的時間，介紹開放科學入門文獻，或值得關注的公開評論先準備好一杯咖啡，品嚐完畢就能聽完一篇文獻的介紹與評論。&lt;br&gt;烘焙工坊邀請兩位以上來賓，一起談論值得深入閱讀的著作。長度不設限，與你一起評論重量級論文的觀點，以及討論值得關注的科學議題。&lt;br&gt;本節目討論的資料由主持人挑選或聽眾推薦，部分單元將結合主持人線下開設的課程或論文研讀班，提供線上互動討論及學習的資源。&lt;br&gt;&lt;br&gt;每集節目原始錄音檔與朗讀稿可從節目[OSF](https://osf.io/nmk2w/)取得。&lt;br&gt;歡迎到我們的[臉書粉絲專頁](https://www.facebook.com/opencafetw/)留言，給予回饋或參與製作。" /><meta property="og:image" content="http://scchen.com/zh/project/opne-cafe/featured.png" />
+    <meta property="twitter:image" content="http://scchen.com/zh/project/opne-cafe/featured.png" /><meta property="og:locale" content="zh-hant" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2020-01-31T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2020-01-31T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://scchen.com/zh/project/opne-cafe/"
+  },
+  "headline": "開放咖啡角",
+  
+  "image": [
+    "http://scchen.com/zh/project/opne-cafe/featured.png"
+  ],
+  
+  "datePublished": "2020-01-31T00:00:00Z",
+  "dateModified": "2020-01-31T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "陳紹慶"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "陳紹慶的個人網站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "自製中文音頻節目，介紹或討論值得關注的開放科學文獻或評論，以及討論需要深入閱讀的重要文獻。為此我們持續製作兩種單元：(1)咖啡伴侶；(2)烘焙工坊。 \u003cbr\u003e咖啡伴侶由一位主講人以大約五到十分鐘的時間，介紹開放科學入門文獻，或值得關注的公開評論先準備好一杯咖啡，品嚐完畢就能聽完一篇文獻的介紹與評論。\u003cbr\u003e烘焙工坊邀請兩位以上來賓，一起談論值得深入閱讀的著作。長度不設限，與你一起評論重量級論文的觀點，以及討論值得關注的科學議題。\u003cbr\u003e本節目討論的資料由主持人挑選或聽眾推薦，部分單元將結合主持人線下開設的課程或論文研讀班，提供線上互動討論及學習的資源。\u003cbr\u003e\u003cbr\u003e每集節目原始錄音檔與朗讀稿可從節目[OSF](https://osf.io/nmk2w/)取得。\u003cbr\u003e歡迎到我們的[臉書粉絲專頁](https://www.facebook.com/opencafetw/)留言，給予回饋或參與製作。"
+}
+</script>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#4caf50",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#4caf50"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "本网站使用cookies来确保您在本网站上获得最佳体验。",
+        "dismiss": "知道了!",
+        "link": "了解更多",
+        "href": "/zh/privacy/"
+      }
+    })});
+  </script>
+
+
+  
+
+
+
+
+
+  <title>開放咖啡角 | 陳紹慶的個人網站</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="339e154d22c03ec8cdbe9e581573556e" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.226a9011996d125bf3fe4a5f22353a49.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/zh/">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/zh/">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#about"><span>關於我</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#posts"><span>網誌</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#projects"><span>專案</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#featured"><span>著作</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#contact"><span>聯絡方式</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>浅色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>深色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>自动</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>開放咖啡角</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 31, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  <a class="btn btn-outline-primary my-1" href="https://open-cafe.netlify.app/" target="_blank" rel="noopener">访问项目网站</a>
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 330px; max-height: 330px;">
+  <div style="position: relative">
+    <img src="/zh/project/opne-cafe/featured.png" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>這是我策劃的網路廣播，宗旨是討論最核心的社會科學研究議題，有意願的人士都可以主持製作。歡迎到我們的<a href="https://www.facebook.com/opencafetw/" target="_blank" rel="noopener">臉書粉絲專頁</a>留言，給予回饋或參與製作。</p>
+<p><strong>以下是預覽集數，完整及最新上線內容，請參考節目<a href="https://open-cafe.netlify.app/" target="_blank" rel="noopener">專屬網站</a>。</strong></p>
+<h2 id="ep3-協同合作解決危機">EP3 協同合作解決危機</h2>
+<iframe src="https://anchor.fm/opensci-cafe/embed/episodes/EP3_-ea8l1n/a-a1asqs0" height="96px" width="600px" frameborder="0" scrolling="no"></iframe>
+<p>這一集以2020年1月6號發表在Nature index的報導，介紹Brian Nosek發起的Many Labs專案。這些專案帶起許多心理科學家重視並實踐開放科學操作，以及透過跨國協同合作，累積高信賴度的研究成果。報導全文請點<a href="https://www.natureindex.com/news-blog/psychology-looks-physics-to-solve-replication-crisis" target="_blank" rel="noopener">這個連結</a>；節目中提到的音頻節目，OSF下載網址來自開放科學學習社群WEekly Learn Open Science Team (WE LOST): <a href="https://osf.io/pjv9g/">https://osf.io/pjv9g/</a>    <a href="https://osf.io/9xfec/">https://osf.io/9xfec/</a>  本節朗讀稿<a href="https://osf.io/vrz3p/" target="_blank" rel="noopener">下載網址</a>，錄音檔<a href="https://osf.io/gfc5k/" target="_blank" rel="noopener">下載網址</a>。</p>
+<h2 id="ep2-確證性研究">EP2 確證性研究</h2>
+<iframe src="https://anchor.fm/opensci-cafe/embed/episodes/EP2_-ea11f1/a-a196usj" height="96px" width="600px" frameborder="0" scrolling="no"></iframe>
+<p>第二集介紹確證性研究，以及何謂預先註冊Preregistration，與這篇論文同時發表的特刊，帶起至今餘波盪漾的再現危機話題。原始論文下載網址：https://journals.sagepub.com/doi/full/10.1177/1745691612463078</p>
+<p>本集錄音存檔與朗讀稿可至 <a href="https://osf.io/nmk2w/">https://osf.io/nmk2w/</a> 下載。節目製作指南請參考 <a href="https://osf.io/mskef/">https://osf.io/mskef/</a>。</p>
+<p>Wagenmakers, E.-J., Wetzels, R., Borsboom, D., Maas, H. L. J. van der, &amp; Kievit, R. A. (2012). An Agenda for Purely Confirmatory Research. Perspectives on Psychological Science, 7(6), 632–638. doi: 10.1177/1745691612463078</p>
+<h2 id="ep1-偽陽心理學">EP1 偽陽心理學</h2>
+<iframe src="https://anchor.fm/opensci-cafe/embed/episodes/EP1_-e9tgd5/a-a1pvtc" height="96px" width="600px" frameborder="0" scrolling="no"></iframe>
+<p>第一集介紹心理科學再現危機必讀論文False Psychology，談談為何事後操作如何造成許多公開發表的研究結果在以被同行人士重現。原始論文下載網址：http://pss.sagepub.com/content/22/11/1359 
+本集錄音存檔與朗讀稿可至 <a href="https://osf.io/nmk2w/">https://osf.io/nmk2w/</a> 下載。節目製作指南請參考 <a href="https://osf.io/mskef/">https://osf.io/mskef/</a></p>
+<p>Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-Positive Psychology Undisclosed Flexibility in Data Collection and Analysis Allows Presenting Anything as Significant. Psychological Science, 22(11), 1359–1366. doi: 10.1177/0956797611417632</p>
+<h2 id="ep0-試播集">EP0 試播集</h2>
+<iframe src="https://anchor.fm/opensci-cafe/embed/episodes/EP0_-e9tfmt/a-a18b3au" height="96px" width="600px" frameborder="0" scrolling="no"></iframe>
+<p>本集主持人：陳紹慶
+開放咖啡角向世界說哈囉。本集介紹製作動機與製作方式，歡迎有興趣透同本節目分享論文閱讀心得，或討論重要議題的朋友參與製作。本集錄音存檔與朗讀稿可至 <a href="https://osf.io/nmk2w/">https://osf.io/nmk2w/</a> 下載。節目製作指南請參考 <a href="https://osf.io/mskef/u">https://osf.io/mskef/u</a></p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/zh/tag/%E5%BF%83%E7%90%86%E7%A7%91%E5%AD%B8/">心理科學</a>
+  
+  <a class="badge badge-light" href="/zh/tag/%E7%B6%B2%E8%B7%AF%E5%BB%A3%E6%92%AD/">網路廣播</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://scchen.com/zh/project/opne-cafe/&amp;text=%e9%96%8b%e6%94%be%e5%92%96%e5%95%a1%e8%a7%92" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://scchen.com/zh/project/opne-cafe/&amp;t=%e9%96%8b%e6%94%be%e5%92%96%e5%95%a1%e8%a7%92" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e9%96%8b%e6%94%be%e5%92%96%e5%95%a1%e8%a7%92&amp;body=http://scchen.com/zh/project/opne-cafe/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://scchen.com/zh/project/opne-cafe/&amp;title=%e9%96%8b%e6%94%be%e5%92%96%e5%95%a1%e8%a7%92" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%e9%96%8b%e6%94%be%e5%92%96%e5%95%a1%e8%a7%92%20http://scchen.com/zh/project/opne-cafe/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://scchen.com/zh/project/opne-cafe/&amp;title=%e9%96%8b%e6%94%be%e5%92%96%e5%95%a1%e8%a7%92" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://scchen.com/"><img class="avatar mr-3 avatar-circle" src="/zh/author/%E9%99%B3%E7%B4%B9%E6%85%B6/avatar_hu3d590b371aacc9bbd6d33aea2a79116c_5560_270x270_fill_q75_lanczos_center.jpg" alt="陳紹慶"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://scchen.com/">陳紹慶</a></h5>
+      <h6 class="card-subtitle">認知心理學副教授</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pmsp96@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-6092-6049" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=kSUyxs0AAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/SCgeeker" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/zh/files/CV_CSC_English_2021Jan.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>相关</h3>
+    <ul>
+      
+      <li><a href="/zh/project/meehl/">Paul Meehl十二堂哲學心理學筆記及心得</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+  <p class="powered-by">
+    
+      <a href="/zh/privacy/">隱私權條款</a>
+    
+    
+  </p>
+  
+
+  
+  <p class="powered-by">
+    © 2017~2021 Sau-Chin Chen
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/markdown.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.522eb70afb0572dcb0f5f96298aded03.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

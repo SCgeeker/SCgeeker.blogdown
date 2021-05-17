@@ -1,99 +1,380 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sau-Chin Chen&#39;s Website on Sau-Chin Chen&#39;s Website</title>
-    <link>/en/</link>
-    <description>Recent content in Sau-Chin Chen&#39;s Website on Sau-Chin Chen&#39;s Website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/en/" rel="self" type="application/rss+xml" />
+    <title>Sau-Chin Chen&#39;s website</title>
+    <link>http://scchen.com/en/</link>
+      <atom:link href="http://scchen.com/en/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sau-Chin Chen&#39;s website</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>Sau-Chin Chen&#39;s website</title>
+      <link>http://scchen.com/en/</link>
+    </image>
+    
+    <item>
+      <title>Python basics</title>
+      <link>http://scchen.com/en/courses/example/python/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/courses/example/python/</guid>
+      <description>&lt;p&gt;Build a foundation in Python.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/rfscVS0vtbw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary&gt;What is the difference between lists and tuples?&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Lists&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lists are mutable - they can be changed&lt;/li&gt;
+&lt;li&gt;Slower than tuples&lt;/li&gt;
+&lt;li&gt;Syntax: &lt;code&gt;a_list = [1, 2.0, &#39;Hello world&#39;]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tuples&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tuples are immutable - they can&amp;rsquo;t be changed&lt;/li&gt;
+&lt;li&gt;Tuples are faster than lists&lt;/li&gt;
+&lt;li&gt;Syntax: &lt;code&gt;a_tuple = (1, 2.0, &#39;Hello world&#39;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;Is Python case-sensitive?&lt;/summary&gt;
+  &lt;p&gt;Yes&lt;/p&gt;
+&lt;/details&gt;</description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>http://scchen.com/en/courses/example/visualization/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/courses/example/visualization/</guid>
+      <description>&lt;p&gt;Learn how to visualize data with Plotly.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/hSPmj7mK6ng&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary&gt;When is a heatmap useful?&lt;/summary&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;Write Plotly code to render a bar chart&lt;/summary&gt;
+  &lt;p&gt;&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import plotly.express as px
+data_canada = px.data.gapminder().query(&amp;quot;country == &#39;Canada&#39;&amp;quot;)
+fig = px.bar(data_canada, x=&#39;year&#39;, y=&#39;pop&#39;)
+fig.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/p&gt;
+&lt;/details&gt;</description>
+    </item>
+    
+    <item>
+      <title>Statistics</title>
+      <link>http://scchen.com/en/courses/example/stats/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/courses/example/stats/</guid>
+      <description>&lt;p&gt;Introduction to statistics for data science.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;h2 id=&#34;learn&#34;&gt;Learn&lt;/h2&gt;
+&lt;p&gt;The general form of the &lt;strong&gt;normal&lt;/strong&gt; probability density function is:&lt;/p&gt;
+&lt;p&gt;$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi} } e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The parameter $\mu$ is the mean or expectation of the distribution.
+$\sigma$ is its standard deviation.
+The variance of the distribution is $\sigma^{2}$.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;quiz&#34;&gt;Quiz&lt;/h2&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary&gt;What is the parameter $\mu$?&lt;/summary&gt;
+  &lt;p&gt;The parameter $\mu$ is the mean or expectation of the distribution.&lt;/p&gt;
+&lt;/details&gt;</description>
+    </item>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>http://scchen.com/en/talk/example-talk/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/talk/example-talk/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Does Object Size Matter with Regard to the Mental Simulation of Object Orientation?</title>
+      <link>http://scchen.com/en/publication/journal-article/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/publication/journal-article/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Access the sources at &lt;a href=&#34;https://curatescience.org/app/article/536&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Curate Science&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example preprint / working paper</title>
+      <link>http://scchen.com/en/publication/preprint/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/publication/preprint/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>http://scchen.com/en/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+&lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+Three
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/media/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Orientation Effects across Languages</title>
+      <link>http://scchen.com/en/project/mental_simulation/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/project/mental_simulation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>If Emily Rosa met Thomas Bayes ...</title>
-      <link>/en/post/if-emily-rosa-met-thomas-bayes/</link>
+      <link>http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/</link>
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/if-emily-rosa-met-thomas-bayes/</guid>
-      <description>
+      <guid>http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/</guid>
+      <description>&lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to &amp;ldquo;TT&amp;rdquo;) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients&#39; body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;theraputic-touch.jpg&#34; alt=&#34;A TT therapist is healing a paitent.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Emily was curious how real was TT technique. To test their skill under unbiased observations, she designed the test table like the below figure shows. Every trainee would run 10 trials in one test. In each trial, Emily placed her right hand above one of the participated trainee&#39; hand, decided by flipped coin. She had the hypothesis if the skill of TT trainees was real, they would give the correct answers in at least 8 of the trials.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;joc71352f1.gif&#34; alt=&#34;Emily Rosa is testing her subjest.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Emily ran this study two times between 1996 and 1997. At the first time 15 TT trainees were invited to this study. She deiced to run the second time after the TV station interviewed her. At the second time 13 TT trainees, included 7 had participated in the first time, joined this study.  Their analysis showed the average accuracy of these trainees as equal to the random guessing.&lt;/p&gt;
 
-
-&lt;p&gt;Twenty years ago 11-years-old Emily Rosa and her parents publsihed &lt;a href=&#34;https://jamanetwork.com/journals/jama/fullarticle/187390&#34;&gt;their study&lt;/a&gt; in Journal of the American Medical Association. This study was designed by Emily herself two years before the publication. Before 1998, &lt;a href=&#34;https://en.wikipedia.org/wiki/Therapeutic_touch&#34;&gt;Therapeutic Touch&lt;/a&gt; (commonly shortened to “TT”) had been advocated in hundreds of hospitals and nursing schools in North America. Forty thousands of health care professionals had been trained to use TT for their patient. The trained TT professionals were claimed, by the promoters, have the skill to manipulate &lt;strong&gt;the energy field surrounded human body&lt;/strong&gt; without touching. TT professionals just stoped the plams above the patients’ body for minutes to cure their pain and anxiety. However, the evidence about the reality of TT was vague.&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://scgeeker.github.io/BasicStatistics/images/theraputic-touch.jpg&#34; /&gt;
-
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/mNoRxCRJ-Y0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;p&gt;Emily was curious how real was TT technique. To test their skill under unbiased observations, she designed the test table like the below figure shows. Every trainee would run 10 trials in one test. In each trial, Emily placed her right hand above one of the participated trainee’ hand, decided by flipped coin. She had the hypothesis if the skill of TT trainees was real, they would give the correct answers in at least 8 of the trials.&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://jamanetwork.com/data/Journals/JAMA/4554/joc71352f1.gif&#34; /&gt;
 
+&lt;p&gt;We would learn many things from Emily&amp;rsquo;s study till today. First of all the critical finding was the null effect. Today the behavioral scientists share more attention about the null effect than 1998. The other interesting thing is that the prediction could be verified by one point. It is rare to use the one-sample t-test in the psychological studies, but almost every psychologist learned the one-sample t-test before the independent t-test and paired t-test. Latest but may be critical, the idea of little Emily embodied the statistical thinking.&lt;/p&gt;
+&lt;p&gt;Emily&amp;rsquo;s data were summarized in the reproduced figure as below. They ran the one-sample t-test for the results of two times respectively. The analyses disconfirmed the reality of TT technique, but Emily and her parents might show a kind of researcher flexibility: they used the small samples in their first and follow-up studies. Could we upgrade their results in addition to conduct a registered replication plan?&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Rosa1998Fig2-1.png&#34; alt=&#34;Reproductive test results of Rosa et al.(1998)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 1: Reproductive test results of Rosa et al.(1998)&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Emily ran this study two times between 1996 and 1997. At the first time 15 TT trainees were invited to this study. She deiced to run the second time after the TV station interviewed her. At the second time 13 TT trainees, included 7 had participated in the first time, joined this study. Their analysis showed the average accuracy of these trainees as equal to the random guessing.&lt;/p&gt;
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/mNoRxCRJ-Y0&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;
-&lt;/iframe&gt;
-&lt;p&gt;We would learn many things from Emily’s study till today. First of all the critical finding was the null effect. Today the behavioral scientists share more attention about the null effect than 1998. The other interesting thing is that the prediction could be verified by one point. It is rare to use the one-sample t-test in the psychological studies, but almost every psychologist learned the one-sample t-test before the independent t-test and paired t-test. Latest but may be critical, the idea of little Emily embodied the statistical thinking.&lt;/p&gt;
-&lt;p&gt;Emily’s data were summarized in the reproduced figure as below. They ran the one-sample t-test for the results of two times respectively. The analyses disconfirmed the reality of TT technique, but Emily and her parents might show a kind of researcher flexibility: they used the small samples in their first and follow-up studies. Could we upgrade their results in addition to conduct a registered replication plan?&lt;/p&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Rosa1998Fig2&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Rosa1998Fig2-1.png&#34; alt=&#34;Reproductive test results of Rosa et al.(1998)&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: Reproductive test results of Rosa et al.(1998)
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;If Emily had learned Bayesian statistics in 1998, she would show the reporters her stronger belief how fake the TT technique was. Next, I use the binomial probability distribution to reanalyze Emily’s data in the simple Bayesian inference. My first step is the recovery of the original correct frequency of every TT participant. Although Emily’s paper gave the range of scores (initial study: 2 to 8; follow-up study: 1 to 7), they did not provide the how many correct trials conducted by every participant. I arranged the numbers based on the averages and number of total correct responses as follows:&lt;/p&gt;
+&lt;p&gt;If Emily had learned Bayesian statistics in 1998, she would show the reporters her stronger belief how fake the TT technique was. Next, I use the binomial probability distribution to reanalyze Emily&amp;rsquo;s data in the simple Bayesian inference. My first step is the recovery of the original correct frequency of every TT participant. Although Emily&amp;rsquo;s paper gave the range of scores (initial study: 2 to 8; follow-up study: 1 to 7), they did not provide the how many correct trials conducted by every participant. I arranged the numbers based on the averages and number of total correct responses as follows:&lt;/p&gt;
 &lt;p&gt;(R-chunk, vectors of numbers)&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Initial test data
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Initial test data
 Data_initial &amp;lt;- c(2,3,3,3,3,4,5,5,5,5,5,6,6,7,8)
 # Follow-up data
-Data_followup &amp;lt;- c(1,3,3,3,3,4,4,4,4,5,5,7,7)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then I required the theoretical parameters representing Emily’s hypothesis. Her study in nature was a game of coin tossing. She assumed certificated TT participants, given their technique was real, could answer correctly in more than 8 trials. In the other word, among the ten coins flipped by Emily, they could look into which 8, 9, or all sides on the top. Before the initial study, Emily could assume the probability each participant give the correct answer in a trial to be more than 0.5. If she used Bayesian inference, she would expect the posterior probability higher than 0.8. Therefore I prepared the uniform distribution ranged between 0.5 and 1 as the prior probability of the Bayesian inference.&lt;/p&gt;
-&lt;p&gt;It was recorded that only one participant returned 8 correct answers in the initial study. My Bayesian model used the binomial distribution with the arguments of 10 trials and prior probabilities. This model generated the posterior probability distribution given the data of Emily’s initial study. The average of the initial study was 4.67; thus I retrieved the posterior probability distribution of 5 from the Bayesian model.&lt;/p&gt;
+Data_followup &amp;lt;- c(1,3,3,3,3,4,4,4,4,5,5,7,7)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I required the theoretical parameters representing Emily&amp;rsquo;s hypothesis. Her study in nature was a game of coin tossing. She assumed certificated TT participants, given their technique was real, could answer correctly in more than 8 trials. In the other word, among the ten coins flipped by Emily, they could look into which 8, 9, or all sides on the top. Before the initial study, Emily could assume the probability each participant give the correct answer in a trial to be more than 0.5. If she used Bayesian inference, she would expect the posterior probability higher than 0.8. Therefore I prepared the uniform distribution ranged between 0.5 and 1 as the prior probability of the Bayesian inference.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Study parameters
+n_TT &amp;lt;- 10000
+n_trials &amp;lt;- 10
+
+# Theoretical accuracies
+min_acc &amp;lt;- 0.5
+max_acc &amp;lt;- 1
+
+### Analaysis of initial test
+
+# Prior accuracy of TT partitioners before initial test
+Correct_proportions_initial &amp;lt;- runif(n=n_TT, min=min_acc,max=max_acc)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It was recorded that only one participant returned 8 correct answers in the initial study. My Bayesian model used the binomial distribution with the arguments of 10 trials and prior probabilities. This model generated the posterior probability distribution given the data of Emily&amp;rsquo;s initial study. The average of the initial study was 4.67; thus I retrieved the posterior probability distribution of 5 from the Bayesian model.&lt;/p&gt;
+&lt;!---
 (R-chunk, Bayesian model and posterior histogram of initial)
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Bayes-initial&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-initial-1.png&#34; alt=&#34;Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 2: Bayesian inferece of initial study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)
-&lt;/p&gt;
+---&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Bayes-initial-1.png&#34; alt=&#34;Bayes&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 2: Bayes&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Post-initial&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-initial-1.png&#34; alt=&#34;Posterior probability distribution of initial study result&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 3: Posterior probability distribution of initial study result
-&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Post-initial-1.png&#34; alt=&#34;Posterior distribution&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 3: Posterior distribution&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.02&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+&lt;p&gt;According to the posterior probability distribution of the initial study, the probability of TT trainees returned more than 8 correct answers would be &lt;code&gt;0.018&lt;/code&gt;. Because Emily had never considered the reproduction of her initial study before the interview, the follow-up study was like the second chance for the TT trainees. After the initial study, Emily updated her assumption of how many correct answers TT trainees could return in this study. I used the posterior probability distribution of the initial study as the prior probabilities for the analysis of the follow-up study. Then I built the Bayesian model and retrieved the posterior probability distribution given the average 4.06, I truncated to 4.&lt;/p&gt;
+&lt;!---
 (R-chunk, Bayesian model and posterior histogram of follow-up)
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:Bayes-followup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 4: Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)
-&lt;/p&gt;
+---&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Bayes-followup-1.png&#34; alt=&#34;Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 4: Bayesian inferece of follow-up study: Prior probability distribution (y axis) and Conditioning correct frequencies (x axis)&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:Post-followup&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2018-08-14-if-emily-rosa-met-thomas-bayes_files/figure-html/Post-followup-1.png&#34; alt=&#34;Posterior probability distribution of follow-up study result&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 5: Posterior probability distribution of follow-up study result
-&lt;/p&gt;
+&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;
+&lt;img src=&#34;http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/index_files/figure-html/Post-followup-1.png&#34; alt=&#34;Posterior probability distribution of follow-up study result&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 5: Posterior probability distribution of follow-up study result&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;The histogram of the posterior probability distribution shows zero possibility beyond 8. My reanalysis indicates that Emily’s study indeed falsified the reality of Therapeutic Touch. You may wonder if people have updated the understanding of Therapeutic Touch because of Emily’s study. Till today &lt;a href=&#34;http://therapeutictouch.org/&#34;&gt;the official website of Therapeutic Touch&lt;/a&gt; is regularly upgrading the latest information. More efforts are required to guide people thinking this world with scientific and statistical knowledge.&lt;/p&gt;
+&lt;p&gt;The histogram of the posterior probability distribution shows zero possibility beyond 8. My reanalysis indicates that Emily&amp;rsquo;s study indeed falsified the reality of Therapeutic Touch. You may wonder if people have updated the understanding of Therapeutic Touch because of Emily&amp;rsquo;s study. Till today &lt;a href=&#34;http://therapeutictouch.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the official website of Therapeutic Touch&lt;/a&gt; is regularly upgrading the latest information. More efforts are required to guide people thinking this world with scientific and statistical knowledge.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Psychological Science Podcasts</title>
-      <link>/en/post/ps-podcasts/</link>
+      <link>http://scchen.com/en/post/ps-podcasts/</link>
       <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/ps-podcasts/</guid>
+      <guid>http://scchen.com/en/post/ps-podcasts/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/ps-podcasts/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;There are psychological scientists have started produce the internet podcasts since 2016. Audience will know the latest news and ideas because many hosts are open science promoters. Until now 8 podcasts are in my pocket. They are the treasure for whom want to know the true faces of scientists. Two days ago I have completed &lt;a href=&#34;http://scchen.com/zh/post/ps-podcasts.zh/&#34;&gt;Chinese version&lt;/a&gt;. I wish the scientific podcasts out of English will be online in coming months.&lt;/p&gt;
 &lt;div id=&#34;everything-hertz&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Everything Hertz&lt;/h3&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/12801447_510072969180732_8893628584447559111_n.jpg?_nc_cat=0&amp;amp;oh=2e95e9204f865df4682b1cacfed12386&amp;amp;oe=5BD00652&#34; style=&#34;width:50.0%&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/12801447_510072969180732_8893628584447559111_n.jpg?_nc_cat=0&amp;amp;oh=2e95e9204f865df4682b1cacfed12386&amp;amp;oe=5BD00652&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;host&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;host&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;http://jamesheathers.com/&#34;&gt;James Heathers&lt;/a&gt;；&lt;a href=&#34;http://www.dsquintana.com/&#34;&gt;Daniel Quintana&lt;/a&gt;&lt;/p&gt;
@@ -118,10 +399,7 @@ Figure 5: Posterior probability distribution of follow-up study result
 &lt;/div&gt;
 &lt;div id=&#34;the-black-goat&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;The Black Goat&lt;/h3&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/16684080_255031914943271_624884278399716220_n.png?_nc_cat=0&amp;amp;oh=1c165d165607c2788cc15cdee2678649&amp;amp;oe=5BFA8C62&#34; style=&#34;width:50.0%&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/16684080_255031914943271_624884278399716220_n.png?_nc_cat=0&amp;amp;oh=1c165d165607c2788cc15cdee2678649&amp;amp;oe=5BFA8C62&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;host-1&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;host&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;http://pages.uoregon.edu/sanjay/&#34;&gt;Sanjay Srivastava&lt;/a&gt;;&lt;a href=&#34;http://www.alexatullett.com/index.html&#34;&gt;Alexa Tullett&lt;/a&gt;;&lt;a href=&#34;http://www.simine.com/&#34;&gt;Simine Vazire&lt;/a&gt;&lt;/p&gt;
@@ -148,10 +426,7 @@ Figure 5: Posterior probability distribution of follow-up study result
 &lt;/div&gt;
 &lt;div id=&#34;circle-of-willis&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Circle of Willis&lt;/h3&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://secureimg.stitcher.com/feedimageswide/480x270_149553.jpg&#34; style=&#34;width:70.0%&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://secureimg.stitcher.com/feedimageswide/480x270_149553.jpg&#34; style=&#34;width:70.0%&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;host-2&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;host&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://jamescoan.com/&#34;&gt;James Coan&lt;/a&gt;&lt;/p&gt;
@@ -159,7 +434,8 @@ Figure 5: Posterior probability distribution of follow-up study result
 &lt;div id=&#34;channel-website-social-media-2&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;channel, website, social media&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://itunes.apple.com/us/podcast/circle-of-willis/id1277917115?ls=1&#34;&gt;iTune&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://www.stitcher.com/podcast/circle-of-willis?refid=stpr&#34;&gt;Stitcher&lt;/a&gt; &lt;a href=&#34;http://circleofwillispodcast.com&#34;&gt;website&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.stitcher.com/podcast/circle-of-willis?refid=stpr&#34;&gt;Stitcher&lt;/a&gt;
+&lt;a href=&#34;http://circleofwillispodcast.com&#34;&gt;website&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://twitter.com/circle_ofwillis&#34;&gt;twitter&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://www.facebook.com/circleofwillispodcast/&#34;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -175,10 +451,7 @@ Figure 5: Posterior probability distribution of follow-up study result
 &lt;/div&gt;
 &lt;div id=&#34;the-road-to-open-science&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;The Road to Open Science&lt;/h3&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://pbs.twimg.com/profile_images/996301283463192576/D4u7yTnf_400x400.jpg&#34; style=&#34;width:50.0%&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/profile_images/996301283463192576/D4u7yTnf_400x400.jpg&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;host-3&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;host&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://openscience-utrecht.com/&#34;&gt;Open Science Community Utrecht&lt;/a&gt;&lt;/p&gt;
@@ -200,10 +473,7 @@ Figure 5: Posterior probability distribution of follow-up study result
 &lt;/div&gt;
 &lt;div id=&#34;two-psychologists-four-beers&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Two Psychologists Four Beers&lt;/h3&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://images.fireside.fm/podcasts/images/6/69da8ae3-a19e-41ed-a678-0e145a936a3f/cover_small.jpg&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://images.fireside.fm/podcasts/images/6/69da8ae3-a19e-41ed-a678-0e145a936a3f/cover_small.jpg&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;host-4&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;host&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;http://yoelinbar.net/&#34;&gt;Yoel Inbar&lt;/a&gt;;&lt;a href=&#34;http://michaelinzlicht.com&#34;&gt;Michael Inzlicht&lt;/a&gt;&lt;/p&gt;
@@ -226,10 +496,7 @@ Figure 5: Posterior probability distribution of follow-up study result
 &lt;/div&gt;
 &lt;div id=&#34;the-bayes-factor&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;The Bayes Factor&lt;/h3&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/23172689_1993255780888928_6201212654157655772_n.png?_nc_cat=0&amp;amp;oh=a363fd368a6989930ccf191bdb59d266&amp;amp;oe=5C0F6877&#34; style=&#34;width:30.0%&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/23172689_1993255780888928_6201212654157655772_n.png?_nc_cat=0&amp;amp;oh=a363fd368a6989930ccf191bdb59d266&amp;amp;oe=5C0F6877&#34; style=&#34;width:30.0%&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;host-5&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;host&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://sites.tufts.edu/hilab/people/&#34;&gt;JP De Ruiter&lt;/a&gt;;&lt;a href=&#34;https://alexanderetz.com/&#34;&gt;Alex Etz&lt;/a&gt;&lt;/p&gt;
@@ -248,10 +515,7 @@ Figure 5: Posterior probability distribution of follow-up study result
 &lt;/div&gt;
 &lt;div id=&#34;reproducibiliteapod&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;ReproducibiliTeaPod&lt;/h3&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://pbs.twimg.com/profile_images/1008816656406269952/FCYhhxX7_400x400.jpg&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/profile_images/1008816656406269952/FCYhhxX7_400x400.jpg&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;host-6&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;host&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.psy.ox.ac.uk/team/amy-orben&#34;&gt;Amy Orben&lt;/a&gt;;&lt;a href=&#34;http://samdparsons.blogspot.com/&#34;&gt;Sam Parsons&lt;/a&gt;;&lt;a href=&#34;https://twitter.com/Cruwelli&#34;&gt;Sophia Crüwell&lt;/a&gt;&lt;/p&gt;
@@ -273,10 +537,7 @@ Figure 5: Posterior probability distribution of follow-up study result
 &lt;/div&gt;
 &lt;div id=&#34;physiology-behavior-podcast&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Physiology &amp;amp; Behavior podcast&lt;/h3&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://res.cloudinary.com/pippa/image/fetch/h_500,w_500/https://assets.pippa.io/shows/5b33637a7b9cf5a0177f18b5/1531915490998-fafca19bfd0d7c6f179e0b0403be84f6.jpeg&#34; style=&#34;width:50.0%&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/pippa/image/fetch/h_500,w_500/https://assets.pippa.io/shows/5b33637a7b9cf5a0177f18b5/1531915490998-fafca19bfd0d7c6f179e0b0403be84f6.jpeg&#34; style=&#34;width:50.0%&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;host-7&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;host&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.dsquintana.com/&#34;&gt;Daniel Quintana&lt;/a&gt;&lt;/p&gt;
@@ -297,90 +558,61 @@ Figure 5: Posterior probability distribution of follow-up study result
     </item>
     
     <item>
+      <title>Privacy Policy</title>
+      <link>http://scchen.com/en/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>http://scchen.com/en/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Use bookdownplus write papers and manage lab logs</title>
-      <link>/en/post/use-bookdownplus/</link>
+      <link>http://scchen.com/en/post/use-bookdownplus/</link>
       <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/use-bookdownplus/</guid>
+      <guid>http://scchen.com/en/post/use-bookdownplus/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/use-bookdownplus/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met &lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Aust and Barth 2017)&lt;/span&gt; three years ago, it is my dream someday I will use &lt;code&gt;R&lt;/code&gt;&lt;span class=&#34;citation&#34;&gt;(R Development Core Team 2010)&lt;/span&gt; process all my works. &lt;code&gt;papaja&lt;/code&gt; is amazing but it is implemented to English only. Later I found &lt;a href=&#34;https://bookdown.org/yihui/bookdown/get-started.html&#34;&gt;&lt;code&gt;bookdown&lt;/code&gt;&lt;/a&gt; developed by Yihui Xie&lt;span class=&#34;citation&#34;&gt;(Xie 2017)&lt;/span&gt;. &lt;code&gt;bookdown&lt;/code&gt; has the potential to manage Chinese writings. However, this package is primarily developed for writing and publishing books.&lt;/p&gt;
-&lt;p&gt;Fortunately, &lt;a href=&#34;http://www.pzhao.org/zh/&#34;&gt;Peng Zhao&lt;/a&gt; has worked on the advanced work: &lt;a href=&#34;https://github.com/pzhaonet/bookdownplus&#34;&gt;&lt;code&gt;bookdownplus&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(Zhao 2017)&lt;/span&gt;. This package provides many templates for a couple of academic works and hobbies. According to the help file, there are &lt;code&gt;academic article&lt;/code&gt;, &lt;code&gt;book&lt;/code&gt;, &lt;code&gt;thesis&lt;/code&gt;, &lt;code&gt;poster&lt;/code&gt;, and &lt;code&gt;journals&lt;/code&gt;. Because of Zhao’s interests, the users could write and publish &lt;code&gt;poem book&lt;/code&gt; and &lt;code&gt;guitar chords&lt;/code&gt;. The following pictures are the outcomes of these templates:&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_article.jpg&#34; title=&#34;academic article&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_yihui_zh.jpg&#34; title=&#34;book&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_thesis_classic.jpg&#34; title=&#34;thesis&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poem.jpg&#34; title=&#34;poster&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_journal.jpg&#34; title=&#34;journal&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poster.jpg&#34; title=&#34;poem book&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_guitar.jpg&#34; title=&#34;guitar&#34; /&gt;
-
-&lt;/div&gt;
+&lt;p&gt;Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met &lt;a href=&#34;https://github.com/crsh/papaja&#34;&gt;&lt;code&gt;papaja&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-AustpapajaReproducibleAPA2017&#34; role=&#34;doc-biblioref&#34;&gt;Aust and Barth 2017&lt;/a&gt;)&lt;/span&gt; three years ago, it is my dream someday I will use &lt;code&gt;R&lt;/code&gt;&lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-RDevelopmentCoreTeamlanguageenvironmentstatistical2010&#34; role=&#34;doc-biblioref&#34;&gt;R Development Core Team 2010&lt;/a&gt;)&lt;/span&gt; process all my works. &lt;code&gt;papaja&lt;/code&gt; is amazing but it is implemented to English only. Later I found &lt;a href=&#34;https://bookdown.org/yihui/bookdown/get-started.html&#34;&gt;&lt;code&gt;bookdown&lt;/code&gt;&lt;/a&gt; developed by Yihui Xie&lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-XiebookdownAuthoringBooks2017&#34; role=&#34;doc-biblioref&#34;&gt;Xie 2017&lt;/a&gt;)&lt;/span&gt;. &lt;code&gt;bookdown&lt;/code&gt; has the potential to manage Chinese writings. However, this package is primarily developed for writing and publishing books.&lt;/p&gt;
+&lt;p&gt;Fortunately, &lt;a href=&#34;http://www.pzhao.org/zh/&#34;&gt;Peng Zhao&lt;/a&gt; has worked on the advanced work: &lt;a href=&#34;https://github.com/pzhaonet/bookdownplus&#34;&gt;&lt;code&gt;bookdownplus&lt;/code&gt;&lt;/a&gt;&lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-ZhaobookdownplusTextbook2017&#34; role=&#34;doc-biblioref&#34;&gt;Zhao 2017&lt;/a&gt;)&lt;/span&gt;. This package provides many templates for a couple of academic works and hobbies. According to the help file, there are &lt;code&gt;academic article&lt;/code&gt;, &lt;code&gt;book&lt;/code&gt;, &lt;code&gt;thesis&lt;/code&gt;, &lt;code&gt;poster&lt;/code&gt;, and &lt;code&gt;journals&lt;/code&gt;. Because of Zhao’s interests, the users could write and publish &lt;code&gt;poem book&lt;/code&gt; and &lt;code&gt;guitar chords&lt;/code&gt;. The following pictures are the outcomes of these templates:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_article.jpg&#34; title=&#34;academic article&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_yihui_zh.jpg&#34; title=&#34;book&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_thesis_classic.jpg&#34; title=&#34;thesis&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poem.jpg&#34; title=&#34;poster&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_journal.jpg&#34; title=&#34;journal&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_poster.jpg&#34; title=&#34;poem book&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/pzhaonet/bookdownplus/master/inst2/showcase/bookdownplus_guitar.jpg&#34; title=&#34;guitar&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;I believe ‘journal’ will be the hottest templaters for many research teams who are running their open practices. All the members of a project will have managed their daily journals collaboratively. The journal could be opened to public after the final paper is formly published.&lt;/p&gt;
 &lt;p&gt;For the users who read and write traditional Chiense like me, you have to install some font files after you completed the install work flow as the mannual. According to my tests in WINDOWS 10, The font files are &lt;code&gt;KaiTi.ttf&lt;/code&gt;, &lt;code&gt;simfang.ttf&lt;/code&gt;, &lt;code&gt;simhei.ttf&lt;/code&gt;, and &lt;code&gt;simkai.ttf&lt;/code&gt;. Then you can use the Chinese templates in &lt;code&gt;bookdownplus&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;In future, I wish &lt;code&gt;bookdownplus&lt;/code&gt; could enhance the support for many multi-bytes language systems. The users could provide and share the customed templates through the updates. This will be the handy tool for the open scientists out of WIERD world.&lt;/p&gt;
 &lt;div id=&#34;reference&#34; class=&#34;section level3 unnumbered&#34;&gt;
 &lt;h3&gt;Reference&lt;/h3&gt;
-&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
-&lt;div id=&#34;ref-AustpapajaReproducibleAPA2017&#34;&gt;
-&lt;p&gt;Aust, Frederik, and Marius Barth. 2017. &lt;em&gt;Papaja: Reproducible APA Manuscripts with R Markdown&lt;/em&gt;.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-AustpapajaReproducibleAPA2017&#34; class=&#34;csl-entry&#34;&gt;
+Aust, Frederik, and Marius Barth. 2017. &lt;em&gt;Papaja: &lt;span&gt;Reproducible APA&lt;/span&gt; Manuscripts with &lt;span&gt;R Markdown&lt;/span&gt;&lt;/em&gt;.
 &lt;/div&gt;
-&lt;div id=&#34;ref-RDevelopmentCoreTeamlanguageenvironmentstatistical2010&#34;&gt;
-&lt;p&gt;R Development Core Team. 2010. “R: A Language and Environment for Statistical Computing.” Vienna, Austria: R Foundation for Statistical Computing.&lt;/p&gt;
+&lt;div id=&#34;ref-RDevelopmentCoreTeamlanguageenvironmentstatistical2010&#34; class=&#34;csl-entry&#34;&gt;
+R Development Core Team. 2010. &lt;span&gt;“R: &lt;span&gt;A&lt;/span&gt; Language and Environment for Statistical Computing.”&lt;/span&gt; Vienna, Austria: &lt;span&gt;R Foundation for Statistical Computing&lt;/span&gt;.
 &lt;/div&gt;
-&lt;div id=&#34;ref-XiebookdownAuthoringBooks2017&#34;&gt;
-&lt;p&gt;Xie, Yihui. 2017. &lt;em&gt;Bookdown: Authoring Books and Technical Documents with R Markdown&lt;/em&gt;.&lt;/p&gt;
+&lt;div id=&#34;ref-XiebookdownAuthoringBooks2017&#34; class=&#34;csl-entry&#34;&gt;
+Xie, Yihui. 2017. &lt;em&gt;Bookdown: &lt;span&gt;Authoring Books&lt;/span&gt; and &lt;span&gt;Technical Documents&lt;/span&gt; with &lt;span&gt;R Markdown&lt;/span&gt;&lt;/em&gt;.
 &lt;/div&gt;
-&lt;div id=&#34;ref-ZhaobookdownplusTextbook2017&#34;&gt;
-&lt;p&gt;Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus Textbook&lt;/em&gt;.&lt;/p&gt;
+&lt;div id=&#34;ref-ZhaobookdownplusTextbook2017&#34; class=&#34;csl-entry&#34;&gt;
+Zhao, Peng. 2017. &lt;em&gt;R Bookdownplus &lt;span&gt;Textbook&lt;/span&gt;&lt;/em&gt;.
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Orientation Effects</title>
-      <link>/en/project/mental-simulation/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/project/mental-simulation/</guid>
-      <description>&lt;p&gt;When we are reading the sentence describing the object in the context, such as &amp;lsquo;The eagle is in the sky&amp;rsquo;, our minds would catch the visual properties of the eagle. This theory has acquired the evidence of the findings from the sentence-picture verification task. In this verification task the target objects matched the probe sentence (e.g., the flying eagle) are verified faster than the target objects mismatched the probe sentence (e.g., the standing eagle). This findings are called &amp;ldquo;match advantage&amp;rdquo;. So far the target objects matched on shape, color, size, and orientation have shown the relatively roubust results. These respective match advantage are called shape effect, color effect, size effect, and orientation effect.&lt;/p&gt;
-
-&lt;p&gt;Among the visual features, the orientation effect has the inconsistent findings between the studies with the comprehention task (Stanfield &amp;amp; Zwaan, 2001; Zwaan &amp;amp; Pecher, 2012) and the studies without the comprehension task (De Koning, Wassenburg, Bos, &amp;amp; van der Schoot, 2017; Hoeben-Mannaert, Dijkstra, &amp;amp; Zwaan, 2017). Compared to the other three visual features, the match advantage usually shows up regardless of the design of a study. This project aims to find the clue to answer why the inconsistent findings happened to the object orientation.&lt;/p&gt;
-
-&lt;p&gt;The frist working hypothesis is the adjustment of object size. Until present, all the studies of orientation effect used the objects that are able to be manipulated by single hand. During the collaboration with &lt;a href=&#34;https://rolfzwaan.blogspot.tw/&#34; target=&#34;_blank&#34;&gt;Rolf Zwaan&lt;/a&gt; and &lt;em&gt;Bjorn de Korning&lt;/em&gt;, we have developed the hypothesis how the large objects would show the robust orientation effect than the small objects. This hypothesis have been initially confirmed in the mixed-platform study across langages (English, Dutch, and Chinese). After erased the explicit expression about object orientation in the probe sentences, we have preregistered the web-based study for the final confirmation. This study is going to start once we have the acceptence-in-principle from our submitted journal.&lt;/p&gt;
-
-&lt;p&gt;The second working hypothesis came from the moments I was preparing the materials for the first working hypothesis. Since all the past studies were from Americans and Europeans, will the original materials cause the larger effects in the other languages and cultures? More than ten years ago, there is the study suggesting that Arabic speakers are more sensitive to the direction Italians (Maass and Russo, 2003). If the original orientation effect(Stanfield &amp;amp; Zwaan, 2001) could be found in some languages out of North America and European, this hypothesis has the initial empirical evidence. At the date &lt;a href=&#34;https://christopherchartier.com/&#34; target=&#34;_blank&#34;&gt;Christopher Chartier&lt;/a&gt; claimed the establishment of &lt;a href=&#34;https://christopherchartier.com/2017/08/26/building-a-cern-for-psychological-science/&#34; target=&#34;_blank&#34;&gt;Psychological Science Accelerator&lt;/a&gt;, I got this opportunity. In 2018, we will invite the member laboratories join this study.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Manage a blog for the bibliography management optimization</title>
-      <link>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
+      <link>http://scchen.com/en/post/2017-05-08-bibliography-management-optimization/</link>
       <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
+      <guid>http://scchen.com/en/post/2017-05-08-bibliography-management-optimization/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2017-05-08-bibliography-management-optimization/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;ul&gt;
@@ -408,11 +640,11 @@ Figure 5: Posterior probability distribution of follow-up study result
     
     <item>
       <title>Template of a citable blog post</title>
-      <link>/en/post/2017-05-05-templete-of-a-citable-blog-post/</link>
+      <link>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
+      <guid>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;this-post-is-for-future-posts.&#34; class=&#34;section level2&#34;&gt;
@@ -430,22 +662,12 @@ Figure 5: Posterior probability distribution of follow-up study result
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>/en/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0800</pubDate>
-      
-      <guid>/en/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://sourcethemes.com/academic/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Randomization in Latin Square</title>
-      <link>/en/post/2016-09-14-randomization-in-latin-square/</link>
+      <link>http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/</link>
       <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-09-14-randomization-in-latin-square/</guid>
+      <guid>http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;I’m managing an opensesame script for the coming project. In this project, there are four stimuli lists included all the within-participant conditions. I denote the four lists &lt;strong&gt;A&lt;/strong&gt;, &lt;strong&gt;B&lt;/strong&gt;, &lt;strong&gt;C&lt;/strong&gt;, and &lt;strong&gt;D&lt;/strong&gt;. A participant will have one of the stimuli lists in terms of the counter balanced principle. The best assignment method is 4X4 Latin Square. For every 16 participants, there are 24 sequences to be used. Here are three of the sequences.&lt;/p&gt;
@@ -534,11 +756,11 @@ exp.set(&amp;#39;List&amp;#39;, lst)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Why we need a readable data table in behavioral scientific research?</title>
-      <link>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
+      <link>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
       <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
+      <guid>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;a-bad-case&#34; class=&#34;section level3&#34;&gt;
@@ -655,16 +877,16 @@ head(New_Table)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Rethink Significance</title>
-      <link>/en/post/2016-05-05-rethink-significance/</link>
+      <link>http://scchen.com/en/post/2016-05-05-rethink-significance/</link>
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-05-05-rethink-significance/</guid>
+      <guid>http://scchen.com/en/post/2016-05-05-rethink-significance/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-05-05-rethink-significance/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;To trace the fallacy of use hypothesis testing, I am programming the examples in Dr. Adrianus D. de Groot’s paper &lt;code&gt;The meaning of “signiﬁcance” for different types of research&lt;/code&gt;. This paper is published in 1956 in the Dutch journal &lt;em&gt;Nederlands Tijdschrift voor de Psychologie en Haar Grensgebieden&lt;/em&gt;. &lt;a href=&#34;https://en.wikipedia.org/wiki/Adriaan_de_Groot&#34;&gt;Adrianus De Groot&lt;/a&gt; is Dutch psychologist and chess master. During 1950s and 1960s, he suggested the concept of emperical cycle for the researchers who use the statistical tools in the social and behavioral researches.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/images/524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;Emperical cycle&#34; /&gt;
+&lt;img src=&#34;524px-Empirical_Cycle.png&#34; title=&#34;A visual representation of A.D. de Groot&amp;#39;s empirical cycle. Author: TesseUndDaan&#34; alt=&#34;&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Emperical cycle&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;de Groot’s emperical cycle distinguish two types of emperical research: &lt;strong&gt;exploratory research&lt;/strong&gt; and &lt;strong&gt;confirmatory research&lt;/strong&gt;. &lt;strong&gt;Exploratory research&lt;/strong&gt; aims to formulate the hypotheses that covers the process from &lt;code&gt;observation&lt;/code&gt; to &lt;code&gt;induction&lt;/code&gt;. &lt;strong&gt;Confirmatory research&lt;/strong&gt; attempts to test the predicited concequences based the hypothesis. Thus a &lt;strong&gt;Confirmatory research&lt;/strong&gt; covers &lt;code&gt;deduction&lt;/code&gt;, &lt;code&gt;testing&lt;/code&gt;, and &lt;code&gt;evaluation&lt;/code&gt;.&lt;/p&gt;
@@ -687,8 +909,8 @@ for(k in n){
 SUCCESS = data.frame(n,PASS_P)
 colnames(SUCCESS) &amp;lt;- c(&amp;quot;n&amp;quot;, &amp;quot;Probability(Positive Results)&amp;quot;)
 print(xtable(SUCCESS), include.rownames = FALSE, type = &amp;quot;html&amp;quot; ) &lt;/code&gt;&lt;/pre&gt;
-&lt;!-- html table generated in R 3.4.3 by xtable 1.8-2 package --&gt;
-&lt;!-- Fri Feb 23 14:17:48 2018 --&gt;
+&lt;!-- html table generated in R 4.0.5 by xtable 1.8-4 package --&gt;
+&lt;!-- Thu May 13 22:15:20 2021 --&gt;
 &lt;table border=&#34;1&#34;&gt;
 &lt;tr&gt;
 &lt;th&gt;
@@ -788,7 +1010,7 @@ Probability(Positive Results)
 &lt;/tr&gt;
 &lt;/table&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(PASS_P ~ n, xlab = &amp;quot;Smallest Number of Positive Hypotheses&amp;quot;, ylab = &amp;quot;Probability(Positive Results)&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2016-05-05-rethink-significance_files/figure-html/MultiHypo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://scchen.com/en/post/2016-05-05-rethink-significance/index_files/figure-html/MultiHypo-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;That table is telling us if we wish acquire at least one positive hypothesis, the probability is 0.4012631. That plot shows the probability dramatically decrease with the increasing numbers in our wish. In other words, when we have no precise knowlegde about the use of hyphtesis testing, the more hypotheses we want to induce, the higher risk we get nothing.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;exploratory-research-has-infinite-hypotheses&#34; class=&#34;section level3&#34;&gt;
@@ -805,16 +1027,16 @@ Probability(Positive Results)
     
     <item>
       <title>Autopsy of NHST and Bayesian Models (part 1)</title>
-      <link>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
+      <link>http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
       <pubDate>Sat, 30 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
+      <guid>http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Chapter 2 of &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated &lt;strong&gt;Data Story&lt;/strong&gt;, then &lt;strong&gt;update&lt;/strong&gt; the models by filling data in, and finally &lt;strong&gt;evaluate&lt;/strong&gt; all the &lt;strong&gt;upated&lt;/strong&gt; models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s &lt;a href=&#34;https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf&#34;&gt;Bayesian Basics: A Conceptual Introduction with Application in R and Stan&lt;/a&gt; on &lt;a href=&#34;http://mc-stan.org/documentation/&#34;&gt;Stan official site&lt;/a&gt;, I require the key to understand the difference between the two golems.&lt;/p&gt;
 &lt;p&gt;The critical difference is which type of &lt;strong&gt;conditional probability&lt;/strong&gt; the statistical method is used to evaluate the model. Once we collected the data based on some hypothesis, we have the distribution of hypothesis $ p( ) $ and the distribution of data $ p(y) $. NHST compuates the probability we have the data when the hypothesis is true $ p(y|) $. In practical, &lt;em&gt;p&lt;/em&gt; value refers to the &lt;strong&gt;conditional probability&lt;/strong&gt; of the null hypothesis, and * confidence interval* suggests a range of plausible outcomes based on the &lt;em&gt;confiditional probability&lt;/em&gt; of the real hypothesis. A Bayesian method compuates the probability the hypothesis is approved based on the data we have $ p(|y) $. Because the computation of $ p(|y) $ needs the likelihood $ p(y|) $ and the priori $ p() $, of course a Baysian method cost more steps than NHST.&lt;/p&gt;
-&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
+&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;http://scchen.com/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
 &lt;p&gt;Here is a pseudo experiment I want to know if a test is success based on the expect value smaller than 5 (Obersvations are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10). I completed an experiment of 25 observations and an experiment 36 observations. In use of NHST with a critical value (p &amp;lt; .05), the criterion change with the sample size. The simulation&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(1)
 OBV &amp;lt;- 1:10
@@ -825,13 +1047,13 @@ while(count &amp;gt; 0){Dist25 &amp;lt;- c(Dist25,mean(sample(OBV, 25,replace = 
 Dist25_Density &amp;lt;- data.frame(Theta = density(Dist25, kernel = &amp;quot;gaussian&amp;quot;)$x, Density = density(Dist25, kernel = &amp;quot;gaussian&amp;quot;)$y)
 CL25 &amp;lt;- max(Dist25_Density$Theta[Dist25_Density$Theta &amp;lt; 5 &amp;amp; Dist25_Density$Density &amp;lt; .05])
 print(CL25)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 4.152939&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4.286263&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;count = 100
 while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
 Dist36_Density &amp;lt;- data.frame(Theta = density(Dist36, kernel = &amp;quot;gaussian&amp;quot;)$x, Density = density(Dist36, kernel = &amp;quot;gaussian&amp;quot;)$y)
 CL36 &amp;lt;- max(Dist36_Density$Theta[Dist36_Density$Theta &amp;lt; 5 &amp;amp; Dist36_Density$Density &amp;lt; .05])
 print(CL36)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 4.41705&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4.345472&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;When this experiment outputs a avarage value between 4.15 and 4.42, would you like to collect the data more than 36 participants? This is the opportunity many researchers have to struggle in their study. Researchers who are educated as like me used to collect the observation till the &lt;em&gt;p&lt;/em&gt; value is smaller than .05. Most researchers used to stop the experiment till the 36th participant finished the experiment. However, this treatment lacks of the serious scientific thinking. If the hypothesis has set up the conditions to have the average, the sample size should be appointed before the start of experiment.&lt;/p&gt;
 &lt;p&gt;The appointment of sample size could be loose when the possible average is uncertain. When the experiment is conducted at first time in the world, NHST without the appointment of sample size could draw the range of averages that might obey the hypothesis. On the other hand, the following studies better has the appointment of sample size. In this case, NHST has to accompany the other statistical evaluation, such as power, effect size, to find the appropriate sample size. Therefore, NHST will perform well when the researcher conducted the first study or have the preparation as well as the first study. This will be the key in my autopsy of Bayesian method.&lt;/p&gt;
 </description>
@@ -839,161 +1061,577 @@ print(CL36)  ## The smallest parameter that could make judgement&lt;/code&gt;&lt
     
     <item>
       <title>Check My Tools to Create and Manipulate Golems</title>
-      <link>/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
+      <link>http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
       <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
+      <guid>http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;Since two weeks before I published this post, I have started read the book &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; written by &lt;a href=&#34;http://xcelab.net/rm/&#34;&gt;Richard McElreath&lt;/a&gt;. Richard is the evolutionary anthropologist at Max Planck Institute. He wrote this textbook for the PhD students who will use the Bayesian statistics in their research projects. Compared to the textbooks written by statisians and data scientistst, Richard’s book explain and demonstrate the statistical methods with examples instead of equations. His intention is to help who are not staticians but used to use statistics realize one fact: we rely on the statistical models as the representations of our answers rather than answer the questions by the raw data or naked truth. Many non-statisticians are used to find and learn what kind of methods or apps to deal with their data, but few are interested to know the models under the mentods and apps they are using. The trouble and danger is that they thought their jobs are done when the program printed the tables and figures but these outputs are from the statistical model is unable to answer their question. This situation is originated from many non-statisticans consider themselves the end-users of statistical models. Like any user of a packaged software, non-statisticans have no time to understand how the tools in their hands designed and conducted by statisticans.&lt;br /&gt;
 Richard introduced the story of &lt;a href=&#34;https://en.wikipedia.org/wiki/Golem&#34;&gt;golem&lt;/a&gt; to raise the non-statsiticans’ attention to the troubles they had made and will make. A statistical model, like a golem, has the power beyond human to finish the work the human are unable to do, for example, trace the passengers’ track from the trillion of camera. Its power could be misused or out of control if we do not understand what is the root of its action. A user of ststistical method, no matter you are or are not stistician, have to keep the awareness of engineer when you are dealing with your data. Today everyone has many easier ways than a decade ago to keep the awareness of engineer. One advantage is that the learning curve for being an part-time hacker is getting smooth. Increasing R apps are opening many windows for who are want to outlook and modify the statistical models.&lt;br /&gt;
 Since this post, every post listed in the category &lt;code&gt;Rethinking&lt;/code&gt; is one of the summaries and feedbacks to &lt;a href=&#34;https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-Stan/McElreath/9781482253443&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt;. At first I have to check my toolkits for create and manipulate the statistical models. They are R core and the packages. Years ago I have used to use the packages in my data processing. Now I show them for who start to use R after read this post.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;install.packages(c(&amp;quot;rpart&amp;quot;,&amp;quot;chron&amp;quot;,&amp;quot;Hmisc&amp;quot;,&amp;quot;Design&amp;quot;,&amp;quot;Matrix&amp;quot;,&amp;quot;stringr&amp;quot;,&amp;quot;lme4&amp;quot;,&amp;quot;coda&amp;quot;,&amp;quot;e1071&amp;quot;,&amp;quot;zipfR&amp;quot;,&amp;quot;ape&amp;quot;,&amp;quot;languageR&amp;quot;,&amp;quot;multcomp&amp;quot;,&amp;quot;contrast&amp;quot;,&amp;quot;shiny&amp;quot;,&amp;quot;ggplot2&amp;quot;, &amp;quot;dplyr&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Some of the packages are learned from I participated in &lt;a href=&#34;https://www.coursera.org/specializations/jhu-data-science&#34;&gt;Cousera Data Science&lt;/a&gt;. Now I used to use &lt;code&gt;dplyr&lt;/code&gt; to process the raw data, and I am learning how to draw the figures I need in use of &lt;code&gt;ggplot2&lt;/code&gt;. When this post is published, I have updated my R to R version 3.4.3 (2017-11-30). Through &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;the codes of Heuristic Andrew&lt;/a&gt;, here are my installed packages.&lt;/p&gt;
+&lt;p&gt;Some of the packages are learned from I participated in &lt;a href=&#34;https://www.coursera.org/specializations/jhu-data-science&#34;&gt;Cousera Data Science&lt;/a&gt;. Now I used to use &lt;code&gt;dplyr&lt;/code&gt; to process the raw data, and I am learning how to draw the figures I need in use of &lt;code&gt;ggplot2&lt;/code&gt;. When this post is published, I have updated my R to R version 4.0.5 (2021-03-31). Through &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;the codes of Heuristic Andrew&lt;/a&gt;, here are my installed packages.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ip &amp;lt;- as.data.frame(installed.packages()[,c(1,3:4)])
 rownames(ip) &amp;lt;- NULL
 ip &amp;lt;- ip[is.na(ip$Priority),1:2,drop=FALSE]
 print(ip, row.names=FALSE)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##       Package    Version
-##       acepack      1.4.1
-##           ape        5.0
-##    assertthat      0.2.0
-##     backports      1.1.2
-##     base64enc      0.1-3
-##      beeswarm      0.2.3
-##        beginr      0.1.0
-##            BH   1.66.0-1
-##         bindr        0.1
-##      bindrcpp        0.2
-##         binom      1.1-1
-##        bitops      1.0-6
-##      blogdown        0.5
-##      bookdown        0.7
-##  bookdownplus      1.3.2
-##         broom      0.4.3
-##           car      2.1-6
-##       caTools     1.17.1
-##     checkmate      1.8.5
-##         chron     2.3-52
-##           cli      1.0.0
-##          coda     0.19-1
-##    colorspace      1.3-2
-##      contrast       0.21
-##      cranlogs      2.1.0
-##        crayon      1.3.4
-##          curl        3.1
-##    data.table   1.10.4-3
-##     dichromat      2.0-0
-##        digest     0.6.15
-##         dplyr      0.7.4
-##         e1071      1.6-8
-##      evaluate     0.10.1
-##       Formula      1.2-2
-##       geepack      1.2-1
-##       ggplot2      2.2.1
-##         git2r     0.21.0
-##          glue      1.2.0
-##     gridExtra        2.3
-##        gtable      0.2.0
-##         highr        0.6
-##         Hmisc      4.1-1
-##     htmlTable     1.11.2
-##     htmltools      0.3.6
-##   htmlwidgets        1.0
-##        httpuv      1.3.5
-##          httr      1.3.1
-##     iterators      1.0.9
-##      jsonlite        1.5
-##         knitr       1.19
-##      labeling        0.3
-##     languageR      1.4.1
-##         later        0.6
-##  latticeExtra     0.6-28
-##      lazyeval      0.2.1
-##          lme4     1.1-15
-##      magrittr        1.5
-##      markdown        0.8
-##  MatrixModels      0.4-1
-##       memoise      1.1.0
-##          mime        0.5
-##        miniUI      0.1.1
-##         minqa      1.2.4
-##        mnormt      1.5-5
-##      multcomp      1.4-8
-##       munsell      0.4.3
-##       mvtnorm      1.0-7
-##        nloptr      1.0.4
-##       openssl        1.0
-##       packrat    0.4.8-1
-##        papaja 0.1.0.9655
-##      pbkrtest      0.4-7
-##     pBrackets        1.0
-##        pillar      1.1.0
-##     pkgconfig      2.0.1
-##           PKI    0.1-5.1
-##         plogr      0.1-1
-##       plotrix        3.7
-##          plyr      1.8.4
-##     polspline     1.1.12
-##         psych      1.7.8
-##         purrr      0.2.4
-##      quantreg       5.35
-##            R6      2.2.2
-##  RColorBrewer      1.1-2
-##          Rcpp    0.12.15
-##     RcppEigen  0.3.3.4.0
-##         RCurl  1.95-4.10
-##       reshape      0.8.7
-##      reshape2      1.4.3
-##       RJSONIO      1.3-0
-##         rlang      0.1.6
-##        RLRsim      3.1-3
-##     rmarkdown     1.8.10
-##           rms      5.1-2
-##     rprojroot      1.3-2
-##     rsconnect      0.8.5
-##    rstudioapi        0.7
-##       rticles      0.4.1
-##      sandwich      2.4-0
-##        scales      0.5.0
-##         servr        0.8
-##         shiny      1.0.5
-##   shinythemes      1.1.1
-##          simr      1.0.3
-##   sourcetools      0.1.6
-##       SparseM       1.77
-##       stringi      1.1.6
-##       stringr      1.2.0
-##       TH.data      1.0-8
-##        tibble      1.4.2
-##         tidyr      0.8.0
-##    tidyselect      0.2.3
-##       tinytex        0.3
-##          utf8      1.1.3
-##       viridis      0.5.0
-##   viridisLite      0.3.0
-##     visualize      4.3.0
-##       whisker      0.3-2
-##         withr      2.1.1
-##          xfun        0.1
-##        xtable      1.8-2
-##          yaml     2.1.16
-##         zipfR     0.6-10
-##           zoo      1.8-1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                   Package    Version
+##                     abind      1.4-5
+##                   acepack      1.4.1
+##                      afex     0.28-1
+##                ANOVApower      0.0.3
+##                   anytime      0.3.9
+##                       apa      0.3.3
+##                       ape      5.4-1
+##                       arm     1.11-2
+##                   askpass        1.1
+##                assertthat      0.2.1
+##                 backports      1.2.1
+##                 base64enc      0.1-3
+##               BayesFactor 0.9.12-4.2
+##                bayestestR      0.9.0
+##                     bbmle   1.0.23.1
+##                 bdsmatrix      1.3-4
+##                        BH   1.75.0-0
+##                    bibtex    0.4.2.3
+##                     bindr      0.1.1
+##                  bindrcpp      0.2.2
+##                    binman      0.1.2
+##                     binom      1.1-1
+##                    bitops      1.0-6
+##                      blob      1.2.1
+##                  blogdown      1.3.1
+##                  bookdown       0.21
+##                      brew      1.0-6
+##            bridgesampling      1.1-2
+##                      brio      1.1.1
+##               Brobdingnag      1.2-6
+##                     broom      0.7.6
+##               broom.mixed      0.2.6
+##                broomExtra      4.2.1
+##                     bslib      0.2.4
+##                   BWStest      0.2.2
+##                        ca     0.71.1
+##                    cachem      1.0.4
+##                     callr      3.6.0
+##                       car     3.0-10
+##                   carData      3.0-4
+##                   caTools     1.18.2
+##                     cdata      1.1.9
+##                cellranger      1.1.0
+##                 checkmate      2.0.0
+##                  circlize     0.4.12
+##                      citr      0.3.2
+##                       cli      2.4.0
+##                     clipr      0.7.1
+##                clisymbols      1.2.0
+##                      coda     0.19-4
+##                      coin      1.4-1
+##                colorspace      2.0-0
+##              colourpicker      1.1.0
+##                commonmark        1.7
+##                compute.es      0.2-5
+##                    config      0.3.1
+##                   conquer      1.0.2
+##                  contfrac     1.1-12
+##               correlation      0.6.1
+##                  corrplot       0.84
+##                      covr      3.5.1
+##                   cowplot      1.1.1
+##                     cpp11      0.2.7
+##                    crayon      1.4.1
+##               credentials      1.3.0
+##                 crosstalk      1.1.1
+##                      crul      1.1.0
+##                   cubelyr      1.0.1
+##                      curl        4.3
+##                   dagitty      0.3-1
+##                data.table     1.14.0
+##                dataskills       2.11
+##                       DBI      1.1.1
+##                    dbplyr      2.1.1
+##                      desc      1.3.0
+##                 DescTools    0.99.41
+##                   deSolve       1.28
+##                  devtools      2.4.0
+##               DiceKriging      1.6.0
+##                 dichromat      2.0-0
+##                   diffobj      0.3.4
+##                    digest     0.6.27
+##                   distill        1.2
+##                 dotCall64      1.0-1
+##                   downlit      0.2.1
+##                     dplyr      1.0.5
+##                        DT       0.18
+##                    dtplyr      1.1.0
+##                 dunn.test      1.3.5
+##                  dygraphs    1.1.1.6
+##                     e1071      1.7-6
+##                effectsize    0.4.4-1
+##                   effsize      0.8.1
+##                   ellipse      0.4.2
+##                  ellipsis      0.3.1
+##                  elliptic      1.4-0
+##                   emmeans    1.5.5-1
+##                       emo 0.0.0.9000
+##                       EMT        1.1
+##               equivalence      0.7.2
+##              estimability        1.3
+##                  evaluate       0.14
+##                     Exact        2.1
+##            exactRankTests     0.8-31
+##                      expm    0.999-6
+##                 extrafont       0.17
+##               extrafontdb        1.0
+##                        ez      4.4-0
+##                     fansi      0.4.2
+##                    farver      2.1.0
+##                fastGHQuad        1.0
+##                   fastmap      1.1.0
+##                 fastmatch      1.1-0
+##                      faux      1.0.0
+##                   fauxpas      0.5.0
+##                    fields       11.6
+##                  finalfit      1.0.2
+##           fivethirtyeight      0.6.1
+##             flexdashboard      0.5.2
+##                 flextable      0.6.5
+##                   forcats      0.5.1
+##                   foreach      1.5.1
+##                   Formula      1.2-4
+##             formula.tools      1.7.1
+##                        fs      1.5.0
+##                     furrr      0.2.2
+##                    future     1.21.0
+##             gameofthrones      1.0.2
+##                 gapminder      0.3.0
+##                    gargle      1.1.0
+##                     gdata     2.18.0
+##                   gdtools      0.2.3
+##                  generics      0.1.0
+##                 geosphere     1.5-10
+##                      gert      1.3.0
+##                   getPass      0.2-2
+##                ggalluvial     0.12.3
+##                    GGally      2.1.1
+##                ggcorrplot      0.1.3
+##                 ggeffects      1.0.2
+##                   ggExtra        0.9
+##                   ggforce      0.3.3
+##                       ggm        2.5
+##                     ggmap      3.0.0
+##                   ggplot2      3.3.3
+##             ggplot2movies      0.0.1
+##                    ggpubr      0.4.0
+##                    ggraph      2.0.5
+##                   ggrepel      0.9.1
+##                  ggridges      0.5.3
+##                     ggsci        2.9
+##                  ggsignif      0.6.1
+##               ggstatsplot      0.7.2
+##                    ggtext      0.1.1
+##                  ggthemes      4.2.4
+##                        gh      1.2.1
+##                     git2r     0.28.0
+##                  gitcreds      0.1.1
+##                       gld      2.6.2
+##                   glmmTMB    1.0.2.1
+##             GlobalOptions      0.1.2
+##                   globals     0.14.0
+##                      glue      1.4.2
+##                       gmp      0.6-2
+##                       gnm      1.1-1
+##               googledrive      1.0.1
+##              googlesheets      0.3.0
+##             googlesheets4      0.3.0
+##               GPArotation  2014.11-1
+##                    gplots      3.1.1
+##              graphlayouts      0.7.1
+##                 gridExtra        2.3
+##                  gridtext      0.1.4
+##                 groundhog      1.3.2
+##              groupedstats      2.0.1
+##                       gsl      2.1-6
+##                    gtable      0.3.0
+##                    gtools      3.8.2
+##               harrypotter      2.1.1
+##                     haven      2.3.1
+##                     headR      0.1.1
+##                      here      1.0.1
+##                     highr        0.9
+##                     Hmisc      4.5-0
+##                       hms      1.0.0
+##                hrbrthemes      0.8.0
+##                  htmldeps      0.1.1
+##                 htmlTable      2.1.0
+##                 htmltools    0.5.1.1
+##               htmlwidgets      1.5.3
+##                  httpcode      0.3.0
+##                    httpuv      1.5.5
+##                      httr      1.4.2
+##                  hunspell      3.0.1
+##                  hypergeo     1.2-13
+##                       ids      1.0.1
+##                    igraph      1.2.6
+##                     infer      0.5.4
+##                       ini      0.3.1
+##                    inline     0.3.17
+##                   insight     0.13.2
+##                  installr     0.22.0
+##                    ipmisc      6.0.0
+##                      ISLR        1.2
+##                   isoband      0.2.4
+##                  ISOcodes 2021.02.24
+##                 iterators     1.0.13
+##               janeaustenr      0.1.5
+##                   janitor      2.1.0
+##                   jcolors      0.0.4
+##                       jmv     1.2.23
+##                jmvconnect     1.2.18
+##                   jmvcore     1.2.23
+##                      jomo      2.7-2
+##                      jpeg    0.1-8.1
+##                 jquerylib      0.1.3
+##                  jsonlite      1.7.2
+##                  jspsychr 0.0.0.9000
+##                kableExtra      1.3.4
+##                     km.ci      0.5-2
+##                    KMsurv      0.1-5
+##                     knitr       1.32
+##                    koRpus     0.13-5
+##            koRpus.lang.en      0.1-4
+##                  kSamples      1.2-9
+##                  labeling      0.4.2
+##                 languageR      1.5.0
+##             LaplacesDemon     16.1.4
+##                     later    1.1.0.1
+##              latticeExtra     0.6-29
+##                    lavaan      0.6-8
+##                  lazyeval      0.2.2
+##                   LCFdata        2.0
+##                   leaflet    2.0.4.1
+##         leaflet.providers      1.9.0
+##                   libcoin      1.0-8
+##                 lifecycle      1.0.0
+##                   listenv      0.8.0
+##                      lme4     1.1-26
+##  LMERConvenienceFunctions        3.0
+##                  lmerTest      3.1-3
+##                      lmom        2.8
+##                    lmtest     0.9-38
+##                 logspline     2.1.16
+##                       loo      2.4.1
+##                   lsmeans     2.30-0
+##                 lubridate     1.7.10
+##                      lutz      0.3.1
+##                    magick      2.7.1
+##                  magrittr      2.0.1
+##          manipulateWidget     0.10.1
+##                   mapproj      1.2.7
+##                      maps      3.3.0
+##                  maptools      1.1-1
+##                  markdown        1.1
+##                  mathjaxr      1.4-0
+##                matrixcalc      1.0-3
+##              MatrixModels      0.5-0
+##               matrixStats     0.58.0
+##                   maxstat     0.7-25
+##                     MBESS      4.8.0
+##                      mc2d     0.1-19
+##                   memoise      2.0.0
+##                     MEMSS      0.9-3
+##                   metaBMA      0.6.7
+##                   metafor      2.4-0
+##                  metaplus     0.7-11
+##                        mi        1.0
+##                      mice     3.13.0
+##                      mime       0.10
+##                    miniUI    0.1.1.1
+##                     minqa      1.2.4
+##                     mitml      0.4-1
+##                    mnormt      2.0.2
+##                 modeldata      0.1.0
+##                    modelr      0.1.8
+##                modeltools     0.2-23
+##                moderndive      0.5.1
+##                   moments       0.14
+##                      MOTE      1.0.2
+##                  multcomp     1.4-16
+##              multcompView      0.1-8
+##                     MuMIn    1.43.17
+##                   munsell      0.5.0
+##                mvnormtest      0.1-9
+##                   mvtnorm      1.1-1
+##                   network     1.16.1
+##                     ngram      3.1.0
+##                     nlmeU     0.70-3
+##                    nloptr    1.2.2.2
+##                       NLP      0.2-1
+##                   nortest      1.0-4
+##                  numDeriv 2016.8-1.1
+##              nycflights13      1.0.2
+##                   officer     0.3.18
+##                 oompaBase      3.2.9
+##                    OpenMx     2.19.1
+##                   openssl      1.4.3
+##                  openxlsx      4.2.3
+##            operator.tools      1.6.3
+##                   ordinal 2019.12-10
+##                      osfr      0.2.8
+##                   packrat      0.6.0
+##                PairedData      1.1.1
+##       pairwiseComparisons      3.1.3
+##                 paletteer      1.3.0
+##                      palr      0.2.0
+##                      pals        1.7
+##                       pan        1.6
+##                    pander      0.6.3
+##                    papaja 0.1.0.9942
+##                parallelly     1.24.0
+##                parameters     0.13.0
+##                 patchwork      1.1.1
+##                   pbapply      1.4-3
+##                  pbivnorm      0.6.0
+##                  pbkrtest      0.5.1
+##               performance      0.7.1
+##                    pillar      1.6.0
+##                  pkgbuild      1.2.0
+##                 pkgconfig      2.0.3
+##                   pkgload      1.2.1
+##                       PKI      0.1-8
+##                     plogr      0.2.0
+##                    plotly      4.9.3
+##                   plotrix      3.8-1
+##                   plumber      1.1.0
+##                      plyr      1.8.6
+##                     PMCMR        4.3
+##                 PMCMRplus      1.9.0
+##                       png      0.1-7
+##                  polyclip     1.10-0
+##                   polynom      1.4-0
+##                     ppcor        1.1
+##                    praise      1.0.0
+##                    prereg      0.5.0
+##               prettyunits      1.1.1
+##                 prismatic      1.0.0
+##                      pROC   1.17.0.1
+##                  processx      3.5.1
+##                  progress      1.2.2
+##                  promises    1.2.0.1
+##                     proto      1.0.0
+##                     proxy     0.4-25
+##                    proxyC      0.1.5
+##                        ps      1.6.0
+##                     psych      2.1.3
+##                     purrr      0.3.4
+##                       pwr      1.3-0
+##                  quanteda      3.0.0
+##                 QuantPsyc        1.5
+##                  quantreg       5.85
+##                    qvcalc      1.0.2
+##                   R.cache     0.14.0
+##               R.methodsS3      1.8.1
+##                      R.oo     1.24.0
+##                   R.utils     2.10.1
+##                        R6      2.5.0
+##                randomizeR      2.0.0
+##                  rappdirs      0.3.3
+##                    raster      3.4-5
+##                 rcmdcheck      1.3.3
+##              RColorBrewer      1.1-2
+##                rcompanion      2.4.0
+##                      Rcpp      1.0.6
+##             RcppArmadillo 0.10.4.0.0
+##                 RcppEigen  0.3.3.9.1
+##              RcppParallel      5.1.1
+##                     RCurl   1.98-1.3
+##                  readbulk      1.1.3
+##                     readr      1.4.0
+##                    readxl      1.3.1
+##                RefManageR      1.3.0
+##                    relimp      1.0-5
+##                   rematch      1.0.1
+##                  rematch2      2.1.2
+##                   remotes      2.3.0
+##                      repr      1.1.3
+##                    reprex      2.0.0
+##                   reshape      0.8.8
+##                  reshape2      1.4.4
+##                reticulate       1.18
+##                  revealjs        0.9
+##                       rex      1.2.0
+##                       rgl   0.105.22
+##               RgoogleMaps    1.4.5.3
+##                       rio     0.5.26
+##                     rJava     0.9-13
+##                     rjson     0.2.20
+##                   RJSONIO    1.3-1.4
+##                     rlang     0.4.10
+##                       rle      0.9.2
+##                    RLRsim      3.1-6
+##                 rmarkdown        2.7
+##                  rmdfiltr      0.1.3
+##                     Rmpfr      0.8-4
+##                      ROCR     1.0-11
+##                 rootSolve    1.8.2.1
+##                    rorcid      0.7.0
+##                  roxygen2      7.1.1
+##                rpart.plot      3.0.9
+##                       rpf      1.0.5
+##                 rprojroot      2.0.2
+##               rqdatatable      1.2.9
+##                    rquery      1.4.6
+##                   rsample      0.0.9
+##                 rsconnect     0.8.17
+##                 RSelenium      1.7.7
+##                     rstan     2.21.2
+##                rstantools      2.1.1
+##                   rstatix      0.7.0
+##                rstudioapi       0.13
+##                   rticles       0.19
+##                  Rttf2pt1      1.3.8
+##                 rversions      2.0.2
+##                     rvest      1.0.0
+##                  sandwich      3.0-0
+##                      sass      0.3.1
+##                    scales      1.1.1
+##                   scholar      0.2.0
+##                     scico      1.2.0
+##              scienceverse 0.0.0.9004
+##                   selectr      0.4-2
+##                       sem     3.1-11
+##                  semTools      0.5-4
+##                    semver      0.2.0
+##                     servr       0.22
+##               sessioninfo      1.1.1
+##                     shape      1.4.5
+##                     shiny      1.6.0
+##            shinydashboard      0.7.1
+##                   shinyjs      2.0.0
+##               shinythemes      1.2.0
+##                      sigr      1.1.3
+##                      simr      1.0.5
+##                sjlabelled      1.1.7
+##                    sjmisc      2.8.6
+##                    sjPlot      2.8.7
+##                   sjstats     0.18.1
+##                     skimr      2.1.3
+##                      slam     0.1-48
+##                    slider      0.2.1
+##                        sm    2.2-5.6
+##                       sna        2.6
+##                 snakecase     0.11.0
+##                 SnowballC      0.7.0
+##                    sodium        1.1
+##               sourcetools      0.1.7
+##                        sp      1.4-5
+##                      spam      2.6-0
+##                   SparseM       1.81
+##               StanHeaders   2.21.0-7
+##                   statmod     1.4.35
+##            statnet.common      4.4.1
+##          statsExpressions      1.0.1
+##                 stopwords        2.2
+##                   stringi      1.5.3
+##                   stringr      1.4.0
+##                subprocess      0.8.3
+##                Superpower      0.1.1
+##                 SuppDists    1.1-9.5
+##                 survminer      0.4.9
+##                  survMisc      0.5.5
+##                   svglite      2.0.0
+##                   swagger     3.33.1
+##                  sylcount      0.2-2
+##                     sylly      0.1-6
+##                  sylly.en      0.1-3
+##                       sys        3.4
+##               systemfonts      1.0.1
+##                    tables      0.9.6
+##                       tau     0.0-23
+##                tensorflow      2.4.0
+##                  testthat      3.0.2
+##                   textcat      1.0-7
+##                    tfruns      1.5.0
+##                   TH.data     1.0-10
+##                    tibble      3.1.0
+##                    tidyBF      0.5.0
+##                 tidygraph      1.2.0
+##                     tidyr      1.1.3
+##                   tidyRSS      2.0.3
+##                tidyselect      1.1.0
+##                  tidytext      0.3.1
+##                 tidyverse      1.3.1
+##                timesavers      0.1.2
+##                   tinytex       0.31
+##                        tm      0.7-8
+##                       TMB     1.7.20
+##                   tmvnsim      1.0-2
+##                tokenizers      0.2.1
+##               topicmodels     0.2-12
+##                    TOSTER      0.3.4
+##                translateR        1.0
+##                 triebeard      0.3.0
+##                 truncnorm      1.0-8
+##                    tweenr      1.0.2
+##                    ucminf      1.1-4
+##               ukbabynames      0.1.1
+##                   Unicode   13.0.0-2
+##                  urltools      1.7.3
+##                   usethis      2.0.1
+##                      utf8      1.2.1
+##                      uuid      0.1-4
+##                        V8      3.4.0
+##                       vcd      1.4-8
+##                  vcdExtra      0.7-5
+##                     vctrs      0.3.7
+##                   viridis      0.6.0
+##               viridisLite      0.4.0
+##                     waldo      0.2.5
+##                      warp      0.2.0
+##                     wdman      0.2.5
+##                   webshot      0.5.2
+##                  webutils        1.1
+##               wesanderson      0.3.6
+##                   whisker        0.4
+##                     widyr      0.1.3
+##                     withr      2.4.2
+##                 wordcloud        2.6
+##            wordcountaddin 0.3.0.9000
+##                 workflowr      1.6.2
+##                     wrapr      2.0.7
+##                      WRS2      1.1-1
+##                   WVPlots      1.3.2
+##                   WWGbook      1.0.1
+##                  xaringan       0.20
+##                      xfun       0.22
+##                 XLConnect      1.0.3
+##             XLConnectJars     0.2-15
+##                      xlsx      0.6.5
+##                  xlsxjars      0.6.1
+##                       XML   3.99-0.6
+##                      xml2      1.3.2
+##                     xopen      1.0.0
+##                    xtable      1.8-4
+##                       xts     0.12.1
+##                      yaml      2.2.1
+##                   zeallot      0.1.0
+##                       zip      2.1.1
+##                       zoo      1.8-9&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;print(paste0(&amp;quot;There are &amp;quot;,dim(ip)[1], &amp;quot; packages installed in my laptop.&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;There are 125 packages installed in my laptop.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;There are 541 packages installed in my laptop.&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Richard’s book inspired me help people control their golems/ststistical models in the process of coding. In his book, literature and codes are separated. Readers who are not familiar with coding skill might hardly follow his literature. Literatural coding might be the best way to impliment the &lt;code&gt;Rethinking&lt;/code&gt;. I am going to accumulating the codes of Bayesian statistics and thake notes of his and others literatures in the coming posts.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Display Math Equation in Post</title>
-      <link>/en/post/2016-04-05-display-math-equation-in-post/</link>
+      <link>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-04-05-display-math-equation-in-post/</guid>
+      <guid>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:&lt;/p&gt;
@@ -1009,17 +1647,17 @@ Variance &lt;span class=&#34;math display&#34;&gt;\[ V \left({X_i}\right) = \sig
 Then:&lt;br /&gt;
 &lt;span class=&#34;math display&#34;&gt;\[ \displaystyle \frac {S_n - n \mu} {\sqrt {n \sigma^2} } \xrightarrow {D} N \left({0, 1}\right)\]&lt;/span&gt; as &lt;span class=&#34;math display&#34;&gt;\[ n \to \infty \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Embedded tex codes in &lt;code&gt;$$ ... $$&lt;/code&gt;, the equation was transfered inline or in single line. Thus I pass the step 3 of &lt;a href=&#34;http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html&#34;&gt;Fong Chun Chan’s method&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2018-02-23 14:17:41&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note.&lt;/strong&gt; Justify the last equation in 2021-05-13 20:51:38&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Vectors in mathematics and in codes</title>
-      <link>/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
+      <link>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
       <pubDate>Tue, 05 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
+      <guid>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
       <description>
+&lt;script src=&#34;http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;When a set of data/observations is imported to R, it is usually treated as &lt;code&gt;vector&lt;/code&gt;. Vector has two mathematical forms as following:&lt;/p&gt;
@@ -1073,16 +1711,12 @@ SS&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Learning Sampling Distribution in R Programming</title>
-      <link>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
+      <link>http://scchen.com/en/post/learning-sampling-distribution-in-r-programming/</link>
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
-      <description>
-
-
-&lt;p&gt;Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.&lt;/p&gt;
+      <guid>http://scchen.com/en/post/learning-sampling-distribution-in-r-programming/</guid>
+      <description>&lt;p&gt;Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.&lt;/p&gt;
 &lt;p&gt;In this pseudo experiment, there are only ten observations we will collect in every sample. They are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Accodring to the design of the experiment, a sample will have one observation to countless observations. I assume the distrubtions are accumulated from 100 samples of 1 observation, 9 observations, ,16 observations, 25 observations, and 36 observations. Every sample will be collapsed to a average value and become the components of sampling distribution. I use &lt;code&gt;ggplot2&lt;/code&gt; to draw the five sampling distributions. Look at what they are look like.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;suppressPackageStartupMessages({
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;suppressPackageStartupMessages({
   library(ggplot2)
   library(xtable)
   })
@@ -1105,52 +1739,72 @@ while(count &amp;gt; 0){Dist25 &amp;lt;- c(Dist25,mean(sample(OBV, 25,replace = 
 count = 100
 while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
 Dist.df &amp;lt;- data.frame(Size = factor(rep(c(1,9,16,25,36), each=100)), Sample_Means = c(Dist1, Dist9, Dist16, Dist25, Dist36) )
-ggplot(Dist.df, aes(Sample_Means, fill = Size)) + geom_histogram() + facet_grid(. ~ Size)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2016-03-30-learning-sampling-distribution-in-r-programming_files/figure-html/Sampling-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+ggplot(Dist.df, aes(Sample_Means, fill = Size)) + geom_histogram() + facet_grid(. ~ Size)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;http://scchen.com/en/post/learning-sampling-distribution-in-r-programming/index_files/figure-html/Sampling-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We call the set of observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 &lt;strong&gt;population&lt;/strong&gt; in any circumstance we conduct this experiment. This population has the average 5.5 and the variance/standard deviation 8.25/2.87. With the increase of sample size, you find more and more samples collapsed to the average of population. The variation of each sample distribution decreases with the increasing of sample size as well. The following table illustrate the average and variance/standard deviation of each sampling distribution.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
-&lt;tr class=&#34;header&#34;&gt;
-&lt;th align=&#34;center&#34;&gt;Sample Size&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Average&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Variance&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Standard Deviation&lt;/th&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Sample Size&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Average&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Variance&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Standard Deviation&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;1&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.64&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;7&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;2.65&lt;/td&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6.06&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;8.14&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2.85&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;9&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.48&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.97&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.98&lt;/td&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.62&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.91&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.96&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;16&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.42&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.54&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.73&lt;/td&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;16&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.58&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.76&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr class=&#34;even&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;25&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.47&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.38&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.61&lt;/td&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;25&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.54&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.43&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.66&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr class=&#34;odd&#34;&gt;
-&lt;td align=&#34;center&#34;&gt;36&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;5.56&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;0.45&lt;/td&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;36&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5.51&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.27&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;0.52&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;There are three findings in this simulation. First, the average of every sample is as equal as the average of population. Second, the variance of every sample is close to the divide of population variance by the sample size. Third, the standard deviation of every sample is close to the divide of population standard deviation by the square of sample size. These facts matches &lt;a href=&#34;https://en.wikipedia.org/wiki/Central_limit_theorem&#34;&gt;Central limit theorem&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are three findings in this simulation. First, the average of every sample is as equal as the average of population. Second, the variance of every sample is close to the divide of population variance by the sample size. Third, the standard deviation of every sample is close to the divide of population standard deviation by the square of sample size. These facts matches &lt;a href=&#34;https://en.wikipedia.org/wiki/Central_limit_theorem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Central limit theorem&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example conference paper</title>
+      <link>http://scchen.com/en/publication/conference-paper/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/publication/conference-paper/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

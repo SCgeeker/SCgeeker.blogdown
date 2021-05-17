@@ -1,52 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Sau-Chin Chen&#39;s Website</title>
-    <link>/en/categories/</link>
-    <description>Recent content in Categories on Sau-Chin Chen&#39;s Website</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2017 Sau-Chin Chen</copyright>
-    <lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/en/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Practices</title>
-      <link>/en/categories/practices/</link>
-      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/categories/practices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>/en/categories/teaching/</link>
-      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/categories/teaching/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>academic</title>
-      <link>/en/categories/academic/</link>
-      <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/categories/academic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reproduce Practice</title>
-      <link>/en/categories/reproduce-practice/</link>
-      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/en/categories/reproduce-practice/</guid>
-      <description></description>
-    </item>
+    <title>Categories | Sau-Chin Chen&#39;s website</title>
+    <link>http://scchen.com/en/categories/</link>
+      <atom:link href="http://scchen.com/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>Categories</title>
+      <link>http://scchen.com/en/categories/</link>
+    </image>
     
   </channel>
 </rss>

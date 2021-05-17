@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog_skills | Sau-Chin Chen&#39;s website</title>
+    <link>http://scchen.com/en/tag/blog_skills/</link>
+      <atom:link href="http://scchen.com/en/tag/blog_skills/index.xml" rel="self" type="application/rss+xml" />
+    <description>blog_skills</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Mon, 08 May 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>blog_skills</title>
+      <link>http://scchen.com/en/tag/blog_skills/</link>
+    </image>
+    
+    <item>
+      <title>Manage a blog for the bibliography management optimization</title>
+      <link>http://scchen.com/en/post/2017-05-08-bibliography-management-optimization/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/post/2017-05-08-bibliography-management-optimization/</guid>
+      <description>
+&lt;script src=&#34;http://scchen.com/en/post/2017-05-08-bibliography-management-optimization/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Many promoters of open-accessible literature spread their preprinted articles through the personal and collaborative blogs. Bloggers and followers like me usually manage the last updated posts in the reference managers. My &lt;a href=&#34;https://www.zotero.org/&#34;&gt;zotero&lt;/a&gt; have collected a lot of blog posts to be commented and to be cited in my coming articles. After collected hundreds of posts, I found that zotero not always imported the meta data of the blog posts for the correct citations. This post presents why not all the necessary meta data can be imported by the reference managers, and shows how the readers and bloggers could manage these situations.&lt;/p&gt;
+&lt;p&gt;Referring to the 76th example of APA 6th style and the &lt;a href=&#34;http://blog.apastyle.org/apastyle/2016/04/how-to-cite-a-blog-post-in-apa-style.html&#34;&gt;explain of Timothy McAdoo (2016)&lt;/a&gt;, I demonstrates the reference format of a blog post like following:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;quot;Who&amp;quot;. (Year, Month, Day). &amp;quot;Title of the post&amp;quot;[Blog post]. Retrieved from &amp;quot;my url&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For a long time, I had been confused why some imported posts have no released date, and some do not include the author’s name. Until read this blog post about &lt;a href=&#34;https://moz.com/blog/meta-data-templates-123&#34;&gt;social meta tags&lt;/a&gt;, I realized that &lt;strong&gt;zotero&lt;/strong&gt; establish the items for the blog posts and webpages in terms of the &lt;code&gt;meta&lt;/code&gt; tags in the source html files. To have the correct citation of a blog post, a post at least has to have the three &lt;code&gt;meta&lt;/code&gt; tags: &lt;code&gt;author&lt;/code&gt;, &lt;code&gt;article:published_time&lt;/code&gt;, &lt;code&gt;og:title&lt;/code&gt;. I built a &lt;a href=&#34;http://scchen.com/blog/2017/05/templete-of-a-citable-blog-post.html&#34;&gt;template&lt;/a&gt; showing how these tag are included in my &lt;code&gt;head.html&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Many of my collected posts are from the active psychologists and statisticans. &lt;a href=&#34;http://psychbrief.com&#34;&gt;PsychBrief&lt;/a&gt; has gathered the &lt;a href=&#34;http://psychbrief.com/psychological-methods-blog-feed/&#34;&gt;43 this kind of academic blogs&lt;/a&gt;. After a short survey, I found that &lt;strong&gt;WordPress&lt;/strong&gt; is the favorite of these bloggers (29 blogs). &lt;strong&gt;Google blogpost&lt;/strong&gt; is the second preference (7 blogs). Almost all the &lt;strong&gt;WordPress&lt;/strong&gt; blog posts are able to export the &lt;code&gt;meta&lt;/code&gt; tags for the correct citations. However, some collaborative blogs, such as Andrew Gelman’s &lt;a href=&#34;http://andrewgelman.com/&#34;&gt;Statistical Modeling, Causal Inference, and Social Science&lt;/a&gt;, have no the &lt;code&gt;author&lt;/code&gt; tag. &lt;strong&gt;Google blogpost&lt;/strong&gt; at default have no the tag &lt;code&gt;article:published_time&lt;/code&gt;. As a user of &lt;strong&gt;zotero&lt;/strong&gt;, I have to fill in these information by hands after imported these blog posts.&lt;/p&gt;
+&lt;p&gt;To help the supporters of open accessible literature have the efficient bibliography management, I summarize three situations according to my survey and experience:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Single bloggers manages the &lt;strong&gt;WordPress&lt;/strong&gt; blog.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: It’s fortune. All necessary tags are able to be imported.&lt;br /&gt;
+&lt;em&gt;For bloggers&lt;/em&gt;: The author’s name have been registered since the day you opened your blog. When some posts are collaborative works, the default &lt;code&gt;author&lt;/code&gt; tag many not show the authorship as your wish.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Many bloggers share one &lt;strong&gt;WordPress&lt;/strong&gt; blog; Bloggers manage the personal site in the other services.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: Keep in mind that not all the necessary tags could be exported from these posts.&lt;br /&gt;
+&lt;em&gt;For bloogers&lt;/em&gt;: If you want to help your readers’ bibliography managements easier, you could take hours to study how to put all the necessary &lt;code&gt;meta&lt;/code&gt; tags on each post.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bloggers manage the &lt;strong&gt;jekyll-based&lt;/strong&gt; blog.&lt;br /&gt;
+&lt;em&gt;For readers&lt;/em&gt;: It’s the worst that many jekyll themes set the fewest &lt;code&gt;meta&lt;/code&gt; tags at default. On the ohter hand, it’s the best that the bloggers realized every things the readers need.&lt;br /&gt;
+&lt;em&gt;For bloggers&lt;/em&gt;: In use of the &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;markdown syntax&lt;/a&gt;, your blog post is able to fetch the &lt;code&gt;author&lt;/code&gt;, &lt;code&gt;published_time&lt;/code&gt;, and &lt;code&gt;og:title&lt;/code&gt; in &lt;a href=&#34;https://en.wikipedia.org/wiki/YAML&#34;&gt;YAML&lt;/a&gt;. There is the flexibility that a blog collects the works of a single author and the collaborative consequence.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Template of a citable blog post</title>
+      <link>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
+      <description>
+&lt;script src=&#34;http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;this-post-is-for-future-posts.&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;This post is for future posts.&lt;/h2&gt;
+&lt;p&gt;Check the lines 5 to 9 of my post template &lt;a href=&#34;https://github.com/SCgeeker/SCgeeker.github.io/blob/master/_includes/head.html&#34;&gt;&lt;code&gt;head.html&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;html&#34;&gt;&lt;code&gt;    &amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;blogger&amp;quot;/&amp;gt;
+    &amp;lt;meta name=&amp;quot;author&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;quot;/&amp;gt;
+    # A if-then loop imports page.title.
+    &amp;lt;meta property=&amp;quot;og:title&amp;quot; content=&amp;quot;{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}&amp;quot;/&amp;gt;
+    # A if-then loop imports page.date.
+    &amp;lt;meta property=&amp;quot;article:published_time&amp;quot; content=&amp;quot;{% if page.date %}{{ page.date | date: &amp;quot;%B %-d, %Y&amp;quot;}}{% else %}{{ site.date }}{% endif %}&amp;quot;/&amp;gt;
+    &amp;lt;meta property=&amp;quot;og:site_name&amp;quot; content=&amp;quot;Sau-Chin Chen&amp;#39;s website&amp;quot;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

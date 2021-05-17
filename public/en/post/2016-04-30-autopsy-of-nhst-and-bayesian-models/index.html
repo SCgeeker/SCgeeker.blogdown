@@ -1,22 +1,68 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html><html lang="en" >
+
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.55.3" />
-  <meta name="author" content="Sau-Chin Chen">
-  <meta name="description" content="Associate Professor of Cognitive Psychology, The COS Ambassador, Assistant Director of The Psychological Science Accelerator">
-
-  
-  <link rel="alternate" hreflang="en-us" href="/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Sau-Chin Chen" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="My short note when I was learning Bayesian statistics." />
+
+  
+  <link rel="alternate" hreflang="en" href="http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/" />
+
+  
 
 
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#4caf50" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -24,94 +70,466 @@
   
   
     
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
   
   
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
   
   
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair&#43;Display:400,700%7cFauna&#43;One">
   
-  <link rel="stylesheet" href="/en/styles.css">
+  <link rel="stylesheet" href="/css/wowchemy.39aeb80ca18d6d31dc33f7fc232b8e06.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
   
 
   
 
   
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Sau-Chin Chen&#39;s Website">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Sau-Chin Chen&#39;s Website">
+    <link rel="manifest" href="/en/index.webmanifest" />
   
 
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+  <link rel="icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/">
-
-  <meta property="twitter:card" content="summary_large_image">
-  
-  <meta property="twitter:site" content="@SauChin_Chen">
-  <meta property="twitter:creator" content="@SauChin_Chen">
-  
-  <meta property="og:site_name" content="Sau-Chin Chen&#39;s Website">
-  <meta property="og:url" content="/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/">
-  <meta property="og:title" content="Autopsy of NHST and Bayesian Models (part 1) | Sau-Chin Chen&#39;s Website">
-  <meta property="og:description" content="">
-  <meta property="og:locale" content="en-us">
-  
-  <meta property="article:published_time" content="2016-04-30T00:00:00&#43;00:00">
-  
-  <meta property="article:modified_time" content="2016-04-30T00:00:00&#43;00:00">
-  
+  <link rel="canonical" href="http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/" />
 
   
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Sau-Chin Chen&#39;s website" />
+  <meta property="og:url" content="http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/" />
+  <meta property="og:title" content="Autopsy of NHST and Bayesian Models (part 1) | Sau-Chin Chen&#39;s website" />
+  <meta property="og:description" content="My short note when I was learning Bayesian statistics." /><meta property="og:image" content="http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2016-04-30T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2016-04-30T00:00:00&#43;00:00">
+  
 
-  <title>Autopsy of NHST and Bayesian Models (part 1) | Sau-Chin Chen&#39;s Website</title>
+  
 
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/"
+  },
+  "headline": "Autopsy of NHST and Bayesian Models (part 1)",
+  
+  "datePublished": "2016-04-30T00:00:00Z",
+  "dateModified": "2016-04-30T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Sau-Chin Chen"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sau-Chin Chen's website",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "My short note when I was learning Bayesian statistics."
+}
+</script>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#4caf50",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#4caf50"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "/en/privacy/"
+      }
+    })});
+  </script>
+
+
+  
+
+
+
+
+
+  <title>Autopsy of NHST and Bayesian Models (part 1) | Sau-Chin Chen&#39;s website</title>
 </head>
-<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
 
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="329f4cf5d50e82af958279a8fd19c249" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.226a9011996d125bf3fe4a5f22353a49.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
   <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
 
     
-    <div class="navbar-header">
-      
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-      <a class="navbar-brand" href="/en">Sau-Chin Chen&#39;s Website</a>
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/en/">Sau-Chin Chen&#39;s website</a>
     </div>
+    
 
     
-    <div class="collapse navbar-collapse">
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/en/">Sau-Chin Chen&#39;s website</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
 
       
-      
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="navbar-nav d-md-inline-flex">
         
 
         
 
+        
+        
         
           
         
 
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
         <li class="nav-item">
-          <a href="/en/#about">
-            
-            <span>Home</span>
-            
-          </a>
+          <a class="nav-link " href="/en/#about"><span>Home</span></a>
         </li>
 
         
@@ -120,15 +538,35 @@
         
 
         
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
           
         
 
         <li class="nav-item">
-          <a href="/en/#publications_selected">
-            
-            <span>Publications</span>
-            
-          </a>
+          <a class="nav-link " href="/en/#posts"><span>Posts</span></a>
         </li>
 
         
@@ -137,15 +575,35 @@
         
 
         
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
           
         
 
         <li class="nav-item">
-          <a href="/en/#projects">
-            
-            <span>Projects</span>
-            
-          </a>
+          <a class="nav-link " href="/en/#projects"><span>Projects</span></a>
         </li>
 
         
@@ -154,106 +612,211 @@
         
 
         
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
           
         
 
         <li class="nav-item">
-          <a href="/en/#posts">
-            
-            <span>Posts</span>
-            
-          </a>
+          <a class="nav-link " href="/en/#publications"><span>Publications</span></a>
         </li>
 
         
         
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
       
 
-      
+        
       </ul>
-
     </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
   </div>
 </nav>
 
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
+  </div>
+
+  <div class="page-body">
+    <article class="article">
 
   
 
 
-  <div class="article-container">
-    <div class="article-inner">
-      <h1 itemprop="name">Autopsy of NHST and Bayesian Models (part 1)</h1>
 
-      
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Autopsy of NHST and Bayesian Models (part 1)</h1>
+
+  
+
+  
+    
+
 
 <div class="article-metadata">
 
+  
+  
+
+  
   <span class="article-date">
     
-    <time datetime="2016-04-30 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Sat, Apr 30, 2016
-    </time>
+    
+      
+    
+    Apr 30, 2016
   </span>
+  
+
+  
 
   
 
   
   
-  <span class="middot-divider"></span>
-  <a href="/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/#disqus_thread"></a>
+  
+  
+  
   
 
-  
   
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fa fa-folder"></i>
-    
-    <a href="/en/categories/practices">Practices</a
-    >
-    
-  </span>
-  
-  
-
-  
-  
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Autopsy%20of%20NHST%20and%20Bayesian%20Models%20%28part%201%29&amp;url=%2fen%2fpost%2f2016-04-30-autopsy-of-nhst-and-bayesian-models%2f"
-         target="_blank" rel="noopener">
-        <i class="fa fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=%2fen%2fpost%2f2016-04-30-autopsy-of-nhst-and-bayesian-models%2f"
-         target="_blank" rel="noopener">
-        <i class="fa fa-facebook"></i>
-      </a>
-    </li>
-    <li>
-      <a class="email"
-         href="mailto:?subject=Autopsy%20of%20NHST%20and%20Bayesian%20Models%20%28part%201%29&amp;body=%2fen%2fpost%2f2016-04-30-autopsy-of-nhst-and-bayesian-models%2f">
-        <i class="fa fa-envelope"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-
+    <i class="fas fa-folder mr-1"></i><a href="/en/category/practices/">Practices</a></span>
   
 
 </div>
 
+    
 
-      <div class="article-style" itemprop="articleBody">
-        
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<script src="http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/index_files/header-attrs/header-attrs.js"></script>
 
 
 <p>Chapter 2 of <a href="http://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking: A Bayesian Course with Examples in R and Stan</a> introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated <strong>Data Story</strong>, then <strong>update</strong> the models by filling data in, and finally <strong>evaluate</strong> all the <strong>upated</strong> models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s <a href="https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf">Bayesian Basics: A Conceptual Introduction with Application in R and Stan</a> on <a href="http://mc-stan.org/documentation/">Stan official site</a>, I require the key to understand the difference between the two golems.</p>
@@ -269,143 +832,400 @@ while(count &gt; 0){Dist25 &lt;- c(Dist25,mean(sample(OBV, 25,replace = TRUE) ) 
 Dist25_Density &lt;- data.frame(Theta = density(Dist25, kernel = &quot;gaussian&quot;)$x, Density = density(Dist25, kernel = &quot;gaussian&quot;)$y)
 CL25 &lt;- max(Dist25_Density$Theta[Dist25_Density$Theta &lt; 5 &amp; Dist25_Density$Density &lt; .05])
 print(CL25)  ## The smallest parameter that could make judgement</code></pre>
-<pre><code>## [1] 4.152939</code></pre>
+<pre><code>## [1] 4.286263</code></pre>
 <pre class="r"><code>count = 100
 while(count &gt; 0){Dist36 &lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &lt;- count - 1}
 Dist36_Density &lt;- data.frame(Theta = density(Dist36, kernel = &quot;gaussian&quot;)$x, Density = density(Dist36, kernel = &quot;gaussian&quot;)$y)
 CL36 &lt;- max(Dist36_Density$Theta[Dist36_Density$Theta &lt; 5 &amp; Dist36_Density$Density &lt; .05])
 print(CL36)  ## The smallest parameter that could make judgement</code></pre>
-<pre><code>## [1] 4.41705</code></pre>
+<pre><code>## [1] 4.345472</code></pre>
 <p>When this experiment outputs a avarage value between 4.15 and 4.42, would you like to collect the data more than 36 participants? This is the opportunity many researchers have to struggle in their study. Researchers who are educated as like me used to collect the observation till the <em>p</em> value is smaller than .05. Most researchers used to stop the experiment till the 36th participant finished the experiment. However, this treatment lacks of the serious scientific thinking. If the hypothesis has set up the conditions to have the average, the sample size should be appointed before the start of experiment.</p>
 <p>The appointment of sample size could be loose when the possible average is uncertain. When the experiment is conducted at first time in the world, NHST without the appointment of sample size could draw the range of averages that might obey the hypothesis. On the other hand, the following studies better has the appointment of sample size. In this case, NHST has to accompany the other statistical evaluation, such as power, effect size, to find the appropriate sample size. Therefore, NHST will perform well when the researcher conducted the first study or have the preparation as well as the first study. This will be the key in my autopsy of Bayesian method.</p>
 
-      </div>
+    </div>
+    
 
-      
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  <section id="comments">
+    <center><h5>!登入個人github帳號就能留言!</h5></center>
+
+<script src="https://utteranc.es/client.js"
+        repo="SCgeeker/SCgeeker.blogdown"
+        issue-term="pathname"
+        label="comments 💬"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+  </section>
+  
+
+
+    
+
+
+
+
 
 
 <div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="/en/tags/bayesian">Bayesian</a>
+  <a class="badge badge-light" href="/en/tag/bayesian/">Bayesian</a>
   
-  <a class="btn btn-primary btn-outline" href="/en/tags/rethinking">Rethinking</a>
+  <a class="badge badge-light" href="/en/tag/rethinking/">Rethinking</a>
   
-  <a class="btn btn-primary btn-outline" href="/en/tags/statistics">statistics</a>
+  <a class="badge badge-light" href="/en/tag/statistics/">statistics</a>
   
 </div>
 
 
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/&amp;text=Autopsy%20of%20NHST%20and%20Bayesian%20Models%20%28part%201%29" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/&amp;t=Autopsy%20of%20NHST%20and%20Bayesian%20Models%20%28part%201%29" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Autopsy%20of%20NHST%20and%20Bayesian%20Models%20%28part%201%29&amp;body=http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/&amp;title=Autopsy%20of%20NHST%20and%20Bayesian%20Models%20%28part%201%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Autopsy%20of%20NHST%20and%20Bayesian%20Models%20%28part%201%29%20http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/&amp;title=Autopsy%20of%20NHST%20and%20Bayesian%20Models%20%28part%201%29" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="http://scchen.com/"><img class="avatar mr-3 avatar-circle" src="/en/author/sau-chin-chen/avatar_hu91a768e1ef41cbe37ddac297b44ed854_8959_270x270_fill_q75_lanczos_center.jpg" alt="Sau-Chin Chen"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="http://scchen.com/">Sau-Chin Chen</a></h5>
+      <h6 class="card-subtitle">Associate Professor of Cognitive Psychology</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:pmsp96@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-6092-6049" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=kSUyxs0AAAAJ" target="_blank" rel="noopener">
+        <i class="fab fa-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/SCgeeker" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/en/files/CV_CSC_English_2021Jan.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
 
     </div>
   </div>
 
-</article>
 
 
 
-<div class="article-container article-widget">
-  <div class="hr-light"></div>
-  <h3>Related</h3>
-  <ul>
-    
-    <li><a href="/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/">Check My Tools to Create and Manipulate Golems</a></li>
-    
-    <li><a href="/en/post/2016-04-05-display-math-equation-in-post/">Display Math Equation in Post</a></li>
-    
-    <li><a href="/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/">Vectors in mathematics and in codes</a></li>
-    
-    <li><a href="/en/post/2016-03-30-learning-sampling-distribution-in-r-programming/">Learning Sampling Distribution in R Programming</a></li>
-    
-  </ul>
-</div>
 
 
 
-<div class="container article-widget">
-  <nav>
-  <ul class="pager">
-    
-    <li class="previous"><a href="/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/"><span
-      aria-hidden="true">&larr;</span> Check My Tools to Create and Manipulate Golems</a></li>
-    
-
-    
-    <li class="next"><a href="/en/post/2016-05-05-rethink-significance/">Rethink Significance <span
-      aria-hidden="true">&rarr;</span></a></li>
-    
-  </ul>
-</nav>
-
-</div>
 
 
-<div class="article-container">
   
-<section id="comments">
-  <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "scchen" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+  
+  
+
+  
+  
+  
+
+  
+  <section id="comments">
+    <center><h5>!登入個人github帳號就能留言!</h5></center>
+
+<script src="https://utteranc.es/client.js"
+        repo="SCgeeker/SCgeeker.blogdown"
+        issue-term="pathname"
+        label="comments 💬"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
+  </section>
+  
 
 
-</div>
 
-<footer class="site-footer">
-  <div class="container">
-    <p class="powered-by">
 
-      &copy; 2017 Sau-Chin Chen &middot; 
 
-      Powered by the
-      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
-      <span class="pull-right" aria-hidden="true">
-        <a href="#" id="back_to_top">
-          <span class="button_icon">
-            <i class="fa fa-chevron-up fa-2x"></i>
-          </span>
-        </a>
-      </span>
 
-    </p>
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/en/post/if-emily-rosa-met-thomas-bayes/">If Emily Rosa met Thomas Bayes ...</a></li>
+      
+      <li><a href="/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/">Why we need a readable data table in behavioral scientific research?</a></li>
+      
+      <li><a href="/en/post/2016-05-05-rethink-significance/">Rethink Significance</a></li>
+      
+      <li><a href="/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/">Check My Tools to Create and Manipulate Golems</a></li>
+      
+      <li><a href="/en/post/2016-04-05-display-math-equation-in-post/">Display Math Equation in Post</a></li>
+      
+    </ul>
   </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+  <p class="powered-by">
+    
+      <a href="/en/privacy/">Privacy Policy</a>
+    
+    
+  </p>
+  
+
+  
+  <p class="powered-by">
+    © 2017~2021 Sau-Chin Chen
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
 </footer>
 
+    </div>
+    
+  </div>
 
+  
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Cite</h4>
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div>
-        <pre><code class="modal-body tex"></code></pre>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
       </div>
       <div class="modal-footer">
-        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
-          <i class="fa fa-copy"></i> Copy
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
         </a>
-        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
-          <i class="fa fa-download"></i> Download
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
       </div>
@@ -413,23 +1233,45 @@ print(CL36)  ## The smallest parameter that could make judgement</code></pre>
   </div>
 </div>
 
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/markdown.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
     
 
     
     
-    <script id="dsq-count-scr" src="//scchen.disqus.com/count.js" async></script>
     
-
-    
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-    
-    
-    <script src="/js/hugo-academic.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
     
 
     
@@ -437,14 +1279,66 @@ print(CL36)  ## The smallest parameter that could make judgement</code></pre>
 
     
     
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-    </script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
     
     
 
-  </body>
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.0414028ecbef1603fbabee92c347aee6.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
 </html>
-

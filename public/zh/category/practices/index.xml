@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practices | 陳紹慶的個人網站</title>
+    <link>http://scchen.com/zh/category/practices/</link>
+      <atom:link href="http://scchen.com/zh/category/practices/index.xml" rel="self" type="application/rss+xml" />
+    <description>Practices</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Tue, 02 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>Practices</title>
+      <link>http://scchen.com/zh/category/practices/</link>
+    </image>
+    
+    <item>
+      <title>如何使用wowchemy架設podcast網站</title>
+      <link>http://scchen.com/zh/post/how-to-build-podcast-website/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/post/how-to-build-podcast-website/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;歡迎到&lt;a href=&#34;https://open-cafe.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;開放咖啡角podcast網站&lt;/a&gt;選擇平台收聽節目，各集資訊網頁可以按讚打賞並留言評論。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我自建的&lt;a href=&#34;https://gpodder.net/user/CSC/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;podcast清單&lt;/a&gt;有許多心理科學家的英文節目都有專屬網站，整合節目的各集資訊，還有提供觀眾可留言互動的社群平台與贊助連結。這些節目都是使用podcast平台商提供的網站建置功能，其中最多節目使用的是&lt;a href=&#34;https://fireside.fm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FIRESIDE&lt;/a&gt;。付費平台雖然設定方便，不過每個月必須支付一些費用才能運作，在節目的流量還不夠支撐常態支出前，我選擇使用&lt;a href=&#34;https://anchor.fm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anchor&lt;/a&gt;製作和推送節目內容，觀眾的互動平台在&lt;a href=&#34;https://www.facebook.com/opencafetw&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FB&lt;/a&gt;與&lt;a href=&#34;https://t.me/open_cafe&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;telegram&lt;/a&gt;。經過一年的製作，我決定採用比較熟悉的開源架站套件&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wowchemy&lt;/a&gt;架設podcast網站，並且置入&lt;a href=&#34;https://liker.land/pmsp9698261/civic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Like coin按讚打賞&lt;/a&gt;，讓聽眾用按讚實質支持這個節目。&lt;/p&gt;
+&lt;p&gt;建站的參考資料都是英文網站，因此特別做個紀錄，也給想使用&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;wowchemy&lt;/a&gt;架設個人或專案的朋友參考。&lt;/p&gt;
+&lt;h4 id=&#34;步驟1&#34;&gt;步驟1&lt;/h4&gt;
+&lt;p&gt;依照&lt;a href=&#34;https://wowchemy.com/docs/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt;官網&lt;a href=&#34;https://wowchemy.com/docs/getting-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;建議步驟&lt;/a&gt;，選定模板從&lt;a href=&#34;https://app.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;netlify&lt;/a&gt;啟動建站步驟及連結github。啟動後可由github修改初始設定及啟動CMS。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;待解問題:&lt;/strong&gt; 網站預設語系必須是en；改成其他語系就無法啟動網站。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註:&lt;/strong&gt; &amp;ldquo;關於本節目&amp;quot;在github編輯完成，該頁資訊置於&lt;code&gt;content/authors/admin/_index.md&lt;/code&gt;，節目代表圖&lt;code&gt;avatar.png&lt;/code&gt;置相同路徑。網站視窗圖示&amp;quot;favicon&amp;quot;與首頁頁首代表圖&amp;quot;logo&amp;quot;置於&lt;code&gt;static/media&lt;/code&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;步驟2&#34;&gt;步驟2&lt;/h4&gt;
+&lt;p&gt;pull網站內容，使用終端編輯器進一步編輯。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註:&lt;/strong&gt; 我使用Rstudio編輯, 在powershell使用指令&lt;code&gt;hugo server&lt;/code&gt;啟動網站預覽，編輯一段落再push remote。&lt;/p&gt;
+&lt;h4 id=&#34;步驟3&#34;&gt;步驟3&lt;/h4&gt;
+&lt;p&gt;設定主頁各集資訊分頁&lt;code&gt;project.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註:&lt;/strong&gt; &lt;code&gt;project.md&lt;/code&gt; yaml template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+widget: portfolio
+headless: true  # This file represents a page section.
+
+# ... Put Your Section Options Here (title etc.) ...
+weight: 20
+
+title: 
+subtitle: &#39;&#39;
+
+content:
+  # Page type to display. E.g. project.
+  page_type: project
+
+  # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below)
+  filter_default: 0
+
+  # Filter toolbar (optional).
+  # Add or remove as many filters (`filter_button` instances) as you like.
+  # To show all items, set `tag` to &amp;quot;*&amp;quot;.
+  # To filter by a specific tag, set `tag` to an existing tag name.
+  # To remove toolbar, delete/comment all instances of `filter_button` below.
+  filter_button:
+    - name: 全部
+      tag: &#39;*&#39;
+    - name: 咖啡伴侶
+      tag: 咖啡伴侶
+    - name: 烘焙工坊
+      tag: 烘焙工坊
+    - name: 隨行外帶
+      tag: 隨行外帶
+design:
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns: &#39;2&#39;
+  # Toggle between the various page layout types.
+  #   1 = List
+  #   2 = Compact  
+  #   3 = Card
+  #   5 = Showcase
+  view: 3
+  # For Showcase view, flip alternate rows?
+  flip_alt_rows: false
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;步驟4&#34;&gt;步驟4&lt;/h4&gt;
+&lt;p&gt;建立各集資訊網頁：&lt;code&gt;content/project/&lt;/code&gt;建立project子資料夾，內置該集資訊&lt;code&gt;index.md&lt;/code&gt;與封面圖`featured.png&#39;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;註:&lt;/strong&gt; &lt;code&gt;index.md&lt;/code&gt; yaml template&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: (該集標題)
+summary: (該集摘要)
+tags:
+- 咖啡伴侶
+- 烘焙工坊
+- 隨行外帶
+date: (建立日期) &amp;lt;--- 網頁單集widget順序依日期由新至舊排列
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;步驟5&#34;&gt;步驟5&lt;/h4&gt;
+&lt;p&gt;設定各集留言utteranc。比照&lt;a href=&#34;https://scchen.com/zh-hant/post/update_website_log/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;個人網站的設定方法&lt;/a&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;步驟6&#34;&gt;步驟6&lt;/h4&gt;
+&lt;p&gt;在首頁&lt;code&gt;intro.md&lt;/code&gt;設定收聽平台連結。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;待解問題:&lt;/strong&gt; 目前無法呈現各平台logo&lt;/p&gt;
+&lt;h4 id=&#34;步驟7&#34;&gt;步驟7&lt;/h4&gt;
+&lt;p&gt;設定likecoin按鈕：可參考&lt;a href=&#34;https://medium.com/likecoin/likecoin-button-%E6%95%B4%E5%90%88%E6%96%B9%E6%B3%95%E5%92%8C%E7%A4%BA%E7%AF%84-579045858eae&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GordonWei的網誌&lt;/a&gt; 以及&lt;a href=&#34;https://docs.like.co/v/zh/user-guide/creator/self-host/hugo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Likecoin Q&amp;amp;A&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我的設定步驟：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;build &lt;code&gt;/layout/partial/likecoin.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;iframe class=&amp;quot;LikeCoin&amp;quot; height=&amp;quot;235&amp;quot; src=&amp;quot;https://button.like.co/in/embed/{{ .Site.Params.likerID }}/button?referrer={{ .Permalink }}&amp;quot; width=&amp;quot;100%&amp;quot; frameborder=0&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;config.toml: 增加設定likerID&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;[params]
+  likerID = &amp;quot;yourLikerID&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;設定&lt;code&gt;layouts/project/single.html&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;.Content後面加入{{ partial &amp;ldquo;likecoin.html&amp;rdquo; . }}&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>運用jamovi認識與運用機率分配</title>
+      <link>http://scchen.com/zh/post/probability-distributions-jamovi-zh/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/post/probability-distributions-jamovi-zh/</guid>
+      <description>
+
+
+&lt;p&gt;機率是學習統計觀念與方法必學的一章。在我使用過或參考過的中文統計書籍，發現機率因為牽涉數學公式的推導，作者不是只有說明計算推導，就是省略不提。說明計算推導的書藉都會附上各種機率分佈的表格，雖然在各種要運用該機率分佈的統計方法，都有解釋如何使用這些表格，但是學習統計軟體分析資料之後，這些表格幾乎無用武之地。&lt;/p&gt;
+&lt;p&gt;我很早就放棄教學生學習使用這些表格，有幾個主要理由。首先這些表格是電子計算機的計算資源不夠，以及軟體使用介面不夠友善的時代產物。其次是所有表格都是列出各種機率分佈的累積機率函數(Cumulative Distribution Function)，或者是其反函數的輸出值。只要理解累積機率函數的觀念，這些表格在實用場合幾乎沒有運用價值。最後，因為有的表格是以位數(quantile)查詢累積機率(如二項分佈、常態分佈)，有的是以累積機率查詢位數(如t分佈、F分佈、卡方分佈)，學習新的分析方法就要學習不同的查表模式，反而不利養成正確的分析觀念。&lt;/p&gt;
+&lt;p&gt;個人研究使用R之後，我一直尋找與嘗試在教學裡運用R的方法。直到最近幾年&lt;a href=&#34;https://jasp-stats.org/&#34;&gt;JASP&lt;/a&gt;與&lt;a href=&#34;https://www.jamovi.org/&#34;&gt;jamovi&lt;/a&gt;的出現，終於看到運用的機會。特別是jamovi提供使用者開發套件，其中&lt;code&gt;Rj&lt;/code&gt;套件讓使用者能在報表中自行撰寫R程式碼，以及檢視輸出結果。R的基本套件本來就有一系列指令，用於計算常用機率分佈的累積機率函數與機率密度函數(Probability Density Function)。使用jamovi的話，能與各種分析方法模組結合運用，達到解釋報表中機率資訊的作用。&lt;/p&gt;
+&lt;p&gt;為了明年的教學需要，我編寫五個機率分佈的jamovi檔案，並開放有興趣的網友下載使用。要完整使用這些檔案之前，使用者除了要安裝最新較的jamovi，也要安裝或更新&lt;code&gt;Rj&lt;/code&gt;套件。使用者可以從jamovi的模組介面或&lt;a href=&#34;https://www.jamovi.org/library.html&#34;&gt;官方資源網頁&lt;/a&gt;下載安裝，開啟jamovi檔案之後，就能改寫其中的R程式碼，以及觀看執行成果。&lt;/p&gt;
+&lt;p&gt;除了公開jamovi檔案，每個機率分佈都錄一段簡短影片，示範如何使用檔案中的程式碼，以及觀看更新結果。其下每個影片上方的標題，都是該檔案的下載連結。歡迎網友下載使用，並給予批評指教。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/t5rs3/&#34;&gt;二項分佈&lt;/a&gt;(Binomial Distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/mipvvoudP7M&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/jzpmy/&#34;&gt;常態分佈&lt;/a&gt;(Normal Distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ZIxsYWOJTjg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/d9zg8/&#34;&gt;t分佈&lt;/a&gt;(t distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/zGiKGsjdIwk&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/68usk/&#34;&gt;卡方分佈&lt;/a&gt;(chi square distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/YHG9DuRYeNg&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://osf.io/5mt8c/&#34;&gt;F分佈&lt;/a&gt;(F distribution)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/2DVkpuCeccI&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

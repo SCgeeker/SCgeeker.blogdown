@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sau-Chin Chen | Sau-Chin Chen&#39;s website</title>
+    <link>http://scchen.com/en/admin/</link>
+      <atom:link href="http://scchen.com/en/admin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sau-Chin Chen</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright>
+    <image>
+      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <title>Sau-Chin Chen</title>
+      <link>http://scchen.com/en/admin/</link>
+    </image>
+    
+  </channel>
+</rss>

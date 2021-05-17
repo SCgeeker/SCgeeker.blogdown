@@ -1,582 +1,482 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://scchen.com/publication-type/2/</loc>
+    <loc>http://scchen.com/en/courses/example/python/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/courses/example/visualization/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/courses/example/stats/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/talk/example-talk/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/event/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/</loc>
+    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/"
+                />
+  </url><url>
+    <loc>http://scchen.com/en/courses/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/courses/example/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/publication-type/2/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/publication-type/2/"
+                hreflang="zh"
+                href="http://scchen.com/zh/publication-type/2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/publication-type/2/"
+                href="http://scchen.com/en/publication-type/2/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/authors/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/authors/</loc>
+    <lastmod>2021-01-19T17:33:33+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/authors/"
+                />
+  </url><url>
+    <loc>http://scchen.com/en/author/de-koning-b.-bjorn/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/authors/"
+                hreflang="zh"
+                href="http://scchen.com/zh/author/de-koning-b.-bjorn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/authors/"
+                href="http://scchen.com/en/author/de-koning-b.-bjorn/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/author/de-koning-b.-bjorn/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/publication/journal-article/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/tag/pdf/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/publication_types/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/author/de-koning-b.-bjorn/"
+                hreflang="zh"
+                href="http://scchen.com/zh/publication_types/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/author/de-koning-b.-bjorn/"
+                href="http://scchen.com/en/publication_types/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/publication/size-orientation/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/author/rolf-a.-zwaan/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/publication/size-orientation/"
+                hreflang="zh"
+                href="http://scchen.com/zh/author/rolf-a.-zwaan/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/publication/size-orientation/"
+                href="http://scchen.com/en/author/rolf-a.-zwaan/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/pdf/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/publication_types/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/author/sau-chin-chen/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/publication_types/"
+                hreflang="zh"
+                href="http://scchen.com/zh/author/sau-chin-chen/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/publication_types/"
+                href="http://scchen.com/en/author/sau-chin-chen/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/publication/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/tags/</loc>
+    <lastmod>2021-02-03T22:02:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/publication/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/publication/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/author/rolf-a.-zwaan/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/author/rolf-a.-zwaan/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/author/rolf-a.-zwaan/"
+                href="http://scchen.com/en/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/author/sau-chin-chen/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/publication-type/3/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/publication/preprint/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/tag/source-themes/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/tag/mental-simulation/</loc>
+    <lastmod>2020-01-30T18:20:33+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/project/mental_simulation/</loc>
+    <lastmod>2020-01-30T18:20:33+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/project/</loc>
+    <lastmod>2020-01-30T18:20:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/author/sau-chin-chen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/author/sau-chin-chen/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tags/</loc>
-    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tags/"
+                hreflang="zh"
+                href="http://scchen.com/zh/project/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tags/"
+                href="http://scchen.com/en/project/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/mental-simulation/</loc>
-    <lastmod>2018-11-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/project/mental_simulation/</loc>
-    <lastmod>2018-11-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/project/</loc>
-    <lastmod>2018-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/tag/reading-sentence/</loc>
+    <lastmod>2020-01-30T18:20:33+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/tag/bayesian/</loc>
+    <lastmod>2021-02-03T22:02:35+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/categories/</loc>
+    <lastmod>2021-02-03T22:02:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/project/"
+                hreflang="zh"
+                href="http://scchen.com/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/project/"
+                href="http://scchen.com/en/categories/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/reading-sentence/</loc>
-    <lastmod>2018-11-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/bayesian/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/categories/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/post/if-emily-rosa-met-thomas-bayes/</loc>
+    <lastmod>2021-02-03T22:02:35+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/category/practices/</loc>
+    <lastmod>2021-02-03T22:02:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/categories/"
+                hreflang="zh"
+                href="http://scchen.com/zh/category/practices/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/categories/"
+                href="http://scchen.com/en/category/practices/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/tag/r/</loc>
+    <lastmod>2021-02-03T22:02:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/post/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/r/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/post/"
+                href="http://scchen.com/en/tag/r/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/category/practices/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/tag/statistics/</loc>
+    <lastmod>2021-02-03T22:02:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/category/practices/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/category/practices/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/r/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/r/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/statistics/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tag/r/"
+                href="http://scchen.com/en/tag/statistics/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/statistics/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/category/teaching/</loc>
+    <lastmod>2021-02-03T22:02:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/statistics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/tag/statistics/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/category/teaching/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/category/teaching/"
+                hreflang="zh"
+                href="http://scchen.com/zh/category/teaching/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/category/teaching/"
+                href="http://scchen.com/en/category/teaching/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/category/academic/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/category/academic/</loc>
     <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/category/academic/"
+                hreflang="zh"
+                href="http://scchen.com/zh/category/academic/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/category/academic/"
+                href="http://scchen.com/en/category/academic/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/open-science/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/open-science/</loc>
     <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/open-science/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/open-science/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tag/open-science/"
+                href="http://scchen.com/en/tag/open-science/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/ps-podcasts/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/ps-podcasts/</loc>
     <lastmod>2018-08-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/privacy/</loc>
+    <lastmod>2020-12-14T21:26:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/privacy/"
+                hreflang="zh"
+                href="http://scchen.com/zh/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/privacy/"
+                href="http://scchen.com/en/privacy/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/knowledge_management/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/knowledge_management/</loc>
     <lastmod>2018-01-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/knowledge_management/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/knowledge_management/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tag/knowledge_management/"
+                href="http://scchen.com/en/tag/knowledge_management/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/r_programming/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/r_programming/</loc>
     <lastmod>2018-01-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/r_programming/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/r_programming/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tag/r_programming/"
+                href="http://scchen.com/en/tag/r_programming/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/category/reproduce-practice/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/category/reproduce-practice/</loc>
     <lastmod>2018-01-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/category/reproduce-practice/"
+                hreflang="zh"
+                href="http://scchen.com/zh/category/reproduce-practice/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/category/reproduce-practice/"
+                href="http://scchen.com/en/category/reproduce-practice/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/use-bookdownplus/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/use-bookdownplus/</loc>
     <lastmod>2018-01-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/post/use-bookdownplus/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/post/use-bookdownplus/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/blog_skills/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/blog_skills/</loc>
     <lastmod>2017-05-08T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/blog_skills/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/blog_skills/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tag/blog_skills/"
+                href="http://scchen.com/en/tag/blog_skills/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2017-05-08-bibliography-management-optimization/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2017-05-08-bibliography-management-optimization/</loc>
     <lastmod>2017-05-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</loc>
-    <lastmod>2017-05-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2017-05-05-templete-of-a-citable-blog-post/</loc>
     <lastmod>2017-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-12-30-hello-markdown/</loc>
-    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/experiment_design/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/experiment_design/</loc>
     <lastmod>2016-09-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/experiment_design/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/experiment_design/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tag/experiment_design/"
+                href="http://scchen.com/en/tag/experiment_design/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/python/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/python/</loc>
     <lastmod>2016-09-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-09-14-randomization-in-latin-square/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2016-09-14-randomization-in-latin-square/</loc>
     <lastmod>2016-09-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/rethinking/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/rethinking/</loc>
     <lastmod>2016-05-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</loc>
     <lastmod>2016-05-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table/</loc>
-    <lastmod>2016-05-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/preregistration/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/preregistration/</loc>
     <lastmod>2016-05-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/preregistration/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/preregistration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tag/preregistration/"
+                href="http://scchen.com/en/tag/preregistration/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-05-05-rethink-significance/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2016-05-05-rethink-significance/</loc>
     <lastmod>2016-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</loc>
     <lastmod>2016-04-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</loc>
     <lastmod>2016-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-04-05-display-math-equation-in-post/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2016-04-05-display-math-equation-in-post/</loc>
     <lastmod>2016-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/tag/latex/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/latex/</loc>
     <lastmod>2016-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/tag/latex/"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/latex/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/tag/latex/"
+                href="http://scchen.com/en/tag/latex/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/2016-04-05-vectors-in-mathematics-and-in-codes/</loc>
     <lastmod>2016-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/post/learning-sampling-distribution-in-r-programming/</loc>
     <lastmod>2016-03-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/post/2015-01-01-lorem-ipsum/</loc>
-    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/author/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/tag/r-programming/</loc>
+    <lastmod>2016-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/publication-type/1/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/publication/conference-paper/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/author/robert-ford/</loc>
+    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/en/post/</loc>
+    <lastmod>2020-01-30T18:20:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/author/"
+                hreflang="zh"
+                href="http://scchen.com/zh/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/author/"
+                href="http://scchen.com/en/post/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/talk/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/publication/</loc>
+    <lastmod>2020-01-30T18:20:33+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/talk/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://scchen.com/talk/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://scchen.com/author/sau-chin-chen/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-hant"
-                href="https://scchen.com/zh-hant/author/%E9%99%B3%E7%B4%B9%E6%85%B6/"
+                hreflang="zh"
+                href="http://scchen.com/zh/publication/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://scchen.com/author/sau-chin-chen/"
+                href="http://scchen.com/en/publication/"
+                />
+  </url><url>
+    <loc>http://scchen.com/en/admin/</loc>
+  </url><url>
+    <loc>http://scchen.com/en/author/sau-chin-chen/</loc>
+    <lastmod>2020-01-30T18:20:33+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/author/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/author/sau-chin-chen/"
+                />
+  </url><url>
+    <loc>http://scchen.com/en/author/sau-chin-chen/</loc>
+    <lastmod>2021-01-19T17:33:33+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/author/%E9%99%B3%E7%B4%B9%E6%85%B6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/author/sau-chin-chen/"
                 />
   </url>
-  
 </urlset>
