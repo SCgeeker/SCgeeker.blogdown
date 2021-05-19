@@ -5,12 +5,26 @@
     <link>http://scchen.com/zh/category/teaching/</link>
       <atom:link href="http://scchen.com/zh/category/teaching/index.xml" rel="self" type="application/rss+xml" />
     <description>Teaching</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Tue, 26 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
       <title>Teaching</title>
       <link>http://scchen.com/zh/category/teaching/</link>
     </image>
+    
+    <item>
+      <title>Rstudio cloud統計教練心得與期望</title>
+      <link>http://scchen.com/zh/post/rstudio-cloud-stat-tutor/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/post/rstudio-cloud-stat-tutor/</guid>
+      <description>&lt;p&gt;今年初
+&lt;a href=&#34;https://scchen.com/zh/post/learning-data-skill-on-cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製統計線上學習專案&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;以可重製的r程式碼理解統計觀念&#34;&gt;以可重製的R程式碼理解統計觀念&lt;/h2&gt;
+&lt;h2 id=&#34;教練與學員重新定位教學關係&#34;&gt;教練與學員:重新定位教學關係&lt;/h2&gt;
+&lt;h2 id=&#34;rstudio-cloud經營心得&#34;&gt;Rstudio Cloud經營心得&lt;/h2&gt;
+&lt;h2 id=&#34;可行的發展&#34;&gt;可行的發展&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>可重製統計線上學習專案</title>

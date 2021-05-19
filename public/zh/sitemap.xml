@@ -10,6 +10,113 @@
     <loc>http://scchen.com/zh/openstat/unit10/</loc>
     <lastmod>2021-01-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://scchen.com/zh/categories/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/categories/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/post/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/post/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/tag/r/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/tag/r/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/r/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/category/reproduce-practice/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/category/reproduce-practice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/category/reproduce-practice/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/post/rstudio-cloud-stat-tutor/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/zh/tag/statistics/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/tag/statistics/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/tag/statistics/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/tags/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/tags/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/category/teaching/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/category/teaching/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/category/teaching/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/</loc>
+    <lastmod>2021-05-18T20:22:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/"
+                />
+  </url><url>
     <loc>http://scchen.com/zh/tag/blog_skills/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -21,19 +128,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://scchen.com/zh/tag/blog_skills/"
-                />
-  </url><url>
-    <loc>http://scchen.com/zh/categories/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/categories/"
                 />
   </url><url>
     <loc>http://scchen.com/zh/tag/knowledge_management/</loc>
@@ -49,19 +143,6 @@
                 href="http://scchen.com/zh/tag/knowledge_management/"
                 />
   </url><url>
-    <loc>http://scchen.com/zh/post/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/post/"
-                />
-  </url><url>
     <loc>http://scchen.com/zh/category/practices/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -75,86 +156,8 @@
                 href="http://scchen.com/zh/category/practices/"
                 />
   </url><url>
-    <loc>http://scchen.com/zh/tags/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/tags/"
-                />
-  </url><url>
     <loc>http://scchen.com/zh/post/how-to-build-podcast-website/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://scchen.com/zh/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/"
-                />
-  </url><url>
-    <loc>http://scchen.com/zh/tag/r/</loc>
-    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/tag/r/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/tag/r/"
-                />
-  </url><url>
-    <loc>http://scchen.com/zh/category/reproduce-practice/</loc>
-    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/category/reproduce-practice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/category/reproduce-practice/"
-                />
-  </url><url>
-    <loc>http://scchen.com/zh/tag/statistics/</loc>
-    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/tag/statistics/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/tag/statistics/"
-                />
-  </url><url>
-    <loc>http://scchen.com/zh/category/teaching/</loc>
-    <lastmod>2021-01-26T11:02:40+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/category/teaching/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/category/teaching/"
-                />
   </url><url>
     <loc>http://scchen.com/zh/post/learning-data-skill-on-cloud/</loc>
     <lastmod>2021-01-26T11:02:40+08:00</lastmod>
