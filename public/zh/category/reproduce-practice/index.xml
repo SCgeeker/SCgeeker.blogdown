@@ -5,7 +5,7 @@
     <link>http://scchen.com/zh/category/reproduce-practice/</link>
       <atom:link href="http://scchen.com/zh/category/reproduce-practice/index.xml" rel="self" type="application/rss+xml" />
     <description>Reproduce Practice</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Tue, 18 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Wed, 19 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
       <title>Reproduce Practice</title>
@@ -15,14 +15,71 @@
     <item>
       <title>Rstudio cloud統計教練心得與期望</title>
       <link>http://scchen.com/zh/post/rstudio-cloud-stat-tutor/</link>
-      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0000</pubDate>
       <guid>http://scchen.com/zh/post/rstudio-cloud-stat-tutor/</guid>
-      <description>&lt;p&gt;今年初
-&lt;a href=&#34;https://scchen.com/zh/post/learning-data-skill-on-cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製統計線上學習專案&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;以可重製的r程式碼理解統計觀念&#34;&gt;以可重製的R程式碼理解統計觀念&lt;/h2&gt;
+      <description>&lt;p&gt;今年初發佈的網誌：&lt;a href=&#34;https://scchen.com/zh/post/learning-data-skill-on-cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製統計線上學習專案&lt;/a&gt;，說明如何在&lt;a href=&#34;https://rstudio.cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rstudio Cloud&lt;/a&gt;部署統計教學教材及作業專案，讓學生直接在Rstudio Cloud按部學習R語言與統計方法，教師能直接在線上評估學生的學習細節，指出學生作業中的問題，以及建議解決方法。我嘗試在這學期的統計課實施這種方法，可惜我現在服務的慈濟大學人類發展與心理學系，長年不重視統計及研究方法的重要性，有意願修課的學生不多，也缺乏積極投入的動機。進行兩個多月以來，學生的學習進度才剛剛通過最基本的R語法入門單元。&lt;/p&gt;
+&lt;p&gt;寫作這篇網誌時，剛好本土疫情情勢劇變，趁著接近學期末的時候，順勢轉型為完全的非同步遠距教學。我也加了些激勵措施，以完成多少單元決定最後成績。成效如何雖然還有待觀察，不過這些措施只是運作外在動機。理想的學習狀況是學生具備自動前進的內在動機，而這套教材是為有心學習可重製科學方法所準備的，很明顯需要有校園學習風氣支持才有充分的成功條件。雖然達到如此境界還有許多挑戰要突破，不過在這個時機整理分享，應該能觸及有相同理念的老師，一起為經營中文化可重製統計教學資源合作努力。&lt;/p&gt;
+&lt;p&gt;這份網誌我整理部署非同步線上學習的宗旨，現場教學的心得，以及運用Rstudio Cloud開發線上學習的機會，給有興趣改進&lt;strong&gt;統計教育&lt;/strong&gt;、&lt;strong&gt;程式設計教育&lt;/strong&gt;的教師們一些參考。&lt;/p&gt;
+&lt;h2 id=&#34;比講授更接近統計本質的學習途徑&#34;&gt;比講授更接近統計本質的學習途徑&lt;/h2&gt;
+&lt;p&gt;講授式的統計教學即使搭配輔助教材，如果無法提供學習者動手運用的情境，很難產生因為純粹獲取知識，而感到喜悅的情感經驗。我個人真正獲得統計學的啟發不是新鮮人時期修的基礎統計課，而是進行研究專題，處理自行收集的資料，才了解統計知識的好處與使用訣竅。然而，我到博士畢業之後才接觸R語言，了解如何運用R套件實現可重製研究。之後更是到了2015年學習約翰．霍浦金斯大學開設的&lt;a href=&#34;https://www.coursera.org/specializations/jhu-data-science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;資料科學課程&lt;/a&gt;，才正式在個人的研究操作整合資料科學方法，也真正無縫接軌開放科學的實踐之道。&lt;/p&gt;
+&lt;p&gt;不過只有一個人自我實踐是相當漫長孤單的，所幸後來加入&lt;a href=&#34;https://improvingpsych.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Society for the Improvement of Psychological Science(SIPS)&lt;/a&gt;以及&lt;a href=&#34;https://psysciacc.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;心理科學加速器&lt;/a&gt;，有國外朋友能相互切磋。然而最希望的狀況是能在台灣與會用R或任何可重製程式碼，討論開放科學實踐課題的朋友。可惜現在的狀況是，我認識會使用可重製程式碼開發各種專案的高手，與對實踐開放科學有興趣的人士，是兩群不同掛的朋友。&lt;/p&gt;
+&lt;p&gt;短期之內這兩類朋友很難有人能跨界，也許培養兼具兩者的年輕學生，是可行的途徑。國外朋友&lt;a href=&#34;https://twitter.com/LisaDeBruine&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lisa DeBruine&lt;/a&gt;在任教的英國格拉斯哥大學心理學系，組織&lt;a href=&#34;https://psyteachr.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsyTeachR&lt;/a&gt;團隊，以緊密的教師合作，引導該系新鮮人從習得資料科學基本功開始，再進入統計知識的學習軌道，這些學生未來能用可重製方法實踐開放科學，我預期他們在其他領域也能有突破性的成就。雖然現在我身處的環境，沒有條件創造相似的學園環境，如果有教師也認為&lt;a href=&#34;https://psyteachr.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsyTeachR&lt;/a&gt;的營運模式能培育未來需要的人才，我認為透過能實作的雲端平台，可望打破校園框架，一起打造引導學生正向學習的軌道。&lt;/p&gt;
+&lt;h2 id=&#34;rstudio-cloud的運作方法&#34;&gt;Rstudio Cloud的運作方法&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://rstudio.cloud/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rstudio Cloud&lt;/a&gt;上線後，我就體認這套平台進行非同步專案開發與協同教學的潛力。想用Rstudio Cloud進行教學的教師，可以訂購&lt;a href=&#34;https://rstudio.cloud/plans/instructor&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;講師專案&lt;/a&gt;。這套方案每月收費15美元，與&lt;a href=&#34;https://rstudio.cloud/plans/free&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;免費方案&lt;/a&gt;相比，兩者的差異如下表的整理：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;/th&gt;
+&lt;th&gt;免費方案&lt;/th&gt;
+&lt;th&gt;講師專案&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;可創建專案&lt;/td&gt;
+&lt;td&gt;最多15個&lt;/td&gt;
+&lt;td&gt;無限制&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;可創建共享空間&lt;/td&gt;
+&lt;td&gt;最多一個(最多五位使用者；最多十個專案)&lt;/td&gt;
+&lt;td&gt;無限制(使用者人數、專案數無限制)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;每月可使用總時數&lt;/td&gt;
+&lt;td&gt;15小時&lt;/td&gt;
+&lt;td&gt;160小時&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;專案可用RAM容量&lt;/td&gt;
+&lt;td&gt;1GB&lt;/td&gt;
+&lt;td&gt;8GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;專案可用CPU核心數&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;離線執行最高時數&lt;/td&gt;
+&lt;td&gt;每月1小時&lt;/td&gt;
+&lt;td&gt;每月48小時&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;收費&lt;/td&gt;
+&lt;td&gt;免費，超過使用時數，每小時收20美分&lt;/td&gt;
+&lt;td&gt;15美元，超時收費同免費方案&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;由上表可知，講師專案能支援大約十人的小班制教學，每位學生在教師的共享空間操作學習，每月平均有16小時的免費操作時數。因為Rstudio Cloud的&lt;strong&gt;專案&lt;/strong&gt;與本機版本相同，是Rstudio使用者自行定義的檔案集合，相當於github的repository。而Rstudio Cloud己經支援使用者自行建立與github repository的連動，在初期學習熟悉git指令，應能引導學生的學習活動從Cloud轉移到本機版。如果所有學生都能在一到兩週之內熟悉同步Rstudio Cloud、github與個人電腦的專案操作步驟，那麼一個Instructor方案應該足以支持大約五十人的班級教學。&lt;/p&gt;
+&lt;p&gt;不過由於我經常遇到學生反應無法在個人電腦安裝Rstudio本機版的問題，這學期就沒有要求學生要使用本機版學習，也沒有談到git指令及github。如果能有完善的安裝不良事件排除指引，就能幫助學生踏出穩定學習的第一步。&lt;/p&gt;
 &lt;h2 id=&#34;教練與學員重新定位教學關係&#34;&gt;教練與學員:重新定位教學關係&lt;/h2&gt;
-&lt;h2 id=&#34;rstudio-cloud經營心得&#34;&gt;Rstudio Cloud經營心得&lt;/h2&gt;
+&lt;p&gt;準備PsyTeachR的電子書&lt;a href=&#34;https://psyteachr.github.io/msc-data-skills/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;可重製科學的資料科學基本功&lt;/a&gt;練習題中文化的過程中，我察覺到這套教材配合完整的書面圖文範例，以及預錄影片(例如Lisa DeBruine自製的&lt;a href=&#34;https://www.youtube.com/playlist?list=PLA2iRWVwbpTIweEBHD2dOKjZHK1atRmXt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;影片系列&lt;/a&gt;)，讓學生自行實作範例，解決作業問題。這套課程最佳安排是以學生的學習步調前進，而非按照教師設定進度進行。因此我認為這套非同步課程的教師與學生的關係，比較接近健身運動的教練與學員的關係：學生有個人想達成的目標，教師是協助他們達到目標的教練員。&lt;/p&gt;
+&lt;p&gt;實際現場上課一陣子後，我確認教練-學員的關係設定確實最合乎課程的安排，有心學習的學生的確能逐步上手，但是自主學習能力不高的學生會一直原地踏步。為了後者，我開始錄製本人的&lt;a href=&#34;https://scgeeker.github.io/Reproducible_STAT/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;示範影片系列&lt;/a&gt;，除了說明電子書的重要範例，也為之後的中文化電子書做準備。然而若要建立有來有往的教練-學員關係，還是要啟發學生的內在動機，給他們主動學習的重要理由。以我個人的粗淺經驗，這需要有積極的校園學習文化才能達成。&lt;/p&gt;
 &lt;h2 id=&#34;可行的發展&#34;&gt;可行的發展&lt;/h2&gt;
+&lt;p&gt;以台灣高等教育的資源安排邏輯，我認為目前很難在任何一間學校複製格拉斯哥大學心理學系的經驗。檢視&lt;a href=&#34;https://psyteachr.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PsyTeachR&lt;/a&gt;網站的資源說明，可知他們建立從大學部各年級到研究所都有對應的資料科學及統計課程，每個課程的負責教師開發的課程不僅彼此相關，也都採用R套件撰寫電子教科書。對比台灣各大學相關系所，一個系所大約只有一到三個基礎及方法教職名額，而且每套課程的安排都是有主課教師自行其事。加上教學評鑑會放大惡劣意見，更讓有心改進教學氣氛的教師，無法施展手腳。&lt;/p&gt;
+&lt;p&gt;儘管情勢嚴峻，培育具備可重製研究方法及開放科學觀念的人才，絕對不是窩在一個機構裡單打獨鬥能成。如果有相同理念的教師，能打破機構間的壁壘，想為有學習動機的未來科學家打造能有效學習的統計與研究方法的自我訓練園地，可以一起來動手協作打造台灣版的PsyTeachR。歡迎有心貢獻的教師，透過網頁下方的聯絡管道與我聯繫。&lt;/p&gt;
 </description>
     </item>
     
