@@ -1,0 +1,194 @@
+
+## 參加的源由
+
+
+主要計畫
+參與心理科學加速器的全球學者共同規劃及部署
+
+
+公開預印本
+
+https://psyarxiv.com/m4gpq/
+
+
+預先註冊計畫
+
+https://osf.io/fz5ek/
+
+## 認知再評估的條件設定
+
+"重新思考" 可能減少負面情緒
+
+"Reconstrual" involves changing how a situation was construed or mentally represented in a way that changes the emotional responses related to the situation. Examples of reconstrual in response to COVID-19 include: “Washing hands, avoiding touching my face, keeping a safe distance…There are simple and effective things I can do to protect myself and my loved ones from getting sick and to stop the spread of the virus” and “I know from world history that keeping calm and carrying on gets us through tough times.” 
+
+
+有些研究發現，有助改變情緒的一種策略是「重新思考」。這種策略包括改變個人的思維進而改變情緒。
+ &nbsp;
+ 基於這種策略的深刻理解是<u>**用另一種方式解讀或思考當前處境會帶來不一樣的情緒**</u>。也就是說，找到思考當前處境的新角度可以改變個人當下的感受。
+ &nbsp;
+ 例如，假想有人因為疫情的隔離政策而必須待在家裏，並且感到焦慮，悲傷或憤怒。此時，*重新思考*的方式可能是讓自己意識到現在的情況只是暫時的，因為全世界最頂尖的研究機構正在努力研發疫苗。
+ &nbsp;
+ 在這項調查裡，我們希望您瀏覽新冠疫情報導的影像時，運用*重新思考*的策略。我們知道對您而言可能是項挑戰，但是我們希望您嘗試看看。為了幫助您體會*重新思考*，我們在這裏列出一些在面對疫情情境 *重新思考* 的例子。
+ &nbsp;
+ **例 1**: 「我透過歷史學習到，"保持冷靜並堅持下去〞會幫助我們渡過艱困時期。」
+ 
+ **例 2**: 「全世界的科學家正在努力地尋找治療方法和疫苗。以歷史經驗來看，人類尋找解決新問題的方法會變得非常聰明。」
+ 
+ **例 3**: 「勤洗手、不碰觸臉部、保持安全距離等，這些簡單又有效的措施能幫助我和我所愛的人自我防護並防止病毒擴散。」
+ 
+ **例 4**: 「過去人類戰勝了許多看起來難以逆轉的挑戰，相信我們也能戰勝新冠病毒。」
+
+
+"重新聚焦" 可能增加正面情緒
+
+Repurposing involves focusing on a potentially positive outcome that could come from the current situation in a way that changes the emotional response to it. Examples of repurposing in response to COVID-19 include: “This situation is helping us realize the importance of meaningful social connections, and helping us understand who the most important people in our lives are” and “Medical systems are now learning to deal with amazing challenges, which will make them much more resilient in the future.”
+
+基於這種策略的深刻理解是<u>**即便在最具挑戰中的情境，能找到一些好處的話，會帶來不同的情緒反應**</u>。也就是說，重新聚焦於情境中可能存在的好處可以改變您對情境的感受。
+ &nbsp;
+ 例如，假想有人因為疫情的隔離政策而必須待在家裏，並且感到焦慮，悲傷或憤怒。此時，*重新聚焦*可能包括讓人意識到，待在家中就有了更多時間去做以前無法做的事情，包括閱讀，繪畫、或者陪伴家人。
+ &nbsp;
+ 在這項調查裡，我們希望您瀏覽新冠疫情報導的影像時，運用*重新聚焦*的策略。我們知道對您而言可能是項挑戰，但是我們希望您嘗試看看。為了幫助您體會*重新聚焦*，我們在這裏列出一些在面對疫情情境 *重新聚焦* 的例子。
+ &nbsp;
+ **例 1**: 「這樣的處境幫助我們認識到有意義的社會關係的重要性，幫助我們認識到誰是我們生命中最重要的人。」
+ 
+ **例 2**: 「醫療體系正在學習如何處理這種前所未有的挑戰，未來的醫療體系將比以前更為可靠。」
+ 
+ **例 3**: 「即使我們無法近距離接觸，但是我們發現新方法連繫彼此，我們的心比任何時候更加緊密地聯結在一起。」
+ 
+ **例 4**: 「前線醫護人員面對當前挑戰表現出來的韌性、慷慨、意志和責任感，都讓我深受鼓舞。」
+
+主動控制 "深入思考" 不會改變情緒
+
+For our active control condition, we asked participants to reflect on their thoughts and feelings as they unfolded. Examples of reflecting in response to COVID-19 are: “I really wish we could find a vaccine soon” and “This situation is changing so fast, and I don’t know how the future will develop.” By asking participants in this condition to actively use a strategy that is likely to have a positive effect, we sought to match expectancy and demand across reappraisal and active control conditions. 
+
+"被動控制" 不會改變情緒
+
+For our passive control condition, we asked participants to respond as they naturally do, which is a commonly used passive control condition in prior research on emotion regulation. 
+
+## 調查測量方法
+
+- 參與者對新聞影像的負面/正面情緒感受，問題說明搭配指導語方向。
+
+**以新的角度解讀處境。**
+**找出這種處境的光明面。**
+**深入思考您的想法和感受。**
+**以您個人的直覺回答問題。**
+
+選項內容隨機分派
+
+極為負面	相當負面	中等負面	有一點負面	一點也不負面
+極為正面	相當正面	中等正面	有一點正面	一點也不正面
+
+
+- 參與者完成調查前後的負面/正面情緒變化
+問題內容隨機分派
+C2_negativeemotion_baseline_fear,_anger,_sadness,_stress,_distrust
+
+C2_negativeemotion_state_fear,_anger,_sadness,_stress,_distrust
+
+C2_positiveemotion_baseline_hope,_gratitude,_love,_inspiration,_serenity
+
+C2_positiveemotion_state_hope,_gratitude,_love,_inspiration,_serenity
+
+極高	很大	中等	有一點	完全沒有
+ 
+
+- 參與者完成調查後對當前疫情的負面/正面情緒變化
+
+問題內容隨機分派
+總體而言，您 <u>**現在**</u>對於新冠肺炎疫情感到多麼消極或者沒有希望？
+總體而言，您 <u>**現在**</u>對於新冠肺炎疫情感到多麼積極或者有希望？
+
+極高	很大	中等	有一點	完全沒有
+
+
+
+## 假設與分析計畫
+
+
+## 結果摘要與建議
+
+### 確證性
+
+最強證據力，判定有效的水準包括
+.001的顯著水準
+log(BF)>2 
+
+說明
+our **reappraisal interventions** would lead to reduced negative emotional responses (hypothesis 1) and increased positive emotional responses (hypothesis 2) compared to both control conditions combined.
+
+分析計畫
+The first comparison contrasted both the reappraisal conditions combined with both the active control condition and the passive control condition combined for negative (hypothesis 1) and positive (hypothesis 2) emotions.
+
+結果
+
+---
+
+說明
+**reconstrual** would lead to greater decreases in negative emotional responses than **repurposing** (hypothesis 3) and that **repurposing** would lead to greater increases in positive emotional responses than **reconstrual** (hypothesis 4).
+
+分析
+The second comparison contrasted the reconstrual and repurposing interventions for negative (hypothesis 3) and positive (hypothesis 4) emotions.
+
+結果不足以支持"重新思考" 能減少負面情緒，以及"重新聚焦" 能增加正面情緒的假設 
+
+### 探索性
+
+Reappraisal interventions’ effects on four exploratory outcomes
+
+
+1. Behavioural intentions to practice preventive health behaviours
+
+採取認知再評估策略，會不會影響採取NPI（非藥物介入措施）的動機？
+
+分析結果採取任何一項措施的動機，沒有組間差異，即沒有影響。
+
+2. Participants’ engagement with emotion regulation strategies
+
+觀看調查的影像時，報告自認採用指導語介紹的策略的主觀次數。
+
+指導語是再評估策略，主觀次數較高。
+
+3. Global change of emotions
+
+比較參與者開始填問卷與結束問卷時的正面/負面情緒狀態。
+
+相對於兩種控制狀況，兩種認知再評估策略都顯著降低負面情緒，以及顯著增加正面情緒。
+
+4. Anticipated emotions
+
+參與者預期未來數週可能的情緒狀態。
+
+相對於兩種控制狀況，兩種認知再評估策略都顯著預期較少負面情緒，以及較多正面情緒。
+
+Contextualising reappraisal interventions’ effect sizes
+地區封城狀況、自我隔離狀況的再評估效用差異。
+
+以負面情緒狀況評估為依變項，混合線性模型分析顯示參與者所在地區封城狀況、自我隔離狀況的解釋變異量(R^2 = 0.001 ~0.003)，只有再評估效用的解釋變異量的10%(R^2 = 0.013)。主要研究者認為不只有統計顯著的意義，還有實用的意義。
+
+
+## 應用的限制
+
+根據事前的考驗力及樣本數估計分析，一個國家/地區的參與者要至少200人，分析結果的統計指標能符合考驗力指標。
+台灣地區未收到200人以上的資料，未進入正式分新。
+
+探索性分析的指標也許是聽眾讀者想知道的，但是要了解這樣的效用有些限制:
+
+- 只是填寫問卷的當下狀態。
+- 警戒期間每天使用的效用，這份研究無法給明確答案，需要進行進一步研究。
+- 本研究使用的"重新思考"與"重新聚焦"的中文指導語並未與臨床諮商心理學者討論。
+- 調查程序不同於標準的認知(再)評估程序，並未充分調查參與者面對當下壓力事件的。
+
+
+## Open data
+
+這份研究的公開資料可重製。
+
+raw data and processed data
+
+https://osf.io/gvw56/
+
+
+analysis
+
+https://osf.io/jeu73/
