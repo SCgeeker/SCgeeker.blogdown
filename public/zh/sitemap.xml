@@ -11,7 +11,7 @@
     <lastmod>2021-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://scchen.com/zh/categories/</loc>
-    <lastmod>2021-05-30T21:10:57+08:00</lastmod>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -21,6 +21,73 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://scchen.com/zh/categories/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/post/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/post/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/category/reproduce-practice/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/category/reproduce-practice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/category/reproduce-practice/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/tags/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/tags/"
+                />
+  </url><url>
+    <loc>http://scchen.com/zh/tag/%E5%86%8D%E7%8F%BE%E5%8D%B1%E6%A9%9F/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/zh/tag/%E5%8A%A3%E8%B3%AA%E7%A7%91%E5%AD%B8/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/zh/post/evidentce-small-sample/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/zh/category/%E6%96%B0%E8%81%9E%E8%A9%95%E8%AB%96/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/zh/tag/%E7%B5%B1%E8%A8%88/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+  </url><url>
+    <loc>http://scchen.com/zh/</loc>
+    <lastmod>2021-06-05T21:15:53+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://scchen.com/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="http://scchen.com/zh/"
                 />
   </url><url>
     <loc>http://scchen.com/zh/tag/collaborative-research/</loc>
@@ -39,19 +106,6 @@
                 href="http://scchen.com/zh/tag/open-science/"
                 />
   </url><url>
-    <loc>http://scchen.com/zh/post/</loc>
-    <lastmod>2021-05-30T21:10:57+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/post/"
-                />
-  </url><url>
     <loc>http://scchen.com/zh/category/practices/</loc>
     <lastmod>2021-05-30T21:10:57+08:00</lastmod>
     <xhtml:link
@@ -65,37 +119,11 @@
                 href="http://scchen.com/zh/category/practices/"
                 />
   </url><url>
-    <loc>http://scchen.com/zh/tags/</loc>
-    <lastmod>2021-05-30T21:10:57+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/tags/"
-                />
-  </url><url>
     <loc>http://scchen.com/zh/post/2021-05-30-psacr-appraisal/</loc>
     <lastmod>2021-05-30T21:10:57+08:00</lastmod>
   </url><url>
     <loc>http://scchen.com/zh/category/%E6%9B%B8%E5%A0%B1%E7%AD%86%E8%A8%98/</loc>
     <lastmod>2021-05-30T21:10:57+08:00</lastmod>
-  </url><url>
-    <loc>http://scchen.com/zh/</loc>
-    <lastmod>2021-05-30T21:10:57+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/"
-                />
   </url><url>
     <loc>http://scchen.com/zh/tag/r/</loc>
     <lastmod>2021-05-19T20:22:26+08:00</lastmod>
@@ -108,19 +136,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="http://scchen.com/zh/tag/r/"
-                />
-  </url><url>
-    <loc>http://scchen.com/zh/category/reproduce-practice/</loc>
-    <lastmod>2021-05-19T20:22:26+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/en/category/reproduce-practice/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/category/reproduce-practice/"
                 />
   </url><url>
     <loc>http://scchen.com/zh/post/rstudio-cloud-stat-tutor/</loc>
@@ -380,9 +395,6 @@
     <loc>http://scchen.com/zh/post/comment-retired-p/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://scchen.com/zh/tag/%E7%B5%B1%E8%A8%88/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://scchen.com/zh/post/obeject-orientation-project-enter-stage2/</loc>
     <lastmod>2019-02-18T00:00:00+00:00</lastmod>
   </url><url>
@@ -473,9 +485,6 @@
                 href="http://scchen.com/zh/tag/r_programming/"
                 />
   </url><url>
-    <loc>http://scchen.com/zh/tag/%E5%86%8D%E7%8F%BE%E5%8D%B1%E6%A9%9F/</loc>
-    <lastmod>2017-10-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://scchen.com/zh/post/text_2017011/</loc>
     <lastmod>2017-10-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -483,9 +492,6 @@
     <lastmod>2017-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://scchen.com/zh/post/text_2017008/</loc>
-    <lastmod>2017-08-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://scchen.com/zh/tag/%E5%8A%A3%E8%B3%AA%E7%A7%91%E5%AD%B8/</loc>
     <lastmod>2017-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://scchen.com/zh/tag/%E5%AD%B8%E8%A1%93%E4%B8%8D%E7%AB%AF/</loc>
@@ -498,9 +504,6 @@
     <lastmod>2017-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://scchen.com/zh/post/text_2016005e01/</loc>
-    <lastmod>2017-04-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://scchen.com/zh/category/%E6%96%B0%E8%81%9E%E8%A9%95%E8%AB%96/</loc>
     <lastmod>2017-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://scchen.com/zh/tag/%E6%AC%8A%E5%8A%9B%E5%A7%BF%E5%8B%A2%E6%95%88%E6%87%89/</loc>

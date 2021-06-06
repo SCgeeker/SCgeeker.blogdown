@@ -1,0 +1,1481 @@
+<!DOCTYPE html><html lang="zh-hant" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="陳紹慶" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="習作目標 標題具有啟發性的小樣本研究充斥許多科學文獻，在多數科" />
+
+  
+  <link rel="alternate" hreflang="zh-hant" href="http://scchen.com/zh/post/evidentce-small-sample/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#4caf50" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1cdcf7e1cb31dd50d415945d26295ae3.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/zh/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="http://scchen.com/zh/post/evidentce-small-sample/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="陳紹慶的個人網站" />
+  <meta property="og:url" content="http://scchen.com/zh/post/evidentce-small-sample/" />
+  <meta property="og:title" content="教學習作：如何運用模擬研究解析小樣本研究的證據力 | 陳紹慶的個人網站" />
+  <meta property="og:description" content="習作目標 標題具有啟發性的小樣本研究充斥許多科學文獻，在多數科" /><meta property="og:image" content="http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="zh-hant" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-06-05T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-06-05T21:15:53&#43;08:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://scchen.com/zh/post/evidentce-small-sample/"
+  },
+  "headline": "教學習作：如何運用模擬研究解析小樣本研究的證據力",
+  
+  "datePublished": "2021-06-05T00:00:00Z",
+  "dateModified": "2021-06-05T21:15:53+08:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "陳紹慶"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "陳紹慶的個人網站",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "習作目標 標題具有啟發性的小樣本研究充斥許多科學文獻，在多數科"
+}
+</script>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#4caf50",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "#4caf50"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "本网站使用cookies来确保您在本网站上获得最佳体验。",
+        "dismiss": "知道了!",
+        "link": "了解更多",
+        "href": "/zh/privacy/"
+      }
+    })});
+  </script>
+
+
+  
+
+
+
+
+
+  <title>教學習作：如何運用模擬研究解析小樣本研究的證據力 | 陳紹慶的個人網站</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="538d99d032924dcd3c46b1dc3d4ed436" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.f16be01fc8fb2b5885dd67ce942d1185.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/zh/">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/zh/">陳紹慶的個人網站</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#about"><span>關於我</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#posts"><span>網誌</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#projects"><span>專案</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#featured"><span>著作</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/zh/#contact"><span>聯絡方式</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>浅色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>深色</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>自动</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>教學習作：如何運用模擬研究解析小樣本研究的證據力</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          最近更新于
+      
+    
+    Jun 5, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/zh/category/%E6%96%B0%E8%81%9E%E8%A9%95%E8%AB%96/">新聞評論</a>, <a href="/zh/category/reproduce-practice/">Reproduce Practice</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="習作目標">習作目標</h2>
+<p>標題具有啟發性的小樣本研究充斥許多科學文獻，在多數科學人士體認可重製危機的現在(Baker 2016)，學習根據論文的統計資訊，評估研究證據強度，能增益研究者識讀研究論文品質，進而增加設計嚴謹研究的能力。</p>
+<p>本文使用英國格拉斯哥大學心理學系DeBruine教授開發的R套件<a href="https://debruine.github.io/faux/index.html" target="_blank" rel="noopener">faux</a>(DeBruine 2021)，示範如何根據 Panayotov (2019) 報告的減重效用統計資訊，以模擬重製實驗資料估計統計考驗力，評估這份論文的證據強度。</p>
+<h2 id="實驗參數">實驗參數</h2>
+<p>Panayotov (2019) 的<a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00550/full" target="_blank" rel="noopener">原始論文</a>是以cc授權的開放取用論文，不確定有事前預先註冊，未提供原始資料。論文作者測試BMI值屬於肥胖區間的14位成年人，分派到實驗組與控制組各7人。兩組參與者進行八週體重控制課程，飲食菜單與運動課表相同，實驗組的處置是被告知菜單是低卡飲食，控制組則告知確實資訊。論文作者假設實驗組經過八週課程，能減重約6公斤(“Theoretically this should cause a weight loss of about 6 kg in 8 weeks.”)。</p>
+<p>Panayotov的測量指標有體重(kg)、體脂肪比例(%)、BMI(kg/m^2)，在課程開始(baseline)與課程結束(final)兩個時間測量。減重效用的檢驗方式是以t檢定，確認兩組參與者在兩個時間的各項指標差異，顯著水準是0.05，論文未註明檢定方式是單尾(one tail)或雙尾(two tail)。統計資訊如下表。</p>
+<div class="figure">
+<p><img src="fpsyt-10-00550-t002.jpg" alt="實驗開始與結束測量的參與者體重指數分組平均值、標準差、t檢定p值。取自原始論文Table 2。" width="730" /></p>
+<p class="caption">
+Figure 1: 實驗開始與結束測量的參與者體重指數分組平均值、標準差、t檢定p值。取自原始論文Table 2。
+</p>
+</div>
+<h2 id="模擬資料測試">模擬資料測試</h2>
+<p>減重效用是實驗組課程前後在三種指標的差異，因此採用原始論文Table 2提供的統計資訊，運用<code>faux</code>統計製作模擬資料。</p>
+<p>首先以體重資訊示範如何製造模擬資料。前後測資料來自同一位觀察對象，資料之間預設有相關性，一般設定相關性有0.5，代表前後時間的測量來自不完全彼此獨立，也不完全相關的狀況。</p>
+<pre><code class="language-r">weight_dat &lt;- sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c(&quot;baseline&quot;, &quot;final&quot;)),  ## 獨變項設定
+  mu = data.frame(baseline=112.98, final=103.73), ## 基準及結束平均值
+  sd = data.frame(baseline=19.93, final=17.89),   ## 基準及結束標準差
+  r=0.5,
+  dv=&quot;weight&quot;,
+  empirical=TRUE,
+  long = TRUE
+)
+
+get_params(weight_dat) %&gt;% knitr::kable()
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">n</th>
+<th style="text-align:left">var</th>
+<th style="text-align:right">baseline</th>
+<th style="text-align:right">final</th>
+<th style="text-align:right">mean</th>
+<th style="text-align:right">sd</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">7</td>
+<td style="text-align:left">baseline</td>
+<td style="text-align:right">1.0</td>
+<td style="text-align:right">0.5</td>
+<td style="text-align:right">112.98</td>
+<td style="text-align:right">19.93</td>
+</tr>
+<tr>
+<td style="text-align:right">7</td>
+<td style="text-align:left">final</td>
+<td style="text-align:right">0.5</td>
+<td style="text-align:right">1.0</td>
+<td style="text-align:right">103.73</td>
+<td style="text-align:right">17.89</td>
+</tr>
+</tbody>
+</table>
+<p>測試一次模擬資料的分析:</p>
+<pre><code class="language-r"># paired-samples t-test
+t.test(weight ~ cond, weight_dat, paired = TRUE)
+</code></pre>
+<pre><code>## 
+##  Paired t-test
+## 
+## data:  weight by cond
+## t = 1.2886, df = 6, p-value = 0.245
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -8.314993 26.814993
+## sample estimates:
+## mean of the differences 
+##                    9.25
+</code></pre>
+<p>準備取出t檢定報表的自訂函式:</p>
+<pre><code class="language-r">analyse &lt;- function(data) {
+  t.test(weight ~ cond, data, paired = TRUE) %&gt;% 
+    broom::tidy()
+}
+</code></pre>
+<p>製造一千次重製實驗的資料：</p>
+<pre><code class="language-r">weight_dat &lt;- sim_design(
+  n = 7,
+  within =  list(cond = c(&quot;baseline&quot;, &quot;final&quot;)),
+  mu = data.frame(baseline=112.98, final=103.73),
+  sd = data.frame(baseline=19.93, final=17.89),
+  r=0.5,
+  dv=&quot;weight&quot;,
+#  empirical=TRUE,
+  long = TRUE,
+  rep=1000
+)
+</code></pre>
+<p>分析一千次重製實驗資料：</p>
+<pre><code class="language-r">weight_sim &lt;- weight_dat %&gt;%
+  mutate(analysis = map(data, analyse)) %&gt;%
+  select(-data) %&gt;%
+  unnest(analysis)
+
+head(weight_sim) %&gt;% knitr::kable()
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">rep</th>
+<th style="text-align:right">estimate</th>
+<th style="text-align:right">statistic</th>
+<th style="text-align:right">p.value</th>
+<th style="text-align:right">parameter</th>
+<th style="text-align:right">conf.low</th>
+<th style="text-align:right">conf.high</th>
+<th style="text-align:left">method</th>
+<th style="text-align:left">alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:right">10.685707</td>
+<td style="text-align:right">2.5782957</td>
+<td style="text-align:right">0.0418653</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">0.5445184</td>
+<td style="text-align:right">20.826896</td>
+<td style="text-align:left">Paired t-test</td>
+<td style="text-align:left">two.sided</td>
+</tr>
+<tr>
+<td style="text-align:right">2</td>
+<td style="text-align:right">3.560315</td>
+<td style="text-align:right">1.7130931</td>
+<td style="text-align:right">0.1375304</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-1.5250927</td>
+<td style="text-align:right">8.645723</td>
+<td style="text-align:left">Paired t-test</td>
+<td style="text-align:left">two.sided</td>
+</tr>
+<tr>
+<td style="text-align:right">3</td>
+<td style="text-align:right">1.312591</td>
+<td style="text-align:right">0.2122573</td>
+<td style="text-align:right">0.8389334</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-13.8190195</td>
+<td style="text-align:right">16.444202</td>
+<td style="text-align:left">Paired t-test</td>
+<td style="text-align:left">two.sided</td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:right">2.109562</td>
+<td style="text-align:right">0.3506974</td>
+<td style="text-align:right">0.7378000</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-12.6094312</td>
+<td style="text-align:right">16.828555</td>
+<td style="text-align:left">Paired t-test</td>
+<td style="text-align:left">two.sided</td>
+</tr>
+<tr>
+<td style="text-align:right">5</td>
+<td style="text-align:right">14.168492</td>
+<td style="text-align:right">1.9477947</td>
+<td style="text-align:right">0.0993623</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-3.6306383</td>
+<td style="text-align:right">31.967622</td>
+<td style="text-align:left">Paired t-test</td>
+<td style="text-align:left">two.sided</td>
+</tr>
+<tr>
+<td style="text-align:right">6</td>
+<td style="text-align:right">12.328009</td>
+<td style="text-align:right">2.2493344</td>
+<td style="text-align:right">0.0655011</td>
+<td style="text-align:right">6</td>
+<td style="text-align:right">-1.0828702</td>
+<td style="text-align:right">25.738888</td>
+<td style="text-align:left">Paired t-test</td>
+<td style="text-align:left">two.sided</td>
+</tr>
+</tbody>
+</table>
+<p>總結模擬結果的考驗力：</p>
+<pre><code class="language-r">weight_power &lt;- weight_sim %&gt;%
+  mutate(sig = p.value &lt; .05) %&gt;%
+  summarise(power = mean(sig)) %&gt;%
+  pull(power)
+</code></pre>
+<p>總計考驗力約<code>0.189</code>。以上模擬結果說明，如果前後測量不完全彼此獨立，也不完全相關，找相同條件的人士進行課程，體重減少9公斤的成功機會大約是20%。</p>
+<h2 id="減重效用考驗力估計">減重效用考驗力估計</h2>
+<p>不確定前後測量的獨立或關聯程度，我們擴展以上展示的方法，製造前後測量相關係數是<code>0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9</code>等九種1000次模擬結果，再總計各項測量指標的考驗力。</p>
+<h3 id="體重">體重</h3>
+<p>製造模擬資料：</p>
+<pre><code class="language-r">r_cand &lt;- seq(.1,.9,.1) 
+
+
+weight_dat_list &lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c(&quot;baseline&quot;, &quot;final&quot;)),  ## 獨變項設定
+  mu = data.frame(baseline=112.98, final=103.73), ## 基準及結束平均值
+  sd = data.frame(baseline=19.93, final=17.89),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv=&quot;weight&quot;,
+  long = TRUE,
+  rep=1000
+)) %&gt;% 
+  set_names(nm=r_cand)
+</code></pre>
+<p>分析並總計各種相關係數條件的考驗力：</p>
+<pre><code class="language-r">weight_sim_power &lt;- NULL
+for(i in 1:length(weight_dat_list)){
+weight_sim_power &lt;- c(weight_sim_power,weight_dat_list[[i]] %&gt;%
+  mutate(analysis = map(data, analyse)) %&gt;%
+  select(-data) %&gt;%
+  unnest(analysis) %&gt;%
+  mutate(sig = p.value &lt; .05) %&gt;%
+  summarise(power = mean(sig)) %&gt;%
+  pull(power))
+}
+
+names(weight_sim_power) &lt;- r_cand
+knitr::kable(t(weight_sim_power))
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">0.1</th>
+<th style="text-align:right">0.2</th>
+<th style="text-align:right">0.3</th>
+<th style="text-align:right">0.4</th>
+<th style="text-align:right">0.5</th>
+<th style="text-align:right">0.6</th>
+<th style="text-align:right">0.7</th>
+<th style="text-align:right">0.8</th>
+<th style="text-align:right">0.9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">0.131</td>
+<td style="text-align:right">0.149</td>
+<td style="text-align:right">0.136</td>
+<td style="text-align:right">0.17</td>
+<td style="text-align:right">0.182</td>
+<td style="text-align:right">0.227</td>
+<td style="text-align:right">0.278</td>
+<td style="text-align:right">0.404</td>
+<td style="text-align:right">0.662</td>
+</tr>
+</tbody>
+</table>
+<p>體重測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率只有66%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。</p>
+<h3 id="體脂肪比例">體脂肪比例</h3>
+<p>製造模擬資料：</p>
+<pre><code class="language-r">r_cand &lt;- seq(.1,.9,.1) 
+
+
+mass_dat_list &lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c(&quot;baseline&quot;, &quot;final&quot;)),  ## 獨變項設定
+  mu = data.frame(baseline=39.38, final=35.98), ## 基準及結束平均值
+  sd = data.frame(baseline=4.10, final=4.46),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv=&quot;mass&quot;,
+  long = TRUE,
+  rep=1000
+)) %&gt;% 
+  set_names(nm=r_cand)
+
+analyse &lt;- function(data) {
+  t.test(mass ~ cond, data, paired = TRUE) %&gt;% 
+    broom::tidy()
+}
+</code></pre>
+<p>分析並總計各種相關係數條件的考驗力：</p>
+<pre><code class="language-r">mass_sim_power &lt;- NULL
+for(i in 1:length(mass_dat_list)){
+mass_sim_power &lt;- c(mass_sim_power,mass_dat_list[[i]] %&gt;%
+  mutate(analysis = map(data, analyse)) %&gt;%
+  select(-data) %&gt;%
+  unnest(analysis) %&gt;%
+  mutate(sig = p.value &lt; .05) %&gt;%
+  summarise(power = mean(sig)) %&gt;%
+  pull(power))
+}
+
+names(mass_sim_power) &lt;- r_cand
+knitr::kable(t(mass_sim_power))
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">0.1</th>
+<th style="text-align:right">0.2</th>
+<th style="text-align:right">0.3</th>
+<th style="text-align:right">0.4</th>
+<th style="text-align:right">0.5</th>
+<th style="text-align:right">0.6</th>
+<th style="text-align:right">0.7</th>
+<th style="text-align:right">0.8</th>
+<th style="text-align:right">0.9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">0.255</td>
+<td style="text-align:right">0.294</td>
+<td style="text-align:right">0.309</td>
+<td style="text-align:right">0.353</td>
+<td style="text-align:right">0.428</td>
+<td style="text-align:right">0.512</td>
+<td style="text-align:right">0.609</td>
+<td style="text-align:right">0.753</td>
+<td style="text-align:right">0.966</td>
+</tr>
+</tbody>
+</table>
+<p>體脂肪比例測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率可達到95%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。</p>
+<h3 id="bmi">BMI</h3>
+<p>製造模擬資料：</p>
+<pre><code class="language-r">r_cand &lt;- seq(.1,.9,.1) 
+
+
+BMI_dat_list &lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c(&quot;baseline&quot;, &quot;final&quot;)),  ## 獨變項設定
+  mu = data.frame(baseline=34.62, final=31.73), ## 基準及結束平均值
+  sd = data.frame(baseline=3.27, final=2.89),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv=&quot;BMI&quot;,
+  long = TRUE,
+  rep=1000
+)) %&gt;% 
+  set_names(nm=r_cand)
+
+analyse &lt;- function(data) {
+  t.test(BMI ~ cond, data, paired = TRUE) %&gt;% 
+    broom::tidy()
+}
+</code></pre>
+<p>分析並總計各種相關係數條件的考驗力：</p>
+<pre><code class="language-r">BMI_sim_power &lt;- NULL
+for(i in 1:length(BMI_dat_list)){
+BMI_sim_power &lt;- c(BMI_sim_power,BMI_dat_list[[i]] %&gt;%
+  mutate(analysis = map(data, analyse)) %&gt;%
+  select(-data) %&gt;%
+  unnest(analysis) %&gt;%
+  mutate(sig = p.value &lt; .05) %&gt;%
+  summarise(power = mean(sig)) %&gt;%
+  pull(power))
+}
+
+names(BMI_sim_power) &lt;- r_cand
+knitr::kable(t(BMI_sim_power))
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">0.1</th>
+<th style="text-align:right">0.2</th>
+<th style="text-align:right">0.3</th>
+<th style="text-align:right">0.4</th>
+<th style="text-align:right">0.5</th>
+<th style="text-align:right">0.6</th>
+<th style="text-align:right">0.7</th>
+<th style="text-align:right">0.8</th>
+<th style="text-align:right">0.9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">0.348</td>
+<td style="text-align:right">0.382</td>
+<td style="text-align:right">0.432</td>
+<td style="text-align:right">0.471</td>
+<td style="text-align:right">0.527</td>
+<td style="text-align:right">0.645</td>
+<td style="text-align:right">0.761</td>
+<td style="text-align:right">0.885</td>
+<td style="text-align:right">0.994</td>
+</tr>
+</tbody>
+</table>
+<p>BMI測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率可達到95%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。</p>
+<h2 id="目標來源">目標來源</h2>
+<p>2021/6/3 我從<a href="https://www.facebook.com/onyourpsy/posts/329799688507458" target="_blank" rel="noopener">哇賽心理學臉書粉絲團</a>，得知王思恒醫師發表在天下雜誌的 <a href="https://www.cw.com.tw/article/5114921" target="_blank" rel="noopener">科學證實：用想的也能變瘦？</a>，這篇文章出自王醫師在隔一天上市的新書<a href="https://www.books.com.tw/products/0010892389" target="_blank" rel="noopener">一分鐘健瘦身教室（2）</a>的第一章。我注意到其中的文字描述符合“驚奇卻不堪一擊的小研究”條件。截圖摘要文章內容如下：</p>
+<div class="figure">
+<p><img src="quote01.png" alt="不可思議的小樣本。" width="700" /></p>
+<p class="caption">
+Figure 2: 不可思議的小樣本。
+</p>
+</div>
+<div class="figure">
+<p><img src="quote02.png" alt="充滿挑賣相好的(cherry picking)手法，王醫師的文章還少了BMI。" width="700" /></p>
+<p class="caption">
+Figure 3: 充滿挑賣相好的(cherry picking)手法，王醫師的文章還少了BMI。
+</p>
+</div>
+<div class="figure">
+<p><img src="quote03.png" alt="這段描述在原始論文中完全找不到，圖解亦不符合內文。" width="700" /></p>
+<p class="caption">
+Figure 4: 這段描述在原始論文中完全找不到，圖解亦不符合內文。
+</p>
+</div>
+<h2 id="可思考的議題">可思考的議題</h2>
+<p>Ritchie (2020) 指出今日研究者受到各種偏離科學精神的現實誘因，製造科學研究報告的動機並非單純是擴展人類知識領域。這類動機經常導致偏頗的“研究策略”，最極端的是造假、抄襲等學術不端行為，更多研究者採用的策略是設計能得到新奇發現的小樣本研究，而且今日的同儕評審系統，以及研究經費補助單位都提供如 Panayotov (2019) 這種研究出線機會。</p>
+<p>迎合大眾偏好而開發的主題研究，是另一種強大的偏頗誘因，正如 Singal (2021) 指出自我實現預言(self-fulfilling prophecy)主題的書藉在美國書市有逼近132億美元的產值，從事相關主題心理學與社會學研究者相對容易取得經費，也有更多媒體曝光機會。呼籲檢討研究品質的聲音，不容易在這些場域受到注意。</p>
+<p>台灣暢銷書市也有類似現象，有機會寫作出版的作者會收集這類研究資訊，做為書藉賣點。然而相對於美國，台灣媒體界尚未出現穩定提供對抗意見的聲音，尚未能形成對話反省的氛圍。本文僅就一個案例，點出其中隱藏的問題。除了期望相關書藉的作者與協助宣傳的媒體，能謹慎選擇當作立論基礎的研究論文。也期望越來越多讀者有判斷能力，就像研究者會因應期刊與經費來源的偏好決定研究策略，暢銷書作者會探索讀者的偏好，寫作對應讀者素質的文章。</p>
+<h3 id="給讀者的判斷建議">給讀者的判斷建議</h3>
+<p>儘管多數讀者沒有受過完整的專業訓練，看到討論心理因素的科普文章，只要注意以下特徵，就能判斷作者引用的研究論文，證據力夠不夠可信。</p>
+<ol>
+<li>
+<p>參與者人數不達百人。越強調心理誘發條件的研究，效應量通常被高估，至少要百人才有起碼的證據力。</p>
+</li>
+<li>
+<p>研究報告的測量變項不只一種。研究程序可不斷重現的研究通常只關注少數幾種測量的變化，小樣本或初次嘗試的研究經常收集各種測量資料。</p>
+</li>
+<li>
+<p>研究報告的原始論文能不能公開取用？有沒有公開資料？沒有公開資料給小樣本研究開了一道墮落的方便之門：不符合假設的測量資料可以隱藏起來。這就是挑賣相好的(cherry picking)的研究策略，相對地我們能合理懷疑這項研究的證據力。</p>
+</li>
+</ol>
+<h4 id="參考文獻">參考文獻</h4>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-baker500ScientistsLift2016" class="csl-entry">
+<p>Baker, Monya. 2016. “1,500 Scientists Lift the Lid on Reproducibility.” <em>Nature News</em> 533 (7604): 452. <a href="https://doi.org/gdgzjx">https://doi.org/gdgzjx</a>.</p>
+</div>
+<div id="ref-DeBruine2021" class="csl-entry">
+<p>DeBruine, Lisa. 2021. <em>Faux: Simulation for Factorial Designs</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.2669586">https://doi.org/10.5281/zenodo.2669586</a>.</p>
+</div>
+<div id="ref-Panayotov2019" class="csl-entry">
+<p>Panayotov, Valentin Stefanov. 2019. “Studying a Possible Placebo Effect of an Imaginary Low-Calorie Diet.” <em>Frontiers in Psychiatry</em> 10: 550. <a href="https://doi.org/10.3389/fpsyt.2019.00550">https://doi.org/10.3389/fpsyt.2019.00550</a>.</p>
+</div>
+<div id="ref-ritchieScienceFictionsHow2020" class="csl-entry">
+<p>Ritchie, Stuart. 2020. <em>Science Fictions: How Fraud, Bias, Negligence, and Hype Undermine the Search for Truth</em>. First edition. New York: Metropolitan Books ; Henry Holt and Company.</p>
+</div>
+<div id="ref-singalQuickFixWhy2021" class="csl-entry">
+<p>Singal, Jesse. 2021. <em>The Quick Fix: Why Fad Psychology Can’t Cure Our Social Ills</em>.</p>
+</div>
+</div>
+
+    </div>
+    
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  <section id="comments">
+    <center><h5>!登入個人github帳號就能留言!</h5></center>
+
+<script src="https://utteranc.es/client.js"
+        repo="SCgeeker/SCgeeker.blogdown"
+        issue-term="pathname"
+        label="comments 💬"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+  </section>
+  
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+  <p class="powered-by">
+    
+      <a href="/zh/privacy/">隱私權條款</a>
+    
+    
+  </p>
+  
+
+  
+  <p class="powered-by">
+    © 2017~2021 Sau-Chin Chen
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/markdown.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.8b7df62fd2da18ce73e29c13cc0a6198.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.bd4f1c1e91b9b8a55885155394718091.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

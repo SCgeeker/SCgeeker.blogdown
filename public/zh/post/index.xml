@@ -5,12 +5,464 @@
     <link>http://scchen.com/zh/post/</link>
       <atom:link href="http://scchen.com/zh/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Sun, 30 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-hant</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Sat, 05 Jun 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>http://scchen.com/zh/post/</link>
     </image>
+    
+    <item>
+      <title>教學習作：如何運用模擬研究解析小樣本研究的證據力</title>
+      <link>http://scchen.com/zh/post/evidentce-small-sample/</link>
+      <pubDate>Sat, 05 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/post/evidentce-small-sample/</guid>
+      <description>&lt;h2 id=&#34;習作目標&#34;&gt;習作目標&lt;/h2&gt;
+&lt;p&gt;標題具有啟發性的小樣本研究充斥許多科學文獻，在多數科學人士體認可重製危機的現在(Baker 2016)，學習根據論文的統計資訊，評估研究證據強度，能增益研究者識讀研究論文品質，進而增加設計嚴謹研究的能力。&lt;/p&gt;
+&lt;p&gt;本文使用英國格拉斯哥大學心理學系DeBruine教授開發的R套件&lt;a href=&#34;https://debruine.github.io/faux/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;faux&lt;/a&gt;(DeBruine 2021)，示範如何根據 Panayotov (2019) 報告的減重效用統計資訊，以模擬重製實驗資料估計統計考驗力，評估這份論文的證據強度。&lt;/p&gt;
+&lt;h2 id=&#34;實驗參數&#34;&gt;實驗參數&lt;/h2&gt;
+&lt;p&gt;Panayotov (2019) 的&lt;a href=&#34;https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00550/full&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原始論文&lt;/a&gt;是以cc授權的開放取用論文，不確定有事前預先註冊，未提供原始資料。論文作者測試BMI值屬於肥胖區間的14位成年人，分派到實驗組與控制組各7人。兩組參與者進行八週體重控制課程，飲食菜單與運動課表相同，實驗組的處置是被告知菜單是低卡飲食，控制組則告知確實資訊。論文作者假設實驗組經過八週課程，能減重約6公斤(“Theoretically this should cause a weight loss of about 6 kg in 8 weeks.”)。&lt;/p&gt;
+&lt;p&gt;Panayotov的測量指標有體重(kg)、體脂肪比例(%)、BMI(kg/m^2)，在課程開始(baseline)與課程結束(final)兩個時間測量。減重效用的檢驗方式是以t檢定，確認兩組參與者在兩個時間的各項指標差異，顯著水準是0.05，論文未註明檢定方式是單尾(one tail)或雙尾(two tail)。統計資訊如下表。&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;fpsyt-10-00550-t002.jpg&#34; alt=&#34;實驗開始與結束測量的參與者體重指數分組平均值、標準差、t檢定p值。取自原始論文Table 2。&#34; width=&#34;730&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: 實驗開始與結束測量的參與者體重指數分組平均值、標準差、t檢定p值。取自原始論文Table 2。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;模擬資料測試&#34;&gt;模擬資料測試&lt;/h2&gt;
+&lt;p&gt;減重效用是實驗組課程前後在三種指標的差異，因此採用原始論文Table 2提供的統計資訊，運用&lt;code&gt;faux&lt;/code&gt;統計製作模擬資料。&lt;/p&gt;
+&lt;p&gt;首先以體重資訊示範如何製造模擬資料。前後測資料來自同一位觀察對象，資料之間預設有相關性，一般設定相關性有0.5，代表前後時間的測量來自不完全彼此獨立，也不完全相關的狀況。&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;weight_dat &amp;lt;- sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c(&amp;quot;baseline&amp;quot;, &amp;quot;final&amp;quot;)),  ## 獨變項設定
+  mu = data.frame(baseline=112.98, final=103.73), ## 基準及結束平均值
+  sd = data.frame(baseline=19.93, final=17.89),   ## 基準及結束標準差
+  r=0.5,
+  dv=&amp;quot;weight&amp;quot;,
+  empirical=TRUE,
+  long = TRUE
+)
+
+get_params(weight_dat) %&amp;gt;% knitr::kable()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;n&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;var&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;baseline&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;final&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;mean&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;sd&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;baseline&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1.0&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;112.98&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;19.93&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;final&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1.0&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;103.73&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;17.89&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;測試一次模擬資料的分析:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# paired-samples t-test
+t.test(weight ~ cond, weight_dat, paired = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Paired t-test
+## 
+## data:  weight by cond
+## t = 1.2886, df = 6, p-value = 0.245
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -8.314993 26.814993
+## sample estimates:
+## mean of the differences 
+##                    9.25
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;準備取出t檢定報表的自訂函式:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;analyse &amp;lt;- function(data) {
+  t.test(weight ~ cond, data, paired = TRUE) %&amp;gt;% 
+    broom::tidy()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;製造一千次重製實驗的資料：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;weight_dat &amp;lt;- sim_design(
+  n = 7,
+  within =  list(cond = c(&amp;quot;baseline&amp;quot;, &amp;quot;final&amp;quot;)),
+  mu = data.frame(baseline=112.98, final=103.73),
+  sd = data.frame(baseline=19.93, final=17.89),
+  r=0.5,
+  dv=&amp;quot;weight&amp;quot;,
+#  empirical=TRUE,
+  long = TRUE,
+  rep=1000
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;分析一千次重製實驗資料：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;weight_sim &amp;lt;- weight_dat %&amp;gt;%
+  mutate(analysis = map(data, analyse)) %&amp;gt;%
+  select(-data) %&amp;gt;%
+  unnest(analysis)
+
+head(weight_sim) %&amp;gt;% knitr::kable()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;rep&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;estimate&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;statistic&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;p.value&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;parameter&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;conf.low&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;conf.high&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;method&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;alternative&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;10.685707&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2.5782957&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.0418653&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.5445184&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;20.826896&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Paired t-test&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;two.sided&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3.560315&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1.7130931&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.1375304&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-1.5250927&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;8.645723&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Paired t-test&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;two.sided&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1.312591&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.2122573&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.8389334&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-13.8190195&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;16.444202&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Paired t-test&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;two.sided&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2.109562&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.3506974&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.7378000&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-12.6094312&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;16.828555&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Paired t-test&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;two.sided&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;14.168492&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1.9477947&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.0993623&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-3.6306383&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;31.967622&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Paired t-test&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;two.sided&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;12.328009&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2.2493344&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.0655011&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;-1.0828702&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;25.738888&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Paired t-test&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;two.sided&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;總結模擬結果的考驗力：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;weight_power &amp;lt;- weight_sim %&amp;gt;%
+  mutate(sig = p.value &amp;lt; .05) %&amp;gt;%
+  summarise(power = mean(sig)) %&amp;gt;%
+  pull(power)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;總計考驗力約&lt;code&gt;0.189&lt;/code&gt;。以上模擬結果說明，如果前後測量不完全彼此獨立，也不完全相關，找相同條件的人士進行課程，體重減少9公斤的成功機會大約是20%。&lt;/p&gt;
+&lt;h2 id=&#34;減重效用考驗力估計&#34;&gt;減重效用考驗力估計&lt;/h2&gt;
+&lt;p&gt;不確定前後測量的獨立或關聯程度，我們擴展以上展示的方法，製造前後測量相關係數是&lt;code&gt;0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9&lt;/code&gt;等九種1000次模擬結果，再總計各項測量指標的考驗力。&lt;/p&gt;
+&lt;h3 id=&#34;體重&#34;&gt;體重&lt;/h3&gt;
+&lt;p&gt;製造模擬資料：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;r_cand &amp;lt;- seq(.1,.9,.1) 
+
+
+weight_dat_list &amp;lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c(&amp;quot;baseline&amp;quot;, &amp;quot;final&amp;quot;)),  ## 獨變項設定
+  mu = data.frame(baseline=112.98, final=103.73), ## 基準及結束平均值
+  sd = data.frame(baseline=19.93, final=17.89),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv=&amp;quot;weight&amp;quot;,
+  long = TRUE,
+  rep=1000
+)) %&amp;gt;% 
+  set_names(nm=r_cand)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;分析並總計各種相關係數條件的考驗力：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;weight_sim_power &amp;lt;- NULL
+for(i in 1:length(weight_dat_list)){
+weight_sim_power &amp;lt;- c(weight_sim_power,weight_dat_list[[i]] %&amp;gt;%
+  mutate(analysis = map(data, analyse)) %&amp;gt;%
+  select(-data) %&amp;gt;%
+  unnest(analysis) %&amp;gt;%
+  mutate(sig = p.value &amp;lt; .05) %&amp;gt;%
+  summarise(power = mean(sig)) %&amp;gt;%
+  pull(power))
+}
+
+names(weight_sim_power) &amp;lt;- r_cand
+knitr::kable(t(weight_sim_power))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.1&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.2&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.3&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.4&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.5&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.6&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.7&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.8&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.9&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.131&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.149&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.136&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.17&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.182&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.227&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.278&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.404&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.662&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;體重測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率只有66%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。&lt;/p&gt;
+&lt;h3 id=&#34;體脂肪比例&#34;&gt;體脂肪比例&lt;/h3&gt;
+&lt;p&gt;製造模擬資料：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;r_cand &amp;lt;- seq(.1,.9,.1) 
+
+
+mass_dat_list &amp;lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c(&amp;quot;baseline&amp;quot;, &amp;quot;final&amp;quot;)),  ## 獨變項設定
+  mu = data.frame(baseline=39.38, final=35.98), ## 基準及結束平均值
+  sd = data.frame(baseline=4.10, final=4.46),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv=&amp;quot;mass&amp;quot;,
+  long = TRUE,
+  rep=1000
+)) %&amp;gt;% 
+  set_names(nm=r_cand)
+
+analyse &amp;lt;- function(data) {
+  t.test(mass ~ cond, data, paired = TRUE) %&amp;gt;% 
+    broom::tidy()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;分析並總計各種相關係數條件的考驗力：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;mass_sim_power &amp;lt;- NULL
+for(i in 1:length(mass_dat_list)){
+mass_sim_power &amp;lt;- c(mass_sim_power,mass_dat_list[[i]] %&amp;gt;%
+  mutate(analysis = map(data, analyse)) %&amp;gt;%
+  select(-data) %&amp;gt;%
+  unnest(analysis) %&amp;gt;%
+  mutate(sig = p.value &amp;lt; .05) %&amp;gt;%
+  summarise(power = mean(sig)) %&amp;gt;%
+  pull(power))
+}
+
+names(mass_sim_power) &amp;lt;- r_cand
+knitr::kable(t(mass_sim_power))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.1&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.2&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.3&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.4&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.5&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.6&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.7&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.8&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.9&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.255&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.294&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.309&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.353&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.428&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.512&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.609&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.753&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.966&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;體脂肪比例測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率可達到95%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。&lt;/p&gt;
+&lt;h3 id=&#34;bmi&#34;&gt;BMI&lt;/h3&gt;
+&lt;p&gt;製造模擬資料：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;r_cand &amp;lt;- seq(.1,.9,.1) 
+
+
+BMI_dat_list &amp;lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c(&amp;quot;baseline&amp;quot;, &amp;quot;final&amp;quot;)),  ## 獨變項設定
+  mu = data.frame(baseline=34.62, final=31.73), ## 基準及結束平均值
+  sd = data.frame(baseline=3.27, final=2.89),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv=&amp;quot;BMI&amp;quot;,
+  long = TRUE,
+  rep=1000
+)) %&amp;gt;% 
+  set_names(nm=r_cand)
+
+analyse &amp;lt;- function(data) {
+  t.test(BMI ~ cond, data, paired = TRUE) %&amp;gt;% 
+    broom::tidy()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;分析並總計各種相關係數條件的考驗力：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;BMI_sim_power &amp;lt;- NULL
+for(i in 1:length(BMI_dat_list)){
+BMI_sim_power &amp;lt;- c(BMI_sim_power,BMI_dat_list[[i]] %&amp;gt;%
+  mutate(analysis = map(data, analyse)) %&amp;gt;%
+  select(-data) %&amp;gt;%
+  unnest(analysis) %&amp;gt;%
+  mutate(sig = p.value &amp;lt; .05) %&amp;gt;%
+  summarise(power = mean(sig)) %&amp;gt;%
+  pull(power))
+}
+
+names(BMI_sim_power) &amp;lt;- r_cand
+knitr::kable(t(BMI_sim_power))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.1&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.2&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.3&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.4&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.5&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.6&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.7&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.8&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;0.9&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.348&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.382&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.432&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.471&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.527&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.645&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.761&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.885&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;0.994&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;BMI測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率可達到95%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。&lt;/p&gt;
+&lt;h2 id=&#34;目標來源&#34;&gt;目標來源&lt;/h2&gt;
+&lt;p&gt;2021/6/3 我從&lt;a href=&#34;https://www.facebook.com/onyourpsy/posts/329799688507458&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;哇賽心理學臉書粉絲團&lt;/a&gt;，得知王思恒醫師發表在天下雜誌的 &lt;a href=&#34;https://www.cw.com.tw/article/5114921&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;科學證實：用想的也能變瘦？&lt;/a&gt;，這篇文章出自王醫師在隔一天上市的新書&lt;a href=&#34;https://www.books.com.tw/products/0010892389&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;一分鐘健瘦身教室（2）&lt;/a&gt;的第一章。我注意到其中的文字描述符合“驚奇卻不堪一擊的小研究”條件。截圖摘要文章內容如下：&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;quote01.png&#34; alt=&#34;不可思議的小樣本。&#34; width=&#34;700&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2: 不可思議的小樣本。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;quote02.png&#34; alt=&#34;充滿挑賣相好的(cherry picking)手法，王醫師的文章還少了BMI。&#34; width=&#34;700&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 3: 充滿挑賣相好的(cherry picking)手法，王醫師的文章還少了BMI。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;quote03.png&#34; alt=&#34;這段描述在原始論文中完全找不到，圖解亦不符合內文。&#34; width=&#34;700&#34; /&gt;&lt;/p&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 4: 這段描述在原始論文中完全找不到，圖解亦不符合內文。
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;可思考的議題&#34;&gt;可思考的議題&lt;/h2&gt;
+&lt;p&gt;Ritchie (2020) 指出今日研究者受到各種偏離科學精神的現實誘因，製造科學研究報告的動機並非單純是擴展人類知識領域。這類動機經常導致偏頗的“研究策略”，最極端的是造假、抄襲等學術不端行為，更多研究者採用的策略是設計能得到新奇發現的小樣本研究，而且今日的同儕評審系統，以及研究經費補助單位都提供如 Panayotov (2019) 這種研究出線機會。&lt;/p&gt;
+&lt;p&gt;迎合大眾偏好而開發的主題研究，是另一種強大的偏頗誘因，正如 Singal (2021) 指出自我實現預言(self-fulfilling prophecy)主題的書藉在美國書市有逼近132億美元的產值，從事相關主題心理學與社會學研究者相對容易取得經費，也有更多媒體曝光機會。呼籲檢討研究品質的聲音，不容易在這些場域受到注意。&lt;/p&gt;
+&lt;p&gt;台灣暢銷書市也有類似現象，有機會寫作出版的作者會收集這類研究資訊，做為書藉賣點。然而相對於美國，台灣媒體界尚未出現穩定提供對抗意見的聲音，尚未能形成對話反省的氛圍。本文僅就一個案例，點出其中隱藏的問題。除了期望相關書藉的作者與協助宣傳的媒體，能謹慎選擇當作立論基礎的研究論文。也期望越來越多讀者有判斷能力，就像研究者會因應期刊與經費來源的偏好決定研究策略，暢銷書作者會探索讀者的偏好，寫作對應讀者素質的文章。&lt;/p&gt;
+&lt;h3 id=&#34;給讀者的判斷建議&#34;&gt;給讀者的判斷建議&lt;/h3&gt;
+&lt;p&gt;儘管多數讀者沒有受過完整的專業訓練，看到討論心理因素的科普文章，只要注意以下特徵，就能判斷作者引用的研究論文，證據力夠不夠可信。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;參與者人數不達百人。越強調心理誘發條件的研究，效應量通常被高估，至少要百人才有起碼的證據力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;研究報告的測量變項不只一種。研究程序可不斷重現的研究通常只關注少數幾種測量的變化，小樣本或初次嘗試的研究經常收集各種測量資料。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;研究報告的原始論文能不能公開取用？有沒有公開資料？沒有公開資料給小樣本研究開了一道墮落的方便之門：不符合假設的測量資料可以隱藏起來。這就是挑賣相好的(cherry picking)的研究策略，相對地我們能合理懷疑這項研究的證據力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;參考文獻&#34;&gt;參考文獻&lt;/h4&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references csl-bib-body hanging-indent&#34;&gt;
+&lt;div id=&#34;ref-baker500ScientistsLift2016&#34; class=&#34;csl-entry&#34;&gt;
+&lt;p&gt;Baker, Monya. 2016. “1,500 Scientists Lift the Lid on Reproducibility.” &lt;em&gt;Nature News&lt;/em&gt; 533 (7604): 452. &lt;a href=&#34;https://doi.org/gdgzjx&#34;&gt;https://doi.org/gdgzjx&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-DeBruine2021&#34; class=&#34;csl-entry&#34;&gt;
+&lt;p&gt;DeBruine, Lisa. 2021. &lt;em&gt;Faux: Simulation for Factorial Designs&lt;/em&gt;. Zenodo. &lt;a href=&#34;https://doi.org/10.5281/zenodo.2669586&#34;&gt;https://doi.org/10.5281/zenodo.2669586&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Panayotov2019&#34; class=&#34;csl-entry&#34;&gt;
+&lt;p&gt;Panayotov, Valentin Stefanov. 2019. “Studying a Possible Placebo Effect of an Imaginary Low-Calorie Diet.” &lt;em&gt;Frontiers in Psychiatry&lt;/em&gt; 10: 550. &lt;a href=&#34;https://doi.org/10.3389/fpsyt.2019.00550&#34;&gt;https://doi.org/10.3389/fpsyt.2019.00550&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-ritchieScienceFictionsHow2020&#34; class=&#34;csl-entry&#34;&gt;
+&lt;p&gt;Ritchie, Stuart. 2020. &lt;em&gt;Science Fictions: How Fraud, Bias, Negligence, and Hype Undermine the Search for Truth&lt;/em&gt;. First edition. New York: Metropolitan Books ; Henry Holt and Company.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-singalQuickFixWhy2021&#34; class=&#34;csl-entry&#34;&gt;
+&lt;p&gt;Singal, Jesse. 2021. &lt;em&gt;The Quick Fix: Why Fad Psychology Can’t Cure Our Social Ills&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>如何運用認知再評估策略幫助疫情之下的民眾調節負面情緒</title>
