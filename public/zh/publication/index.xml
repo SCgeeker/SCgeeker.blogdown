@@ -5,12 +5,20 @@
     <link>http://scchen.com/zh/publication/</link>
       <atom:link href="http://scchen.com/zh/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>出版品</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=true) shape:circle]</url>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
       <title>出版品</title>
       <link>http://scchen.com/zh/publication/</link>
     </image>
+    
+    <item>
+      <title>跨越18種語言的物體方向效應研究（Investigating object orientation effects across 18 languages）</title>
+      <link>http://scchen.com/zh/publication/object-orientation-18-languages/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/publication/object-orientation-18-languages/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>物件大小是否影響物件方向的心理模擬？</title>
