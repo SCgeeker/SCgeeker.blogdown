@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>object orientation | Sau-Chin Chen&#39;s Website</title>
+    <link>http://scchen.com/tags/object-orientation/</link>
+      <atom:link href="http://scchen.com/tags/object-orientation/index.xml" rel="self" type="application/rss+xml" />
+    <description>object orientation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=true) shape:circle]</url>
+      <title>object orientation</title>
+      <link>http://scchen.com/tags/object-orientation/</link>
+    </image>
+    
+    <item>
+      <title>Does Object Size Matter with Regard to the Mental Simulation of Object Orientation?</title>
+      <link>http://scchen.com/publication/journal-article/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/publication/journal-article/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

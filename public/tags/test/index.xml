@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test | Sau-Chin Chen&#39;s Website</title>
+    <link>http://scchen.com/tags/test/</link>
+      <atom:link href="http://scchen.com/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <description>Test</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Wed, 27 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=true) shape:circle]</url>
+      <title>Test</title>
+      <link>http://scchen.com/tags/test/</link>
+    </image>
+    
+    <item>
+      <title>Use R Markdown build website</title>
+      <link>http://scchen.com/post/use-r-markdown-build-website/use-r-markdown-build-website/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/post/use-r-markdown-build-website/use-r-markdown-build-website/</guid>
+      <description>&lt;p&gt;I’m testing blogdown. Learn how to build and manange my website in this package.&lt;/p&gt;
+&lt;p&gt;Will this sentence be updated at &lt;em&gt;Viewer&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;Yes. it worked. Now test some markdown tags:&lt;/p&gt;
+&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
+&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
+&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Italic&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Math expression: $\alpha$&lt;/p&gt;
+&lt;p&gt;$$\sigma = X^2 + Y^2$$&lt;/p&gt;
+&lt;p&gt;This is like “Watch laterly after you write”.&lt;/p&gt;
+&lt;p&gt;After reboot Rstudio, I can directly continue the latest work.&lt;/p&gt;
+&lt;p&gt;I manage my website as a R project.&lt;/p&gt;
+&lt;p&gt;I unchecked “Preview site after building” in project options.&lt;/p&gt;
+&lt;p&gt;Viewer is updating after I unchecked this option.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

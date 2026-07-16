@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>物件方向 | 暗微幽光</title>
+    <link>http://scchen.com/zh/tags/%E7%89%A9%E4%BB%B6%E6%96%B9%E5%90%91/</link>
+      <atom:link href="http://scchen.com/zh/tags/%E7%89%A9%E4%BB%B6%E6%96%B9%E5%90%91/index.xml" rel="self" type="application/rss+xml" />
+    <description>物件方向</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=true) shape:circle]</url>
+      <title>物件方向</title>
+      <link>http://scchen.com/zh/tags/%E7%89%A9%E4%BB%B6%E6%96%B9%E5%90%91/</link>
+    </image>
+    
+    <item>
+      <title>物件大小是否影響物件方向的心理模擬？</title>
+      <link>http://scchen.com/zh/publication/journal-article/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/publication/journal-article/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,66 @@
+---
+title: "Does Object Size Matter with Regard to the Mental Simulation of Object Orientation?"
+authors:
+- admin
+- de Koning B. Bjorn
+- Rolf A. Zwaan
+date: "2020-05-01T00:00:00Z"
+doi: "https://doi.org/10.1027/1618-3169/a000468"
+
+# Schedule page publish date (NOT publication's date).
+publishDate: "2020-05-01T00:00:00Z"
+
+# Publication type.
+# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
+# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
+# 7 = Thesis; 8 = Patent
+publication_types: ["2"]
+
+# Publication name and optional abbreviated publication name.
+publication: "*Experimental Psychology*"
+publication_short: ""
+
+abstract: Language comprehenders have been argued to mentally represent the implied orientation of objects. However, compared to the effects of shape, size, and color, the effect of orientation is rather small. We examined a potential explanation for the relatively low magnitude of the orientation effect object size moderates the orientation effect.
+
+# Summary. An optional shortened abstract.
+summary: Language comprehenders have been argued to mentally represent the implied orientation of objects. This study examines whether object size moderates the orientation effect.
+
+tags:
+- mental simulation
+- object orientation
+featured: false
+
+# links:
+# - name: ""
+#   url: ""
+url_pdf: https://psyarxiv.com/a3vwc/
+url_code: ''
+url_dataset: ''
+url_poster: ''
+url_project: ''
+url_slides: http://scchen.com/en/slides/example/
+url_source: https://curatescience.org/app/article/536
+url_video: ''
+
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder. 
+image:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  focal_point: ""
+  preview_only: false
+
+# Associated Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter your project's folder or file name without extension.
+#   E.g. `internal-project` references `content/project/internal-project/index.md`.
+#   Otherwise, set `projects: []`.
+projects: []
+
+# Slides (optional).
+#   Associate this publication with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides: "example"` references `content/slides/example/index.md`.
+#   Otherwise, set `slides: ""`.
+slides: example
+---
+

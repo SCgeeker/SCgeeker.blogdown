@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active | 暗微幽光</title>
+    <link>http://scchen.com/zh/tags/active/</link>
+      <atom:link href="http://scchen.com/zh/tags/active/index.xml" rel="self" type="application/rss+xml" />
+    <description>Active</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Active</title>
+      <link>http://scchen.com/zh/tags/active/</link>
+    </image>
+    
+    <item>
+      <title>Claude Lit Workflow</title>
+      <link>http://scchen.com/zh/project/claude-journal-club-agents/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/claude-journal-club-agents/</guid>
+      <description>&lt;p&gt;本倉庫目前收錄的是 Claude Lit Workflow，一套論文處理工具，能直接從 PDF、網址或主題生成學術投影片與 Zettelkasten 原子卡片，輸出純 Markdown，可直接匯入 Obsidian 等筆記工具。可透過 CLI、MCP server（stdio 或 Streamable HTTP）或 Obsidian QuickAdd 包裝腳本驅動。&lt;/p&gt;
+&lt;p&gt;核心為兩個生成器：投影片生成器支援 7 種學術風格、5 種詳細程度與 3 種語言，輸出 Obsidian Slides／Marp 相容 Markdown 或 PPTX；原子卡片生成器則產出可跨論文連結、便於知識庫整合的 Zettelkasten 卡片。支援多家 LLM 供應商，包括 Google Gemini、OpenAI、Anthropic、Ollama 與 NVIDIA NIM，可依需求切換。&lt;/p&gt;
+&lt;p&gt;專案以 Python 撰寫，透過 &lt;code&gt;uv&lt;/code&gt; 安裝與執行，行為規格採 SDD 流程記錄於 &lt;code&gt;openspec/&lt;/code&gt; 目錄。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——持續更新中，目前版本為 0.12.0。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TWCC Ollama Proxy</title>
+      <link>http://scchen.com/zh/project/twcc-ollama-proxy/</link>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/twcc-ollama-proxy/</guid>
+      <description>&lt;p&gt;TWCC Ollama Proxy 將本地端的 Ollama API 請求轉發至 TWCC（國網中心）開發型容器（CCS）執行 LLM 推論，並在 &lt;code&gt;localhost:11434&lt;/code&gt; 提供與標準 Ollama API 相容的端點。目前支援 CrystalMind 與 GemmaPro 兩款 GGUF 模型，另有推理強化版 GemmaPro-r，適合較複雜的概念抽取任務。&lt;/p&gt;
+&lt;p&gt;任何支援自訂 Ollama URL 的工具，例如 Open WebUI 或 Continue.dev，都可直接對接使用。每次 API 呼叫都會建立一個含 1 顆 GPU 的 TWCC CCS 容器執行推論，完成後自動刪除，因此計費僅以容器的短暫存在時間計算（通常每次 1 至 2 分鐘）。使用前需準備 Windows 環境、以 &lt;code&gt;uv&lt;/code&gt; 管理的 Python 3.10+、具 CCS 使用權限的 TWCC 帳號，以及已上傳的 SSH 金鑰；模型檔案只需一次性上傳至 TWCC 共用的 HFS 儲存空間。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理教育統計 2026 教學簡報</title>
+      <link>http://scchen.com/zh/project/lsj-2026-lecture-slides/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/lsj-2026-lecture-slides/</guid>
+      <description>&lt;p&gt;本倉庫收錄慈濟大學人類發展與心理學系 2026 年基礎統計課程的教學簡報，並發布為可線上瀏覽的繁體中文簡報網站。&lt;/p&gt;
+&lt;p&gt;簡報對象為修習該課程的學生，讓他們在課堂教學之外，隨時能上線查閱該學期的講授內容。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——隨 2026 學年課程進度持續更新。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>《用 jamovi 上手統計學》繁體中文版</title>
+      <link>http://scchen.com/zh/project/lsj-book-zh-tw/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/lsj-book-zh-tw/</guid>
+      <description>&lt;p&gt;本倉庫收錄 Danielle Navarro 與 David Foxcroft 所著開放教科書《Learning Statistics with jamovi: A Tutorial for Psychology Students and Other Beginners》的繁體中文翻譯原始碼，該書本身改編自 Navarro 較早的《Learning Statistics with R》。書籍以 Quarto（&lt;code&gt;.qmd&lt;/code&gt;）原始檔建置，可輸出 HTML、PDF 與 EPUB 格式。&lt;/p&gt;
+&lt;p&gt;這份翻譯的對象是希望以 jamovi（而非 R）搭配學習的華語心理系學生與教師，提供一本免費、開放的統計學入門教科書。原則上，本倉庫包含從頭重建整本書所需的一切，且已建置的網站版本可直接線上閱讀。&lt;/p&gt;
+&lt;p&gt;本書採用 CC BY-SA 4.0 授權釋出，允許在標明出處的前提下重用、混編與再散布（含商業用途），衍生版本須採用相同授權條款。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>P-CSO：學術寫作的 Pinker 認知風格優化系統</title>
+      <link>http://scchen.com/zh/project/p-cso/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/p-cso/</guid>
+      <description>&lt;p&gt;P-CSO（Pinker&amp;rsquo;s Cognitive Style Optimization）是一套供 Claude Code 使用的學術寫作 skills，核心原則取自 Steven Pinker《The Sense of Style》第 4 章（句法層級）與第 5 章（段落層級）。目標是透過改善句法清晰度與段落連貫性，降低讀者理解文本所需的認知負擔。&lt;/p&gt;
+&lt;p&gt;系統共提供六個 skills，涵蓋完整的起草流程：&lt;code&gt;p-cso-workflow&lt;/code&gt; 執行從筆記到優化定稿的完整管線；&lt;code&gt;pinker-syntax&lt;/code&gt; 與 &lt;code&gt;pinker-coherence&lt;/code&gt; 分別套用句法與段落層級規則；&lt;code&gt;pinker-quick&lt;/code&gt; 在起草階段提供快速反饋；&lt;code&gt;notes-to-manuscript&lt;/code&gt; 將原始筆記組織成結構化草稿腳手架；&lt;code&gt;english-editing&lt;/code&gt; 負責最終的文法與冠詞使用潤色。安裝方式可透過 Claude Code plugin marketplace，或將 skill 檔案放置於專案本機目錄。&lt;/p&gt;
+&lt;p&gt;每個 skill 都會附上診斷報告，說明改動內容與背後原理，讓使用者能逐漸內化這些原則，而非僅仰賴工具產出。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——目前版本為 0.9.0（Preview），持續開發中。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ACT_Base：Obsidian 的 Annotation-Connection-Thought 工作流</title>
+      <link>http://scchen.com/zh/project/act-base/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/act-base/</guid>
+      <description>&lt;p&gt;ACT_Base 是一個最小化的 Obsidian vault，示範 Annotation → Connection → Thought（ACT）知識工作流，透過在 Obsidian 內建終端機執行 Claude Code skills 來驅動。使用者將論文生成的 Zettelkasten 原子卡片放入 vault，再執行對應 skills，把各自獨立的卡片串連成跨論文的知識網絡。&lt;/p&gt;
+&lt;p&gt;Vault 將十二個 skills 分為三層：Annotation（&lt;code&gt;card-review&lt;/code&gt;、&lt;code&gt;gear-coaching&lt;/code&gt;、&lt;code&gt;cross-link&lt;/code&gt;、&lt;code&gt;monitor&lt;/code&gt;）、Connection（&lt;code&gt;gear-aggregate&lt;/code&gt;、&lt;code&gt;framework-synthesize&lt;/code&gt;、&lt;code&gt;query&lt;/code&gt;、&lt;code&gt;tension-resolve&lt;/code&gt;）與 Thought（&lt;code&gt;provenance-audit&lt;/code&gt;、&lt;code&gt;refine&lt;/code&gt;、&lt;code&gt;question-assess&lt;/code&gt;、&lt;code&gt;question-challenge&lt;/code&gt;）。倉庫內建三篇示範論文的 annotation，並附有從設定到完成第一篇 Connection note 的教學影片。設計上可搭配 
+&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; 倉庫（負責從 PDF 生成原子卡片），以及讓 Claude Code 能在 Obsidian 內執行的 lean-obsidian-terminal 社群外掛使用。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Annotation_Blank（miniverse）</title>
+      <link>http://scchen.com/zh/project/annotation-blank/</link>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/annotation-blank/</guid>
+      <description>&lt;p&gt;Annotation_Blank（內部名稱為 miniverse）是一個最小化的 Obsidian vault，用於透過 AI 將學術論文 PDF 轉換為結構化的 Annotation 筆記。它把作者完整的 Program_verse 工作流簡化為單一流程：將 PDF 放入 vault，在 Obsidian 內以 ALT+L 選單執行三個指令，即可取得一篇附帶 20 張原子 Zettelkasten 卡片的完整 Annotation 筆記。&lt;/p&gt;
+&lt;p&gt;三個步驟依序為：從 PDF 生成 Markdown 投影片大綱、依大綱生成 20 張原子卡片、並將兩者匯入 vault ACT 資料夾結構下的 &lt;code&gt;Author-Year&lt;/code&gt; Annotation 筆記。此專案以 
+&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; 倉庫作為 AI 後端，仰賴 QuickAdd 與 Templater 這兩個 Obsidian 外掛提供選單功能，並至少需要一組 LLM API 金鑰（Gemini、OpenAI 或 Anthropic 皆可）。它是作者更大範圍 CSC PKM 系統的一環，該系統另包含負責筆記樣板的 ACT_Base，以及負責本機推論的 twcc-ollama-proxy。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mental simulation | Sau-Chin Chen&#39;s website</title>
-    <link>/tags/mental-simulation/</link>
-      <atom:link href="/tags/mental-simulation/index.xml" rel="self" type="application/rss+xml" />
+    <title>mental simulation | Sau-Chin Chen&#39;s Website</title>
+    <link>http://scchen.com/tags/mental-simulation/</link>
+      <atom:link href="http://scchen.com/tags/mental-simulation/index.xml" rel="self" type="application/rss+xml" />
     <description>mental simulation</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 30 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=true) shape:circle]</url>
       <title>mental simulation</title>
-      <link>/tags/mental-simulation/</link>
+      <link>http://scchen.com/tags/mental-simulation/</link>
     </image>
     
     <item>
-      <title>Orientation Effects across Languages</title>
-      <link>/project/mental_simulation/</link>
-      <pubDate>Fri, 30 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/project/mental_simulation/</guid>
+      <title>Does Object Size Matter with Regard to the Mental Simulation of Object Orientation?</title>
+      <link>http://scchen.com/publication/journal-article/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/publication/journal-article/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Mental Simulation in Reading Sentence</title>
+      <link>http://scchen.com/project/mental-simulation/mental-simulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/mental-simulation/mental-simulation/</guid>
+      <description>&lt;p&gt;When we are reading the sentences describing the status of objects, such as ‘The painter is cleaning his brush’, how our minds catch the details? This issue has been explored longer than a decade since the match advantages of sentence-picture verification task have been robustly replicated across shape, color, size and orientation. The sentence-picture verification task requires the participants read the sentence then verify the target picture. When the target picture match the visual feature implied by the sentence, the reponses are usually faster than the pictures that mismatch the implied visual feature. For example, the responses to the “standing eagle” are faster after the sentence “The ranger saw the eagle in the nest” than the sentence “The hunber aims the eagle flying on the sky”.&lt;/p&gt;
+&lt;p&gt;The accumulated findings show the decreasing match advantages from shape, color, size, then orientation. Because these findings are from Western societies, it appears to be that the object orientations are difficultly simulated in Western minds.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Under construction&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

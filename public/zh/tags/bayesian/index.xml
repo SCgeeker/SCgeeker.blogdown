@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bayesian | 暗微幽光</title>
+    <link>http://scchen.com/zh/tags/bayesian/</link>
+      <atom:link href="http://scchen.com/zh/tags/bayesian/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bayesian</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><copyright>© 2017 Sau-Chin Chen</copyright>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=true) shape:circle]</url>
+      <title>Bayesian</title>
+      <link>http://scchen.com/zh/tags/bayesian/</link>
+    </image>
+    
+    <item>
+      <title>Autopsy of NHST and Bayesian Models (part 1)</title>
+      <link>http://scchen.com/zh/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
+      <description>
+
+
+&lt;p&gt;Chapter 2 of &lt;a href=&#34;http://xcelab.net/rm/statistical-rethinking/&#34;&gt;Statistical Rethinking: A Bayesian Course with Examples in R and Stan&lt;/a&gt; introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated &lt;strong&gt;Data Story&lt;/strong&gt; , then &lt;strong&gt;update&lt;/strong&gt; the models by filling data in, and finally &lt;strong&gt;evaluate&lt;/strong&gt; all the &lt;strong&gt;upated&lt;/strong&gt; models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s &lt;a href=&#34;https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf&#34;&gt;Bayesian Basics: A Conceptual Introduction with Application in R and Stan&lt;/a&gt; on &lt;a href=&#34;http://mc-stan.org/documentation/&#34;&gt;Stan official site&lt;/a&gt;, I require the key to understand the difference between the two golems.&lt;/p&gt;
+&lt;p&gt;The critical difference is which type of &lt;strong&gt;conditional probability&lt;/strong&gt; the statistical method is used to evaluate the model. Once we collected the data based on some hypothesis, we have the distribution of hypothesis $ p( ) $ and the distribution of data $ p(y) $. NHST compuates the probability we have the data when the hypothesis is true $ p(y|) $. In practical, &lt;em&gt;p&lt;/em&gt; value refers to the &lt;strong&gt;conditional probability&lt;/strong&gt; of the null hypothesis, and * confidence interval* suggests a range of plausible outcomes based on the &lt;em&gt;confiditional probability&lt;/em&gt; of the real hypothesis. A Bayesian method compuates the probability the hypothesis is approved based on the data we have $ p(|y) $. Because the computation of $ p(|y) $ needs the likelihood $ p(y|) $ and the priori $ p() $, of course a Baysian method cost more steps than NHST.&lt;/p&gt;
+&lt;p&gt;$ $ has a term &lt;strong&gt;parameter&lt;/strong&gt; in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. &lt;strong&gt;Likelihood&lt;/strong&gt; is the &lt;strong&gt;sampling distribution&lt;/strong&gt; we have to update before we run NHST. As like I show in &lt;a href=&#34;http://scchen.com/blog/2016/03/learning-sampling-distribution-in-r-programming.html&#34;&gt;Learning Sampling Distribution in R Programming&lt;/a&gt;, a sampling distribution will approach one $ $ with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.&lt;/p&gt;
+&lt;p&gt;Here is a pseudo experiment I want to know if a test is success based on the expect value smaller than 5 (Obersvations are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10). I completed an experiment of 25 observations and an experiment 36 observations. In use of NHST with a critical value (p &amp;lt; .05), the criterion change with the sample size. The simulation&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;set.seed(1)
+OBV &amp;lt;- 1:10
+Dist25 &amp;lt;- NULL
+Dist36 &amp;lt;- NULL
+count = 100
+while(count &amp;gt; 0){Dist25 &amp;lt;- c(Dist25,mean(sample(OBV, 25,replace = TRUE) ) ); count &amp;lt;- count - 1}
+Dist25_Density &amp;lt;- data.frame(Theta = density(Dist25, kernel = &amp;quot;gaussian&amp;quot;)$x, Density = density(Dist25, kernel = &amp;quot;gaussian&amp;quot;)$y)
+CL25 &amp;lt;- max(Dist25_Density$Theta[Dist25_Density$Theta &amp;lt; 5 &amp;amp; Dist25_Density$Density &amp;lt; .05])
+print(CL25)  ## The smallest parameter that could make judgement
+
+
+## [1] 4.152939
+
+
+count = 100
+while(count &amp;gt; 0){Dist36 &amp;lt;- c(Dist36,mean(sample(OBV, 36,replace = TRUE) ) ); count &amp;lt;- count - 1}
+Dist36_Density &amp;lt;- data.frame(Theta = density(Dist36, kernel = &amp;quot;gaussian&amp;quot;)$x, Density = density(Dist36, kernel = &amp;quot;gaussian&amp;quot;)$y)
+CL36 &amp;lt;- max(Dist36_Density$Theta[Dist36_Density$Theta &amp;lt; 5 &amp;amp; Dist36_Density$Density &amp;lt; .05])
+print(CL36)  ## The smallest parameter that could make judgement
+
+
+## [1] 4.41705&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When this experiment outputs a avarage value between 4.15 and 4.42, would you like to collect the data more than 36 participants? This is the opportunity many researchers have to struggle in their study. Researchers who are educated as like me used to collect the observation till the &lt;em&gt;p&lt;/em&gt; value is smaller than .05. Most researchers used to stop the experiment till the 36th participant finished the experiment. However, this treatment lacks of the serious scientific thinking. If the hypothesis has set up the conditions to have the average, the sample size should be appointed before the start of experiment.&lt;/p&gt;
+&lt;p&gt;The appointment of sample size could be loose when the possible average is uncertain. When the experiment is conducted at first time in the world, NHST without the appointment of sample size could draw the range of averages that might obey the hypothesis. On the other hand, the following studies better has the appointment of sample size. In this case, NHST has to accompany the other statistical evaluation, such as power, effect size, to find the appropriate sample size. Therefore, NHST will perform well when the researcher conducted the first study or have the preparation as well as the first study. This will be the key in my autopsy of Bayesian method.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

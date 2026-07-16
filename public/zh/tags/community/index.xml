@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community | 暗微幽光</title>
+    <link>http://scchen.com/zh/tags/community/</link>
+      <atom:link href="http://scchen.com/zh/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    <description>Community</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Thu, 10 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Community</title>
+      <link>http://scchen.com/zh/tags/community/</link>
+    </image>
+    
+    <item>
+      <title>翻譯專案：Improving Your Statistical Inferences 中文化</title>
+      <link>http://scchen.com/zh/project/improving-statistical-inferences-zh/</link>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/improving-statistical-inferences-zh/</guid>
+      <description>&lt;p&gt;本專案協調了一項協作翻譯計畫，將 Daniël Lakens 廣受好評的 Coursera 課程「Improving Your Statistical Inferences」翻譯為中文，目的是將其統計推論與研究方法教材，推廣給更廣大的中文使用者。&lt;/p&gt;
+&lt;p&gt;陳紹慶（Sau-Chin Chen）組織了這項社群翻譯專案，與其他貢獻者在 OSF 上共同協作，將課程內容推廣到原本以英語授課所觸及範圍之外的更廣大讀者群。&lt;/p&gt;
+&lt;p&gt;本專案體現了社群自發參與開放統計教育的貢獻，讓這套受到肯定的方法學訓練教材得以跨越語言隔閡，觸及更多學習者。&lt;/p&gt;
+&lt;p&gt;維護狀態：Stable——已完成，存檔於 OSF。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

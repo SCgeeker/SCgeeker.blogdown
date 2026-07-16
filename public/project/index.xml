@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Sau-Chin Chen&#39;s website</title>
+    <title>Projects | Sau-Chin Chen&#39;s Website</title>
     <link>http://scchen.com/project/</link>
       <atom:link href="http://scchen.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en</language><copyright>© 2017~2021 Sau-Chin Chen</copyright><lastBuildDate>Fri, 30 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2017 Sau-Chin Chen</copyright>
     <image>
-      <url>http://scchen.com/media/icon_huc82a1284e5a96b215db79368a756ab5f_356981_512x512_fill_lanczos_center_2.png</url>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=true) shape:circle]</url>
       <title>Projects</title>
       <link>http://scchen.com/project/</link>
     </image>
     
     <item>
-      <title>Orientation Effects across Languages</title>
-      <link>http://scchen.com/project/mental_simulation/</link>
-      <pubDate>Fri, 30 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/project/mental_simulation/</guid>
+      <title>External Project</title>
+      <link>http://scchen.com/project/example-external-project/example-external-project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/example-external-project/example-external-project/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Mental Simulation in Reading Sentence</title>
+      <link>http://scchen.com/project/mental-simulation/mental-simulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/mental-simulation/mental-simulation/</guid>
+      <description>&lt;p&gt;When we are reading the sentences describing the status of objects, such as ‘The painter is cleaning his brush’, how our minds catch the details? This issue has been explored longer than a decade since the match advantages of sentence-picture verification task have been robustly replicated across shape, color, size and orientation. The sentence-picture verification task requires the participants read the sentence then verify the target picture. When the target picture match the visual feature implied by the sentence, the reponses are usually faster than the pictures that mismatch the implied visual feature. For example, the responses to the “standing eagle” are faster after the sentence “The ranger saw the eagle in the nest” than the sentence “The hunber aims the eagle flying on the sky”.&lt;/p&gt;
+&lt;p&gt;The accumulated findings show the decreasing match advantages from shape, color, size, then orientation. Because these findings are from Western societies, it appears to be that the object orientations are difficultly simulated in Western minds.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Under construction&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

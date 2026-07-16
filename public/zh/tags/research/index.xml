@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research | 暗微幽光</title>
+    <link>http://scchen.com/zh/tags/research/</link>
+      <atom:link href="http://scchen.com/zh/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <description>Research</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Research</title>
+      <link>http://scchen.com/zh/tags/research/</link>
+    </image>
+    
+    <item>
+      <title>Justify Your Alpha（為你的顯著水準辯護）</title>
+      <link>http://scchen.com/zh/project/justify-your-alpha/</link>
+      <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/justify-your-alpha/</guid>
+      <description>&lt;p&gt;本專案回應了 Benjamin 等人（2018，發表於《Nature Human Behaviour》）廣受討論的提案，該提案主張將傳統顯著水準門檻降低至 p ≤ .005，以重新定義統計顯著性。參與合作的作者群並未主張採用單一固定門檻，而是主張研究者應透明地報告並說明其研究所選用顯著水準（alpha）的理由，將顯著水準視為依情境而定的研究設計決策，而非放諸四海皆準的常數。&lt;/p&gt;
+&lt;p&gt;陳紹慶（Sau-Chin Chen）是這項大型多作者方法學專案的共同作者之一，該專案集結了來自多個機構的統計學家與方法學者，共同形成對研究設計中誤差控制議題的共同立場。&lt;/p&gt;
+&lt;p&gt;本專案的重要性在於，將統計顯著性的辯論從尋求單一「正確」門檻，轉向更廣泛地強調研究設計選擇中的透明度與正當性說明，此一立場其後也影響了統計實務的更廣泛討論。&lt;/p&gt;
+&lt;p&gt;維護狀態：Stable——已完成，存檔於 OSF。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>跨越14種語言的物體方向效果研究</title>
+      <link>http://scchen.com/zh/project/psa002-object-orientation/</link>
+      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/psa002-object-orientation/</guid>
+      <description>&lt;p&gt;本專案為心理科學加速器（Psychological Science Accelerator）第002號計畫（PSA 002），探討人們在閱讀描述物體的句子時，是否會心理模擬該物體的空間方向，延續了語言理解中心理模擬理論的長期研究脈絡。過去以「句子—圖片驗證作業」進行的研究，已穩定發現形狀、顏色、大小等視覺特徵存在配對優勢，但物體方向的證據較為有限，且多數證據來自西方樣本。本研究結合大規模跨語言複製實驗與心理旋轉作業，檢視個人心理意象能力與方向效果強弱之間的關聯。&lt;/p&gt;
+&lt;p&gt;陳紹慶（Sau-Chin Chen）是本專案的提案人與主持人，將其發展為透過心理科學加速器網絡協調的大型跨實驗室合作計畫，集結了數十個參與實驗室與多種語言版本。最終的註冊報告涵蓋18種語言、近4,000名參與者，以
+&lt;a href=&#34;https://doi.org/10.1007/s12144-025-08304-x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Investigating object orientation effects across 18 languages&lt;/a&gt;為題發表於《Current Psychology》（2025）。&lt;/p&gt;
+&lt;p&gt;藉由在多種語言的使用者身上測試相同典範，本專案提供了迄今最直接的跨語言檢驗之一，驗證物體方向心理模擬現象是否能超越最初發現該現象的語言而普遍成立，並建立了一個具充分統計檢定力的資料集，將此現象與個人心理意象能力的差異連結起來。&lt;/p&gt;
+&lt;p&gt;維護狀態：Stable——已完成，存檔於 OSF。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

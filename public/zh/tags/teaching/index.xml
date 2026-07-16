@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching | 暗微幽光</title>
+    <link>http://scchen.com/zh/tags/teaching/</link>
+      <atom:link href="http://scchen.com/zh/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teaching</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>zh-Hant</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Teaching</title>
+      <link>http://scchen.com/zh/tags/teaching/</link>
+    </image>
+    
+    <item>
+      <title>心理教育統計 2026 教學簡報</title>
+      <link>http://scchen.com/zh/project/lsj-2026-lecture-slides/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/lsj-2026-lecture-slides/</guid>
+      <description>&lt;p&gt;本倉庫收錄慈濟大學人類發展與心理學系 2026 年基礎統計課程的教學簡報，並發布為可線上瀏覽的繁體中文簡報網站。&lt;/p&gt;
+&lt;p&gt;簡報對象為修習該課程的學生，讓他們在課堂教學之外，隨時能上線查閱該學期的講授內容。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——隨 2026 學年課程進度持續更新。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>《用 jamovi 上手統計學》繁體中文版</title>
+      <link>http://scchen.com/zh/project/lsj-book-zh-tw/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/lsj-book-zh-tw/</guid>
+      <description>&lt;p&gt;本倉庫收錄 Danielle Navarro 與 David Foxcroft 所著開放教科書《Learning Statistics with jamovi: A Tutorial for Psychology Students and Other Beginners》的繁體中文翻譯原始碼，該書本身改編自 Navarro 較早的《Learning Statistics with R》。書籍以 Quarto（&lt;code&gt;.qmd&lt;/code&gt;）原始檔建置，可輸出 HTML、PDF 與 EPUB 格式。&lt;/p&gt;
+&lt;p&gt;這份翻譯的對象是希望以 jamovi（而非 R）搭配學習的華語心理系學生與教師，提供一本免費、開放的統計學入門教科書。原則上，本倉庫包含從頭重建整本書所需的一切，且已建置的網站版本可直接線上閱讀。&lt;/p&gt;
+&lt;p&gt;本書採用 CC BY-SA 4.0 授權釋出，允許在標明出處的前提下重用、混編與再散布（含商業用途），衍生版本須採用相同授權條款。&lt;/p&gt;
+&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EXPPSY Opensci：實驗心理學方法開放教科書</title>
+      <link>http://scchen.com/zh/project/exppsy-opensci/</link>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/exppsy-opensci/</guid>
+      <description>&lt;p&gt;EXPPSY Opensci 是一本開放原始碼的實驗心理學方法教科書，以 R Markdown 及 
+&lt;a href=&#34;https://github.com/debruine/booktem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;booktem&lt;/a&gt; 樣板建置。全書已發布為可線上瀏覽的網站版本，學生與教師無需自行建置即可直接閱讀。&lt;/p&gt;
+&lt;p&gt;本書鎖定學習心理學實驗設計邏輯與實作的學生，其原始碼倉庫可完整重現線上發布的內容。&lt;/p&gt;
+&lt;p&gt;維護狀態：Stable——內容已完成，倉庫維持可用狀態，目前無新章節的持續開發。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>台灣實驗心理學教學專案集</title>
+      <link>http://scchen.com/zh/project/teaching-exppsy-taiwan/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/teaching-exppsy-taiwan/</guid>
+      <description>&lt;p&gt;本專案收集陳紹慶（Sau-Chin Chen）在慈濟大學多個學年教授實驗心理學課程時，以 OSF 為基礎所產生的課程專案，彙整學生與課程在開放研究實務實作訓練中所產出的教材與作品。&lt;/p&gt;
+&lt;p&gt;陳紹慶身為授課教師，建立並持續維護這個作為總覽的 OSF 節點，將歷年教授實驗心理學課程中大學部學生的課程專案陸續加入其中。&lt;/p&gt;
+&lt;p&gt;這個作品集展現了將預先登記（preregistration）與透過 OSF 分享資料等開放科學實務，直接融入大學部實驗心理學課程訓練的長期努力，而非將其視為額外附加的技能。&lt;/p&gt;
+&lt;p&gt;維護狀態：Stable——持續累積中的教學檔案庫，隨新學年課程加入而更新。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>心理科學基礎統計</title>
+      <link>http://scchen.com/zh/project/basic-statistics-osf/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/zh/project/basic-statistics-osf/</guid>
+      <description>&lt;p&gt;本專案是陳紹慶（Sau-Chin Chen）線上教科書「心理科學基礎統計」的 OSF 配套專案，收錄該教科書所搭配的示範材料下載區與習題模組。&lt;/p&gt;
+&lt;p&gt;陳紹慶身為授課教師，建立並維護本專案，用以釋出資料集與練習模組，讓學生能直接應用教科書中所介紹的統計概念。&lt;/p&gt;
+&lt;p&gt;透過將實作教材存放於 OSF，本專案讓這些練習資源得以與教科書一同公開取用、重複使用，協助學習心理學研究基礎統計的學生。&lt;/p&gt;
+&lt;p&gt;維護狀態：Stable——與教科書並行維護的配套資源。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
