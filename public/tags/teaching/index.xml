@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching | Sau-Chin Chen&#39;s Website</title>
+    <link>http://scchen.com/tags/teaching/</link>
+      <atom:link href="http://scchen.com/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teaching</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Teaching</title>
+      <link>http://scchen.com/tags/teaching/</link>
+    </image>
+    
+    <item>
+      <title>LSJ 2026 Lecture Slides</title>
+      <link>http://scchen.com/project/lsj-2026-lecture-slides/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/lsj-2026-lecture-slides/</guid>
+      <description>&lt;p&gt;This repository collects the lecture slides for the 2026 basic statistics course taught at Tzu-Chi University&amp;rsquo;s Department of Human Development, published as a browsable Traditional Chinese slide-deck site.&lt;/p&gt;
+&lt;p&gt;The slides are aimed at students taking the course, giving them an always-available online reference to the semester&amp;rsquo;s lecture material alongside classroom instruction.&lt;/p&gt;
+&lt;p&gt;Status: Active — updated over the course of the 2026 teaching term.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning Statistics with jamovi (Traditional Chinese Translation)</title>
+      <link>http://scchen.com/project/lsj-book-zh-tw/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/lsj-book-zh-tw/</guid>
+      <description>&lt;p&gt;This repository contains the Traditional Chinese translation source for &lt;em&gt;Learning Statistics with jamovi: A Tutorial for Psychology Students and Other Beginners&lt;/em&gt; by Danielle Navarro and David Foxcroft, itself an adaptation of Navarro&amp;rsquo;s earlier &lt;em&gt;Learning Statistics with R&lt;/em&gt;. The book is built from Quarto (&lt;code&gt;.qmd&lt;/code&gt;) source files and renders to HTML, PDF, and EPUB.&lt;/p&gt;
+&lt;p&gt;The translation is intended for Chinese-speaking psychology students and instructors who want a free, open introductory statistics textbook that pairs with jamovi rather than R. In principle the repository contains everything needed to rebuild the book from scratch, and the rendered site is published online for direct reading.&lt;/p&gt;
+&lt;p&gt;The book is released under a CC BY-SA 4.0 license, so it can be reused, remixed, and redistributed, including commercially, as long as appropriate credit is given and derivative versions carry the same license.&lt;/p&gt;
+&lt;p&gt;Status: Active — under regular maintenance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EXPPSY Opensci: An Open Textbook for Experimental Psychology Methods</title>
+      <link>http://scchen.com/project/exppsy-opensci/</link>
+      <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/exppsy-opensci/</guid>
+      <description>&lt;p&gt;EXPPSY Opensci is an open-source textbook on experimental psychology methods, built on R Markdown and the 
+&lt;a href=&#34;https://github.com/debruine/booktem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;booktem&lt;/a&gt; template. It is published as a browsable online book so students and instructors can read the material directly without building it locally.&lt;/p&gt;
+&lt;p&gt;The book targets students learning the logic and practice of experimental design in psychology, and it is structured so that the source repository can reproduce the published site end to end.&lt;/p&gt;
+&lt;p&gt;Status: Stable — content is complete and the repository is kept available with no active new-chapter development.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Teaching Experimental Psychology in Taiwan</title>
+      <link>http://scchen.com/project/teaching-exppsy-taiwan/</link>
+      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/teaching-exppsy-taiwan/</guid>
+      <description>&lt;p&gt;This project collects the OSF-based experimental psychology course projects that Sau-Chin Chen has taught at Tzu-Chi University over several academic years, gathering student and course materials produced as part of hands-on training in open research practices.&lt;/p&gt;
+&lt;p&gt;As the instructor, Sau-Chin Chen created and maintains this parent OSF node as a running archive, adding course projects from successive years of teaching experimental psychology to undergraduate students.&lt;/p&gt;
+&lt;p&gt;The collection illustrates a sustained effort to integrate open science practices, including preregistration and data sharing through OSF, directly into undergraduate experimental psychology training rather than treating them as separate add-on skills.&lt;/p&gt;
+&lt;p&gt;Status: Stable — an ongoing teaching archive, updated as new course years are added.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Basic Statistics for Psychological Science (OSF Companion)</title>
+      <link>http://scchen.com/project/basic-statistics-osf/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/basic-statistics-osf/</guid>
+      <description>&lt;p&gt;This project is the OSF companion to Sau-Chin Chen&amp;rsquo;s online statistics textbook for psychological science, hosting the demonstration materials and downloadable exercise modules that accompany the text.&lt;/p&gt;
+&lt;p&gt;Sau-Chin Chen created and maintains this project as an instructor, using it to distribute datasets and practice modules that let students apply the concepts covered in the textbook directly.&lt;/p&gt;
+&lt;p&gt;By keeping the practical materials on OSF, the project makes the exercises openly accessible and reusable alongside the textbook, supporting students learning basic statistics for psychological research.&lt;/p&gt;
+&lt;p&gt;Status: Stable — a companion resource maintained alongside the textbook.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

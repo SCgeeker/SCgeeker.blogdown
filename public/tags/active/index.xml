@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active | Sau-Chin Chen&#39;s Website</title>
+    <link>http://scchen.com/tags/active/</link>
+      <atom:link href="http://scchen.com/tags/active/index.xml" rel="self" type="application/rss+xml" />
+    <description>Active</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Active</title>
+      <link>http://scchen.com/tags/active/</link>
+    </image>
+    
+    <item>
+      <title>Claude Lit Workflow</title>
+      <link>http://scchen.com/project/claude-journal-club-agents/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/claude-journal-club-agents/</guid>
+      <description>&lt;p&gt;This repository now hosts Claude Lit Workflow, a literature-processing toolkit that generates academic slides and Zettelkasten atomic notes directly from a PDF, a URL, or a topic, outputting plain Markdown that imports cleanly into Obsidian and similar note-taking apps. It can be driven through a CLI, an MCP server (stdio or Streamable HTTP), or an Obsidian QuickAdd wrapper.&lt;/p&gt;
+&lt;p&gt;Two generators sit at its core: a slide generator that supports seven academic styles, five levels of detail, and three languages, producing Obsidian Slides/Marp-compatible Markdown or PPTX; and a Zettelkasten card generator that produces atomic, cross-paper-linkable notes for knowledge-base integration. It supports multiple LLM providers, including Google Gemini, OpenAI, Anthropic, Ollama, and NVIDIA NIM, selectable per run.&lt;/p&gt;
+&lt;p&gt;The project is written in Python, installed and run with &lt;code&gt;uv&lt;/code&gt;, and documents its behavior specs under &lt;code&gt;openspec/&lt;/code&gt; following a spec-driven development process.&lt;/p&gt;
+&lt;p&gt;Status: Active — under regular maintenance, currently at version 0.12.0.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TWCC Ollama Proxy</title>
+      <link>http://scchen.com/project/twcc-ollama-proxy/</link>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/twcc-ollama-proxy/</guid>
+      <description>&lt;p&gt;TWCC Ollama Proxy forwards local Ollama API requests to a TWCC (Taiwan Computing Cloud) development-type container (CCS) for LLM inference, exposing an endpoint at &lt;code&gt;localhost:11434&lt;/code&gt; that is API-compatible with standard Ollama. It currently supports the CrystalMind and GemmaPro GGUF models, with a reasoning-tuned GemmaPro-r variant for more complex extraction tasks.&lt;/p&gt;
+&lt;p&gt;Any tool that lets you point at a custom Ollama URL, such as Open WebUI or Continue.dev, can connect to it directly. Each API call spins up a TWCC CCS container with one GPU, runs the requested inference, and tears the container down afterward, so cost is billed only for the container&amp;rsquo;s short lifetime (typically one to two minutes per call). Setup requires a Windows machine, Python 3.10+ managed with &lt;code&gt;uv&lt;/code&gt;, a TWCC account with CCS access, and an uploaded SSH key; model files are staged once on TWCC&amp;rsquo;s shared HFS storage.&lt;/p&gt;
+&lt;p&gt;Status: Active — under regular maintenance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LSJ 2026 Lecture Slides</title>
+      <link>http://scchen.com/project/lsj-2026-lecture-slides/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/lsj-2026-lecture-slides/</guid>
+      <description>&lt;p&gt;This repository collects the lecture slides for the 2026 basic statistics course taught at Tzu-Chi University&amp;rsquo;s Department of Human Development, published as a browsable Traditional Chinese slide-deck site.&lt;/p&gt;
+&lt;p&gt;The slides are aimed at students taking the course, giving them an always-available online reference to the semester&amp;rsquo;s lecture material alongside classroom instruction.&lt;/p&gt;
+&lt;p&gt;Status: Active — updated over the course of the 2026 teaching term.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning Statistics with jamovi (Traditional Chinese Translation)</title>
+      <link>http://scchen.com/project/lsj-book-zh-tw/</link>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/lsj-book-zh-tw/</guid>
+      <description>&lt;p&gt;This repository contains the Traditional Chinese translation source for &lt;em&gt;Learning Statistics with jamovi: A Tutorial for Psychology Students and Other Beginners&lt;/em&gt; by Danielle Navarro and David Foxcroft, itself an adaptation of Navarro&amp;rsquo;s earlier &lt;em&gt;Learning Statistics with R&lt;/em&gt;. The book is built from Quarto (&lt;code&gt;.qmd&lt;/code&gt;) source files and renders to HTML, PDF, and EPUB.&lt;/p&gt;
+&lt;p&gt;The translation is intended for Chinese-speaking psychology students and instructors who want a free, open introductory statistics textbook that pairs with jamovi rather than R. In principle the repository contains everything needed to rebuild the book from scratch, and the rendered site is published online for direct reading.&lt;/p&gt;
+&lt;p&gt;The book is released under a CC BY-SA 4.0 license, so it can be reused, remixed, and redistributed, including commercially, as long as appropriate credit is given and derivative versions carry the same license.&lt;/p&gt;
+&lt;p&gt;Status: Active — under regular maintenance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>P-CSO: Pinker&#39;s Cognitive Style Optimization for Academic Writing</title>
+      <link>http://scchen.com/project/p-cso/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/p-cso/</guid>
+      <description>&lt;p&gt;P-CSO (Pinker&amp;rsquo;s Cognitive Style Optimization) is a Claude Code skill set for academic writing, built around the sentence-level and paragraph-level principles from Chapters 4 and 5 of Steven Pinker&amp;rsquo;s &lt;em&gt;The Sense of Style&lt;/em&gt;. It aims to reduce the cognitive burden a text places on its reader by improving syntax clarity and paragraph coherence.&lt;/p&gt;
+&lt;p&gt;The system ships six skills covering a full drafting workflow: &lt;code&gt;p-cso-workflow&lt;/code&gt; runs the complete pipeline from notes to optimized draft, &lt;code&gt;pinker-syntax&lt;/code&gt; and &lt;code&gt;pinker-coherence&lt;/code&gt; apply the sentence- and paragraph-level rules individually, &lt;code&gt;pinker-quick&lt;/code&gt; gives fast feedback during active drafting, &lt;code&gt;notes-to-manuscript&lt;/code&gt; scaffolds structured drafts from raw notes, and &lt;code&gt;english-editing&lt;/code&gt; handles final grammar and article-usage polish. It installs either through the Claude Code plugin marketplace or by placing the skill files locally in a project.&lt;/p&gt;
+&lt;p&gt;Every skill returns a diagnostic report explaining what was changed and why, so the writer can learn to apply the same principles unassisted in future drafts, rather than treating the tool as a black box.&lt;/p&gt;
+&lt;p&gt;Status: Active — currently version 0.9.0 (preview), under regular development.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ACT_Base: Annotation-Connection-Thought Workflow for Obsidian</title>
+      <link>http://scchen.com/project/act-base/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/act-base/</guid>
+      <description>&lt;p&gt;ACT_Base is a minimal Obsidian vault that demonstrates the Annotation → Connection → Thought (ACT) knowledge workflow, driven by Claude Code skills run from a terminal inside Obsidian. Users drop in atomic Zettelkasten cards generated from papers, then run dedicated skills to turn isolated cards into a cross-paper knowledge network.&lt;/p&gt;
+&lt;p&gt;The vault organizes twelve skills across three layers: Annotation (&lt;code&gt;card-review&lt;/code&gt;, &lt;code&gt;gear-coaching&lt;/code&gt;, &lt;code&gt;cross-link&lt;/code&gt;, &lt;code&gt;monitor&lt;/code&gt;), Connection (&lt;code&gt;gear-aggregate&lt;/code&gt;, &lt;code&gt;framework-synthesize&lt;/code&gt;, &lt;code&gt;query&lt;/code&gt;, &lt;code&gt;tension-resolve&lt;/code&gt;), and Thought (&lt;code&gt;provenance-audit&lt;/code&gt;, &lt;code&gt;refine&lt;/code&gt;, &lt;code&gt;question-assess&lt;/code&gt;, &lt;code&gt;question-challenge&lt;/code&gt;). It ships with three pre-loaded demo annotations and a video walkthrough covering setup through the first Connection note. It is designed to pair with the 
+&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; repository, which can generate the atomic cards from source PDFs, and with the lean-obsidian-terminal community plugin for running Claude Code inside Obsidian.&lt;/p&gt;
+&lt;p&gt;Status: Active — under regular maintenance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Annotation_Blank (miniverse)</title>
+      <link>http://scchen.com/project/annotation-blank/</link>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/annotation-blank/</guid>
+      <description>&lt;p&gt;Annotation_Blank, internally named miniverse, is a minimal Obsidian vault for converting academic PDFs into structured Annotation notes using AI. It strips down the author&amp;rsquo;s full Program_verse workflow to a single pipeline: drop a PDF into the vault, run three commands from an ALT+L menu inside Obsidian, and get a fully formed Annotation note with 20 atomic Zettelkasten cards.&lt;/p&gt;
+&lt;p&gt;The three steps generate a Markdown slide outline from the PDF, generate 20 atomic cards from that outline, and import both into an &lt;code&gt;Author-Year&lt;/code&gt; Annotation note under the vault&amp;rsquo;s ACT folder structure. It depends on the 
+&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; repository as its AI backend, on the QuickAdd and Templater Obsidian plugins for the menu, and on at least one LLM API key (Gemini, OpenAI, or Anthropic). It is one piece of the author&amp;rsquo;s broader CSC PKM system, which also includes ACT_Base for note templates and twcc-ollama-proxy for local inference.&lt;/p&gt;
+&lt;p&gt;Status: Active — under regular maintenance.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

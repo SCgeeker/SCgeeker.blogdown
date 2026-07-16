@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community | Sau-Chin Chen&#39;s Website</title>
+    <link>http://scchen.com/tags/community/</link>
+      <atom:link href="http://scchen.com/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    <description>Community</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Thu, 10 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Community</title>
+      <link>http://scchen.com/tags/community/</link>
+    </image>
+    
+    <item>
+      <title>Translation Project: Improving Your Statistical Inferences</title>
+      <link>http://scchen.com/project/improving-statistical-inferences-zh/</link>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/project/improving-statistical-inferences-zh/</guid>
+      <description>&lt;p&gt;This project coordinated a collaborative effort to translate Daniël Lakens&#39; well-known Coursera course, &amp;ldquo;Improving Your Statistical Inferences,&amp;rdquo; into Chinese, aiming to bring its material on statistical inference and research methodology to a wider Chinese-speaking audience.&lt;/p&gt;
+&lt;p&gt;Sau-Chin Chen organized this project as a community translation effort, working with other contributors on OSF to push the course&amp;rsquo;s content out to a broader audience beyond its original English-language delivery.&lt;/p&gt;
+&lt;p&gt;The project reflects a community-driven contribution to open statistics education, extending the reach of well-regarded methodology training materials across a language barrier.&lt;/p&gt;
+&lt;p&gt;Status: Stable — completed and archived on OSF.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

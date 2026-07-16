@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Psychological Science Accelerator | Sau-Chin Chen&#39;s Website</title>
+    <link>http://scchen.com/tags/psychological-science-accelerator/</link>
+      <atom:link href="http://scchen.com/tags/psychological-science-accelerator/index.xml" rel="self" type="application/rss+xml" />
+    <description>Psychological Science Accelerator</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2017 Sau-Chin Chen</copyright><lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[email:pmsp96@gmail.com gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Psychological Science Accelerator</title>
+      <link>http://scchen.com/tags/psychological-science-accelerator/</link>
+    </image>
+    
+    <item>
+      <title>Investigating object orientation effects across 18 languages</title>
+      <link>http://scchen.com/publication/object-orientation-18-languages/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://scchen.com/publication/object-orientation-18-languages/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
