@@ -495,6 +495,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 
 </main> <!-- /main -->
+<!-- 修正搜尋框 IME（注音/大易等）組字被 autocomplete 重繪打斷的問題。
+     原理：組字期間（compositionstart~end）攔截 input/keydown 事件，
+     不讓 Algolia autocomplete 更新查詢與重繪；組字完成後補送一次
+     input 事件讓查詢同步。en/zh 兩專案各持一份，修改需同步。 -->
+<script>
+(function () {
+  var composing = false;
+  function inSearch(el) {
+    return el && el.closest &&
+      el.closest('#quarto-search, .aa-Autocomplete, .aa-DetachedContainer');
+  }
+  document.addEventListener('compositionstart', function (e) {
+    if (inSearch(e.target)) composing = true;
+  }, true);
+  document.addEventListener('compositionend', function (e) {
+    if (!inSearch(e.target)) return;
+    composing = false;
+    var el = e.target;
+    setTimeout(function () {
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+    }, 0);
+  }, true);
+  document.addEventListener('input', function (e) {
+    if (composing && inSearch(e.target)) e.stopImmediatePropagation();
+  }, true);
+  ['keydown', 'keyup'].forEach(function (type) {
+    document.addEventListener(type, function (e) {
+      if ((e.isComposing || e.keyCode === 229) && inSearch(e.target)) {
+        e.stopPropagation();
+      }
+    }, true);
+  });
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
