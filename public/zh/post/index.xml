@@ -20,6 +20,7 @@
 
 
 
+
 <h2 id="習作目標" class="anchored">
 習作目標
 </h2>
@@ -847,6 +848,7 @@ Singal, Jesse. 2021. <em>The Quick Fix: Why Fad Psychology Can’t Cure Our Soci
 
 
 
+
 <blockquote class="blockquote">
 <p>
 本文分享的情緒調節指引來自最新心理學理論研究，運用條件有限，請留意關於應用限制的說明。若遭遇個人無法自行調適的壓力狀況，請務必向專業心理諮商人員或精神科醫師尋求協助。
@@ -969,6 +971,7 @@ Figure 1: 收集世界各地疫情影像，全球各地心理學者探討認知�
   <dc:creator>陳紹慶 </dc:creator>
   <link>https://scchen.com/zh/post/rstudio-cloud-stat-tutor/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1129,6 +1132,7 @@ Rstudio Cloud的運作方法
   <dc:creator>陳紹慶 </dc:creator>
   <link>https://scchen.com/zh/post/how-to-build-podcast-website/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1300,6 +1304,7 @@ config.toml: 增加設定likerID
 
 
 
+
 <h2 id="起源" class="anchored">
 起源
 </h2>
@@ -1396,6 +1401,7 @@ config.toml: 增加設定likerID
 
 
 
+
 <p>
 2020年雖然失去與國外朋友直接互動的機會，在國內推動開放及可重製科學卻稍有小成。2021年在許多方面將邁入新的階段，值得在這個時刻盤點這幾年累積下來的觀察與想法，好清理出接下來要繼續的方向該不該走？要怎麼走？
 </p>
@@ -1426,6 +1432,7 @@ config.toml: 增加設定likerID
   <dc:creator>陳紹慶 </dc:creator>
   <link>https://scchen.com/zh/post/update_website_log/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1596,6 +1603,7 @@ utterance使用github的留言系統，因此留言者必須註冊並登入githu
 
 
 
+
 <p>
 <a href="https://gorilla.sc/signup?referral_token=656F56B1-1DEA-4125-8C3A-2124B933AEF6">可獲得啓動點數的Gorilla註冊網址</a>
 </p>
@@ -1703,6 +1711,7 @@ Prolific註冊與建立專案
   <dc:creator>陳紹慶 </dc:creator>
   <link>https://scchen.com/zh/post/hku-mass-mobilize/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1817,6 +1826,7 @@ Fili的課程教學進度如以下取自簡報中的流程圖：
 
 
 
+
 <p>
 兩年多前我寫下第一篇討論<strong>預先註冊</strong>及<strong>註冊報告</strong>的<a href="../text_2017002/">網誌</a>，當時才剛開始準備第一項註冊報告。今年7/28與<a href="https://osf.io/9d7y4/">Chinese Open Science Network</a>合作，舉辦第一次線上工作坊。透過帶領三位研究者規劃研究計畫的預先註冊，幫助有意願嘗試的研究者開啓第一次經驗，並向旁觀朋友推廣開放研究操作。三位研究者的專案來自發展心理學、社會心理學與認知心理學，計畫目標與規模也互有差異。與三位參與者還有熱心朋友的線上互動經驗，讓我更確信在開場建議的<a href="https://scgeeker.github.io/Prereg_workshop/#/recommended-steps-">準備三步驟</a>，確實能形成值得信賴的預先註冊計畫：首先先確定最關鍵的研究問題，了解想採取的分析模式，最後盡可能列出有可能導致偽陽性結果的彈性研究操作，才能充分評估研究計畫是適合節制彈性操作的驗證性研究，還是最大化研究內容透明度的探索性研究。我就本次工作坊尚待改進的一些措施，做些檢討與建議。
 </p>
@@ -1853,6 +1863,7 @@ Fili的課程教學進度如以下取自簡報中的流程圖：
   <title>閱讀筆記：Paul Meehl談心理學理論失效的十大主因</title>
   <link>https://scchen.com/zh/post/why_psychology_failed/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1954,6 +1965,7 @@ Fili的課程教學進度如以下取自簡報中的流程圖：
 
 
 
+
 <p><strong>按</strong> ：這是為2017/11/11將在<a href="http://datasci.tw/?conf=DS">台灣資料科學年會</a>發表的演講，所寫的文字稿。演講投影片以圖像為主，講述幾個相關的故事。文字版濃縮我想傳達的想法與觀察，為一年之後有機會再做演講時，比較此時與彼時的變化。</p>
 <p>三年前(2014)，我得知<a href="http://dx.doi.org/10.1027/1864-9335/a000178"><strong>Many Labs Project</strong></a>的出現，開始注意這種大規模合作的心理學研究，將對心理科學的研究文化產生什麼影響。這類專案運用的資料科學方法，帶領我在隔一年透過Coursera自學<a href="https://www.coursera.org/specializations/jhu-data-science">資料科學課程</a>，並嘗試翻新自已的研究與教學內容。這一段時間，我曾以為我從事的科學研究要向資料科學學習，才能有所突破。又一年，經歷與國外推動開放科學的學者第一手合作註冊研究的經驗，認清如果要更新我所從事的經典科學，要先覺悟長久習慣的研究手段容易造成低品質的科學成果，吸納資料科學的可重製方法，改善個人乃至團隊的科學活動品質，經典科學才能蛻變為<strong>開放科學</strong> 。</p>
 <p>為何稱呼我從事的科學是<strong>經典科學</strong> ？這要從經典科學與資料科學的根本分際談起。從目的來說，任何領域的經典科學是要根據可重現的事實建立能被考驗的理論。資料科學追求能有效預測、控制現象發生的模型。中央研究院資訊所陳昇瑋老師的知名簡報：<a href="http://www.iis.sinica.edu.tw/~swc/talk/big_data_in_books.html">網路購書大數據－給出版者的洞察分析</a>，其中所舉的三種類型暢銷書預測模型，體現資料科學所追求的目標。把這些模型放到經典科學的場域，提問的方向應該會變成：「這些模型能呈現這個社會的閱讀品味嗎？」</p>
@@ -1979,6 +1991,7 @@ Fili的課程教學進度如以下取自簡報中的流程圖：
   <title>更嚴苛的標準能否打造嚴謹的科學？</title>
   <link>https://scchen.com/zh/post/text_2017010/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2018,6 +2031,7 @@ Fili的課程教學進度如以下取自簡報中的流程圖：
   <title>「提昇你的統計推論功力」中文資源使用說明及學習指南</title>
   <link>https://scchen.com/zh/post/text_2017009/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2072,6 +2086,7 @@ Fili的課程教學進度如以下取自簡報中的流程圖：
   <title>再等等，你確定這不是「雷」研究嗎？</title>
   <link>https://scchen.com/zh/post/text_2017008/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2133,6 +2148,7 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
 
 
 
+
 <p><img src="https://scchen.com/zh/post/text_2017007/k10970.gif" class="img-fluid"></p>
 <p>物理學家理查．費曼(Richard Feyman)於1974年加州理工學院的畢業典禮致辭，有以下兩段內容：</p>
 <blockquote class="blockquote">
@@ -2187,6 +2203,7 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
 
 
 
+
 <p><em>Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.</em></p>
 <p>Many promoters of open-accessible literature spread their preprinted articles through the personal and collaborative blogs. Bloggers and followers like me usually manage the last updated posts in the reference managers. My <a href="https://www.zotero.org/">zotero</a> have collected a lot of blog posts to be commented and to be cited in my coming articles. After collected hundreds of posts, I found that zotero not always imported the meta data of the blog posts for the correct citations. This post presents why not all the necessary meta data can be imported by the reference managers, and shows how the readers and bloggers could manage these situations.</p>
 <p>Referring to the 76th example of APA 6th style and the <a href="http://blog.apastyle.org/apastyle/2016/04/how-to-cite-a-blog-post-in-apa-style.html">explain of Timothy McAdoo (2016)</a>, I demonstrates the reference format of a blog post like following:</p>
@@ -2213,6 +2230,7 @@ Susan Fisk今年發表的這篇文章提到她所謂的好科學發展，是建�
   <title>Template of a citable blog post</title>
   <link>https://scchen.com/zh/post/2017-05-05-templete-of-a-citable-blog-post/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2371,6 +2389,7 @@ font-style: inherit;">/&gt;</span></span></code></pre></div></div>
 
 
 
+
 <blockquote class="blockquote">
 <p>初稿2016/10/6 12:59:58上線<br>
 一校2016/10/6 21:50:00完成<br>
@@ -2438,6 +2457,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
 
 
 
+
 <blockquote class="blockquote">
 <p>註1: 本文標題借用哥倫比亞大學統計學教授、知名學術部落客安德魯．蓋爾曼(Andrew Gelman)從2017年1月31號起，在個人部落格對此事件的稱呼(<a href="http://andrewgelman.com/2017/02/03/pizzagate-curious-incident-researcher-response-people-pointing-150-errors-four-papers-2/" title="Pizzagate, or the curious incident of the researcher in response to people pointing out 150 errors in four of his papers.">Pizzagate</a>)。早在2016年聖誕節之前，安德魯教授就<a href="http://andrewgelman.com/2016/12/15/hark-hark-p-value-heavens-gate-sings/" title="Hark, hark! the p-value at heaven's gate sings."><strong>眉頭一皺，發覺案情並不單純</strong></a>。</p>
 </blockquote>
@@ -2488,6 +2508,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
 
 
 
+
 <p>去年我寫的網誌「紀錄已經出現與即將出現的再現危機<a href="../text_2016004/">1</a>」，介紹加拿大阿拉巴馬大學社會心理學助理教授William Hart於2013年發表在心理科學期刊的論文<a href="https://www.ncbi.nlm.nih.gov/pubmed/21193778">Learning About What Others Were Doing: Verb Aspect and Attributions of Mundane and Criminal Intent for Past Actions</a>，無法被12間實驗室再現的事件。這個月初(2⁄7)心理科學期刊宣佈撤銷William Hart於2013年發表的另一篇論文<a href="http://journals.sagepub.com/doi/pdf/10.1177/0956797612446351">Unlocking Past Emotion: Verb Use Affects Mood and Happiness</a>，使得事件有新的發展。這篇網誌整理至今為止，這兩篇論文牽涉的資料造假證據如何浮現。</p>
 <p><img src="https://scchen.com/zh/post/text_2017004/william_Hart.jpg" class="img-fluid"></p>
 <section id="描述過去經驗的動詞時態能影響當下情緒" class="level3">
@@ -2522,6 +2543,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
   <title>從科學危機認識開放科學(科學月刊投稿版)</title>
   <link>https://scchen.com/zh/post/text_2017003/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2573,6 +2595,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
   <title>註冊研究(Registered Research)</title>
   <link>https://scchen.com/zh/post/text_2017002/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2688,6 +2711,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
 
 
 
+
 <p>沒有想到有一天我會寫影劇介紹文，這部有意思的影片是找尋資料時的意外發現。荷蘭萊登大學(Leiden University)在2016年4月於校內首映並在youtube公開自製的微電影「科學家之路」(On Being a Scientist)。第一次知道這部影片的朋友，可以先花一小時來看看，或者先往下看劇情簡介與角色介紹：</p>
 <p>這部微電影由萊登大學的MOOCs製作與發佈，演員都以英語發音，英聽好的朋友都能了解劇情。不過每一幕之間切換與跳躍手法很像好萊塢的懸疑片，雖然重要角色只有四位，要在前十五分鐘內認識他們，加上理解彼此的關係會有些吃力，可能無法抓住這部影片的主題。以下簡介四位角色的設定與關係：</p>
 <ul>
@@ -2716,6 +2740,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
   <title>JASP~操作像SPSS的程序可重製統計開源軟體</title>
   <link>https://scchen.com/zh/post/text_2016007/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2772,6 +2797,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
   <title>開放科學在荷蘭</title>
   <link>https://scchen.com/zh/post/text_2016006/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -2872,6 +2898,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
   <title>Randomization in Latin Square</title>
   <link>https://scchen.com/zh/post/2016-09-14-randomization-in-latin-square/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -3325,6 +3352,7 @@ font-style: inherit;">'List'</span>, lst)</span></code></pre></div></div>
 
 
 
+
 <section id="事件起因" class="level2">
 <h2 class="anchored" data-anchor-id="事件起因">事件起因</h2>
 <p>2016年的九月底，最受注目的國際新聞是當屆美國總候選人首次電視辯論會，還有當年度搞笑諾貝爾獎陸續公佈，為十月初的諾貝爾獎公佈暖身。就在這段時間，有一份心理科學危機消息在歐美社會科學圈引起關注，在九月的最後一個星期引起許多討論。雖然這則事件的熱度被其它更重大的新聞消息蓋過，<a href="http://retractionwatch.com/2016/09/26/yes-power-pose-study-is-flawed-but-shouldnt-be-retracted-says-one-author/">Retraction Watch</a>轉述<a href="http://nymag.com/scienceofus/2016/09/power-poses-co-author-i-dont-think-power-poses-are-real.html">New York magazine</a>的消息之後，一星期之內與事件有關的核心人士先後公開表態。</p>
@@ -3380,6 +3408,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
   <title>纪錄已經出現與即將出現的再現危機~2016版</title>
   <link>https://scchen.com/zh/post/text_2016004/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -3539,6 +3568,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
 
 
 
+
 <blockquote class="blockquote">
 <p>此文有三個系列構成：(一)2016年報導與查證的整理；（二）近十年重要事件回顧；（三）科學社群與社會大眾如何理解這項計劃</p>
 <p>第一系列將以三個版本發展。第一版：初期報導及相關文章整理，構成大綱；第二版：彙整求證資訊與回饋；第三版：修正前版錯誤，補充重要資訊。</p>
@@ -3583,6 +3613,7 @@ Eva Ranehill等人招募的參與者數目是Dana Carney三位的五倍(2010有4
   <title>Why we need a readable data table in behavioral scientific research?</title>
   <link>https://scchen.com/zh/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -3829,6 +3860,7 @@ font-style: italic;">## 6 s06     B  I01    2</span></span></code></pre></div></
 
 
 
+
 <section id="什麼是促發實驗priming-experiemnt" class="level2">
 <h2 class="anchored" data-anchor-id="什麼是促發實驗priming-experiemnt">什麼是促發實驗(Priming Experiemnt)？</h2>
 <p>今年4月4號在家鄉台灣還在過清明長假的時候，我在臉書發現有人轉貼民報的報導： <a href="http://www.peoplenews.tw/news/b1aa9871-c210-4182-a64f-fafa1f042c97">【獨家】電競遊戲登上Nature‐台灣囝仔Jeffrey Lin 林侑霆</a>。看了內文發現這位林侑霆先生與我算是同行，雖然標題強調林侑霆的台灣人身份應該要吸引同鄉網友點閱，兩位記者在報導內容努力地摘要自然期刊的重要內容並翻譯成中文，並將林侑霆2013到2015年在GDC的演講錄影連結附於文末，讓讀者能了解林侑霆的科學成就。不過自然期刊的原文格局是以林侑霆的研究成果為軸，探討如何運用科學方法認識並改變網路遊戲玩家的惡意行為(toxic behavior)。<br>
@@ -3866,6 +3898,7 @@ font-style: italic;">## 6 s06     B  I01    2</span></span></code></pre></div></
   <title>Donders 與 de Groot：兩位荷蘭心理學者代表的時代精神</title>
   <link>https://scchen.com/zh/post/text_2016002/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -3908,6 +3941,7 @@ font-style: italic;">## 6 s06     B  I01    2</span></span></code></pre></div></
   <title>Rethink Significance</title>
   <link>https://scchen.com/zh/post/2016-05-05-rethink-significance/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -4127,6 +4161,7 @@ font-style: inherit;">"Probability(Positive Results)"</span>)</span></code></pre
   <title>Autopsy of NHST and Bayesian Models (part 1)</title>
   <link>https://scchen.com/zh/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -4353,6 +4388,7 @@ font-style: italic;">## [1] 4.41705</span></span></code></pre></div></div>
   <title>Check My Tools to Create and Manipulate Golems</title>
   <link>https://scchen.com/zh/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -4765,6 +4801,7 @@ font-style: italic;">## [1] "There are 92 packages installed in my laptop."</spa
 
 
 
+
 <p>When a set of data/observations is imported to R, it is usually treated as <code>vector</code>. Vector has two mathematical forms as following:</p>
 <p><strong>column vector</strong>: <img src="https://latex.codecogs.com/png.latex?%5Cvec%7Ba%7D%20=%20%5Cbegin%7Bbmatrix%7D%201%20%5C%5C%202%20%5C%5C%203%20%5Cend%7Bbmatrix%7D"> <strong>row vector</strong>: <img src="https://latex.codecogs.com/png.latex?%5Cvec%7Ba%7D%20=%20%5B%201%5C%202%5C%203%20%5D"></p>
 <p>Default form of vector in R is column vector. More precisely, it is treated as a matrix:</p>
@@ -4915,6 +4952,7 @@ font-style: italic;">## [1] 9.166667</span></span></code></pre></div></div>
 
 
 
+
 <p>There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:</p>
 <p><img src="https://latex.codecogs.com/png.latex?E%20=%20mc%5E2"></p>
 <p>Use the steps 1 and 2 indtroducted in <a href="http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html">Fong Chun Chan’s post</a>, my website is able to show the equation in any post. Because this theme use <code>kramdown</code> as the engine of markdown, I pass the step 4.</p>
@@ -4936,6 +4974,7 @@ font-style: italic;">## [1] 9.166667</span></span></code></pre></div></div>
   <title>Learning Sampling Distribution in R Programming</title>
   <link>https://scchen.com/zh/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -5262,6 +5301,7 @@ font-style: inherit;">~</span> Size)</span></code></pre></div></div>
   <title>Hello R Markdown</title>
   <link>https://scchen.com/zh/post/2015-07-23-r-rmarkdown/</link>
   <description><![CDATA[ 
+
 
 
 
