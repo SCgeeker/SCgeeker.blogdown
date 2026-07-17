@@ -1,0 +1,47 @@
+[
+  {
+    "listing": "/publication/index.html",
+    "items": [
+      "/publication/object-orientation-18-languages/index.html",
+      "/publication/journal-article/index.html"
+    ]
+  },
+  {
+    "listing": "/post/index.html",
+    "items": [
+      "/post/if-emily-rosa-met-thomas-bayes/index.html",
+      "/post/ps-podcasts/index.html",
+      "/post/use-bookdownplus/index.html",
+      "/post/use-r-markdown-build-website/index.html",
+      "/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/index.html",
+      "/post/2017-05-05-templete-of-a-citable-blog-post/index.html",
+      "/post/2016-09-14-randomization-in-latin-square/index.html",
+      "/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/index.html",
+      "/post/2016-05-05-rethink-significance/index.html",
+      "/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/index.html",
+      "/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/index.html",
+      "/post/2016-04-05-vectors-in-mathematics-and-in-codes/index.html",
+      "/post/2016-04-05-display-math-equation-in-post/index.html",
+      "/post/2016-03-30-learning-sampling-distribution-in-r-programming/index.html",
+      "/post/2015-07-23-r-rmarkdown/index.html"
+    ]
+  },
+  {
+    "listing": "/project/index.html",
+    "items": [
+      "/project/claude-journal-club-agents/index.html",
+      "/project/twcc-ollama-proxy/index.html",
+      "/project/lsj-2026-lecture-slides/index.html",
+      "/project/lsj-book-zh-tw/index.html",
+      "/project/p-cso/index.html",
+      "/project/act-base/index.html",
+      "/project/annotation-blank/index.html",
+      "/project/justify-your-alpha/index.html",
+      "/project/psa002-object-orientation/index.html",
+      "/project/exppsy-opensci/index.html",
+      "/project/teaching-exppsy-taiwan/index.html",
+      "/project/basic-statistics-osf/index.html",
+      "/project/improving-statistical-inferences-zh/index.html"
+    ]
+  }
+]

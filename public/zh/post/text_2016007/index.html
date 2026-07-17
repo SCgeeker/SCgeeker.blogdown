@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="示範開源貝式統計軟體JASP，以Strack RRR再現研究重製貝式因子的計算與解讀方法…">
+
+<title>JASP~操作像SPSS的程序可重製統計開源軟體 – 暗微幽光</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "沒有結果",
+    "search-matching-documents-text": "符合的文件",
+    "search-copy-link-title": "複製搜尋連結",
+    "search-hide-matches-text": "隱藏其他符合的結果",
+    "search-more-match-text": "更多符合結果",
+    "search-more-matches-text": "更多符合結果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "送出",
+    "search-label": "搜尋"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">暗微幽光</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="搜尋"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="切換導航列" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">首頁</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../post/index.html"> 
+<span class="menu-text">隨筆</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../project/index.html"> 
+<span class="menu-text">專案</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publication/index.html"> 
+<span class="menu-text">出版品</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../"> 
+<span class="menu-text">English</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">本頁目錄</h2>
+   
+  <ul>
+  <li><a href="#jasp的開發團隊" id="toc-jasp的開發團隊" class="nav-link active" data-scroll-target="#jasp的開發團隊">JASP的開發團隊</a></li>
+  <li><a href="#入門影片示範" id="toc-入門影片示範" class="nav-link" data-scroll-target="#入門影片示範">入門影片示範</a></li>
+  <li><a href="#使用示範重製strack-rrr" id="toc-使用示範重製strack-rrr" class="nav-link" data-scroll-target="#使用示範重製strack-rrr">使用示範：重製Strack RRR</a>
+  <ul class="collapse">
+  <li><a href="#貝式因子簡介" id="toc-貝式因子簡介" class="nav-link" data-scroll-target="#貝式因子簡介">貝式因子簡介</a></li>
+  <li><a href="#取用重製成果" id="toc-取用重製成果" class="nav-link" data-scroll-target="#取用重製成果">取用重製成果</a></li>
+  </ul></li>
+  <li><a href="#經由可重製分析流程學習與使用統計" id="toc-經由可重製分析流程學習與使用統計" class="nav-link" data-scroll-target="#經由可重製分析流程學習與使用統計">經由可重製分析流程學習與使用統計</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">JASP~操作像SPSS的程序可重製統計開源軟體</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">研究心得</div>
+    <div class="quarto-category">軟體介紹</div>
+    <div class="quarto-category">開放科學</div>
+    <div class="quarto-category">統計</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    示範開源貝式統計軟體JASP，以Strack RRR再現研究重製貝式因子的計算與解讀方法…
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">發佈於</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2017年1月10日</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><img src="https://jasp-stats.org/wp-content/themes/jasp/images/logo.svg" class="img-fluid"></p>
+<p>趁著這陣子台灣最高學府的學術醜聞細節不斷浮出，許多經常使用統計軟體分析資料的人士多少會回憶使用套裝統計軟體的痛苦經驗。像是都用SPSS，分析同一份資料，為什麼學長姐能跑出顯著結果，我怎麼調都做不出相同的結果。如果你有類似的際遇，就值得認識這套開源統計軟體<a href="https://jasp-stats.org/">JASP</a>，並且試著今天就開始更新手上的統計工具。</p>
+<section id="jasp的開發團隊" class="level2">
+<h2 class="anchored" data-anchor-id="jasp的開發團隊">JASP的開發團隊</h2>
+<p>JASP是由荷蘭阿姆斯特丹大學心理學系教授<a href="http://www.ejwagenmakers.com/">Eric-Jan Wagenmakers</a>(以下簡稱EJ)主持的實驗室，以及長期合作的程式設計師一起開發與更新。EJ研究貝式統計學的應用多年，2014年出版為認知科學研究而寫的教學書藉<a href="https://bayesmodels.com/">Bayesian Cognitive Modeling</a>，也開始JASP的開發以及每年定期舉辦工作坊。JASP的核心是R套件<a href="http://bayesfactorpcl.r-forge.r-project.org/">BayesFactor</a>，由<a href="https://richarddmorey.org/">Richard Morey</a>等三位計量心理學者為讓R使用者能簡易計算貝式因子(Bayes Factor)而開發，所以JASP從一開始就走開源之道。Richard Morey也是JASP開發團隊核心成員，也和EJ一起擔任工作坊講師。 因為核心成員是貝式統計的專家，JASP不僅能做傳統的統計，簡單實驗的貝式統計，如比較兩組平均數的貝式因子，都可以用JASP計算，並且操作方式與SPSS一樣，所以就算你還不明白貝氏因子，甚至也不甚了解貝式定理，也可以用手上資料計算貝式因子。EJ已公佈<a href="https://osf.io/r73y9/?view_only=c8f313fa105c467881c55be64f1bc83e">工作坊教材</a>，有心的讀者可運用。本文採用EJ今年的代表作，<a href="http://pps.sagepub.com/content/early/2016/10/21/1745691616674458.abstract">臉部回饋表情假設經典實驗的再現研究</a>，做個初步示範與說明。</p>
+</section>
+<section id="入門影片示範" class="level2">
+<h2 class="anchored" data-anchor-id="入門影片示範">入門影片示範</h2>
+<p>JASP的下載與安裝與一般開源軟體完全相同，有windows，Mac與Linux三種平台版本。有意使用的讀者可以從官網下載適合個人作業系統的版本。如何開始第一次使用，官網有工程師的youtube示範影片，雖然現在的版本0.8.0.0比示範影片的新，但是操作都是相同的，最新版可做初階因素分析，所以有問卷資料要分析的讀者可以試試看。 注得一提的是輸出結果檔能上傳<a href="https://osf.io/">OSF</a>，可以直接在專案網頁瀏覽，而且其它使用者下載結果檔，用自已的JASP打開後，可以檢視及調整原作者的軟體設定。細節可參考官網影片示範。如此一來，實驗室的學長姐畢業後，能無痛交接給學弟妹了。</p>
+</section>
+<section id="使用示範重製strack-rrr" class="level2">
+<h2 class="anchored" data-anchor-id="使用示範重製strack-rrr">使用示範：重製Strack RRR</h2>
+<p>我曾在之前的<a href="../text_2016004/">文章</a>介紹臉部回饋表情假設的再現研究，EJ是這項研究的總主持人，也負責主要的分析工作。實驗設計細節請參考前文，我以此研究為例，簡單介紹貝式因子的計算與解讀方法。</p>
+<section id="貝式因子簡介" class="level3">
+<h3 class="anchored" data-anchor-id="貝式因子簡介">貝式因子簡介</h3>
+<p>貝式因子是一筆資料在兩個機率分配之內的似然性比值(likelihood ratio)。這兩個機率分配就是進行假設檢定時，分別代表虛無假設(<span class="math inline">\(H_0\)</span>)與對立假設(<span class="math inline">\(H_1\)</span>)的機率分配，似然性指一筆資料在某個假設為真的情況，支持這項假設的証據強度。如果對於似然性尚未有足夠的認識，可當作兩種似然性數值對應假設檢定的p值與考驗力。<br>
+兩個似然性相除表示這項證據支持一種假設的強度是支持另一種假設的多少倍。以虛無假設的似然性除以對立假設的似然性，得到的貝氏因子通常寫成<span class="math inline">\(BF_{01}=\frac{P(D \mid H_0)}{P(D \mid H_1)}\)</span>；以對立假設的似然性除以虛無假設的似然性，得到的貝氏因子通常寫成<span class="math inline">\(BF_{10}=\frac{P(D \mid H_1)}{P(D \mid H_0)}\)</span>。研究者要報告那一種貝氏因子，可根據這次研究看中那種假設應該得到研究結果的支持。通常原創研究會報告<span class="math inline">\(BF_{01}\)</span>，根據之前的研結果或認定存在某種效果，都會以<span class="math inline">\(BF_{10}\)</span>進行推論。<br>
+統計學者Kass與Raftery在1995年提出貝式因子數值的<a href="http://www.tandfonline.com/doi/abs/10.1080/01621459.1995.10476572">強度分界</a>：貝氏因子至少大於1，代表位於分子的假設與位於分母的假設有起碼的差異；貝氏因子大於3，代表手上的證據正面支持位於分子的假設；貝氏因子大於20，手上證據強烈支持位於分子的假設；到了大於150，可以說沒有反證能推翻位於分子的假設。<br>
+以直接再現研究來說，已有支持臉部肌肉回饋假說的原始研究結果，自然有興趣知道再現結果的<span class="math inline">\(BF_{10}\)</span>會不會至少大於1。此外，根據貝式定理，計算貝式因子或似然性數值需要先得知假設的先驗機率，也就是不論有無證據，假設認定的效果確實存在的機率分配。傳統的統計方法不會處理這一塊，我規畫撰寫一篇較深入的文章介紹，現在讀者只要知道JASP給了一個方便法門–預設先驗機率(default prior)。因為也是兩個假設的比值，又可稱先驗機率賠率。好比一場賽馬比賽，有兩匹初次上場的賽馬，沒有人知道那匹馬會勝出，只能由馬匹的出身背景先做推估，下注者就得到誰勝誰負的賠率。EJ在2012年發表的<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3505519/">論文</a>，主張預設先驗機率賠率可設為0.707，這也是打開JASP的貝氏統計程序，會看到的預設值。<br>
+臉部肌肉回饋假說的實驗，就像「牙齒組評分高於嘴唇組評分」與「牙齒組評分等於嘴唇組評分」兩個可能結果，在一間實驗室裡同場較量。0.707代表未做實驗之前，對前者的看好度是後者的0.707倍，貝式因子表示完成實驗之後，這間實驗室判定前者真正勝過或負於後者的比例。所以貝式因子至少大於1，表示「牙齒組評分高於嘴唇組評分」確實比「牙齒組評分等於嘴唇組評分」早一點點抵達終點線。17個實驗室的貝式因子都沒有大於1，表示臉部肌肉回饋假說看好的結果都沒有真正勝過沒有差異的結果。</p>
+</section>
+<section id="取用重製成果" class="level3">
+<h3 class="anchored" data-anchor-id="取用重製成果">取用重製成果</h3>
+<p>臉部肌肉回饋假說再現研究的所有資料，已公開於<a href="https://osf.io/hgi2y/">OSF專案</a>，<a href="https://osf.io/6jtny/">論文</a>的表2記綠所有17個實驗室結果的貝氏因子。產生論文中所有圖表的<a href="https://osf.io/9j72u/">原始資料</a>與<a href="https://osf.io/tbq26/">分析腳本</a>壓縮檔下載後，可重製論文中的所有圖表。不過我發現重製出來的貝氏因子和論文表2有些出入，可比較下圖與原始表格：</p>
+<p><img src="Strack_RRR_BF.png" class="img-fluid"></p>
+<p>為何自已跑出來的結果有些許不同，我會去信向EJ詢問。但是讀者們可以像我一樣，用JASP重製單側假設檢定的貝氏因子，只要下載我的<a href="https://osf.io/byht3/">jasp檔</a>，了解我的重製方法。</p>
+</section>
+</section>
+<section id="經由可重製分析流程學習與使用統計" class="level2">
+<h2 class="anchored" data-anchor-id="經由可重製分析流程學習與使用統計">經由可重製分析流程學習與使用統計</h2>
+<p>由於原始實驗室曾發生「牙齒組評分高於嘴唇組評分」勝出的事實，所以EJ在這次再現研究嘗試一種為評估再現研究信效度而開發的貝式因子，在2014年發表的<a href="http://doi.apa.org/getdoi.cfm?doi=10.1037/a0036731">論文</a>，提到以原始研究的統計值為種子，取得逼近合理先驗機率賠率的方法。這套演算方法尚未收錄於任何套件，所以現版本的JASP未能重製。然而論文表2顯示，只有Zeelenberg的實驗室出現「牙齒組評分高於嘴唇組評分」稍微勝出的結果。上圖的再製表格卻無法再現相同的分析結果。<br>
+透過這次重製經驗，即使我未能完全了解論文中的公式推導，卻能從公開的程式碼，了解這套演算方法的邏輯。相信有心提昇個人統計功力的讀者，也能透過這樣的方式學習觀念與工具。</p>
+<section id="本文隨jasp重要升級持續更新" class="level4">
+<h4 class="anchored" data-anchor-id="本文隨jasp重要升級持續更新">本文隨JASP重要升級持續更新</h4>
+<p>JASP 1.0還未正式推出，未來更新有何變化尚未可知，因此本文內容如果因為將來的更新而有改變，會進行相對的更新與修正。有興趣學習的JASP與貝式統計的讀者，可以到EJ常駐的<a href="http://forum.cogsci.nl/index.php?p=/categories/jasp-bayesfactor">網路論壇</a>提問，與EJ及其它高手直接交流。</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/scchen\.com\/zh\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2017 陳紹慶</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

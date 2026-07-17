@@ -1,0 +1,2546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Sau-Chin Chen&#39;s Website</title>
+<link>https://scchen.com/post/</link>
+<atom:link href="https://scchen.com/post/index.xml" rel="self" type="application/rss+xml"/>
+<description>Sau-Chin Chen (陳紹慶) — Assistant Professor of Cognitive Psychology, Tzu-Chi University</description>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Sun, 16 May 2021 16:00:00 GMT</lastBuildDate>
+<item>
+  <title>If Emily Rosa met Thomas Bayes …</title>
+  <link>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Twenty years ago, 11-year-old Emily Rosa and her parents published a study in the Journal of the American Medical Association about Therapeutic Touch (TT). The study challenged the claim that TT practitioners could manipulate human body energy fields without physical contact.</p>
+<p>Emily designed an experimental test where TT practitioners would try to detect her hand’s location through their supposed energy sensing skills. Her hypothesis was that if TT was real, practitioners would correctly identify her hand’s location in at least 8 out of 10 trials.</p>
+<p>She conducted two studies:</p>
+<ol type="1">
+<li>First study: 15 TT trainees participated</li>
+<li>Follow-up study: 13 TT trainees (7 from the first study)</li>
+</ol>
+<p>The results showed the TT practitioners’ accuracy was equivalent to random guessing.</p>
+<section id="bayesian-reanalysis" class="level2">
+<h2 class="anchored" data-anchor-id="bayesian-reanalysis">Bayesian Reanalysis</h2>
+<p>Using Bayesian statistical analysis, we can reanalyze Emily’s original data. The probability of TT practitioners successfully detecting her hand was extremely low (around 0.018), providing strong evidence against the effectiveness of Therapeutic Touch.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Despite Emily’s rigorous scientific study published in a prestigious medical journal, the Therapeutic Touch official website continues to operate. This suggests more scientific education is needed to help people think critically about pseudoscientific claims.</p>
+<p>The study demonstrates how even young scientists can contribute meaningful research when they apply the scientific method properly.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Teaching</category>
+  <category>Practices</category>
+  <guid>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/</guid>
+  <pubDate>Sun, 16 May 2021 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Psychological Science Podcasts</title>
+  <link>https://scchen.com/post/ps-podcasts/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>There are psychological scientists who have started producing internet podcasts since 2016. Audience will know the latest news and ideas because many hosts are open science promoters. Until now 8 podcasts are in my pocket. They are the treasure for those who want to know the true faces of scientists. Two days ago I completed the Chinese version. I wish scientific podcasts outside of English will be online in coming months.</p>
+<section id="everything-hertz" class="level2">
+<h2 class="anchored" data-anchor-id="everything-hertz">1. Everything Hertz</h2>
+<p>Hosts: James Heathers, Dan Quintana Channels: <a href="https://everythinghertz.com/">Website</a>, <a href="https://twitter.com/hertzpodcast">Twitter</a> Debut: 2016</p>
+</section>
+<section id="the-black-goat" class="level2">
+<h2 class="anchored" data-anchor-id="the-black-goat">2. The Black Goat</h2>
+<p>Hosts: Simine Vazire, Alexa Tullett Channels: <a href="https://www.theblackgoatpodcast.com/">Website</a>, <a href="https://twitter.com/blackgoatpod">Twitter</a> Debut: 2017</p>
+</section>
+<section id="circle-of-willis" class="level2">
+<h2 class="anchored" data-anchor-id="circle-of-willis">3. Circle of Willis</h2>
+<p>Host: Stuart Ritchie Channels: <a href="https://www.circleofwillispodcast.com/">Website</a>, <a href="https://twitter.com/circleofwillis">Twitter</a> Debut: 2018</p>
+</section>
+<section id="the-road-to-open-science" class="level2">
+<h2 class="anchored" data-anchor-id="the-road-to-open-science">4. The Road to Open Science</h2>
+<p>Host: Malte Elson Channels: <a href="https://www.malte-elson.com/podcast/">Website</a>, <a href="https://twitter.com/road2openscience">Twitter</a> Debut: 2018</p>
+</section>
+<section id="two-psychologists-four-beers" class="level2">
+<h2 class="anchored" data-anchor-id="two-psychologists-four-beers">5. Two Psychologists Four Beers</h2>
+<p>Hosts: Alexa Tullett, Yoel Inbar Channels: <a href="https://www.fourbeers.com/">Website</a>, <a href="https://twitter.com/four_beers">Twitter</a> Debut: 2017</p>
+</section>
+<section id="the-bayes-factor" class="level2">
+<h2 class="anchored" data-anchor-id="the-bayes-factor">6. The Bayes Factor</h2>
+<p>Host: Daniel Lakens Channels: <a href="https://www.bayesfactor.nl/">Website</a>, <a href="https://twitter.com/bayesfactorpod">Twitter</a> Debut: 2020</p>
+</section>
+<section id="reproducibiliteapod" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibiliteapod">7. ReproducibiliTeaPod</h2>
+<p>Host: Various ReproducibiliTea organizers Channels: <a href="https://soundcloud.com/reproducibilitea">Website</a>, <a href="https://twitter.com/reproduciteapod">Twitter</a> Debut: 2019</p>
+</section>
+<section id="physiology-behavior-podcast" class="level2">
+<h2 class="anchored" data-anchor-id="physiology-behavior-podcast">8. Physiology &amp; Behavior podcast</h2>
+<p>Host: Psychology &amp; Behavior journal Channels: <a href="https://www.journals.elsevier.com/physiology-and-behavior/podcast">Website</a> Debut: 2020</p>
+
+
+</section>
+
+ ]]></description>
+  <category>academic</category>
+  <guid>https://scchen.com/post/ps-podcasts/</guid>
+  <pubDate>Sun, 16 May 2021 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Use bookdownplus write papers and manage lab logs</title>
+  <link>https://scchen.com/post/use-bookdownplus/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Since being a Rmarkdown user, I’m thinking how to write papers, manage teaching materials and record lab works in this format. When I met <code>papaja</code> three years ago, it is my dream someday I will use <code>R</code> process all my works. <code>papaja</code> is amazing but it is implemented to English only.</p>
+<p>Later I found <a href="https://bookdown.org/yihui/bookdown/get-started.html"><code>bookdown</code></a> developed by Yihui Xie. <code>bookdown</code> has the potential to manage Chinese writings. However, this package is primarily developed for writing and publishing books.</p>
+<p>Fortunately, <a href="http://www.pzhao.org/zh/">Peng Zhao</a> has worked on the advanced work: <a href="https://github.com/pzhaonet/bookdownplus"><code>bookdownplus</code></a>. This package provides many templates for academic works and hobbies, including:</p>
+<ul>
+<li>Academic article</li>
+<li>Book</li>
+<li>Thesis</li>
+<li>Poster</li>
+<li>Journals</li>
+<li>Poem book</li>
+<li>Guitar chords</li>
+</ul>
+<p>I believe the ‘journal’ template will be particularly useful for research teams practicing open science, allowing collaborative daily logging that can be made public after paper publication.</p>
+<p>For traditional Chinese users, I recommend installing specific font files after installation: <code>KaiTi.ttf</code>, <code>simfang.ttf</code>, <code>simhei.ttf</code>, and <code>simkai.ttf</code>.</p>
+<p>I hope future versions of <code>bookdownplus</code> will enhance support for multi-byte language systems and allow users to share custom templates.</p>
+
+
+
+ ]]></description>
+  <category>Reproduce Practice</category>
+  <guid>https://scchen.com/post/use-bookdownplus/</guid>
+  <pubDate>Sun, 16 May 2021 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Use R Markdown build website</title>
+  <link>https://scchen.com/post/use-r-markdown-build-website/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’m testing blogdown. Learn how to build and manange my website in this package.</p>
+<p>Will this sentence be updated at <em>Viewer</em>?</p>
+<p>Yes. it worked. Now test some markdown tags:</p>
+<section id="h1" class="level1">
+<h1>H1</h1>
+<section id="h2" class="level2">
+<h2 class="anchored" data-anchor-id="h2">H2</h2>
+<section id="h3" class="level3">
+<h3 class="anchored" data-anchor-id="h3">H3</h3>
+<p><strong>Bold</strong></p>
+<p><em>Italic</em></p>
+<p>Math expression: <img src="https://latex.codecogs.com/png.latex?%5Calpha"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Csigma%20=%20X%5E2%20+%20Y%5E2"></p>
+<p>This is like “Watch laterly after you write”.</p>
+<p>After reboot Rstudio, I can directly continue the latest work.</p>
+<p>I manage my website as a R project.</p>
+<p>I unchecked “Preview site after building” in project options.</p>
+<p>Viewer is updating after I unchecked this option.</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>R Markdown</category>
+  <category>Test</category>
+  <guid>https://scchen.com/post/use-r-markdown-build-website/</guid>
+  <pubDate>Tue, 26 Dec 2017 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Manage a blog for the bibliography management optimization</title>
+  <link>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><em>Because of my limited experiences, the recommendations might be useless for the users of EndNote, Mendeley, and the other reference management software. Although the concrete suggesions for the bloggers on many blog services are unavailable, the special recommendations and experiences are welcome.</em></p>
+<p>Many promoters of open-accessible literature spread their preprinted articles through the personal and collaborative blogs. Bloggers and followers like me usually manage the last updated posts in the reference managers. My <a href="https://www.zotero.org/">zotero</a> have collected a lot of blog posts to be commented and to be cited in my coming articles. After collected hundreds of posts, I found that zotero not always imported the meta data of the blog posts for the correct citations. This post presents why not all the necessary meta data can be imported by the reference managers, and shows how the readers and bloggers could manage these situations.</p>
+<p>Referring to the 76th example of APA 6th style and the <a href="http://blog.apastyle.org/apastyle/2016/04/how-to-cite-a-blog-post-in-apa-style.html">explain of Timothy McAdoo (2016)</a>, I demonstrates the reference format of a blog post like following:</p>
+<pre><code>"Who". (Year, Month, Day). "Title of the post"[Blog post]. Retrieved from "my url"</code></pre>
+<p>For a long time, I had been confused why some imported posts have no released date, and some do not include the author’s name. Until read this blog post about <a href="https://moz.com/blog/meta-data-templates-123">social meta tags</a>, I realized that <strong>zotero</strong> establish the items for the blog posts and webpages in terms of the <code>meta</code> tags in the source html files. To have the correct citation of a blog post, a post at least has to have the three <code>meta</code> tags: <code>author</code>, <code>article:published_time</code>, <code>og:title</code>. I built a <a href="../2017-05-05-templete-of-a-citable-blog-post/">template</a> showing how these tag are included in my <code>head.html</code>.</p>
+<p>Many of my collected posts are from the active psychologists and statisticans. <a href="http://psychbrief.com">PsychBrief</a> has gathered the <a href="http://psychbrief.com/psychological-methods-blog-feed/">43 this kind of academic blogs</a>. After a short survey, I found that <strong>WordPress</strong> is the favorite of these bloggers (29 blogs). <strong>Google blogpost</strong> is the second preference (7 blogs). Almost all the <strong>WordPress</strong> blog posts are able to export the <code>meta</code> tags for the correct citations. However, some collaborative blogs, such as Andrew Gelman’s <a href="http://andrewgelman.com/">Statistical Modeling, Causal Inference, and Social Science</a>, have no the <code>author</code> tag. <strong>Google blogpost</strong> at default have no the tag <code>article:published_time</code>. As a user of <strong>zotero</strong>, I have to fill in these information by hands after imported these blog posts.</p>
+<p>To help the supporters of open accessible literature have the efficient bibliography management, I summarize three situations according to my survey and experience:</p>
+<ol type="1">
+<li><p>Single bloggers manages the <strong>WordPress</strong> blog. <em>For readers</em>: It’s fortune. All necessary tags are able to be imported. <em>For bloggers</em>: The author’s name have been registered since the day you opened your blog. When some posts are collaborative works, the default <code>author</code> tag many not show the authorship as your wish.</p></li>
+<li><p>Many bloggers share one <strong>WordPress</strong> blog; Bloggers manage the personal site in the other services. <em>For readers</em>: Keep in mind that not all the necessary tags could be exported from these posts. <em>For bloogers</em>: If you want to help your readers’ bibliography managements easier, you could take hours to study how to put all the necessary <code>meta</code> tags on each post.</p></li>
+<li><p>Bloggers manage the <strong>jekyll-based</strong> blog. <em>For readers</em>: It’s the worst that many jekyll themes set the fewest <code>meta</code> tags at default. On the ohter hand, it’s the best that the bloggers realized every things the readers need. <em>For bloggers</em>: In use of the <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">markdown syntax</a>, your blog post is able to fetch the <code>author</code>, <code>published_time</code>, and <code>og:title</code> in <a href="https://en.wikipedia.org/wiki/YAML">YAML</a>. There is the flexibility that a blog collects the works of a single author and the collaborative consequence.</p></li>
+</ol>
+
+
+
+ ]]></description>
+  <category>Practices</category>
+  <category>blog_skills</category>
+  <category>knowledge_management</category>
+  <guid>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/</guid>
+  <pubDate>Sun, 07 May 2017 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Template of a citable blog post</title>
+  <link>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="this-post-is-for-future-posts." class="level2">
+<h2 class="anchored" data-anchor-id="this-post-is-for-future-posts.">This post is for future posts.</h2>
+<p>Check the lines 5 to 9 of my post template <a href="https://github.com/SCgeeker/SCgeeker.github.io/blob/master/_includes/head.html"><code>head.html</code></a>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">meta</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> name</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"generator"</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> content</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"blogger"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">/&gt;</span></span>
+<span id="cb1-2"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">meta</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> name</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"author"</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> content</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sau-Chin Chen"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">/&gt;</span></span>
+<span id="cb1-3"># A if-then loop imports page.title.</span>
+<span id="cb1-4"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">meta</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> property</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"og:title"</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> content</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">/&gt;</span></span>
+<span id="cb1-5"># A if-then loop imports page.date.</span>
+<span id="cb1-6"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">meta</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> property</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"article:published_time"</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> content</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"{% if page.date %}{{ page.date | date: "</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">%</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">B </span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">%-</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">d</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">,</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> </span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">%</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">Y</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"}}{%</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> else </span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">%}{{</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> site.date </span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">}}{%</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> endif </span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">%}"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">/&gt;</span></span>
+<span id="cb1-7"><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">&lt;</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">meta</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> property</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"og:site_name"</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;"> content</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sau-Chin Chen's website"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">/&gt;</span></span></code></pre></div></div>
+
+
+</section>
+
+ ]]></description>
+  <category>Practices</category>
+  <category>blog_skills</category>
+  <category>knowledge_management</category>
+  <guid>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/</guid>
+  <pubDate>Thu, 04 May 2017 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Randomization in Latin Square</title>
+  <link>https://scchen.com/post/2016-09-14-randomization-in-latin-square/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I’m managing an opensesame script for the coming project. In this project, there are four stimuli lists included all the within-participant conditions. I denote the four lists <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, and <strong>D</strong>. A participant will have one of the stimuli lists in terms of the counter balanced principle. The best assignment method is 4X4 Latin Square. For every 16 participants, there are 24 sequences to be used. Here are three of the sequences.</p>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,] "A"  "B"  "C"  "D"
+## [2,] "B"  "C"  "D"  "A"
+## [3,] "C"  "D"  "A"  "B"
+## [4,] "D"  "A"  "B"  "C"
+
+##      [,1] [,2] [,3] [,4]
+## [1,] "C"  "D"  "A"  "B"
+## [2,] "D"  "A"  "B"  "C"
+## [3,] "A"  "B"  "C"  "D"
+## [4,] "B"  "C"  "D"  "A"
+
+##      [,1] [,2] [,3] [,4]
+## [1,] "A"  "B"  "C"  "D"
+## [2,] "D"  "A"  "B"  "C"
+## [3,] "C"  "D"  "A"  "B"
+## [4,] "B"  "C"  "D"  "A"</code></pre>
+<p>If this experiment will recruit 32 participant, the first 16 and second 16 better obtain one of the 24 sequences in a pseudo randomization. On the other hand, I wish to reproduce this random sequence in the other place. The best way is to generate the randomization sequence in terms of a seed. Thanks to <a href="http://osdoc.cogsci.nl/">Opensesame</a>, I found the way to make this plan come true.</p>
+<p>Opensesame is the open source experiment software. Because it is developed in <a href="https://www.python.org/">python</a>, the users are able to create the function based on their need. This program offers the object <strong>inline_script</strong> where the users put the python codes. I created the python codes to select the stimuli list from the file pool. You can use it before the program runs the object <strong>loop</strong> based on the list.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">### Get the subject number</span></span>
+<span id="cb2-2">nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.get(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'subject_nr'</span>)</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">### Generate a random sequence based the prior seed</span></span>
+<span id="cb2-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">### Defind seed by yourself</span></span>
+<span id="cb2-6"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> random</span>
+<span id="cb2-7">SEED <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">345</span></span>
+<span id="cb2-8"></span>
+<span id="cb2-9">seq <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>]</span>
+<span id="cb2-10">random.seed(SEED)</span>
+<span id="cb2-11">random.shuffle(seq)</span>
+<span id="cb2-12"></span>
+<span id="cb2-13"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">### Shift the subject numbers</span></span>
+<span id="cb2-14"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">### Push to the next sequence</span></span>
+<span id="cb2-15"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">16</span>:</span>
+<span id="cb2-16">    nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> seq[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb2-17"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">16</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">32</span>:</span>
+<span id="cb2-18">    nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> seq[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>]</span>
+<span id="cb2-19"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">32</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">48</span>:</span>
+<span id="cb2-20">    nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> seq[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>]</span>
+<span id="cb2-21"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb2-22">    nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+=</span> seq[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>]</span>
+<span id="cb2-23"></span>
+<span id="cb2-24"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">### Assign the list in one Latin Squane</span></span>
+<span id="cb2-25"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:</span>
+<span id="cb2-26">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb2-27">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List01.csv'</span></span>
+<span id="cb2-28">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:</span>
+<span id="cb2-29">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List02.csv'</span></span>
+<span id="cb2-30">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>:</span>
+<span id="cb2-31">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List03.csv'</span></span>
+<span id="cb2-32">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb2-33">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List04.csv'</span></span>
+<span id="cb2-34"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> (nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>:</span>
+<span id="cb2-35">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:</span>
+<span id="cb2-36">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List01.csv'</span></span>
+<span id="cb2-37">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>:</span>
+<span id="cb2-38">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List02.csv'</span></span>
+<span id="cb2-39">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>:</span>
+<span id="cb2-40">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List03.csv'</span></span>
+<span id="cb2-41">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb2-42">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List04.csv'</span></span>
+<span id="cb2-43"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> (nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>:</span>
+<span id="cb2-44">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>:</span>
+<span id="cb2-45">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List01.csv'</span></span>
+<span id="cb2-46">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>:</span>
+<span id="cb2-47">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List02.csv'</span></span>
+<span id="cb2-48">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb2-49">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List03.csv'</span></span>
+<span id="cb2-50">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb2-51">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List04.csv'</span></span>
+<span id="cb2-52"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb2-53">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>:</span>
+<span id="cb2-54">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List01.csv'</span></span>
+<span id="cb2-55">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>:</span>
+<span id="cb2-56">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List02.csv'</span></span>
+<span id="cb2-57">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">elif</span> nr <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>:</span>
+<span id="cb2-58">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List03.csv'</span></span>
+<span id="cb2-59">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb2-60">        lst <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List04.csv'</span></span>
+<span id="cb2-61"></span>
+<span id="cb2-62"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">### Output [List] to the loop object</span></span>
+<span id="cb2-63">exp.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">set</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'List'</span>, lst)</span></code></pre></div></div>
+
+
+
+ ]]></description>
+  <category>Practices</category>
+  <category>Experiment_Design</category>
+  <category>Python</category>
+  <guid>https://scchen.com/post/2016-09-14-randomization-in-latin-square/</guid>
+  <pubDate>Tue, 13 Sep 2016 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why we need a readable data table in behavioral scientific research?</title>
+  <link>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="a-bad-case" class="level3">
+<h3 class="anchored" data-anchor-id="a-bad-case">A bad case</h3>
+<p>A few days ago I was dealing with a raw data set as like the following table.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ID</th>
+<th>Group</th>
+<th>I01</th>
+<th>I02</th>
+<th>I03</th>
+<th>I04</th>
+<th>I05</th>
+<th>I06</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>s01</td>
+<td>A</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>s02</td>
+<td>A</td>
+<td>2</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>s03</td>
+<td>A</td>
+<td>4</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>s04</td>
+<td>B</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>s05</td>
+<td>B</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>s06</td>
+<td>B</td>
+<td>2</td>
+<td>3</td>
+<td>3</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>This table is a tiny version I copied from a master graduate’s spss raw data table. The format of the table is frequently seen in the data files for SPSS software. This format originated the “row cognition” for data in every mind who are not familar with the statistical tools. Without the awareness of structure, people used to stack a lot of bricks horizontally. As like the table shows, there are the data of 6 participants. A new statistical tool user tend to fill all the information and data for a participant in a row as possible. This format fits human cognition for the naive thing who never manipulate before. However, the computers recognize the table by column, in other words, a “column cognition”. I show you how computer deal with the summation of one participant’s scores by the following codes.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">s01_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>)</span>
+<span id="cb1-2">units <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rep</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sum</span>(s01_data)</span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1] 18</span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">t</span>(units)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%*%</span>s01_data</span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      [,1]</span></span>
+<span id="cb1-10"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1,] 18</span></span></code></pre></div></div>
+<p>The function <code>sum</code> is one of the first functions a new statistical tool user have learned at the first class. <code>sum</code> is used to add all the scores of a participant. A new user tend to append the summation to the end of a row. But the last code show you a programing language recognizes the scores of a participant by column. The evidence is that the sturcture of <code>t(units)</code> is row but the structure of <code>s01_data</code> is a column. How do we eliminate the difference between human and machine cognition? Why human tend to deal with the data by row rather by column?</p>
+</section>
+<section id="codes-to-make-the-table-readable" class="level3">
+<h3 class="anchored" data-anchor-id="codes-to-make-the-table-readable">Codes to make the table readable</h3>
+<p>To make the table readable for the computer, I have to modify the format of this table as like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">Table <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read.csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data.csv"</span>)</span>
+<span id="cb2-2">New_Table <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">data.frame</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">ID =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rep</span>(Table[,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>],<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Group =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rep</span>(Table[,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>],<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Item =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rep</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">names</span>(Table[,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>]), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">each =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Resp =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">unlist</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Table[,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">8</span>])), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">row.names =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span>)</span>
+<span id="cb2-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">head</span>(New_Table)</span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##    ID Group Item Resp</span></span>
+<span id="cb2-6"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## 1 s01     A  I01    3</span></span>
+<span id="cb2-7"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## 2 s02     A  I01    2</span></span>
+<span id="cb2-8"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## 3 s03     A  I01    4</span></span>
+<span id="cb2-9"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## 4 s04     B  I01    2</span></span>
+<span id="cb2-10"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## 5 s05     B  I01    2</span></span>
+<span id="cb2-11"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## 6 s06     B  I01    2</span></span></code></pre></div></div>
+<p>The new table arrange all the raw scores in one column. I create a new column <code>Item</code> in this table. <code>Item</code> is the index like <code>ID</code> and <code>Group</code>. We are able to summarize the total score of each participant by combine the index ‘ID’ and ‘Item’. We also average the group means by the index <code>Group</code>.</p>
+</section>
+<section id="configurate-human-mind-approaching-a-readable-data-table" class="level3">
+<h3 class="anchored" data-anchor-id="configurate-human-mind-approaching-a-readable-data-table">Configurate human mind approaching a readable data table</h3>
+<p>Why we have to make effort for waving a table readable for the computer? It is the human nature we prefer every column filled with meanings in a table. Every item has the reason a researcher put it into the study. Organizing all scores of items in a row occupy the meanings in the human cognition, but the index of items is meaningless for every human mind. A researcher need a table filled with the analyzable data for the statitical tool. In the case of this post, the analyzable data is the summation of all 6 items. A table like this case embodies the desired table for the researcher but needs a column of summarized scores for the computer. This gap has to be fixed before a precise statistical process is conducted. The solution I prefer is design the table format at first. This is the main reason I and my students have to prepare a code book before the start of the experiment.</p>
+<p>The secondary solution depends on the packaged functions. There are many raw data table organized like the bad case at first, because the software to collect the raw data and organize them in this way, for example, google From apps. To deal with these data, I have to transform the raw data before I import them to R. A reproducible way is to transform them in use of the R codes. The functions have to isolate which columns are index and which columns are raw responses. To my knowledge, a code book is needed to define the columns to be arranged.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Practices</category>
+  <category>Rethinking</category>
+  <category>R</category>
+  <category>statistics</category>
+  <guid>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/</guid>
+  <pubDate>Mon, 30 May 2016 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Rethink Significance</title>
+  <link>https://scchen.com/post/2016-05-05-rethink-significance/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>To trace the fallacy of use hypothesis testing, I am programming the examples in Dr.&nbsp;Adrianus D. de Groot’s paper <code>The meaning of "signiﬁcance" for different types of research</code>. This paper is published in 1956 in the Dutch journal <em>Nederlands Tijdschrift voor de Psychologie en Haar Grensgebieden</em>. <a href="https://en.wikipedia.org/wiki/Adriaan_de_Groot">Adrianus De Groot</a> is Dutch psychologist and chess master. During 1950s and 1960s, he suggested the concept of emperical cycle for the researchers who use the statistical tools in the social and behavioral researches.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://scchen.com/post/2016-05-05-rethink-significance/empirical-cycle.png" class="img-fluid figure-img"></p>
+<figcaption>Emperical cycle</figcaption>
+</figure>
+</div>
+<p>Emperical cycle</p>
+<p>de Groot’s emperical cycle distinguish two types of emperical research: <strong>exploratory research</strong> and <strong>confirmatory research</strong>. <strong>Exploratory research</strong> aims to formulate the hypotheses that covers the process from <code>observation</code> to <code>induction</code>. <strong>Confirmatory research</strong> attempts to test the predicited concequences based the hypothesis. Thus a <strong>Confirmatory research</strong> covers <code>deduction</code>, <code>testing</code>, and <code>evaluation</code>.</p>
+<p>In the time de Groot started his academic career, the protocol of hypothesis testing has been completed by the leading statisticans, <a href="https://en.wikipedia.org/wiki/Ronald_Fisher">Ronald Fisher</a>, <a href="https://en.wikipedia.org/wiki/Jerzy_Neyman">Jerzy Neyman</a>, and <a href="https://en.wikipedia.org/wiki/Egon_Pearson">Egon Pearson</a>. Psychologists at that time learned and used <em>p value</em> to evaluate the results. de Groot in his paper has suggested that the hypothesis testing is the appropriate tool to evaluate the result of a confirmatory reserach. He in the same paper also discussed the problems that perhapes happen when the hypothesis testing was used to decide the available hypotheses in an exploratory research. There are two cases of explorartoy research discussed in his paper. One has finite hypotheses, and the other has infinite hypotheses. Both cases show up in front of every researcher in anytime and in anywhere. Many researcher struggle how to pick the available hypotheses up according to the data in hands.</p>
+<section id="exploratory-research-has-finite-hypotheses" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-research-has-finite-hypotheses">Exploratory research has finite hypotheses</h3>
+<p>The section title in de Groot’s paper is <code>Hypothesis testing research for multiple hypotheses</code>. He presumed the case as follow:</p>
+<p>We give <em>N</em> as the number of hypotheses yet to be tested. Every hypothesis is going to be evaluated by the hypothesis testing. We also give <em>n</em> as the number of hypothese successfully passed the test. Every hypothesis have the probability .05 pass the test. This probability refers to the type 1 error in the present hypothesis testing.</p>
+<p>Today we have 10 hypotheses (N = 10) to be evaluated by the data. Consider all the consequences, we can calculate all the probabilities given the counts of positive hypotheses.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">require</span>(xtable)</span>
+<span id="cb1-2">N <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb1-3">n <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb1-4">alpha <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span></span>
+<span id="cb1-5">REJECT_P <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span></span>
+<span id="cb1-6">PASS_P <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rep</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">length</span>(n))</span>
+<span id="cb1-7"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">for</span>(k <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">in</span> n){</span>
+<span id="cb1-8">        REJECT_P <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> REJECT_P <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">choose</span>(N,k)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>alpha<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">^</span>k<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> alpha)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">^</span>(N <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> k)</span>
+<span id="cb1-9">        PASS_P[k<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>] <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> REJECT_P</span>
+<span id="cb1-10">}</span>
+<span id="cb1-11">SUCCESS <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">data.frame</span>(n,PASS_P)</span>
+<span id="cb1-12"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">colnames</span>(SUCCESS) <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"n"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability(Positive Results)"</span>)</span>
+<span id="cb1-13"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">xtable</span>(SUCCESS), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">include.rownames =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"html"</span> )</span></code></pre></div></div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>n</th>
+<th>Probability(Positive Results)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0.40</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>0.09</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>0.01</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>0.00</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>0.00</td>
+</tr>
+</tbody>
+</table>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot</span>(PASS_P <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> n, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">xlab =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Smallest Number of Positive Hypotheses"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">ylab =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Probability(Positive Results)"</span>)</span></code></pre></div></div>
+<p><img src="https://scchen.com/post/2016-05-05-rethink-significance/MultiHypo-1.png" class="img-fluid"></p>
+<p>That table is telling us if we wish acquire at least one positive hypothesis, the probability is 0.4012631. That plot shows the probability dramatically decrease with the increasing numbers in our wish. In other words, when we have no precise knowlegde about the use of hyphtesis testing, the more hypotheses we want to induce, the higher risk we get nothing.</p>
+</section>
+<section id="exploratory-research-has-infinite-hypotheses" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-research-has-infinite-hypotheses">Exploratory research has infinite hypotheses</h3>
+<p>This case is everywhere in this era of big data. de Groot called this case <code>Material-exploration: N becomes unspeciﬁed</code>. In his paper, material refers to data because data is a low frequency word in his era. The researchers in his era has realized the best way to deal with this case is <strong>to let the data tell the story</strong>. The research on this case obviously is an <strong>exploratory research</strong>. For the researchers in de Groot’s era and in the era of big data, there are two routes to finish this kind of research project. One route is to label and categorize the hypotheses. This route is the hot topic of <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a> in the present data science. The other route is to decide the possible hypotheses. Today the researchers on this route mostly rely on the multiple variate statistical tools.</p>
+<p>de Groot suggests the caution to the research that attempts to decide the potential hypotheses. <strong>N</strong> is infinite because not all hypotheses could be induced in this case. Whe we have 20 testable hypotheses from 200 potential hypotheses. If a researcher confirmed that 10 of the 20 hypotheses have the positive support by the data, based on the type 1 error, he/she has to understand that 5% hypotheses are positive (10/200) but 50% hypotheses are positive (10/20). This caution is like the misuse of golem that is discussed in <a href="https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-Stan/McElreath/9781482253443">Statistical Rethingking</a>. In the timing I am writing this note, this caution implied the researchers who are thinking the potential hypotheses are decided assumed that they have finished a emperical circle.</p>
+</section>
+<section id="role-of-preregisteration" class="level3">
+<h3 class="anchored" data-anchor-id="role-of-preregisteration">Role of Preregisteration</h3>
+<p>Decades of misusing the hypothesis testing have resulted in a bad situation we have to faced. There is no clear cutoff between the exploratory research and the confirmatory research. Many published papers in nature are the exploratory researches, but they are packaged in the form of confirmatory research by the authors (editors and reviewers have the responsibility too). This is why de Groot’s originated paper was translated and published 60 years later. This post is one of the fundemental I will cite when I introduce and discuss the preregistration.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Practices</category>
+  <category>preregistration</category>
+  <category>R_programming</category>
+  <category>Rethinking</category>
+  <category>statistics</category>
+  <guid>https://scchen.com/post/2016-05-05-rethink-significance/</guid>
+  <pubDate>Wed, 04 May 2016 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Autopsy of NHST and Bayesian Models (part 1)</title>
+  <link>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Chapter 2 of <a href="http://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking: A Bayesian Course with Examples in R and Stan</a> introduces a water tossing example for the demonstration how Bayesain model run through the data based on the researcher’s hypothesis. This chapter defines a three stage process that are used in the coming chapters. We start from a narrated <strong>Data Story</strong>, then <strong>update</strong> the models by filling data in, and finally <strong>evaluate</strong> all the <strong>upated</strong> models. This literated process shows a clear picture for the learners who have yet stuied statistics before read this book. The readers who have studied statistics, like me, will have a hole in the mind what are the differences between Bayesian methods and the null hypothesis significance testing (NHST) in this process. After read Michael Clark’s <a href="https://sites.google.com/a/umich.edu/micl/miscfiles/IntroBayes.pdf">Bayesian Basics: A Conceptual Introduction with Application in R and Stan</a> on <a href="http://mc-stan.org/documentation/">Stan official site</a>, I require the key to understand the difference between the two golems.</p>
+<p>The critical difference is which type of <strong>conditional probability</strong> the statistical method is used to evaluate the model. Once we collected the data based on some hypothesis, we have the distribution of hypothesis <img src="https://latex.codecogs.com/png.latex?p(%5Ctheta)"> and the distribution of data <img src="https://latex.codecogs.com/png.latex?p(y)">. NHST compuates the probability we have the data when the hypothesis is true <img src="https://latex.codecogs.com/png.latex?p(y%7C%5Ctheta)">. In practical, <em>p</em> value refers to the <strong>conditional probability</strong> of the null hypothesis, and <em>confidence interval</em> suggests a range of plausible outcomes based on the <em>confiditional probability</em> of the real hypothesis. A Bayesian method compuates the probability the hypothesis is approved based on the data we have <img src="https://latex.codecogs.com/png.latex?p(%5Ctheta%7Cy)">. Because the computation of <img src="https://latex.codecogs.com/png.latex?p(%5Ctheta%7Cy)"> needs the likelihood <img src="https://latex.codecogs.com/png.latex?p(y%7C%5Ctheta)"> and the priori <img src="https://latex.codecogs.com/png.latex?p(%5Ctheta)">, of course a Baysian method cost more steps than NHST.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Ctheta"> has a term <strong>parameter</strong> in many statstical textbooks. It is a space of numbers that provides the axis where the above probability distribution sit on. <strong>Likelihood</strong> is the <strong>sampling distribution</strong> we have to update before we run NHST. As like I show in <a href="../2016-03-30-learning-sampling-distribution-in-r-programming/">Learning Sampling Distribution in R Programming</a>, a sampling distribution will approach one <img src="https://latex.codecogs.com/png.latex?%5Ctheta"> with the increasing sample size. Sample size is the key for NHST because it could change the evaluation criteron on the statistical model.</p>
+<p>Here is a pseudo experiment I want to know if a test is success based on the expect value smaller than 5 (Obersvations are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10). I completed an experiment of 25 observations and an experiment 36 observations. In use of NHST with a critical value (p &lt; .05), the criterion change with the sample size. The simulation</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-2">OBV <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb1-3">Dist25 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb1-4">Dist36 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb1-5">count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb1-6"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span>(count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>){Dist25 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Dist25,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sample</span>(OBV, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span>,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">replace =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>) ) ); count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>}</span>
+<span id="cb1-7">Dist25_Density <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">data.frame</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Theta =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">density</span>(Dist25, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">kernel =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gaussian"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>x, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Density =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">density</span>(Dist25, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">kernel =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gaussian"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>y)</span>
+<span id="cb1-8">CL25 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">max</span>(Dist25_Density<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Theta[Dist25_Density<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Theta <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span> Dist25_Density<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Density <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span>])</span>
+<span id="cb1-9"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(CL25)  <span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## The smallest parameter that could make judgement</span></span>
+<span id="cb1-10"></span>
+<span id="cb1-11"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1] 4.152939</span></span>
+<span id="cb1-12"></span>
+<span id="cb1-13">count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb1-14"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span>(count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>){Dist36 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Dist36,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sample</span>(OBV, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">36</span>,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">replace =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>) ) ); count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>}</span>
+<span id="cb1-15">Dist36_Density <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">data.frame</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Theta =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">density</span>(Dist36, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">kernel =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gaussian"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>x, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Density =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">density</span>(Dist36, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">kernel =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gaussian"</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>y)</span>
+<span id="cb1-16">CL36 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">max</span>(Dist36_Density<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Theta[Dist36_Density<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Theta <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span> Dist36_Density<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Density <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">05</span>])</span>
+<span id="cb1-17"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(CL36)  <span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## The smallest parameter that could make judgement</span></span>
+<span id="cb1-18"></span>
+<span id="cb1-19"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1] 4.41705</span></span></code></pre></div></div>
+<p>When this experiment outputs a avarage value between 4.15 and 4.42, would you like to collect the data more than 36 participants? This is the opportunity many researchers have to struggle in their study. Researchers who are educated as like me used to collect the observation till the <em>p</em> value is smaller than .05. Most researchers used to stop the experiment till the 36th participant finished the experiment. However, this treatment lacks of the serious scientific thinking. If the hypothesis has set up the conditions to have the average, the sample size should be appointed before the start of experiment.</p>
+<p>The appointment of sample size could be loose when the possible average is uncertain. When the experiment is conducted at first time in the world, NHST without the appointment of sample size could draw the range of averages that might obey the hypothesis. On the other hand, the following studies better has the appointment of sample size. In this case, NHST has to accompany the other statistical evaluation, such as power, effect size, to find the appropriate sample size. Therefore, NHST will perform well when the researcher conducted the first study or have the preparation as well as the first study. This will be the key in my autopsy of Bayesian method.</p>
+
+
+
+ ]]></description>
+  <category>Practices</category>
+  <category>Bayesian</category>
+  <category>Rethinking</category>
+  <category>statistics</category>
+  <guid>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/</guid>
+  <pubDate>Fri, 29 Apr 2016 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Check My Tools to Create and Manipulate Golems</title>
+  <link>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Since two weeks before I published this post, I have started read the book <a href="http://xcelab.net/rm/statistical-rethinking/">Statistical Rethinking: A Bayesian Course with Examples in R and Stan</a> written by <a href="http://xcelab.net/rm/">Richard McElreath</a>. Richard is the evolutionary anthropologist at Max Planck Institute. He wrote this textbook for the PhD students who will use the Bayesian statistics in their research projects. Compared to the textbooks written by statisians and data scientistst, Richard’s book explain and demonstrate the statistical methods with examples instead of equations. His intention is to help who are not staticians but used to use statistics realize one fact: we rely on the statistical models as the representations of our answers rather than answer the questions by the raw data or naked truth. Many non-statisticians are used to find and learn what kind of methods or apps to deal with their data, but few are interested to know the models under the mentods and apps they are using. The trouble and danger is that they thought their jobs are done when the program printed the tables and figures but these outputs are from the statistical model is unable to answer their question. This situation is originated from many non-statisticans consider themselves the end-users of statistical models. Like any user of a packaged software, non-statisticans have no time to understand how the tools in their hands designed and conducted by statisticans.</p>
+<p>Richard introduced the story of <a href="https://en.wikipedia.org/wiki/Golem">golem</a> to raise the non-statsiticans’ attention to the troubles they had made and will make. A statistical model, like a golem, has the power beyond human to finish the work the human are unable to do, for example, trace the passengers’ track from the trillion of camera. Its power could be misused or out of control if we do not understand what is the root of its action. A user of ststistical method, no matter you are or are not stistician, have to keep the awareness of engineer when you are dealing with your data. Today everyone has many easier ways than a decade ago to keep the awareness of engineer. One advantage is that the learning curve for being an part-time hacker is getting smooth. Increasing R apps are opening many windows for who are want to outlook and modify the statistical models.</p>
+<p>Since this post, every post listed in the category <code>Rethinking</code> is one of the summaries and feedbacks to <a href="https://www.crcpress.com/Statistical-Rethinking-A-Bayesian-Course-with-Examples-in-R-and-Stan/McElreath/9781482253443">Statistical Rethinking: A Bayesian Course with Examples in R and Stan</a>. At first I have to check my toolkits for create and manipulate the statistical models. They are R core and the packages. Years ago I have used to use the packages in my data processing. Now I show them for who start to use R after read this post.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install.packages</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"rpart"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"chron"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Hmisc"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Design"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Matrix"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"stringr"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"lme4"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"coda"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"e1071"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"zipfR"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"ape"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"languageR"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"multcomp"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"contrast"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"shiny"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"ggplot2"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dplyr"</span>))</span></code></pre></div></div>
+<p>Some of the packages are learned from I participated in <a href="https://www.coursera.org/specializations/jhu-data-science">Cousera Data Science</a>. Now I used to use <code>dplyr</code> to process the raw data, and I am learning how to draw the figures I need in use of <code>ggplot2</code>. When this post is published, I have updated my R to R version 3.4.3 (2017-11-30). Through <a href="http://xcelab.net/rm/statistical-rethinking/">the codes of Heuristic Andrew</a>, here are my installed packages.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">ip <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.data.frame</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">installed.packages</span>()[,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>)])</span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rownames</span>(ip) <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb2-3">ip <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> ip[<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">is.na</span>(ip<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span>Priority),<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,drop<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span><span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>]</span>
+<span id="cb2-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(ip, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">row.names=</span><span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span>)</span>
+<span id="cb2-5"></span>
+<span id="cb2-6"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       Package   Version</span></span>
+<span id="cb2-7"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       acepack     1.4.1</span></span>
+<span id="cb2-8"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##           ape       5.0</span></span>
+<span id="cb2-9"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##    assertthat     0.2.0</span></span>
+<span id="cb2-10"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     backports     1.1.2</span></span>
+<span id="cb2-11"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     base64enc     0.1-3</span></span>
+<span id="cb2-12"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##            BH  1.65.0-1</span></span>
+<span id="cb2-13"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         bindr       0.1</span></span>
+<span id="cb2-14"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      bindrcpp       0.2</span></span>
+<span id="cb2-15"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         binom     1.1-1</span></span>
+<span id="cb2-16"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        bitops     1.0-6</span></span>
+<span id="cb2-17"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      blogdown       0.4</span></span>
+<span id="cb2-18"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      bookdown       0.5</span></span>
+<span id="cb2-19"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##           car     2.1-6</span></span>
+<span id="cb2-20"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       caTools    1.17.1</span></span>
+<span id="cb2-21"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     checkmate     1.8.5</span></span>
+<span id="cb2-22"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         chron    2.3-51</span></span>
+<span id="cb2-23"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##          coda    0.19-1</span></span>
+<span id="cb2-24"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##    colorspace     1.3-2</span></span>
+<span id="cb2-25"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      contrast      0.21</span></span>
+<span id="cb2-26"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##    data.table  1.10.4-3</span></span>
+<span id="cb2-27"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     dichromat     2.0-0</span></span>
+<span id="cb2-28"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        digest    0.6.13</span></span>
+<span id="cb2-29"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         dplyr     0.7.4</span></span>
+<span id="cb2-30"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         e1071     1.6-8</span></span>
+<span id="cb2-31"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      evaluate    0.10.1</span></span>
+<span id="cb2-32"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       Formula     1.2-2</span></span>
+<span id="cb2-33"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       geepack     1.2-1</span></span>
+<span id="cb2-34"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       ggplot2     2.2.1</span></span>
+<span id="cb2-35"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##          glue     1.2.0</span></span>
+<span id="cb2-36"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     gridExtra       2.3</span></span>
+<span id="cb2-37"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        gtable     0.2.0</span></span>
+<span id="cb2-38"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         highr       0.6</span></span>
+<span id="cb2-39"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         Hmisc     4.0-3</span></span>
+<span id="cb2-40"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     htmlTable    1.11.1</span></span>
+<span id="cb2-41"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     htmltools     0.3.6</span></span>
+<span id="cb2-42"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##   htmlwidgets       0.9</span></span>
+<span id="cb2-43"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        httpuv     1.3.5</span></span>
+<span id="cb2-44"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     iterators     1.0.9</span></span>
+<span id="cb2-45"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      jsonlite       1.5</span></span>
+<span id="cb2-46"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         knitr      1.17</span></span>
+<span id="cb2-47"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      labeling       0.3</span></span>
+<span id="cb2-48"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     languageR     1.4.1</span></span>
+<span id="cb2-49"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         later       0.6</span></span>
+<span id="cb2-50"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  latticeExtra    0.6-28</span></span>
+<span id="cb2-51"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      lazyeval     0.2.1</span></span>
+<span id="cb2-52"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##          lme4    1.1-15</span></span>
+<span id="cb2-53"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      magrittr       1.5</span></span>
+<span id="cb2-54"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      markdown       0.8</span></span>
+<span id="cb2-55"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  MatrixModels     0.4-1</span></span>
+<span id="cb2-56"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##          mime       0.5</span></span>
+<span id="cb2-57"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        miniUI     0.1.1</span></span>
+<span id="cb2-58"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         minqa     1.2.4</span></span>
+<span id="cb2-59"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      multcomp     1.4-8</span></span>
+<span id="cb2-60"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       munsell     0.4.3</span></span>
+<span id="cb2-61"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       mvtnorm     1.0-6</span></span>
+<span id="cb2-62"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        nloptr     1.0.4</span></span>
+<span id="cb2-63"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      pbkrtest     0.4-7</span></span>
+<span id="cb2-64"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     pBrackets       1.0</span></span>
+<span id="cb2-65"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     pkgconfig     2.0.1</span></span>
+<span id="cb2-66"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         plogr     0.1-1</span></span>
+<span id="cb2-67"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       plotrix       3.7</span></span>
+<span id="cb2-68"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##          plyr     1.8.4</span></span>
+<span id="cb2-69"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     polspline    1.1.12</span></span>
+<span id="cb2-70"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      quantreg      5.34</span></span>
+<span id="cb2-71"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##            R6     2.2.2</span></span>
+<span id="cb2-72"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  RColorBrewer     1.1-2</span></span>
+<span id="cb2-73"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##          Rcpp   0.12.14</span></span>
+<span id="cb2-74"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     RcppEigen 0.3.3.3.1</span></span>
+<span id="cb2-75"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      reshape2     1.4.3</span></span>
+<span id="cb2-76"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         rlang     0.1.4</span></span>
+<span id="cb2-77"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        RLRsim     3.1-3</span></span>
+<span id="cb2-78"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     rmarkdown       1.8</span></span>
+<span id="cb2-79"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##           rms     5.1-1</span></span>
+<span id="cb2-80"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     rprojroot     1.3-1</span></span>
+<span id="cb2-81"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##    rstudioapi       0.7</span></span>
+<span id="cb2-82"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      sandwich     2.4-0</span></span>
+<span id="cb2-83"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        scales     0.5.0</span></span>
+<span id="cb2-84"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         servr       0.8</span></span>
+<span id="cb2-85"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         shiny     1.0.5</span></span>
+<span id="cb2-86"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##          simr     1.0.3</span></span>
+<span id="cb2-87"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##   sourcetools     0.1.6</span></span>
+<span id="cb2-88"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       SparseM      1.77</span></span>
+<span id="cb2-89"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       stringi     1.1.6</span></span>
+<span id="cb2-90"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       stringr     1.2.0</span></span>
+<span id="cb2-91"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       TH.data     1.0-8</span></span>
+<span id="cb2-92"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        tibble     1.3.4</span></span>
+<span id="cb2-93"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##       viridis     0.4.0</span></span>
+<span id="cb2-94"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##   viridisLite     0.2.0</span></span>
+<span id="cb2-95"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##        xtable     1.8-2</span></span>
+<span id="cb2-96"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##          yaml    2.1.16</span></span>
+<span id="cb2-97"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##         zipfR    0.6-10</span></span>
+<span id="cb2-98"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##           zoo     1.8-0</span></span>
+<span id="cb2-99"></span>
+<span id="cb2-100"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">print</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"There are "</span>,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">dim</span>(ip)[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>], <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" packages installed in my laptop."</span>))</span>
+<span id="cb2-101"></span>
+<span id="cb2-102"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1] "There are 92 packages installed in my laptop."</span></span></code></pre></div></div>
+<p>Richard’s book inspired me help people control their golems/ststistical models in the process of coding. In his book, literature and codes are separated. Readers who are not familiar with coding skill might hardly follow his literature. Literatural coding might be the best way to impliment the <code>Rethinking</code>. I am going to accumulating the codes of Bayesian statistics and thake notes of his and others literatures in the coming posts.</p>
+
+
+
+ ]]></description>
+  <category>Practices</category>
+  <category>R_programming</category>
+  <category>Rethinking</category>
+  <guid>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/</guid>
+  <pubDate>Thu, 21 Apr 2016 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Vectors in mathematics and in codes</title>
+  <link>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>When a set of data/observations is imported to R, it is usually treated as <code>vector</code>. Vector has two mathematical forms as following:</p>
+<p><strong>column vector</strong>: <img src="https://latex.codecogs.com/png.latex?%5Cvec%7Ba%7D%20=%20%5Cbegin%7Bbmatrix%7D%201%20%5C%5C%202%20%5C%5C%203%20%5Cend%7Bbmatrix%7D"> <strong>row vector</strong>: <img src="https://latex.codecogs.com/png.latex?%5Cvec%7Ba%7D%20=%20%5B%201%5C%202%5C%203%20%5D"></p>
+<p>Default form of vector in R is column vector. More precisely, it is treated as a matrix:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">a <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span></span>
+<span id="cb1-2">a</span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1] 1 2 3</span></span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">class</span>(a)</span>
+<span id="cb1-7"></span>
+<span id="cb1-8"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1] "integer"</span></span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">str</span>(a)</span>
+<span id="cb1-11"></span>
+<span id="cb1-12"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  int [1:3] 1 2 3</span></span>
+<span id="cb1-13"></span>
+<span id="cb1-14"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">t</span>(a)</span>
+<span id="cb1-15"></span>
+<span id="cb1-16"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      [,1] [,2] [,3]</span></span>
+<span id="cb1-17"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1,]    1    2    3</span></span></code></pre></div></div>
+<p>In a statistical work, we used to calcuate the sum of square (SS) for the deviations to mean. The common equation is like: <img src="https://latex.codecogs.com/png.latex?%5Csum_%7Bi=1%7D%5E%7Bn%7D(Y_%7Bi%7D-%5Coverline%7BY%7D)%5E2"></p>
+<p>This is the fundemental for calculating the variance of this set of data/observations. The equation of variance is like this: <img src="https://latex.codecogs.com/png.latex?%5Cfrac%7B%5Csum_%7Bi=1%7D%5E%7Bn%7D(Y_%7Bi%7D-%5Coverline%7BY%7D)%5E2%7D%7Bn%7D"></p>
+<p>Because the data/observations are treated as matrix, we are able to have the sum of square by the multiplication of this matrix. <img src="https://latex.codecogs.com/png.latex?%5Cmathbf%7BA'A%7D%20=%20%5Cbegin%7Bbmatrix%7D%20A_1%20A_2%20A_3%20%5Cdots%5Cend%7Bbmatrix%7D%20%5Ctimes%20%5Cbegin%7Bbmatrix%7D%20A_1%20%5C%5C%20A_2%20%5C%5C%20A_3%20%5C%5C%20%5Cvdots%20%5Cend%7Bbmatrix%7D"></p>
+<p>Here are ten observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, the average of this data is 5.5. Let’s have the SS and variance in use of the multiplication of matrix:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">SS <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">t</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%*%</span> (<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>))</span>
+<span id="cb2-2">VAR <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> SS<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">length</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>)</span>
+<span id="cb2-3">SS</span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      [,1]</span></span>
+<span id="cb2-6"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1,] 82.5</span></span>
+<span id="cb2-7"></span>
+<span id="cb2-8">VAR</span>
+<span id="cb2-9"></span>
+<span id="cb2-10"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      [,1]</span></span>
+<span id="cb2-11"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1,] 8.25</span></span></code></pre></div></div>
+<p>In R <code>base</code> package, the function <code>var</code> outputs a sampling variance, not a population variance as above.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">var</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>)</span>
+<span id="cb3-2"></span>
+<span id="cb3-3"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## [1] 9.166667</span></span></code></pre></div></div>
+
+
+
+ ]]></description>
+  <category>Practices</category>
+  <category>latex</category>
+  <category>R_programming</category>
+  <category>statistics</category>
+  <guid>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/</guid>
+  <pubDate>Mon, 04 Apr 2016 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Display Math Equation in Post</title>
+  <link>https://scchen.com/post/2016-04-05-display-math-equation-in-post/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>There will be many posts demostrate how to transfer the mathematical laws to the codes, and the reversed flaw. I start from this famous equation:</p>
+<p><img src="https://latex.codecogs.com/png.latex?E%20=%20mc%5E2"></p>
+<p>Use the steps 1 and 2 indtroducted in <a href="http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html">Fong Chun Chan’s post</a>, my website is able to show the equation in any post. Because this theme use <code>kramdown</code> as the engine of markdown, I pass the step 4.</p>
+<p>Here are the proof the central limitation theorem. Mix of inline and one-line equations. We have a sequence of independent random variables, <img src="https://latex.codecogs.com/png.latex?X_1,%20X_2,%20%5Cldots"> And the mean and variance of them: Mean <img src="https://latex.codecogs.com/png.latex?E%20%5Cleft%5B%7BX_i%7D%5Cright%5D%20=%20%5Cmu%20%5Cin%20%5Cleft(%7B-%5Cinfty%20%5C,.%5C,.%5C,%20%5Cinfty%7D%5Cright)"> Variance <img src="https://latex.codecogs.com/png.latex?V%20%5Cleft(%7BX_i%7D%5Cright)%20=%20%5Csigma%5E2%20%3E%200"></p>
+<p>Assume: <img src="https://latex.codecogs.com/png.latex?S_n%20=%20%5Csum_%7Bi%20%5Cmathop%20=%201%7D%5En%20X_i"> Then: <img src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20%5Cfrac%20%7BS_n%20-%20n%20%5Cmu%7D%20%7B%5Csqrt%20%7Bn%20%5Csigma%5E2%7D%20%7D%20%5Cxrightarrow%20%7BD%7D%20N%20%5Cleft(%7B0,%201%7D%5Cright)"> as <img src="https://latex.codecogs.com/png.latex?n%20%5Cto%20%5Cinfty"></p>
+<p>Embedded tex codes in <code>$$ ... $$</code>, the equation was transfered inline or in single line. Thus I pass the step 3 of <a href="http://tinyheero.github.io/2015/12/06/rmd-to-jekyll-protect-eqn.html">Fong Chun Chan’s method</a>.</p>
+<p><strong>Note.</strong> Justify the last equation in 2018-01-02 17:28:50</p>
+
+
+
+ ]]></description>
+  <category>Practices</category>
+  <category>latex</category>
+  <category>statistics</category>
+  <guid>https://scchen.com/post/2016-04-05-display-math-equation-in-post/</guid>
+  <pubDate>Mon, 04 Apr 2016 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Learning Sampling Distribution in R Programming</title>
+  <link>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Sampling distribution is the set of possible outcomes when we collect data through the randomization procedure (random sampling, ramond assignment). Do a simulation work is the best way to understand the sampling distribution. A simulation work is unrelated to any context we collect the data. You can connect the simulation work to any randominzation in the real world.</p>
+<p>In this pseudo experiment, there are only ten observations we will collect in every sample. They are 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Accodring to the design of the experiment, a sample will have one observation to countless observations. I assume the distrubtions are accumulated from 100 samples of 1 observation, 9 observations, ,16 observations, 25 observations, and 36 observations. Every sample will be collapsed to a average value and become the components of sampling distribution. I use <code>ggplot2</code> to draw the five sampling distributions. Look at what they are look like.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">suppressPackageStartupMessages</span>({</span>
+<span id="cb1-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ggplot2)</span>
+<span id="cb1-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(xtable)</span>
+<span id="cb1-4">  })</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">set.seed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb1-7">OBV <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span></span>
+<span id="cb1-8">Dist1 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb1-9">Dist9 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb1-10">Dist16 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb1-11">Dist25 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb1-12">Dist36 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span></span>
+<span id="cb1-13">count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb1-14"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span>(count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>){Dist1 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Dist1,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sample</span>(OBV, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">replace =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>)); count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>}</span>
+<span id="cb1-15">count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb1-16"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span>(count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>){Dist9 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Dist9,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sample</span>(OBV, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">replace =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>) ) ); count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>}</span>
+<span id="cb1-17">count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb1-18"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span>(count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>){Dist16 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Dist16,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sample</span>(OBV, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">16</span>,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">replace =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>) ) ); count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>}</span>
+<span id="cb1-19">count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb1-20"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span>(count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>){Dist25 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Dist25,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sample</span>(OBV, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span>,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">replace =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>) ) ); count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>}</span>
+<span id="cb1-21">count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span></span>
+<span id="cb1-22"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">while</span>(count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>){Dist36 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Dist36,<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mean</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">sample</span>(OBV, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">36</span>,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">replace =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span>) ) ); count <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> count <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>}</span>
+<span id="cb1-23">Dist.df <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">data.frame</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Size =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">factor</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rep</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">9</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">16</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">36</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">each=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>)), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">Sample_Means =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(Dist1, Dist9, Dist16, Dist25, Dist36) )</span>
+<span id="cb1-24"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(Dist.df, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(Sample_Means, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> Size)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_histogram</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">facet_grid</span>(. <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> Size)</span></code></pre></div></div>
+<p><img src="https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/Sampling-1.png" class="img-fluid"></p>
+<p>We call the set of observations 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 <strong>population</strong> in any circumstance we conduct this experiment. This population has the average 5.5 and the variance/standard deviation 8.25/2.87. With the increase of sample size, you find more and more samples collapsed to the average of population. The variation of each sample distribution decreases with the increasing of sample size as well. The following table illustrate the average and variance/standard deviation of each sampling distribution.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Sample Size</th>
+<th>Average</th>
+<th>Variance</th>
+<th>Standard Deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>5.64</td>
+<td>7</td>
+<td>2.65</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>5.48</td>
+<td>0.97</td>
+<td>0.98</td>
+</tr>
+<tr class="odd">
+<td>16</td>
+<td>5.42</td>
+<td>0.54</td>
+<td>0.73</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>5.47</td>
+<td>0.38</td>
+<td>0.61</td>
+</tr>
+<tr class="odd">
+<td>36</td>
+<td>5.56</td>
+<td>0.2</td>
+<td>0.45</td>
+</tr>
+</tbody>
+</table>
+<p>There are three findings in this simulation. First, the average of every sample is as equal as the average of population. Second, the variance of every sample is close to the divide of population variance by the sample size. Third, the standard deviation of every sample is close to the divide of population standard deviation by the square of sample size. These facts matches <a href="https://en.wikipedia.org/wiki/Central_limit_theorem">Central limit theorem</a>.</p>
+
+
+
+ ]]></description>
+  <category>Practices</category>
+  <category>R_programming</category>
+  <category>statistics</category>
+  <guid>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/</guid>
+  <pubDate>Tue, 29 Mar 2016 16:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hello R Markdown</title>
+  <link>https://scchen.com/post/2015-07-23-r-rmarkdown/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="r-markdown" class="level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">summary</span>(cars)</span>
+<span id="cb1-2"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##      speed           dist</span></span>
+<span id="cb1-3"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  Min.   : 4.0   Min.   :  2.00</span></span>
+<span id="cb1-4"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  1st Qu.:12.0   1st Qu.: 26.00</span></span>
+<span id="cb1-5"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  Median :15.0   Median : 36.00</span></span>
+<span id="cb1-6"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  Mean   :15.4   Mean   : 42.98</span></span>
+<span id="cb1-7"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  3rd Qu.:19.0   3rd Qu.: 56.00</span></span>
+<span id="cb1-8"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##  Max.   :25.0   Max.   :120.00</span></span>
+<span id="cb1-9">fit <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">lm</span>(dist <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">~</span> speed, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> cars)</span>
+<span id="cb1-10">fit</span>
+<span id="cb1-11"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##</span></span>
+<span id="cb1-12"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Call:</span></span>
+<span id="cb1-13"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## lm(formula = dist ~ speed, data = cars)</span></span>
+<span id="cb1-14"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##</span></span>
+<span id="cb1-15"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Coefficients:</span></span>
+<span id="cb1-16"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## (Intercept)        speed</span></span>
+<span id="cb1-17"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">##     -17.579        3.932</span></span></code></pre></div></div>
+</section>
+<section id="including-plots" class="level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure 1 for example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">par</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">mar =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>))</span>
+<span id="cb2-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pie</span>(</span>
+<span id="cb2-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">280</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">60</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>),</span>
+<span id="cb2-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sky'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Sunny side of pyramid'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Shady side of pyramid'</span>),</span>
+<span id="cb2-5">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">col =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#0292D8'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#F7EA39'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'#C4B632'</span>),</span>
+<span id="cb2-6">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">init.angle =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">50</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">border =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NA</span></span>
+<span id="cb2-7">)</span></code></pre></div></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://scchen.com/post/2015-07-23-r-rmarkdown/pie-1.png" class="img-fluid figure-img"></p>
+<figcaption>A fancy pie chart.</figcaption>
+</figure>
+</div>
+<p>Figure 1: A fancy pie chart.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>R Markdown</category>
+  <category>plot</category>
+  <category>regression</category>
+  <guid>https://scchen.com/post/2015-07-23-r-rmarkdown/</guid>
+  <pubDate>Wed, 22 Jul 2015 16:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

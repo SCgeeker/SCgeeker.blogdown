@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="陳紹慶">
+<meta name="description" content="示範R套件faux模擬重製實驗資料估計統計考驗力，評估小樣本研究的證據強度…">
+
+<title>教學習作：如何運用模擬研究解析小樣本研究的證據力 – 暗微幽光</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "沒有結果",
+    "search-matching-documents-text": "符合的文件",
+    "search-copy-link-title": "複製搜尋連結",
+    "search-hide-matches-text": "隱藏其他符合的結果",
+    "search-more-match-text": "更多符合結果",
+    "search-more-matches-text": "更多符合結果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "送出",
+    "search-label": "搜尋"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">暗微幽光</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="搜尋"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="切換導航列" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">首頁</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../post/index.html"> 
+<span class="menu-text">隨筆</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../project/index.html"> 
+<span class="menu-text">專案</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publication/index.html"> 
+<span class="menu-text">出版品</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../"> 
+<span class="menu-text">English</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">教學習作：如何運用模擬研究解析小樣本研究的證據力</h1>
+</div>
+
+<div>
+  <div class="description">
+    示範R套件faux模擬重製實驗資料估計統計考驗力，評估小樣本研究的證據強度…
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">作者</div>
+    <div class="quarto-title-meta-contents">
+             <p>陳紹慶 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">發佈於</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2021年6月5日</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<h2 id="習作目標" class="anchored">
+習作目標
+</h2>
+<p>
+標題具有啟發性的小樣本研究充斥許多科學文獻，在多數科學人士體認可重製危機的現在(Baker 2016)，學習根據論文的統計資訊，評估研究證據強度，能增益研究者識讀研究論文品質，進而增加設計嚴謹研究的能力。
+</p>
+<p>
+本文使用英國格拉斯哥大學心理學系DeBruine教授開發的R套件<a href="https://debruine.github.io/faux/index.html" target="_blank" rel="noopener">faux</a>(DeBruine 2021)，示範如何根據 Panayotov (2019) 報告的減重效用統計資訊，以模擬重製實驗資料估計統計考驗力，評估這份論文的證據強度。
+</p>
+<h2 id="實驗參數" class="anchored">
+實驗參數
+</h2>
+<p>
+Panayotov (2019) 的<a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00550/full" target="_blank" rel="noopener">原始論文</a>是以cc授權的開放取用論文，不確定有事前預先註冊，未提供原始資料。論文作者測試BMI值屬於肥胖區間的14位成年人，分派到實驗組與控制組各7人。兩組參與者進行八週體重控制課程，飲食菜單與運動課表相同，實驗組的處置是被告知菜單是低卡飲食，控制組則告知確實資訊。論文作者假設實驗組經過八週課程，能減重約6公斤(“Theoretically this should cause a weight loss of about 6 kg in 8 weeks.”)。
+</p>
+<p>
+Panayotov的測量指標有體重(kg)、體脂肪比例(%)、BMI(kg/m^2)，在課程開始(baseline)與課程結束(final)兩個時間測量。減重效用的檢驗方式是以t檢定，確認兩組參與者在兩個時間的各項指標差異，顯著水準是0.05，論文未註明檢定方式是單尾(one tail)或雙尾(two tail)。統計資訊如下表。
+</p>
+<div class="figure">
+<p>
+<img src="fpsyt-10-00550-t002.jpg" alt="實驗開始與結束測量的參與者體重指數分組平均值、標準差、t檢定p值。取自原始論文Table 2。" width="730">
+</p>
+<p class="caption">
+Figure 1: 實驗開始與結束測量的參與者體重指數分組平均值、標準差、t檢定p值。取自原始論文Table 2。
+</p>
+</div>
+<h2 id="模擬資料測試" class="anchored">
+模擬資料測試
+</h2>
+<p>
+減重效用是實驗組課程前後在三種指標的差異，因此採用原始論文Table 2提供的統計資訊，運用<code>faux</code>統計製作模擬資料。
+</p>
+<p>
+首先以體重資訊示範如何製造模擬資料。前後測資料來自同一位觀察對象，資料之間預設有相關性，一般設定相關性有0.5，代表前後時間的測量來自不完全彼此獨立，也不完全相關的狀況。
+</p>
+<pre><code class="language-r">weight_dat &lt;- sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c("baseline", "final")),  ## 獨變項設定
+  mu = data.frame(baseline=112.98, final=103.73), ## 基準及結束平均值
+  sd = data.frame(baseline=19.93, final=17.89),   ## 基準及結束標準差
+  r=0.5,
+  dv="weight",
+  empirical=TRUE,
+  long = TRUE
+)
+
+get_params(weight_dat) %&gt;% knitr::kable()
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">
+n
+</th>
+<th style="text-align:left">
+var
+</th>
+<th style="text-align:right">
+baseline
+</th>
+<th style="text-align:right">
+final
+</th>
+<th style="text-align:right">
+mean
+</th>
+<th style="text-align:right">
+sd
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">
+7
+</td>
+<td style="text-align:left">
+baseline
+</td>
+<td style="text-align:right">
+1.0
+</td>
+<td style="text-align:right">
+0.5
+</td>
+<td style="text-align:right">
+112.98
+</td>
+<td style="text-align:right">
+19.93
+</td>
+</tr>
+<tr>
+<td style="text-align:right">
+7
+</td>
+<td style="text-align:left">
+final
+</td>
+<td style="text-align:right">
+0.5
+</td>
+<td style="text-align:right">
+1.0
+</td>
+<td style="text-align:right">
+103.73
+</td>
+<td style="text-align:right">
+17.89
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+測試一次模擬資料的分析:
+</p>
+<pre><code class="language-r"># paired-samples t-test
+t.test(weight ~ cond, weight_dat, paired = TRUE)
+</code></pre>
+<pre><code>##
+##  Paired t-test
+##
+## data:  weight by cond
+## t = 1.2886, df = 6, p-value = 0.245
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -8.314993 26.814993
+## sample estimates:
+## mean of the differences
+##                    9.25
+</code></pre>
+<p>
+準備取出t檢定報表的自訂函式:
+</p>
+<pre><code class="language-r">analyse &lt;- function(data) {
+  t.test(weight ~ cond, data, paired = TRUE) %&gt;%
+    broom::tidy()
+}
+</code></pre>
+<p>
+製造一千次重製實驗的資料：
+</p>
+<pre><code class="language-r">weight_dat &lt;- sim_design(
+  n = 7,
+  within =  list(cond = c("baseline", "final")),
+  mu = data.frame(baseline=112.98, final=103.73),
+  sd = data.frame(baseline=19.93, final=17.89),
+  r=0.5,
+  dv="weight",
+#  empirical=TRUE,
+  long = TRUE,
+  rep=1000
+)
+</code></pre>
+<p>
+分析一千次重製實驗資料：
+</p>
+<pre><code class="language-r">weight_sim &lt;- weight_dat %&gt;%
+  mutate(analysis = map(data, analyse)) %&gt;%
+  select(-data) %&gt;%
+  unnest(analysis)
+
+head(weight_sim) %&gt;% knitr::kable()
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">
+rep
+</th>
+<th style="text-align:right">
+estimate
+</th>
+<th style="text-align:right">
+statistic
+</th>
+<th style="text-align:right">
+p.value
+</th>
+<th style="text-align:right">
+parameter
+</th>
+<th style="text-align:right">
+conf.low
+</th>
+<th style="text-align:right">
+conf.high
+</th>
+<th style="text-align:left">
+method
+</th>
+<th style="text-align:left">
+alternative
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">
+1
+</td>
+<td style="text-align:right">
+10.685707
+</td>
+<td style="text-align:right">
+2.5782957
+</td>
+<td style="text-align:right">
+0.0418653
+</td>
+<td style="text-align:right">
+6
+</td>
+<td style="text-align:right">
+0.5445184
+</td>
+<td style="text-align:right">
+20.826896
+</td>
+<td style="text-align:left">
+Paired t-test
+</td>
+<td style="text-align:left">
+two.sided
+</td>
+</tr>
+<tr>
+<td style="text-align:right">
+2
+</td>
+<td style="text-align:right">
+3.560315
+</td>
+<td style="text-align:right">
+1.7130931
+</td>
+<td style="text-align:right">
+0.1375304
+</td>
+<td style="text-align:right">
+6
+</td>
+<td style="text-align:right">
+-1.5250927
+</td>
+<td style="text-align:right">
+8.645723
+</td>
+<td style="text-align:left">
+Paired t-test
+</td>
+<td style="text-align:left">
+two.sided
+</td>
+</tr>
+<tr>
+<td style="text-align:right">
+3
+</td>
+<td style="text-align:right">
+1.312591
+</td>
+<td style="text-align:right">
+0.2122573
+</td>
+<td style="text-align:right">
+0.8389334
+</td>
+<td style="text-align:right">
+6
+</td>
+<td style="text-align:right">
+-13.8190195
+</td>
+<td style="text-align:right">
+16.444202
+</td>
+<td style="text-align:left">
+Paired t-test
+</td>
+<td style="text-align:left">
+two.sided
+</td>
+</tr>
+<tr>
+<td style="text-align:right">
+4
+</td>
+<td style="text-align:right">
+2.109562
+</td>
+<td style="text-align:right">
+0.3506974
+</td>
+<td style="text-align:right">
+0.7378000
+</td>
+<td style="text-align:right">
+6
+</td>
+<td style="text-align:right">
+-12.6094312
+</td>
+<td style="text-align:right">
+16.828555
+</td>
+<td style="text-align:left">
+Paired t-test
+</td>
+<td style="text-align:left">
+two.sided
+</td>
+</tr>
+<tr>
+<td style="text-align:right">
+5
+</td>
+<td style="text-align:right">
+14.168492
+</td>
+<td style="text-align:right">
+1.9477947
+</td>
+<td style="text-align:right">
+0.0993623
+</td>
+<td style="text-align:right">
+6
+</td>
+<td style="text-align:right">
+-3.6306383
+</td>
+<td style="text-align:right">
+31.967622
+</td>
+<td style="text-align:left">
+Paired t-test
+</td>
+<td style="text-align:left">
+two.sided
+</td>
+</tr>
+<tr>
+<td style="text-align:right">
+6
+</td>
+<td style="text-align:right">
+12.328009
+</td>
+<td style="text-align:right">
+2.2493344
+</td>
+<td style="text-align:right">
+0.0655011
+</td>
+<td style="text-align:right">
+6
+</td>
+<td style="text-align:right">
+-1.0828702
+</td>
+<td style="text-align:right">
+25.738888
+</td>
+<td style="text-align:left">
+Paired t-test
+</td>
+<td style="text-align:left">
+two.sided
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+總結模擬結果的考驗力：
+</p>
+<pre><code class="language-r">weight_power &lt;- weight_sim %&gt;%
+  mutate(sig = p.value &lt; .05) %&gt;%
+  summarise(power = mean(sig)) %&gt;%
+  pull(power)
+</code></pre>
+<p>
+總計考驗力約<code>0.189</code>。以上模擬結果說明，如果前後測量不完全彼此獨立，也不完全相關，找相同條件的人士進行課程，體重減少9公斤的成功機會大約是20%。
+</p>
+<h2 id="減重效用考驗力估計" class="anchored">
+減重效用考驗力估計
+</h2>
+<p>
+不確定前後測量的獨立或關聯程度，我們擴展以上展示的方法，製造前後測量相關係數是<code>0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9</code>等九種1000次模擬結果，再總計各項測量指標的考驗力。
+</p>
+<h3 id="體重" class="anchored">
+體重
+</h3>
+<p>
+製造模擬資料：
+</p>
+<pre><code class="language-r">r_cand &lt;- seq(.1,.9,.1)
+
+weight_dat_list &lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c("baseline", "final")),  ## 獨變項設定
+  mu = data.frame(baseline=112.98, final=103.73), ## 基準及結束平均值
+  sd = data.frame(baseline=19.93, final=17.89),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv="weight",
+  long = TRUE,
+  rep=1000
+)) %&gt;%
+  set_names(nm=r_cand)
+</code></pre>
+<p>
+分析並總計各種相關係數條件的考驗力：
+</p>
+<pre><code class="language-r">weight_sim_power &lt;- NULL
+for(i in 1:length(weight_dat_list)){
+weight_sim_power &lt;- c(weight_sim_power,weight_dat_list[[i]] %&gt;%
+  mutate(analysis = map(data, analyse)) %&gt;%
+  select(-data) %&gt;%
+  unnest(analysis) %&gt;%
+  mutate(sig = p.value &lt; .05) %&gt;%
+  summarise(power = mean(sig)) %&gt;%
+  pull(power))
+}
+
+names(weight_sim_power) &lt;- r_cand
+knitr::kable(t(weight_sim_power))
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">
+0.1
+</th>
+<th style="text-align:right">
+0.2
+</th>
+<th style="text-align:right">
+0.3
+</th>
+<th style="text-align:right">
+0.4
+</th>
+<th style="text-align:right">
+0.5
+</th>
+<th style="text-align:right">
+0.6
+</th>
+<th style="text-align:right">
+0.7
+</th>
+<th style="text-align:right">
+0.8
+</th>
+<th style="text-align:right">
+0.9
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">
+0.131
+</td>
+<td style="text-align:right">
+0.149
+</td>
+<td style="text-align:right">
+0.136
+</td>
+<td style="text-align:right">
+0.17
+</td>
+<td style="text-align:right">
+0.182
+</td>
+<td style="text-align:right">
+0.227
+</td>
+<td style="text-align:right">
+0.278
+</td>
+<td style="text-align:right">
+0.404
+</td>
+<td style="text-align:right">
+0.662
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+體重測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率只有66%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。
+</p>
+<h3 id="體脂肪比例" class="anchored">
+體脂肪比例
+</h3>
+<p>
+製造模擬資料：
+</p>
+<pre><code class="language-r">r_cand &lt;- seq(.1,.9,.1)
+
+mass_dat_list &lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c("baseline", "final")),  ## 獨變項設定
+  mu = data.frame(baseline=39.38, final=35.98), ## 基準及結束平均值
+  sd = data.frame(baseline=4.10, final=4.46),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv="mass",
+  long = TRUE,
+  rep=1000
+)) %&gt;%
+  set_names(nm=r_cand)
+
+analyse &lt;- function(data) {
+  t.test(mass ~ cond, data, paired = TRUE) %&gt;%
+    broom::tidy()
+}
+</code></pre>
+<p>
+分析並總計各種相關係數條件的考驗力：
+</p>
+<pre><code class="language-r">mass_sim_power &lt;- NULL
+for(i in 1:length(mass_dat_list)){
+mass_sim_power &lt;- c(mass_sim_power,mass_dat_list[[i]] %&gt;%
+  mutate(analysis = map(data, analyse)) %&gt;%
+  select(-data) %&gt;%
+  unnest(analysis) %&gt;%
+  mutate(sig = p.value &lt; .05) %&gt;%
+  summarise(power = mean(sig)) %&gt;%
+  pull(power))
+}
+
+names(mass_sim_power) &lt;- r_cand
+knitr::kable(t(mass_sim_power))
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">
+0.1
+</th>
+<th style="text-align:right">
+0.2
+</th>
+<th style="text-align:right">
+0.3
+</th>
+<th style="text-align:right">
+0.4
+</th>
+<th style="text-align:right">
+0.5
+</th>
+<th style="text-align:right">
+0.6
+</th>
+<th style="text-align:right">
+0.7
+</th>
+<th style="text-align:right">
+0.8
+</th>
+<th style="text-align:right">
+0.9
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">
+0.255
+</td>
+<td style="text-align:right">
+0.294
+</td>
+<td style="text-align:right">
+0.309
+</td>
+<td style="text-align:right">
+0.353
+</td>
+<td style="text-align:right">
+0.428
+</td>
+<td style="text-align:right">
+0.512
+</td>
+<td style="text-align:right">
+0.609
+</td>
+<td style="text-align:right">
+0.753
+</td>
+<td style="text-align:right">
+0.966
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+體脂肪比例測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率可達到95%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。
+</p>
+<h3 id="bmi" class="anchored">
+BMI
+</h3>
+<p>
+製造模擬資料：
+</p>
+<pre><code class="language-r">r_cand &lt;- seq(.1,.9,.1)
+
+BMI_dat_list &lt;- map(r_cand,
+  function(x) sim_design(
+  n = 7,                       ## 受試者人數
+  within =  list(cond = c("baseline", "final")),  ## 獨變項設定
+  mu = data.frame(baseline=34.62, final=31.73), ## 基準及結束平均值
+  sd = data.frame(baseline=3.27, final=2.89),   ## 基準及結束標準差
+  r = x,                                 ## 基準及結束相關係數
+  dv="BMI",
+  long = TRUE,
+  rep=1000
+)) %&gt;%
+  set_names(nm=r_cand)
+
+analyse &lt;- function(data) {
+  t.test(BMI ~ cond, data, paired = TRUE) %&gt;%
+    broom::tidy()
+}
+</code></pre>
+<p>
+分析並總計各種相關係數條件的考驗力：
+</p>
+<pre><code class="language-r">BMI_sim_power &lt;- NULL
+for(i in 1:length(BMI_dat_list)){
+BMI_sim_power &lt;- c(BMI_sim_power,BMI_dat_list[[i]] %&gt;%
+  mutate(analysis = map(data, analyse)) %&gt;%
+  select(-data) %&gt;%
+  unnest(analysis) %&gt;%
+  mutate(sig = p.value &lt; .05) %&gt;%
+  summarise(power = mean(sig)) %&gt;%
+  pull(power))
+}
+
+names(BMI_sim_power) &lt;- r_cand
+knitr::kable(t(BMI_sim_power))
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">
+0.1
+</th>
+<th style="text-align:right">
+0.2
+</th>
+<th style="text-align:right">
+0.3
+</th>
+<th style="text-align:right">
+0.4
+</th>
+<th style="text-align:right">
+0.5
+</th>
+<th style="text-align:right">
+0.6
+</th>
+<th style="text-align:right">
+0.7
+</th>
+<th style="text-align:right">
+0.8
+</th>
+<th style="text-align:right">
+0.9
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">
+0.348
+</td>
+<td style="text-align:right">
+0.382
+</td>
+<td style="text-align:right">
+0.432
+</td>
+<td style="text-align:right">
+0.471
+</td>
+<td style="text-align:right">
+0.527
+</td>
+<td style="text-align:right">
+0.645
+</td>
+<td style="text-align:right">
+0.761
+</td>
+<td style="text-align:right">
+0.885
+</td>
+<td style="text-align:right">
+0.994
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+BMI測量的模擬資料分析結果顯示，前後測量相關性達到0.9時，相同條件的再現成功率可達到95%。需注意前後測量的高相關性，代表兩個時間的測量不是獨立事件。
+</p>
+<h2 id="目標來源" class="anchored">
+目標來源
+</h2>
+<p>
+2021/6/3 我從<a href="https://www.facebook.com/onyourpsy/posts/329799688507458" target="_blank" rel="noopener">哇賽心理學臉書粉絲團</a>，得知王思恒醫師發表在天下雜誌的 <a href="https://www.cw.com.tw/article/5114921" target="_blank" rel="noopener">科學證實：用想的也能變瘦？</a>，這篇文章出自王醫師在隔一天上市的新書<a href="https://www.books.com.tw/products/0010892389" target="_blank" rel="noopener">一分鐘健瘦身教室（2）</a>的第一章。我注意到其中的文字描述符合“驚奇卻不堪一擊的小研究”條件。截圖摘要文章內容如下：
+</p>
+<div class="figure">
+<p>
+<img src="quote01.png" alt="不可思議的小樣本。" width="700">
+</p>
+<p class="caption">
+Figure 2: 不可思議的小樣本。
+</p>
+</div>
+<div class="figure">
+<p>
+<img src="quote02.png" alt="充滿挑賣相好的(cherry picking)手法，王醫師的文章還少了BMI。" width="700">
+</p>
+<p class="caption">
+Figure 3: 充滿挑賣相好的(cherry picking)手法，王醫師的文章還少了BMI。
+</p>
+</div>
+<div class="figure">
+<p>
+<img src="quote03.png" alt="這段描述在原始論文中完全找不到，圖解亦不符合內文。" width="700">
+</p>
+<p class="caption">
+Figure 4: 這段描述在原始論文中完全找不到，圖解亦不符合內文。
+</p>
+</div>
+<h2 id="可思考的議題" class="anchored">
+可思考的議題
+</h2>
+<p>
+Ritchie (2020) 指出今日研究者受到各種偏離科學精神的現實誘因，製造科學研究報告的動機並非單純是擴展人類知識領域。這類動機經常導致偏頗的“研究策略”，最極端的是造假、抄襲等學術不端行為，更多研究者採用的策略是設計能得到新奇發現的小樣本研究，而且今日的同儕評審系統，以及研究經費補助單位都提供如 Panayotov (2019) 這種研究出線機會。
+</p>
+<p>
+迎合大眾偏好而開發的主題研究，是另一種強大的偏頗誘因，正如 Singal (2021) 指出自我實現預言(self-fulfilling prophecy)主題的書藉在美國書市有逼近132億美元的產值，從事相關主題心理學與社會學研究者相對容易取得經費，也有更多媒體曝光機會。呼籲檢討研究品質的聲音，不容易在這些場域受到注意。
+</p>
+<p>
+台灣暢銷書市也有類似現象，有機會寫作出版的作者會收集這類研究資訊，做為書藉賣點。然而相對於美國，台灣媒體界尚未出現穩定提供對抗意見的聲音，尚未能形成對話反省的氛圍。本文僅就一個案例，點出其中隱藏的問題。除了期望相關書藉的作者與協助宣傳的媒體，能謹慎選擇當作立論基礎的研究論文。也期望越來越多讀者有判斷能力，就像研究者會因應期刊與經費來源的偏好決定研究策略，暢銷書作者會探索讀者的偏好，寫作對應讀者素質的文章。
+</p>
+<h3 id="給讀者的判斷建議" class="anchored">
+給讀者的判斷建議
+</h3>
+<p>
+儘管多數讀者沒有受過完整的專業訓練，看到討論心理因素的科普文章，只要注意以下特徵，就能判斷作者引用的研究論文，證據力夠不夠可信。
+</p>
+<ol>
+<li>
+<p>
+參與者人數不達百人。越強調心理誘發條件的研究，效應量通常被高估，至少要百人才有起碼的證據力。
+</p>
+</li>
+<li>
+<p>
+研究報告的測量變項不只一種。研究程序可不斷重現的研究通常只關注少數幾種測量的變化，小樣本或初次嘗試的研究經常收集各種測量資料。
+</p>
+</li>
+<li>
+<p>
+研究報告的原始論文能不能公開取用？有沒有公開資料？沒有公開資料給小樣本研究開了一道墮落的方便之門：不符合假設的測量資料可以隱藏起來。這就是挑賣相好的(cherry picking)的研究策略，相對地我們能合理懷疑這項研究的證據力。
+</p>
+</li>
+</ol>
+<h4 id="參考文獻" class="anchored">
+參考文獻
+</h4>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-baker500ScientistsLift2016" class="csl-entry" role="listitem">
+<p>
+Baker, Monya. 2016. “1,500 Scientists Lift the Lid on Reproducibility.” <em>Nature News</em> 533 (7604): 452. <a href="https://doi.org/gdgzjx">https://doi.org/gdgzjx</a>.
+</p>
+</div>
+<div id="ref-DeBruine2021" class="csl-entry" role="listitem">
+<p>
+DeBruine, Lisa. 2021. <em>Faux: Simulation for Factorial Designs</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.2669586">https://doi.org/10.5281/zenodo.2669586</a>.
+</p>
+</div>
+<div id="ref-Panayotov2019" class="csl-entry" role="listitem">
+<p>
+Panayotov, Valentin Stefanov. 2019. “Studying a Possible Placebo Effect of an Imaginary Low-Calorie Diet.” <em>Frontiers in Psychiatry</em> 10: 550. <a href="https://doi.org/10.3389/fpsyt.2019.00550">https://doi.org/10.3389/fpsyt.2019.00550</a>.
+</p>
+</div>
+<div id="ref-ritchieScienceFictionsHow2020" class="csl-entry" role="listitem">
+<p>
+Ritchie, Stuart. 2020. <em>Science Fictions: How Fraud, Bias, Negligence, and Hype Undermine the Search for Truth</em>. First edition. New York: Metropolitan Books ; Henry Holt and Company.
+</p>
+</div>
+<div id="ref-singalQuickFixWhy2021" class="csl-entry" role="listitem">
+<p>
+Singal, Jesse. 2021. <em>The Quick Fix: Why Fad Psychology Can’t Cure Our Social Ills</em>.
+</p>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/scchen\.com\/zh\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2017 陳紹慶</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
