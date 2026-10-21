@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c95805649f7f0bb248818d9621ed354a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-a3eabaf22f1cfdd62e007eac11f27cb7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c95805649f7f0bb248818d9621ed354a.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-9b06663d7d17546ecdba588faf27aac6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-338c8ec7c1e1f6f78a4f73555b18415f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-9b06663d7d17546ecdba588faf27aac6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cd4134e5e94bb50afc1bae6f4f3e6c0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b9d639523a933d2d60f2024ca3a360db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-cd4134e5e94bb50afc1bae6f4f3e6c0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-41e903e3027d3cce9f75dff6dc2f0257.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ecd8160af367a1d8a589bc27eb3ea71c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-41e903e3027d3cce9f75dff6dc2f0257.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -355,7 +358,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="bWVudGFsJTIwc2ltdWxhdGlvbg==">mental simulation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="b2JqZWN0JTIwb3JpZW50YXRpb24=">object orientation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHN5Y2hvbG9naWNhbCUyMFNjaWVuY2UlMjBBY2NlbGVyYXRvcg==">Psychological Science Accelerator <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVnaXN0ZXJlZCUyMHJlcG9ydA==">registered report <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="YW5kcm9jZW50cmlzbQ==">androcentrism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YXR0aXR1ZGVz">attitudes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q09WSUQtMTk=">COVID-19 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y3Jvc3MtbGluZ3Vpc3RpYw==">cross-linguistic <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGl2ZXJzaXR5JTIwYW5kJTIwaW5jbHVzaW9u">diversity and inclusion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2VuZGVy">gender <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Z2xvYmFsJTIwZW5nYWdlbWVudA==">global engagement <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWVudGFsJTIwc2ltdWxhdGlvbg==">mental simulation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="b2JqZWN0JTIwb3JpZW50YXRpb24=">object orientation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="b3BlbiUyMHNjaWVuY2U=">open science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHN5Y2hvbG9naWNhbCUyMFNjaWVuY2UlMjBBY2NlbGVyYXRvcg==">Psychological Science Accelerator <span class="quarto-category-count">(4)</span></div><div class="category" data-category="cmVnaXN0ZXJlZCUyMHJlcG9ydA==">registered report <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c2VsZi1kZXRlcm1pbmF0aW9uJTIwdGhlb3J5">self-determination theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c2VtYW50aWMlMjBwcmltaW5n">semantic priming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U0lQUw==">SIPS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="c29jaWFsJTIwZGlzdGFuY2luZw==">social distancing <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -421,7 +424,151 @@ Sau-Chin Chen, Erin M. Buchanan, Zoltan Kekecs, Jeremy K. Miller, Anna Szabelska
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bWVudGFsJTIwc2ltdWxhdGlvbiUyQ29iamVjdCUyMG9yaWVudGF0aW9u" data-listing-date-sort="1588262400000" data-listing-file-modified-sort="1784260118503" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="quarto-post image-right" data-index="1" data-categories="c2VtYW50aWMlMjBwcmltaW5nJTJDcmVnaXN0ZXJlZCUyMHJlcG9ydCUyQ2Nyb3NzLWxpbmd1aXN0aWMlMkNQc3ljaG9sb2dpY2FsJTIwU2NpZW5jZSUyMEFjY2VsZXJhdG9y" data-listing-date-sort="1758643200000" data-listing-file-modified-sort="1792551330603" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="193">
+<div class="thumbnail"><a href="../publication/semantic-priming-many-languages/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../publication/semantic-priming-many-languages/index.html" class="no-external">Measuring the semantic priming effect across many languages</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2VtYW50aWMlMjBwcmltaW5n'); return false;">semantic priming</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cmVnaXN0ZXJlZCUyMHJlcG9ydA=='); return false;">registered report</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y3Jvc3MtbGluZ3Vpc3RpYw=='); return false;">cross-linguistic</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHN5Y2hvbG9naWNhbCUyMFNjaWVuY2UlMjBBY2NlbGVyYXRvcg=='); return false;">Psychological Science Accelerator</div>
+
+</div>
+<div class="delink listing-description"><a href="../publication/semantic-priming-many-languages/index.html" class="no-external">
+<p>A Registered Report measuring the size and variability of the semantic priming effect across 19 languages in 25,163 analysed participants.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../publication/semantic-priming-many-languages/index.html" class="no-external">
+<div class="listing-date">
+Sep 24, 2025
+</div>
+<div class="listing-author">
+Erin M. Buchanan, Kelly Cuccolo, Tom Heyman, Niels van Berkel, Sau-Chin Chen, et al.
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Z2VuZGVyJTJDYXR0aXR1ZGVzJTJDYW5kcm9jZW50cmlzbSUyQ1BzeWNob2xvZ2ljYWwlMjBTY2llbmNlJTIwQWNjZWxlcmF0b3I=" data-listing-date-sort="1750780800000" data-listing-file-modified-sort="1792551330828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
+<div class="thumbnail"><a href="../publication/man-as-default-multi-region/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../publication/man-as-default-multi-region/index.html" class="no-external">Multi-region investigation of ‘man’ as default in attitudes</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Z2VuZGVy'); return false;">gender</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXR0aXR1ZGVz'); return false;">attitudes</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YW5kcm9jZW50cmlzbQ=='); return false;">androcentrism</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHN5Y2hvbG9naWNhbCUyMFNjaWVuY2UlMjBBY2NlbGVyYXRvcg=='); return false;">Psychological Science Accelerator</div>
+
+</div>
+<div class="delink listing-description"><a href="../publication/man-as-default-multi-region/index.html" class="no-external">
+<p>A survey of more than 5,000 participants in over 40 regions testing whether attitudes toward social groups are more strongly related to attitudes toward the men than the women of each group.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../publication/man-as-default-multi-region/index.html" class="no-external">
+<div class="listing-date">
+Jun 25, 2025
+</div>
+<div class="listing-author">
+Curtis Edward Phills, Jeremy K. Miller, Erin M. Buchanan, Amanda Williams, Sau-Chin Chen, et al.
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Q09WSUQtMTklMkNzZWxmLWRldGVybWluYXRpb24lMjB0aGVvcnklMkNzb2NpYWwlMjBkaXN0YW5jaW5nJTJDUHN5Y2hvbG9naWNhbCUyMFNjaWVuY2UlMjBBY2NlbGVyYXRvcg==" data-listing-date-sort="1653580800000" data-listing-file-modified-sort="1792551331122" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="242">
+<div class="thumbnail"><a href="../publication/global-social-distancing-experiment/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../publication/global-social-distancing-experiment/index.html" class="no-external">A global experiment on motivating social distancing during the COVID-19 pandemic</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09WSUQtMTk='); return false;">COVID-19</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2VsZi1kZXRlcm1pbmF0aW9uJTIwdGhlb3J5'); return false;">self-determination theory</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c29jaWFsJTIwZGlzdGFuY2luZw=='); return false;">social distancing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHN5Y2hvbG9naWNhbCUyMFNjaWVuY2UlMjBBY2NlbGVyYXRvcg=='); return false;">Psychological Science Accelerator</div>
+
+</div>
+<div class="delink listing-description"><a href="../publication/global-social-distancing-experiment/index.html" class="no-external">
+<p>A preregistered experiment with 25,718 participants from 89 countries testing autonomy-supportive and controlling messages for motivating social distancing.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../publication/global-social-distancing-experiment/index.html" class="no-external">
+<div class="listing-date">
+May 27, 2022
+</div>
+<div class="listing-author">
+Psychological Science Accelerator Self-Determination Theory Collaboration, Nicole Legate, Thuy-vy Nguyen, Netta Weinstein, Sau-Chin Chen, et al.
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="b3BlbiUyMHNjaWVuY2UlMkNnbG9iYWwlMjBlbmdhZ2VtZW50JTJDZGl2ZXJzaXR5JTIwYW5kJTIwaW5jbHVzaW9uJTJDU0lQUw==" data-listing-date-sort="1620230400000" data-listing-file-modified-sort="1792551376051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
+<div class="thumbnail"><a href="../publication/sips-global-engagement-report/index.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../publication/sips-global-engagement-report/index.html" class="no-external">Society for the Improvement of Psychological Science Global Engagement Task Force Report</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('b3BlbiUyMHNjaWVuY2U='); return false;">open science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Z2xvYmFsJTIwZW5nYWdlbWVudA=='); return false;">global engagement</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGl2ZXJzaXR5JTIwYW5kJTIwaW5jbHVzaW9u'); return false;">diversity and inclusion</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U0lQUw=='); return false;">SIPS</div>
+
+</div>
+<div class="delink listing-description"><a href="../publication/sips-global-engagement-report/index.html" class="no-external">
+<p>A task force report with suggestions for improving inclusion and access in SIPS for scholars from regions outside the United States, Canada, and Western Europe.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../publication/sips-global-engagement-report/index.html" class="no-external">
+<div class="listing-date">
+May 6, 2021
+</div>
+<div class="listing-author">
+Crystal N. Steltenpohl, L. James Montilla Doble, Dana M. Basnight-Brown, Natália B. Dutra, Sau-Chin Chen, et al.
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="bWVudGFsJTIwc2ltdWxhdGlvbiUyQ29iamVjdCUyMG9yaWVudGF0aW9u" data-listing-date-sort="1588262400000" data-listing-file-modified-sort="1784260118503" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
 <div class="thumbnail"><a href="../publication/journal-article/index.html" class="no-external">
 
 <img loading="lazy" src="../publication/journal-article/featured.jpg" class="thumbnail-image">

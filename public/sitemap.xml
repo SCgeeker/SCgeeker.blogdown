@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://scchen.com/publication/sips-global-engagement-report/index.html</loc>
+    <lastmod>2026-10-21T02:56:16.051Z</lastmod>
+  </url>
+  <url>
     <loc>https://scchen.com/publication/object-orientation-18-languages/index.html</loc>
     <lastmod>2026-07-17T03:54:20.552Z</lastmod>
   </url>
   <url>
-    <loc>https://scchen.com/publication/index.html</loc>
-    <lastmod>2026-07-17T03:49:06.124Z</lastmod>
+    <loc>https://scchen.com/publication/journal-article/index.html</loc>
+    <lastmod>2026-07-17T03:48:38.503Z</lastmod>
   </url>
   <url>
-    <loc>https://scchen.com/project/teaching-exppsy-taiwan/index.html</loc>
-    <lastmod>2026-07-17T03:46:44.260Z</lastmod>
+    <loc>https://scchen.com/publication/global-social-distancing-experiment/index.html</loc>
+    <lastmod>2026-10-21T02:55:31.122Z</lastmod>
   </url>
   <url>
-    <loc>https://scchen.com/project/p-cso/index.html</loc>
-    <lastmod>2026-07-17T03:46:35.229Z</lastmod>
+    <loc>https://scchen.com/project/psa002-object-orientation/index.html</loc>
+    <lastmod>2026-07-17T03:46:40.809Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/project/opensesame-osweb-mcp/index.html</loc>
+    <lastmod>2026-10-21T03:30:33.838Z</lastmod>
   </url>
   <url>
     <loc>https://scchen.com/project/lsj-book-zh-tw/index.html</loc>
-    <lastmod>2026-07-17T03:46:30.450Z</lastmod>
+    <lastmod>2026-10-21T02:38:02.482Z</lastmod>
   </url>
   <url>
     <loc>https://scchen.com/project/justify-your-alpha/index.html</loc>
-    <lastmod>2026-07-17T03:46:23.573Z</lastmod>
+    <lastmod>2026-10-21T02:39:37.879Z</lastmod>
   </url>
   <url>
     <loc>https://scchen.com/project/improving-statistical-inferences-zh/index.html</loc>
@@ -30,83 +38,87 @@
   </url>
   <url>
     <loc>https://scchen.com/project/claude-journal-club-agents/index.html</loc>
-    <lastmod>2026-07-17T03:46:13.001Z</lastmod>
+    <lastmod>2026-10-21T02:38:02.721Z</lastmod>
   </url>
   <url>
-    <loc>https://scchen.com/project/annotation-blank/index.html</loc>
-    <lastmod>2026-07-17T03:46:05.727Z</lastmod>
+    <loc>https://scchen.com/project/askllm-jamovi/index.html</loc>
+    <lastmod>2026-10-21T02:38:38.782Z</lastmod>
   </url>
   <url>
-    <loc>https://scchen.com/post/use-r-markdown-build-website/index.html</loc>
-    <lastmod>2026-07-17T04:58:27.277Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/ps-podcasts/index.html</loc>
-    <lastmod>2026-07-17T04:58:18.977Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/index.html</loc>
-    <lastmod>2026-07-17T04:58:12.046Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/index.html</loc>
-    <lastmod>2026-07-17T04:57:49.873Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/index.html</loc>
-    <lastmod>2026-07-17T04:57:35.344Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/index.html</loc>
-    <lastmod>2026-07-17T05:06:20.763Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/index.html</loc>
-    <lastmod>2026-07-17T04:56:00.039Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/index.html</loc>
-    <lastmod>2026-07-17T04:55:40.357Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/index.html</loc>
-    <lastmod>2026-07-17T14:34:05.924Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2015-07-23-r-rmarkdown/index.html</loc>
-    <lastmod>2026-07-17T04:55:29.819Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2016-04-05-display-math-equation-in-post/index.html</loc>
-    <lastmod>2026-07-17T04:55:53.425Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/index.html</loc>
-    <lastmod>2026-07-17T04:56:29.481Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2016-05-05-rethink-significance/index.html</loc>
-    <lastmod>2026-07-17T04:57:19.996Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2016-09-14-randomization-in-latin-square/index.html</loc>
-    <lastmod>2026-07-17T04:57:46.606Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/index.html</loc>
-    <lastmod>2026-07-17T04:58:04.098Z</lastmod>
-  </url>
-  <url>
-    <loc>https://scchen.com/post/index.html</loc>
-    <lastmod>2026-07-17T05:00:14.030Z</lastmod>
+    <loc>https://scchen.com/project/act-base/index.html</loc>
+    <lastmod>2026-10-21T02:38:03.078Z</lastmod>
   </url>
   <url>
     <loc>https://scchen.com/post/use-bookdownplus/index.html</loc>
     <lastmod>2026-07-17T04:58:24.422Z</lastmod>
   </url>
   <url>
-    <loc>https://scchen.com/project/act-base/index.html</loc>
-    <lastmod>2026-07-17T03:45:59.167Z</lastmod>
+    <loc>https://scchen.com/post/index.html</loc>
+    <lastmod>2026-07-17T05:00:14.030Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/index.html</loc>
+    <lastmod>2026-07-17T04:58:04.098Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2016-09-14-randomization-in-latin-square/index.html</loc>
+    <lastmod>2026-07-17T04:57:46.606Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2016-05-05-rethink-significance/index.html</loc>
+    <lastmod>2026-07-17T04:57:19.996Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/index.html</loc>
+    <lastmod>2026-07-17T04:56:29.481Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2016-04-05-display-math-equation-in-post/index.html</loc>
+    <lastmod>2026-07-17T04:55:53.425Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2015-07-23-r-rmarkdown/index.html</loc>
+    <lastmod>2026-07-17T04:55:29.819Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/index.html</loc>
+    <lastmod>2026-07-17T14:34:05.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2016-03-30-learning-sampling-distribution-in-r-programming/index.html</loc>
+    <lastmod>2026-07-17T04:55:40.357Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2016-04-05-vectors-in-mathematics-and-in-codes/index.html</loc>
+    <lastmod>2026-07-17T04:56:00.039Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/index.html</loc>
+    <lastmod>2026-07-17T05:06:20.763Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/index.html</loc>
+    <lastmod>2026-07-17T04:57:35.344Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/2017-05-05-templete-of-a-citable-blog-post/index.html</loc>
+    <lastmod>2026-07-17T04:57:49.873Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/if-emily-rosa-met-thomas-bayes/index.html</loc>
+    <lastmod>2026-07-17T04:58:12.046Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/ps-podcasts/index.html</loc>
+    <lastmod>2026-07-17T04:58:18.977Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/post/use-r-markdown-build-website/index.html</loc>
+    <lastmod>2026-07-17T04:58:27.277Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/project/annotation-blank/index.html</loc>
+    <lastmod>2026-10-21T02:38:03.205Z</lastmod>
   </url>
   <url>
     <loc>https://scchen.com/project/basic-statistics-osf/index.html</loc>
@@ -114,7 +126,7 @@
   </url>
   <url>
     <loc>https://scchen.com/project/exppsy-opensci/index.html</loc>
-    <lastmod>2026-07-17T03:46:16.253Z</lastmod>
+    <lastmod>2026-10-21T02:38:02.595Z</lastmod>
   </url>
   <url>
     <loc>https://scchen.com/project/index.html</loc>
@@ -122,22 +134,30 @@
   </url>
   <url>
     <loc>https://scchen.com/project/lsj-2026-lecture-slides/index.html</loc>
-    <lastmod>2026-07-17T03:46:26.058Z</lastmod>
+    <lastmod>2026-10-21T02:38:02.845Z</lastmod>
   </url>
   <url>
     <loc>https://scchen.com/project/mental-simulation/mental-simulation/index.html</loc>
     <lastmod>2026-07-17T04:41:39.803Z</lastmod>
   </url>
   <url>
-    <loc>https://scchen.com/project/psa002-object-orientation/index.html</loc>
-    <lastmod>2026-07-17T03:46:40.809Z</lastmod>
+    <loc>https://scchen.com/project/p-cso/index.html</loc>
+    <lastmod>2026-10-21T02:38:10.452Z</lastmod>
   </url>
   <url>
     <loc>https://scchen.com/project/twcc-ollama-proxy/index.html</loc>
-    <lastmod>2026-07-17T03:46:48.644Z</lastmod>
+    <lastmod>2026-10-21T02:38:02.959Z</lastmod>
   </url>
   <url>
-    <loc>https://scchen.com/publication/journal-article/index.html</loc>
-    <lastmod>2026-07-17T03:48:38.503Z</lastmod>
+    <loc>https://scchen.com/publication/index.html</loc>
+    <lastmod>2026-07-17T03:49:06.124Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/publication/man-as-default-multi-region/index.html</loc>
+    <lastmod>2026-10-21T02:55:30.828Z</lastmod>
+  </url>
+  <url>
+    <loc>https://scchen.com/publication/semantic-priming-many-languages/index.html</loc>
+    <lastmod>2026-10-21T02:55:30.603Z</lastmod>
   </url>
 </urlset>

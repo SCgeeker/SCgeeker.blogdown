@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c95805649f7f0bb248818d9621ed354a.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-a3eabaf22f1cfdd62e007eac11f27cb7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-c95805649f7f0bb248818d9621ed354a.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-9b06663d7d17546ecdba588faf27aac6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-338c8ec7c1e1f6f78a4f73555b18415f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-9b06663d7d17546ecdba588faf27aac6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cd4134e5e94bb50afc1bae6f4f3e6c0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-b9d639523a933d2d60f2024ca3a360db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-cd4134e5e94bb50afc1bae6f4f3e6c0a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-41e903e3027d3cce9f75dff6dc2f0257.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ecd8160af367a1d8a589bc27eb3ea71c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-41e903e3027d3cce9f75dff6dc2f0257.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -355,7 +358,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="QWN0aXZl">Active <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Q29tbXVuaXR5">Community <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2g=">Research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhYmxl">Stable <span class="quarto-category-count">(6)</span></div><div class="category" data-category="VGVhY2hpbmc=">Teaching <span class="quarto-category-count">(5)</span></div><div class="category" data-category="VG9vbHM=">Tools <span class="quarto-category-count">(5)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(14)</span></div><div class="category" data-category="QWN0aXZl">Active <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Q29tbXVuaXR5">Community <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVzZWFyY2g=">Research <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3RhYmxl">Stable <span class="quarto-category-count">(5)</span></div><div class="category" data-category="VGVhY2hpbmc=">Teaching <span class="quarto-category-count">(4)</span></div><div class="category" data-category="VG9vbHM=">Tools <span class="quarto-category-count">(7)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -385,7 +388,85 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1783526400000" data-listing-file-modified-sort="1784259973001" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="145">
+<div class="g-col-1" data-index="0" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1791993600000" data-listing-file-modified-sort="1792553433838" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="389">
+<a href="../project/opensesame-osweb-mcp/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+OpenSesame–OSWeb MCP
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VG9vbHM='); return false;">Tools</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWN0aXZl'); return false;">Active</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Two MCP servers that let an AI agent build, validate, and deploy OpenSesame/OSWeb experiments to a JATOS server, with the researcher overseeing every critical decision.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Oct 15, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1790265600000" data-listing-file-modified-sort="1792550318782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
+<a href="../project/askllm-jamovi/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+askLLM: Ask an LLM About Your Data Inside jamovi
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VG9vbHM='); return false;">Tools</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWN0aXZl'); return false;">Active</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A jamovi module that sends summary statistics of your selected variables to an LLM and answers analysis questions grounded in your dataset.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 25, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1787846400000" data-listing-file-modified-sort="1792550290452" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="160">
+<a href="../project/p-cso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+P-CSO: Pinker’s Cognitive Style Optimization for Academic Writing
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VG9vbHM='); return false;">Tools</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QWN0aXZl'); return false;">Active</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>A personal English writing co-pilot for Claude Code, applying Steven Pinker’s cognitive-style principles to reduce reader effort in academic prose.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Aug 28, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1785600000000" data-listing-file-modified-sort="1792550282721" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="145">
 <a href="../project/claude-journal-club-agents/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -405,13 +486,13 @@ Claude Lit Workflow
 </div>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
-Jul 9, 2026
+Aug 2, 2026
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1782576000000" data-listing-file-modified-sort="1784260008644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
+<div class="g-col-1" data-index="4" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1782576000000" data-listing-file-modified-sort="1792550282959" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="146">
 <a href="../project/twcc-ollama-proxy/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -437,7 +518,7 @@ Jun 28, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="VGVhY2hpbmclMkNBY3RpdmU=" data-listing-date-sort="1781539200000" data-listing-file-modified-sort="1784259986058" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
+<div class="g-col-1" data-index="5" data-categories="VGVhY2hpbmclMkNBY3RpdmU=" data-listing-date-sort="1781539200000" data-listing-file-modified-sort="1792550282845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="63">
 <a href="../project/lsj-2026-lecture-slides/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -463,7 +544,7 @@ Jun 16, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="VGVhY2hpbmclMkNBY3RpdmU=" data-listing-date-sort="1780502400000" data-listing-file-modified-sort="1784259990450" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
+<div class="g-col-1" data-index="6" data-categories="VGVhY2hpbmclMkNBY3RpdmU=" data-listing-date-sort="1780502400000" data-listing-file-modified-sort="1792550282482" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
 <a href="../project/lsj-book-zh-tw/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -489,33 +570,7 @@ Jun 4, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1779379200000" data-listing-file-modified-sort="1784259995229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="166">
-<a href="../project/p-cso/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-P-CSO: Pinker’s Cognitive Style Optimization for Academic Writing
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VG9vbHM='); return false;">Tools</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QWN0aXZl'); return false;">Active</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A personal English writing co-pilot for Claude Code, applying Steven Pinker’s cognitive-style principles to reduce reader effort in academic prose.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 22, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1776960000000" data-listing-file-modified-sort="1784259959167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="126">
+<div class="g-col-1" data-index="7" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1776960000000" data-listing-file-modified-sort="1792550283078" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="126">
 <a href="../project/act-base/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -541,7 +596,7 @@ Apr 24, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1776700800000" data-listing-file-modified-sort="1784259965727" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
+<div class="g-col-1" data-index="8" data-categories="VG9vbHMlMkNBY3RpdmU=" data-listing-date-sort="1776700800000" data-listing-file-modified-sort="1792550283205" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
 <a href="../project/annotation-blank/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -567,7 +622,7 @@ Apr 21, 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="UmVzZWFyY2glMkNTdGFibGU=" data-listing-date-sort="1739030400000" data-listing-file-modified-sort="1784259983573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="153">
+<div class="g-col-1" data-index="9" data-categories="UmVzZWFyY2glMkNTdGFibGU=" data-listing-date-sort="1739030400000" data-listing-file-modified-sort="1792550377879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
 <a href="../project/justify-your-alpha/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -593,7 +648,7 @@ Feb 9, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="UmVzZWFyY2glMkNTdGFibGU=" data-listing-date-sort="1736265600000" data-listing-file-modified-sort="1784260000809" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
+<div class="g-col-1" data-index="10" data-categories="UmVzZWFyY2glMkNTdGFibGU=" data-listing-date-sort="1736265600000" data-listing-file-modified-sort="1784260000809" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
 <a href="../project/psa002-object-orientation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -619,7 +674,7 @@ Jan 8, 2025
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="VGVhY2hpbmclMkNTdGFibGU=" data-listing-date-sort="1734883200000" data-listing-file-modified-sort="1784259976253" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
+<div class="g-col-1" data-index="11" data-categories="VGVhY2hpbmclMkNTdGFibGU=" data-listing-date-sort="1734883200000" data-listing-file-modified-sort="1792550282595" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
 <a href="../project/exppsy-opensci/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -645,33 +700,7 @@ Dec 23, 2024
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="VGVhY2hpbmclMkNTdGFibGU=" data-listing-date-sort="1582473600000" data-listing-file-modified-sort="1784260004260" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="108">
-<a href="../project/teaching-exppsy-taiwan/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Teaching Experimental Psychology in Taiwan
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VGVhY2hpbmc='); return false;">Teaching</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3RhYmxl'); return false;">Stable</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>A growing OSF collection of experimental psychology course projects taught at Tzu-Chi University across multiple years.</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 24, 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="VGVhY2hpbmclMkNTdGFibGU=" data-listing-date-sort="1559836800000" data-listing-file-modified-sort="1784259968675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90">
+<div class="g-col-1" data-index="12" data-categories="VGVhY2hpbmclMkNTdGFibGU=" data-listing-date-sort="1559836800000" data-listing-file-modified-sort="1784259968675" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="90">
 <a href="../project/basic-statistics-osf/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
@@ -697,7 +726,7 @@ Jun 7, 2019
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="Q29tbXVuaXR5JTJDU3RhYmxl" data-listing-date-sort="1502294400000" data-listing-file-modified-sort="1784259979534" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
+<div class="g-col-1" data-index="13" data-categories="Q29tbXVuaXR5JTJDU3RhYmxl" data-listing-date-sort="1502294400000" data-listing-file-modified-sort="1784259979534" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
 <a href="../project/improving-statistical-inferences-zh/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
