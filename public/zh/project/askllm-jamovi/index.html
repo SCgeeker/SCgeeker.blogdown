@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="jamovi 模組，將所選變項的摘要統計送交 LLM，針對你的資料集回答分析問題。">
+<meta name="description" content="在 jamovi 裡與 AI 討論如何分析資料的 jamovi 模組，搭配教你與 AI 協作規劃統計分析的教學站。">
 
 <title>askLLM：在 jamovi 內向 LLM 詢問你的資料 – 暗微幽光</title>
 <style>
@@ -315,7 +315,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    jamovi 模組，將所選變項的摘要統計送交 LLM，針對你的資料集回答分析問題。
+    在 jamovi 裡與 AI 討論如何分析資料的 jamovi 模組，搭配教你與 AI 協作規劃統計分析的教學站。
   </div>
 </div>
 
@@ -338,11 +338,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong><a href="https://github.com/SCgeeker/askLLM">GitHub</a></strong> · <strong><a href="https://scgeeker.github.io/askLLM/choose-model.html">說明文件</a></strong> · <strong><a href="https://github.com/SCgeeker/askLLM/releases">版本下載</a></strong></p>
-<p>askLLM 是一個以資料為基礎進行問答的 jamovi 模組：選好想詢問的變項、以中文或英文輸入問題後，模組會把這些變項的摘要統計（次數、平均數、標準差、因子水準頻率等，絕不傳送原始資料列）連同問題送給你指定的 LLM，由它針對你的資料集作答。它定位為副駕駛而非自動駕駛：只提供建議，所有分析都由你自己執行。</p>
-<p>模組在 <strong>Analyses ▸ askLLM</strong> 下提供兩項分析。<em>jamovi Module Guider</em> 建議該執行哪一種 jamovi 分析，並逐字引用選單路徑，依據是你電腦上實際安裝的模組；<em>R code tutor</em> 產生 R 程式碼，讓你貼到 Rj Editor（僅限桌面版 jamovi）自行執行，且只使用 Rj 環境內建的套件。支援的供應商包括 NVIDIA NIM、Google Gemini、OpenRouter、本機 Ollama，以及任何 OpenAI 相容端點。API 金鑰從本機環境變數讀取，不會寫入 <code>.omv</code> 檔；選用 Ollama 時，所有運算都留在你自己的電腦上。</p>
-<p>安裝方式：從 Releases 頁面下載 <code>.jmo</code> 檔，在 jamovi 點選右上角的 <code>⊕</code> 圖示，切換到 Side-load 分頁並選取該檔案即可。目前版本支援 Windows 64 位元與 jamovi 28.2.0.0–28.3.0.0。各供應商的設定教學收錄於倉庫的說明文件中。</p>
-<p>維護狀態：Active——持續更新中，目前版本為 1.3.x。</p>
+<p><strong><a href="https://scgeeker.github.io/stat-skills-tutorials/">使用教學</a></strong> · <strong><a href="https://github.com/SCgeeker/askLLM">GitHub</a></strong></p>
+<p>askLLM 是 jamovi 裡的溝通介面，讓你和 AI 討論如何分析手上的資料。選好想詢問的變項，以中文或英文提出問題；AI 看到的是這些變項的摘要統計，不會看到原始資料列，並針對你的資料集回答。它的角色是諮詢顧問而非自動駕駛：<em>jamovi Module Guider</em> 建議哪一種 jamovi 分析適合你的問題、在選單的哪個位置；<em>R code tutor</em> 草擬 R 程式碼讓你自己執行。所有分析決策都由你自己做。</p>
+<p>姊妹站 <a href="https://scgeeker.github.io/stat-skills-tutorials/">stat-skills-tutorials</a> 教你如何和這類諮詢型 AI 協作。它不教統計方法或 R 語言；統計知識一律連到 psyteachr、Learning Statistics with jamovi 等開放教材的對應章節。全站分三層：<em>協作素養</em>以六節短文說明如何把 AI 當成協作者、清楚描述問題、設定明確的判準；<em>提示詞庫</em>提供情境化、可直接貼進 askLLM 的提示詞，每條都附查核點與判決標準；<em>生成結果查核</em>提供查核清單，讓你親自操作 jamovi、以原始資料和研究設計核實 AI 的每一則回覆。</p>
+<p>維護狀態：Active——持續更新中。</p>
 
 
 
