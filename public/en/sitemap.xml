@@ -837,10 +837,6 @@
   </url>
   
   <url>
-    <loc>http://scchen.com/project/mental-simulation/mental-simulation/</loc>
-  </url>
-  
-  <url>
     <loc>http://scchen.com/tags/plot/</loc>
     <xhtml:link
                 rel="alternate"
@@ -880,10 +876,6 @@
                 hreflang="en"
                 href="http://scchen.com/tags/r/"
                 />
-  </url>
-  
-  <url>
-    <loc>http://scchen.com/tags/reading-sentence/</loc>
   </url>
   
   <url>

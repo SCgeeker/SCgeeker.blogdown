@@ -1,4 +1,4 @@
-# 舊 Hugo 站：下架專案頁 301 至專案列表（2026-10-21）
+# 舊 Hugo 站：下架專案頁 301 至專案列表或指定頁（2026-10-21）
 # Quarto 切換後由 tools/_redirects 取代
 /project/act-base/ /#projects 301
 /project/annotation-blank/ /#projects 301
@@ -6,3 +6,4 @@
 /zh/project/act-base/ /zh/#projects 301
 /zh/project/annotation-blank/ /zh/#projects 301
 /zh/project/teaching-exppsy-taiwan/ /zh/#projects 301
+/project/mental-simulation/mental-simulation/ /project/psa002-object-orientation/ 301
