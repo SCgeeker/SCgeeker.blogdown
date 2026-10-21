@@ -1,5 +1,3 @@
-/project/act-base/ /project/ 301
-/project/annotation-blank/ /project/ 301
 /publication_types/2/ /publication/ 301
 /publication_types/ /publication/ 301
 /categories/academic/ /post/ 301
@@ -7,7 +5,6 @@
 /categories/practices/ /post/ 301
 /categories/reproduce-practice/ /post/ 301
 /categories/teaching/ /post/ 301
-/project/teaching-exppsy-taiwan/ /project/ 301
 /categories/r/ /post/ 301
 /post/use-r-markdown-build-website/use-r-markdown-build-website/ /post/use-r-markdown-build-website/ 301
 /post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/ /post/2017-05-08-manage-a-blog-for-the-easier-bibliography-management-optimization/ 301
@@ -24,11 +21,10 @@
 /post/2016-04-30-autopsy-of-nhst-and-bayesian-models/2016-04-30-autopsy-of-nhst-and-bayesian-models/ /post/2016-04-30-autopsy-of-nhst-and-bayesian-models/ 301
 /post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/2016-04-22-check-my-tools-to-create-and-manipulate-golems/ /post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/ 301
 /post/2015-07-23-r-rmarkdown/2015-07-23-r-rmarkdown/ /post/2015-07-23-r-rmarkdown/ 301
+/project/mental-simulation/mental-simulation/ /project/psa002-object-orientation/ 301
 /post/2016-05-05-rethink-significance/2016-05-05-rethink-significance/ /post/2016-05-05-rethink-significance/ 301
 /post/2016-04-05-vectors-in-mathematics-and-in-codes/2016-04-05-vectors-in-mathematics-and-in-codes/ /post/2016-04-05-vectors-in-mathematics-and-in-codes/ 301
 /post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/ /post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/ 301
-/zh/project/act-base/ /zh/project/ 301
-/zh/project/annotation-blank/ /zh/project/ 301
 /zh/publication_types/2/ /zh/publication/ 301
 /zh/publication_types/ /zh/publication/ 301
 /zh/post/evidentce-small-sample/evidentce-small-sample/ /zh/post/evidentce-small-sample/ 301
@@ -38,7 +34,6 @@
 /zh/post/learning-data-skill-on-cloud/learning-data-skill-on-cloud/ /zh/post/learning-data-skill-on-cloud/ 301
 /zh/post/open_at_beginning/open_at_beginning/ /zh/post/open_at_beginning/ 301
 /zh/post/update_website_log/update_website_log/ /zh/post/update_website_log/ 301
-/zh/project/teaching-exppsy-taiwan/ /zh/project/ 301
 /zh/post/gorilla_prolific_online/gorilla_prolific_online/ /zh/post/gorilla_prolific_online/ 301
 /zh/post/hku-mass-mobilize/hku-mass-mobilize/ /zh/post/hku-mass-mobilize/ 301
 /zh/post/first-preregistration-workshop/first-preregistration-workshop/ /zh/post/first-preregistration-workshop/ 301
@@ -76,7 +71,6 @@
 /zh/post/2016-04-05-display-math-equation-in-post/2016-04-05-display-math-equation-in-post/ /zh/post/2016-04-05-display-math-equation-in-post/ 301
 /zh/post/2016-03-30-learning-sampling-distribution-in-r-programming/2016-03-30-learning-sampling-distribution-in-r-programming/ /zh/post/2016-03-30-learning-sampling-distribution-in-r-programming/ 301
 /zh/authors/admin/ /zh/ 301
-/zh/post/missing_posts_readme/ /zh/post/ 301
 /zh/authors/ /zh/ 301
 /zh/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/2016-04-30-autopsy-of-nhst-and-bayesian-models/ /zh/post/2016-04-30-autopsy-of-nhst-and-bayesian-models/ 301
 /zh/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/2016-04-22-check-my-tools-to-create-and-manipulate-golems/ /zh/post/2016-04-22-check-my-tools-to-create-and-manipulate-golems/ 301
@@ -85,6 +79,13 @@
 /zh/post/2016-05-05-rethink-significance/2016-05-05-rethink-significance/ /zh/post/2016-05-05-rethink-significance/ 301
 /zh/post/2016-04-05-vectors-in-mathematics-and-in-codes/2016-04-05-vectors-in-mathematics-and-in-codes/ /zh/post/2016-04-05-vectors-in-mathematics-and-in-codes/ 301
 /zh/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/ /zh/post/2016-05-31-why-we-need-a-readable-data-table-in-behavioral-scientific-research/ 301
+/zh/post/missing_posts_readme/ /zh/post/ 301
+/project/teaching-exppsy-taiwan/ /project/ 301
+/zh/project/teaching-exppsy-taiwan/ /zh/project/ 301
+/project/act-base/ /project/ 301
+/zh/project/act-base/ /zh/project/ 301
+/project/annotation-blank/ /project/ 301
+/zh/project/annotation-blank/ /zh/project/ 301
 /index.xml /post/index.xml 301
 /zh/index.xml /zh/post/index.xml 301
 /tags/* /post/ 301
