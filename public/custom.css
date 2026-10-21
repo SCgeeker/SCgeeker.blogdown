@@ -1,0 +1,43 @@
+/* 首頁 about（trestles）版面調整——en/zh 各持一份，修改需同步
+   1) 整塊突破 Quarto 內容欄寬，佔 90vw（左右留白各 5vw）
+   2) 頭像欄內容靠右，貼近右側內文 */
+
+.quarto-about-trestles {
+  width: 90vw;
+  margin-left: calc(50% - 45vw);
+  margin-right: calc(50% - 45vw);
+}
+
+.quarto-about-trestles .about-entity {
+  text-align: right !important;
+}
+
+.quarto-about-trestles .about-entity .about-image {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.quarto-about-trestles .about-entity .about-links {
+  justify-content: flex-end !important;
+}
+
+/* 窄螢幕（手機）回歸單欄置中，避免 20vw 頭像過小與靠右擠壓 */
+@media (max-width: 991px) {
+  .quarto-about-trestles {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .quarto-about-trestles .about-entity {
+    text-align: center !important;
+  }
+  .quarto-about-trestles .about-entity .about-image {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50vw !important;
+    height: 50vw !important;
+  }
+  .quarto-about-trestles .about-entity .about-links {
+    justify-content: center !important;
+  }
+}
