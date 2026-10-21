@@ -168,36 +168,6 @@
   </url>
   
   <url>
-    <loc>http://scchen.com/zh/project/act-base/</loc>
-    <lastmod>2026-04-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/project/act-base/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/project/act-base/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://scchen.com/zh/project/annotation-blank/</loc>
-    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/project/annotation-blank/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/project/annotation-blank/"
-                />
-  </url>
-  
-  <url>
     <loc>http://scchen.com/zh/publication_types/2/</loc>
     <lastmod>2025-10-22T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -430,21 +400,6 @@
   <url>
     <loc>http://scchen.com/zh/tags/%E7%89%A9%E4%BB%B6%E6%96%B9%E5%90%91/</loc>
     <lastmod>2020-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://scchen.com/zh/project/teaching-exppsy-taiwan/</loc>
-    <lastmod>2020-02-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://scchen.com/project/teaching-exppsy-taiwan/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="http://scchen.com/zh/project/teaching-exppsy-taiwan/"
-                />
   </url>
   
   <url>
@@ -949,10 +904,6 @@
                 hreflang="zh"
                 href="http://scchen.com/zh/authors/admin/"
                 />
-  </url>
-  
-  <url>
-    <loc>http://scchen.com/zh/post/missing_posts_readme/</loc>
   </url>
   
   <url>

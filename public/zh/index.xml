@@ -71,30 +71,6 @@
     </item>
     
     <item>
-      <title>ACT_Base：Obsidian 的 Annotation-Connection-Thought 工作流</title>
-      <link>http://scchen.com/zh/project/act-base/</link>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/zh/project/act-base/</guid>
-      <description>&lt;p&gt;ACT_Base 是一個最小化的 Obsidian vault，示範 Annotation → Connection → Thought（ACT）知識工作流，透過在 Obsidian 內建終端機執行 Claude Code skills 來驅動。使用者將論文生成的 Zettelkasten 原子卡片放入 vault，再執行對應 skills，把各自獨立的卡片串連成跨論文的知識網絡。&lt;/p&gt;
-&lt;p&gt;Vault 將十二個 skills 分為三層：Annotation（&lt;code&gt;card-review&lt;/code&gt;、&lt;code&gt;gear-coaching&lt;/code&gt;、&lt;code&gt;cross-link&lt;/code&gt;、&lt;code&gt;monitor&lt;/code&gt;）、Connection（&lt;code&gt;gear-aggregate&lt;/code&gt;、&lt;code&gt;framework-synthesize&lt;/code&gt;、&lt;code&gt;query&lt;/code&gt;、&lt;code&gt;tension-resolve&lt;/code&gt;）與 Thought（&lt;code&gt;provenance-audit&lt;/code&gt;、&lt;code&gt;refine&lt;/code&gt;、&lt;code&gt;question-assess&lt;/code&gt;、&lt;code&gt;question-challenge&lt;/code&gt;）。倉庫內建三篇示範論文的 annotation，並附有從設定到完成第一篇 Connection note 的教學影片。設計上可搭配 
-&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; 倉庫（負責從 PDF 生成原子卡片），以及讓 Claude Code 能在 Obsidian 內執行的 lean-obsidian-terminal 社群外掛使用。&lt;/p&gt;
-&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Annotation_Blank（miniverse）</title>
-      <link>http://scchen.com/zh/project/annotation-blank/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/zh/project/annotation-blank/</guid>
-      <description>&lt;p&gt;Annotation_Blank（內部名稱為 miniverse）是一個最小化的 Obsidian vault，用於透過 AI 將學術論文 PDF 轉換為結構化的 Annotation 筆記。它把作者完整的 Program_verse 工作流簡化為單一流程：將 PDF 放入 vault，在 Obsidian 內以 ALT+L 選單執行三個指令，即可取得一篇附帶 20 張原子 Zettelkasten 卡片的完整 Annotation 筆記。&lt;/p&gt;
-&lt;p&gt;三個步驟依序為：從 PDF 生成 Markdown 投影片大綱、依大綱生成 20 張原子卡片、並將兩者匯入 vault ACT 資料夾結構下的 &lt;code&gt;Author-Year&lt;/code&gt; Annotation 筆記。此專案以 
-&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; 倉庫作為 AI 後端，仰賴 QuickAdd 與 Templater 這兩個 Obsidian 外掛提供選單功能，並至少需要一組 LLM API 金鑰（Gemini、OpenAI 或 Anthropic 皆可）。它是作者更大範圍 CSC PKM 系統的一環，該系統另包含負責筆記樣板的 ACT_Base，以及負責本機推論的 twcc-ollama-proxy。&lt;/p&gt;
-&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>跨越18種語言的物體方向效應研究（Investigating object orientation effects across 18 languages）</title>
       <link>http://scchen.com/zh/publication/object-orientation-18-languages/</link>
       <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
@@ -322,18 +298,6 @@ design:&lt;/p&gt;
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>http://scchen.com/zh/publication/journal-article/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>台灣實驗心理學教學專案集</title>
-      <link>http://scchen.com/zh/project/teaching-exppsy-taiwan/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/zh/project/teaching-exppsy-taiwan/</guid>
-      <description>&lt;p&gt;本專案收集陳紹慶（Sau-Chin Chen）在慈濟大學多個學年教授實驗心理學課程時，以 OSF 為基礎所產生的課程專案，彙整學生與課程在開放研究實務實作訓練中所產出的教材與作品。&lt;/p&gt;
-&lt;p&gt;陳紹慶身為授課教師，建立並持續維護這個作為總覽的 OSF 節點，將歷年教授實驗心理學課程中大學部學生的課程專案陸續加入其中。&lt;/p&gt;
-&lt;p&gt;這個作品集展現了將預先登記（preregistration）與透過 OSF 分享資料等開放科學實務，直接融入大學部實驗心理學課程訓練的長期努力，而非將其視為額外附加的技能。&lt;/p&gt;
-&lt;p&gt;維護狀態：Stable——持續累積中的教學檔案庫，隨新學年課程加入而更新。&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -1929,132 +1893,6 @@ ggplot(Dist.df, aes(Sample_Means, fill = Size)) + geom_histogram() + facet_grid(
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;There are three findings in this simulation. First, the average of every sample is as equal as the average of population. Second, the variance of every sample is close to the divide of population variance by the sample size. Third, the standard deviation of every sample is close to the divide of population standard deviation by the square of sample size. These facts matches &lt;a href=&#34;https://en.wikipedia.org/wiki/Central_limit_theorem&#34;&gt;Central limit theorem&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://scchen.com/zh/post/missing_posts_readme/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/zh/post/missing_posts_readme/</guid>
-      <description>&lt;h1 id=&#34;missing-posts---待補充的文章&#34;&gt;Missing Posts - 待補充的文章&lt;/h1&gt;
-&lt;p&gt;This directory contains placeholder files for posts that exist on the production website (&lt;a href=&#34;https://scchen.com/zh/&#34;&gt;https://scchen.com/zh/&lt;/a&gt;) but are missing from this local repository.&lt;/p&gt;
-&lt;h2 id=&#34;已創建的佔位文件-created-placeholder-files&#34;&gt;已創建的佔位文件 (Created Placeholder Files)&lt;/h2&gt;
-&lt;p&gt;以下10篇文章的目錄結構和佔位文件已創建，需要從原始來源補充完整內容：&lt;/p&gt;
-&lt;h3 id=&#34;2021年文章-7篇&#34;&gt;2021年文章 (7篇)&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;evidentce-small-sample/evidentce-small-sample.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：教學習作：如何運用模擬研究解析小樣本研究的證據力&lt;/li&gt;
-&lt;li&gt;日期：2021-06-05&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;2021-05-30-psacr-appraisal/2021-05-30-psacr-appraisal.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：如何運用認知再評估策略幫助疫情之下的民眾調節負面情緒&lt;/li&gt;
-&lt;li&gt;日期：2021-05-30&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;rstudio-cloud-stat-tutor/rstudio-cloud-stat-tutor.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：Rstudio cloud統計教練心得與期望&lt;/li&gt;
-&lt;li&gt;日期：2021-05-19&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;how-to-build-podcast-website/how-to-build-podcast-website.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：如何使用wowchemy架設podcast網站&lt;/li&gt;
-&lt;li&gt;日期：2021-02-02&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;learning-data-skill-on-cloud/learning-data-skill-on-cloud.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：可重製統計線上學習專案&lt;/li&gt;
-&lt;li&gt;日期：2021-01-26&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;open_at_beginning/open_at_beginning.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：開放在開始&lt;/li&gt;
-&lt;li&gt;日期：2021-01-19&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;update_website_log/update_website_log.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：網站昇級復出紀錄&lt;/li&gt;
-&lt;li&gt;日期：2021-01-13&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;2019年文章-3篇&#34;&gt;2019年文章 (3篇)&lt;/h3&gt;
-&lt;ol start=&#34;8&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;gorilla_prolific_online/gorilla_prolific_online.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：運用Gorilla與Prolific進行線上實驗的簡單示範&lt;/li&gt;
-&lt;li&gt;日期：2019-12-21&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;hku-mass-mobilize/hku-mass-mobilize.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：香港大學學生群眾動員學習研究行動演講會後談&lt;/li&gt;
-&lt;li&gt;日期：2019-11-27&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;first-preregistration-workshop/first-preregistration-workshop.md&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;標題：2019年第一次線上預先註冊工作坊感想&lt;/li&gt;
-&lt;li&gt;日期：2019-08-04&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;下一步操作-next-steps&#34;&gt;下一步操作 (Next Steps)&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;找到原始文件&lt;/strong&gt; - 從以下位置尋找這些文章的原始 .md 或 .Rmd 文件：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;主要開發機器上的 blogdown 專案&lt;/li&gt;
-&lt;li&gt;備份目錄或雲端存儲&lt;/li&gt;
-&lt;li&gt;source-recovery 分支&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;替換佔位文件&lt;/strong&gt; - 將找到的完整內容複製到對應的目錄，覆蓋現有的佔位文件&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;檢查前導資料&lt;/strong&gt; - 確保每個文件的 YAML frontmatter 包含：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;title (標題)&lt;/li&gt;
-&lt;li&gt;date (日期)&lt;/li&gt;
-&lt;li&gt;author (作者)&lt;/li&gt;
-&lt;li&gt;categories (分類 - 可選)&lt;/li&gt;
-&lt;li&gt;tags (標籤 - 可選)&lt;/li&gt;
-&lt;li&gt;summary (摘要 - 可選)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;重建網站&lt;/strong&gt; - 內容補充完成後，執行：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;blogdown&lt;span style=&#34;color:#f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;build_site&lt;/span&gt;()
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;提交更改&lt;/strong&gt; - 使用 git 提交更新的內容&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;注意事項-notes&#34;&gt;注意事項 (Notes)&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;所有佔位文件的內容標記為 &amp;ldquo;(待補充內容)&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;文件格式為 Markdown (.md)，如果原始文件是 R Markdown (.Rmd)，請保持原始格式&lt;/li&gt;
-&lt;li&gt;目錄名稱和文件名稱根據線上網站的 URL slug 創建，應與原始文件結構一致&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

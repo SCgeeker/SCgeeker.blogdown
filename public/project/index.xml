@@ -71,30 +71,6 @@
     </item>
     
     <item>
-      <title>ACT_Base: Annotation-Connection-Thought Workflow for Obsidian</title>
-      <link>http://scchen.com/project/act-base/</link>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/project/act-base/</guid>
-      <description>&lt;p&gt;ACT_Base is a minimal Obsidian vault that demonstrates the Annotation → Connection → Thought (ACT) knowledge workflow, driven by Claude Code skills run from a terminal inside Obsidian. Users drop in atomic Zettelkasten cards generated from papers, then run dedicated skills to turn isolated cards into a cross-paper knowledge network.&lt;/p&gt;
-&lt;p&gt;The vault organizes twelve skills across three layers: Annotation (&lt;code&gt;card-review&lt;/code&gt;, &lt;code&gt;gear-coaching&lt;/code&gt;, &lt;code&gt;cross-link&lt;/code&gt;, &lt;code&gt;monitor&lt;/code&gt;), Connection (&lt;code&gt;gear-aggregate&lt;/code&gt;, &lt;code&gt;framework-synthesize&lt;/code&gt;, &lt;code&gt;query&lt;/code&gt;, &lt;code&gt;tension-resolve&lt;/code&gt;), and Thought (&lt;code&gt;provenance-audit&lt;/code&gt;, &lt;code&gt;refine&lt;/code&gt;, &lt;code&gt;question-assess&lt;/code&gt;, &lt;code&gt;question-challenge&lt;/code&gt;). It ships with three pre-loaded demo annotations and a video walkthrough covering setup through the first Connection note. It is designed to pair with the 
-&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; repository, which can generate the atomic cards from source PDFs, and with the lean-obsidian-terminal community plugin for running Claude Code inside Obsidian.&lt;/p&gt;
-&lt;p&gt;Status: Active — under regular maintenance.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Annotation_Blank (miniverse)</title>
-      <link>http://scchen.com/project/annotation-blank/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/project/annotation-blank/</guid>
-      <description>&lt;p&gt;Annotation_Blank, internally named miniverse, is a minimal Obsidian vault for converting academic PDFs into structured Annotation notes using AI. It strips down the author&amp;rsquo;s full Program_verse workflow to a single pipeline: drop a PDF into the vault, run three commands from an ALT+L menu inside Obsidian, and get a fully formed Annotation note with 20 atomic Zettelkasten cards.&lt;/p&gt;
-&lt;p&gt;The three steps generate a Markdown slide outline from the PDF, generate 20 atomic cards from that outline, and import both into an &lt;code&gt;Author-Year&lt;/code&gt; Annotation note under the vault&amp;rsquo;s ACT folder structure. It depends on the 
-&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; repository as its AI backend, on the QuickAdd and Templater Obsidian plugins for the menu, and on at least one LLM API key (Gemini, OpenAI, or Anthropic). It is one piece of the author&amp;rsquo;s broader CSC PKM system, which also includes ACT_Base for note templates and twcc-ollama-proxy for local inference.&lt;/p&gt;
-&lt;p&gt;Status: Active — under regular maintenance.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Justify Your Alpha</title>
       <link>http://scchen.com/project/justify-your-alpha/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
@@ -128,18 +104,6 @@
 &lt;a href=&#34;https://github.com/debruine/booktem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;booktem&lt;/a&gt; template. It is published as a browsable online book so students and instructors can read the material directly without building it locally.&lt;/p&gt;
 &lt;p&gt;The book targets students learning the logic and practice of experimental design in psychology, and it is structured so that the source repository can reproduce the published site end to end.&lt;/p&gt;
 &lt;p&gt;Status: Stable — content is complete and the repository is kept available with no active new-chapter development.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Teaching Experimental Psychology in Taiwan</title>
-      <link>http://scchen.com/project/teaching-exppsy-taiwan/</link>
-      <pubDate>Mon, 24 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/project/teaching-exppsy-taiwan/</guid>
-      <description>&lt;p&gt;This project collects the OSF-based experimental psychology course projects that Sau-Chin Chen has taught at Tzu-Chi University over several academic years, gathering student and course materials produced as part of hands-on training in open research practices.&lt;/p&gt;
-&lt;p&gt;As the instructor, Sau-Chin Chen created and maintains this parent OSF node as a running archive, adding course projects from successive years of teaching experimental psychology to undergraduate students.&lt;/p&gt;
-&lt;p&gt;The collection illustrates a sustained effort to integrate open science practices, including preregistration and data sharing through OSF, directly into undergraduate experimental psychology training rather than treating them as separate add-on skills.&lt;/p&gt;
-&lt;p&gt;Status: Stable — an ongoing teaching archive, updated as new course years are added.&lt;/p&gt;
 </description>
     </item>
     

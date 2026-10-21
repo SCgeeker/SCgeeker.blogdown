@@ -70,29 +70,5 @@
 </description>
     </item>
     
-    <item>
-      <title>ACT_Base：Obsidian 的 Annotation-Connection-Thought 工作流</title>
-      <link>http://scchen.com/zh/project/act-base/</link>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/zh/project/act-base/</guid>
-      <description>&lt;p&gt;ACT_Base 是一個最小化的 Obsidian vault，示範 Annotation → Connection → Thought（ACT）知識工作流，透過在 Obsidian 內建終端機執行 Claude Code skills 來驅動。使用者將論文生成的 Zettelkasten 原子卡片放入 vault，再執行對應 skills，把各自獨立的卡片串連成跨論文的知識網絡。&lt;/p&gt;
-&lt;p&gt;Vault 將十二個 skills 分為三層：Annotation（&lt;code&gt;card-review&lt;/code&gt;、&lt;code&gt;gear-coaching&lt;/code&gt;、&lt;code&gt;cross-link&lt;/code&gt;、&lt;code&gt;monitor&lt;/code&gt;）、Connection（&lt;code&gt;gear-aggregate&lt;/code&gt;、&lt;code&gt;framework-synthesize&lt;/code&gt;、&lt;code&gt;query&lt;/code&gt;、&lt;code&gt;tension-resolve&lt;/code&gt;）與 Thought（&lt;code&gt;provenance-audit&lt;/code&gt;、&lt;code&gt;refine&lt;/code&gt;、&lt;code&gt;question-assess&lt;/code&gt;、&lt;code&gt;question-challenge&lt;/code&gt;）。倉庫內建三篇示範論文的 annotation，並附有從設定到完成第一篇 Connection note 的教學影片。設計上可搭配 
-&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; 倉庫（負責從 PDF 生成原子卡片），以及讓 Claude Code 能在 Obsidian 內執行的 lean-obsidian-terminal 社群外掛使用。&lt;/p&gt;
-&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Annotation_Blank（miniverse）</title>
-      <link>http://scchen.com/zh/project/annotation-blank/</link>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://scchen.com/zh/project/annotation-blank/</guid>
-      <description>&lt;p&gt;Annotation_Blank（內部名稱為 miniverse）是一個最小化的 Obsidian vault，用於透過 AI 將學術論文 PDF 轉換為結構化的 Annotation 筆記。它把作者完整的 Program_verse 工作流簡化為單一流程：將 PDF 放入 vault，在 Obsidian 內以 ALT+L 選單執行三個指令，即可取得一篇附帶 20 張原子 Zettelkasten 卡片的完整 Annotation 筆記。&lt;/p&gt;
-&lt;p&gt;三個步驟依序為：從 PDF 生成 Markdown 投影片大綱、依大綱生成 20 張原子卡片、並將兩者匯入 vault ACT 資料夾結構下的 &lt;code&gt;Author-Year&lt;/code&gt; Annotation 筆記。此專案以 
-&lt;a href=&#34;https://github.com/SCgeeker/claude_lit_workflow&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;claude_lit_workflow&lt;/a&gt; 倉庫作為 AI 後端，仰賴 QuickAdd 與 Templater 這兩個 Obsidian 外掛提供選單功能，並至少需要一組 LLM API 金鑰（Gemini、OpenAI 或 Anthropic 皆可）。它是作者更大範圍 CSC PKM 系統的一環，該系統另包含負責筆記樣板的 ACT_Base，以及負責本機推論的 twcc-ollama-proxy。&lt;/p&gt;
-&lt;p&gt;維護狀態：Active——持續更新中。&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>
