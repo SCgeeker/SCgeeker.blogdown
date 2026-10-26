@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="長期觀察發現，繁體中文網路資訊幾乎沒有討論學者著作自我典藏觀念與作法。此篇分享個人使用預印本經驗，期許帶動有經驗的學者與機構公開提倡。">
+
+<title>運用公開預印本實現自我典藏 – 暗微幽光</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-9b06663d7d17546ecdba588faf27aac6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-338c8ec7c1e1f6f78a4f73555b18415f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-9b06663d7d17546ecdba588faf27aac6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-41e903e3027d3cce9f75dff6dc2f0257.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ecd8160af367a1d8a589bc27eb3ea71c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-41e903e3027d3cce9f75dff6dc2f0257.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "沒有結果",
+    "search-matching-documents-text": "符合的文件",
+    "search-copy-link-title": "複製搜尋連結",
+    "search-hide-matches-text": "隱藏其他符合的結果",
+    "search-more-match-text": "更多符合結果",
+    "search-more-matches-text": "更多符合結果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "送出",
+    "search-label": "搜尋"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../custom.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">暗微幽光</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="搜尋"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="切換導航列" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">首頁</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../post/index.html"> 
+<span class="menu-text">隨筆</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../project/index.html"> 
+<span class="menu-text">專案</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publication/index.html"> 
+<span class="menu-text">出版品</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/"> 
+<span class="menu-text">English</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="切換深色模式"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">本頁目錄</h2>
+   
+  <ul>
+  <li><a href="#自我典藏與開放取用" id="toc-自我典藏與開放取用" class="nav-link active" data-scroll-target="#自我典藏與開放取用">自我典藏與開放取用</a></li>
+  <li><a href="#什麼是預印本" id="toc-什麼是預印本" class="nav-link" data-scroll-target="#什麼是預印本">什麼是預印本？</a></li>
+  <li><a href="#公開預印本的作用" id="toc-公開預印本的作用" class="nav-link" data-scroll-target="#公開預印本的作用">公開預印本的作用</a></li>
+  <li><a href="#如何發佈預印本" id="toc-如何發佈預印本" class="nav-link" data-scroll-target="#如何發佈預印本">如何發佈預印本</a></li>
+  <li><a href="#在台灣推動自我典藏的困難與對策" id="toc-在台灣推動自我典藏的困難與對策" class="nav-link" data-scroll-target="#在台灣推動自我典藏的困難與對策">在台灣推動自我典藏的困難與對策</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">運用公開預印本實現自我典藏</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">研究心得</div>
+    <div class="quarto-category">academic</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    長期觀察發現，繁體中文網路資訊幾乎沒有討論學者著作自我典藏觀念與作法。此篇分享個人使用預印本經驗，期許帶動有經驗的學者與機構公開提倡。
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">發佈於</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2019年7月20日</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>過去三年裡，透過與他人合作還有自已主導的計畫，已經累積五篇已經發表或正在進行的論文，以預印本(Preprint)模式於出版前公開<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。除了Justify your alpha與心理科學加速器成立倡議，其他三篇都是送期刊評審的註冊報告計畫。除了在英文twitter或國外研討會與國外學者有做為討論材料，在中文網路社群與國內學者的交流場合，幾乎沒有人在意。這一年因上課以及與國外學者交流的經驗，讓我察覺台灣學術圈普遍缺乏對預印本的正確認識，更關鍵的問題是自我典藏(self-archiving)的觀念與操作方式，尚未被學術機構及主管機關重視，也未有資深學者主動提倡。這篇貼文藉由分享個人經驗，自不量力地鼓勵更多先進認識以公開預印本實現自我典藏的方式。</p>
+<section id="自我典藏與開放取用" class="level2">
+<h2 class="anchored" data-anchor-id="自我典藏與開放取用">自我典藏與開放取用</h2>
+<p><a href="https://www.opensocietyfoundations.org/">開科社會基金會(Open Society Foundations)</a>於2001跨2002年間在布達佩斯舉行16人小組會議，總結<strong>布達佩斯公開取用倡議(the Budapest Open Access Initiative)</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>。其中提出兩項影響之後Open Access推廣行動的策略：第一是鼓勵學者自行運用公開的數位資料庫，典藏個人發表於期刊與書籍的論文。第二是學術機構及政府機關應鼓勵並引導開放取用期刊的發展，讓學者至少以合理費用公開發表於期刊的著作。</p>
+<p>布達佩斯公開取用倡議發表之前，已有知名的預印本平台<a href="https://arxiv.org/">arXiv</a>，有數學及物理等基礎學科的學者，於此平台發佈尚未進行學術評審的著作草稿。社會科學領域的預印本平台在開放科學中心(Center for Open Science)與心理科學促進學會(Society for the Improvement of Psychological Science)合作，以<a href="https://osf.io/preprints/">OSF preprints</a>為基礎，架構<a href="https://psyarxiv.com/">PsyArxiv</a>。我的五篇預印本皆透過PsyArxiv發佈，也是全球心理學者發表預印本的主要平台。</p>
+<p>由於多數有高影響力的傳統學術期刊由商業出版社經營，為了維持版權收益，高影響力期刊約束學者不得將須付費取得的後印本(post-print)逕行上傳至預印本平台。所以有發佈預印本的學者會將預印本網址置入個人履歷，加上google scholar從2017年起就自動將PsyArxiv資料納入學者著作紀錄，更方便整理個人履歷。</p>
+</section>
+<section id="什麼是預印本" class="level2">
+<h2 class="anchored" data-anchor-id="什麼是預印本">什麼是預印本？</h2>
+<p>與學術出版有關的中文資訊網站，可查到符合布達佩斯公開取用倡議，有關預印本的解釋。以下引述三種來源說法：</p>
+<ul>
+<li><a href="https://zh.wikipedia.org/zh-tw/%E9%A2%84%E5%8D%B0%E6%9C%AC">維基百科</a>:</li>
+</ul>
+<blockquote class="blockquote">
+<p>預印本（Preprint）也稱未定稿本。在學術出版領域，預印本是指尚未在需要同行評審的科學期刊上出版的科學文獻的草稿。 作者在寫作完成後，可能在出版之前將草稿預先公開讓大家閱讀並提出更改建議，並在稍後提交學術期刊進行出版。學術期刊一般會讓選定的業內人士對投稿的文章做同行評審後才發表，但是某些雜誌機構也會將未經專家評審的未定稿本發表在該雜誌／機構的網站上。</p>
+</blockquote>
+<ul>
+<li><a href="https://concert.stpi.narl.org.tw/news/350">CONCERT 全國學術電子資訊資源共享聯盟</a>:</li>
+</ul>
+<blockquote class="blockquote">
+<p>學術著作預印本（preprint）是指將尚未經過同儕審評、正式出版之前的初稿儲存並公開在預印本典藏庫（repository）上…</p>
+</blockquote>
+<ul>
+<li><a href="http://tul.blog.ntu.edu.tw/archives/18777">臺大圖書館參考服務部落格</a></li>
+</ul>
+<blockquote class="blockquote">
+<p>預印本（Preprints）可以是學者學術論文的草稿、或是已投稿刊物但仍在審稿階段或已被接受但仍需修稿的稿件，也可以是刊物確定刊出但非正式刊出版面格式的內容…。學者可以選擇與其學科性質相符的預印本資料庫來上傳公開與典藏內容，…</p>
+</blockquote>
+<p>相對於上述中文網站，擁有最多台灣學術機構發行的中文學術期刊平台 ─ 華藝線上圖書館，在首頁張貼的預印本定義，是與上述說法相背的過時解釋。以下是節取自首頁的英文說明：</p>
+<blockquote class="blockquote">
+<p>A journal article that has undergone peer-review and has been accepted for publication but not yet formally published.</p>
+</blockquote>
+</section>
+<section id="公開預印本的作用" class="level2">
+<h2 class="anchored" data-anchor-id="公開預印本的作用">公開預印本的作用</h2>
+<p>論文手稿經由預印本平台公開，就能達成所謂的綠色OA。由於不是所有期刊都支持這種發佈方式，發佈前最好先在<a href="http://www.sherpa.ac.uk/romeo/index.php">SHERPA/RoMEO</a>查詢刊登著作的期刊，是否支持學者將預印本或後印本發佈在公開平台。</p>
+<p>通過近年心理科學界推動的註冊報告<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>，通過任何期刊第一階段評審的計畫手稿，經過預印本平台發佈能提早讓世人得知正在進行的研究計劃。如果這些計劃是多方合作的大型計畫，也可吸引有興趣的研究者加入合作。而且預印本平台保存研究過程各階段的手稿，可讓眾人檢視研究初期至結束的異同，確保著作品質的真實性。</p>
+<p>OSF preprints預印本平台系列已整合線上評注系統<a href="https://web.hypothes.is/">hypothes.is</a>，平台讀者可透過評注系統，在閱讀的預印本某處留下個人的公開或私密註解。評注功能不但促成發表後同儕評審(post-published peer review)，也能在各種場域運用論文內容進行討論或學習。雖然目前只支授chrome瀏覽器，未來的發展值得期待。</p>
+</section>
+<section id="如何發佈預印本" class="level2">
+<h2 class="anchored" data-anchor-id="如何發佈預印本">如何發佈預印本</h2>
+<p>發佈預印本基本步驟如下圖<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>，關鍵在於找到適合發佈的平台。</p>
+<p><img src="SelfArchive.png" class="img-fluid"></p>
+<p>對中國大陸的學者來說，2016年起中國科學院建置的<a href="http://chinaxiv.org/home.htm">ChinaXiv</a>正式上線，讓想發佈預印本的學者有了園地。隨後採用相同框架的專業領域預印本平台也陸續上線，像是心理科學的<a href="http://psych.chinaxiv.org/server/index.htm">PsyChinaXiv</a>。ChinaXiv和OSF Preprints不同的是，前者由國家最高級研究機構建置，後者由非盈利組織 經營。還有OSF Preprints的源始碼完整公開於github，提供有需要的人士，架構服務專業領域或區域性學術社群的預印本平台。至於ChinaXiv有無公開源始碼尚需進一步查證。</p>
+</section>
+<section id="在台灣推動自我典藏的困難與對策" class="level2">
+<h2 class="anchored" data-anchor-id="在台灣推動自我典藏的困難與對策">在台灣推動自我典藏的困難與對策</h2>
+<p>對照中國大陸積極建置符合國內學術發展需要的預印本平台，並鼓勵學者使用，就能看出在台灣推動自我典藏的兩層困境。首先是各領域學者缺乏在投稿前發佈預印本的習慣意識，除非是向提供開放審查(Open peer review)的期刊投稿，例如<a href="https://peerj.com/">PeerJ</a>，才會使用期刊提供的預印本平台發佈。另外，學術主管機關及各大學機構沒有認為推動開放取用有其必要性，無法形成有利的環境條件。</p>
+<p>培養台灣各領域學者養成自主發佈預印本的習慣，我認為可以有兩個對策。其一是運用OSF Preprints架構，建構提供台灣各領域學者發佈中文或英文論文的預印本平台。這方面已有法國的<a href="https://frenxiv.org/">FrenXiv</a>、阿拉伯世界的<a href="https://arabixiv.org/">Arabixv</a>、印尼的<a href="https://osf.io/preprints/inarxiv">INA-Rxiv</a>、與印度的<a href="https://indiarxiv.org/">indiaRxiv</a>。這些平台主要依賴區域內圖書資訊相關機構定期補助經費，即可提供該國或該地區免費發佈預印本的服務。</p>
+<p>學術主管機關及各機構或因現在的人員續效評鑑制度，缺乏鼓勵機構內學者的誘因。其實稍微調整評鑑方向，配合預印本平台的基礎建設，不只可以提昇意願，還能提昇台灣整體學術產出的誠信度。我建議與其要求學者每年必須生產幾篇論文，不如鼓勵學者持續將有出版價值著作手稿發佈到預印本平台，透過OSF Preprints發展中的同儕評注機制，定期檢視著作收到同儕建議及著作內容更新狀況，做為評估學者研究續效的資料。對於運作評鑑制度的機構單位及接受評鑑的學者，都可以省下冗長又無法評斷指標優劣的文書作業，也可以提供第三方資訊產業人員發揮的機會。能否創造多贏格局，希望這篇網誌能激發一些想法與行動。</p>
+<p><em>本文原刊於舊站，2026-10 自網站備份復原。</em></p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">腳註</h2>
+
+<ol>
+<li id="fn1"><p>五篇論文的公開網址 <a href="https://psyarxiv.com/zeux9/" class="uri">https://psyarxiv.com/zeux9/</a> <a href="https://psyarxiv.com/9s3y6/" class="uri">https://psyarxiv.com/9s3y6/</a> <a href="https://psyarxiv.com/n26dy/" class="uri">https://psyarxiv.com/n26dy/</a> <a href="https://psyarxiv.com/t2pjv/" class="uri">https://psyarxiv.com/t2pjv/</a> <a href="https://psyarxiv.com/a3vwc/" class="uri">https://psyarxiv.com/a3vwc/</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>全文下載網址 <a href="http://dx.doi.org/10.4403/jlis.it-8629" class="uri">http://dx.doi.org/10.4403/jlis.it-8629</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>註冊報告的介紹，詳見<a href="../../post/text_2017002/index.html">個人網誌</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>圖片來源~ enago academy: <a href="https://www.enago.com/academy/a-guide-to-self-archiving-for-young-research-scientists/">A Guide to Self-Archiving for Young Research Scientists</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<!-- 修正搜尋框 IME（注音/大易等）組字被 autocomplete 重繪打斷的問題。
+     原理：組字期間（compositionstart~end）攔截 input/keydown 事件，
+     不讓 Algolia autocomplete 更新查詢與重繪；組字完成後補送一次
+     input 事件讓查詢同步。en/zh 兩專案各持一份，修改需同步。 -->
+<script>
+(function () {
+  var composing = false;
+  function inSearch(el) {
+    return el && el.closest &&
+      el.closest('#quarto-search, .aa-Autocomplete, .aa-DetachedContainer');
+  }
+  document.addEventListener('compositionstart', function (e) {
+    if (inSearch(e.target)) composing = true;
+  }, true);
+  document.addEventListener('compositionend', function (e) {
+    if (!inSearch(e.target)) return;
+    composing = false;
+    var el = e.target;
+    setTimeout(function () {
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+    }, 0);
+  }, true);
+  document.addEventListener('input', function (e) {
+    if (composing && inSearch(e.target)) e.stopImmediatePropagation();
+  }, true);
+  ['keydown', 'keyup'].forEach(function (type) {
+    document.addEventListener(type, function (e) {
+      if ((e.isComposing || e.keyCode === 229) && inSearch(e.target)) {
+        e.stopPropagation();
+      }
+    }, true);
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/scchen\.com\/zh\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2017-2026 陳紹慶</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

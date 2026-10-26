@@ -101,6 +101,10 @@
 /project/mental-simulation/ /project/psa002-object-orientation/ 301
 /project/mental_simulation/ /project/psa002-object-orientation/ 301
 /zh/project/mental_simulation/ /zh/project/psa002-object-orientation/ 301
+/post/orientation-language-part01/ /zh/post/orientation-language-part01/ 301
+/post/preprint-self-archiving/ /zh/post/preprint-self-archiving/ 301
+/zh/mdtext/text_2016001/ /zh/post/text_2016001/ 301
+/mdtext/text_2016001/ /zh/post/text_2016001/ 301
 /index.xml /post/index.xml 301
 /zh/index.xml /zh/post/index.xml 301
 /tags/* /post/ 301
@@ -125,3 +129,10 @@
 /zh/post/page/* /zh/post/ 301
 /page/* / 301
 /zh/page/* /zh/ 301
+/project/page/* /project/ 301
+/zh/project/page/* /zh/project/ 301
+/publication/page/* /publication/ 301
+/zh/publication/page/* /zh/publication/ 301
+/zh/openstat/page/* /zh/openstat/ 301
+/mdtext/* /zh/post/ 301
+/zh/mdtext/* /zh/post/ 301

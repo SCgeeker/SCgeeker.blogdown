@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-TW" xml:lang="zh-TW"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="透過一位小女孩的科學專案，了解科學家如何設計 不帶偏見的調查研究，以及運用統計分析評估結論的可信度。">
+
+<title>第9單元:統計思考開門 – 暗微幽光</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-9b06663d7d17546ecdba588faf27aac6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-338c8ec7c1e1f6f78a4f73555b18415f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-9b06663d7d17546ecdba588faf27aac6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-41e903e3027d3cce9f75dff6dc2f0257.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ecd8160af367a1d8a589bc27eb3ea71c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-41e903e3027d3cce9f75dff6dc2f0257.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "沒有結果",
+    "search-matching-documents-text": "符合的文件",
+    "search-copy-link-title": "複製搜尋連結",
+    "search-hide-matches-text": "隱藏其他符合的結果",
+    "search-more-match-text": "更多符合結果",
+    "search-more-matches-text": "更多符合結果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "送出",
+    "search-label": "搜尋"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../custom.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">暗微幽光</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="搜尋"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="切換導航列" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">首頁</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../post/index.html"> 
+<span class="menu-text">隨筆</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../project/index.html"> 
+<span class="menu-text">專案</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publication/index.html"> 
+<span class="menu-text">出版品</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/"> 
+<span class="menu-text">English</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="切換深色模式"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">本頁目錄</h2>
+   
+  <ul>
+  <li><a href="#統計思考實例emily-rosa的專題研究" id="toc-統計思考實例emily-rosa的專題研究" class="nav-link active" data-scroll-target="#統計思考實例emily-rosa的專題研究">統計思考實例：Emily Rosa的專題研究</a></li>
+  <li><a href="#統計思考養成途徑" id="toc-統計思考養成途徑" class="nav-link" data-scroll-target="#統計思考養成途徑">統計思考養成途徑</a></li>
+  <li><a href="#統計方法運用指南" id="toc-統計方法運用指南" class="nav-link" data-scroll-target="#統計方法運用指南">統計方法運用指南</a></li>
+  <li><a href="#總結" id="toc-總結" class="nav-link" data-scroll-target="#總結">總結</a></li>
+  <li><a href="#習題" id="toc-習題" class="nav-link" data-scroll-target="#習題">習題</a>
+  <ul class="collapse">
+  <li><a href="#參考文獻" id="toc-參考文獻" class="nav-link" data-scroll-target="#參考文獻">參考文獻</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">第9單元:統計思考開門</h1>
+</div>
+
+<div>
+  <div class="description">
+    透過一位小女孩的科學專案，了解科學家如何設計 不帶偏見的調查研究，以及運用統計分析評估結論的可信度。
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">發佈於</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2021年1月19日</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>科學創見從對現象的推測開始，只要好奇親眼目睹或耳聞的現象之發生原因，推測如何發生的過程，就有最初步的<strong>假設(Hypothesis)</strong>。假設要成為讓人信服的說法，需要有<strong>正面證據(Positive Evidence)</strong>的支持，以及不被<strong>反面證據(Negative Evidence)</strong>推翻。決定該找到什麼樣的證據，還有收集證據的方法，與假設放在一起就構成<strong>科學思考(Scientific thinking)</strong>。當證據是需要經過<strong>隨機化(Randomization)</strong>取得的<strong>資料(Data)</strong>，並且使用<strong>機率模型(Probability Model)</strong>整理與驗證資料裡的<strong>正反面訊息</strong>，這種科學思考就是<strong>統計思考(Statistical Thinking)</strong>。</p>
+<section id="統計思考實例emily-rosa的專題研究" class="level2">
+<h2 class="anchored" data-anchor-id="統計思考實例emily-rosa的專題研究">統計思考實例：Emily Rosa的專題研究</h2>
+<p>曾擔任美國神智學會(Theosophical Society in America)會長的Dora Kunz在1970年代起提倡<a href="https://en.wikipedia.org/w/index.php?title=Therapeutic_touch&amp;oldid=813367620"><strong>治療性撫慰</strong></a>(therapeutic touch)，幫助病患紓解病痛與焦慮。提倡者主張人類身體自然散發能量場(energy field)，受過訓練的治療師能不接觸患者身體，感應患者的能量場，並運用自身能量撫慰患部，紓解病患的痛苦。到了今天，包括美國在內，全球大約有80所護理學校列治療性撫慰為正式課程，光是北美地區有80所左右的醫療機構允許護理人員使用治療性撫慰幫助住院患者。有興趣的讀者使用關鍵詞“therapeutic touch”搜尋網路資訊，還能發現有組織定期舉辦教育工作坊。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="theraputic-touch.jpg" class="img-fluid figure-img"></p>
+<figcaption>正在接受治療性撫慰的男士。圖像取自HEAVYSTONES.com</figcaption>
+</figure>
+</div>
+<p>Figure 1: 正在接受治療性撫慰的男士。圖像取自HEAVYSTONES.com</p>
+<p>1998年當時11歲的美國女孩Emily Rosa，想知道治療師感應人體能量場的真實能力，改造流傳已久的擲硬幣遊戲，設計出一套簡易測試。她請治療師坐在同一張桌子對面，兩人之間有一塊隔板，雖然能對話但是看不見彼此，隔板下方有兩個孔洞。測試時治療師將雙手穿過孔洞伸到另一邊，每次測試前測試者先投擲硬幣，決定要將自已的手伸到治療師的那一隻手掌上方8至10公分處，再請治療師說出測試者的手是在左手還是右手上方，每位治療師反覆進行十次測試。以擲硬幣對賭的所有可能性來看，<strong>Emily假設如果治療師真的有感應人體能量場的能力，十次測試的答對率應該比完全亂猜(50%)高出許多</strong>，當年的Emily認為一位治療師至少要答對8次，才能證實真有本事。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="342px-Emily_Rosa.jpg" class="img-fluid figure-img"></p>
+<figcaption>左：Emily Rosa 11歲時的留影，取自維基百科。右：Emily Rosa施測現場素描，取自Rosa et al.&nbsp;(1998) Figure 1</figcaption>
+</figure>
+</div>
+<p>Figure 2: 左：Emily Rosa 11歲時的留影，取自維基百科。右：Emily Rosa施測現場素描，取自Rosa et al.&nbsp;(1998) Figure 1</p>
+<p>在父母的幫助下，1996年Emily邀請到15位實際從事治療性撫慰的人士參與測試，一年後因為電視台的專訪，又找了曾參與先前研究在內的7位等共13位人士，進行第二次研究。Emily與父母以及一位醫師一起將兩次研究結果寫成論文發表(Rosa et al.&nbsp;1998)。論文中的長條圖呈現28人次的正確次數，圖<a href="#fig:Rosa1998Fig2">3</a>是原始統計圖的重製版本：</p>
+<pre><code>## png 
+##   2</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Rosa1998-fig2.png" class="img-fluid figure-img"></p>
+<figcaption>Emily Rosa的研究結果</figcaption>
+</figure>
+</div>
+<p>Figure 3: Emily Rosa的研究結果</p>
+<p>測試結果究竟證實了治療師們真有本事？還是揭露治療性撫慰的誇大不實？回答這些問題之前，我們先來解析這件專題研究的思路。如果你認為Emily Rosa的<strong>假設</strong>與<strong>測試方法</strong>是有道理的，或者你認為可以做更好的改良，那麼你已經有科學思考的基本能力。Emily的專題研究讓我們知道，能以科學思考探究的問題，必定有<strong>可測試的假設</strong>，以及<strong>可實作的測試方法</strong>。更嚴謹的話，還要加上<strong>正反證據的成立條件</strong>。</p>
+<p>那麼為何Emily Rosa的專題研究是一種<strong>統計思考</strong>？首先Emily提出的假設有預期測量結果的發生機率：如果治療師們沒有宣稱的本事，全部的答對率應該和丟硬幣猜是正面還是反面向上的機率一樣：50%。如果治療師們真的有本事，答對率應該明顯高於50%，這也是正面證據與反面證據有效的條件。至於Emily使用的測試方法，看上去可以有效累積每位治療師的答對率。</p>
+<p>圖 <a href="#fig:Rosa1998Fig2">3</a> 標示21位治療師的平均答對次數是4.4次，表示10次測試裡有4至5次是正確的。<strong>平均4.4次</strong>似乎與50%差不了多少，憑這個數值，Emily能推斷這群治療師的本事言過其實嗎？</p>
+</section>
+<section id="統計思考養成途徑" class="level2">
+<h2 class="anchored" data-anchor-id="統計思考養成途徑">統計思考養成途徑</h2>
+<p>Emily Rosa的報告裡是以數值呈現的機率資訊，判斷治療師有本事的可能性，有沒有高過治療師沒有本事的可能性。她所收集的資料，能以全部治療師的正確反應次數估計可能性，也可以每位治療師的正確率估計可能性。本書運用這個案例，介紹每位統計初學者首先學習的單一樣本樣本推論統計(第<a href="#onesample"><strong>??</strong></a>單元)。</p>
+<p>學習第一套推論統計之前，我們要先認識描述資料的方法，也就是描述統計。描述統計的功用是劃清要進行推論的資訊，符合想確證的假設。好的描述統計能展現分析者對問題的理解，以及從資料獲得的判斷。在第<a href="#describe"><strong>??</strong></a>單元，我們將學習類別變數與連續變數的資料尺度以及統計量數，還有表現各種變項組合的統計圖表。</p>
+<p>接著在第<a href="#probability"><strong>??</strong></a>單元，我們要重新學習機率事件的計算，以及機率分佈的概念，再次深入了解何謂條件機率，以及運用貝氏定理計算事後機率。到了第<a href="#distribution"><strong>??</strong></a>單元，我們要運用程式模擬認識機率分配，探討為何在隨機化條件下收集的資料，才是能代表母群的樣本。這兩個單元都會運用相同的案例，介紹機率的計算與模擬。</p>
+<p>充分認識機率的計算與模擬，我們就能運用這些觀念與方法，理解推論統計的運作邏輯。第<a href="#onesample"><strong>??</strong></a>單元以TT治療師的測試分析，學習假設檢定的正確運用方法，我們將了解如何考量無窮次的型一與型二錯誤率，謹慎推論一次的顯著性檢定結果；還有初步認識母數推論統計與無母數推論統計的差異。</p>
+<p>第<a href="#paired"><strong>??</strong></a>單元將前進到相依樣本的推論統計，在此將認識第一種效果量：標準化平均數差異，以及如何搭配樣本數及考驗力等資訊，判斷推論結果的可靠性。第<a href="#independent"><strong>??</strong></a>單元以獨立樣本的推論統計範例，讓初學者認識實驗設計如何影響分析結果。</p>
+<p>第<a href="#corr-reg"><strong>??</strong></a>單元將認識第二種效果量：相關係數，以及最簡單的一元一次線性迴歸式。這個單元的範例與第<a href="#paired"><strong>??</strong></a>單元與第<a href="#independent"><strong>??</strong></a>單元有所關聯，以此引導初學者了解兩種推論方法與變異數分析的關聯性。進入第<a href="#oneway-anova"><strong>??</strong></a>單元，就能運用線性迴歸了解正確使用變異數分析的關鍵，以及解讀及呈現分析結果的方式。</p>
+</section>
+<section id="統計方法運用指南" class="level2">
+<h2 class="anchored" data-anchor-id="統計方法運用指南">統計方法運用指南</h2>
+<p>本書編排架構參考Rivka de Vries博士建置的教學網站<a href="https://statkat.com/">統計貓咪(statkat)</a>，以分析問題的變項結構設定篇章介紹統計方法。鑑於本書預設讀者是尚未有豐富統計分析實務的初學者，集中介紹適用單一自變項與單一應變項之間，或者只有一個獨變項與一個依變項的統計方法。我將本書介紹的方法，與章節連結整理於下表：</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">依變項為類別變項</th>
+<th style="text-align: center;">依變項為連續變項</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>無獨變項</td>
+<td style="text-align: center;">二項檢定( 單元<a href="#onesample-binomial"><strong>??</strong></a> )</td>
+<td style="text-align: center;">單一平均數z檢定( 單元<a href="#onesample-z"><strong>??</strong></a> )</td>
+</tr>
+<tr class="even">
+<td>獨變項為相依樣本</td>
+<td style="text-align: center;">McNemar氏檢定( 單元<a href="#paired-categorical"><strong>??</strong></a> )</td>
+<td style="text-align: center;">相依樣本t檢定(單元<a href="#paired-continuous"><strong>??</strong></a>)</td>
+</tr>
+<tr class="odd">
+<td>獨變項為獨立樣本</td>
+<td style="text-align: center;">卡方獨立性檢定(單元<a href="#independent-chisquare"><strong>??</strong></a>)</td>
+<td style="text-align: center;">獨立樣本t檢定(單元<a href="#independent-t"><strong>??</strong></a>)</td>
+</tr>
+<tr class="even">
+<td>單一自變項為連續變數</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">皮爾森相關(單元<a href="#corr-reg-person"><strong>??</strong></a>), 簡單迴歸(單元<a href="#corr-reg-simple"><strong>??</strong></a>)</td>
+</tr>
+<tr class="odd">
+<td>單一獨變項有三組以上獨立樣本</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">獨立樣本變異數分析(單元<a href="#oneway-independent"><strong>??</strong></a>)</td>
+</tr>
+<tr class="even">
+<td>單一獨變項有三組以上相依樣本</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">重覆量數變異數分析(單元<a href="#oneway-repeated"><strong>??</strong></a>)</td>
+</tr>
+</tbody>
+</table>
+<p>讀者除了可由表格快速找到自已想查閱的章節資料，這份表格也是<a href="https://statkat.com/">統計貓咪(statkat)</a>提供的方法檢索表微型版。當讀者熟練本書介紹的統計方法之後，一旦有需要學習其他統計方法，可經由該網站尋找相關資訊。該如何找到自己需要的統計方法？就要從了解變項的性質開始，所以下一章要好好認識描述統計。</p>
+</section>
+<section id="總結" class="level2">
+<h2 class="anchored" data-anchor-id="總結">總結</h2>
+<ul>
+<li>科學思考講究平等對待正面證據與反面證據；統計思考透過機率模型評估各種證據的可能性。</li>
+<li>養成統計思考需要洞察肯定或否定理論的證據皆可能發生，也需要不斷自我提醒，當下得到的結果只是長久觀察的一種可能性。</li>
+<li>任何需要統計分析的資料必有依變項，分析之前先確認測量尺度，能掌握合適的分析方法。</li>
+</ul>
+</section>
+<section id="習題" class="level2">
+<h2 class="anchored" data-anchor-id="習題">習題</h2>
+<ol type="1">
+<li><p>安裝與設定JASP與jamovi。如果電腦有連接網路，由jamovi的模組選單(Modules)，下載試用<code>Rj</code>、<code>statkat</code>、以及<code>learning statistics with jamovi</code>。</p></li>
+<li><p>根據你的學習指南，開啟指定的JASP與jamovi資料收藏檔案，進行第一次嘗試並儲存分析結果。</p></li>
+<li><p>註冊OSF與管理管理專案，上傳展示你的第一次分析結果。</p></li>
+</ol>
+<section id="參考文獻" class="level3">
+<h3 class="anchored" data-anchor-id="參考文獻">參考文獻</h3>
+<p>Rosa, Linda, Emily Rosa, Larry Sarner, and Stephen Barrett. 1998. “A Close Look at Therapeutic Touch.” <em>JAMA</em> 279 (13): 1005. <a href="https://doi.org/10.1001/jama.279.13.1005" class="uri">https://doi.org/10.1001/jama.279.13.1005</a>.</p>
+<p><em>本文原刊於舊站，2026-10 自網站備份復原。</em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<!-- 修正搜尋框 IME（注音/大易等）組字被 autocomplete 重繪打斷的問題。
+     原理：組字期間（compositionstart~end）攔截 input/keydown 事件，
+     不讓 Algolia autocomplete 更新查詢與重繪；組字完成後補送一次
+     input 事件讓查詢同步。en/zh 兩專案各持一份，修改需同步。 -->
+<script>
+(function () {
+  var composing = false;
+  function inSearch(el) {
+    return el && el.closest &&
+      el.closest('#quarto-search, .aa-Autocomplete, .aa-DetachedContainer');
+  }
+  document.addEventListener('compositionstart', function (e) {
+    if (inSearch(e.target)) composing = true;
+  }, true);
+  document.addEventListener('compositionend', function (e) {
+    if (!inSearch(e.target)) return;
+    composing = false;
+    var el = e.target;
+    setTimeout(function () {
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+    }, 0);
+  }, true);
+  document.addEventListener('input', function (e) {
+    if (composing && inSearch(e.target)) e.stopImmediatePropagation();
+  }, true);
+  ['keydown', 'keyup'].forEach(function (type) {
+    document.addEventListener(type, function (e) {
+      if ((e.isComposing || e.keyCode === 229) && inSearch(e.target)) {
+        e.stopPropagation();
+      }
+    }, true);
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已複製");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已複製");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/scchen\.com\/zh\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2017-2026 陳紹慶</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
